@@ -1,0 +1,14 @@
+# Introduction {#intro}
+
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Doing social science research requires researchers to know a lot of social theories and also apply them to the right context. This was an overwhelming task for me as a Ph.D. student since there was an enormous amount of theories out there and people seem to just know and talk about them like their second language. Professors told me that through time I will read up and acquire more and more theories (or at least the relevant ones). However, my systematic mind cannot tolerate a disorganized way of learning or acquiring knowledge piece-meal like this.  
+
+Hence, I read up on some handbooks and cheat-sheet regarding social theories. And, I compile these theories for my future research. If you read my first book on data analysis [link], you will know how forgetful I can be. So again, I have to write down another book in a systematic way that I can quickly skim back in the future for relevant theories for my research.  
+
+Recommendations on how to consume this book:  
+
+ * If you know what you are looking for and just want to quickly brush up on a theory. You can just go to that theory section title.  
+ * If you want an overview of all relevant theories, you can follow this book from the beginning till the end (my goal is write the most succint version of every theory as possible). 
+ 
+ 

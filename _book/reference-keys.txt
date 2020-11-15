@@ -1,0 +1,8 @@
+intro
+theory
+effect
+coolidge-effect
+applications
+example-one
+example-two
+final-words
