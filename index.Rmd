@@ -4,9 +4,10 @@ author: "Mike Nguyen"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib,references.bib]
+bibliography: [book.bib, packages.bib, references.bib]
 biblio-style: apalike
 link-citations: yes
 description: "This book is about relevant social theories that are regularly used in social sciences"
+github-repo: "mikenguyen13/social-theory"
 ---
 
