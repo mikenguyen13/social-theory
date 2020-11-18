@@ -4,9 +4,9 @@ username: mike
 account: mike
 server: bookdown.org
 hostUrl: https://bookdown.org/__api__
-appId: 5945
-bundleId: 30730
+appId: 5946
+bundleId: 30731
 url: https://bookdown.org/mike/social-theory/
-when: 1605729505.37359
+when: 1605729654.69782
 asMultiple: FALSE
-asStatic: FALSE
+asStatic: TRUE
