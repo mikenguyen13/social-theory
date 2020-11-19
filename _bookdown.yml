@@ -3,3 +3,4 @@ delete_merged_file: true
 language:
   ui:
     chapter_name: "Chapter "
+edit: https://github.com/mikenguyen13/social_theory/edit/main/%s
