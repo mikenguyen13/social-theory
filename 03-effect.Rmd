@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Effect
 
 This chapter is dedicated to well-known effects that explain interesting phenomenon. 
@@ -8,3 +13,36 @@ This effect comes from the biological world, where male mammals renew their sexu
 The name Coolidge comes from a joke about President Calvin Coolidge. The story is as follow:  
 "... The President and Mrs. Coolidge were being shown [separately] around an experimental government farm. When [Mrs. Coolidge] came to the chicken yard she noticed that a rooster was mating very frequently. She asked the attendant how often that happened and was told, "Dozens of times each day." Mrs. Coolidge said, "Tell that to the President when he comes by." Upon being told, the President asked, "Same hen every time?" The reply was, "Oh, no, Mr. President, a different hen every time." President: "Tell that to Mrs. Coolidge." [@Johnson_1972]
 
+## Social Facilitation / Inhibition
+
+This phenomenon happens when the mere presence of others can alter ones' performance.  
+When the presence of others improve one's performance, we term it social facilitation.
+When the presence of others impair one's performance, we term it social inhibition.
+
+The phenomenon was first documented by [@Triplett_1898]. And later [@Allport_1920] labeled it as social facilitation
+
+The moderator that decides whether the process is social facilitation or social inhibition is task familiarity/ complexity. The more familiar one is with a task, social facilitation will occur. The more difficult or novel a task is, the more likely that social inhibition will occur. According to [@Zajonc_1966], "an audience impairs the acquisition of new responses and facilitates the emission of well-learned responses" (dominant responses). Hence, when facing a difficult task in combination with the presence of others will result in high arousal which results in stress and poor performance. 
+
+The mechanism can be specified by the [Distraction Conflict Theory], which states that the conflict between giving attention to spectators and to a task affects performance. Better performers resolve this conflict and direct more attention to the task.
+
+Another mechanism claim that it's not the presence of others that affects performance, but the knowledge of others' evaluation affect performance. Performers are aroused by audiences because they know that the are being evaluated. Hence, technically, passive spectators are not that "passive". [@Cottrell_1968]
+
+
+There are two stream of research which are   
+
+ * [Audience Effect]  
+ * [Coaction Effect]  
+
+### Audience Effect
+Passive spectators affects performance
+Notable articles are:  
+
+ * increased multiplication performance [@Travis_1925]
+ * decreased memorizing a list of nonsense words [@Pessin_1933]
+
+### Coaction Effect
+Active participants (same activity separately)affect performance 
+The effect was also documented in animals such as  
+
+ * ants will dig three times more with the presence of other ants  [@Chen_1937]
+ * animals will eat more with the presence of other of their species  [@Platt_1967]

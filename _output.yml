@@ -1,7 +1,16 @@
 bookdown::gitbook:
   css: style.css
+  split_by: section
   config:
     toc:
+      scroll_highlight: yes
+      sharing:
+        facebook: yes
+        github: yes
+        twitter: yes
+        linkedin: yes
+      info: yes
+      edit: yes
       before: |
         <li><a href="./">A Minimal Book Example</a></li>
       after: |

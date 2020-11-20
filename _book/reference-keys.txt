@@ -1,8 +1,11 @@
+prerequisites
 intro
 theory
+distraction-conflict-theory
 effect
 coolidge-effect
-applications
-example-one
-example-two
+social-facilitation-inhibition
+audience-effect
+coaction-effect
+phenomenon
 final-words

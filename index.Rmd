@@ -11,3 +11,4 @@ description: "This book is about relevant social theories that are regularly use
 github-repo: "mikenguyen13/social-theory"
 ---
 
+# Prerequisites
