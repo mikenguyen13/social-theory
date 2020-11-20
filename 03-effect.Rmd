@@ -25,7 +25,13 @@ The moderator that decides whether the process is social facilitation or social 
 
 The mechanism can be specified by the [Distraction Conflict Theory], which states that the conflict between giving attention to spectators and to a task affects performance. Better performers resolve this conflict and direct more attention to the task.
 
-Another mechanism claim that it's not the presence of others that affects performance, but the knowledge of others' evaluation affect performance. Performers are aroused by audiences because they know that the are being evaluated. Hence, technically, passive spectators are not that "passive". [@Cottrell_1968]
+Another mechanism claim that it's not the presence of others that affects performance, but the knowledge of others' evaluation affect performance. Performers are aroused by audiences because they know that the are being evaluated. Hence, technically, passive spectators are not that "passive". [@Cottrell_1968]. This attempt to appear better in others' eyes is also known as impression management, which has been studied extensively in management.
+
+
+|Social Presence | Task | Consequence|
+|---|---|---|
+|Presence of others |Automatic, natural, well-learned|Social Facilitation|
+||Difficult requires more attention|Social Inhibition|
 
 
 There are two stream of research which are   
