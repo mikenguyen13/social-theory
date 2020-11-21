@@ -15,3 +15,4 @@ warm-glow-heuristic
 goldilocks-effect
 phenomenon
 final-words
+goal-gradient-hypothesis

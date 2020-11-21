@@ -35,3 +35,17 @@ However, for the ultra rich class, the highest price does not command highest br
 
 
 We know that the mere exposure can increase our preference towards an object. Interestingly, the similarity between a new object and one that we are familiarity with also have the same effect. Novel but don't be too novel. 
+
+
+
+
+## Goal Gradient Hypothesis
+
+How close you are to achieve a bonus with your loyalty card, the more motivated you are. Compared to beginner coffee buyers, customers who almost complete a card buy more coffee (come back to the store sooner) [@Kivetz_2006]
+
+Similar effects are also found in animals, rats are more motivated when they are closer to their goals [@Brown_1948;@Hull_1932;@Hull_1934]
+
+
+However, too far behind couples with direct competition could not only lead people a little behind more motivated, but people far behind more demotivated. [@Fershtman_2011]
+
+Interestingly, the mechanism for favored candidate to lose motivation is different from underdogs. To save face, favored candidate stops trying to have reason to excuse that if they were to keep trying, they would have won [@Dai_2018]
