@@ -1,11 +1,17 @@
 prerequisites
 intro
 theory
+social-comparison
 distraction-conflict-theory
+optimal-distinctiveness-theory
+signaling-theory
 effect
 coolidge-effect
 social-facilitation-inhibition
 audience-effect
 coaction-effect
+snob-effect
+warm-glow-heuristic
+goldilocks-effect
 phenomenon
 final-words

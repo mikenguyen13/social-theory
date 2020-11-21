@@ -52,3 +52,24 @@ The effect was also documented in animals such as
 
  * ants will dig three times more with the presence of other ants  [@Chen_1937]
  * animals will eat more with the presence of other of their species  [@Platt_1967]
+ 
+ 
+## Snob Effect
+This is effect is from micro-economics in which people demand for goods or services is negatively correlated with the market demand.  [@Leibenstein_1950]
+In the market of unique, expensive, or unusual products, price can be seen as quality itself. These items typically have high economic value (status) but low practical value. The availability of a product is negatively correlated with it snob value. 
+
+Examples are arts, designer clothes. 
+
+
+## Warm Glow Heuristic
+"The positive valence of a stimulus increases its perceived familiarity, even in the absence of prior exposure." [@Monin_2003]
+Familiarity leads to liking because the ease of retrieving information in our brain. This mechanism also has evolutionary benefits, which helps familiarity stay together (spouses, children, parents). 
+We know that familiarity leads to liking (preference), but the the other way around also works.
+
+## Goldilocks Effect
+"just the right amount" - U-shaped relationship. Beth Hess and Joan M.Waring introduced the term to refer to the optimal level of contact with kin that satisfies married couples. [@Spanier_1978] 
+
+Affection reactions operate under this mechanism. Too novel products make use feel unease (or neutral) because we are unfamiliar. But the things that we interact too many times bored us. However, the right amount of interaction will hold our affection reaction at the optimal level.
+
+Complexity also works on the same scale. Simple things can have us quickly attracted to, but we will get bored of it quickly. 
+Complex things will take long time to learn. But once we get accustomed to it, it's hard to get rid of a habit.
