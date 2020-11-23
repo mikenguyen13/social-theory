@@ -4,7 +4,11 @@ theory
 social-comparison
 distraction-conflict-theory
 optimal-distinctiveness-theory
+social-exchange-theory
+resource-based-theory
+network-exchange-theory
 signaling-theory
+goal-gradient-hypothesis
 effect
 coolidge-effect
 social-facilitation-inhibition
@@ -15,4 +19,3 @@ warm-glow-heuristic
 goldilocks-effect
 phenomenon
 final-words
-goal-gradient-hypothesis
