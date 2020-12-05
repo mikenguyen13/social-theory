@@ -2,9 +2,15 @@
 
 This is a list of theories that typically used in social science.
 
+## Hofstede's cultural dimensions theory
+
+
 ## Social Comparison
 
 Opower used social comparison to reduce energy use around the worlds. It's not about scientific facts, or research. It's about your position relative to others (i.e., whether you are better or worse at conserving energy compared to your neighbors) [@Cuddy_2010]
+
+## Power Distance Theory
+
 
 
 ## Distraction Conflict Theory
