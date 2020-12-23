@@ -1,7 +1,9 @@
 prerequisites
 intro
 theory
+hofstedes-cultural-dimensions-theory
 social-comparison
+power-distance-theory
 distraction-conflict-theory
 optimal-distinctiveness-theory
 social-exchange-theory
@@ -17,5 +19,6 @@ coaction-effect
 snob-effect
 warm-glow-heuristic
 goldilocks-effect
+glass-cliff-effect
 phenomenon
-final-words
+miscellaneous

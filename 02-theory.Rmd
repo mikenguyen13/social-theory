@@ -16,7 +16,7 @@ Opower used social comparison to reduce energy use around the worlds. It's not a
 ## Distraction Conflict Theory
 
 
-## optimal Distinctiveness Theory 
+## Optimal Distinctiveness Theory 
 
 
 ## Social Exchange Theory
@@ -66,3 +66,12 @@ Similar effects are also found in animals, rats are more motivated when they are
 However, too far behind couples with direct competition could not only lead people a little behind more motivated, but people far behind more demotivated. [@Fershtman_2011]
 
 Interestingly, the mechanism for favored candidate to lose motivation is different from underdogs. To save face, favored candidate stops trying to have reason to excuse that if they were to keep trying, they would have won [@Dai_2018]
+
+
+## Adatption Theory of Well-being
+[@Diener_2006] People tend to return to their previous level of happiness after traumatic events. we tend to stay in a long-term disposition. 
+
+[@Lyubomirsky_2005] long-term happiness depends 50% on a person's genetic set point, 10% on circumstances (whether you, how rich, how healthy they are), and 40% on what they choose to think and do. Hence, even if our friends are happy, they happiness will wear off, and return us the original level. 
+
+
+

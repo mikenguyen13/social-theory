@@ -74,3 +74,17 @@ Affection reactions operate under this mechanism. Too novel products make use fe
 Complexity also works on the same scale. Simple things can have us quickly attracted to, but we will get bored of it quickly. 
 Complex things will take long time to learn. But once we get accustomed to it, it's hard to get rid of a habit.
 
+
+## Glass Cliff Effect 
+
+This effect is when women are more likely to be appointed to a more challenging position (poorly performing orgs), while men are like more likely to be appointed to a stable leadership position [@Ryan_2005;@Ryan_2016]. The term was first coined by Michelle K. Ryan and Alexander Haslam, who studied FTSE 100. Later on, another study also found the effect in law students who were assigned more difficult cases.
+
+Possible explanations: 
+
+ (1) Struggling companies can easily blame someone if she fails to pull the company out of trouble. Moreover, even if the company fails, they can still be labeled progressive.
+
+
+**Note**  
+This effect also applies to minorities or any marginalized groups.
+
+

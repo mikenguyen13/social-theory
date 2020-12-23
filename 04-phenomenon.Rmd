@@ -1,0 +1,9 @@
+# Phenomenon
+
+orbitofrontal cortex controls both olfaction and emotions, hence there is a strong connection between smell and emotions [@Rolls_2004].
+smell can induce stronger emotion than conversation [@Willander_2007]
+
+
+
+## Similarity Asymmetry 
+Based on [@Tversky_1977] contrast model, pairwise similarity judgments between products are asymmetrical: the less typical product will be perceived as more similar to the typical product than the reverse. [@Herr_1994, pp. 305]
