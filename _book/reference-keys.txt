@@ -11,6 +11,7 @@ resource-based-theory
 network-exchange-theory
 signaling-theory
 goal-gradient-hypothesis
+adatption-theory-of-well-being
 effect
 coolidge-effect
 social-facilitation-inhibition
@@ -21,4 +22,5 @@ warm-glow-heuristic
 goldilocks-effect
 glass-cliff-effect
 phenomenon
+similarity-asymmetry
 miscellaneous
