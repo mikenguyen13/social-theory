@@ -7,6 +7,7 @@ power-distance-theory
 distraction-conflict-theory
 optimal-distinctiveness-theory
 social-exchange-theory
+resource-dependence-theory
 resource-based-theory
 network-exchange-theory
 signaling-theory

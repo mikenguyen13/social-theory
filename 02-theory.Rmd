@@ -21,6 +21,15 @@ Opower used social comparison to reduce energy use around the worlds. It's not a
 
 ## Social Exchange Theory
 
+## Resource Dependence Theory   
+
+External resources (or the procurement of external resources) of organizations can influence the organization's behavior [@Stern_1979]
+
+The basic premise is as follows:   
+
+Organizations depend on resources, which depends on its environment, where other organizations play a big part to operate (ecology). And resources are power, and one organizations need others to survive. Hence, power and resource dependence are interlocked.  
+
+Since an organization's power (A) over another (B) is the same thing as organization B's dependence on organization A. We can see that power is relational and situaitonal. 
 
 
 ## Resource based Theory
