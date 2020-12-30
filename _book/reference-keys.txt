@@ -12,7 +12,9 @@ resource-based-theory
 network-exchange-theory
 signaling-theory
 goal-gradient-hypothesis
-adatption-theory-of-well-being
+adaptation-theory-of-well-being
+discrepancy-attribution-hypothesis
+the-broaden-and-build-theory-of-positive-emotions
 effect
 coolidge-effect
 social-facilitation-inhibition
@@ -24,4 +26,8 @@ goldilocks-effect
 glass-cliff-effect
 phenomenon
 similarity-asymmetry
+assortative-mating
+social-magnet
+wisdom-of-the-crowd
+losing-leads-to-winning
 miscellaneous

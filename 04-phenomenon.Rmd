@@ -7,3 +7,20 @@ smell can induce stronger emotion than conversation [@Willander_2007]
 
 ## Similarity Asymmetry 
 Based on [@Tversky_1977] contrast model, pairwise similarity judgments between products are asymmetrical: the less typical product will be perceived as more similar to the typical product than the reverse. [@Herr_1994, pp. 305]
+
+
+## Assortative Mating
+In assortative mating, people tend to marry others of similar ages, nationalities, racial backgrounds. Even with matching linguistics styles, (50% of people will still be dating if they match linguistics styles). 
+
+## Social Magnet
+Social magnet, sometimes others can attract, but they can also repel. Sometimes we conform or imitate; others we avoid and diverge. [@Berger_2016]
+
+## Wisdom of the crowd
+
+The crowds’ wisdom is good when the group has access to everyone’s individual information (and pool think independently). 
+
+## Losing leads to Winning
+
+Being slightly behind can lead to increase in probability of winning because being slightly behind increases one's efforts [@Berger_2011]  
+
+For example, in basketball game, a losing team at half time by one or two points are more likely to win at the end of the game. 

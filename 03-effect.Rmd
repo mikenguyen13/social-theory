@@ -11,7 +11,7 @@ This chapter is dedicated to well-known effects that explain interesting phenome
 This effect comes from the biological world, where male mammals renew their sexual interest when a new female is introduced even though the males have shown exhaustion from encounters with the previous partners. Interestingly, females exhibit this effect to a lesser extent.  
 
 The name Coolidge comes from a joke about President Calvin Coolidge. The story is as follow:  
-"... The President and Mrs. Coolidge were being shown [separately] around an experimental government farm. When [Mrs. Coolidge] came to the chicken yard she noticed that a rooster was mating very frequently. She asked the attendant how often that happened and was told, "Dozens of times each day." Mrs. Coolidge said, "Tell that to the President when he comes by." Upon being told, the President asked, "Same hen every time?" The reply was, "Oh, no, Mr. President, a different hen every time." President: "Tell that to Mrs. Coolidge." [@Johnson_1972]
+"... The President and Mrs. Coolidge were being shown [separately] around an experimental government farm. When [Mrs. Coolidge] came to the chicken yard she noticed that a rooster was mating very frequently. She asked the attendant how often that happened and was told, "Dozens of times each day." Mrs. Coolidge said, "Tell that to the President when he comes by." Upon being told, the President asked, "Same hen every time?" The reply was, "Oh, no, Mr. President, a different hen every time." President: "Tell that to Mrs. Coolidge." [@Johnson_1972]  
 
 ## Social Facilitation / Inhibition
 
@@ -58,16 +58,32 @@ The effect was also documented in animals such as
 This is effect is from micro-economics in which people demand for goods or services is negatively correlated with the market demand.  [@Leibenstein_1950]
 In the market of unique, expensive, or unusual products, price can be seen as quality itself. These items typically have high economic value (status) but low practical value. The availability of a product is negatively correlated with it snob value. 
 
-Examples are arts, designer clothes. 
+Examples are arts, designer clothes.  
+
+Snob effects are when an individual's demand for goods or services is negatively correlated with market demand. One might avoid buying things or doing things when too many are doing them (like a badge of distinction). To combat this, we can employ an illusion of distinction. Hence we focus on ways things are different, even if at the core they are very much the same. 
 
 
 ## Warm Glow Heuristic
 "The positive valence of a stimulus increases its perceived familiarity, even in the absence of prior exposure." [@Monin_2003]
 Familiarity leads to liking because the ease of retrieving information in our brain. This mechanism also has evolutionary benefits, which helps familiarity stay together (spouses, children, parents). 
-We know that familiarity leads to liking (preference), but the the other way around also works.
+We know that familiarity leads to liking (preference), but the the other way around also works.  
+
+Working-class people prefer similarity, and high-end people prefer uniqueness [@Berger_2016]
+
+Similarity increases evaluation (and sales) for the same reason that mere exposure works. It is easy for our brain to process information (associative network) [@Berger_2016]  
+
+So is that people like to be familiar [Warm Glow Heuristic], or to be novel [Coolidge Effect]? The answer is both: [Goldilocks Effect] or the middle ground.
 
 ## Goldilocks Effect
-"just the right amount" - U-shaped relationship. Beth Hess and Joan M.Waring introduced the term to refer to the optimal level of contact with kin that satisfies married couples. [@Spanier_1978] 
+"just the right amount" - U-shaped relationship. Beth Hess and Joan M.Waring introduced the term to refer to the optimal level of contact with kin that satisfies married couples. [@Spanier_1978]   
+
+Relatively complex things may take longer to learn but also have a longer-lasting appeal. Affective reactions often follow a Goldilocks effect or interviewed U-shape trajectory.   
+
+Too novel, and it is unfamiliar. Too familiar, and it's boring; the middle is just right. [@Berger_2016]  
+
+Moderately discrepant thing s tend to garner more attention [@McCall_1977]  
+
+One way to encourage perseverance is to shrink the comparison set, breaking larger groups into smaller ones based on performance  
 
 Affection reactions operate under this mechanism. Too novel products make use feel unease (or neutral) because we are unfamiliar. But the things that we interact too many times bored us. However, the right amount of interaction will hold our affection reaction at the optimal level.
 

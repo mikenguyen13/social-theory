@@ -40,6 +40,8 @@ Markovsky, Willer, Patton 1998
 
 
 ## Signaling Theory 
+When do we diverge? When choices signal identity (observability, functional benefits, etc.)  
+
 People diverge to signal identity, which based on:  
 
  * Observability  
@@ -52,12 +54,14 @@ Costs in this case could be:
  * Opportunity 
  * Time 
  
-Price and branding has an inverted-U relationship
+Price and branding (brand prominence) has an inverted-U relationship
 The higher the price is, the more brand prominence it possess. 
 However, for the ultra rich class, the highest price does not command highest brand prominence, but actually lowest brand prominence. (a small set of ultra rich people know)
 
 
-"The identity-signaling drives things to both catch on and die out... Counterfeiting helps speed up the process "
+"The identity-signaling drives things to both catch on and die out... Counterfeiting helps speed up the process "  
+
+Counterfeit and piracy are good because it keeps consumers crave for a new one [@Berger_2016]
 
 
 We know that the mere exposure can increase our preference towards an object. Interestingly, the similarity between a new object and one that we are familiarity with also have the same effect. Novel but don't be too novel. 
@@ -77,10 +81,15 @@ However, too far behind couples with direct competition could not only lead peop
 Interestingly, the mechanism for favored candidate to lose motivation is different from underdogs. To save face, favored candidate stops trying to have reason to excuse that if they were to keep trying, they would have won [@Dai_2018]
 
 
-## Adatption Theory of Well-being
+## Adaptation Theory of Well-being
 [@Diener_2006] People tend to return to their previous level of happiness after traumatic events. we tend to stay in a long-term disposition. 
 
 [@Lyubomirsky_2005] long-term happiness depends 50% on a person's genetic set point, 10% on circumstances (whether you, how rich, how healthy they are), and 40% on what they choose to think and do. Hence, even if our friends are happy, they happiness will wear off, and return us the original level. 
 
+
+## Discrepancy-attribution hypothesis 
+
+
+## The broaden-and-build theory of positive emotions
 
 
