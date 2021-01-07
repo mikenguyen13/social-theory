@@ -9,12 +9,15 @@ optimal-distinctiveness-theory
 social-exchange-theory
 resource-dependence-theory
 resource-based-theory
+assumptions
+assumptions-and-logic
 network-exchange-theory
 signaling-theory
 goal-gradient-hypothesis
 adaptation-theory-of-well-being
 discrepancy-attribution-hypothesis
 the-broaden-and-build-theory-of-positive-emotions
+regulatory-focus-theory
 effect
 coolidge-effect
 social-facilitation-inhibition
@@ -30,4 +33,7 @@ assortative-mating
 social-magnet
 wisdom-of-the-crowd
 losing-leads-to-winning
+microblogging
+models-frameworks
+information-processing-model
 miscellaneous

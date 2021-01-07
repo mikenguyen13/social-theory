@@ -1,0 +1,10 @@
+# Models/ Frameworks 
+
+## Information Processing Model 
+
+Based on [@Atkinson_1968], we can see the multi-store model
+
+```{r fig.align='center', echo=FALSE}
+library("jpeg")
+knitr::include_graphics('images/Information_Processing_Model_-_Atkinson_&_Shiffrin.jpg')
+```

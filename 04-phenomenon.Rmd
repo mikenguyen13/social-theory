@@ -24,3 +24,7 @@ The crowds’ wisdom is good when the group has access to everyone’s individua
 Being slightly behind can lead to increase in probability of winning because being slightly behind increases one's efforts [@Berger_2011]  
 
 For example, in basketball game, a losing team at half time by one or two points are more likely to win at the end of the game. 
+
+## Microblogging
+
+Microblogging (e.g., status updates on Facebook and tweets on Twitter) is driven by its undirected nature: "undirected communication allows people to reach out and elicit social interaction without having to worry about imposing unwanted communication on a particular person." It is valuable when people want to avoid directed communication (in the case of socially apprehensive – anxiety about communicating with others and concern about being rejected ). [@Buechel_2017]

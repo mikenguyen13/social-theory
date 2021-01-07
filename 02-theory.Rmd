@@ -19,6 +19,26 @@ Opower used social comparison to reduce energy use around the worlds. It's not a
 ## Optimal Distinctiveness Theory 
 
 
+Even though the previous study argued that either assimilation (communicate social identity) or differentiation (uniqueness motive) could prevail in any consumer decision [@Mason_2007].  
+
+[@Chan_2012] find that consumers can have both mechanisms satisfied when making a purchase decisions   
+
+People conform under the informational or normative influence [@Deutsch_1955]. People also make choices and decision similar to their aspiration groups to signal their desired identities [@Berger_2007; @Englis_1995].  
+
+People also have intricate needs for uniqueness [@Lynn2002], since people sometimes experience an emotional reaction when being too similar. Unique motives can be driven by situational factors.  
+
+"consumers simultaneously pursue assimilation and differentiation goals on different dimensions of a single choice: they assimilate to their group on one dimension (by conforming on identity signaling attributes such as brand) while differentiating on another dimension(distinguishing themselves on uniqueness attributes such as color). Desires to communicate social identity lead consumers to conform on choice dimensions that are strongly associated with their group, particularly in identity-relevant consumer categories such as clothing. Higher needs for uniqueness lead consumers to differentiate within groups by choosing less popular options among those that are associated with their group" [@Chan_2012]  
+
+From the optimal distinctiveness theory, people seek to satisfy both the need fo assimilation nd differentiation (Brewer, 1991)
+“consumption gains symbolic meaning as a marker of group membership” [@Chan_2012]  
+
+The consumer can simultaneously assimilate (i.e., by conforming to reference groups by choosing attribute that signals group identity such as brand) while differentiating from other in-group members on other choice dimensions such as color to achieve optimally distinct self-concept [@Chan_2012].  
+
+
+People diverge from members of other social groups (dissimilar outgroups): when other social groups adopt tastes, people might abandon their current tastes to avoid signaling undesired identities, and costs of misidentification [@Berger_2007]  
+
+
+
 ## Social Exchange Theory
 
 ## Resource Dependence Theory   
@@ -33,6 +53,35 @@ Since an organization's power (A) over another (B) is the same thing as organiza
 
 
 ## Resource based Theory
+
+Also known as resource-based view (RBV) 
+
+[@Wernerfelt_1984] was the first seminal paper on RBV. Later on, [@Barney_2011] argued for RBV to be considered a theory. 
+
+### Assumptions 
+
+1. Resource heterogeneity assumption  
+
+Firms have different bundles of resources [@Peteraf_2003]. Hence, firms are skilled at certain activities due to their unique resources. 
+
+2. Resource immobility assumption  
+
+Differences in resources can be sustained due to the difficulty in trading resources. 
+
+
+Based on these two assumption, [RBT][Resource based Theory] argues that since other firms find these valuable resources too costly or too difficult to imitate, then firms having these resources can have **sustainable competitive advantage** (SCA) [@Barney_2012]
+
+Since not all resources are drivers of SCA, only resources are "simultaneously valuable, rare, imperfectly imitable, and exploitable by the firm’s organization". (based on VIRO) [@Kozlenkova_2013]
+
+### VIRO
+#### Valuable
+Firm resources are valuable if they “enable a firm to develop and implement strategies that have the effect of lowering a firm’s net costs and/or increase a firm’s net revenues beyond what would have been the case” without these resources [@Barney_2017]
+
+## Assumptions and logic
+
+
+
+
 
 ## Network Exchange Theory 
 Cook and Whitmeyer 1992
@@ -90,6 +139,11 @@ Interestingly, the mechanism for favored candidate to lose motivation is differe
 ## Discrepancy-attribution hypothesis 
 
 
-## The broaden-and-build theory of positive emotions
+## The broaden-and-build theory of positive emotions 
+
+## Regulatory Focus Theory 
+
+According to self-regulatory focus, people have either promotion focus (presence of desirable outcomes) or prevention focus (absence of undesirable outcomes). Promotion focus people tend to focus on growth, aspirations, achievement, while presentation focus people have an orientation towards safety or vigilance [@Lee_2004]. Hence, advertisers (promotion-focused or prevention-focused) can create messages depend on their audience  [@Aaker_2001]. Regulatory focus can depend on culture (western is more promotion focus as compared to eastern more prevention focus [@Lee_2000]), products (home-security or massage chairs), environment (e.g., 2000 bubble bursts induce investors to be more prevention-focused). 
+
 
 
