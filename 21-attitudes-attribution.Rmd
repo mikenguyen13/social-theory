@@ -1,0 +1,1490 @@
+# Attitudes, Attribution, and Social Learning {#attitudes-attribution}
+
+Why do buyers of an expensive car read more of the manufacturer's advertising
+*after* they have bought it than before? Why does a customer who waited two
+hours for a delayed flight forgive the airline when a storm is to blame but
+vow never to fly with it again when the crew simply failed to show up? Why do
+people who sign a small petition become more willing, weeks later, to put a
+large and ugly sign on their front lawn, and why does a "limited time only"
+banner sometimes drive shoppers away rather than toward the checkout? Each
+puzzle concerns the way people make sense of their own behaviour, of other
+people's behaviour, and of the pressures placed on them by firms.
+
+This chapter brings together six classic theories from social psychology that
+remain workhorses of research in marketing, organizational behaviour, and
+information systems. **[Cognitive dissonance theory](#cognitive-dissonance-theory)** and **self-perception
+theory** explain how behaviour shapes attitudes, rather than the reverse.
+**[Attribution theory](#attribution-theory)** explains how people infer the causes of events and how
+those inferences drive emotion, blame, and loyalty. **[Balance theory](#balance-theory)** explains
+how attitudes toward people and objects are organized into consistent
+structures, which is the logic behind celebrity endorsement. **Social cognitive
+theory** explains how people learn by watching others and why beliefs about
+one's own capabilities ([self-efficacy](#social-cognitive-theory)) predict performance. **[Reactance theory](#reactance-theory)**
+explains why pressure, scarcity, and unsolicited advice can backfire. Together
+they form a toolkit for anyone who designs persuasion, service recovery,
+training, or choice environments (Table \@ref(tab:tab-aa-glance)).
+
+```{r tab-aa-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Cognitive dissonance theory", "How do people reduce the discomfort of inconsistent cognitions?", "Individual", "Festinger (1957)",
+  "Self-perception theory", "How do people infer their attitudes from their own behaviour?", "Individual", "Bem (1967, 1972)",
+  "Attribution theory", "How do people explain the causes of behaviour and outcomes?", "Individual / dyad", "Heider (1958), Kelley (1967), Weiner (1985)",
+  "Balance theory", "How are attitudes toward people and objects kept consistent?", "Triad (person, other, object)", "Heider (1946)",
+  "Social cognitive theory", "How do observation and self-efficacy shape learning and action?", "Individual in context", "Bandura (1977, 1986)",
+  "Reactance theory", "Why do threats to freedom provoke resistance?", "Individual", "Brehm (1966)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of attitudes, attribution, and social learning.")
+```
+
+## Cognitive Dissonance Theory {#cognitive-dissonance-theory}
+
+::: {.theory-card}
+**Core claim.** Holding two psychologically inconsistent cognitions produces an
+aversive state, **dissonance**, that motivates people to restore consistency,
+often by changing the attitude that is easiest to change rather than the
+behaviour that caused the problem.
+
+**Origins.** Social psychology. @festinger1957, with the classic experiments of
+@brehm1956, @festinger1959, and @aronson1959. Later revisions include
+@cooper1984, @steele1988, and @harmonjones2015.
+
+**Level of analysis.** Individual.
+
+**Key constructs.** Consonant and dissonant cognitions, magnitude of dissonance,
+importance of the cognitions, perceived choice, insufficient justification,
+effort, irrevocability, dissonance reduction (attitude change, adding consonant
+cognitions, trivialization, selective exposure, behaviour change).
+
+**Boundary conditions.** Dissonance requires that people feel personally
+responsible for a behaviour (high perceived choice) and that the inconsistency
+matters to them. It is weakened when external justification is ample, when
+arousal can be attributed to something else, or when the self is affirmed in
+another domain.
+
+**Related theories.** [Self-perception theory](#self-perception-theory),
+[Escalation of commitment](#escalation-of-commitment) (Section \@ref(escalation-of-commitment)),
+[IKEA effect](#ikea-effect) (Section \@ref(ikea-effect)), [Balance theory](#balance-theory),
+[Expectancy disconfirmation](#expectancy-disconfirmation) (Section \@ref(expectancy-disconfirmation)).
+:::
+
+### Origins and intellectual history
+
+Leon Festinger developed dissonance theory in the 1950s, shortly after his
+work on [social comparison](#social-comparison-theory) (Section \@ref(social-comparison-theory)) [@festinger1954]. His
+starting observation was that people dislike inconsistency among their beliefs,
+attitudes, and knowledge of their own behaviour. A smoker who knows that smoking
+causes cancer holds two cognitions that do not fit together. Festinger proposed
+that such inconsistency produces a state of psychological tension, analogous to
+hunger, that people are motivated to reduce [@festinger1957].
+
+The theory became famous because of its counterintuitive predictions. In the
+best-known experiment, @festinger1959 had participants perform an hour of
+tedious tasks (turning pegs and loading spools) and then paid them either one
+dollar or twenty dollars to tell a waiting student that the tasks were
+interesting. Reinforcement theory predicted that a larger payment would produce
+more positive attitudes toward the task. Instead, participants paid one dollar
+later rated the tasks as more enjoyable than those paid twenty dollars. Twenty
+dollars was ample justification for a small lie. One dollar was not, so
+participants reduced dissonance by persuading themselves that the tasks had
+not been so dull after all. This **insufficient justification** effect became
+the template of the **induced-compliance paradigm**.
+
+Two other paradigms followed. In the **free-choice paradigm**, @brehm1956 asked
+participants to rate household products, choose one of two as a gift, and rate
+the products again. After choosing, participants rated the chosen product more
+favourably and the rejected product less favourably than before, a pattern
+called the **spreading of alternatives**. In the **effort-justification
+paradigm**, @aronson1959 found that people who underwent a severe and
+embarrassing initiation to join a discussion group later rated a deliberately
+dull group discussion more favourably than people who underwent a mild
+initiation or none. Having suffered to obtain something, people value it more.
+
+### Core logic and propositions
+
+Dissonance theory specifies when dissonance arises, how large it is, and how it
+is reduced. Its central propositions can be stated as follows:
+
+- **P1 (Inconsistency).** Two cognitions are dissonant when, considered alone,
+  the opposite of one would follow from the other. Dissonance is a motivational
+  state that people seek to reduce.
+- **P2 (Magnitude).** The magnitude of dissonance increases with the importance
+  of the cognitions and with the ratio of dissonant to consonant cognitions.
+- **P3 (Justification).** The less external justification (reward, threat,
+  instruction) there is for a counterattitudinal act, the greater the
+  dissonance and the greater the subsequent attitude change.
+- **P4 (Choice and responsibility).** Dissonance arises mainly when people feel
+  that they chose freely to act and could have foreseen the consequences
+  [@cooper1984].
+- **P5 (Path of least resistance).** People reduce dissonance through whichever
+  cognition is least resistant to change. Because past behaviour is fixed,
+  attitudes, beliefs about consequences, and the perceived importance of the
+  issue usually give way.
+- **P6 (Selective exposure).** To prevent or reduce dissonance, people seek
+  information that supports their decisions and avoid information that
+  challenges them.
+
+Table \@ref(tab:tab-aa-paradigms) summarises the experimental paradigms that
+operationalize these propositions and their business analogues.
+
+```{r tab-aa-paradigms}
+tibble::tribble(
+  ~Paradigm, ~`Classic study`, ~`What creates dissonance`, ~`Typical reduction`, ~`Business analogue`,
+  "Induced compliance", "Festinger & Carlsmith (1959)", "Saying or doing something counterattitudinal for little reward", "Attitude moves toward the behaviour", "Employees who advocate a policy they doubt, brand ambassadors",
+  "Free choice", "Brehm (1956)", "Giving up the attractive features of a rejected option", "Chosen option rated higher, rejected option lower", "Post-purchase evaluation of close alternatives",
+  "Effort justification", "Aronson & Mills (1959)", "Suffering or effort spent on an outcome that disappoints", "Outcome is valued more", "Demanding loyalty tiers, self-assembly, hard-won memberships",
+  "Belief disconfirmation", "Festinger (1957)", "Evidence that contradicts a strongly held belief", "Reinterpretation, seeking social support", "Investors and managers explaining away bad news",
+  "Hypocrisy", "Stone et al. (1994)", "Being reminded that one does not practise what one preaches", "Behaviour changes to match the advocated position", "Pledge-based sustainability and safety campaigns"
+) |>
+  book_table(caption = "Five paradigms for studying cognitive dissonance.")
+```
+
+The **hypocrisy paradigm** deserves special mention because it reverses the
+usual direction of change. @stone1994 had students make a persuasive message
+advocating condom use and then reminded them of their own past failures to use
+condoms. Facing a gap between what they preached and what they practised,
+participants were more likely to buy condoms afterwards. When the attitude is
+desirable and public, people may reduce dissonance by changing *behaviour*.
+
+### Mechanism
+
+Figure \@ref(fig:fig-aa-dissonance-mech) summarizes the process. An
+inconsistency between behaviour and attitude produces dissonance only when
+moderating conditions are met: the behaviour must feel freely chosen, the
+consequences foreseeable and unwanted, and the issue important to the self.
+Dissonance is experienced as psychological discomfort [@elliot1994] and as
+arousal. In a classic demonstration, @zanna1974 gave participants a placebo
+pill and told some of them that it would make them feel tense. Those who could
+blame their tension on the pill showed no attitude change after writing a
+counterattitudinal essay, which suggests that attitude change depends on
+interpreting arousal as caused by one's own inconsistent behaviour.
+
+```{r fig-aa-dissonance-mech, fig.cap = "Mechanism of cognitive dissonance. An inconsistency between behaviour and attitude produces aversive arousal when the act is freely chosen and consequential. People then reduce dissonance through the least resistant route. Synthesized from Festinger (1957), Cooper and Fazio (1984), and Elliot and Devine (1994)."}
+mechanism_diagram(sprintf('
+  B [label = "Behaviour or decision\\n(chosen act, purchase,\\neffort spent)", %s]
+  A [label = "Prior attitude\\nor belief", %s]
+  D [label = "Dissonance\\n(aversive arousal,\\ndiscomfort)", %s]
+  R1 [label = "Attitude change\\n(\\"it was worth it\\")", %s]
+  R2 [label = "Add consonant cognitions\\n(seek supporting information)", %s]
+  R3 [label = "Trivialize the\\ninconsistency", %s]
+  R4 [label = "Change behaviour\\n(hypocrisy route)", %s]
+  M1 [label = "Perceived choice", %s]
+  M2 [label = "Foreseeable aversive\\nconsequences", %s]
+  M3 [label = "Self-relevance and\\nimportance", %s]
+  B -> D
+  A -> D
+  D -> R1
+  D -> R2
+  D -> R3
+  D -> R4
+  M1 -> D [style = dashed]
+  M2 -> D [style = dashed]
+  M3 -> D [style = dashed]
+', node_construct, node_construct, node_mechanism, node_outcome, node_outcome,
+   node_outcome, node_outcome, node_moderator, node_moderator, node_moderator))
+```
+
+The induced-compliance prediction is easiest to see in contrast to a simple
+reinforcement account. Figure \@ref(fig:fig-aa-induced) plots the stylised
+predictions. Reinforcement theory expects more attitude change as the reward
+for advocacy grows. Dissonance theory expects the opposite for freely chosen
+acts, because a large reward supplies its own justification. The dissonance
+prediction applies only under high choice. When people are simply instructed
+to comply, they bear no responsibility and attitude change is small at any
+payment level.
+
+```{r fig-aa-induced, fig.cap = "Stylised predictions for the induced-compliance paradigm. Under high perceived choice, dissonance theory predicts that attitude change toward a counterattitudinal position falls as the incentive for advocacy rises. Under low choice, attitude change is small at every incentive level. A reinforcement account predicts the opposite slope. Illustrative curves, not empirical data.", fig.height = 3.9}
+inc <- seq(0, 20, by = 0.5)
+pred <- bind_rows(
+  data.frame(incentive = inc, change = 6 * exp(-inc / 5) + 0.6, model = "Dissonance theory, high choice"),
+  data.frame(incentive = inc, change = rep(0.7, length(inc)), model = "Dissonance theory, low choice"),
+  data.frame(incentive = inc, change = 0.6 + 0.22 * inc, model = "Reinforcement account")
+)
+ggplot(pred, aes(incentive, change, colour = model, linetype = model)) +
+  geom_line(linewidth = 1.1) +
+  scale_colour_manual(values = c("Dissonance theory, high choice" = pal[["blue"]],
+                                 "Dissonance theory, low choice" = pal[["aqua"]],
+                                 "Reinforcement account" = pal[["orange"]])) +
+  scale_linetype_manual(values = c("Dissonance theory, high choice" = "solid",
+                                   "Dissonance theory, low choice" = "dotted",
+                                   "Reinforcement account" = "dashed")) +
+  annotate("text", x = 1, y = 6.9, label = "Small payment: little justification,\nso attitudes move to fit the act",
+           hjust = 0, size = 3.2, colour = ink[["secondary"]]) +
+  coord_cartesian(ylim = c(0, 7.5)) +
+  labs(x = "Incentive for counterattitudinal advocacy (stylised dollars)",
+       y = "Attitude change toward advocated position",
+       colour = NULL, linetype = NULL,
+       title = "Smaller rewards, larger attitude change",
+       caption = "Stylised predictions after Festinger and Carlsmith (1959) and Cooper and Fazio (1984).")
+```
+
+### Evidence and extensions
+
+Dissonance theory generated hundreds of experiments and several important
+revisions [@harmonjones1999]. Three refinements stand out.
+
+- **The "new look".** @cooper1984 argued that inconsistency per se matters less
+  than responsibility for producing a foreseeable aversive consequence. On this
+  view, a lie that harms no one produces little dissonance.
+- **Self-affirmation.** @steele1988 proposed that dissonance threatens the
+  global integrity of the self. People who have affirmed an important value in
+  an unrelated domain show less attitude change, as though their self-worth has
+  been restored by other means.
+- **The action-based model.** @harmonjones2015 argue that dissonance exists
+  because inconsistent cognitions interfere with effective action. Reducing
+  dissonance after a decision helps people commit to and carry out the chosen
+  course of action.
+
+Choice-induced preference change has also been observed in young children and
+in capuchin monkeys [@egan2007], which suggests that the tendency to devalue
+rejected options does not require sophisticated self-concepts or cultural
+norms about consistency.
+
+::: {.debate}
+**How robust is the evidence?** Two lines of critique have reshaped the field.
+First, @chen2010 showed that the classic free-choice paradigm contains a
+statistical artifact. Because choices reveal information about preferences that
+initial ratings measure with error, the chosen item will appear to rise and the
+rejected item to fall even if no attitude changes at all. Valid tests require
+control conditions in which ratings are collected before and after a choice
+that participants have not yet made, or designs that hold the informational
+value of the choice constant. Figure \@ref(fig:fig-aa-artifact) illustrates the
+problem.
+
+Second, a large multilab replication of the induced-compliance paradigm
+across 39 laboratories in 19 countries ($N$ = 4,898) did *not* find the core
+predicted difference between high-choice and low-choice conditions, although
+writing a counterattitudinal essay did shift attitudes relative to writing a
+neutral essay [@vaidis2024]. The authors concluded that the paradigm, at least
+in that form, does not provide robust evidence for dissonance. Other paradigms
+have received less large-scale scrutiny. A fair summary is that the broad idea that people rationalize their
+choices is well supported, while specific classic effects are less robust and
+smaller than textbooks long implied.
+:::
+
+```{r fig-aa-artifact, fig.cap = "Illustrative simulation of the Chen and Risen (2010) artifact. Preferences are fixed and never change. Ratings measure them with noise, and people choose between items that received similar first ratings. The apparent 'spread' between chosen and rejected items grows with measurement noise even though no attitude has changed.", fig.height = 3.6}
+set.seed(2010)
+spread_for <- function(noise, n = 20000) {
+  uA <- rnorm(n); uB <- rnorm(n)                          # stable true preferences
+  r1A <- uA + rnorm(n, 0, noise); r1B <- uB + rnorm(n, 0, noise)
+  close <- abs(r1A - r1B) < 0.25                           # pairs that look tied at first rating
+  r2A <- uA + rnorm(n, 0, noise); r2B <- uB + rnorm(n, 0, noise)
+  chooseA <- uA + rnorm(n, 0, 0.2) > uB + rnorm(n, 0, 0.2) # choice reflects true preference
+  chosen_change <- ifelse(chooseA, r2A - r1A, r2B - r1B)
+  rejected_change <- ifelse(chooseA, r2B - r1B, r2A - r1A)
+  mean((chosen_change - rejected_change)[close])
+}
+art <- data.frame(noise = seq(0, 1, by = 0.1))
+art$spread <- sapply(art$noise, spread_for)
+ggplot(art, aes(noise, spread)) +
+  geom_hline(yintercept = 0, colour = ink[["muted"]]) +
+  geom_line(colour = pal[["blue"]], linewidth = 1.1) +
+  geom_point(colour = pal[["blue"]]) +
+  labs(x = "Measurement noise in ratings (SD)",
+       y = "Apparent spreading of alternatives",
+       title = "Spreading without any change in attitude",
+       caption = "Illustrative simulation: 20,000 pairs per noise level, true preferences held constant.")
+```
+
+### Applications in business
+
+Marketing research adopted dissonance theory early, especially to explain
+**post-purchase dissonance**: the doubt that follows an important, costly, and
+irreversible purchase among close alternatives [@cummings1976].
+@sweeney2000 developed a scale that separates an emotional component
+(psychological discomfort after purchase) from cognitive components concerning
+the wisdom of the purchase and concern over whether one got a good deal. Table
+\@ref(tab:tab-aa-reduction) maps common reduction strategies to managerial
+levers.
+
+```{r tab-aa-reduction}
+tibble::tribble(
+  ~`Reduction strategy`, ~`Consumer example`, ~`Managerial lever`, ~Caution,
+  "Bolster the chosen option", "Reading positive reviews of the car just bought", "Welcome messages, owner communities, usage tips", "Reassurance must be credible or it signals doubt",
+  "Derogate the rejected option", "Recalling the rival's weaknesses", "Comparative information at the point of sale", "Overt attacks on rivals can trigger reactance",
+  "Increase perceived effort or commitment", "Valuing a hard-won status tier", "Earned loyalty tiers, onboarding rituals", "Effort that feels pointless breeds resentment",
+  "Trivialize the decision", "\"It was only a small upgrade\"", "Low-risk trials, easy downgrade options", "May reduce engagement with the product",
+  "Reverse the decision", "Returning the product", "Generous return policies reduce anticipated regret", "Returns are costly if dissonance is not addressed"
+) |>
+  book_table(caption = "Post-purchase dissonance reduction and managerial levers.")
+```
+
+::: {.business-case}
+**Post-purchase reassurance.** Many durable-goods and financial-services firms
+invest in communication that begins *after* the sale: welcome packs, onboarding
+calls, owner magazines, and first-month check-ins. Dissonance theory explains
+why. A customer who has just committed a large sum to one of several similar
+options is motivated to confirm the wisdom of the choice and is unusually
+receptive to supporting information (selective exposure). Reassurance that
+arrives in this window lowers returns, cancellations, and negative word of
+mouth. The same logic explains regulatory cooling-off periods for high-pressure
+sales contexts: they allow buyers to reverse decisions taken before dissonance
+reduction has set in.
+
+**Illustrative scenario.** A subscription mattress retailer notices that most
+returns occur in the third and fourth weeks. It tests a sequence of messages
+that explains the adjustment period, shares sleep-quality tips, and invites the
+customer to rate specific features. If dissonance is the mechanism, the
+messages should reduce returns most among customers who chose between two
+close models and least among customers who faced no real alternative.
+:::
+
+::: {.business-case}
+**Effort justification and loyalty.** Programs that make customers *work* for
+status, by accumulating qualifying activity, completing challenges, or
+assembling products, can raise valuation of the reward. The
+[IKEA effect](#ikea-effect) (Section \@ref(ikea-effect)) shows that people value products they assembled
+themselves more than identical pre-assembled products [@norton2012], a finding
+consistent with effort justification. The boundary condition matters for
+design: effort raises valuation only when the task is completed and the outcome
+is attributed to one's own choice. Effort that feels imposed, pointless, or
+that ends in failure produces frustration rather than commitment. Dissonance
+also helps explain [escalation of commitment](#escalation-of-commitment) (Section \@ref(escalation-of-commitment)):
+managers who chose a failing project may justify their choice by investing
+more rather than admitting error.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Customers who choose between two close alternatives will show greater
+  post-purchase selective exposure to brand communication than customers who
+  choose a clearly dominant option.
+- *H2.* The effect of a post-purchase reassurance message on product returns
+  will be stronger for high-price, low-reversibility purchases.
+- *H3.* Employees who publicly advocate a new policy under high perceived
+  choice will report more favourable attitudes toward the policy than employees
+  instructed to advocate it, and the difference will be smaller when a
+  self-affirmation opportunity is provided.
+
+**Designs.** Preregistered experiments with adequate power. Free-choice designs
+with Chen and Risen controls. Field experiments on post-purchase communication
+with returns or cancellations as outcomes. Panel data linking choice difficulty
+to later satisfaction and repurchase.
+
+**Measures.** Attitude before and after the act, perceived choice (manipulation
+check), dissonance discomfort [@elliot1994], post-purchase dissonance scale
+[@sweeney2000], information-search logs.
+:::
+
+::: {.pitfall}
+**Calling every rationalization "dissonance".** Many studies infer dissonance
+from the outcome (attitudes moved toward behaviour) without measuring the
+mediating discomfort or manipulating its moderators. The same outcome can arise
+from self-perception, from new information, or from a statistical artifact.
+Test the moderators that are unique to dissonance (choice, foreseeable
+consequences, misattribution of arousal) and measure discomfort directly.
+:::
+
+## Self-Perception Theory {#self-perception-theory}
+
+::: {.theory-card}
+**Core claim.** When internal cues are weak or ambiguous, people infer their own
+attitudes and feelings by observing their behaviour and the circumstances in
+which it occurs, much as an outside observer would.
+
+**Origins.** Social psychology, with roots in radical behaviourism. @bem1967 and
+@bem1972.
+
+**Level of analysis.** Individual.
+
+**Key constructs.** Behavioural cues, situational cues (external
+justification), internal cues, inference, overjustification, commitment.
+
+**Boundary conditions.** Strongest when prior attitudes are weak, ambiguous, or
+absent, and when behaviour is close to existing attitudes (within the latitude
+of acceptance). Weaker when people hold strong, accessible attitudes.
+
+**Related theories.** [Cognitive dissonance](#cognitive-dissonance-theory),
+[Attribution theory](#attribution-theory),
+[Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)),
+[Social information processing](#social-information-processing) (Section \@ref(social-information-processing)).
+:::
+
+### Core logic
+
+@bem1967 offered a radical alternative to dissonance theory. He argued that
+the participants in Festinger and Carlsmith's study did not need to experience
+any aversive tension. They simply asked themselves what their behaviour implied
+about their attitudes, just as an observer would. A person who says the task
+was interesting for twenty dollars was obviously doing it for the money. A
+person who says the same thing for one dollar must, on reflection, have found
+the task somewhat interesting. To support this view, Bem ran
+**interpersonal simulations**: observers who merely read a description of the
+procedure predicted the same pattern of attitudes that actual participants had
+reported.
+
+@bem1972 generalized the argument into a theory of self-knowledge. People come
+to know their own attitudes, emotions, and other internal states partly by
+inferring them from their overt behaviour and its context, to the extent that
+internal cues are weak, ambiguous, or uninterpretable. The theory therefore
+applies the logic of [attribution](#attribution-theory) to the self. When
+behaviour occurs without obvious external pressure, people attribute it to
+their own dispositions. When strong external reasons are present, they discount
+internal causes.
+
+### Mechanism
+
+Figure \@ref(fig:fig-aa-selfperception) contrasts the two routes. In
+self-perception, attitude change is a cool inference without arousal. In
+dissonance, it is a hot process driven by discomfort. @fazio1977 proposed a
+resolution that has stood the test of time: dissonance governs behaviour that
+falls clearly outside one's existing attitudes (the latitude of rejection),
+whereas self-perception governs behaviour that is only mildly discrepant or
+attitude-congruent (the latitude of acceptance).
+
+```{r fig-aa-selfperception, fig.cap = "Self-perception and dissonance as complementary routes from behaviour to attitude. Self-perception is an inference that requires no arousal and dominates when behaviour is close to existing attitudes. Dissonance involves aversive arousal and dominates when behaviour is clearly counterattitudinal (after Fazio, Zanna, and Cooper, 1977)."}
+mechanism_diagram(sprintf('
+  B  [label = "Observed own\\nbehaviour", %s]
+  C  [label = "Situational cues\\n(reward, pressure,\\nchoice)", %s]
+  SP [label = "Self-perception:\\ninference about\\nown disposition", %s]
+  DS [label = "Dissonance:\\naversive arousal", %s]
+  AT [label = "Attitude or\\nself-concept", %s]
+  FB [label = "Future behaviour\\n(consistent requests,\\ncontinued effort)", %s]
+  W  [label = "Weak or ambiguous\\nprior attitude", %s]
+  L  [label = "Discrepancy from\\nprior attitude", %s]
+  B -> SP
+  C -> SP
+  B -> DS
+  SP -> AT
+  DS -> AT
+  AT -> FB
+  W -> SP [style = dashed]
+  L -> DS [style = dashed, label = " large"]
+  L -> SP [style = dashed, label = " small"]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome,
+   node_outcome, node_moderator, node_moderator))
+```
+
+Table \@ref(tab:tab-aa-dissonance-sp) summarises how the two theories differ.
+
+```{r tab-aa-dissonance-sp}
+tibble::tribble(
+  ~Feature, ~`Cognitive dissonance`, ~`Self-perception`,
+  "Nature of process", "Motivational (aversive arousal)", "Inferential (cool observation)",
+  "Role of prior attitude", "Strong attitude creates the inconsistency", "Weak or absent attitude leaves room for inference",
+  "Domain of application", "Clearly counterattitudinal behaviour", "Attitude-congruent or mildly discrepant behaviour",
+  "Diagnostic evidence", "Arousal, discomfort, misattribution effects", "Observers reproduce actors' inferences",
+  "Key business uses", "Post-purchase reassurance, effort justification", "Foot-in-the-door, rewards design, small commitments",
+  "Classic sources", "Festinger (1957), Cooper & Fazio (1984)", "Bem (1967, 1972), Fazio et al. (1977)"
+) |>
+  book_table(caption = "Cognitive dissonance versus self-perception.")
+```
+
+### Evidence and extensions
+
+Two research streams carry the theory's most practical predictions.
+
+**The foot-in-the-door effect.** @freedman1966 asked homeowners to agree to a
+small request, such as signing a petition or displaying a small sign about
+safe driving. About two weeks later, a different person asked them to place a
+large, unattractive "Drive Carefully" sign on their lawn. Homeowners who had
+complied with the small request were far more likely to agree to the large one
+than homeowners approached only with the large request. The self-perception
+explanation is that complying with the first request changes how people see
+themselves ("I am the kind of person who supports good causes"), which makes
+the later request consistent with that self-view.
+
+**Overjustification.** If people infer their attitudes from behaviour and its
+causes, then a salient external reward for an activity that was already
+enjoyable should lead them to attribute their behaviour to the reward and
+lower their intrinsic interest. @lepper1973 found that preschool children who
+expected and received a reward for drawing later spent less free time drawing
+than children who were not rewarded. A meta-analysis confirmed that expected,
+tangible, performance-contingent rewards tend to undermine free-choice
+intrinsic motivation for interesting tasks [@deci1999]. This finding is
+developed in the chapter on [self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)).
+
+::: {.debate}
+**How large is the foot-in-the-door effect?** Meta-analyses show that the
+effect is real but modest and highly conditional. @beaman1983 found an average
+effect that was small and varied widely across studies. @burger1999 reviewed
+the literature through a multiple-process lens and concluded that the effect is
+most reliable when the first request is actually performed (not merely agreed
+to), when it is prosocial, when people are given a self-relevant label, and
+when the second request is a natural continuation of the first. Other
+processes, such as reciprocity or the desire to appear consistent, can work
+against the effect, which explains the many null findings. Practitioners who
+cite "foot-in-the-door" as a universal law overstate the evidence.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Foot-in-the-door in sales and fundraising.** Charities often start with a
+low-cost action, such as signing a petition, sharing a post, or answering a
+short survey, before asking for a donation. Software firms use the same logic
+in onboarding: small, completed actions (importing a contact list, inviting one
+colleague) precede requests for larger commitments such as a paid upgrade.
+Self-perception theory predicts that these sequences work best when the first
+step is freely chosen, actually performed, and framed in identity terms ("you
+are a supporter", "you are a power user"). It also predicts that paying people
+to take the first step can backfire, because the payment supplies an external
+explanation for the behaviour.
+
+**Illustrative scenario.** A wildlife charity compares three email sequences:
+(a) an immediate donation request, (b) a petition followed one week later by a
+donation request, and (c) the same petition with a thank-you message that
+labels signers as "conservation supporters". Self-perception theory predicts
+(c) > (b) > (a) in donation rates, with the largest gap among people who had no
+prior relationship with the charity, because their attitudes are weakest.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Users who complete a small, voluntary in-app action will be more likely
+  to accept a later premium offer than users who are shown the offer directly,
+  and the effect will be stronger for users with no prior brand experience.
+- *H2.* Introducing a cash reward for writing product reviews will reduce the
+  rate of unrewarded reviews after the reward ends.
+
+**Designs.** Sequential-request field experiments, A/B tests of onboarding
+flows, interpersonal-simulation studies, and experiments that cross behaviour
+with salient external justification.
+
+**Measures.** Compliance with target requests, self-reported attitudes and
+self-labels, free-choice persistence after rewards end, and measures of
+attitude strength (certainty, accessibility).
+:::
+
+::: {.pitfall}
+**Ignoring attitude strength.** Self-perception theory applies mainly when
+people do not already know what they think. Applying it to customers or
+employees with strong, well-formed attitudes predicts effects that will not
+appear. Measure prior attitude strength and test it as a moderator.
+:::
+
+## Attribution Theory {#attribution-theory}
+
+::: {.theory-card}
+**Core claim.** People act as intuitive scientists who infer the causes of
+behaviour and outcomes. The causes they infer, internal or external, stable or
+unstable, controllable or uncontrollable, determine their emotions,
+expectations, and actions toward others.
+
+**Origins.** Social psychology. @heider1958 founded the field. @kelley1967 and
+@kelley1973 formalized the covariation principle. @weiner1985 developed the
+dimensional model of attribution, emotion, and motivation. @ross1977a named the
+fundamental attribution error. @folkes1984 and @folkes1988 brought the theory
+into consumer research.
+
+**Level of analysis.** Individual perceiver, applied to dyads (customer-firm,
+manager-employee, investor-executive).
+
+**Key constructs.** Internal (dispositional) and external (situational) causes,
+consensus, distinctiveness, consistency, discounting and augmenting, locus,
+stability, controllability, correspondence bias, self-serving bias.
+
+**Boundary conditions.** Causal analysis is most active after unexpected,
+negative, or important events. Routine, positive outcomes often trigger little
+causal search. Culture shapes the relative weight placed on persons versus
+situations.
+
+**Related theories.** [Self-perception theory](#self-perception-theory),
+[Organizational justice](#organizational-justice) (Section \@ref(organizational-justice)),
+[Expectancy disconfirmation](#expectancy-disconfirmation) (Section \@ref(expectancy-disconfirmation)),
+[Sensemaking](#sensemaking) (Section \@ref(sensemaking)), [Self-construal](#self-construal) (Section \@ref(self-construal)).
+:::
+
+### Origins and intellectual history
+
+@heider1958 argued that ordinary people practise a "naive psychology": they
+try to understand the social world by identifying the stable dispositions that
+lie behind changing behaviour. His key distinction was between **personal**
+causes (ability, effort, intention) and **impersonal** or environmental causes
+(task difficulty, luck, situational pressure). How a person explains an event
+matters because it determines what they expect to happen next and whom they
+hold responsible.
+
+Two research programs built on Heider. @kelley1967 and @kelley1973 asked *how*
+people arrive at causal conclusions and proposed that they reason like
+analysts of variance. Weiner asked *what follows* from causal conclusions and
+showed that the dimensions of a cause shape emotion and motivation
+[@weiner1985]. A third line, beginning with @jones1967 and synthesized by
+@ross1977a, documented systematic biases in how people actually make
+attributions.
+
+### Core logic: Kelley's covariation model
+
+Kelley's **covariation principle** holds that people attribute an effect to the
+cause with which it covaries over time. Three kinds of information matter when
+someone explains why an actor responded to a stimulus in a particular way (for
+example, why a customer complained about a restaurant):
+
+- **Consensus.** Do other people respond to the same stimulus in the same way?
+- **Distinctiveness.** Does the actor respond this way only to this stimulus,
+  or to many stimuli?
+- **Consistency.** Does the actor respond this way to this stimulus across
+  time and situations?
+
+Table \@ref(tab:tab-aa-kelley) shows the three combinations that receive the
+clearest attributions.
+
+```{r tab-aa-kelley}
+tibble::tribble(
+  ~Consensus, ~Distinctiveness, ~Consistency, ~`Likely attribution`, ~`Example: a customer complains about a restaurant`,
+  "High", "High", "High", "Stimulus (external: the entity)", "Everyone complains about it. She rarely complains elsewhere. She complains every visit. The restaurant is the problem.",
+  "Low", "Low", "High", "Person (internal: the actor)", "No one else complains. She complains about every restaurant. She always complains. She is a chronic complainer.",
+  "Low", "High", "Low", "Circumstance (a particular occasion)", "No one else complains. She rarely complains elsewhere. She has not complained here before. Something unusual happened that night."
+) |>
+  book_table(caption = "Kelley's covariation model: three information patterns and the attributions they support.")
+```
+
+When people have only a single observation, Kelley proposed that they rely on
+**causal schemata**, including two principles that matter in business. Under
+the **discounting principle**, the role of a given cause is discounted if other
+plausible causes are present. A glowing review from a paid influencer is
+discounted because payment is an alternative explanation. Under the
+**augmenting principle**, a cause is judged stronger if the effect occurred
+despite an inhibiting factor. An employee who delivers results while
+understaffed is credited with more ability.
+
+### Mechanism: Weiner's dimensional model
+
+@weiner1985 showed that causes can be classified along three dimensions, each
+linked to distinct psychological consequences:
+
+- **Locus** (internal or external to the actor) affects self-esteem and pride.
+- **Stability** (permanent or temporary) affects expectations of future
+  outcomes, and therefore hope or hopelessness.
+- **Controllability** (could the actor have prevented it?) affects
+  responsibility judgements and other-directed emotions: anger when another
+  party could have controlled a negative outcome, sympathy when it could not,
+  and guilt when the self could have.
+
+@folkes1984 applied this framework to product failure. Consumers who attributed
+a failure to the firm (locus) felt more entitled to a refund and an apology.
+Those who saw the cause as stable expected future failures and preferred
+refunds to exchanges. Those who saw the cause as controllable by the firm felt
+more anger and more desire to hurt the firm's business. A field study of
+delayed airline passengers found the same pattern: delays seen as controllable
+by the airline produced more anger and lower intentions to fly the airline
+again [@folkes1987]. Figure \@ref(fig:fig-aa-weiner) summarises the chain.
+
+```{r fig-aa-weiner, fig.cap = "Weiner's attributional chain applied to a service failure. A negative and unexpected outcome triggers causal search. The perceived locus, stability, and controllability of the cause shape expectations and emotions, which in turn drive complaint, switching, word of mouth, and forgiveness (after Weiner, 1985, Folkes, 1984, 1988)."}
+mechanism_diagram(sprintf('
+  F  [label = "Negative, unexpected\\noutcome\\n(service failure)", %s]
+  S  [label = "Causal search", %s]
+  L  [label = "Locus\\n(firm vs. customer\\nvs. environment)", %s]
+  T  [label = "Stability\\n(will it recur?)", %s]
+  C  [label = "Controllability\\n(could the firm\\nhave prevented it?)", %s]
+  E1 [label = "Expectation of\\nfuture failure", %s]
+  E2 [label = "Anger vs.\\nsympathy", %s]
+  O  [label = "Complaint, switching,\\nnegative word of mouth,\\nor forgiveness", %s]
+  F -> S
+  S -> L
+  S -> T
+  S -> C
+  T -> E1
+  L -> E2
+  C -> E2
+  E1 -> O
+  E2 -> O
+', node_construct, node_mechanism, node_mechanism, node_mechanism, node_mechanism,
+   node_outcome, node_outcome, node_outcome))
+```
+
+Figure \@ref(fig:fig-aa-service) illustrates the managerial implication with
+simulated data. The same missed connection produces very different repurchase intentions
+depending on whether customers believe the firm could have prevented it, and an
+apology with compensation narrows, but does not close, the gap.
+
+```{r fig-aa-service, fig.cap = "Illustrative simulated experiment on service-failure attributions. Repurchase intention (1-7 scale) is lowest when customers attribute a missed connection to a cause the firm controlled, and recovery effort helps most in that condition. Simulated data (n = 150 per cell), with a qualitative pattern consistent with Folkes (1984) and Folkes, Koletsky, and Graham (1987). Bars show 95 percent confidence intervals.", fig.height = 3.9}
+set.seed(1984)
+cells <- expand.grid(
+  cause = c("Weather\n(external, uncontrollable)", "Staff no-show\n(firm, controllable)", "Customer late to gate\n(customer, internal)"),
+  recovery = c("No recovery", "Apology and compensation"),
+  stringsAsFactors = FALSE
+)
+cells$mu <- c(4.9, 2.6, 5.2, 5.4, 3.9, 5.4)
+sim <- cells[rep(seq_len(nrow(cells)), each = 150), ]
+sim$intent <- pmin(7, pmax(1, sim$mu + rnorm(nrow(sim), 0, 1.3)))
+summ <- sim |>
+  group_by(cause, recovery) |>
+  summarise(m = mean(intent), se = sd(intent) / sqrt(n()), .groups = "drop") |>
+  mutate(cause = factor(cause, levels = unique(cells$cause)),
+         recovery = factor(recovery, levels = c("No recovery", "Apology and compensation")))
+ggplot(summ, aes(cause, m, colour = recovery)) +
+  geom_pointrange(aes(ymin = m - 1.96 * se, ymax = m + 1.96 * se),
+                  position = position_dodge(width = 0.45), size = 0.5, linewidth = 0.8) +
+  scale_colour_manual(values = c("No recovery" = pal[["orange"]], "Apology and compensation" = pal[["blue"]])) +
+  scale_y_continuous(limits = c(1, 7), breaks = 1:7) +
+  labs(x = "Perceived cause of a missed flight connection", y = "Repurchase intention (1-7)", colour = NULL,
+       title = "Controllable failures are punished most",
+       caption = "Illustrative simulated data, not results from a published study.")
+```
+
+### Evidence and extensions: biases in attribution
+
+Kelley's model describes how a careful analyst *could* reason. Real perceivers
+take shortcuts. In a classic study, @jones1967 asked participants to read
+essays that either supported or opposed Fidel Castro's government in Cuba. Even
+when participants were told that the writer had been *assigned* the position,
+they inferred that the writer's true attitude corresponded to the essay.
+@ross1977a called the general tendency to underestimate situational
+influences and overestimate dispositional ones the **fundamental attribution
+error**. @gilbert1995 renamed it the **correspondence bias** and identified
+four causes: lack of awareness of situational constraints, unrealistic
+expectations about how situations affect behaviour, inflated categorizations of
+behaviour, and incomplete correction of an initial dispositional inference.
+
+The **self-serving bias** is a second well-documented pattern: people
+attribute success to themselves and failure to circumstances. Organizations do
+the same. Studies of letters to shareholders found that firms tended to credit
+good results to internal factors such as strategy and management and to blame
+poor results on external factors such as the economy or regulation
+[@bettman1983; @staw1983].
+
+::: {.debate}
+**Universal or cultural? Robust or fragile?** Three critiques qualify the
+classic picture. First, the actor-observer asymmetry, the claim that people
+explain their own behaviour situationally but others' dispositionally, is much
+weaker than once believed. A meta-analysis found an average asymmetry close to
+zero, with meaningful effects only under specific conditions [@malle2006].
+Second, the strength of the correspondence bias varies across cultures.
+@morris1994 found that American participants explained the same events more
+in terms of individual dispositions than Chinese participants, who gave more
+weight to situational and contextual factors (see
+[Self-construal](#self-construal) (Section \@ref(self-construal))). Third, the Jones and Harris effect itself
+has proved robust in many replications, but its magnitude depends on how
+diagnostic the behaviour appears and on whether perceivers are motivated and
+able to correct their first impressions [@gilbert1995]. The covariation model
+is better regarded as a normative benchmark than as a description of everyday
+reasoning.
+:::
+
+### Applications in business
+
+@folkes1988 and @weiner2000 show that attribution theory explains satisfaction,
+complaining, [word of mouth](#social-transmission) (Section \@ref(social-transmission)), product choice, and responses to endorsers.
+In services, the most important application is **service recovery**. Customers
+evaluate a recovery in light of who caused the failure and whether it could
+have been prevented. Compensation, speed, and apology all matter, but their
+effects depend on attributions [@smith1999]. A recovery that ignores blame (for
+example, offering a voucher while insisting nothing went wrong) may leave the
+anger produced by a controllable failure intact.
+
+::: {.business-case}
+**JetBlue and the February 2007 ice storm.** In February 2007 an ice storm on
+the US East Coast led JetBlue to cancel a large share of its flights, and some
+passengers were left on aircraft on the tarmac at New York's JFK airport for
+many hours. The storm was external and uncontrollable, but the length of the
+delays and the breakdown in rebooking were widely blamed on the airline's own
+operations. The company's response was framed in attributional terms: the
+founder and chief executive, David Neeleman, apologized publicly, accepted
+responsibility rather than blaming the weather, and the airline introduced a
+**Customer Bill of Rights** that promised specified compensation for future
+delays and cancellations. Attribution theory explains the
+logic. Accepting responsibility for the controllable part of the failure
+addresses anger directly, and a public commitment to compensation signals that
+the cause is being made unstable (it will not recur).
+:::
+
+::: {.business-case}
+**Crisis communication and the Tylenol recall.** In 1982, several people in
+the Chicago area died after taking Extra-Strength Tylenol capsules that had
+been laced with cyanide. Johnson & Johnson was a victim of criminal tampering,
+an external and uncontrollable cause, yet it withdrew the product nationally,
+cooperated with authorities, and reintroduced Tylenol in tamper-resistant
+packaging. The case is a standard example in crisis communication because it
+matches the prescriptions of **situational crisis communication theory**
+[@coombs2007], which builds directly on attribution theory. Stakeholders
+attribute crisis responsibility to an organization based on the type of crisis
+(victim, accidental, or preventable), and organizations should match their
+response to that attribution. Victim crises call for instruction and care,
+preventable crises for full apology and corrective action. Firms that deny
+responsibility for a crisis that stakeholders see as preventable tend to
+amplify reputational damage.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The negative effect of a service failure on repurchase intention will
+  be stronger when customers perceive the cause as controllable by the firm,
+  and an apology will attenuate this effect more than compensation alone.
+- *H2.* Firms will use more external attributions in letters to shareholders
+  after poor performance than after good performance, and this tendency will
+  be stronger when the CEO is new.
+- *H3.* Consumers will discount positive product reviews when the reviewer is
+  known to have been compensated, and the discount will be smaller when the
+  review mentions a product weakness (augmenting).
+
+**Designs.** Scenario and field experiments manipulating cause information.
+Text analysis of complaints, reviews, earnings calls, and annual reports using
+attribution dictionaries. Panel data linking attributions to churn.
+
+**Measures.** Perceived locus, stability, and controllability (multi-item
+scales derived from Weiner's dimensions), anger, sympathy, blame, repurchase
+intention, complaint behaviour, word of mouth.
+:::
+
+::: {.pitfall}
+**Assuming customers share the firm's causal model.** Managers often explain
+failures in terms of root causes they know (a supplier outage, an IT
+migration) and assume customers will see the cause as external. Customers
+attribute based on what they see and on covariation they can observe. If
+competitors did not fail, consensus is low and the firm will be blamed. Measure
+customers' attributions directly rather than inferring them from the
+operational cause.
+:::
+
+## Balance Theory {#balance-theory}
+
+::: {.theory-card}
+**Core claim.** People prefer consistent configurations of sentiment among
+themselves, another person, and an object. A triad is balanced when the
+product of its three relations is positive. Unbalanced triads create tension
+that people resolve by changing one relation.
+
+**Origins.** Social psychology. @heider1946, extended to signed networks by
+@cartwright1956.
+
+**Level of analysis.** Triad (person P, other O, object X). In network form,
+any group of three or more actors.
+
+**Key constructs.** Sentiment relations (liking, disliking), unit relations
+(belonging, association), balanced and unbalanced triads, pressure toward
+balance, structural balance.
+
+**Boundary conditions.** Balance pressures are strongest when the relations
+are salient and important to the perceiver. They are weaker for loose
+associations and when people tolerate ambivalence.
+
+**Related theories.** [Cognitive dissonance](#cognitive-dissonance-theory),
+[Homophily](#homophily) (Section \@ref(homophily)), [Structural holes](#structural-holes) (Section \@ref(structural-holes)),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)).
+:::
+
+### Core logic
+
+@heider1946 analysed the cognitive field of a person (P) who perceives another
+person (O) and an object or issue (X). Each relation is either positive
+(liking, approving, belonging together) or negative (disliking, rejecting). A
+triad is **balanced** when all three relations are positive or when exactly two
+are negative. "My friend likes what I like" is balanced. So is "my enemy likes
+what I dislike". A triad with exactly one negative relation is unbalanced: "I
+like the endorser, the endorser likes the brand, but I dislike the brand". The
+theory predicts that people experience strain in unbalanced configurations and
+restore balance by changing whichever relation is weakest. Heider treated the
+all-negative triad as ambiguous. @cartwright1956 formalized balance with
+signed graphs, in which a cycle is balanced if the product of its signs is
+positive. This made the all-negative triad unbalanced and allowed balance to be
+assessed in networks of any size. Figure \@ref(fig:fig-aa-balance) shows the
+four configurations.
+
+```{r fig-aa-balance, fig.cap = "Heider's P-O-X triads applied to celebrity endorsement. P is the consumer, O the endorser, and X the brand. Solid blue lines are positive relations, dashed orange lines negative relations. A triad is balanced when the product of the three signs is positive. Heider treated the all-negative triad as ambiguous. Cartwright and Harary (1956) classify it as unbalanced.", fig.height = 5}
+nodes <- data.frame(id = c("P", "O", "X"), x = c(0, 1, 2), y = c(0, 1.6, 0),
+                    lab = c("P\nconsumer", "O\nendorser", "X\nbrand"))
+triads <- list(
+  "Balanced: + + +" = c(1, 1, 1),
+  "Balanced: two negatives" = c(-1, 1, -1),
+  "Unbalanced: one negative" = c(1, 1, -1),
+  "Unbalanced (Heider: ambiguous): - - -" = c(-1, -1, -1)
+)
+edges <- bind_rows(lapply(names(triads), function(nm) {
+  s <- triads[[nm]]
+  data.frame(panel = nm,
+             x = c(0, 1, 0), y = c(0, 1.6, 0), xend = c(1, 2, 2), yend = c(1.6, 0, 0),
+             sign = ifelse(s > 0, "Positive", "Negative"),
+             lx = c(0.38, 1.62, 1), ly = c(0.9, 0.9, -0.22))
+}))
+edges$panel <- factor(edges$panel, levels = names(triads))
+nodes_p <- merge(nodes, data.frame(panel = factor(names(triads), levels = names(triads))))
+ggplot() +
+  geom_segment(data = edges, aes(x, y, xend = xend, yend = yend, colour = sign, linetype = sign),
+               linewidth = 1.1) +
+  geom_text(data = edges, aes(lx, ly, label = ifelse(sign == "Positive", "+", "-")),
+            size = 6, colour = ink[["primary"]], fontface = "bold") +
+  geom_label(data = nodes_p, aes(x, y, label = lab), size = 3, colour = ink[["primary"]],
+             fill = "#eef4fb", lineheight = 0.9) +
+  facet_wrap(~ panel, ncol = 2) +
+  scale_colour_manual(values = c(Positive = pal[["blue"]], Negative = pal[["orange"]])) +
+  scale_linetype_manual(values = c(Positive = "solid", Negative = "dashed")) +
+  coord_cartesian(xlim = c(-0.35, 2.35), ylim = c(-0.45, 1.95)) +
+  labs(colour = "Relation", linetype = "Relation",
+       caption = "Conceptual diagram, not data.") +
+  theme_void(base_size = 11) +
+  theme(strip.text = element_text(face = "bold", hjust = 0, colour = ink[["primary"]]),
+        legend.position = "top", legend.justification = "left",
+        plot.caption = element_text(colour = ink[["muted"]], size = 8, hjust = 0))
+```
+
+### Evidence and extensions
+
+Balance theory has two lives. As a theory of individual cognition, it is a
+member of the family of **cognitive consistency** theories, alongside
+dissonance theory, and its predictions about preference for balanced
+configurations are well supported in judgement tasks. As a theory of social
+structure, generalized by @cartwright1956, it predicts that groups of friends
+and enemies will tend to sort into internally positive and mutually negative
+clusters. Large-scale studies of signed online networks (in which users mark
+others as trusted or distrusted, or vote for or against each other) found that
+balance explains some patterns of positive and negative ties, but that a
+status-based account fits directed relationships better [@leskovec2010].
+Balance is therefore one tendency among several, not a law of social structure.
+
+### Applications in business
+
+Celebrity endorsement is the most direct application. The endorser (O) is
+chosen because consumers (P) like the endorser. The endorsement creates a
+positive unit relation between O and the brand (X). Balance pressures then
+push consumers toward liking the brand. @mccracken1989 offered a complementary
+account in which endorsers transfer cultural meanings to products, but the
+balance logic predicts a specific risk: if the endorser becomes disliked, the
+same unit relation now pushes the brand down. Experiments show that negative
+information about an endorser can lower evaluations of the endorsed brand under
+some conditions, particularly when the association between them is strong
+[@till1998].
+
+::: {.business-case}
+**Endorser scandals and the balance dilemma.** When the golfer Tiger Woods
+became the subject of a widely reported personal scandal in late 2009, several
+sponsors, including the consulting firm Accenture, ended their relationships
+with him within weeks, while Nike kept him under contract. Balance theory
+frames the decision. For a brand whose positioning depended on the endorser's
+personal integrity, a newly negative P-O relation threatened to turn the
+P-O-X triad unbalanced and pull brand attitudes down, so severing the O-X unit
+relation restored balance. For a brand associated with athletic performance,
+where many consumers' liking of the athlete's sporting excellence persisted,
+the triad could remain balanced on the relevant dimension. The theory does not
+say which decision was correct. It identifies what each decision bet on: which
+relation in the triad consumers would change.
+:::
+
+::: {.business-case}
+**Illustrative scenario: cause-related marketing.** A coffee chain partners
+with a polarizing advocacy group. Among customers who like the group, the
+partnership creates a balanced triad and raises brand liking. Among customers
+who dislike the group, the triad becomes unbalanced, and they can restore
+balance either by disliking the brand or by discounting the partnership as
+insincere. Balance theory predicts polarization of brand attitudes, which is
+why firms test cause partnerships separately within customer segments rather
+than on average.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Negative news about an endorser will reduce brand
+attitudes more when the endorser has been associated with the brand for longer
+(stronger unit relation). *H2.* Ending an endorsement contract promptly after a
+scandal will attenuate the decline in brand attitudes among consumers who
+dislike the endorser. **Designs.** Event studies around endorser scandals,
+experiments that manipulate P-O and O-X relations, signed-network analysis of
+online trust and distrust ties. **Measures.** Attitudes toward endorser and
+brand, perceived association strength, signed tie data.
+:::
+
+::: {.pitfall}
+**Treating the triad as closed.** Real consumers hold many attitudes at once,
+and they can restore balance by differentiating ("I dislike his conduct but
+admire his golf") rather than by changing a whole relation. Measure the
+specific attitude dimension that the endorsement activates.
+:::
+
+## Social Cognitive Theory {#social-cognitive-theory}
+
+::: {.theory-card}
+**Core claim.** People learn not only by doing but by observing others, and
+they act on what they have learned when they expect it to pay off and believe
+they can do it. Beliefs in one's own capability, **self-efficacy**, are a
+central determinant of effort, persistence, and performance.
+
+**Origins.** Psychology. @bandura1961 on observational learning, @bandura1977
+on self-efficacy, @bandura1986 for the integrated social cognitive theory, and
+@bandura1997 for the full treatment of self-efficacy.
+
+**Level of analysis.** Individual in a social environment, with extensions to
+collective efficacy in groups.
+
+**Key constructs.** Observational learning (attention, retention, production,
+motivation), vicarious reinforcement, self-efficacy, outcome expectancies,
+triadic reciprocal causation, self-regulation.
+
+**Boundary conditions.** Self-efficacy predicts performance most strongly for
+tasks that are well defined and within the person's control. Efficacy beliefs
+are domain-specific: confidence in public speaking does not imply confidence in
+financial modelling.
+
+**Related theories.** [Expectancy theory](#expectancy-theory) (Section \@ref(expectancy-theory)),
+[Goal-setting theory](#goal-setting-theory) (Section \@ref(goal-setting-theory)),
+[Technology acceptance model](#technology-acceptance-model) (Section \@ref(technology-acceptance-model)),
+[Theory of planned behavior](#theory-of-planned-behavior) (Section \@ref(theory-of-planned-behavior)),
+[Self-control](#self-control) (Section \@ref(self-control)).
+:::
+
+### Origins and intellectual history
+
+Mid-century learning theory explained behaviour through direct reinforcement.
+@bandura1961 showed that this was incomplete. Children who watched an adult
+model behave aggressively toward an inflatable "Bobo" doll later imitated the
+specific aggressive acts, without having been reinforced for them, whereas
+children who watched a non-aggressive model did not. People can acquire
+complex behaviour simply by observing others and the consequences others
+receive.
+
+@bandura1977 added the construct that made the theory influential well beyond
+psychology. He distinguished **outcome expectancies** (beliefs that a behaviour
+will produce an outcome) from **efficacy expectancies** (beliefs that one can
+successfully perform the behaviour). A salesperson may be convinced that cold
+calling produces sales but still avoid it if she doubts her ability to do it
+well. @bandura1986 integrated these ideas into **social cognitive theory**,
+which explains human functioning through **triadic reciprocal causation**:
+personal factors (cognition, affect, efficacy beliefs), behaviour, and the
+environment all influence one another.
+
+### Core logic and mechanism
+
+Observational learning involves four subprocesses: **attention** (noticing the
+model's behaviour), **retention** (remembering it), **production** (being able
+to reproduce it), and **motivation** (expecting reward for performing it).
+Models are more influential when they are similar to the observer, competent,
+and visibly rewarded. Self-efficacy then shapes which behaviours people attempt,
+how much effort they invest, and how long they persist after setbacks.
+Figure \@ref(fig:fig-aa-triadic) depicts the triadic structure and the place of
+self-efficacy within it.
+
+```{r fig-aa-triadic, fig.cap = "Social cognitive theory. Personal factors, behaviour, and environment influence one another (triadic reciprocal causation, Bandura, 1986). Self-efficacy beliefs are built from four sources and shape choice of activities, effort, and persistence (Bandura, 1977)."}
+mechanism_diagram(sprintf('
+  S1 [label = "Mastery experiences", %s]
+  S2 [label = "Vicarious experience\\n(modeling)", %s]
+  S3 [label = "Verbal persuasion", %s]
+  S4 [label = "Physiological and\\naffective states", %s]
+  P  [label = "Person:\\nself-efficacy,\\noutcome expectancies", %s]
+  B  [label = "Behaviour:\\nchoice, effort,\\npersistence", %s]
+  E  [label = "Environment:\\nmodels, feedback,\\nresources", %s]
+  S1 -> P
+  S2 -> P
+  S3 -> P
+  S4 -> P
+  P -> B [dir = both]
+  B -> E [dir = both]
+  E -> P [dir = both, constraint = false]
+', node_moderator, node_moderator, node_moderator, node_moderator,
+   node_mechanism, node_outcome, node_construct))
+```
+
+Bandura identified four sources of efficacy beliefs, summarized in Table
+\@ref(tab:tab-aa-efficacy) with their implications for training and
+management.
+
+```{r tab-aa-efficacy}
+tibble::tribble(
+  ~Source, ~`How it builds efficacy`, ~`Relative strength`, ~`Training and management lever`,
+  "Mastery experiences", "Succeeding at a task, especially after effort and setbacks", "Strongest", "Graduated practice, early wins, simulations",
+  "Vicarious experience", "Seeing similar others succeed", "Moderate, strongest when the model is similar", "Peer demonstrations, behaviour modeling videos, shadowing",
+  "Verbal persuasion", "Credible encouragement and feedback", "Weaker, easily undone by failure", "Coaching that is specific and realistic",
+  "Physiological and affective states", "Interpreting arousal as readiness rather than inability", "Variable", "Stress management, reframing nervousness"
+) |>
+  book_table(caption = "Four sources of self-efficacy (Bandura, 1977, 1997) and how organizations can use them.")
+```
+
+### Evidence and extensions
+
+The evidence for self-efficacy as a predictor of work performance is
+substantial. @stajkovic1998 meta-analysed 114 studies and found a weighted
+average correlation of about .38 between self-efficacy and work-related
+performance. The relationship was stronger for less complex tasks and in
+laboratory than in field settings, which is consistent with the boundary
+condition that efficacy matters most when performance is within the person's
+control. In information systems, @compeau1995 developed a measure of
+**computer self-efficacy** and showed that it shaped expectations, affect, and
+use of computers, a construct that now appears in many
+[technology acceptance](#technology-acceptance-model) (Section \@ref(technology-acceptance-model)) models.
+
+**Behaviour modeling training**, which applies observational learning by
+showing trainees a model performing a skill, followed by practice and feedback,
+is one of the best-supported training methods. A meta-analysis found that its
+effects were largest on knowledge and skills measured at the end of training
+and smaller, though still positive, on job behaviour. Transfer to the job was
+greater when trainees saw both positive and negative models and when the work
+environment supported and rewarded the new behaviour [@taylor2005].
+
+::: {.debate}
+**Can self-efficacy be too high?** A debate in applied psychology asks whether
+the efficacy-performance correlation reflects a causal effect of efficacy or a
+reflection of past performance. Using within-person designs, @vancouver2002
+found that higher self-efficacy could *reduce* subsequent performance under
+some conditions, apparently because confident people invest less effort or
+allocate it less carefully. @bandura2003 replied that between-person evidence,
+experimental manipulations, and the full set of studies support a positive
+causal role, and that the negative effects arise under narrow conditions. The
+practical resolution is that well-calibrated efficacy helps, while inflated
+efficacy that is disconnected from feedback can breed complacency. The
+behaviour modeling literature, by contrast, rests on randomized evaluations
+and is among the more robust findings in training research. The original Bobo
+doll studies used small samples and laboratory measures of imitation, and
+their generalization to real-world aggression remains contested.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Training and self-efficacy.** Social cognitive theory underpins much of
+modern corporate training. Sales enablement programs pair new representatives
+with high performers (vicarious experience), use role-play and simulations that
+build in early successes (mastery), and provide specific coaching (verbal
+persuasion). The theory also explains why training that transmits knowledge
+often fails to change behaviour: knowing what to do is not the same as
+believing one can do it under pressure.
+
+**Illustrative scenario.** A contact-centre operator introduces a new
+complaint-handling protocol. Version A uses a slide presentation and a
+knowledge quiz. Version B shows video models of agents handling difficult
+calls (including one who makes and corrects a mistake), followed by graduated
+role-plays from easy to hard calls and specific feedback. Social cognitive
+theory predicts similar quiz scores but higher self-efficacy and better
+protocol adherence on live calls in Version B, with the advantage largest for
+new agents whose efficacy beliefs are least formed.
+:::
+
+::: {.business-case}
+**Customer self-efficacy and digital adoption.** Customers also need efficacy
+to adopt new technologies and services. Banks and software firms that move
+customers to self-service channels use tutorials that show users like the
+customer completing tasks, guided first transactions that guarantee success,
+and progress indicators that make mastery visible. These are direct
+applications of the four sources of efficacy to customer onboarding, and they
+connect social cognitive theory to the
+[facilitating conditions](#utaut) (Section \@ref(utaut)) construct in adoption research.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Employees who complete behaviour modeling training with mixed positive
+  and negative models will show greater on-the-job use of a new skill than
+  employees who see only positive models, mediated by task-specific
+  self-efficacy.
+- *H2.* The positive effect of self-efficacy on sales performance will be
+  weaker for complex, long-cycle enterprise sales than for transactional sales.
+- *H3.* Customers who complete a guided first transaction will show higher
+  self-efficacy and greater continued use of a self-service app than customers
+  who receive only written instructions.
+
+**Designs.** Randomized training evaluations, within-person longitudinal
+designs that separate efficacy from prior performance, field experiments in
+customer onboarding.
+
+**Measures.** Task-specific self-efficacy scales built following Bandura's
+guidance (strength and level of confidence for graded tasks), computer
+self-efficacy [@compeau1995], objective performance, transfer measures.
+:::
+
+::: {.pitfall}
+**Measuring general confidence instead of task-specific efficacy.** Self-efficacy
+is defined relative to a specific task and level of performance. Generic
+items such as "I am confident in my abilities" measure something closer to
+self-esteem and weaken predictions. Build items that refer to the actual tasks
+and difficulty levels in the setting studied, and measure efficacy before the
+performance it is meant to predict.
+:::
+
+## Reactance Theory {#reactance-theory}
+
+::: {.theory-card}
+**Core claim.** When people perceive that a freedom they value is eliminated or
+threatened, they experience **psychological reactance**, a motivational state
+directed at restoring that freedom. Reactance can make a forbidden or scarce
+option more attractive and can push people to do the opposite of what a
+persuader wants.
+
+**Origins.** Social psychology. @brehm1966, @brehm1981. Consumer applications by
+@clee1980. Recent review by @steindl2015.
+
+**Level of analysis.** Individual.
+
+**Key constructs.** Free behaviours, threat to freedom, elimination of freedom,
+magnitude of reactance, restoration (direct, by implication, through increased
+attractiveness of the threatened option), trait reactance.
+
+**Boundary conditions.** People must believe they had the freedom in the first
+place and must value it. Reactance is greater when the threatened freedom is
+important, when the threat is strong or illegitimate, and when many freedoms
+are implicated. When people believe that control cannot be regained, reactance
+can give way to helplessness.
+
+**Related theories.** [Persuasion knowledge model](#persuasion-knowledge-model) (Section \@ref(persuasion-knowledge-model)),
+[Elaboration likelihood model](#elaboration-likelihood-model) (Section \@ref(elaboration-likelihood-model)),
+[Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)),
+[Loss aversion](#loss-aversion) (Section \@ref(loss-aversion)), [Choice architecture](#choice-architecture) (Section \@ref(choice-architecture)).
+:::
+
+### Core logic
+
+@brehm1966 began from the premise that people believe they are free to engage
+in a set of behaviours. When an external force threatens or eliminates one of
+those freedoms, people are motivated to restore it. They can do so directly, by
+performing the threatened behaviour, or indirectly, by watching others perform
+it, by derogating the source of the threat, or by increasing their liking for
+the threatened option. @brehm1981 elaborated the determinants of reactance
+magnitude: the importance of the threatened freedom, the proportion of
+freedoms threatened, and the strength of the threat.
+
+The theory explains several marketing phenomena that puzzle simpler models.
+@clee1980 reviewed consumer applications including scarcity, high-pressure
+selling, and restrictions on product availability. In a well-known experiment,
+@worchel1975 found that cookies from a jar containing two cookies were rated
+more desirable than identical cookies from a jar containing ten, and that the
+effect was strongest when scarcity resulted from other people's demand. A
+meta-analysis of scarcity research concluded that scarcity generally enhances
+the perceived value of objects [@lynn1991]. Reactance is one of several
+explanations for this effect, alongside quality inferences and uniqueness
+motives.
+
+### Mechanism
+
+Contemporary research treats reactance as a measurable state. @dillard2005
+proposed and supported an **intertwined model**, in which reactance consists of
+anger and negative cognitions (counterarguments) that are fused together. A
+meta-analysis supported the intertwined model over alternatives [@rains2013].
+Figure \@ref(fig:fig-aa-reactance) summarizes the process.
+
+```{r fig-aa-reactance, fig.cap = "Mechanism of psychological reactance. A message or restriction that threatens a valued freedom produces reactance, measured as intertwined anger and counterarguing (Dillard and Shen, 2005). Reactance leads people to restore the freedom directly or indirectly. Freedom-affirming language and legitimate, autonomy-supportive framing reduce the threat."}
+mechanism_diagram(sprintf('
+  T  [label = "Freedom threat\\n(pressure, restriction,\\nscarcity, unsolicited advice)", %s]
+  R  [label = "Reactance\\n(anger + counterarguing)", %s]
+  O1 [label = "Restore freedom directly\\n(boomerang: do the opposite)", %s]
+  O2 [label = "Increased attractiveness\\nof the restricted option", %s]
+  O3 [label = "Derogate the source,\\nreject the message", %s]
+  M1 [label = "Importance of\\nthe freedom", %s]
+  M2 [label = "Dominant, controlling\\nlanguage", %s]
+  M3 [label = "Trait reactance", %s]
+  M4 [label = "Freedom-affirming\\nlanguage", %s]
+  T -> R
+  R -> O1
+  R -> O2
+  R -> O3
+  M1 -> R [style = dashed]
+  M2 -> R [style = dashed]
+  M3 -> R [style = dashed]
+  M4 -> R [style = dashed, label = " reduces"]
+', node_construct, node_mechanism, node_outcome, node_outcome, node_outcome,
+   node_moderator, node_moderator, node_moderator, node_moderator))
+```
+
+Reactance implies that persuasive pressure has diminishing and eventually
+negative returns. Figure \@ref(fig:fig-aa-pressure) sketches the stylised
+pattern. Moderate pressure informs and motivates, but beyond some point each
+increase in pressure adds more reactance than persuasion. Explicitly affirming
+the audience's freedom to decline shifts the curve upward and to the right.
+
+```{r fig-aa-pressure, fig.cap = "Stylised relationship between the intensity of persuasive pressure and compliance. Compliance first rises and then falls as reactance grows. Freedom-affirming language ('but you are free to decline') reduces the reactance penalty. Illustrative curves, not empirical estimates.", fig.height = 3.8}
+pressure <- seq(0, 10, by = 0.1)
+press <- bind_rows(
+  data.frame(pressure, compliance = 0.15 + 0.10 * pressure - 0.0105 * pressure^2,
+             framing = "Controlling language"),
+  data.frame(pressure, compliance = 0.17 + 0.10 * pressure - 0.0072 * pressure^2,
+             framing = "Freedom-affirming language")
+)
+peaks <- press |> group_by(framing) |> slice_max(compliance, n = 1)
+ggplot(press, aes(pressure, compliance, colour = framing)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(data = peaks, size = 3) +
+  scale_colour_manual(values = c("Controlling language" = pal[["orange"]],
+                                 "Freedom-affirming language" = pal[["blue"]])) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 0.6)) +
+  annotate("text", x = 9.7, y = 0.04, label = "Reactance dominates", hjust = 1,
+           size = 3.3, colour = ink[["secondary"]]) +
+  labs(x = "Intensity of persuasive pressure (stylised index)", y = "Probability of compliance",
+       colour = NULL, title = "Pressure helps, then hurts",
+       caption = "Stylised curves illustrating the logic of reactance theory. Not estimated from data.")
+```
+
+### Evidence and extensions
+
+Reactance research has grown well beyond the laboratory [@steindl2015].
+
+- **Recommendations and advice.** @fitzsimons2004 found that unsolicited
+  recommendations, especially those that contradicted consumers' initial
+  impressions, could lead consumers to choose *against* the recommended
+  option.
+- **Personalization.** @white2008 showed that highly personalized email
+  solicitations could provoke reactance when the personalization was not
+  justified by a clear benefit to the recipient, reducing response rather than
+  increasing it.
+- **Health and public communication.** Controlling, dogmatic language ("you
+  must", "you have to") produces more reactance than autonomy-supportive
+  language, which reduces the persuasiveness of health messages
+  [@dillard2005; @rains2013].
+- **Freedom affirmation.** The "but you are free" technique, adding a reminder
+  that the target may refuse, produces a modest but reliable increase in
+  compliance across studies [@carpenter2013].
+
+::: {.debate}
+**Measurement, culture, and replication.** For decades reactance was inferred
+from its outcomes, which made the theory hard to falsify: almost any boomerang
+effect could be labelled reactance after the fact. The intertwined-model
+measures of anger and counterarguing have improved matters
+[@dillard2005; @rains2013], as have trait reactance scales. @steindl2015
+review evidence that reactance can be experienced vicariously (when others'
+freedoms are threatened) and that its triggers vary across cultures, with
+threats to collective rather than individual freedoms more potent in some
+collectivistic contexts. Large preregistered replications of the classic
+reactance paradigms are scarce, and effect sizes in the "but you are free"
+literature are small and heterogeneous. The safest claim is directional:
+controlling pressure carries a reactance cost that persuaders systematically
+underestimate.
+:::
+
+### Applications in business
+
+Table \@ref(tab:tab-aa-reactance) maps common commercial tactics to the
+freedom they may threaten and to lower-reactance alternatives.
+
+```{r tab-aa-reactance}
+tibble::tribble(
+  ~Tactic, ~`Freedom threatened`, ~`Likely reactance response`, ~`Lower-reactance alternative`,
+  "Countdown timers and \"only 2 left\"", "Freedom to deliberate", "Distrust, abandonment of the basket", "Accurate availability information, price holds",
+  "Aggressive upselling", "Freedom to choose the basic option", "Choosing the cheapest option, complaint", "Side-by-side comparison with a clear default",
+  "Removing a popular product", "Freedom to buy the familiar option", "Increased desire for the removed product, protest", "Phased transition, retaining a legacy version",
+  "Unsolicited recommendations", "Freedom to decide independently", "Choosing against the recommendation", "Recommendations on request, with reasons",
+  "Highly personal targeting", "Freedom from being monitored", "Ignoring or unsubscribing", "Transparent explanation of why an offer is shown",
+  "Mandatory policies at work", "Autonomy over how work is done", "Minimal compliance, workarounds", "Explain the rationale, allow choice in implementation"
+) |>
+  book_table(caption = "Commercial tactics, the freedoms they threaten, and lower-reactance alternatives.")
+```
+
+::: {.business-case}
+**New Coke and the value of a lost freedom.** In April 1985 the Coca-Cola
+Company replaced its flagship formula with a sweeter reformulation that had
+performed well in blind taste tests. The withdrawal of the original product
+provoked a wave of consumer protest, and within about three months the company
+brought the original formula back as "Coca-Cola Classic". Reactance theory
+offers one explanation for why taste tests misled. The tests measured
+preference between two *available* options, but the launch *eliminated* a
+familiar option, and eliminated freedoms are valued more than freely available
+ones. Brand attachment and identity motives also mattered, which is why the
+case is best read as a combination of reactance and
+[loss aversion](#loss-aversion) (Section \@ref(loss-aversion)) rather than as a pure test of either.
+:::
+
+::: {.business-case}
+**Scarcity and "you're free to choose" messaging.** Online retailers and travel
+sites use scarcity cues and countdown timers to accelerate purchase. Genuine
+scarcity can raise perceived value [@lynn1991], but cues that customers
+recognize as manipulative trigger reactance and erode trust. In 2019 the UK
+Competition and Markets Authority secured commitments from several large
+hotel booking sites to stop giving false impressions of room availability and
+popularity, showing that regulators also treat such pressure as a consumer
+protection issue. Reactance theory suggests a different design: give accurate
+availability information, let customers hold a price or save a choice, and
+explicitly affirm their freedom to decide later. Such framing sacrifices some
+immediate conversion but reduces the reactance penalty in abandonment, trust,
+and repeat purchase.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Countdown timers will increase immediate conversion but reduce repeat
+  purchase, and the negative effect will be mediated by state reactance.
+- *H2.* Adding a freedom-affirming statement to a donation request will increase
+  donations more for recipients high in trait reactance.
+- *H3.* Unsolicited product recommendations will reduce choice of the
+  recommended item when they contradict the consumer's stated preference.
+
+**Designs.** Online experiments manipulating message language and restriction,
+field experiments on e-commerce pages, natural experiments around product
+withdrawals or regulatory restrictions.
+
+**Measures.** State reactance as anger and counterarguing [@dillard2005],
+trait reactance scales, perceived threat to freedom, choice share of restricted
+options, unsubscribe and complaint rates.
+:::
+
+::: {.pitfall}
+**Explaining every backfire as reactance.** Reactance is easy to invoke after
+a campaign fails. Unless the study shows that a freedom was perceived as
+threatened and measures the reactance state, alternative explanations
+(irritation with repetition, distrust from [persuasion knowledge](#persuasion-knowledge-model) (Section \@ref(persuasion-knowledge-model)), or simply weak
+arguments) remain open. Manipulate the freedom threat directly and measure
+anger and counterarguing as mediators.
+:::
+
+## Chapter Summary {#attitudes-attribution-summary}
+
+::: {.key-takeaways}
+- **Behaviour shapes attitudes.** People rationalize freely chosen, effortful,
+  and irrevocable acts [@festinger1957] and infer their attitudes from their
+  behaviour when internal cues are weak [@bem1972].
+- Classic dissonance paradigms are less robust than once thought. The
+  free-choice paradigm contains a statistical artifact [@chen2010], and a large
+  multilab test did not reproduce the core induced-compliance effect
+  [@vaidis2024].
+- **Attributions drive emotions and actions.** Covariation information shapes
+  whether people blame persons or situations [@kelley1973], and the locus,
+  stability, and controllability of a cause shape anger, sympathy, and
+  expectations [@weiner1985].
+- In service failures and crises, perceived **controllability** is the
+  attribution that matters most for customer anger and switching
+  [@folkes1984; @coombs2007].
+- **Balance theory** explains endorsement and its risks: liked endorsers lift
+  brands, and disliked endorsers drag them down [@heider1946; @till1998].
+- **Self-efficacy** is a robust predictor of performance, built mainly through
+  mastery and modeling [@bandura1977; @stajkovic1998].
+- **Reactance** makes pressure, scarcity cues, and unsolicited advice backfire.
+  Affirming freedom and explaining rationale reduce it [@brehm1966; @rains2013].
+:::
+
+Table \@ref(tab:tab-aa-summary) presents the comparison of the chapter's theories.
+
+```{r tab-aa-summary}
+tibble::tribble(
+  ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Replication status`, ~`Typical business use`,
+  "[Cognitive dissonance](#cognitive-dissonance-theory)", "Aversive inconsistency", "Small rewards and high effort produce more attitude change", "Mixed: core idea supported, classic paradigms weaker", "Post-purchase reassurance, loyalty design",
+  "[Self-perception](#self-perception-theory)", "Inference from own behaviour", "Small commitments raise later compliance", "Supported but effects modest and conditional", "Onboarding sequences, fundraising, rewards design",
+  "[Attribution theory](#attribution-theory)", "Causal inference along locus, stability, control", "Controllable failures provoke anger and exit", "Core dimensions robust, some biases weaker than claimed", "Service recovery, crisis communication, investor relations",
+  "[Balance theory](#balance-theory)", "Preference for consistent triads", "Attitudes move to balance P-O-X triads", "Supported in judgement, partial in networks", "Endorsements, sponsorships, cause marketing",
+  "[Social cognitive theory](#social-cognitive-theory)", "Observational learning and self-efficacy", "Efficacy predicts effort and performance", "Robust, with debate on causal direction", "Training, sales enablement, customer onboarding",
+  "[Reactance theory](#reactance-theory)", "Restoring threatened freedom", "Pressure and restriction backfire", "Directionally supported, few large replications", "Scarcity messaging, personalization, change management"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#attitudes-attribution-questions}
+
+1. A large multilab study did not reproduce the core induced-compliance effect.
+   Does this undermine cognitive dissonance theory as a whole, or only one
+   paradigm? What evidence would you need to decide?
+2. Design a field experiment that distinguishes a dissonance explanation from a
+   self-perception explanation for the effect of a small first request on later
+   donations.
+3. A cloud-software outage was caused by a third-party data centre. Use Kelley's
+   covariation model and Weiner's dimensions to predict how customers will
+   attribute blame, and draft the first two sentences of the firm's statement.
+4. Using balance theory, analyse the risks and benefits for a brand that
+   partners with a politically outspoken athlete. Which consumers will change
+   which relation?
+5. Self-efficacy correlates with performance, but performance also builds
+   self-efficacy. Propose a research design that isolates the causal effect of
+   efficacy on sales performance.
+6. A retailer is considering countdown timers on its product pages. Using
+   reactance theory, specify the conditions under which the timers will help or
+   hurt, and how you would measure the long-run effect.
+
+## Further Reading {#attitudes-attribution-reading}
+
+- @festinger1957: the original statement of dissonance theory, still readable
+  and full of ideas that were never tested.
+- @harmonjones1999: an edited volume that surveys the major revisions of
+  dissonance theory and the debates among them.
+- @vaidis2024: a model of a modern multilab replication and an essential
+  corrective to textbook accounts of induced compliance.
+- @bem1972: the fullest statement of [self-perception theory](#self-perception-theory).
+- @kelley1973: a concise review of the covariation and causal-schema models.
+- @weiner2000: a short essay that connects attributional theory to consumer
+  behaviour.
+- @bandura1977: the paper that introduced self-efficacy and remains among the
+  most cited in psychology.
+- @steindl2015: an accessible review of reactance research since Brehm.

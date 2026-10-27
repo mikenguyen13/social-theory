@@ -13,17 +13,17 @@ depends: suppliers, customers, regulators, professions, competitors, and the
 wider society that grants or withholds approval.
 
 This chapter presents the major "open-systems" theories of organizations.
-**Resource dependence theory** treats the environment as a set of other
+**[Resource dependence theory](#resource-dependence-theory)** treats the environment as a set of other
 organizations that control critical resources, and organizational action as the
-management of the resulting power relations. **Institutional theory** treats the
+management of the resulting power relations. **[Institutional theory](#institutional-theory)** treats the
 environment as a set of rules, norms, and taken-for-granted beliefs, and explains
 why organizations conform to them, often at the expense of efficiency.
-**Legitimacy** is the currency of that institutional environment. **Stakeholder
+**[Legitimacy](#legitimacy)** is the currency of that institutional environment. **Stakeholder
 theory** asks whose interests the organization should and does serve.
-**Organizational ecology** shifts the focus from individual adaptation to the
-selection of whole populations of organizations. **Contingency theory**, finally,
+**[Organizational ecology](#organizational-ecology)** shifts the focus from individual adaptation to the
+selection of whole populations of organizations. **[Contingency theory](#contingency-theory)**, finally,
 argues that there is no one best way to organize: effective structures fit their
-environments.
+environments (Table \@ref(tab:tab-env-glance)).
 
 ```{r tab-env-glance}
 tibble::tribble(
@@ -62,10 +62,10 @@ mutual dependence, constraint absorption, co-optation.
 focal organization must have some strategic discretion to restructure its
 dependencies.
 
-**Related theories.** [Social exchange theory](#social-exchange-theory),
-[Network exchange theory](#network-exchange-theory),
-[Agency theory](#agency-theory),
-[Transaction cost economics](#transaction-cost-economics),
+**Related theories.** [Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Network exchange theory](#network-exchange-theory) (Section \@ref(network-exchange-theory)),
+[Agency theory](#agency-theory) (Section \@ref(agency-theory)),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
 [Institutional theory](#institutional-theory).
 :::
 
@@ -212,8 +212,8 @@ resource dependence is associated with the formation of interorganizational
 arrangements, and that such arrangements are linked to both organizational
 autonomy and legitimacy. @hillman2003 integrated RDT with agency theory by
 showing that boards both monitor management and provide **board capital**: the
-human and social capital of directors that supplies resources (see
-[Stewardship theory](#stewardship-theory)).
+human and [social capital](#social-capital) (Section \@ref(social-capital)) of directors that supplies resources (see
+[Stewardship theory](#stewardship-theory) (Section \@ref(stewardship-theory))).
 
 ::: {.debate}
 **Is RDT a theory or a metaphor?** RDT's influence rests partly on its intuitive
@@ -223,7 +223,7 @@ source of precise, falsifiable predictions, and that "dependence" was often
 measured with crude proxies such as industry-level input-output flows. The
 refinement by @casciaro2005 shows how much sharper predictions become when
 constructs are disaggregated. A second debate concerns RDT's relationship to
-[transaction cost economics](#transaction-cost-economics): both predict that firms
+[transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)): both predict that firms
 absorb problematic exchange partners, but TCE emphasises efficiency (economizing on
 hold-up) while RDT emphasises power and autonomy. Distinguishing them empirically
 requires measures that separate dependence from asset specificity.
@@ -320,8 +320,8 @@ Weaker in highly competitive markets with clear performance criteria.
 
 **Related theories.** [Legitimacy](#legitimacy),
 [Resource dependence](#resource-dependence-theory),
-[Social norms](#social-norms), [Conformity](#conformity),
-[Diffusion of innovations](#diffusion-of-innovations).
+[Social norms](#social-norms) (Section \@ref(social-norms)), [Conformity](#conformity) (Section \@ref(conformity)),
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)).
 :::
 
 ### Origins and core logic
@@ -463,7 +463,7 @@ multinational buyers as well as normative and mimetic pressures transmitted thro
 trade networks among countries. @king2005 found that firms used ISO 14001
 certification in part to communicate unobservable environmental practices to
 distant buyers: an institutional mechanism that also performs a
-[signaling](#signaling-theory) function. The same dynamics are visible in
+[signaling](#signaling-theory) (Section \@ref(signaling-theory)) function. The same dynamics are visible in
 environmental, social, and governance (ESG) reporting frameworks, sustainability
 ratings, and certifications such as B Corp status. Institutional theory supplies
 two practical warnings. First, adoption driven by legitimacy rather than technical
@@ -519,8 +519,8 @@ management (gaining, maintaining, repairing), strategic balance, optimal
 distinctiveness.
 
 **Related theories.** [Institutional theory](#institutional-theory),
-[Optimal distinctiveness](#optimal-distinctiveness-theory),
-[Stakeholder theory](#stakeholder-theory), [Signaling theory](#signaling-theory).
+[Optimal distinctiveness](#optimal-distinctiveness-theory) (Section \@ref(optimal-distinctiveness-theory)),
+[Stakeholder theory](#stakeholder-theory), [Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)).
 :::
 
 ### Core logic
@@ -554,7 +554,7 @@ It is also what new industries lack. @aldrich1994 argued that founders of new
 industries face both **cognitive** legitimacy deficits (audiences do not
 understand what the venture is) and **sociopolitical** deficits (key stakeholders
 and authorities do not yet accept it), and must build trust, reliability, and
-collective action across firms to overcome them.
+[collective action](#collective-action) (Section \@ref(collective-action)) across firms to overcome them.
 
 ### Strategic balance and optimal distinctiveness
 
@@ -568,7 +568,7 @@ banks found a curvilinear relationship between strategic similarity and
 performance consistent with this argument.
 
 The idea parallels, at the firm level, Brewer's theory of
-[optimal distinctiveness](#optimal-distinctiveness-theory) at the individual level
+[optimal distinctiveness](#optimal-distinctiveness-theory) (Section \@ref(optimal-distinctiveness-theory)) at the individual level
 [@Brewer_1991], in which people balance needs for assimilation and
 differentiation. @zhao2017 extended the argument, proposing that the optimal point
 is not fixed but depends on the stage of a market category's development, the
@@ -618,8 +618,8 @@ reward or punish firms. Normative claims rest on ethical arguments that cannot b
 settled by data alone.
 
 **Related theories.** [Resource dependence](#resource-dependence-theory),
-[Legitimacy](#legitimacy), [Agency theory](#agency-theory),
-[Social exchange theory](#social-exchange-theory).
+[Legitimacy](#legitimacy), [Agency theory](#agency-theory) (Section \@ref(agency-theory)),
+[Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)).
 :::
 
 ### Core logic
@@ -801,7 +801,7 @@ dependence developed in @hannan1992.
 communities of interacting populations.
 
 **Key constructs.** Organizational form, population, niche (generalist vs.
-specialist), structural inertia, liability of newness, density dependence
+specialist), structural inertia, [liability of newness](#liability-of-newness) (Section \@ref(liability-of-newness)), density dependence
 (legitimation and competition), resource partitioning.
 
 **Boundary conditions.** Applies to populations whose members share a form and
@@ -810,8 +810,8 @@ individual firms.
 
 **Related theories.** [Contingency theory](#contingency-theory),
 [Institutional theory](#institutional-theory),
-[Exploration and exploitation](#exploration-exploitation),
-[Dynamic capabilities](#dynamic-capabilities-framework).
+[Exploration and exploitation](#exploration-exploitation) (Section \@ref(exploration-exploitation)),
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)).
 :::
 
 ### Origins and core logic
@@ -901,7 +901,7 @@ deny change, only that change is hazardous and that selection does much of the w
 at the population level. The debate has become more productive as researchers
 study *when* adaptation succeeds, for example, how the timing and sequence of
 change affect survival, linking ecology to research on
-[dynamic capabilities](#dynamic-capabilities-framework). A second critique concerns
+[dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)). A second critique concerns
 measurement: density may proxy for many unmeasured processes, and legitimation is
 rarely measured directly.
 :::
@@ -940,8 +940,8 @@ structure.
 
 **Related theories.** [Organizational ecology](#organizational-ecology),
 [Resource dependence](#resource-dependence-theory),
-[Ambidexterity](#ambidexterity),
-[Upper echelons theory](#upper-echelons-theory).
+[Ambidexterity](#ambidexterity) (Section \@ref(ambidexterity)),
+[Upper echelons theory](#upper-echelons-theory) (Section \@ref(upper-echelons-theory)).
 :::
 
 ### Origins and core logic
@@ -1028,7 +1028,7 @@ can influence those environments, and may accept some misfit for other goals suc
 as control. Later critiques noted that fit is hard to measure, that multiple
 contingencies may pull in different directions, and that equally effective
 configurations may exist for the same contingency (equifinality). Contemporary
-research on [ambidexterity](#ambidexterity) can be read as a response: firms
+research on [ambidexterity](#ambidexterity) (Section \@ref(ambidexterity)) can be read as a response: firms
 facing both stable and dynamic demands build differentiated units and integrate
 them at the top, Lawrence and Lorsch's insight applied to exploration and
 exploitation.
@@ -1052,6 +1052,295 @@ main effects: the effect of structure on performance depends on the contingency.
 Specify the form of fit (moderation, matching, or configuration), test it with an
 appropriate model, and measure contingencies independently of structure to avoid
 circularity.
+:::
+
+## Corporate Social Responsibility Pyramid {#csr-pyramid}
+
+::: {.theory-card}
+**Core claim.** Corporate social responsibility comprises four kinds of societal
+expectation: economic, legal, ethical, and discretionary (philanthropic). A
+responsible firm meets all four at once, with economic performance as the
+foundation on which the others rest.
+
+**Origins.** Business and society scholarship. @carroll1979 defined the four
+categories as part of a three-dimensional model of corporate social performance.
+@carroll1991 recast them as a pyramid. @schwartz2003 revised the model as three
+overlapping domains.
+
+**Level of analysis.** The firm and the societal expectations it faces.
+
+**Key constructs.** Economic, legal, ethical, and philanthropic responsibilities,
+social issues, social responsiveness (reaction, defense, accommodation,
+proaction), corporate social performance.
+
+**Boundary conditions.** The content of each layer depends on the institutional
+context: what is a legal duty in one country may be voluntary in another. The
+ordering describes logical foundations, not a sequence in which firms should
+fulfil the layers.
+
+**Related theories.** [Stakeholder theory](#stakeholder-theory),
+[Legitimacy](#legitimacy), [Institutional theory](#institutional-theory),
+[Creating shared value](#shared-value).
+:::
+
+### Core logic
+
+Debates about corporate social responsibility (CSR) in the 1960s and 1970s often
+treated profit and responsibility as opposites. @carroll1979 proposed a definition
+that included both: the social responsibility of business encompasses the
+economic, legal, ethical, and discretionary expectations that society holds of
+organizations at a given point in time. Economic responsibilities come first
+because society expects business to produce goods and services and to sell them
+at a profit. Legal responsibilities reflect society's codified expectations.
+Ethical responsibilities cover behaviour that society expects but has not written
+into law. Discretionary responsibilities are voluntary contributions that society
+values but does not demand. Carroll embedded these categories in a
+three-dimensional model that also specified the **social issues** a firm faces
+(such as consumerism, the environment, discrimination, and product and
+occupational safety) and its **philosophy of responsiveness**, ranging from
+reaction and defense to accommodation and proaction.
+
+@carroll1991 presented the four categories as a **pyramid**, shown in Figure
+\@ref(fig:env2-pyramid), and renamed the top layer **philanthropic**. The pyramid
+conveys that the economic layer is the foundation on which the others rest, and
+that philanthropy, although desired by society, is less important than the other
+three. Carroll stressed that the layers are not sequential: the responsible firm
+strives to make a profit, obey the law, be ethical, and be a good corporate citizen
+simultaneously. The pyramid also links CSR to [Stakeholder
+theory](#stakeholder-theory): each layer can be read against the expectations of
+specific stakeholders.
+
+```{r env2-pyramid, fig.cap = "Carroll's pyramid of corporate social responsibility, redrawn after Carroll (1991). Layers indicate logical foundations, not a sequence: the responsible firm meets all four expectations at once.", fig.height = 4.6, fig.width = 6.4}
+layers <- tibble::tribble(
+  ~layer, ~level, ~label,
+  "Economic", 1, "ECONOMIC\nBe profitable",
+  "Legal", 2, "LEGAL\nObey the law",
+  "Ethical", 3, "ETHICAL\nDo what is right and fair",
+  "Philanthropic", 4, "PHILANTHROPIC\nBe a good corporate citizen"
+)
+half_width <- function(y) 1 - y / 4.4
+pyr <- bind_rows(lapply(seq_len(nrow(layers)), function(i) {
+  y0 <- layers$level[i] - 1
+  y1 <- layers$level[i]
+  data.frame(layer = layers$layer[i],
+             x = c(-half_width(y0), half_width(y0), half_width(y1), -half_width(y1)),
+             y = c(y0, y0, y1, y1))
+})) |>
+  mutate(layer = factor(layer, levels = layers$layer))
+ggplot() +
+  geom_polygon(data = pyr, aes(x, y, fill = layer), colour = "white", linewidth = 1.2) +
+  geom_text(data = layers, aes(x = 0, y = level - 0.5, label = label), size = 3.4,
+            colour = ink[["primary"]], lineheight = 0.95) +
+  scale_fill_manual(values = c(Economic = "#dceaf8", Legal = "#b9d4f0", Ethical = "#e8f6ef", Philanthropic = "#fff4e5")) +
+  coord_equal(ratio = 0.5) +
+  labs(title = "The pyramid of corporate social responsibility") +
+  theme_void(base_size = 12) +
+  theme(plot.title = element_text(face = "bold"), legend.position = "none")
+```
+
+Table \@ref(tab:env2-csr-layers) summarizes each layer with examples. The examples
+show that the same issue can fall in different layers depending on whether it is
+codified in law.
+
+```{r env2-csr-layers}
+tibble::tribble(
+  ~Responsibility, ~`Societal expectation`, ~`Illustrative practices`, ~`Typical failure`,
+  "Economic", "Produce valued goods and services at a profit", "Efficient operations, sustained returns, employment", "Insolvency, value destruction for investors and employees",
+  "Legal", "Operate within the law and regulation", "Compliance programmes, product safety standards, accurate disclosure", "Fraud, regulatory violations, cheating on emissions or safety tests",
+  "Ethical", "Do what is right and fair beyond legal minimums", "Fair supplier terms, honest marketing, respect for human rights in supply chains", "Exploitative but legal practices, deceptive framing",
+  "Philanthropic", "Contribute voluntarily to community well-being", "Donations, employee volunteering, product donation programmes", "Philanthropy used to offset or distract from harm"
+) |>
+  book_table(caption = "The four responsibilities of Carroll's pyramid (after Carroll, 1979, 1991).")
+```
+
+### Evidence and extensions
+
+@aupperle1985 developed a forced-choice instrument to measure managers'
+orientation toward the four categories. Their respondents weighted the domains in
+roughly the order Carroll proposed, from economic to discretionary, and the study
+found no significant relationship between social orientation and profitability.
+@schwartz2003 argued that the pyramid's geometry invites misreading, as if the top
+layers mattered less or could wait until the base was secure. They proposed a
+**three-domain model** of overlapping economic, legal, and ethical circles, folding
+philanthropy into the ethical and economic domains, so that activities can be
+classified by the combinations of motives they serve. @matten2008 argued that
+the meaning of CSR varies across institutional settings. In much of continental
+Europe, responsibilities that U.S. firms address through voluntary **explicit**
+CSR policies are handled through **implicit** CSR embedded in law, collective
+agreements, and national institutions. The layers of the pyramid are therefore not
+fixed: the boundary between "legal" and "ethical" or "philanthropic" shifts with
+the institutional context, a point that connects the pyramid to [Institutional
+theory](#institutional-theory).
+
+::: {.business-case}
+**Philanthropy and legal failure at two ends of the pyramid.** In 1987 Merck
+announced that it would donate its river-blindness drug Mectizan (ivermectin) to
+affected communities for as long as needed, a widely cited example of the
+philanthropic layer that builds on the economic and ethical capabilities of the
+firm. At the other extreme, in September 2015 the U.S. Environmental Protection
+Agency issued a notice of violation alleging that Volkswagen had installed
+software in diesel cars to defeat emissions tests. The episode shows how a failure
+in the legal and ethical layers can overwhelm a firm's other CSR activities: no
+volume of philanthropy or sustainability reporting offsets deliberate violation
+of the law. In pyramid terms, the upper layers are credible only when the lower
+ones are secure.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Firms whose CSR disclosures emphasise philanthropic
+over legal and ethical responsibilities will experience larger reputational
+penalties after misconduct is revealed. *H2.* The share of CSR activities that firms
+present as voluntary will be higher in liberal than in coordinated market economies
+[@matten2008].
+
+**Designs and measures.** Content analysis of CSR reports coded into Carroll's
+categories or the three-domain model. Forced-choice surveys of managerial
+orientation [@aupperle1985]. Cross-country comparisons that hold industry constant.
+:::
+
+## Creating Shared Value {#shared-value}
+
+::: {.theory-card}
+**Core claim.** Firms can create economic value in ways that also create value for
+society by addressing social needs and challenges. Such **shared value** should be
+integral to strategy and profit-making rather than a separate CSR activity.
+
+**Origins.** Strategy. @porter2006 distinguished responsive from strategic CSR.
+@porter2011 introduced the concept of creating shared value (CSV). @crane2014
+offered the most prominent critique.
+
+**Level of analysis.** The firm, its value chain, and its local competitive context.
+
+**Key constructs.** Shared value, responsive versus strategic CSR, inside-out and
+outside-in linkages, reconceiving products and markets, redefining productivity in
+the value chain, local cluster development.
+
+**Boundary conditions.** Applies where social problems impose costs on the firm or
+represent unmet demand. Does not resolve cases in which social and economic goals
+genuinely conflict.
+
+**Related theories.** [Stakeholder theory](#stakeholder-theory),
+[Corporate social responsibility pyramid](#csr-pyramid),
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)), [Legitimacy](#legitimacy).
+:::
+
+### Core logic
+
+@porter2006 argued that much CSR was fragmented and disconnected from strategy:
+firms responded to external pressure with philanthropy and reporting that were
+unrelated to their businesses. They distinguished **responsive CSR**, acting as a
+good citizen and mitigating harm from value-chain activities, from **strategic
+CSR**, which selects a small number of social issues where the firm can make a
+distinctive contribution that also strengthens its competitive position. Their
+analysis linked business and society in two directions. **Inside-out** linkages run
+from the firm's value chain to society (for example, emissions, labour practices, or
+product safety). **Outside-in** linkages run from social conditions to the firm's
+competitive context (for example, the skills of the local workforce or the quality
+of local suppliers and infrastructure).
+
+@porter2011 generalized the argument into the concept of **creating shared value**:
+policies and operating practices that enhance a firm's competitiveness while
+simultaneously advancing economic and social conditions in the communities where it
+operates. They identified three routes. Firms can **reconceive products and
+markets** to meet social needs, such as health, nutrition, or financial inclusion.
+They can **redefine productivity in the value chain**, for instance by reducing
+energy use, waste, and logistics costs, or by improving the productivity of
+suppliers. And they can **enable local cluster development** by strengthening the
+suppliers, institutions, and infrastructure around their operations. Porter and
+Kramer presented CSV as a successor to CSR and contrasted the two, as in Table
+\@ref(tab:env2-csv-table).
+
+```{r env2-csv-table}
+tibble::tribble(
+  ~Dimension, ~`Conventional CSR (as characterized by Porter and Kramer)`, ~`Creating shared value`, ~`Objection raised by Crane et al. (2014)`,
+  "Core idea", "Doing good, citizenship, philanthropy", "Joint economic and social value relative to cost", "Repackages long-standing ideas from CSR and stakeholder research",
+  "Relation to profit", "Separate from or a cost to profit", "Integral to profit and competitiveness", "Overlooks genuine trade-offs between social and economic goals",
+  "Driver", "External pressure and reputation", "Company-specific strategy", "Assumes firms already comply with laws and ethical norms",
+  "Budget and scope", "Limited CSR budget", "Whole company budget and value chain", "Retains a narrow, firm-centred view of the corporation's role in society"
+) |>
+  book_table(caption = "Conventional CSR versus creating shared value, with critics' objections (after Porter and Kramer, 2011, and Crane et al., 2014).")
+```
+
+Figure \@ref(fig:env2-csv-map) locates CSV relative to other activities. Shared
+value occupies the upper-right region, where an activity raises both economic and
+social value. The concept's critics focus on the lower-right region, where
+activities are profitable but socially harmful, and on the large set of situations
+in which no option lies in the upper right.
+
+```{r env2-csv-map, fig.cap = "Stylised map of corporate activities by economic value to the firm and social value. Creating shared value targets the upper-right region. Positions are illustrative, not measured.", fig.height = 4.6, fig.width = 6.6}
+acts <- tibble::tribble(
+  ~x, ~y, ~label, ~vj,
+  -0.55, 0.60, "Responsive CSR\n(philanthropy, citizenship)", -0.5,
+   0.55, 0.62, "Shared value\n(new products, efficient\nvalue chain, clusters)", -0.5,
+   0.55, -0.08, "Conventional business\n(profit, neutral impact)", 1.4,
+   0.55, -0.62, "Profitable but harmful\n(unpriced externalities)", 1.4,
+  -0.55, -0.55, "Value-destroying\nactivity", 1.4
+)
+ggplot(acts, aes(x, y)) +
+  annotate("rect", xmin = 0, xmax = 1.05, ymin = 0, ymax = 1.05, fill = pal[["aqua"]], alpha = 0.12) +
+  annotate("rect", xmin = 0, xmax = 1.05, ymin = -1.05, ymax = -0.3, fill = pal[["orange"]], alpha = 0.10) +
+  geom_hline(yintercept = 0, colour = ink[["muted"]], linewidth = 0.4) +
+  geom_vline(xintercept = 0, colour = ink[["muted"]], linewidth = 0.4) +
+  geom_point(colour = pal[["blue"]], size = 3) +
+  geom_text(aes(label = label, vjust = vj), size = 3.1, colour = ink[["primary"]], lineheight = 0.95) +
+  scale_x_continuous(limits = c(-1.05, 1.05), breaks = c(-0.8, 0.8), labels = c("Lower", "Higher")) +
+  scale_y_continuous(limits = c(-1.05, 1.1), breaks = c(-0.8, 0.8), labels = c("Lower", "Higher")) +
+  labs(x = "Economic value to the firm", y = "Social value",
+       title = "Where shared value sits",
+       caption = "Stylised positions for exposition only.")
+```
+
+### Evidence and critique
+
+Porter and Kramer illustrate the concept with company examples, among them
+Nestlé's work with dairy farmers in India, where investment in collection,
+refrigeration, and veterinary support raised farmers' output and secured the
+company's milk supply [@porter2006]. Nestlé subsequently adopted "Creating Shared
+Value" as the organizing label for its corporate responsibility reporting. The
+concept spread quickly among managers and consultancies, but systematic evidence
+that CSV initiatives outperform conventional CSR is limited, partly because
+"shared value" is usually identified after the fact from successful cases.
+
+::: {.debate}
+**Is shared value new, and is it enough?** @crane2014 praised CSV for elevating
+social goals to the level of strategy, but raised four objections. It is
+**unoriginal**, presenting ideas long developed in stakeholder and CSR research as
+new. It **ignores the tensions** between social and economic goals, focusing on
+win-win cases when many decisions involve real trade-offs. It is **naive about
+compliance**, assuming that firms already obey the law and meet ethical standards.
+And it rests on a **shallow conception of the corporation's role in society**,
+leaving the profit motive and corporate power unexamined. In the terms of Carroll's
+pyramid, CSV concentrates on the economic layer and treats the legal and ethical
+layers as given. Defenders reply that CSV is a strategic tool, not a complete
+theory of corporate responsibility, and that its value lies in mobilizing
+operating budgets rather than philanthropic ones.
+:::
+
+::: {.business-case}
+**Illustrative scenario: a food company's sourcing programme.** A packaged-food
+company sources a key ingredient from smallholder farmers whose low yields and
+inconsistent quality raise its costs. A CSV programme would invest in agronomic
+training, shared processing facilities, and guaranteed purchase contracts,
+improving farmers' incomes while lowering the company's input costs and supply
+risk. The critique of @crane2014 suggests the questions to ask before calling it
+shared value: Are farmers' gains measured independently, or only through the
+company's own reporting? What happens when market prices fall and the company's
+interest diverges from the farmers'? Does the programme coexist with practices,
+such as aggressive marketing of unhealthy products, that destroy social value
+elsewhere?
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Social initiatives embedded in a firm's value chain will
+persist longer through budget cuts than philanthropic initiatives of similar size.
+*H2.* The financial returns to CSV initiatives will be larger when the targeted
+social problem directly raises the firm's operating costs.
+
+**Designs and measures.** Program evaluation with independent measurement of social
+outcomes (randomized or staggered roll-outs of supplier programmes). Panel studies
+linking value-chain sustainability investments to cost and revenue outcomes. Text
+analysis of how firms label initiatives (CSR, CSV, ESG) and whether labels predict
+substantive differences.
 :::
 
 ## Chapter Summary {#environment-summary}
@@ -1082,6 +1371,8 @@ circularity.
   @lawrence1967].
 :::
 
+Table \@ref(tab:tab-env-summary) presents the comparison of the chapter's theories.
+
 ```{r tab-env-summary}
 tibble::tribble(
   ~Theory, ~`View of the environment`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
@@ -1090,7 +1381,9 @@ tibble::tribble(
   "Legitimacy", "Audiences evaluating social acceptability", "Pragmatic, moral, and cognitive evaluation", "Moderate differentiation outperforms extremes", "Positioning, crisis management, new-category creation",
   "Stakeholder theory", "Groups that affect or are affected by the firm", "Salience, trust-based contracting", "Salient stakeholders receive attention, trust lowers costs", "Corporate purpose, stakeholder mapping, CSR strategy",
   "Organizational ecology", "Resource niches supporting populations", "Selection under structural inertia", "Founding and failure depend on density, core change is hazardous", "Industry evolution, entry timing, incumbent renewal",
-  "Contingency theory", "Uncertainty, technology, and size as contingencies", "Fit between structure and contingency", "Organic structures outperform in dynamic settings", "Organizational design, unit structure, integration roles"
+  "Contingency theory", "Uncertainty, technology, and size as contingencies", "Fit between structure and contingency", "Organic structures outperform in dynamic settings", "Organizational design, unit structure, integration roles",
+  "CSR pyramid", "Society holding economic, legal, ethical, and philanthropic expectations", "Layered societal expectations of business", "Upper layers are credible only when lower layers are met", "CSR strategy, compliance, philanthropy design",
+  "Creating shared value", "Social needs as conditions of competitiveness", "Joint creation of economic and social value", "Value-chain social investments raise profits", "Sourcing, product innovation, cluster development"
 ) |>
   book_table(caption = "Comparison of the chapter's theories.")
 ```

@@ -14,14 +14,14 @@ comment in the first two hours, and a repo that converts visitors into stars
 
 ## One-line pitch
 
-> A free, open-source field guide to 100+ social science theories: each with a
+> A free, open-source field guide to 150+ social science theories (200+ entries in all): each with a
 > theory card, mechanism diagram, evidence & critiques, business cases, and
 > ready-to-use research hypotheses.
 
 ## X / Bluesky / Threads thread
 
 1. I rewrote my open-source book on social science theory from scratch.
-   100+ theories, effects & frameworks: free to read. 🧵
+   200+ theories, effects & frameworks: free to read. 🧵
    https://mikenguyen13.github.io/social-theory
 2. The problem: every field has theories its members "just know", signaling,
    agency, RBV, prospect theory, social identity, and PhD students are expected
@@ -32,7 +32,7 @@ comment in the first two hours, and a repo that converts visitors into stars
    critiques (incl. replication status), and business cases.
 5. Each major theory ends with a research toolkit: sample hypotheses, measures,
    designs, and data sources. Built for dissertation writing.
-6. There's an interactive theory map (100+ nodes, linked by cross-references)
+6. There's an interactive theory map (200+ nodes, linked by cross-references)
    and a searchable Theory Atlas you can download as CSV.
 7. Every figure is reproducible R code. Contributions welcome, suggest a theory
    or fix an error on GitHub: https://github.com/mikenguyen13/social-theory
@@ -46,7 +46,7 @@ comment in the first two hours, and a repo that converts visitors into stars
 > is *screening*. A bonus that kills intrinsic interest is *self-determination
 > theory*. Telling customers how they compare to their neighbours is *social norms*.
 >
-> I've rewritten my open-source book so that each of 100+ theories comes with:
+> I've rewritten my open-source book so that each of 150+ theories comes with:
 > • a one-minute theory card
 > • a mechanism diagram and the evidence behind it
 > • the critiques and where it breaks down
@@ -61,10 +61,10 @@ comment in the first two hours, and a repo that converts visitors into stars
 ## Reddit (check each subreddit's self-promotion rules first)
 
 **r/PhD, r/AskAcademia, r/GradSchool**, title:
-*I made a free, open-source field guide to 100+ social science theories for PhD students (theory cards, hypotheses, critiques)*
+*I made a free, open-source field guide to 150+ social science theories for PhD students (theory cards, hypotheses, critiques)*
 
 **r/rstats**, title:
-*Social Science Theory: a bookdown book with 60+ reproducible ggplot/DiagrammeR figures and an interactive visNetwork theory map*
+*Social Science Theory: a bookdown book with 450+ reproducible ggplot/DiagrammeR figures and an interactive visNetwork theory map*
 
 **r/AcademicPsychology, r/marketing, r/organizationalbehavior**: lead with a
 single concrete entry (e.g., the goal-gradient or decoy effect chapter) and link
@@ -78,7 +78,7 @@ Body (adapt):
 
 ## Hacker News
 
-*Show HN: Social Science Theory, an open field guide to 100+ theories with business cases*
+*Show HN: Social Science Theory, an open field guide to 150+ theories with business cases*
 
 ## Email / listservs
 
@@ -90,7 +90,7 @@ and department PhD-student lists.
 >
 > Dear colleagues, I'd like to share a free, open-access book that may be useful
 > for doctoral seminars in management, marketing, OB, and consumer behaviour.
-> It covers 100+ theories in a consistent format with mechanisms, evidence,
+> It covers 150+ theories in a consistent format with mechanisms, evidence,
 > critiques, business applications, and research hypotheses. https://mikenguyen13.github.io/social-theory
 > Corrections and suggestions are welcome via GitHub.
 

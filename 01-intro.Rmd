@@ -27,29 +27,29 @@ three jobs that data alone cannot do:
    exist *if* a particular mechanism operates.
 2. **It explains why.** An observed effect without a mechanism cannot be
    generalized. Knowing that a warranty raises sales is useful. Knowing that it
-   does so because it is a [costly signal](#signaling-theory) tells you when it
+   does so because it is a [costly signal](#signaling-theory) (Section \@ref(signaling-theory)) tells you when it
    will stop working (when competitors can match it cheaply).
 3. **It travels.** Mechanisms transfer across settings. The logic of
-   [adverse selection](#information-asymmetry) explains used cars, insurance,
+   [adverse selection](#information-asymmetry) (Section \@ref(information-asymmetry)) explains used cars, insurance,
    hiring, and venture capital alike.
 
 Managers use theory constantly, usually without naming it. A pricing manager who
-offers a "good-better-best" menu is applying [screening](#screening-theory). An
+offers a "good-better-best" menu is applying [screening](#screening-theory) (Section \@ref(screening-theory)). An
 HR director worried that a bonus will undermine intrinsic interest is invoking
-[self-determination theory](#self-determination-theory). A utility that tells
+[self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)). A utility that tells
 households how their energy use compares with their neighbours' is using
-[social norms](#social-norms). Making these theories explicit lets decision
+[social norms](#social-norms) (Section \@ref(social-norms)). Making these theories explicit lets decision
 makers anticipate side effects and boundary conditions *before* they become
 expensive surprises.
 
 ::: {.business-case}
 **Theory as a decision tool.** Consider a subscription business deciding whether
 to offer a free trial. Four theories in this book make different predictions:
-the [endowment effect](#endowment-effect) suggests trial users will value the
-product more once they "own" it. [Hedonic adaptation](#hedonic-adaptation)
-warns that novelty fades. [Signaling theory](#signaling-theory) suggests that a
+the [endowment effect](#endowment-effect) (Section \@ref(endowment-effect)) suggests trial users will value the
+product more once they "own" it. [Hedonic adaptation](#hedonic-adaptation) (Section \@ref(hedonic-adaptation))
+warns that novelty fades. [Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)) suggests that a
 long free trial signals confidence in quality, and
-[choice architecture](#choice-architecture) highlights that whether the trial
+[choice architecture](#choice-architecture) (Section \@ref(choice-architecture)) highlights that whether the trial
 converts *by default* will dominate the outcome. A manager who knows all four can
 design an experiment that tells them apart, and a researcher can turn the same
 contrast into a paper.
@@ -66,6 +66,7 @@ map is interactive: hover to see a theory's core claim, click to highlight its
 neighbours, and use the menu to select a theory.
 
 ```{r intro-atlas-data}
+map_cap <- paste("The theory map: each node is an entry in the book, coloured by part. Edges connect entries that cross-reference each other.", if (knitr::is_html_output()) "Hover over a node for details." else "The 30 most connected entries are labelled. The online edition is interactive.")
 atlas <- readr::read_csv("data/theory-atlas.csv", show_col_types = FALSE)
 `%|%` <- function(x, y) ifelse(is.na(x), y, x)
 
@@ -98,12 +99,9 @@ if (nrow(edges)) {
 } else {
   edges <- data.frame(from = character(), to = character())
 }
-part_levels <- c("Foundations", "Organizations & Strategy", "Individuals & Groups",
-                 "Effects, Phenomena & Frameworks")
-part_cols <- setNames(unname(pal[c("violet", "blue", "orange", "aqua")]), part_levels)
 ```
 
-```{r fig-intro-map, fig.cap = "The theory map: each node is an entry in the book, coloured by part. Edges connect entries that cross-reference each other. Interactive in the online edition.", fig.height = 7, out.width = "100%"}
+```{r fig-intro-map, fig.cap = map_cap, fig.height = 7, out.width = "100%"}
 if (is_html()) {
   nodes <- atlas |>
     dplyr::transmute(
@@ -132,20 +130,29 @@ if (is_html()) {
   vn
 } else {
   g <- igraph::graph_from_data_frame(edges, vertices = atlas[, c("anchor", "theory", "part")], directed = FALSE)
+  deg <- igraph::degree(g)
+  # In print, label only the most connected theories so the map stays legible.
+  hubs <- names(sort(deg, decreasing = TRUE))[1:30]
+  igraph::V(g)$lab <- ifelse(igraph::V(g)$name %in% hubs, igraph::V(g)$theory, NA)
+  igraph::V(g)$deg <- deg
   set.seed(42)
   ggraph::ggraph(g, layout = "fr") +
-    ggraph::geom_edge_link(colour = "#d4d3ce", width = 0.3) +
-    ggraph::geom_node_point(aes(colour = factor(part, levels = part_levels)), size = 2.6) +
-    ggraph::geom_node_text(aes(label = theory), size = 2, repel = TRUE, colour = ink[["secondary"]]) +
+    ggraph::geom_edge_link(colour = "#dddcd7", width = 0.25) +
+    ggraph::geom_node_point(aes(colour = factor(part, levels = part_levels), size = deg), alpha = 0.9) +
+    ggraph::geom_node_text(aes(label = lab), size = 2.6, repel = TRUE, colour = ink[["primary"]],
+                           max.overlaps = Inf, box.padding = 0.35, segment.colour = "#b9b8b3",
+                           na.rm = TRUE) +
     scale_colour_manual(values = part_cols, name = NULL) +
-    theme_void() + theme(legend.position = "bottom")
+    scale_size(range = c(1.2, 4.5), guide = "none") +
+    theme_void() + theme(legend.position = "bottom", legend.text = element_text(size = 8)) +
+    guides(colour = guide_legend(ncol = 3, override.aes = list(size = 3)))
 }
 ```
 
 Figure \@ref(fig:fig-intro-heat) cross-tabulates the entries by **level of
 analysis** and **dominant mechanism**. Two patterns stand out. First, most
 organization-level theories explain outcomes through *resources*, *incentives*,
-*power*, or *legitimacy*, while individual-level theories rely on *cognition*,
+*power*, or *[legitimacy](#legitimacy) (Section \@ref([legitimacy](#legitimacy) (Section \@ref(legitimacy))))*, while individual-level theories rely on *cognition*,
 *emotion*, *motivation*, and *identity*. Second, a handful of mechanisms,
 especially information and social comparison, work at every level, which is
 why theories built on them (signaling, social comparison, social norms) travel so
@@ -198,13 +205,24 @@ tibble::tribble(
   "Communicating quality that buyers cannot see", "Signaling, screening, information asymmetry", "8",
   "Who gets information, power, and opportunities", "Social exchange, weak ties, structural holes", "9",
   "How new products and technologies spread", "Diffusion of innovations, Bass model, TAM/UTAUT", "10",
-  "Adapting strategy or messages across countries", "Hofstede, GLOBE, self-construal", "11",
-  "Designing incentives, goals, and rewards", "Expectancy, equity, goal setting, self-determination", "12",
-  "Framing messages for different audiences", "Regulatory focus and fit, construal level", "13",
-  "Using peers, norms, and identity to change behaviour", "Social comparison, social norms, optimal distinctiveness", "14",
-  "Pricing, defaults, and seemingly irrational choices", "Prospect theory, mental accounting, choice architecture", "15",
-  "Customer experience, satisfaction, and virality", "Peak-end rule, hedonic adaptation, emotion and virality", "16",
-  "Persuasion, word of mouth, and media effects", "ELM, persuasion knowledge, social transmission", "17"
+  "How firms compete and respond to rivals", "Structure-conduct-performance, competitive dynamics, game theory", "11",
+  "Why incumbents fail and start-ups succeed", "Disruptive innovation, profiting from innovation, effectuation", "12",
+  "How firms expand across borders", "Uppsala model, OLI paradigm, institutional voids", "13",
+  "How organizations decide, learn, and make sense of events", "Garbage can, escalation of commitment, sensemaking", "14",
+  "Job design, engagement, and leadership", "Job demands-resources, LMX, transformational leadership", "15",
+  "Capital structure, valuation, and investor behaviour", "Modigliani-Miller, efficient markets, behavioral finance", "16",
+  "Platforms, externalities, and fairness in markets", "Network effects, two-sided markets, social preferences", "17",
+  "Adapting strategy or messages across countries", "Hofstede, GLOBE, self-construal", "18",
+  "Designing incentives, goals, and rewards", "Expectancy, equity, goal setting, self-determination", "19",
+  "Framing messages for different audiences", "Regulatory focus and fit, construal level", "20",
+  "Changing attitudes and explaining blame", "Cognitive dissonance, attribution, reactance", "21",
+  "Using peers, norms, and identity to change behaviour", "Social comparison, social norms, optimal distinctiveness", "22",
+  "Pricing, defaults, and seemingly irrational choices", "Mental accounting, choice architecture, heuristics", "23",
+  "Gains, losses, risk, and reference points", "Prospect theory, loss aversion, status quo bias", "24",
+  "Customer experience, well-being, and virality", "Peak-end rule, hedonic adaptation, emotion and virality", "25",
+  "Persuasion, word of mouth, and media effects", "ELM, persuasion knowledge, social transmission", "26",
+  "Satisfaction, brands, and consumer identity", "Expectancy-disconfirmation, brand equity, self-congruity", "27",
+  "Customer value, services, and marketing strategy", "Market orientation, service quality, customer equity", "28"
 ) |>
   book_table(caption = "From research question to theory: a quick-start guide.")
 ```

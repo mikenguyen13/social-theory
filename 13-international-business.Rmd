@@ -1,0 +1,1150 @@
+# International Business {#international-business}
+
+In 1997 Walmart, already the largest retailer in the world, entered Germany by
+acquiring the Wertkauf hypermarket chain and, a year later, the Interspar stores.
+It brought the formula that had worked at home: everyday low prices, a tightly
+managed supply chain, extended opening hours where the law allowed, and a
+distinctive service culture. In 2006 it announced the sale of its 85 German stores
+to Metro and left the country. Over roughly the same decades IKEA, a furniture
+retailer from a small town in southern Sweden, moved from Norway to Denmark,
+Switzerland, Germany, North America, China, and India, and became one of the most
+recognisable brands in the world. Why did a firm with enormous scale, capital, and
+operational know-how fail in a large, wealthy, and seemingly similar market, while
+a firm from a country of a few million people succeeded in dozens of very different
+ones?
+
+The puzzle is the core of **international business** (IB) theory. Firms that cross
+borders face costs that local rivals do not, and they must possess something that
+offsets those costs. They must decide *where* to go, *how* to enter (exporting,
+licensing, joint ventures, acquisitions, or greenfield subsidiaries), *how fast*
+to commit resources, and *how much* to adapt. This chapter presents six theories
+that answer these questions. The **[Uppsala model](#uppsala-model)** explains internationalization
+as a gradual process of learning and commitment. The **OLI (eclectic) paradigm**
+explains why firms produce abroad rather than export or license. **Internalization
+theory** explains why firms replace cross-border markets with internal hierarchies.
+The **[liability of foreignness](#liability-of-foreignness)** names the extra costs that foreign firms bear.
+**[Institutional voids](#institutional-voids)** describe the missing market intermediaries in emerging
+economies and the strategies they invite. **[Born globals](#born-globals)** challenge the gradualist
+story by internationalizing from inception. Together these theories form the
+backbone of research on multinational enterprises (MNEs), entry mode, and global
+strategy, and they draw heavily on [Transaction cost
+economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)), [Institutional
+theory](#institutional-theory) (Section \@ref(institutional-theory)), and research on [Cultural distance and
+[Hofstede](#hofstede) (Section \@ref([hofstede](#hofstede) (Section \@ref(hofstede))))](#hofstede) (Section \@ref(hofstede)) (Table \@ref(tab:ib-tab-glance)).
+
+```{r ib-tab-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "[Uppsala model](#uppsala-model)", "How and in what order do firms internationalize?", "Firm, firm-market relationship", "Johanson & Vahlne (1977, 2009)",
+  "[OLI paradigm](#oli-paradigm)", "Why do firms produce abroad rather than export or license?", "Firm, country, industry", "Dunning (1980, 1988)",
+  "[Internalization theory](#internalization-theory)", "Why do firms replace cross-border markets with internal hierarchies?", "Transaction, firm", "Buckley & Casson (1976), Rugman (1981)",
+  "[Liability of foreignness](#liability-of-foreignness)", "What extra costs do foreign firms bear, and how can they overcome them?", "Subsidiary, firm", "Hymer (1976), Zaheer (1995)",
+  "[Institutional voids](#institutional-voids)", "How do missing market institutions shape strategy in emerging economies?", "Country, business group, firm", "Khanna & Palepu (1997, 2010)",
+  "[Born globals](#born-globals)", "Why do some new ventures internationalize from inception?", "New venture", "Oviatt & McDougall (1994), Knight & Cavusgil (2004)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of international business.")
+```
+
+## Uppsala Model {#uppsala-model}
+
+::: {.theory-card}
+**Core claim.** Firms internationalize gradually. Because knowledge of foreign
+markets is mostly experiential, firms commit resources in small steps, entering
+psychically close markets first and moving from low-commitment to high-commitment
+modes as they learn.
+
+**Origins.** Business studies at Uppsala University. @johanson1975 documented the
+pattern in four Swedish firms. @johanson1977 formalized it as a dynamic model of
+knowledge and commitment, and @johanson2009 revised it around business networks.
+
+**Level of analysis.** The firm and its relationships with particular foreign
+markets (and, after 2009, with network partners in those markets).
+
+**Key constructs.** Psychic distance, experiential market knowledge, market
+commitment, commitment decisions, current activities, establishment chain,
+network position, liability of outsidership.
+
+**Boundary conditions.** Strongest when market knowledge is tacit and
+country-specific, when the firm has limited resources, and when uncertainty about
+foreign markets is high. Weaker for firms with large resources, highly codified
+offerings, or managers with prior international experience.
+
+**Related theories.** [Organizational learning](#organizational-learning) (Section \@ref(organizational-learning)),
+[Absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity)), [Cultural distance and
+Hofstede](#hofstede) (Section \@ref(hofstede)), [Born globals](#born-globals), [[Real options](#real-options-theory) (Section \@ref(real-options-theory))
+theory](#real-options-theory) (Section \@ref(real-options-theory)).
+:::
+
+### Origins and intellectual history
+
+In the early 1970s a group of researchers at Uppsala University studied how Swedish
+manufacturers had become international. @johanson1975 traced the histories of
+four firms, Sandvik, Atlas Copco, Facit, and Volvo, and found two regularities.
+First, operations in a given country developed along a sequence they called the
+**establishment chain**: no regular exports, then exports through independent
+representatives (agents), then a sales subsidiary, and finally local production.
+Second, firms entered new markets in order of increasing **psychic distance**,
+defined as the factors that prevent or disturb the flow of information between the
+firm and the market, such as differences in language, education, business
+practices, culture, and industrial development. Swedish firms typically went to
+Norway, Denmark, and Finland before Germany or the United Kingdom, and only later
+to more distant markets.
+
+@johanson1977 turned these observations into a theory. Their model has two **state
+aspects**, *market knowledge* and *market commitment*, and two **change aspects**,
+*commitment decisions* and *current activities*. Knowledge and commitment affect the
+decisions a firm makes and the activities it performs. Those activities, in turn,
+generate new experiential knowledge and deepen commitment. The model is therefore
+a feedback loop rather than a one-shot decision, and it borrows from the
+behavioural theory of the firm the assumptions of [bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)), problemistic
+search, and incremental decision making.
+
+Three decades later, @johanson2009 revised the model in response to research on
+business networks and on rapidly internationalizing firms. In the revised model,
+markets are networks of relationships, and the main obstacle to internationalization
+is not foreignness as such but **outsidership**: lacking a position in the relevant
+network. The state variables become *knowledge and opportunities* and *network
+position*. The change variables become *relationship commitment decisions* and
+*learning, creating, and trust-building*.
+
+### Core logic and propositions
+
+The engine of the model is the claim that the most important knowledge for
+operating abroad is **experiential**. Objective knowledge (market statistics, laws,
+tariffs) can be bought or taught. Knowledge of how customers decide, how local
+distributors behave, and which officials matter can mostly be acquired only by
+doing business in the market. Because experiential knowledge reduces perceived
+risk, commitment follows knowledge. The core propositions can be stated as follows:
+
+- **P1 (Incremental commitment).** Additional commitment to a market will be made
+  in small steps, unless the firm has large resources, market conditions are stable
+  and transparent, or it has experience from similar markets [@johanson1977].
+- **P2 (Establishment chain).** Within a market, operations will tend to move from
+  low-commitment modes (agents) to high-commitment modes (sales and production
+  subsidiaries).
+- **P3 (Psychic distance sequence).** Across markets, entry will tend to proceed
+  from psychically close to psychically distant countries.
+- **P4 (Network position).** After @johanson2009, internationalization will follow
+  the firm's relationships: firms enter markets where partners already have
+  positions, and commitment grows as trust and mutual knowledge build.
+
+Table \@ref(tab:ib-tab-chain) describes the establishment chain. Each stage involves
+more resources and creates more knowledge than the one before.
+
+```{r ib-tab-chain}
+tibble::tribble(
+  ~Stage, ~`Operating mode`, ~`Resource commitment`, ~`Knowledge generated`, ~`Typical risk`,
+  "0", "No regular export (sporadic orders)", "Negligible", "Almost none, information arrives by chance", "Lost opportunities",
+  "1", "Export through independent agent or distributor", "Low: training, samples, margins", "Second-hand market information filtered by the agent", "Agent opportunism, weak control of positioning",
+  "2", "Sales subsidiary", "Moderate: staff, office, inventory", "Direct customer and competitor knowledge", "Fixed costs if the market disappoints",
+  "3", "Production subsidiary", "High: plant, local suppliers, workforce", "Deep knowledge of labour, suppliers, regulation", "Sunk investment, exposure to host-country policy"
+) |>
+  book_table(caption = "The establishment chain (after Johanson and Wiedersheim-Paul, 1975).")
+```
+
+### Mechanism
+
+Figure \@ref(fig:ib-fig-chain) redraws the 1977 model. The loop explains why
+internationalization tends to be path-dependent: a firm's current position
+determines what it can learn next, and what it learns determines what it is
+willing to commit.
+
+```{r ib-fig-chain, fig.cap = "The Uppsala internationalization mechanism. Market knowledge and market commitment (state aspects) shape commitment decisions and current activities (change aspects), which generate new experiential knowledge and deepen commitment. Psychic distance slows the loop. Adapted from Johanson and Vahlne (1977)."}
+mechanism_diagram(sprintf('
+  K  [label = "Market knowledge\\n(mostly experiential)", %s]
+  M  [label = "Market commitment\\n(resources tied to\\nthe market)", %s]
+  D  [label = "Commitment\\ndecisions", %s]
+  A  [label = "Current activities\\n(selling, servicing,\\nproducing)", %s]
+  O  [label = "Deeper position:\\nagent, then subsidiary,\\nthen production", %s]
+  P  [label = "Psychic distance", %s]
+  K -> D
+  M -> D
+  D -> A
+  A -> K [label = " learning", style = dashed]
+  A -> M [label = " deepening", style = dashed]
+  D -> O
+  P -> K [style = dotted, arrowhead = tee]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome, node_moderator))
+```
+
+Figure \@ref(fig:ib-fig-commitment) shows the pattern the model predicts for a
+single firm entering three markets that differ in psychic distance. Entry into the
+close market comes earlier, and each subsequent step comes sooner, because
+knowledge accumulates faster where information flows more freely.
+
+```{r ib-fig-commitment, fig.cap = "Illustrative stylised trajectories of commitment to three foreign markets that differ in psychic distance. Entry to more distant markets is later and each move along the establishment chain takes longer. Simulated data, not empirical.", fig.height = 4.2}
+set.seed(1977)
+mk <- function(market, entry, gap) {
+  steps <- entry + cumsum(c(0, round(gap * runif(2, 0.8, 1.2))))
+  data.frame(market = market, year = c(0, steps, 30), stage = c(0, 1, 2, 3, 3))
+}
+paths <- bind_rows(
+  mk("Close market (low psychic distance)", 2, 4),
+  mk("Regional market (medium distance)", 7, 6),
+  mk("Distant market (high distance)", 12, 7)
+) |>
+  mutate(stage = pmin(stage, 3),
+         market = factor(market, levels = c("Close market (low psychic distance)",
+                                            "Regional market (medium distance)",
+                                            "Distant market (high distance)"))) |>
+  mutate(stage = stage + c(0.06, 0, -0.06)[as.integer(market)])
+ggplot(paths, aes(year, stage, colour = market)) +
+  geom_step(linewidth = 1.1, direction = "hv") +
+  scale_y_continuous(breaks = 0:3, labels = c("No regular export", "Agent", "Sales subsidiary", "Production")) +
+  scale_x_continuous(limits = c(0, 30), breaks = seq(0, 30, 5)) +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")])) +
+  guides(colour = guide_legend(ncol = 1)) +
+  labs(x = "Years since the firm's first foreign sale", y = NULL, colour = NULL,
+       title = "Commitment follows knowledge",
+       subtitle = "Stylised establishment chains in three markets",
+       caption = "Illustrative simulation (set.seed(1977)). Stage timing drawn from uniform jitter around fixed gaps.")
+```
+
+### Evidence and extensions
+
+The model fit the early history of Nordic and other European manufacturers well,
+and the establishment chain remains a useful description of how many small and
+medium-sized firms enter markets. Research on entry mode has confirmed that
+distance matters for how firms enter: @kogut1988 found that firms from countries
+culturally distant from the United States were more likely to enter through joint
+ventures or greenfield investments than through acquisitions, which require
+integrating a foreign organization. @ghemawat2001 broadened psychic distance into
+four dimensions of **CAGE distance**: cultural, administrative, geographic, and
+economic. He argued that firms systematically overestimate the attractiveness of
+large but distant markets because they ignore these frictions.
+
+The 2009 revision moved the model toward network theory. If markets are webs of
+relationships, a firm can "jump" to a distant country when a key customer or
+partner takes it there, and a firm can fail in a close market if it cannot become
+an insider. This revision reconciles the model with evidence on rapid
+internationalization and with the view that relationships, not countries, are the
+unit of learning [@johanson2009].
+
+::: {.debate}
+**Is the Uppsala model a theory of learning or a description of caution?**
+@forsgren2002 argued that the model rests on a narrow conception of learning. Firms
+can also acquire knowledge by hiring experienced managers, imitating other firms,
+acquiring local companies, or searching deliberately, and these routes allow faster
+and less incremental internationalization than the model predicts. A second critique
+concerns **psychic distance** itself. @shenkar2001 showed that distance measures
+built from national culture scores carry hidden assumptions of symmetry (the
+distance from A to B equals that from B to A), stability, linearity, and causality
+that rarely hold. A third critique is empirical: services, digital, and
+knowledge-intensive firms often skip stages or enter distant markets first, a
+pattern taken up in the section on [born globals](#born-globals). Defenders reply
+that the model was never meant to predict a fixed sequence but to explain why
+commitment follows knowledge, and that the 2009 network version accommodates many
+of these exceptions.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**IKEA's step-by-step internationalization.** IKEA's expansion illustrates both
+the establishment chain and the psychic-distance sequence. After opening its first
+store in Sweden in 1958, the company opened its first foreign store in Norway in
+1963 and in Denmark in 1969, both psychically close neighbours. Switzerland (1973)
+and Germany (1974) followed, then other Western European markets, North America in
+the 1970s and 1980s, China in 1998, Russia in 2000, and India in 2018. Its experience
+in Japan shows the cost of moving too far too fast: IKEA entered Japan in the 1970s
+through a local partnership, withdrew in the 1980s, and returned in 2006 with
+wholly owned stores after studying Japanese homes and shoppers. In Uppsala terms,
+the firm's later commitments rested on knowledge that its first attempt had
+generated. IKEA also illustrates the model's limits: its concept is highly
+standardized (flat-pack products, self-service, a common catalogue), which reduced
+the amount of country-specific knowledge required and let it expand faster than a
+firm whose offering had to be rebuilt for each market.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The greater the psychic distance between the home and host country, the
+  more likely the firm's first entry mode will be low-commitment (exporting through
+  agents rather than a subsidiary).
+- *H2.* The firm's prior experience in a host country will increase the likelihood
+  that its next investment there is wholly owned rather than shared.
+- *H3.* The effect of psychic distance on entry timing will be weaker when a key
+  domestic customer is already present in the host market (network position).
+
+**Designs.** Event-history models of entry timing and mode transitions using
+firm-country panels. Sequence analysis of entry paths. Comparative case studies of
+entry and exit.
+
+**Measures.** Psychic distance (perceptual surveys of managers) versus cultural
+distance (country scores from @hofstede2001, combined with the index of
+@kogut1988). Experiential knowledge (years of operation in the country, number of
+prior entries in the region). Commitment (mode, assets, employees).
+
+**Data sources.** Firm annual reports and subsidiary registries, ORBIS and similar
+ownership databases, export-transaction customs data, government surveys of
+outward investment.
+:::
+
+::: {.pitfall}
+**Confusing psychic distance with cultural distance.** Psychic distance is a
+*perception* held by managers about information flows, and it can differ across
+firms from the same country. Substituting a country-level cultural distance index
+assumes that all managers perceive the same distance and that culture is the only
+source of it. Measure perceptions where possible, include administrative,
+geographic, and economic distance [@ghemawat2001], and do not assume distance is
+symmetric [@shenkar2001].
+:::
+
+## OLI Paradigm {#oli-paradigm}
+
+::: {.theory-card}
+**Core claim.** A firm will engage in international production (foreign direct
+investment) when three conditions hold together: it has **ownership** advantages
+over local firms, there are **location** advantages to using those assets in a
+foreign country, and there are **internalization** advantages to exploiting them
+within the firm rather than through the market.
+
+**Origins.** International economics. @dunning1980 proposed the "eclectic theory"
+as a synthesis of industrial-organization, location, and internalization ideas.
+@dunning1988 restated it as a paradigm. It builds on @hymer1976, @vernon1966, and
+@buckley1976.
+
+**Level of analysis.** The firm (ownership and internalization) in its country and
+industry context (location).
+
+**Key constructs.** Ownership advantages (asset and transaction advantages),
+location advantages, internalization advantages, mode of foreign involvement
+(export, licensing, foreign direct investment).
+
+**Boundary conditions.** Explains the *existence* and *pattern* of foreign
+production at the level of industries and countries better than the timing of
+individual decisions. Assumes firms seek to exploit existing advantages abroad
+rather than acquire new ones.
+
+**Related theories.** [Internalization theory](#internalization-theory),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)), [Liability of
+foreignness](#liability-of-foreignness).
+:::
+
+### Origins and intellectual history
+
+Before the 1960s, foreign direct investment (FDI) was usually treated as a form of
+capital movement: capital flowed to countries where returns were higher. Hymer's
+1960 doctoral dissertation, published posthumously as @hymer1976, overturned this
+view. Hymer observed that firms investing abroad do so to *control* operations,
+not merely to earn interest, and that a foreign firm faces disadvantages relative
+to local rivals. It must therefore possess some offsetting advantage, such as
+technology, brands, or scale, rooted in imperfect markets. @vernon1966 added a
+dynamic account: products are developed in rich home markets, exported as they
+mature, and eventually produced abroad when costs dominate.
+
+John Dunning combined these ideas. In @dunning1980 he argued that no single theory
+explained international production, and that an "eclectic" approach was needed.
+The resulting **OLI** framework (also called the eclectic paradigm) asks three
+questions, summarised in Table \@ref(tab:ib-tab-oli). @dunning1988 refined the
+ownership component by distinguishing **asset advantages** (proprietary resources
+such as technology or brands) from **transaction advantages** (benefits of common
+governance of a network of assets across countries).
+
+```{r ib-tab-oli}
+tibble::tribble(
+  ~Advantage, ~`Question it answers`, ~`Typical sources`, ~`If absent`, ~`Closest theory`,
+  "Ownership (O)", "Why can this firm compete abroad against locals?", "Technology, brands, management know-how, scale, multinational coordination", "No basis for foreign activity", "[Resource-based theory](#resource-based-theory)",
+  "Location (L)", "Why produce in this country rather than at home?", "Market size, factor costs, trade barriers, natural resources, incentives, clusters", "Export from the home base", "Trade and location theory",
+  "Internalization (I)", "Why exploit the advantage inside the firm rather than sell it?", "Tacit knowledge, risk of dissemination, quality control, weak contract enforcement", "License, franchise, or contract", "[Transaction cost economics](#transaction-cost-economics)"
+) |>
+  book_table(caption = "The three conditions of the OLI paradigm (after Dunning, 1980, 1988).")
+```
+
+### Core logic and propositions
+
+The paradigm is best read as a decision structure. Each condition is necessary for
+the next to matter, as Figure \@ref(fig:ib-fig-oli) shows.
+
+```{r ib-fig-oli, fig.cap = "The OLI paradigm as a decision tree. Only when ownership, location, and internalization advantages are all present does foreign direct investment become the preferred mode. A simplified rendering of Dunning (1980, 1988).", fig.height = 5}
+mechanism_diagram(sprintf('
+  O  [label = "Does the firm have an\\nownership advantage?", %s]
+  N  [label = "No foreign activity\\n(cannot beat local rivals)", %s]
+  L  [label = "Is there a location\\nadvantage abroad?", %s]
+  X  [label = "Export from\\nthe home base", %s]
+  I  [label = "Is there an\\ninternalization advantage?", %s]
+  C  [label = "License, franchise,\\nor contract", %s]
+  F  [label = "Foreign direct investment\\n(subsidiary abroad)", %s]
+  O -> N [label = " no"]
+  O -> L [label = " yes"]
+  L -> X [label = " no"]
+  L -> I [label = " yes"]
+  I -> C [label = " no"]
+  I -> F [label = " yes"]
+', node_mechanism, node_construct, node_mechanism, node_construct, node_mechanism, node_construct, node_outcome), rankdir = "TB", height = 520)
+```
+
+- **P1.** The greater a firm's ownership advantages, the greater its propensity to
+  engage in foreign activity of any kind [@dunning1980].
+- **P2.** Given ownership advantages, foreign production rather than export is more
+  likely when host-country location advantages (market size, trade barriers, lower
+  factor costs) are larger.
+- **P3.** Given O and L advantages, FDI rather than licensing is more likely when
+  markets for the firm's intangible assets are imperfect: when knowledge is tacit,
+  when licensees could appropriate it, or when quality is hard to specify by contract.
+- **P4.** The configuration of OLI advantages varies systematically by country,
+  industry, and firm, so the pattern of international production differs across
+  these contexts [@dunning1988].
+
+### Evidence and extensions
+
+The paradigm has organized a large empirical literature on the determinants of FDI
+and on entry-mode choice. Studies typically find that R&D intensity and advertising
+intensity (proxies for ownership advantages) predict outward FDI, that market size
+and trade barriers predict location, and that technological intensity predicts a
+preference for wholly owned subsidiaries over licensing. Later work added
+**strategic asset-seeking** investment, in which firms invest abroad to *acquire*
+advantages rather than exploit them, a motive that became prominent with
+acquisitions by emerging-market multinationals.
+
+::: {.debate}
+**Paradigm or laundry list?** Critics argue that OLI is a classification scheme
+rather than a theory: almost any investment can be explained after the fact by
+naming some O, L, and I advantage, so the framework is hard to falsify. Internalization
+theorists add that ownership advantages are themselves the product of internalization
+and therefore not an independent condition [@buckley2009]. A related critique comes
+from @rugman2004, who examined the largest MNEs and argued that most derive the bulk
+of their sales from their home region. If so, the "global" firm implied by
+location-free ownership advantages is rare, and ownership advantages are often
+regionally bounded. Dunning's response was that the paradigm is deliberately a
+general envelope within which more specific, testable theories can be nested.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Toyota's move from exporting to American production.** Toyota built a strong
+**ownership** advantage in its production system, a set of tightly coupled
+practices for quality, inventory, and continuous improvement. Through the 1970s it
+served the United States mainly by exporting. In the early 1980s **location**
+advantages shifted as trade frictions grew and Japan agreed to limit car exports to
+the United States. Toyota's first American production was a joint venture with
+General Motors, New United Motor Manufacturing, Inc. (NUMMI), in Fremont,
+California, which began production in 1984. Its own wholly owned plant in
+Georgetown, Kentucky, began production in 1988. The **internalization** logic is
+visible in the sequence: the production system was largely tacit, embedded in
+routines and supplier relationships, and could not simply be licensed. The joint
+venture let Toyota learn about American workers and suppliers, and full ownership
+let it reproduce its system with control.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Firms with higher R&D intensity will be more likely to serve foreign
+  markets through wholly owned subsidiaries than through licensing.
+- *H2.* Tariff increases in a host country will increase the probability that
+  exporters to that country switch to local production, and more so for firms with
+  strong ownership advantages.
+- *H3.* Emerging-market firms will be more likely than advanced-economy firms to
+  invest in countries with strong technology clusters (asset-seeking FDI).
+
+**Designs.** Multinomial models of mode choice (export, license, joint venture,
+wholly owned). Gravity-style models of bilateral FDI. Natural experiments from trade
+policy shocks.
+
+**Measures.** Ownership advantages (R&D and advertising intensity, patents).
+Location advantages (market size, wage levels, tariffs, cluster measures).
+Internalization advantages (tacitness, intellectual property protection, contract
+enforcement indices).
+:::
+
+::: {.pitfall}
+**Labelling after the fact.** Because almost any variable can be called an O, L, or
+I advantage, the paradigm invites post hoc explanation. State in advance which
+advantage each variable captures, specify the mode it should predict, and test the
+interaction implied by the paradigm: internalization advantages should matter only
+when O and L advantages are present.
+:::
+
+## Internalization Theory {#internalization-theory}
+
+::: {.theory-card}
+**Core claim.** Multinational enterprises exist because markets for intermediate
+products, especially knowledge, are imperfect across borders. Firms internalize
+these markets, replacing arm's-length contracts with internal hierarchies, up to
+the point where the marginal benefits of internalization equal its marginal costs.
+
+**Origins.** International economics. @buckley1976, building on @coase1937 and on
+Hymer's analysis of market imperfections [@hymer1976]. Generalized by @rugman1981
+and reviewed in @buckley2009.
+
+**Level of analysis.** The transaction (the cross-border transfer of an
+intermediate product) and the firm.
+
+**Key constructs.** Intermediate products (knowledge, components, brands), market
+imperfection, internalization benefits and costs, dissemination risk, entry-mode
+control.
+
+**Boundary conditions.** Applies when the asset being exploited is hard to price,
+protect, or transfer by contract. When contracts are enforceable and knowledge is
+codified, licensing and other market modes become efficient.
+
+**Related theories.** [Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[OLI paradigm](#oli-paradigm), [Knowledge-based
+view](#knowledge-based-view) (Section \@ref(knowledge-based-view)), [Profiting from
+innovation](#profiting-from-innovation) (Section \@ref(profiting-from-innovation)).
+:::
+
+### Core logic
+
+@buckley1976 argued that modern firms carry out a wide range of activities linked
+by flows of intermediate products: knowledge, expertise, components, and semi-finished
+goods. When markets for these products are perfect, firms can buy and sell them at
+arm's length. When markets are imperfect, firms gain by bringing the transaction
+inside the organization. Knowledge is the leading case. A buyer cannot value
+knowledge without seeing it, but once it has seen it, it need not pay for it.
+Knowledge is often tacit, so it cannot be fully specified in a contract. A licensee
+can learn the technology and become a competitor. Each of these problems raises the
+cost of the market relative to the hierarchy. When the knowledge is used in more than
+one country, internalization creates a multinational enterprise.
+
+@rugman1981 argued that internalization is a general theory of the MNE: the
+multinational is an internal market that substitutes for missing or imperfect
+external markets. The logic parallels [Transaction cost
+economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)) [@williamson1985], and @anderson1986 made
+the connection explicit for entry mode. They classified foreign entry modes by the
+degree of **control** they confer and proposed that firms choose higher-control
+modes when transaction-specific assets are valuable, when the environment is
+uncertain, and when free-riding by partners is likely, trading control against the
+resource commitment that control requires. Table \@ref(tab:ib-tab-modes) summarizes
+the trade-offs.
+
+```{r ib-tab-modes}
+tibble::tribble(
+  ~`Entry mode`, ~Control, ~`Resource commitment`, ~`Dissemination risk`, ~Flexibility, ~`Favoured when`,
+  "Export (via agent)", "Low", "Low", "Low", "High", "Small or uncertain market, little local adaptation",
+  "Licensing or franchising", "Low to moderate", "Low", "High", "Moderate", "Codified knowledge, strong IP protection, enforceable contracts",
+  "Joint venture", "Shared", "Moderate", "Moderate", "Moderate", "Partner holds local knowledge or required permits",
+  "Acquisition", "High", "High", "Low", "Low", "Need for speed, existing local assets, low cultural distance",
+  "Greenfield subsidiary", "Full", "Highest", "Lowest", "Lowest", "Tacit know-how, need to replicate routines exactly"
+) |>
+  book_table(caption = "Foreign entry modes and the control-commitment trade-off (after Anderson and Gatignon, 1986).")
+```
+
+### Mechanism
+
+Figure \@ref(fig:ib-fig-internal) simulates the core prediction. As the tacitness of
+the knowledge being transferred rises, the probability that a firm chooses a wholly
+owned subsidiary over licensing rises, and the curve shifts upward when host-country
+protection of intellectual property is weak.
+
+```{r ib-fig-internal, fig.cap = "Illustrative simulation of internalization logic: the probability of choosing a wholly owned subsidiary rather than licensing rises with the tacitness of the transferred knowledge and is higher where intellectual property protection is weak. Simulated data, not empirical.", fig.height = 4}
+set.seed(1976)
+n <- 800
+sim <- data.frame(tacit = runif(n), weak_ip = rbinom(n, 1, 0.5)) |>
+  mutate(p = plogis(-2.5 + 4.5 * tacit + 1.2 * weak_ip),
+         owned = rbinom(n, 1, p),
+         ip = ifelse(weak_ip == 1, "Weak IP protection in host country", "Strong IP protection in host country"))
+fit <- glm(owned ~ tacit + weak_ip, family = binomial, data = sim)
+grid <- expand.grid(tacit = seq(0, 1, by = 0.01), weak_ip = c(0, 1)) |>
+  mutate(prob = predict(fit, newdata = data.frame(tacit, weak_ip), type = "response"),
+         ip = ifelse(weak_ip == 1, "Weak IP protection in host country", "Strong IP protection in host country"))
+ggplot(grid, aes(tacit, prob, colour = ip)) +
+  geom_jitter(data = sim, aes(tacit, owned), height = 0.03, width = 0, alpha = 0.18, size = 1) +
+  geom_line(linewidth = 1.2) +
+  scale_colour_manual(values = c("Strong IP protection in host country" = pal[["blue"]],
+                                 "Weak IP protection in host country" = pal[["orange"]])) +
+  scale_y_continuous(labels = scales::percent) +
+  guides(colour = guide_legend(ncol = 1)) +
+  labs(x = "Tacitness of transferred knowledge (0 = fully codified, 1 = fully tacit)",
+       y = "Probability of wholly owned entry", colour = NULL,
+       title = "Tacit knowledge pulls transactions inside the firm",
+       caption = "Illustrative simulation (n = 800, set.seed(1976)). Points: 1 = wholly owned, 0 = license. Lines: logit fits.")
+```
+
+### Evidence and extensions
+
+Internalization theory underpins much research on entry mode, licensing, and the
+boundaries of the multinational. Its most important challenge came from the
+knowledge-based view. @kogut1993 argued that MNEs exist not because markets for
+knowledge fail through opportunism, but because firms are social communities that
+are especially *efficient* at transferring knowledge internally. Studying transfers
+of technology by Swedish firms, they found that the less codifiable and the harder
+to teach the technology, the more likely it was transferred to a wholly owned
+subsidiary rather than to a licensee or joint venture. The prediction overlaps with
+internalization theory, but the mechanism differs: capability rather than market
+failure.
+
+::: {.debate}
+**Market failure or superior knowledge transfer?** Transaction-cost versions of
+internalization theory explain the MNE by the hazards of the market (opportunism,
+appropriation). Knowledge-based versions explain it by the advantages of the
+organization (shared codes, routines, identity). The two explanations predict the
+same mode choice in many settings, which makes them hard to separate empirically.
+Distinguishing designs exploit cases in which contractual hazards are low but
+knowledge is tacit, or the reverse. @buckley2009 argue that internalization theory
+can absorb both mechanisms, critics reply that this flexibility weakens its
+predictive content.
+:::
+
+::: {.business-case}
+**Illustrative scenario: a medical-device maker choosing a mode.** A mid-sized
+European maker of surgical instruments wants to serve a fast-growing Asian market.
+A local firm offers to license its designs and manufacture them. Internalization
+theory directs management to three questions. Can the know-how be codified? (Much
+of the firm's advantage lies in precision finishing learned on the shop floor, so
+not fully.) Can contracts protect it? (Patent enforcement in the host country is
+slow.) Will quality failures damage the global brand? (Yes, surgeons buy on
+reputation.) All three point toward internalization, perhaps a wholly owned
+assembly and finishing plant supplied with critical components from home. If the
+know-how were codified and courts reliable, licensing would preserve capital and
+flexibility.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The tacitness of a firm's core technology will be positively associated
+  with the probability of wholly owned entry.
+- *H2.* Strengthening of host-country intellectual property protection will
+  increase licensing relative to FDI, especially in industries with codifiable
+  technologies.
+
+**Designs.** Mode-choice models with measures of knowledge characteristics.
+Difference-in-differences around intellectual property reforms. Matched comparisons of
+licensed and internalized transfers of the same technology.
+
+**Measures.** Codifiability and teachability scales [@kogut1993], patent citations
+and claims, R&D intensity, indices of intellectual property protection and contract
+enforcement.
+:::
+
+## Liability of Foreignness {#liability-of-foreignness}
+
+::: {.theory-card}
+**Core claim.** Firms operating abroad incur costs that local firms do not, arising
+from unfamiliarity, distance, discrimination, and lack of [legitimacy](#legitimacy) (Section \@ref([legitimacy](#legitimacy) (Section \@ref(legitimacy)))). These costs
+put foreign subsidiaries at a disadvantage that they must offset with firm-specific
+advantages or reduce over time.
+
+**Origins.** Hymer's "costs of doing business abroad" [@hymer1976]. Named and
+tested by @zaheer1995, with dynamics studied by @zaheer1997 and institutional
+foundations by @kostova1999.
+
+**Level of analysis.** The foreign subsidiary relative to comparable local firms.
+
+**Key constructs.** Costs of doing business abroad, unfamiliarity hazards,
+discrimination hazards, relational hazards, institutional distance, legitimacy,
+liability of outsidership.
+
+**Boundary conditions.** Larger when institutional and cultural distance are high,
+when products are visible or politically sensitive, and early in the subsidiary's
+life. Smaller for firms with strong, transferable advantages or local partners.
+
+**Related theories.** [Legitimacy](#legitimacy) (Section \@ref(legitimacy)), [Institutional
+theory](#institutional-theory) (Section \@ref(institutional-theory)), [Liability of newness](#liability-of-newness) (Section \@ref(liability-of-newness)),
+[Uppsala model](#uppsala-model), [Cultural distance and Hofstede](#hofstede) (Section \@ref(hofstede)).
+:::
+
+### Core logic
+
+@hymer1976 argued that a foreign firm is at a disadvantage relative to local firms
+because it lacks knowledge of local conditions, may be treated unfavourably by
+governments, consumers, and suppliers, and bears exchange-rate and communication
+costs. @zaheer1995 named these costs the **liability of foreignness** (LOF) and
+identified four sources, summarised in Table \@ref(tab:ib-tab-lof).
+
+```{r ib-tab-lof}
+tibble::tribble(
+  ~`Source of liability`, ~Example, ~`Typical mitigation`,
+  "Spatial distance", "Travel, transport, time-zone coordination, communication", "Regional hubs, digital coordination, local decision rights",
+  "Unfamiliarity with the local environment", "Misreading customers, labour law, or supplier norms", "Local hires, partners, acquisitions, experiential learning",
+  "Host-country environment", "Lack of legitimacy, economic nationalism, discriminatory treatment by regulators or buyers", "Local identity, community engagement, local ownership stakes",
+  "Home-country environment", "Home-country restrictions on what may be sold where, home-country reputation", "Compliance structures, distancing from home-country image"
+) |>
+  book_table(caption = "Four sources of the liability of foreignness (after Zaheer, 1995).")
+```
+
+Zaheer's own evidence came from the currency-trading rooms of banks in New York and
+Tokyo. Foreign-owned trading rooms showed a disadvantage relative to local ones,
+and the study suggested that importing the parent's distinctive organizational
+capabilities did more to overcome the liability than imitating local practices
+[@zaheer1995]. @zaheer1997 then followed trading rooms worldwide over two decades
+and found that the survival disadvantage of foreign rooms was concentrated in their
+early years and diminished over time, consistent with learning. @mezias2002 found
+that foreign subsidiaries in the United States faced more adverse labour-lawsuit
+judgments than domestic firms and identified strategies that reduced the gap,
+an unusually direct measure of discrimination and unfamiliarity hazards.
+
+@kostova1999 tied the concept to [Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)).
+An MNE must gain [legitimacy](#legitimacy) (Section \@ref(legitimacy)) in many host environments at once, faces
+audiences that judge it with stereotypes and limited information, and may be held
+to different standards from local firms. Its legitimacy is complex because it
+depends on the institutional distance between home and host and on spillovers from
+the conduct of other foreign firms. @johanson2009 extended the argument in a
+different direction: what hurts the entrant most is not being foreign but being an
+**outsider** to local business networks.
+
+### Mechanism
+
+Figure \@ref(fig:ib-fig-lof) sketches the dynamic implied by @zaheer1997 and the
+Uppsala model. The foreign entrant starts with a cost disadvantage that shrinks as
+it learns and builds legitimacy. The shaded area is the cumulative liability the
+firm's advantages must cover.
+
+```{r ib-fig-lof, fig.cap = "Stylised dynamics of the liability of foreignness. A foreign subsidiary's operating cost disadvantage relative to comparable local firms is largest at entry and declines as the subsidiary learns and gains legitimacy. Simulated values, not empirical.", fig.height = 3.8}
+set.seed(1995)
+yrs <- 0:15
+lof <- data.frame(year = yrs,
+                  local = 100,
+                  foreign = 100 + 22 * exp(-0.28 * yrs) + rnorm(length(yrs), 0, 0.6)) |>
+  pivot_longer(c(local, foreign), names_to = "firm", values_to = "cost") |>
+  mutate(firm = recode(firm, local = "Comparable local firm", foreign = "Foreign subsidiary"))
+gap <- lof |> pivot_wider(names_from = firm, values_from = cost)
+ggplot() +
+  geom_ribbon(data = gap, aes(year, ymin = `Comparable local firm`, ymax = `Foreign subsidiary`),
+              fill = pal[["orange"]], alpha = 0.15) +
+  geom_line(data = lof, aes(year, cost, colour = firm), linewidth = 1.1) +
+  annotate("text", x = 0.5, y = 104, label = "Liability of\nforeignness", size = 3.4,
+           colour = ink[["secondary"]], hjust = 0) +
+  scale_colour_manual(values = c("Comparable local firm" = pal[["blue"]], "Foreign subsidiary" = pal[["orange"]])) +
+  coord_cartesian(ylim = c(95, 125)) +
+  labs(x = "Years since entry", y = "Operating cost index (local firm = 100)", colour = NULL,
+       title = "The liability of foreignness is largest at entry",
+       caption = "Illustrative simulation (set.seed(1995)). Exponential decay of a 22-point initial cost gap.")
+```
+
+### Applications in business
+
+::: {.business-case}
+**Walmart in Germany.** Walmart's German venture (1997-2006) is the most
+frequently cited case of liability of foreignness in retailing. The company entered
+by acquiring two chains with very different store formats, which complicated
+integration. Its model of "lean retailing" depended on practices common in the
+United States: control over large-format sites, flexible labour deployment, and
+strong bargaining power over suppliers. @christopherson2007 argues that German
+institutions constrained these practices: land-use planning limited large
+out-of-town stores, labour-market institutions such as works councils and
+collective agreements limited flexible staffing, and the market was already served
+by efficient hard discounters such as Aldi and Lidl, which blunted the price
+advantage on which the model relied. Imported management practices also met resistance, and parts of the
+company's code of conduct were challenged in German labour courts. In 2006 Walmart
+sold its 85 German stores to Metro. In LOF terms, the firm suffered unfamiliarity
+and host-environment hazards, and its ownership advantages proved less
+transferable than expected because they were embedded in American institutions.
+:::
+
+::: {.business-case}
+**Uber in China.** Uber launched in China in 2014 and competed with local
+ride-hailing firms that merged in 2015 to form Didi Kuaidi (later Didi Chuxing),
+whose predecessors were backed by Tencent and Alibaba. The local rival was embedded
+in the dominant payment and messaging ecosystems and in relationships with local
+governments. Uber's then chief executive publicly acknowledged heavy losses in the
+Chinese market, and in August 2016 Uber agreed to sell its China operations to Didi
+in exchange for a stake in the combined company. The case fits the
+**liability of outsidership** of @johanson2009 as well as classic LOF: Uber's
+technology and brand were strong, but it lacked a position in the networks that
+shaped access to users, payments, and regulators.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Foreign subsidiaries will have lower survival rates than comparable local
+  firms, and this gap will decline with subsidiary age.
+- *H2.* The liability of foreignness will be larger when institutional distance
+  between home and host country is greater.
+- *H3.* Subsidiaries that hire local top managers will experience a smaller
+  liability of foreignness in regulatory and legal outcomes.
+
+**Designs.** Matched comparisons of foreign and domestic firms in the same industry
+and location. Survival models with time-varying effects. Natural experiments that
+change the salience of foreignness (for example, diplomatic disputes affecting
+consumer attitudes toward a home country).
+
+**Measures.** Performance or survival gaps between foreign and domestic firms,
+institutional distance indices, regulatory outcomes, media sentiment toward foreign
+firms.
+:::
+
+::: {.pitfall}
+**Attributing every foreign underperformance to foreignness.** A foreign subsidiary
+may underperform because it is new, small, or poorly managed, not because it is
+foreign. Without a comparison to local firms of similar age and size, a
+"liability of foreignness" may simply be a [liability of
+newness](#liability-of-newness) (Section \@ref(liability-of-newness)). Separate the two by comparing foreign and local
+entrants of the same vintage.
+:::
+
+## Institutional Voids {#institutional-voids}
+
+::: {.theory-card}
+**Core claim.** Emerging markets often lack the specialized intermediaries that
+make markets work in advanced economies: credit-rating agencies, reliable courts,
+independent auditors, executive search firms, retail distribution, and consumer
+protection. These **institutional voids** raise transaction costs, shape which
+organizational forms succeed (notably diversified business groups), and determine
+which strategies foreign entrants should use.
+
+**Origins.** Strategy and international business. @khanna1997 introduced the idea
+to explain why diversified business groups prosper in emerging markets.
+@khanna2000 provided evidence from India, and @khanna2010 developed a framework for
+strategy in emerging markets.
+
+**Level of analysis.** Country (the institutional context), business group, and firm.
+
+**Key constructs.** Market intermediaries, product, labour, and capital market
+voids, business groups, internal markets, void-filling strategies.
+
+**Boundary conditions.** Strongest where formal market institutions are
+underdeveloped. As institutions mature, the advantages of internal markets should
+decline.
+
+**Related theories.** [Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Liability of foreignness](#liability-of-foreignness),
+[Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)).
+:::
+
+### Core logic
+
+In advanced economies, firms can raise capital from investors who rely on audited
+accounts and rating agencies, hire managers through executive search firms and
+business schools, and reach consumers through organized retail and credible
+advertising. @khanna1997 argued that these intermediaries are often missing or weak
+in emerging markets, and that the gap changes the logic of corporate strategy.
+Where external capital, labour, and product markets function poorly, a large
+diversified **business group** can replicate them internally: it can allocate
+capital across affiliates, train and rotate managers, and use its group name as a
+signal of quality to consumers and partners. Advice to "focus" on core businesses,
+appropriate where markets work, may therefore be wrong where they do not.
+
+@khanna2000 tested the argument on Indian firms and found that the performance of
+group affiliates was related to the diversification of the group, with affiliates of
+the most diversified groups outperforming unaffiliated firms. @khanna2010 turned the
+concept into a framework for managers. They proposed mapping voids in product,
+labour, and capital markets and in the political and social system, and identified
+four strategic choices for firms entering emerging markets: replicate the home
+business model or adapt it, compete alone or collaborate with local partners, accept
+the market context or try to change it, and enter, wait, or exit. Firms can also
+treat voids as business opportunities by **filling** them, for instance by
+building distribution, certification, or payment infrastructure (Table \@ref(tab:ib-tab-voids)).
+
+```{r ib-tab-voids}
+tibble::tribble(
+  ~Market, ~`Typical void`, ~`Business-group response`, ~`Foreign entrant's options`,
+  "Capital", "Weak disclosure, few credible rating agencies, shallow equity markets", "Internal capital market across affiliates", "Fund locally through parent, partner with local banks",
+  "Labour", "Few certified managers, limited executive search, weak training", "Group training programmes, rotation of managers across affiliates", "Build training academies, expatriates, local talent pipelines",
+  "Product", "Little consumer protection, weak quality certification, fragmented retail", "Group brand as a quality signal, own distribution", "Invest in distribution, use brand and warranty as signals",
+  "Contracting", "Slow courts, uncertain enforcement", "Relational contracting within the group", "Joint ventures, local partners, arbitration clauses",
+  "Payments and data", "Low banking penetration, little credit history", "In-house finance arms", "Fill the void as a business (mobile money, credit scoring)"
+) |>
+  book_table(caption = "Institutional voids and responses (after Khanna and Palepu, 1997, 2010).")
+```
+
+### Mechanism
+
+Figure \@ref(fig:ib-fig-voids) shows the institutional voids raise transaction costs in external markets.
+
+```{r ib-fig-voids, fig.cap = "Institutional voids raise transaction costs in external markets. Business groups and void-filling firms respond by internalizing or supplying the missing intermediation. As institutions develop, the advantage of internal markets declines (dashed moderator). Based on the argument of Khanna and Palepu (1997, 2010)."}
+mechanism_diagram(sprintf('
+  V  [label = "Institutional voids\\n(missing intermediaries)", %s]
+  T  [label = "High transaction costs\\nin capital, labour,\\nand product markets", %s]
+  G  [label = "Internal markets in\\ndiversified business groups", %s]
+  F  [label = "Void-filling ventures\\n(distribution, payments,\\ncertification)", %s]
+  P  [label = "Performance advantage\\nfor groups and fillers", %s]
+  D  [label = "Institutional\\ndevelopment", %s]
+  V -> T
+  T -> G
+  T -> F
+  G -> P
+  F -> P
+  D -> P [style = dashed, arrowhead = tee]
+', node_construct, node_mechanism, node_mechanism, node_mechanism, node_outcome, node_moderator))
+```
+
+### Evidence and extensions
+
+The concept has been widely used to explain the prevalence of business groups in
+Asia and Latin America, the strategies of emerging-market multinationals, and the
+design of market entry. It has also shaped thinking about market-creating
+innovation: Safaricom's M-Pesa, launched in Kenya in 2007, is often cited as a firm
+filling a financial-services void with mobile money. The framework links naturally
+to [Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)) (voids are the absence of the
+regulative and normative pillars that make markets legible) and to [Transaction cost
+economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)) (voids raise the costs of market
+governance).
+
+::: {.debate}
+**Efficiency or entrenchment?** The void-filling account treats business groups as
+efficient responses to market failure. An alternative view holds that groups also
+reflect political connections, family control, and the expropriation of minority
+shareholders through transfers among affiliates. Both mechanisms may operate at
+once, and their balance likely varies with the stage of institutional development.
+A second debate concerns the term itself: critics note that "voids" are rarely
+empty. Informal institutions such as kinship networks, reputation, and community
+enforcement often fill them, and a foreign firm that sees only absence may miss the
+rules that actually govern exchange.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Tata and Indian business groups.** The Tata Group, whose origins go back to the
+trading business founded by Jamsetji Tata in 1868, is a classic diversified Indian
+business group, spanning steel, automobiles, information technology services,
+consumer goods, hotels, and power. Khanna and Palepu's account suggests why such a
+structure made sense in India's earlier institutional environment: the group name
+served as a signal of trustworthiness where consumer protection and quality
+certification were weak, group companies trained and rotated managers when
+external managerial labour markets were thin, and the group could channel capital
+to new ventures when equity markets were shallow [@khanna1997; @khanna2000]. As
+Indian markets developed, the group used its capabilities to expand abroad through
+acquisitions such as Tetley (2000), Corus (2007), and Jaguar Land Rover (2008). The
+case also illustrates the boundary condition: as voids close, the case for broad
+diversification weakens, and groups face pressure to show that each business can
+stand on its own.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The performance premium of business-group affiliation will be larger in
+  countries and periods with weaker capital-market institutions.
+- *H2.* Pro-market reforms will reduce the performance premium of group
+  affiliation over time.
+- *H3.* Foreign entrants will be more likely to use joint ventures in markets with
+  larger contracting voids.
+
+**Designs.** Cross-country panels of group-affiliated and independent firms.
+Difference-in-differences around institutional reforms (for example, securities
+regulation or bankruptcy law). Case studies of void-filling ventures.
+
+**Measures.** Group affiliation (from national business-group directories),
+indices of institutional quality, transfer and related-party transaction data,
+diversification measures.
+:::
+
+## Born Globals {#born-globals}
+
+::: {.theory-card}
+**Core claim.** Some firms internationalize from or near inception, deriving
+competitive advantage from resources and sales in multiple countries rather than
+expanding abroad gradually after building a domestic base.
+
+**Origins.** International entrepreneurship. @oviatt1994 defined the
+**international new venture** and specified the elements needed for it to exist.
+@knight2004 linked born-global firms to innovation and organizational capabilities.
+
+**Level of analysis.** The new venture and its founders.
+
+**Key constructs.** International new venture, born global, speed and scope of
+internationalization, founder international experience, unique resources,
+international entrepreneurial orientation, digital and network reach.
+
+**Boundary conditions.** Most common in knowledge-intensive, niche, or digital
+industries, where offerings are standardized, fixed costs are high, home markets are
+small, and global networks are accessible.
+
+**Related theories.** [Uppsala model](#uppsala-model),
+[Effectuation](#effectuation) (Section \@ref(effectuation)), [Network effects](#network-effects) (Section \@ref(network-effects)),
+[Liability of newness](#liability-of-newness) (Section \@ref(liability-of-newness)),
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)).
+:::
+
+### Core logic
+
+By the early 1990s researchers and consultants had noticed small firms that
+exported a large share of output within a few years of founding, often to distant
+markets. @oviatt1994 proposed a theory of the **international new venture** (INV),
+defined as a business organization that, from inception, seeks significant
+competitive advantage from the use of resources and the sale of outputs in multiple
+countries. They argued that four elements are necessary for an INV to exist:
+internalization of some transactions, alternative governance structures (such as
+networks and alliances, because a new firm cannot own many assets), foreign
+location advantages, and unique resources that are hard to imitate. The theory
+explicitly builds on [internalization theory](#internalization-theory) and the OLI paradigm, but replaces the
+assumption of a mature firm with that of a resource-poor start-up.
+
+@knight2004 asked what makes such firms succeed. Drawing on case and survey data,
+they argued that born-global firms are characterized by an **innovative culture**
+and by knowledge and capabilities, including international entrepreneurial
+orientation and international marketing orientation, that support early
+international performance. The constructs tie the born-global phenomenon to the
+resource-based view and to research on entrepreneurial orientation. Operational
+definitions vary across studies but usually combine a short time between founding
+and first foreign sales with a minimum share of foreign sales.
+
+Table \@ref(tab:ib-tab-bornglobal) contrasts the two views, and Figure
+\@ref(fig:ib-fig-paths) shows their stylised paths.
+
+```{r ib-tab-bornglobal}
+tibble::tribble(
+  ~Dimension, ~`Uppsala-type firm`, ~`Born global`,
+  "Starting point", "Established domestic business", "Global orientation at or near founding",
+  "Knowledge source", "Experiential, accumulated in each market", "Founders' prior experience, networks, codified offerings",
+  "Market sequence", "Psychically close markets first", "Lead markets and niches, often distant",
+  "Entry modes", "Agents, then subsidiaries", "Digital channels, partners, alliances, lean subsidiaries",
+  "Key constraint", "Market knowledge and risk tolerance", "Resources, legitimacy, and managerial bandwidth",
+  "Typical industries", "Manufacturing, industrial goods", "Software, digital media, biotechnology, niche high-tech",
+  "Theoretical anchor", "[Uppsala model](#uppsala-model)", "International entrepreneurship, [Effectuation](#effectuation)"
+) |>
+  book_table(caption = "Gradual versus born-global internationalization.")
+```
+
+```{r ib-fig-paths, fig.cap = "Illustrative stylised internationalization paths. An Uppsala-type firm builds a domestic base and raises its foreign sales share gradually. A born global reaches a high foreign share within a few years of founding. Simulated data, not empirical.", fig.height = 4}
+set.seed(1994)
+age <- seq(0, 25, by = 0.5)
+paths2 <- bind_rows(
+  data.frame(age, share = 0.70 / (1 + exp(-0.45 * (age - 14))), path = "Uppsala-type firm (gradual)"),
+  data.frame(age, share = 0.80 / (1 + exp(-1.6 * (age - 2))), path = "Born global (rapid)")
+) |>
+  mutate(share = pmin(pmax(share + rnorm(n(), 0, 0.01), 0), 1),
+         path = factor(path, levels = c("Uppsala-type firm (gradual)", "Born global (rapid)")))
+ggplot(paths2, aes(age, share, colour = path)) +
+  geom_line(linewidth = 1.2) +
+  annotate("rect", xmin = 0, xmax = 3, ymin = -Inf, ymax = Inf, fill = pal[["aqua"]], alpha = 0.08) +
+  annotate("text", x = 1.5, y = 0.95, label = "First three\nyears", size = 3.2, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("Uppsala-type firm (gradual)" = pal[["blue"]], "Born global (rapid)" = pal[["orange"]])) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+  labs(x = "Years since founding", y = "Foreign sales as share of total sales", colour = NULL,
+       title = "Two routes to international scale",
+       caption = "Illustrative simulation (set.seed(1994)). Logistic curves with small noise, parameters chosen for exposition.")
+```
+
+### Evidence and extensions
+
+Born globals have been documented in many countries, especially small open
+economies whose home markets are too small to support specialized products. The
+phenomenon has grown with digital distribution, which lowers the cost of reaching
+foreign customers and allows a firm to learn about many markets at once from usage
+data. Research has examined the role of founders' international experience, the
+importance of networks and alliances for resource-poor ventures, and the
+consequences of early internationalization for growth and survival.
+
+::: {.debate}
+**Do born globals refute the Uppsala model?** Early studies presented born globals
+as a challenge to gradualism. The Uppsala authors replied that their model concerns
+learning and commitment, not age at entry: founders who bring experience and
+networks from previous jobs have already accumulated the knowledge the model
+emphasises, and the 2009 network version predicts rapid entry where relationships
+exist [@johanson2009]. Others note that many "born globals" are really "born
+regionals" that sell mostly within their home region, in line with evidence that
+even large MNEs are predominantly regional [@rugman2004]. A further concern is
+survivorship bias: the visible born globals are the successes, while early
+internationalization may also raise the risk of failure.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Skype and Spotify as born globals.** Skype was founded in 2003 by Niklas
+Zennström and Janus Friis, with software developed by engineers in Estonia. As an
+internet telephony service distributed by download, it had no physical
+establishment chain to climb: users anywhere could adopt it, and its value grew with
+the number of users it could connect. It was acquired by eBay in 2005 and by
+Microsoft in 2011. Spotify, founded in Stockholm in 2006, launched its music
+streaming service in 2008 in several European markets at once and entered the
+United States in 2011. For Spotify the binding constraint was not market knowledge
+but licensing agreements with record labels and rights organizations in each
+country, a reminder that born globals still face country-specific institutions. Both
+cases fit the elements of @oviatt1994: unique, hard-to-imitate resources (software
+and network effects), alternative governance through partnerships, and
+location-independent delivery.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Founders' prior international work experience will be positively associated
+  with the speed of a new venture's first foreign entry.
+- *H2.* The positive effect of early internationalization on growth will be stronger
+  for ventures with codified, digitally delivered offerings.
+- *H3.* Early internationalization will increase the variance of venture outcomes
+  (both rapid growth and failure).
+
+**Designs.** Longitudinal cohorts of new ventures (for example, from national
+start-up registers). Survival and growth models with time to first foreign sale as
+the key variable. Founder-level data on experience and networks.
+
+**Measures.** Time from founding to first foreign sale, share of foreign sales,
+number of countries served, founders' international experience, innovative culture
+and international entrepreneurial orientation scales [@knight2004].
+:::
+
+::: {.pitfall}
+**Defining born globals by outcome alone.** Studies that classify firms as born
+global because they succeeded internationally sample on the dependent variable.
+Define international new ventures by their *intent and activity at founding*,
+follow full cohorts including failures, and report how results change across
+alternative thresholds for speed and foreign sales share.
+:::
+
+## Chapter Summary {#international-business-summary}
+
+::: {.key-takeaways}
+- The **Uppsala model** explains internationalization as a loop in which
+  experiential knowledge drives commitment, producing an establishment chain and a
+  psychic-distance sequence. The 2009 revision locates the main barrier in network
+  outsidership [@johanson1977; @johanson2009].
+- The **OLI paradigm** states that FDI requires ownership, location, and
+  internalization advantages at once. It organizes much research but is criticized
+  as hard to falsify [@dunning1980; @dunning1988].
+- **Internalization theory** explains the MNE as a response to imperfect markets for
+  knowledge and other intermediate products. The knowledge-based view offers a
+  competing mechanism with similar predictions [@buckley1976; @kogut1993].
+- The **liability of foreignness** captures the extra costs of operating abroad, from
+  unfamiliarity, discrimination, and lack of legitimacy. It is largest at entry and
+  declines with learning [@zaheer1995; @zaheer1997].
+- **Institutional voids** in emerging markets favour business groups and void-filling
+  strategies and call for strategies tailored to local market institutions
+  [@khanna1997; @khanna2010].
+- **Born globals** internationalize from inception using unique resources, networks,
+  and digital reach, challenging but also extending gradualist accounts
+  [@oviatt1994; @knight2004].
+:::
+
+Table \@ref(tab:ib-tab-summary) presents the comparison of the chapter's theories.
+
+```{r ib-tab-summary}
+tibble::tribble(
+  ~Theory, ~`Unit of analysis`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Uppsala model", "Firm-market relationship", "Experiential learning drives commitment", "Gradual entry, close markets first", "Sequencing market entry, pacing investment",
+  "OLI paradigm", "Firm in country and industry context", "Joint presence of O, L, I advantages", "FDI only when all three hold", "Choosing between export, licensing, and FDI",
+  "Internalization theory", "Cross-border transaction", "Market failure for intermediate products", "Tacit knowledge leads to wholly owned modes", "Entry-mode design, licensing decisions",
+  "Liability of foreignness", "Foreign subsidiary versus locals", "Unfamiliarity, discrimination, legitimacy deficits", "Foreign firms underperform early, gap narrows", "Localization, partner choice, legitimacy building",
+  "Institutional voids", "Country and business group", "Missing intermediaries raise transaction costs", "Groups and void-fillers outperform where voids are large", "Emerging-market strategy, partnering, new business models",
+  "Born globals", "New venture", "Unique resources, networks, digital reach", "Early, rapid, and distant internationalization", "Start-up global strategy, founder team design"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#international-business-questions}
+
+1. The Uppsala model predicts that firms enter psychically close markets first.
+   Using the CAGE framework, explain why Walmart's entry into Germany may have been
+   more "distant" than it appeared. What would the model have advised?
+2. Is the OLI paradigm a theory or a taxonomy? Propose a test of the paradigm that
+   could, in principle, produce disconfirming evidence.
+3. Internalization theory and the knowledge-based view both predict that tacit
+   knowledge is transferred to wholly owned subsidiaries. Design a study that could
+   distinguish their mechanisms.
+4. How would you separate a liability of foreignness from a liability of newness in
+   data on foreign entrants? Specify the comparison group and the key variables.
+5. Choose an emerging market you know. Map its institutional voids in capital,
+   labour, and product markets, and identify one void that a new venture could fill
+   profitably.
+6. Do digital platforms make the Uppsala model obsolete? Use the Spotify case and the
+   2009 revision of the model to argue both sides.
+
+## Further Reading {#international-business-reading}
+
+- @johanson1977: the original Uppsala model. Short and clear, and still the
+  reference point for process theories of internationalization.
+- @johanson2009: the network revision that introduced the liability of
+  outsidership.
+- @dunning1988: the fullest journal statement of the eclectic paradigm and its
+  extensions.
+- @buckley2009: the authors' own review of three decades of internalization theory.
+- @kogut1993: the knowledge-based challenge to market-failure explanations of the MNE.
+- @zaheer1995: the article that named and measured the liability of foreignness.
+- @khanna2010: a practical framework for strategy in emerging markets built on
+  institutional voids.
+- @oviatt1994: the foundational theory of international new ventures.

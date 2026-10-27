@@ -23,17 +23,30 @@ rmd_files:
   - 08-information.Rmd
   - 09-networks-exchange.Rmd
   - 10-innovation-adoption.Rmd
-  - part-3-individuals.Rmd
-  - 11-culture.Rmd
-  - 12-motivation.Rmd
-  - 13-self-regulation.Rmd
-  - 14-social-influence.Rmd
-  - 15-judgment-decision.Rmd
-  - 16-emotion-wellbeing.Rmd
-  - 17-persuasion-communication.Rmd
-  - part-4-effects.Rmd
-  - 18-effects.Rmd
-  - 19-phenomena.Rmd
-  - 20-frameworks.Rmd
-  - 21-theory-atlas.Rmd
-  - 22-references.Rmd
+  - 11-strategy-competition.Rmd
+  - 12-innovation-entrepreneurship.Rmd
+  - 13-international-business.Rmd
+  - 14-organizations-decisions.Rmd
+  - 15-work-leadership.Rmd
+  - part-3-markets.Rmd
+  - 16-finance.Rmd
+  - 17-economics-institutions.Rmd
+  - part-4-individuals.Rmd
+  - 18-culture.Rmd
+  - 19-motivation.Rmd
+  - 20-self-regulation.Rmd
+  - 21-attitudes-attribution.Rmd
+  - 22-social-influence.Rmd
+  - 23-judgment-decision.Rmd
+  - 24-prospect-theory.Rmd
+  - 25-emotion-wellbeing.Rmd
+  - 26-persuasion-communication.Rmd
+  - part-5-consumers.Rmd
+  - 27-consumer-behavior.Rmd
+  - 28-marketing-strategy.Rmd
+  - part-6-effects.Rmd
+  - 29-effects.Rmd
+  - 30-phenomena.Rmd
+  - 31-frameworks.Rmd
+  - 32-theory-atlas.Rmd
+  - 33-references.Rmd

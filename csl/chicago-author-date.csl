@@ -44,6 +44,7 @@
       <term name="translator" form="verb-short">trans.</term>
       <term name="editortranslator" form="verb">edited and translated by</term>
       <term name="translator" form="short">trans.</term>
+      <term name="page-range-delimiter">-</term>
     </terms>
   </locale>
   <locale xml:lang="pt-PT">

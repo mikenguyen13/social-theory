@@ -15,15 +15,15 @@ Both puzzles are questions about **governance**: the arrangements by which one
 party gets another to act on its behalf when their interests, information, and
 attitudes toward risk differ. This chapter develops four theories that together
 form the core of organizational economics and strategic leadership research.
-**Agency theory** analyses how principals design contracts and monitoring to
-control self-interested agents. **Stewardship theory** argues that the agency
+**[Agency theory](#agency-theory)** analyses how principals design contracts and monitoring to
+control self-interested agents. **[Stewardship theory](#stewardship-theory)** argues that the agency
 model of human nature is too narrow and that many managers are better motivated by
-trust and identification than by incentives. **Transaction cost economics**
+trust and identification than by incentives. **[Transaction cost economics](#transaction-cost-economics)**
 asks a more fundamental question, why some transactions are organized inside
 firms rather than in markets, and answers it with the hazards of specific
-investment. **Upper echelons theory**, finally, opens the black box of the
+investment. **[Upper echelons theory](#upper-echelons-theory)**, finally, opens the black box of the
 executive suite and argues that organizations become reflections of the people
-who lead them.
+who lead them (Table \@ref(tab:tab-gov-glance)).
 
 ```{r tab-gov-glance}
 tibble::tribble(
@@ -53,7 +53,7 @@ can reduce, but not eliminate, the resulting **agency costs**.
 franchisor-franchisee, client-supplier) and the firm as a set of such contracts.
 
 **Key constructs.** Principal, agent, goal conflict, information asymmetry,
-moral hazard, adverse selection, risk preferences, outcome- vs. behaviour-based
+moral hazard, [adverse selection](#information-asymmetry) (Section \@ref(information-asymmetry)), risk preferences, outcome- vs. behaviour-based
 contracts, monitoring, bonding, residual loss.
 
 **Boundary conditions.** Goal conflict must be present. The agent's effort or
@@ -61,10 +61,10 @@ information must be costly for the principal to observe. Agents are assumed
 self-interested, boundedly rational, and typically more risk-averse than
 principals.
 
-**Related theories.** [Information asymmetry](#information-asymmetry),
-[Screening](#screening-theory), [Stewardship theory](#stewardship-theory),
+**Related theories.** [Information asymmetry](#information-asymmetry) (Section \@ref(information-asymmetry)),
+[Screening](#screening-theory) (Section \@ref(screening-theory)), [Stewardship theory](#stewardship-theory),
 [Transaction cost economics](#transaction-cost-economics),
-[Resource dependence](#resource-dependence-theory).
+[Resource dependence](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)).
 :::
 
 ### Origins and intellectual history
@@ -106,7 +106,7 @@ likely to have conflicting goals and describes the governance mechanisms,
 boards, markets for corporate control, equity ownership, that limit self-serving
 behaviour, usually in large public corporations. The **principal-agent** stream is
 more formal and more general: it asks which contract is most efficient given
-assumptions about people (self-interest, bounded rationality, risk aversion),
+assumptions about people (self-interest, [bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)), risk aversion),
 organizations (goal conflict), and information (a purchasable commodity).
 
 ### Core logic and propositions
@@ -175,7 +175,7 @@ following propositions summarise her argument:
   can be specified in advance) favour behaviour-based contracts. Easily measured
   outcomes favour outcome-based contracts.
 - **P5 (Relationship length).** In long relationships the principal learns about
-  the agent, so behaviour-based contracts become more feasible.
+  the agent, so behaviour-based contracts become more feasible (Table \@ref(tab:tab-gov-contracts)).
 
 ```{r tab-gov-contracts}
 tibble::tribble(
@@ -305,11 +305,11 @@ and finance. Several findings recur.
   @westphal1994 found that many companies announced long-term incentive plans for
   their CEOs but did not actually grant awards under them, while still enjoying a
   favourable market reaction, an early demonstration that governance can be
-  ceremonial (see [Institutional theory](#institutional-theory)).
+  ceremonial (see [Institutional theory](#institutional-theory) (Section \@ref(institutional-theory))).
 
 The theory has also been extended in behavioural directions. The **behavioural
 agency model** of @wiseman1998 combines agency logic with
-[prospect theory](#prospect-theory): because executives evaluate outcomes relative
+[prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)): because executives evaluate outcomes relative
 to reference points, the same option grant can make an executive more risk-seeking
 when the firm is below target and more risk-averse when accumulated option wealth
 is at stake.
@@ -445,9 +445,9 @@ Predictions depend on the manager's motivation and on situational factors such a
 culture and management philosophy.
 
 **Related theories.** [Agency theory](#agency-theory),
-[Self-determination theory](#self-determination-theory),
-[Social exchange theory](#social-exchange-theory),
-[Power distance](#power-distance-theory).
+[Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)),
+[Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Power distance](#power-distance-theory) (Section \@ref(power-distance-theory)).
 :::
 
 ### Core logic
@@ -543,8 +543,8 @@ executive is a steward and whether the board can tell. A practical compromise,
 a combined CEO-chair together with a strong lead independent director, tries to
 capture the unity-of-command benefits of stewardship while retaining an agency
 safeguard. @hillman2003 add that independent directors provide not only monitoring
-but also **board capital**, advice, legitimacy, and links to external resources,
-which connects governance to [resource dependence theory](#resource-dependence-theory).
+but also **board capital**, advice, [legitimacy](#legitimacy) (Section \@ref([legitimacy](#legitimacy) (Section \@ref(legitimacy)))), and links to external resources,
+which connects governance to [resource dependence theory](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)).
 :::
 
 ::: {.pitfall}
@@ -582,9 +582,9 @@ some of the time. Courts cannot cheaply enforce all contingencies. Transacting
 parties can choose among governance alternatives.
 
 **Related theories.** [Agency theory](#agency-theory),
-[Resource-based theory](#resource-based-theory),
-[Resource dependence](#resource-dependence-theory),
-[Bounded rationality](#bounded-rationality).
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)),
+[Resource dependence](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)),
+[Bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)).
 :::
 
 ### Origins and intellectual history
@@ -602,7 +602,7 @@ market.
 For decades the argument was admired but rarely used, because it did not say
 *which* transactions would be cheaper to organize internally. @williamson1975
 supplied the missing operational content. Drawing on Herbert Simon's concept of
-[bounded rationality](#bounded-rationality) and on legal scholarship about
+[bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)) and on legal scholarship about
 contracts, Williamson argued that transaction costs arise from the combination of
 two behavioural assumptions and three attributes of transactions.
 
@@ -880,9 +880,9 @@ discretion is high and when job demands force executives to rely on mental
 shortcuts.
 
 **Related theories.** [Agency theory](#agency-theory),
-[Bounded rationality](#bounded-rationality),
-[Heuristics and biases](#heuristics-biases),
-[Glass cliff](#glass-cliff-effect).
+[Bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)),
+[Heuristics and biases](#heuristics-biases) (Section \@ref(heuristics-biases)),
+[Glass cliff](#glass-cliff-effect) (Section \@ref(glass-cliff-effect)).
 :::
 
 ### Origins and core logic
@@ -1078,6 +1078,8 @@ executive.
   Hubris and narcissism are its most consequential applications
   [@hambrick1984; @hambrick2007a; @hayward1997].
 :::
+
+Table \@ref(tab:tab-gov-summary) presents the comparison of the chapter's theories.
 
 ```{r tab-gov-summary}
 tibble::tribble(

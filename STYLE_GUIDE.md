@@ -129,6 +129,17 @@ Use `::: {.try-it}` for short exercises and `::: {.definition}` for formal defin
 - Each major theory gets at least one business case, ideally spanning different
   functions (marketing, strategy, HR, finance, operations, product, policy).
 
+## House style: punctuation
+
+- **No em dashes, en dashes, or semicolons** anywhere in reader-facing text:
+  prose, captions, table cells, figure labels, and code-chunk strings. Use
+  commas, colons, parentheses, or separate sentences instead. Use a hyphen
+  for number ranges (pp. 39-67, 1990-2010).
+- The only allowed semicolons are pandoc citation groups such as
+  `[@spence1973; @akerlof1970]` (rendered with commas) and R code syntax.
+- Run `Rscript tools/depunctuate.R <file>` to check and fix a chapter.
+- No AI or tool attribution anywhere in the book, commits, or pull requests.
+
 ## Cross-reference IDs (use these exact anchors)
 
 | Chapter | id | Section anchors |
@@ -139,21 +150,32 @@ Use `::: {.try-it}` for short exercises and `::: {.definition}` for formal defin
 | 4 Resources | `resources` | `resource-based-theory`, `vrio`, `knowledge-based-view`, `resource-advantage-theory`, `market-based-assets` |
 | 5 Dynamic capabilities | `dynamic-capabilities` | `dynamic-capabilities-framework`, `absorptive-capacity`, `exploration-exploitation`, `ambidexterity` |
 | 6 Governance | `governance` | `agency-theory`, `stewardship-theory`, `transaction-cost-economics`, `upper-echelons-theory` |
-| 7 Environment | `environment` | `resource-dependence-theory`, `institutional-theory`, `legitimacy`, `stakeholder-theory`, `organizational-ecology`, `contingency-theory` |
+| 7 Environment | `environment` | `resource-dependence-theory`, `institutional-theory`, `legitimacy`, `stakeholder-theory`, `organizational-ecology`, `contingency-theory`, `csr-pyramid`, `shared-value` |
 | 8 Information | `information` | `information-asymmetry`, `signaling-theory`, `screening-theory`, `costly-signaling`, `identity-signaling`, `countersignaling` |
 | 9 Networks & exchange | `networks-exchange` | `social-exchange-theory`, `network-exchange-theory`, `weak-ties`, `structural-holes`, `social-capital`, `commitment-trust-theory` |
-| 10 Innovation & adoption | `innovation-adoption` | `diffusion-of-innovations`, `bass-model`, `technology-acceptance-model`, `utaut` |
-| 11 Culture | `culture` | `hofstede`, `power-distance-theory`, `globe`, `schwartz-values`, `tight-loose` |
-| 12 Motivation | `motivation` | `expectancy-theory`, `equity-theory`, `goal-setting-theory`, `goal-gradient-hypothesis`, `self-determination-theory`, `losing-leads-to-winning` |
-| 13 Self-regulation | `self-regulation` | `regulatory-focus-theory`, `regulatory-fit`, `construal-level-theory`, `self-control` |
-| 14 Social influence | `social-influence` | `social-comparison-theory`, `social-identity-theory`, `optimal-distinctiveness-theory`, `conformity`, `social-norms`, `social-facilitation`, `distraction-conflict-theory`, `spiral-of-silence` |
-| 15 Judgment & decision | `judgment-decision` | `bounded-rationality`, `heuristics-biases`, `prospect-theory`, `endowment-effect`, `mental-accounting`, `dual-process-theory`, `feelings-as-information-theory`, `processing-fluency`, `discrepancy-attribution-hypothesis` |
-| 16 Emotion & well-being | `emotion-wellbeing` | `broaden-and-build-theory`, `hedonic-adaptation`, `affect-circumplex`, `emotion-and-virality`, `appraisal-theory` |
-| 17 Persuasion & communication | `persuasion-communication` | `elaboration-likelihood-model`, `persuasion-knowledge-model`, `social-transmission`, `agenda-setting`, `uses-and-gratifications`, `microblogging` |
-| 18 Effects | `effects` | `mere-exposure-effect`, `warm-glow-heuristic`, `goldilocks-effect`, `coolidge-effect`, `snob-effect`, `glass-cliff-effect`, `ikea-effect`, `decoy-effect`, `anchoring-effect`, `beauty-in-averageness` |
-| 19 Phenomena | `phenomena` | `similarity-asymmetry`, `assortative-mating`, `social-magnet`, `wisdom-of-the-crowd`, `pack-journalism`, `scent-and-emotion` |
-| 20 Frameworks | `frameworks` | `information-processing-model`, `geneplore-model`, `five-forces`, `combinatorial-creativity`, `mechanism-toolkit` |
-| 21 Theory atlas | `theory-atlas` |: |
+| 10 Innovation & adoption | `innovation-adoption` | `diffusion-of-innovations`, `bass-model`, `theory-of-planned-behavior`, `technology-acceptance-model`, `utaut`, `is-success-model`, `task-technology-fit` |
+| 11 Strategy & competition | `strategy-competition` | `structure-conduct-performance`, `strategic-groups`, `competitive-dynamics`, `game-theory`, `first-mover-advantage`, `real-options-theory`, `behavioral-theory-of-the-firm`, `attention-based-view` |
+| 12 Innovation & entrepreneurship | `innovation-entrepreneurship` | `creative-destruction`, `disruptive-innovation`, `profiting-from-innovation`, `architectural-innovation`, `dominant-design`, `open-innovation`, `effectuation`, `opportunity-discovery-creation`, `bricolage`, `liability-of-newness` |
+| 13 International business | `international-business` | `uppsala-model`, `oli-paradigm`, `internalization-theory`, `liability-of-foreignness`, `institutional-voids`, `born-globals` |
+| 14 Organizations & decisions | `organizations-decisions` | `garbage-can-model`, `escalation-of-commitment`, `organizational-learning`, `knowledge-creation`, `organizational-identity`, `organizational-culture`, `paradox-theory`, `psychological-safety`, `attraction-selection-attrition`, `social-information-processing`, `sensemaking` |
+| 15 Work & leadership | `work-leadership` | `job-characteristics-model`, `job-demands-resources`, `conservation-of-resources`, `affective-events-theory`, `leader-member-exchange`, `transformational-leadership`, `path-goal-theory`, `psychological-contract`, `organizational-justice`, `organizational-commitment`, `person-environment-fit`, `human-capital-theory`, `tournament-theory` |
+| 16 Finance | `finance` | `portfolio-theory`, `capm`, `efficient-market-hypothesis`, `modigliani-miller`, `trade-off-pecking-order`, `free-cash-flow`, `limits-to-arbitrage`, `behavioral-finance` |
+| 17 Economics & institutions | `economics-institutions` | `coase-theorem`, `collective-action`, `property-rights-theory`, `search-theory`, `efficiency-wages`, `network-effects`, `two-sided-markets`, `auction-theory`, `new-institutional-economics`, `social-preferences` |
+| 18 Culture | `culture` | `hofstede`, `power-distance-theory`, `globe`, `schwartz-values`, `tight-loose`, `self-construal` |
+| 19 Motivation | `motivation` | `expectancy-theory`, `equity-theory`, `goal-setting-theory`, `goal-gradient-hypothesis`, `self-determination-theory`, `losing-leads-to-winning` |
+| 20 Self-regulation | `self-regulation` | `regulatory-focus-theory`, `regulatory-fit`, `construal-level-theory`, `self-control` |
+| 21 Attitudes & attribution | `attitudes-attribution` | `cognitive-dissonance-theory`, `self-perception-theory`, `attribution-theory`, `balance-theory`, `social-cognitive-theory`, `reactance-theory` |
+| 22 Social influence | `social-influence` | `social-comparison-theory`, `social-identity-theory`, `optimal-distinctiveness-theory`, `conformity`, `social-norms`, `social-facilitation`, `distraction-conflict-theory`, `spiral-of-silence` |
+| 23 Judgment & decision | `judgment-decision` | `bounded-rationality`, `heuristics-biases`, `prospect-theory-overview`, `endowment-effect`, `mental-accounting`, `dual-process-theory`, `feelings-as-information-theory`, `processing-fluency`, `discrepancy-attribution-hypothesis`, `choice-architecture` |
+| 24 Prospect theory | `prospect-theory` | `expected-utility-theory`, `prospect-theory-model`, `cumulative-prospect-theory`, `loss-aversion`, `reference-dependent-preferences`, `status-quo-bias`, `myopic-loss-aversion`, `disposition-effect` |
+| 25 Emotion & well-being | `emotion-wellbeing` | `broaden-and-build-theory`, `hedonic-adaptation`, `affect-circumplex`, `emotion-and-virality`, `appraisal-theory`, `peak-end-rule` |
+| 26 Persuasion & communication | `persuasion-communication` | `elaboration-likelihood-model`, `persuasion-knowledge-model`, `social-transmission`, `agenda-setting`, `framing-theory`, `uses-and-gratifications`, `microblogging` |
+| 27 Consumer behavior & branding | `consumer-behavior` | `expectancy-disconfirmation`, `means-end-chain`, `customer-based-brand-equity`, `brand-personality`, `consumer-brand-relationships`, `self-congruity`, `schema-congruity`, `hedonic-utilitarian`, `psychological-ownership`, `variety-seeking`, `reference-price`, `consumer-culture-theory` |
+| 28 Marketing strategy & services | `marketing-strategy` | `market-orientation`, `service-dominant-logic`, `service-quality-gap-model`, `customer-equity`, `hierarchy-of-effects`, `product-life-cycle`, `marketing-mix` |
+| 29 Effects | `effects` | `mere-exposure-effect`, `warm-glow-heuristic`, `goldilocks-effect`, `coolidge-effect`, `snob-effect`, `glass-cliff-effect`, `ikea-effect`, `decoy-effect`, `anchoring-effect`, `beauty-in-averageness`, `pratfall-effect` |
+| 30 Phenomena | `phenomena` | `similarity-asymmetry`, `homophily`, `assortative-mating`, `social-magnet`, `wisdom-of-the-crowd`, `pack-journalism`, `scent-and-emotion`, `matthew-effect`, `social-loafing`, `bystander-effect`, `tragedy-of-the-commons`, `groupthink`, `bullwhip-effect` |
+| 31 Frameworks | `frameworks` | `information-processing-model`, `geneplore-model`, `five-forces`, `combinatorial-creativity`, `sor-framework`, `mechanism-toolkit` |
+| 32 Theory atlas | `theory-atlas` | `atlas-table`, `atlas-mechanisms`, `glossary` |
 
 Write section headers as `## Signaling Theory {#signaling-theory}`.
 

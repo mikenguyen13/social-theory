@@ -18,15 +18,15 @@ customers, and substitutes as their rivals. The explanation must lie *inside* th
 firm: in what it owns, what it knows, and how it combines the two.
 
 This chapter develops the family of theories that locate competitive advantage
-in firm-specific **resources**. We begin with the **resource-based view (RBV)**,
+in firm-specific **resources**. We begin with the **[resource-based view](#resource-based-theory) ([RBV](#resource-based-theory))**,
 its origins, assumptions, and central propositions, and its best-known
-diagnostic, the **VRIO framework**. We then examine the **knowledge-based view**,
+diagnostic, the **[VRIO framework](#vrio)**. We then examine the **[knowledge-based view](#knowledge-based-view)**,
 which treats knowledge as the most strategically important resource, and the
 related idea of **core competences**. Two marketing-born extensions follow:
-**resource-advantage theory**, which embeds resources in a dynamic theory of
-competition, and the **market-based assets** framework, which links customer and
+**[resource-advantage theory](#resource-advantage-theory)**, which embeds resources in a dynamic theory of
+competition, and the **[market-based assets](#market-based-assets)** framework, which links customer and
 channel relationships to shareholder value. Chapter \@ref(dynamic-capabilities)
-then asks how firms *renew* their resources when environments change.
+then asks how firms *renew* their resources when environments change (Table \@ref(tab:tab-res-glance)).
 
 ```{r tab-res-glance}
 tibble::tribble(
@@ -67,14 +67,14 @@ economic rent, sustained competitive advantage.
 **Boundary conditions.** Strongest where resources are firm-specific and traded
 in imperfect factor markets. Weaker in markets with rapid, discontinuous change,
 where the value of today's resources can evaporate (see
-[Dynamic capabilities](#dynamic-capabilities-framework)).
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework))).
 
 **Related theories.** [VRIO](#vrio), [Knowledge-based view](#knowledge-based-view),
 [Resource-advantage theory](#resource-advantage-theory),
 [Market-based assets](#market-based-assets),
-[Dynamic capabilities](#dynamic-capabilities-framework),
-[Transaction cost economics](#transaction-cost-economics),
-[Five forces](#five-forces).
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Five forces](#five-forces) (Section \@ref(five-forces)).
 :::
 
 ### Origins and intellectual history
@@ -460,7 +460,7 @@ Natural experiments that shock resource value (regulatory change, technology
 shifts). Multi-level designs that separate resource effects from industry and
 corporate effects. Qualitative process studies of how resources are built.
 
-**Measures.** Resource stocks (R&D, advertising, patents, brand equity),
+**Measures.** Resource stocks (R&D, advertising, patents, [brand equity](#customer-based-brand-equity) (Section \@ref(customer-based-brand-equity))),
 human-capital indicators (tenure, education, turnover), relational measures
 (supplier tenure, alliance count), and survey scales of value, rarity, and
 imitability. [@Kozlenkova_2013] tabulate how marketing studies have
@@ -505,7 +505,7 @@ depend on the product-market environment.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
 [Resource-advantage theory](#resource-advantage-theory),
-[Dynamic capabilities](#dynamic-capabilities-framework).
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)).
 :::
 
 ### The four questions
@@ -642,9 +642,9 @@ specialized, partly tacit knowledge. Less distinctive where knowledge is fully
 codified and traded in markets.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
-[Absorptive capacity](#absorptive-capacity),
-[Exploration and exploitation](#exploration-exploitation),
-[Transaction cost economics](#transaction-cost-economics).
+[Absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity)),
+[Exploration and exploitation](#exploration-exploitation) (Section \@ref(exploration-exploitation)),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)).
 :::
 
 ### Core logic
@@ -773,7 +773,7 @@ Less informative in markets that approximate perfect competition.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
 [Market-based assets](#market-based-assets),
-[Dynamic capabilities](#dynamic-capabilities-framework).
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)).
 :::
 
 ### Core logic
@@ -906,13 +906,13 @@ assets, market-based processes, cash-flow acceleration, enhancement, volatility
 and vulnerability reduction, residual value, shareholder value.
 
 **Boundary conditions.** Most relevant where customer relationships are durable
-and repeat purchase or network effects matter. Harder to apply where
+and repeat purchase or [network effects](#network-effects) (Section \@ref(network-effects)) matter. Harder to apply where
 relationships are transactional.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
 [Resource-advantage theory](#resource-advantage-theory),
-[Signaling theory](#signaling-theory),
-[Commitment-trust theory](#commitment-trust-theory).
+[Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)),
+[Commitment-trust theory](#commitment-trust-theory) (Section \@ref(commitment-trust-theory)).
 :::
 
 ### Core logic
@@ -1035,6 +1035,8 @@ assets to firm value.
   resources that meet the theory's criteria, but measurement and tautology
   remain live concerns [@crook2008; @newbert2007; @priem2001].
 :::
+
+Table \@ref(tab:tab-res-summary) presents the comparison of the chapter's theories.
 
 ```{r tab-res-summary}
 tibble::tribble(

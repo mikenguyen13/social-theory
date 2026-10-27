@@ -1,14 +1,88 @@
+% ---- Packages used by kableExtra tables ------------------------------------
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{colortbl}
-\usepackage{xcolor}
 \usepackage{makecell}
 \usepackage{threeparttable}
+\usepackage{threeparttablex}
 \usepackage{wrapfig}
 \usepackage{pdflscape}
 \usepackage{tabu}
-\usepackage{threeparttablex}
 \usepackage[normalem]{ulem}
+
+% ---- Layout ------------------------------------------------------------------
+\usepackage{xurl}          % break long URLs in the bibliography
+\usepackage{microtype}
+\setlength{\emergencystretch}{3em}
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf, labelsep=period}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{10pt}
+\renewcommand{\arraystretch}{1.15}
+
+% ---- Callout boxes (see tools/callouts.lua) ---------------------------------
+\usepackage[most]{tcolorbox}
+\definecolor{stbrand}{HTML}{1F4E79}
+\definecolor{stgreen}{HTML}{0D7A52}
+\definecolor{stviolet}{HTML}{4A3BB3}
+\definecolor{stred}{HTML}{B42F2E}
+\definecolor{stamber}{HTML}{8F6100}
+\definecolor{storange}{HTML}{B4471C}
+\definecolor{stgrey}{HTML}{52514E}
+\definecolor{stpink}{HTML}{A8336A}
+\newcommand{\stbox}[4]{%
+  \newtcolorbox{#1}{enhanced, breakable, colback=#3!6!white, colframe=#3,
+    boxrule=0pt, leftrule=3.5pt, arc=2pt, outer arc=2pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt, before skip=10pt, after skip=10pt,
+    fonttitle=\sffamily\bfseries\footnotesize, coltitle=#3, colbacktitle=#3!6!white,
+    attach title to upper, title={\MakeUppercase{#2}\par\smallskip}, #4}}
+\stbox{theorycard}{Theory card}{stbrand}{}
+\stbox{businesscase}{Business case}{stgreen}{}
+\stbox{researchtoolkit}{Research toolkit}{stviolet}{}
+\stbox{pitfallbox}{Common pitfall}{stred}{}
+\stbox{keytakeaways}{Key takeaways}{stamber}{}
+\stbox{tryit}{Try it yourself}{storange}{}
+\stbox{definitionbox}{Definition}{stgrey}{}
+\stbox{debatebox}{Debate and evidence}{stpink}{}
+
+% ---- Cover page and title page ------------------------------------------------
+\usepackage{titling}
+\pretitle{\thispagestyle{empty}\vspace*{-0.6in}\begin{center}\includegraphics[height=0.86\textheight]{images/cover.png}\end{center}%
+  \clearpage\thispagestyle{empty}\vspace*{0.25\textheight}\begin{center}\sffamily\bfseries\Huge\color{stbrand}}
+\posttitle{\par\end{center}}
+\preauthor{\begin{center}\vspace{1.5em}\large\sffamily}
+\postauthor{\par\end{center}}
+\predate{\begin{center}\normalsize}
+\postdate{\par\vspace{2em}\small Open access at \url{https://mikenguyen13.github.io/social-theory/}\par
+  Licensed under CC BY 4.0\par\end{center}}
+
+% ---- Running headers ------------------------------------------------------------
+% LaTeX marks are lost when a long table starts on a chapter's first page, which
+% left stale chapter titles in the header. Store the title in a macro instead:
+% \chapter clears the page first, so every page of a chapter gets its own title.
+\usepackage{fancyhdr}
+\newcommand{\currentchapterhead}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\sffamily\color{stgrey}\MakeUppercase{\currentchapterhead}}
+\fancyhead[R]{\footnotesize\sffamily\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\sffamily\thepage}\renewcommand{\headrulewidth}{0pt}}
+\AtBeginDocument{%
+  \renewcommand{\chaptermark}[1]{\gdef\currentchapterhead{\chaptername\ \thechapter.\ #1}}%
+  \renewcommand{\sectionmark}[1]{}}
+\newcommand{\setchapterhead}[1]{\gdef\currentchapterhead{#1}}
+
+% ---- Links in the brand colour --------------------------------------------------
+\AtBeginDocument{\hypersetup{linkcolor=stbrand, citecolor=stbrand, urlcolor=stbrand}}
+
+% ---- Headings -----------------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\part}[display]{\centering\sffamily\bfseries\color{stbrand}}{\Large\partname\ \thepart}{12pt}{\Huge}
+\titleformat{\chapter}[display]{\sffamily\bfseries\color{stbrand}}{\large\chaptertitlename\ \thechapter}{8pt}{\Huge}
+\titleformat{\section}{\sffamily\bfseries\Large\color{stbrand}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large}{\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}{\sffamily\bfseries\normalsize}{\thesubsubsection}{0.8em}{}

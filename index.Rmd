@@ -11,11 +11,18 @@ biblio-style: apalike
 csl: csl/chicago-author-date.csl
 link-citations: yes
 colorlinks: yes
-lot: yes
-lof: yes
+lot: no
+lof: no
+mainfont: Cambria
+sansfont: Segoe UI
+monofont: Consolas
+mathfont: Cambria Math
+fontsize: 11pt
+classoption: [oneside, openany]
+geometry: "top=1in, bottom=1in, left=1.1in, right=1.1in"
 description: |
-  An open, rigorous, and practical field guide to 100+ social science theories,
-  effects, and frameworks, from signaling, agency, and the resource-based view
+  An open, rigorous, and practical field guide to 150+ social science theories and 200+
+  entries in all (effects, frameworks, phenomena), from signaling, agency, and the resource-based view
   to prospect theory, social identity, and diffusion of innovations, each with
   its core logic, mechanism diagrams, evidence, critiques, business applications,
   and ready-to-use research hypotheses.
@@ -34,16 +41,20 @@ knitr::write_bib(c("bookdown", "knitr", "rmarkdown", "ggplot2", "DiagrammeR",
                    "kableExtra", "visNetwork", "DT"), "packages.bib")
 ```
 
+`\setchapterhead{Welcome}`{=latex}
+
 ::: {.cover-hero}
 ```{r cover, echo = FALSE, out.width = "100%"}
-knitr::include_graphics("images/cover.png")
+# The printed edition already opens with the cover page.
+if (is_html()) knitr::include_graphics("images/cover.png")
 ```
 :::
 
 **Social Science Theory** is an open-access field guide to the ideas that social
 scientists and evidence-minded managers use to explain behaviour: of people,
-teams, firms, markets, and societies. It covers more than one hundred theories,
-effects, and frameworks drawn from management, marketing, economics, psychology,
+teams, firms, markets, and societies. It covers more than 150 theories, and more
+than 200 entries in all once named effects, phenomena, and frameworks are
+included, drawn from management, marketing, finance, economics, psychology,
 sociology, communication, and information systems.
 
 Every chapter is written to be useful twice: once for **research** (what the
@@ -56,16 +67,16 @@ operations, and people management).
 atlas <- readr::read_csv("data/theory-atlas.csv", show_col_types = FALSE)
 atlas |>
   dplyr::count(part, name = "Entries") |>
-  dplyr::mutate(part = factor(part, levels = c("Foundations", "Organizations & Strategy",
-                                               "Individuals & Groups",
-                                               "Effects, Phenomena & Frameworks"))) |>
+  dplyr::mutate(part = factor(part, levels = part_levels)) |>
   dplyr::arrange(part) |>
-  dplyr::mutate(Chapters = c("1-3", "4-10", "11-17", "18-20"),
+  dplyr::mutate(Chapters = part_chapters[as.character(part)],
                 `What you will find` = c(
                   "What theory is, how to evaluate it, and how to turn it into hypotheses",
-                  "Resources, capabilities, governance, institutions, information, networks, diffusion",
-                  "Culture, motivation, self-regulation, social influence, decisions, emotion, persuasion",
-                  "Named effects, social phenomena, classic models, and a cross-theory mechanism toolkit")) |>
+                  "Resources, capabilities, governance, institutions, information, networks, innovation, strategy, international business, organizations, and leadership",
+                  "Finance, capital markets, institutions, platforms, auctions, and social preferences",
+                  "Culture, motivation, self-regulation, attitudes, social influence, decisions, prospect theory, emotion, and persuasion",
+                  "Consumer behavior, branding, services, customer value, and marketing strategy",
+                  "Named effects, social phenomena, classic models, and a cross-theory mechanism toolkit")[as.integer(part)]) |>
   dplyr::select(Part = part, Chapters, Entries, `What you will find`) |>
   book_table(caption = "What is inside the book.")
 ```
@@ -127,6 +138,10 @@ source, and business use. If you want the big picture, start with the
 [Introduction](#intro) and the interactive [theory map](#theory-map). If you are
 writing a paper, Chapters \@ref(what-is-theory) and \@ref(using-theory) show how
 to move from a theory to testable hypotheses.
+
+```{r pdf-download, echo = FALSE, results = "asis"}
+if (is_html()) cat("**Prefer print?** [Download the full book as a PDF](social-science-theory.pdf).\n")
+```
 
 ## How to cite {-}
 

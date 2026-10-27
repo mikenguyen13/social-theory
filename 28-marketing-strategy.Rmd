@@ -1,0 +1,1442 @@
+# Marketing Strategy and Services {#marketing-strategy}
+
+In the early 1990s many large manufacturers still described themselves by what
+came off their assembly lines. Thirty years later, aircraft-engine makers sell
+"hours of thrust", software firms sell subscriptions rather than licences, and
+retailers compete on what they know about each customer as much as on what they
+stock. Why do some firms sense these shifts early and others late? Why does a
+bank with modern branches and competitive rates still lose customers to a rival
+that simply answers the phone? Why is a subscriber who stays one extra year worth
+so much more than a few points of price? And why do so many advertising plans
+still assume that consumers move neatly from awareness to purchase?
+
+These questions belong to **marketing strategy**: the set of theories that
+explain how firms understand markets, create and deliver value, and allocate
+marketing resources over time. This chapter covers seven of the field's most
+influential frameworks. **[Market orientation](#market-orientation)** explains how organizations
+generate and act on market intelligence. **[Service-dominant logic](#service-dominant-logic)** reframes
+what is exchanged in markets. The **[gaps model of service quality](#service-quality-gap-model)** diagnoses
+where service failures originate. **[Customer equity](#customer-equity)** treats customers as
+financial assets. The **[hierarchy of effects](#hierarchy-of-effects)** models how advertising is
+supposed to work. The **[product life cycle](#product-life-cycle)** describes how markets evolve, and
+the **[marketing mix](#marketing-mix)** organizes the decisions a manager controls. Each is widely
+taught and widely used, and each has attracted serious criticism. Understanding
+both the logic and the critique is what separates a theory-informed strategist
+from a framework user.
+
+The seven frameworks fall into three groups. Market orientation and
+service-dominant logic are theories of how a firm should *understand* markets and
+value. The gaps model and customer equity are theories of how service and
+customer relationships translate into *outcomes*, perceived quality in one case
+and financial value in the other. The hierarchy of effects, the product life
+cycle, and the marketing mix are planning frameworks for *managing* programs over
+consumers' decision processes, over a market's evolution, and across the
+decisions a manager controls. The first group draws on the
+[resource-based](#resource-based-theory) (Section \@ref(resource-based-theory)) and learning traditions. The second
+draws on psychology and finance. The third is closest to everyday practice, and
+for that reason it is the most in need of the critical scrutiny that later
+research has supplied (Table \@ref(tab:tab-ms-glance)).
+
+```{r tab-ms-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Market orientation", "Do firms that generate and act on market intelligence perform better?", "Firm / business unit", "Kohli & Jaworski (1990), Narver & Slater (1990)",
+  "Service-dominant logic", "What is exchanged in markets, and who creates value?", "Market / service ecosystem", "Vargo & Lusch (2004)",
+  "Gaps model of service quality", "Where do service-quality shortfalls originate?", "Firm / customer", "Parasuraman, Zeithaml & Berry (1985)",
+  "Customer equity", "What are customers worth, and how should marketing be valued?", "Customer / firm", "Blattberg & Deighton (1996), Gupta et al. (2004)",
+  "Hierarchy of effects", "Through which mental stages does advertising work?", "Individual consumer", "Lavidge & Steiner (1961)",
+  "Product life cycle", "How do sales, competition, and strategy change as markets mature?", "Product class / market", "Levitt (1965)",
+  "Marketing mix", "Which controllable variables make up a marketing program?", "Firm / offering", "Borden (1964), McCarthy (1960)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of marketing strategy and services.")
+```
+
+## Market Orientation {#market-orientation}
+
+::: {.theory-card}
+**Core claim.** Businesses that systematically generate intelligence about
+customers and competitors, share it across functions, and respond to it achieve
+superior performance.
+
+**Origins.** Marketing strategy. Two parallel 1990 articles in the *Journal of
+Marketing*: a behavioural conceptualization by @kohli1990 and a cultural one by
+@narver1990. Meta-analysed by @kirca2005.
+
+**Level of analysis.** Strategic business unit or firm.
+
+**Key constructs.** Intelligence generation, intelligence dissemination,
+responsiveness, customer orientation, competitor orientation, interfunctional
+coordination, market turbulence, competitive intensity.
+
+**Boundary conditions.** Benefits depend on whether customer needs are knowable
+and changing, on the cost of collecting intelligence, and on whether responding
+to current customers diverts resources from disruptive opportunities.
+
+**Related theories.** [Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)),
+[Market-based assets](#market-based-assets) (Section \@ref(market-based-assets)),
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)),
+[Absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity)),
+[Organizational learning](#organizational-learning) (Section \@ref(organizational-learning)),
+[Disruptive innovation](#disruptive-innovation) (Section \@ref(disruptive-innovation)).
+:::
+
+### Origins and intellectual history
+
+The **marketing concept**, the idea that a business should be organized around
+satisfying customer needs profitably, had been a staple of textbooks since the
+1950s. What it lacked was a definition precise enough to measure. In 1990 two
+research teams independently supplied one. @kohli1990 reviewed the literature
+and interviewed managers across functions and industries. They defined **market
+orientation** as the organization-wide *generation* of market intelligence about
+current and future customer needs, the *dissemination* of that intelligence
+across departments, and organization-wide *responsiveness* to it. Their
+definition is behavioural: market orientation is something a business *does*.
+
+@narver1990 took a cultural view. Market orientation, in their account, is the
+[organizational culture](#organizational-culture) (Section \@ref(organizational-culture)) that most effectively creates the behaviours needed to
+deliver superior value to buyers. It has three behavioural components, **customer
+orientation**, **competitor orientation**, and **interfunctional coordination**,
+and two decision criteria, a long-term focus and profitability. Using data from
+140 strategic business units of a single corporation, they reported a
+substantial positive association between market orientation and profitability.
+
+The two conceptualizations were soon operationalized in widely used scales:
+MARKOR for the behavioural view [@kohli1993] and the Narver and Slater scale for
+the cultural view. @day1994 then reframed the construct as a set of
+**capabilities**, notably *market sensing* and *customer linking*, connecting
+market orientation to the [resource-based view](#resource-based-theory) (Section \@ref(resource-based-theory)) and
+to later work on [market-based assets](#market-based-assets) (Section \@ref(market-based-assets))
+[@srivastava1998] (Table \@ref(tab:tab-ms-mo-views)).
+
+```{r tab-ms-mo-views}
+tibble::tribble(
+  ~Feature, ~`Behavioural view`, ~`Cultural view`,
+  "Key source", "Kohli & Jaworski (1990)", "Narver & Slater (1990)",
+  "Definition", "Generation, dissemination, and use of market intelligence", "Culture that creates behaviours for superior customer value",
+  "Components", "Intelligence generation, dissemination, responsiveness", "Customer orientation, competitor orientation, interfunctional coordination",
+  "Typical measure", "MARKOR (Kohli, Jaworski & Kumar, 1993)", "Narver & Slater multi-item scale",
+  "Unit of focus", "Activities and processes", "Values, norms, and coordination",
+  "Managerial lever", "Information systems, cross-functional routines, incentives", "Leadership, shared values, hiring and socialization"
+) |>
+  book_table(caption = "Two conceptualizations of market orientation.")
+```
+
+### Core logic and propositions
+
+The logic links information to action. Firms that know more about what customers
+value, and about what competitors are about to offer, can design better
+offerings and react faster. That knowledge has value only if it reaches the
+people who design, price, and deliver the offering, and only if they act on it.
+Hence the theory's central propositions:
+
+- **P1 (Performance).** Market orientation is positively related to business
+  performance [@narver1990; @jaworski1993].
+- **P2 (Antecedents).** Top-management emphasis, interdepartmental connectedness,
+  and market-based reward systems increase market orientation. Interdepartmental
+  conflict and centralization reduce it [@jaworski1993].
+- **P3 (Mediation).** The effect on performance runs largely through
+  innovativeness, product and service quality, and customer loyalty
+  [@kirca2005].
+- **P4 (Environment).** Market orientation should matter more when customer
+  preferences change quickly and competition is intense, although empirical
+  support for this moderation is weak [@jaworski1993].
+- **P5 (Employee outcomes).** Market orientation is associated with stronger
+  employee commitment and esprit de corps [@jaworski1993].
+
+Figure \@ref(fig:fig-ms-mo) summarizes this structure.
+
+```{r fig-ms-mo, fig.cap = "Mechanism of market orientation. Organizational antecedents shape the generation, dissemination, and use of market intelligence. Market orientation improves performance mainly through innovativeness, quality, and customer loyalty. Environmental conditions and the type of business moderate the effect. Synthesised from Jaworski and Kohli (1993) and Kirca et al. (2005).", fig.height = 3.8}
+mechanism_diagram(sprintf('
+  A [label = "Antecedents\\n(top-management emphasis,\\nconnectedness, reward systems)", %s]
+  G [label = "Intelligence\\ngeneration", %s]
+  D [label = "Intelligence\\ndissemination", %s]
+  R [label = "Responsiveness", %s]
+  M [label = "Innovativeness,\\nquality, loyalty", %s]
+  P [label = "Business\\nperformance", %s]
+  E [label = "Environment and\\nbusiness type", %s]
+  A -> G
+  G -> D -> R
+  R -> M -> P
+  E -> M [style = dashed]
+', node_construct, node_mechanism, node_mechanism, node_mechanism, node_mechanism, node_outcome, node_moderator))
+```
+
+### Evidence and extensions
+
+Hundreds of studies have tested the market orientation-performance link across
+industries and countries. The meta-analysis by @kirca2005 synthesised this
+literature and found a positive relationship with overall business performance,
+with innovativeness, customer loyalty, and quality acting as mediators. The
+relationship was stronger in manufacturing than in service firms and in national
+cultures with lower power distance and uncertainty avoidance, which links the
+theory to research on [culture](#hofstede) (Section \@ref(hofstede)). Top-management emphasis,
+interdepartmental connectedness, and market-based reward systems emerged as
+reliable antecedents.
+
+A second stream asks what kind of market orientation matters. @narver2004
+distinguish **responsive** market orientation, which addresses customers'
+expressed needs, from **proactive** market orientation, which tries to discover
+latent needs that customers cannot yet articulate. In their data, the proactive
+form was the stronger predictor of new-product success.
+
+::: {.debate}
+**Can listening to customers be dangerous?** Studies of disk-drive makers by
+@christensen1996 showed that leading firms failed in part *because* they
+listened carefully to their largest existing customers, who did not want the
+smaller, lower-performing drives that later displaced them. Read narrowly, this
+looks like a refutation of market orientation. Read carefully, it shows that the
+theory's boundary conditions matter: a responsive orientation focused on current
+mainstream customers can blind a firm to emerging segments and technologies
+[@christensen1997]. The proactive extension [@narver2004] and the original
+definition's emphasis on *future* needs [@kohli1990] partly address the critique.
+Two methodological concerns remain. Most evidence relies on cross-sectional,
+single-informant surveys in which managers rate both orientation and performance,
+which inflates correlations through common-method variance. And because
+successful firms can afford more market research, reverse causality is hard to
+rule out.
+:::
+
+### Applications in business
+
+Market orientation is a practical diagnostic. A business can audit each step in
+the intelligence chain. Is customer information collected beyond satisfaction
+surveys, including complaints, front-line observations, and lost-sale analysis?
+Does it reach product, operations, and finance, or does it stay in the marketing
+department? And is anyone accountable for acting on it within a defined time?
+
+::: {.business-case}
+**Market orientation in retailing.** Two well-documented retailers illustrate
+different routes to the same capability. Tesco's Clubcard loyalty programme,
+launched in the United Kingdom in the mid-1990s and analysed with the data
+science firm dunnhumby (which Tesco later took over), turned transaction data
+into intelligence used for ranging, promotions, and personalized offers. This is
+a strong form of *intelligence generation and dissemination*. Inditex's Zara
+built *responsiveness*: store managers report what customers ask for and what
+sells, central design teams turn those signals into new items, and short
+production cycles let the firm act on intelligence within weeks rather than
+seasons. The lesson for managers is that data collection alone is not market
+orientation. Clubcard data created value because it changed decisions, and
+Zara's store reports mattered because the supply chain could respond to them.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Market orientation will be positively related to new-product
+  performance, and this effect will be mediated by product innovativeness.
+- *H2.* The positive effect of responsive market orientation on performance will
+  be weaker, and the effect of proactive orientation stronger, in markets with
+  high technological turbulence.
+- *H3.* Market-based reward systems will strengthen the link between
+  intelligence dissemination and responsiveness.
+
+**Measures.** MARKOR [@kohli1993], the Narver and Slater scale [@narver1990],
+responsive and proactive scales [@narver2004]. Objective performance from
+financial databases rather than self-reports where possible.
+
+**Designs.** Multi-informant surveys with lagged objective outcomes, panel
+designs that track changes in orientation over time, and text analysis of annual
+reports or earnings calls as an unobtrusive measure of customer focus.
+:::
+
+::: {.pitfall}
+**Equating market orientation with "doing what customers say".** The construct
+concerns the *process* of generating, sharing, and acting on intelligence about
+current *and future* needs and about competitors. Measuring only customer
+satisfaction or survey activity misses dissemination and responsiveness, and
+treating stated preferences as the whole of market intelligence invites the
+trap Christensen documented.
+:::
+
+## Service-Dominant Logic {#service-dominant-logic}
+
+::: {.theory-card}
+**Core claim.** Service, the application of knowledge and skills for the benefit
+of another party, is the fundamental basis of all exchange. Goods are vehicles
+for service, and value is co-created by multiple actors and determined by the
+beneficiary in use.
+
+**Origins.** Marketing theory. @vargo2004, refined in @vargo2008 and @vargo2016,
+building on services-marketing work such as @shostack1977.
+
+**Level of analysis.** Market, service ecosystem, and actor-to-actor exchange.
+
+**Key constructs.** Service (singular), operant and operand resources, value
+co-creation, value-in-use, value proposition, resource integration, service
+ecosystem, institutions.
+
+**Boundary conditions.** A lens or meta-theory rather than a set of directly
+testable hypotheses. Most useful where value depends heavily on how customers
+use and combine resources.
+
+**Related theories.** [Market orientation](#market-orientation),
+[Resource-advantage theory](#resource-advantage-theory) (Section \@ref(resource-advantage-theory)),
+[Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Commitment-trust theory](#commitment-trust-theory) (Section \@ref(commitment-trust-theory)),
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)).
+:::
+
+### Origins and core logic
+
+Marketing grew out of economics, and economics grew up studying the production
+and exchange of tangible goods. Services were long treated as a residual
+category, defined by what they lacked: they were *intangible*, *heterogeneous*,
+*inseparable* from consumption, and *perishable*. @shostack1977 argued that
+marketing needed to "break free" from product thinking, because most offerings
+combine tangible and intangible elements.
+
+@vargo2004 went further. They argued that the goods-services distinction itself
+is the problem. In their **service-dominant (S-D) logic**, *service*, in the
+singular, is the process of using one's competences for the benefit of another.
+People exchange service for service, and goods are simply distribution
+mechanisms for service: a car provides the service of transportation, and money
+is a claim on future service. The theory distinguishes **operand resources**,
+which must be acted on to be useful (raw materials, machines), from **operant
+resources**, which act on other resources (knowledge, skills, relationships).
+Operant resources, S-D logic argues, are the fundamental source of competitive
+advantage, which connects the theory to the
+[resource-based view](#resource-based-theory) (Section \@ref(resource-based-theory)) and to
+[resource-advantage theory](#resource-advantage-theory) (Section \@ref(resource-advantage-theory)) [@hunt1995].
+
+The second core idea concerns value. Under **goods-dominant logic**, value is
+created by the firm, embedded in the product, and realized at the point of sale
+(**value-in-exchange**). Under S-D logic, value is realized when the beneficiary
+integrates the offering with its own resources in a context of use
+(**value-in-use**). The firm cannot deliver value on its own. It can only offer
+**value propositions**, and the customer is always a co-creator of value
+[@vargo2008]. The 2016 update consolidated the framework into five axioms and
+added a fifth element: value co-creation is coordinated through actor-generated
+**institutions** and institutional arrangements, such as norms, rules, and
+shared meanings [@vargo2016].
+
+::: {.definition}
+**The five axioms of service-dominant logic** [@vargo2016]. (1) Service is the
+fundamental basis of exchange. (2) Value is co-created by multiple actors,
+always including the beneficiary. (3) All social and economic actors are
+resource integrators. (4) Value is always uniquely and phenomenologically
+determined by the beneficiary. (5) Value co-creation is coordinated through
+actor-generated institutions and institutional arrangements.
+:::
+
+The axioms shift the unit of analysis away from the firm-customer dyad.
+Because every actor integrates resources from many sources, a customer's
+value-in-use depends on complementary offerings, other customers, and the rules
+of the setting, not only on the focal firm. A smartphone delivers value through
+apps, networks, and the user's own skills. A hospital stay delivers value
+through clinicians, family members, and insurance arrangements. S-D logic calls
+these nested systems **service ecosystems**, which links it to research on
+[network effects](#network-effects) (Section \@ref(network-effects)) and [two-sided markets](#two-sided-markets) (Section \@ref(two-sided-markets)) (Table \@ref(tab:tab-ms-gdl-sdl)).
+
+```{r tab-ms-gdl-sdl}
+tibble::tribble(
+  ~Dimension, ~`Goods-dominant logic`, ~`Service-dominant logic`,
+  "Unit of exchange", "Goods (and services as a residual category)", "Service: applied knowledge and skills",
+  "Role of goods", "End product that embodies value", "Vehicle or appliance for delivering service",
+  "Primary resource", "Operand resources (materials, equipment)", "Operant resources (knowledge, skills, relationships)",
+  "Locus of value", "Value-in-exchange, realized at sale", "Value-in-use, determined by the beneficiary",
+  "Role of customer", "Target and recipient of value", "Co-creator and resource integrator",
+  "Firm's role", "Produce and deliver value", "Offer value propositions and support co-creation",
+  "Relationship focus", "Transactions", "Ongoing relationships within service ecosystems",
+  "Business model example", "Selling an engine", "Charging per hour of engine availability"
+) |>
+  book_table(caption = "Goods-dominant versus service-dominant logic, synthesised from Vargo and Lusch (2004, 2008, 2016).")
+```
+
+Figure \@ref(fig:fig-ms-sdl) represents value co-creation as resource
+integration within an institutional context.
+
+```{r fig-ms-sdl, fig.cap = "Value co-creation in service-dominant logic. The firm offers a value proposition. The customer integrates it with its own operant and operand resources in a context of use, and value-in-use is determined by the beneficiary. Institutions coordinate the process. Redrawn from the logic of Vargo and Lusch (2008, 2016).", fig.height = 3.6}
+mechanism_diagram(sprintf('
+  F [label = "Firm resources\\n(knowledge, skills,\\nequipment)", %s]
+  V [label = "Value\\nproposition", %s]
+  C [label = "Customer resources\\n(skills, time, data,\\nother offerings)", %s]
+  I [label = "Resource integration\\nin context of use", %s]
+  U [label = "Value-in-use\\n(determined by\\nthe beneficiary)", %s]
+  N [label = "Institutions\\n(norms, rules,\\nshared meanings)", %s]
+  F -> V -> I
+  C -> I
+  I -> U
+  U -> F [label = " feedback", style = dashed, constraint = false]
+  N -> I [style = dashed]
+', node_construct, node_mechanism, node_construct, node_mechanism, node_outcome, node_moderator))
+```
+
+### Evidence and extensions
+
+Because S-D logic is a perspective rather than a falsifiable theory, its
+"evidence" is mostly conceptual uptake and the empirical programmes it has
+inspired. Two are especially productive. The first is **servitization**, the
+movement of manufacturers into services. @vandermerwe1988 coined the term to
+describe firms offering "bundles" of goods, services, support, and knowledge.
+@baines2009 review the literature on servitized manufacturing and identify the
+challenges firms face, including designing integrated product-service offerings
+and building service cultures within product organizations. The second is
+research on **service ecosystems** and platforms, where value emerges from
+interactions among many actors rather than from a firm-customer dyad.
+
+::: {.debate}
+**Insight or relabelling?** Critics raise three concerns. First, if *everything*
+is service, the concept risks losing discriminating power: a theory that
+classifies every exchange the same way may explain little about why exchanges
+differ. Second, the claim that customers *always* co-create value is true by
+definition under S-D logic, and therefore cannot be tested. Empirical work
+instead studies variation in the *degree* of customer participation. Third,
+S-D logic's foundational premises were revised several times
+[@vargo2008; @vargo2016], which supporters see as healthy evolution and critics
+see as a moving target. A fair assessment is that S-D logic is most valuable as
+a reframing device. It directs attention to use contexts, customer resources,
+and business models that capture value over time, and specific mid-range
+theories are needed to generate testable predictions.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Servitization at Rolls-Royce.** The aircraft-engine business is the
+best-known illustration of S-D logic in practice. Rolls-Royce traces its
+"Power by the Hour" concept to the early 1960s and today offers engine care
+under its TotalCare programme. Instead of buying an engine and then paying
+separately for spare parts and repairs, an airline pays for engine availability,
+typically per flying hour, and the manufacturer assumes responsibility for
+maintenance. The shift changes incentives on both sides. Under a parts-and-repair
+model, the supplier earns more when engines break. Under a per-hour model, it
+earns more when engines stay on the wing, which aligns its incentives with the
+airline's value-in-use. The model also changes what the firm must know: engine
+health monitoring data become an operant resource, and long-term service
+contracts create the relationship continuity that S-D logic emphasises. The risk
+moves too. The manufacturer now bears the cost of unexpected failures, so pricing
+requires accurate reliability forecasting, a point that links servitization to
+[transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)) and
+[agency theory](#agency-theory) (Section \@ref(agency-theory)).
+:::
+
+::: {.research-toolkit}
+**Research uses.** Treat S-D logic as a framing that motivates specific
+hypotheses. Examples: (1) outcome-based contracts will increase supplier
+investment in reliability relative to transactional contracts, (2) customers with
+greater operant resources (expertise, complementary assets) will realise more
+value-in-use from the same offering, (3) servitized manufacturers will show
+more stable revenue but face a service-paradox period in which profitability
+falls before it rises. **Designs.** Contract-level data from B2B firms, field
+studies of usage data, comparative case studies of servitization transitions.
+:::
+
+::: {.pitfall}
+**Using "co-creation" as a slogan.** Asking customers to do more work (assembly,
+self-service, data entry) is not value co-creation unless it increases value-in-use
+for them. Researchers should measure the customer's resources and outcomes, not
+only the firm's intent.
+:::
+
+## The Gaps Model of Service Quality {#service-quality-gap-model}
+
+::: {.theory-card}
+**Core claim.** Customers judge service quality by comparing what they expected
+with what they perceive they received. That customer gap results from four
+internal gaps in the provider's understanding, design, delivery, and
+communication.
+
+**Origins.** Services marketing. @parasuraman1985 proposed the gaps model and
+@parasuraman1988 developed the SERVQUAL measurement instrument. Challenged by
+@cronin1992.
+
+**Level of analysis.** The firm (internal gaps) and the individual customer
+(perceived quality).
+
+**Key constructs.** Expected service, perceived service, the five gaps,
+tangibles, reliability, responsiveness, assurance, empathy.
+
+**Boundary conditions.** Applies to services in which customers form
+expectations and can evaluate delivery. Measurement of expectations is
+contested, and the five dimensions do not replicate cleanly in every industry.
+
+**Related theories.** [Expectancy disconfirmation](#expectancy-disconfirmation) (Section \@ref(expectancy-disconfirmation)),
+[Peak-end rule](#peak-end-rule) (Section \@ref(peak-end-rule)), [Market orientation](#market-orientation),
+[Service-dominant logic](#service-dominant-logic).
+:::
+
+### Origins and intellectual history
+
+Services posed a measurement problem. A car's quality can be assessed by
+inspecting it, but a bank teller's courtesy or an airline's handling of a
+missed connection exists only as an experience. European work by
+@gronroos1984 distinguished **technical quality** (what the customer receives)
+from **functional quality** (how it is delivered). In the United States,
+@parasuraman1985 conducted focus groups with consumers and interviews with
+executives in several service categories, including retail banking, credit
+cards, securities brokerage, and product repair. They concluded that customers
+assess quality as the difference between expectations and perceptions, and that
+the size of that difference depends on a chain of internal shortfalls.
+
+### Core logic and the five gaps
+
+The model identifies five gaps:
+
+1. **Gap 1, the knowledge gap.** Management's perception of customer
+   expectations differs from what customers actually expect.
+2. **Gap 2, the standards gap.** Service-quality specifications do not reflect
+   management's perception of expectations.
+3. **Gap 3, the delivery gap.** Actual service delivery departs from the
+   specifications.
+4. **Gap 4, the communication gap.** External communications promise something
+   other than what is delivered.
+5. **Gap 5, the customer gap.** Perceived service falls short of expected
+   service. This is perceived service quality, and the model treats it as a
+   function of gaps 1 to 4 [@parasuraman1985].
+
+Customer expectations are shaped by [word of mouth](#social-transmission) (Section \@ref(social-transmission)), personal needs, past
+experience, and the firm's own communications. This last link is what makes Gap
+4 so consequential: advertising that over-promises raises expectations and
+widens Gap 5 even when delivery is unchanged. Figure \@ref(fig:fig-ms-gaps)
+redraws the model.
+
+```{r fig-ms-gaps, fig.cap = "The gaps model of service quality. Solid arrows show influences on customer expectations and perceptions. Dashed arrows mark the five gaps, including the three links along which the provider translates perceived expectations into specifications, delivery, and communications. The customer gap (Gap 5) between expected and perceived service is a function of four provider gaps. Redrawn from Parasuraman, Zeithaml and Berry (1985).", fig.height = 5.4}
+mechanism_diagram(sprintf('
+  subgraph cluster_c {
+    label = "Customer" fontcolor = "#52514e" color = "#e6e5e1" style = rounded
+    W  [label = "Word of mouth, personal\\nneeds, past experience", %s]
+    ES [label = "Expected service", %s]
+    PS [label = "Perceived service", %s]
+  }
+  subgraph cluster_p {
+    label = "Provider" fontcolor = "#52514e" color = "#e6e5e1" style = rounded
+    SD [label = "Service delivery", %s]
+    SS [label = "Service-quality\\nspecifications", %s]
+    MP [label = "Management perceptions\\nof customer expectations", %s]
+    EC [label = "External communications\\nto customers", %s]
+  }
+  W -> ES
+  SD -> PS
+  EC -> ES
+  ES -> PS [label = " Gap 5", style = dashed, dir = both, color = "#eb6834", fontcolor = "#eb6834"]
+  ES -> MP [label = " Gap 1", style = dashed, dir = both, color = "#eb6834", fontcolor = "#eb6834"]
+  MP -> SS [label = " Gap 2", style = dashed, dir = both, color = "#eb6834", fontcolor = "#eb6834"]
+  SS -> SD [label = " Gap 3", style = dashed, dir = both, color = "#eb6834", fontcolor = "#eb6834"]
+  SD -> EC [label = " Gap 4", style = dashed, dir = both, color = "#eb6834", fontcolor = "#eb6834"]
+', node_construct, node_outcome, node_outcome, node_mechanism, node_mechanism, node_mechanism, node_mechanism), rankdir = "TB", height = 560)
+```
+
+### Measuring the customer gap: SERVQUAL
+
+To measure Gap 5, @parasuraman1988 developed **SERVQUAL**, a 22-item instrument
+in which respondents rate both what they expect from excellent firms in a
+category and what they perceive from the focal firm. The difference score,
+perception minus expectation, is computed for each item. The ten determinants
+identified in the 1985 study were consolidated into five dimensions
+(Table \@ref(tab:tab-ms-servqual)).
+
+```{r tab-ms-servqual}
+tibble::tribble(
+  ~Dimension, ~Definition, ~`Retail banking illustration`, ~`Airline illustration`,
+  "Tangibles", "Physical facilities, equipment, and appearance of personnel", "Clean branches, a usable app", "Cabin condition, gate facilities",
+  "Reliability", "Ability to perform the promised service dependably and accurately", "Error-free statements and transfers", "On-time departures, baggage arrives",
+  "Responsiveness", "Willingness to help customers and provide prompt service", "Fast resolution of a blocked card", "Rebooking after a cancellation",
+  "Assurance", "Knowledge and courtesy of employees and their ability to inspire trust", "Competent, confident advisers", "Calm, knowledgeable crew",
+  "Empathy", "Caring, individualized attention", "Advice suited to a customer's situation", "Help for families or passengers with special needs"
+) |>
+  book_table(caption = "The five SERVQUAL dimensions (definitions paraphrased from Parasuraman, Zeithaml and Berry, 1988) with illustrative applications. The illustrations are not scale items.")
+```
+
+Figure \@ref(fig:fig-ms-servqual) shows what a gap analysis looks like in
+practice, using simulated survey data for two services.
+
+```{r fig-ms-servqual, fig.cap = "Illustrative SERVQUAL gap analysis with simulated survey data (250 respondents per service, 7-point scales). Each line connects the mean perception (orange) with the mean expectation (blue). Longer lines indicate larger customer gaps. The largest stylised gaps are in reliability and responsiveness, the dimensions most directly under operational control.", fig.height = 4.2}
+set.seed(1988)
+dims <- c("Tangibles", "Reliability", "Responsiveness", "Assurance", "Empathy")
+truth <- tibble::tribble(
+  ~service, ~dimension, ~expect, ~perceive,
+  "Retail bank", "Tangibles", 5.2, 5.4,
+  "Retail bank", "Reliability", 6.5, 5.6,
+  "Retail bank", "Responsiveness", 6.1, 5.0,
+  "Retail bank", "Assurance", 6.3, 5.9,
+  "Retail bank", "Empathy", 5.6, 5.1,
+  "Airline", "Tangibles", 5.6, 5.3,
+  "Airline", "Reliability", 6.4, 4.9,
+  "Airline", "Responsiveness", 6.0, 4.8,
+  "Airline", "Assurance", 6.0, 5.6,
+  "Airline", "Empathy", 5.4, 4.6
+)
+rate <- function(mu, n = 250) pmin(7, pmax(1, round(rnorm(n, mu, 1.1))))
+survey <- truth |>
+  rowwise() |>
+  mutate(Expectation = mean(rate(expect)), Perception = mean(rate(perceive))) |>
+  ungroup() |>
+  mutate(dimension = factor(dimension, levels = rev(dims)),
+         service = factor(service, levels = c("Retail bank", "Airline")),
+         gap = Perception - Expectation)
+survey_long <- survey |>
+  select(service, dimension, Expectation, Perception) |>
+  pivot_longer(c(Expectation, Perception), names_to = "measure", values_to = "score")
+ggplot(survey, aes(y = dimension)) +
+  geom_segment(aes(x = Perception, xend = Expectation, yend = dimension), colour = ink[["muted"]], linewidth = 0.8) +
+  geom_point(data = survey_long, aes(x = score, colour = measure), size = 3) +
+  geom_text(aes(x = 7.25, label = sprintf("%+.1f", gap)), size = 3.2, colour = ink[["secondary"]], hjust = 1) +
+  facet_wrap(~service) +
+  scale_colour_manual(values = c(Expectation = pal[["blue"]], Perception = pal[["orange"]]), name = NULL) +
+  scale_x_continuous(limits = c(4, 7.3), breaks = 4:7) +
+  labs(x = "Mean rating (1-7)", y = NULL,
+       title = "Where is the customer gap largest?",
+       subtitle = "Numbers at right show perception minus expectation",
+       caption = "Illustrative: simulated responses, not data from any actual bank or airline.")
+```
+
+### Evidence and the SERVQUAL-SERVPERF debate
+
+SERVQUAL became one of the most widely applied instruments in marketing, and
+also one of the most criticised. @cronin1992 argued that the difference-score
+formulation was neither theoretically nor empirically justified. Testing
+alternatives in banking, pest control, dry cleaning, and fast food, they found
+that a **performance-only** measure, later called **SERVPERF**, explained more
+variance in overall quality than the gap scores. They also concluded that
+service quality is an antecedent of customer satisfaction, and that satisfaction
+had a stronger influence on purchase intentions than service quality did.
+@teas1993 questioned what respondents mean by "expectations": an ideal standard,
+a predicted level, or what a firm *should* provide. @parasuraman1994 responded
+that expectation measures retain diagnostic value, because they show managers
+*where* shortfalls are largest relative to what customers want, even if
+performance-only scores predict overall judgements better (Table \@ref(tab:tab-ms-servperf)).
+
+```{r tab-ms-servperf}
+tibble::tribble(
+  ~Issue, ~`SERVQUAL position`, ~`SERVPERF position`,
+  "What is measured", "Perceptions minus expectations", "Perceptions only",
+  "Theoretical basis", "Disconfirmation of expectations", "Quality as an attitude toward performance",
+  "Predictive validity", "Lower in head-to-head comparisons", "Higher variance explained in overall quality",
+  "Diagnostic value", "Identifies where shortfalls relative to expectations are largest", "Identifies weak dimensions, not relative shortfalls",
+  "Respondent burden", "Two ratings per item", "One rating per item",
+  "Key sources", "Parasuraman et al. (1988, 1994)", "Cronin & Taylor (1992)"
+) |>
+  book_table(caption = "The SERVQUAL versus SERVPERF debate.")
+```
+
+::: {.debate}
+**Are the gaps real, and are there five dimensions?** Three issues remain open.
+First, difference scores have known psychometric problems: they are often less
+reliable than their components and correlate with them mechanically. Second,
+the five-dimension structure does not replicate consistently across industries.
+Dimensions often merge, and researchers frequently adapt items to context.
+Third, expectations are dynamic: they rise with good experiences and with
+competitors' improvements, which makes the comparison standard a moving target.
+These critiques weaken SERVQUAL as a universal measure, but they do not
+undermine the gaps model as a managerial diagnostic. The internal gaps (1 to 4)
+remain a useful way to locate the organizational source of a quality problem.
+:::
+
+The downstream evidence is more consistent. Service quality is associated with
+favourable behavioural intentions, such as loyalty, willingness to pay more, and
+positive word of mouth [@zeithaml1996]. The **service-profit chain** extends the
+argument inside the firm: internal service quality drives employee satisfaction
+and retention, which improves the value delivered to customers, which drives
+loyalty and profit [@heskett1994].
+
+### Applications in business
+
+::: {.business-case}
+**Service quality in banking and airlines.** Retail banking was one of the
+categories in which the gaps model was developed [@parasuraman1985], and it
+remains a natural fit: much of what customers value, accurate transactions and
+prompt problem resolution, is invisible until it fails. A bank that invests in
+new branches (tangibles) while call-centre waits lengthen (responsiveness) can
+see satisfaction fall despite rising spending, because it has improved the
+dimension with the smallest gap. Airlines illustrate Gap 4. Advertising that
+emphasises premium cabins and attentive service raises expectations for every
+passenger, including those in economy who will experience delays and crowded
+boarding. In the United States, the Department of Transportation publishes
+carriers' on-time performance and complaint statistics, which turns reliability,
+a dimension customers weight heavily, into a publicly observable attribute. The
+practical sequence is the same in both industries: measure the customer gap by
+dimension, trace each large gap to its internal source (knowledge, standards,
+delivery, or communication), and fix the source rather than the symptom.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Advertising intensity that emphasises
+service features will widen the customer gap when operational capacity is
+constrained (Gap 4). *H2.* The effect of perceived reliability on loyalty will
+be stronger than the effect of tangibles. *H3.* Employee satisfaction will
+mediate the effect of internal service quality on customer-perceived quality.
+
+**Measures.** SERVQUAL and SERVPERF scales [@parasuraman1988; @cronin1992],
+behavioural intentions [@zeithaml1996], operational metrics (wait time,
+first-contact resolution, on-time rates) as objective counterparts.
+
+**Designs.** Matched employee-customer surveys across branches or stores,
+multilevel models, field experiments on service scripts, and natural
+experiments from public disclosure of service metrics.
+:::
+
+::: {.pitfall}
+**Running SERVQUAL without the gaps model.** A survey that reports gap scores
+but never asks *why* the gap exists treats a diagnostic tool as a scorecard. The
+value of the model lies in tracing the customer gap back to one of the four
+provider gaps, each of which calls for a different remedy: research for Gap 1,
+standards and design for Gap 2, staffing and training for Gap 3, and
+communication discipline for Gap 4.
+:::
+
+## Customer Equity and Customer Lifetime Value {#customer-equity}
+
+::: {.theory-card}
+**Core claim.** Customers are assets whose value equals the discounted stream of
+profits they are expected to generate. The sum of these values, **customer
+equity**, is a proxy for firm value and the right yardstick for marketing
+decisions.
+
+**Origins.** Marketing science and database marketing. @blattberg1996 proposed
+the customer equity test. @gupta2004 linked customer value to firm value and
+@rust2004 linked customer equity to marketing investments.
+
+**Level of analysis.** Individual customer, cohort, and firm.
+
+**Key constructs.** Customer lifetime value (CLV), margin, retention rate,
+discount rate, acquisition cost, customer equity, value equity, [brand equity](#customer-based-brand-equity) (Section \@ref(customer-based-brand-equity)),
+relationship equity.
+
+**Boundary conditions.** Works best when customers can be identified and their
+purchases observed. Estimating retention is harder in noncontractual settings,
+where defection is unobserved.
+
+**Related theories.** [Market-based assets](#market-based-assets) (Section \@ref(market-based-assets)),
+[Customer-based brand equity](#customer-based-brand-equity) (Section \@ref(customer-based-brand-equity)),
+[Commitment-trust theory](#commitment-trust-theory) (Section \@ref(commitment-trust-theory)),
+[Service quality gap model](#service-quality-gap-model),
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)).
+:::
+
+### Origins and core logic
+
+Traditional marketing metrics, such as market share and sales, count
+transactions. **Customer lifetime value (CLV)** counts relationships. The idea
+came from direct and database marketers, who could track each customer's
+purchases and therefore estimate what a customer was worth over time.
+@blattberg1996 argued that firms should manage marketing by a **customer equity
+test**: spending on acquisition and retention should be set to maximise the
+total value of the customer base, not short-term sales. That framing changes
+practical decisions. Acquiring a customer at a loss can be rational if expected
+future margins are high enough, and a retention programme that looks expensive
+per period can be cheap per unit of lifetime value.
+
+@gupta2004 took the idea to the capital markets. Following their formulation, the
+lifetime value of a customer acquired today is the discounted sum of expected
+margins, weighted by the probability that the customer is still active, minus
+the cost of acquiring the customer:
+
+$$
+\text{CLV} = \sum_{t=0}^{T} \frac{(p_t - c_t)\, r^{t}}{(1+i)^{t}} - \text{AC},
+$$
+
+where $p_t - c_t$ is the margin in period $t$, $r$ is the per-period retention
+rate, $i$ is the per-period discount rate, $T$ is the horizon, and AC is the
+acquisition cost. With a constant margin $m$ and an infinite horizon, the sum is
+a geometric series with the closed form
+
+$$
+\text{CLV} = m\,\frac{1+i}{1+i-r} - \text{AC}.
+$$
+
+The formula makes the theory's key implication visible. Because $r$ sits in the
+denominator, CLV is *convex* in retention: each additional point of retention is
+worth more than the last. @gupta2004 valued the customer bases of several
+public firms and found that a 1% improvement in retention improved firm value by
+about 5%, compared with about 1% for an equivalent improvement in margin and
+about 0.1% for acquisition cost. Customer equity, the sum of CLV across current
+and future customers, then becomes a lower-bound estimate of the value of the
+firm's operating assets.
+
+@rust2004 opened the black box of retention. They decomposed customer equity
+into three drivers: **value equity** (the customer's objective assessment of
+quality, price, and convenience), **brand equity** (subjective, emotional
+appraisal, see [customer-based brand equity](#customer-based-brand-equity) (Section \@ref(customer-based-brand-equity))
+[@keller1993]), and **relationship equity** (the customer's tendency to stay
+beyond objective and subjective assessments, built through loyalty programmes
+and switching costs). Linking each marketing initiative to these drivers, and
+the drivers to switching probabilities, yields a projected **return on
+marketing**.
+
+The customer equity perspective also reframes the classic budgeting question of
+acquisition versus retention. @blattberg1996 argued that each has diminishing
+returns: the first acquisition dollars reach the most responsive prospects, and
+the first retention dollars save the customers who were easiest to keep. The
+optimal allocation equates the marginal contribution of the last dollar spent on
+each to customer equity. Two consequences follow. A firm that has
+under-invested in retention will see a high return from shifting money toward
+it, but the advantage shrinks as spending grows. And because the value of
+acquiring a customer depends on how long that customer will stay, acquisition
+and retention budgets cannot be set independently. Raising retention raises the
+value of every new customer, which justifies more acquisition spending (Table \@ref(tab:tab-ms-ce-drivers)).
+
+```{r tab-ms-ce-drivers}
+tibble::tribble(
+  ~Driver, ~`What it captures`, ~`Typical levers`, ~`Example metric`,
+  "Value equity", "Objective assessment of what the offering delivers for its cost", "Quality, price, convenience", "Perceived value ratings, price index",
+  "Brand equity", "Subjective, emotional appraisal beyond objective value", "Advertising, brand experience, ethics", "Brand awareness and attitude",
+  "Relationship equity", "Propensity to stay beyond objective and subjective appraisal", "Loyalty programmes, community, switching costs", "Retention rate, share of wallet"
+) |>
+  book_table(caption = "Drivers of customer equity (after Rust, Lemon and Zeithaml, 2004).")
+```
+
+### Computing customer lifetime value in R
+
+The code below implements both forms of the formula for an illustrative
+subscription business and compares the effect of 1% relative improvements in
+each input. The numbers are stylised, not estimates for any real firm.
+
+```{r ms-clv-code, echo = TRUE}
+# Customer lifetime value with constant margin, retention, and discount rate.
+# Margins arrive at the start of each period (t = 0, 1, 2, ...).
+clv <- function(margin, retention, discount, acquisition_cost = 0, horizon = Inf) {
+  if (is.infinite(horizon)) {
+    value <- margin * (1 + discount) / (1 + discount - retention)
+  } else {
+    t <- 0:horizon
+    value <- sum(margin * retention^t / (1 + discount)^t)
+  }
+  value - acquisition_cost
+}
+
+# Illustrative subscription: monthly margin 6, monthly retention 0.95,
+# monthly discount rate 0.008 (about 10% a year), acquisition cost 40
+base <- clv(margin = 6, retention = 0.95, discount = 0.008, acquisition_cost = 40)
+three_years <- clv(6, 0.95, 0.008, acquisition_cost = 40, horizon = 35)
+
+# Effect of a 1% relative improvement in each input
+scenarios <- data.frame(
+  change = c("Base case", "Retention +1%", "Margin +1%",
+             "Acquisition cost -1%", "Discount rate -1%"),
+  clv = c(base,
+          clv(6, 0.95 * 1.01, 0.008, 40),
+          clv(6 * 1.01, 0.95, 0.008, 40),
+          clv(6, 0.95, 0.008, 40 * 0.99),
+          clv(6, 0.95, 0.008 * 0.99, 40))
+)
+scenarios$pct_change <- round(100 * (scenarios$clv / base - 1), 1)
+scenarios$clv <- round(scenarios$clv, 2)
+round(c(infinite_horizon = base, three_year_horizon = three_years), 2)
+scenarios
+```
+
+Even in this toy example the ordering reported by @gupta2004 appears: a 1%
+improvement in retention raises CLV far more than the same relative change in
+margin, acquisition cost, or the discount rate. The magnitudes differ from theirs
+because the inputs differ, which is itself a lesson. Retention sensitivity grows
+as retention rises, as Figure \@ref(fig:fig-ms-retention) shows.
+
+::: {.try-it}
+Use the `clv()` function to answer three questions. (1) At what monthly
+retention rate does the illustrative subscriber exactly repay the acquisition
+cost of 40? (2) How much would the firm have to raise the monthly margin to
+offset a fall in retention from 0.95 to 0.93? (3) Repeat question 1 with a
+36-month horizon. Why does the break-even retention rate rise?
+:::
+
+```{r fig-ms-retention, fig.cap = "Stylised sensitivity of customer lifetime value to the annual retention rate for an annual margin of 100 and three discount rates (infinite horizon, acquisition cost excluded). Value rises slowly at low retention and steeply at high retention, so the same retention gain is worth more to a firm that already retains well.", fig.height = 4}
+ret_grid <- tidyr::crossing(retention = seq(0.40, 0.95, by = 0.005),
+                            discount = c(0.08, 0.12, 0.16)) |>
+  mutate(value = clv(margin = 100, retention = retention, discount = discount),
+         rate = factor(scales::percent(discount), levels = c("8%", "12%", "16%")))
+marks <- tibble::tibble(retention = c(0.70, 0.80, 0.90), discount = 0.12) |>
+  mutate(value = clv(100, retention, discount))
+step_label <- sprintf("At a 12%% discount rate, moving retention\nfrom 70%% to 80%% adds about %.0f,\nfrom 80%% to 90%% adds about %.0f",
+                      diff(marks$value)[1], diff(marks$value)[2])
+ggplot(ret_grid, aes(retention, value, colour = rate)) +
+  geom_line(linewidth = 1) +
+  geom_point(data = marks, aes(retention, value), inherit.aes = FALSE, colour = ink[["primary"]], size = 2.2) +
+  geom_text(data = marks, aes(retention, value, label = round(value)), inherit.aes = FALSE,
+            vjust = -0.9, size = 3.2, colour = ink[["secondary"]]) +
+  annotate("text", x = 0.42, y = 760, hjust = 0, size = 3.3, colour = ink[["secondary"]],
+           label = step_label) +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")]), name = "Annual discount rate") +
+  scale_x_continuous(labels = scales::percent) +
+  labs(x = "Annual retention rate", y = "Customer lifetime value",
+       title = "Customer value is convex in retention",
+       caption = "Stylised: CLV = m(1 + i)/(1 + i - r) with m = 100. Points mark retention of 70%, 80%, and 90% at i = 12%.")
+```
+
+### Evidence and extensions
+
+Two empirical programmes have refined the theory. The first concerns
+**noncontractual settings**, such as retailing, in which customers do not
+announce that they have left. @schmittlein1987 developed the Pareto/NBD model to
+infer from purchase histories how many customers are still "alive", and
+@fader2005 offered the simpler BG/NBD alternative that is now widely used for
+CLV estimation. The second concerns the link between loyalty and profit.
+@reinartz2000 studied a catalogue retailer and found that long-life customers
+were not necessarily the most profitable, which challenges the assumption that
+retention always pays. Retention is valuable only when retained customers
+generate margins that exceed the cost of keeping them.
+
+::: {.debate}
+**How far can customer metrics go?** Critics raise three issues. First, CLV
+models are only as good as their retention estimates, and small errors in $r$
+produce large errors in value because of the convexity shown above. Second,
+valuing a firm by its customers requires forecasting the acquisition of
+*future* customers, which reintroduces the uncertainty that customer metrics
+were supposed to remove. @gupta2004 found that customer-based valuations
+tracked market values closely for some firms but not for others, such as fast-growing
+internet firms. Third, a single-minded focus on CLV can lead firms to
+"fire" low-value customers or to price-discriminate in ways that damage trust
+and brand equity. Customer equity is a powerful *accounting* lens, but it does
+not by itself say how to build value.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Subscription businesses and CLV.** Streaming services, software-as-a-service
+providers, telecom carriers, and meal-kit firms report churn, average revenue
+per user, and customer-acquisition cost because these quantities map directly
+onto the CLV formula. The convexity result explains several common practices.
+Firms offer discounts to customers who try to cancel, because a saved
+high-tenure customer is worth more than a new one. They track cohort retention
+curves rather than averages, because early-life churn and late-life churn have
+different causes. And they compare the ratio of lifetime value to acquisition
+cost by channel to decide where to spend. The pitfalls are equally common:
+counting revenue rather than margin, assuming that a promotional cohort will
+retain like an organic one, and using an implausibly low discount rate. A useful
+discipline is to report CLV as a range across plausible retention and discount
+assumptions, as in Figure \@ref(fig:fig-ms-retention), rather than as a single
+number.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Customers acquired through price promotions will
+have lower retention and CLV than customers acquired through referrals. *H2.*
+Improvements in service quality will raise customer equity mainly through the
+relationship-equity driver. *H3.* Firms that disclose customer metrics will
+have lower analyst forecast dispersion.
+
+**Data and methods.** Transaction logs and CRM data, BG/NBD and Pareto/NBD
+models for noncontractual settings [@fader2005; @schmittlein1987], survival
+models for contractual churn, brand-switching matrices [@rust2004], and
+firm-level valuation from public disclosures [@gupta2004].
+:::
+
+::: {.pitfall}
+**Confusing revenue with value and averages with individuals.** CLV uses
+*margins*, not revenue, and should be computed by cohort or segment. An average
+CLV hides the heterogeneity that makes customer equity actionable, and a
+retention rate estimated in one period can change sharply when the competitive
+environment or the acquisition channel changes.
+:::
+
+## Hierarchy of Effects {#hierarchy-of-effects}
+
+::: {.theory-card}
+**Core claim.** Advertising moves consumers through a sequence of mental stages,
+from awareness and knowledge through liking, preference, and conviction to
+purchase. Each stage is a prerequisite for the next and can serve as an
+intermediate measure of advertising effectiveness.
+
+**Origins.** Advertising research. @lavidge1961, drawing on a long tradition of
+sales-stage models such as AIDA (attention, interest, desire, action). Reviewed
+critically by @barry1990 and @vakratsas1999.
+
+**Level of analysis.** Individual consumer, aggregated to campaign metrics.
+
+**Key constructs.** Cognitive stage (awareness, knowledge), affective stage
+(liking, preference), conative stage (conviction, purchase), involvement.
+
+**Boundary conditions.** The "learn, feel, do" order is most plausible for
+high-involvement, considered purchases. For low-involvement and habitual
+purchases, experience often precedes attitude.
+
+**Related theories.** [Elaboration likelihood model](#elaboration-likelihood-model) (Section \@ref(elaboration-likelihood-model)),
+[Mere exposure effect](#mere-exposure-effect) (Section \@ref(mere-exposure-effect)),
+[Information processing model](#information-processing-model) (Section \@ref(information-processing-model)),
+[Theory of planned behavior](#theory-of-planned-behavior) (Section \@ref(theory-of-planned-behavior)),
+[SOR framework](#sor-framework) (Section \@ref(sor-framework)).
+:::
+
+### Core logic
+
+@lavidge1961 proposed that advertising should be evaluated not only by sales,
+which are influenced by many factors, but by its ability to move consumers up a
+series of steps: **awareness**, **knowledge**, **liking**, **preference**,
+**conviction**, and **purchase**. The six steps map onto the three classic
+components of attitude: the *cognitive* (thoughts), the *affective* (feelings),
+and the *conative* (motives and behaviour). The model had two lasting
+consequences. It justified intermediate advertising objectives, such as raising
+awareness, which could be measured before sales effects materialised. And it
+gave rise to the **marketing funnel**, the most widely used planning heuristic
+in advertising and digital marketing (Figure \@ref(fig:fig-ms-hoe)).
+
+```{r fig-ms-hoe, fig.cap = "The hierarchy of effects. Advertising is assumed to move consumers sequentially through cognitive, affective, and conative stages. Involvement and product type moderate whether the sequence holds. Redrawn from Lavidge and Steiner (1961), with the moderator drawn from Vaughn (1980).", fig.height = 3.8}
+mechanism_diagram(sprintf('
+  subgraph cluster_cog { label = "Cognitive" fontcolor = "#52514e" color = "#e6e5e1" style = rounded
+    A1 [label = "Awareness", %s]
+    A2 [label = "Knowledge", %s] }
+  subgraph cluster_aff { label = "Affective" fontcolor = "#52514e" color = "#e6e5e1" style = rounded
+    B1 [label = "Liking", %s]
+    B2 [label = "Preference", %s] }
+  subgraph cluster_con { label = "Conative" fontcolor = "#52514e" color = "#e6e5e1" style = rounded
+    C1 [label = "Conviction", %s]
+    C2 [label = "Purchase", %s] }
+  MO [label = "Involvement and\\nthink or feel product", %s]
+  A1 -> A2 -> B1 -> B2 -> C1 -> C2
+  MO -> B1 [style = dashed, label = " order of\\n stages"]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome, node_outcome, node_moderator), height = 280)
+```
+
+### Evidence and critiques
+
+The sequence was questioned almost from the start. Research on low-involvement
+learning suggested that for many inexpensive, frequently purchased products,
+consumers buy first and form attitudes afterwards, and exposure alone can raise
+liking without much thought (see the
+[mere exposure effect](#mere-exposure-effect) (Section \@ref(mere-exposure-effect))). @vaughn1980 organised these
+alternatives in the **FCB grid**, which crosses involvement (high versus low)
+with the nature of the decision (thinking versus feeling) and assigns a
+different order of stages to each quadrant (Table \@ref(tab:tab-ms-hoe)).
+
+```{r tab-ms-hoe}
+tibble::tribble(
+  ~Model, ~`Assumed sequence`, ~`Where it fits best`, ~Source,
+  "Lavidge-Steiner hierarchy", "Awareness, knowledge, liking, preference, conviction, purchase", "High-involvement, considered purchases", "Lavidge & Steiner (1961)",
+  "FCB grid: informative", "Learn, feel, do", "High involvement, thinking (insurance, appliances)", "Vaughn (1980)",
+  "FCB grid: affective", "Feel, learn, do", "High involvement, feeling (fashion, perfume)", "Vaughn (1980)",
+  "FCB grid: habitual", "Do, learn, feel", "Low involvement, thinking (household staples)", "Vaughn (1980)",
+  "FCB grid: satisfaction", "Do, feel, learn", "Low involvement, feeling (snacks, soft drinks)", "Vaughn (1980)",
+  "Integrative space", "Cognition, affect, and experience interact without a fixed order", "All categories, filtered by motivation and ability", "Vakratsas & Ambler (1999)"
+) |>
+  book_table(caption = "The hierarchy of effects and its main alternatives.")
+```
+
+The most influential critique came from @vakratsas1999, who reviewed more than
+250 studies on how advertising works. They found little support for a fixed
+temporal sequence of effects. They proposed instead that advertising effects are
+best understood in a space defined by **cognition**, **affect**, and
+**experience**, with consumers' motivation and ability acting as filters, and
+with effects varying by product category, competitive context, and consumers'
+prior experience with the brand.
+
+::: {.debate}
+**Is the funnel dead?** Defenders argue that the hierarchy remains a useful
+*planning* model even if it is a poor *process* model: firms still need to
+create awareness before consideration, and stage metrics are easier to track
+than sales. Critics respond that treating stages as sequential leads managers to
+over-invest in awareness, to ignore post-purchase experience as a driver of
+attitudes, and to misattribute sales to the last touchpoint in a digital funnel.
+@barry1990 concluded that the hierarchy has intuitive and practical appeal but
+weak empirical support for strict sequencing. The productive middle ground is to
+keep the *constructs*, which are measurable and meaningful, while dropping the
+assumption that they occur in a fixed order.
+:::
+
+Digital marketing has given the hierarchy a second life and a new set of
+problems. Online funnels track impressions, clicks, visits, add-to-cart events,
+and purchases, which look like a measurable hierarchy of effects. Yet these
+stages are behavioural traces, not mental states, and they suffer from
+selection: people who were already likely to buy are more likely to click.
+Attributing a purchase to the last ad clicked, or to each stage in proportion
+to its position, assumes the sequential causal structure the hierarchy
+proposes. Randomised holdout experiments, in which some consumers are
+prevented from seeing a campaign, are the most reliable way to test whether
+each stage actually adds incremental effect.
+
+### Applications in business
+
+::: {.business-case}
+**Illustrative scenario: diagnosing a campaign with stage metrics.** A
+consumer-electronics brand launches a new pair of earbuds with a television and
+online video campaign. Brand tracking shows prompted awareness rising sharply,
+but consideration and purchase intent barely move, and sales lag. A strict
+hierarchy reading would recommend more reach. A Vakratsas and Ambler reading
+asks a different question: is the bottleneck cognitive (consumers do not know
+why the product is better), affective (they do not like the brand), or
+experiential (they have tried a competitor and are satisfied)? If reviews and
+retail demos show that people who try the earbuds rate them highly, the binding
+constraint is experience, and in-store trials or a generous return policy may
+outperform additional advertising. The stage constructs remain valuable as
+diagnostics. What changes is the assumption about the order in which they must
+be built.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Advertising effects on purchase will be mediated by
+awareness and attitude for high-involvement categories, but will operate mainly
+through trial and post-purchase evaluation for low-involvement categories.
+*H2.* Exposure frequency will raise brand liking even without changes in brand
+knowledge in low-involvement categories. **Designs.** Brand-tracking panels
+linked to purchase data, geo-randomised advertising experiments, and
+path models that compare sequential and non-sequential specifications.
+:::
+
+::: {.pitfall}
+**Treating funnel metrics as causal stages.** Correlated movements in awareness,
+liking, and purchase do not show that one causes the next. Purchase and
+experience can drive attitudes, and the same advertising can affect several
+stages at once. Test the order rather than assume it.
+:::
+
+## Product Life Cycle {#product-life-cycle}
+
+::: {.theory-card}
+**Core claim.** Products pass through a predictable sequence of stages,
+introduction, growth, maturity, and decline, each with characteristic patterns of
+sales, profit, competition, and appropriate strategy.
+
+**Origins.** Marketing strategy. Popularised by @levitt1965. Critically assessed
+by @dhalla1976 and @day1981.
+
+**Level of analysis.** Product class or product form (weaker for individual
+brands).
+
+**Key constructs.** Introduction, growth, maturity, decline, takeoff, slowdown,
+product class versus product form versus brand.
+
+**Boundary conditions.** The curve describes product classes better than brands,
+and its shape and timing vary widely. It is partly endogenous to marketing
+decisions.
+
+**Related theories.** [Bass model](#bass-model) (Section \@ref(bass-model)),
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)),
+[Dominant design](#dominant-design) (Section \@ref(dominant-design)),
+[Disruptive innovation](#disruptive-innovation) (Section \@ref(disruptive-innovation)),
+[Competitive dynamics](#competitive-dynamics) (Section \@ref(competitive-dynamics)).
+:::
+
+### Core logic
+
+@levitt1965 urged managers to "exploit" the product life cycle by anticipating
+each stage rather than reacting to it. In the **introduction** stage, sales grow
+slowly as buyers learn about the product, and profits are negative because of
+development and launch costs. In **growth**, sales accelerate as adoption spreads
+and competitors enter. In **maturity**, sales level off, competition intensifies,
+and price pressure squeezes margins. In **decline**, sales fall as substitutes
+and changing tastes erode demand. Levitt's practical advice was to plan, while a
+product is still growing, the moves that will extend its life: more frequent use
+by current users, more varied use, new users, and new uses for the basic
+material.
+
+The PLC is the managerial counterpart of the diffusion process studied in
+[diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)) [@rogers2003] and
+formalised in the [Bass model](#bass-model) (Section \@ref(bass-model)) [@bass1969]: the growth stage
+corresponds to the steep part of the adoption S-curve, and maturity to the
+period when most potential adopters have adopted and sales depend on
+replacement and repeat purchase. Figure \@ref(fig:fig-ms-plc) shows the stylised
+curve.
+
+```{r fig-ms-plc, fig.cap = "Stylised product life cycle for a product class. Sales (blue) follow an S-shaped rise and eventual decline. Profit (orange) is negative at launch and peaks before sales do, as competition compresses margins. The dashed line shows the alternative emphasised by Dhalla and Yuspeh (1976): continued support or repositioning can sustain a mature product, so decline is partly a consequence of strategy.", fig.height = 4.2}
+t <- seq(0, 20, by = 0.1)
+sales_raw <- t^3 * exp(-t / 3)
+sales <- 100 * sales_raw / max(sales_raw)
+margin <- 0.55 - 0.4 * plogis(t, location = 9, scale = 2)
+profit <- sales * margin - 18 * exp(-t / 2.2)
+level_11 <- sales[which.min(abs(t - 11))]
+support <- ifelse(t < 11, NA, pmax(sales, level_11 * exp(-0.015 * (t - 11))))
+plc <- bind_rows(
+  data.frame(t, value = sales, series = "Sales"),
+  data.frame(t, value = profit, series = "Profit"),
+  data.frame(t, value = support, series = "Sales with continued support")
+) |>
+  filter(!is.na(value)) |>
+  mutate(series = factor(series, levels = c("Sales", "Profit", "Sales with continued support")))
+stages <- data.frame(start = c(0, 3.5, 9, 14), end = c(3.5, 9, 14, 20),
+                     stage = c("Introduction", "Growth", "Maturity", "Decline"))
+ggplot(plc, aes(t, value, colour = series, linetype = series)) +
+  geom_rect(data = stages, aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf),
+            inherit.aes = FALSE, fill = rep(c("#f2f1ee", "#ffffff"), 2), alpha = 0.7) +
+  geom_hline(yintercept = 0, colour = ink[["muted"]], linewidth = 0.3) +
+  geom_line(linewidth = 1) +
+  geom_text(data = stages, aes(x = (start + end) / 2, y = 112, label = stage), inherit.aes = FALSE,
+            size = 3.4, colour = ink[["secondary"]], fontface = "bold") +
+  scale_colour_manual(values = c("Sales" = pal[["blue"]], "Profit" = pal[["orange"]],
+                                 "Sales with continued support" = pal[["aqua"]]), name = NULL) +
+  scale_linetype_manual(values = c("Sales" = "solid", "Profit" = "solid",
+                                   "Sales with continued support" = "dashed"), name = NULL) +
+  scale_y_continuous(limits = c(-20, 116)) +
+  labs(x = "Time since introduction", y = "Index (peak sales = 100)",
+       title = "The product life cycle: a pattern, not a law",
+       caption = "Stylised curves for illustration. Stage boundaries are drawn by eye, which is itself one of the concept's weaknesses.")
+```
+
+Table \@ref(tab:tab-ms-plc) presents the conventional characteristics of product life cycle stages, as described in Levitt (1965) and later textbook treatments.
+
+```{r tab-ms-plc}
+tibble::tribble(
+  ~Stage, ~Sales, ~Profits, ~Competition, ~`Typical marketing emphasis`,
+  "Introduction", "Low, slow growth", "Negative", "Few rivals", "Build awareness and trial, educate the market",
+  "Growth", "Rapid growth", "Rising, often peaking late in the stage", "Entry increases", "Build preference, expand distribution",
+  "Maturity", "Slowing, then flat", "Declining as price competition grows", "Many rivals, shake-out", "Defend share, differentiate, extend uses",
+  "Decline", "Falling", "Low or negative", "Exit by weaker rivals", "Harvest, reposition, or divest"
+) |>
+  book_table(caption = "Conventional characteristics of product life cycle stages, as described in Levitt (1965) and later textbook treatments.")
+```
+
+### Evidence and critiques
+
+::: {.debate}
+**Forget the product life cycle?** @dhalla1976 published one of the most cited
+attacks on a marketing concept. They argued that the PLC lacks empirical
+support at the brand level, that its stages cannot be identified in advance, and
+that its prescriptions can be self-fulfilling. A manager who believes a brand
+has entered decline cuts its support, and sales then decline *because* support
+was withdrawn. The PLC, in their view, is a *dependent* variable shaped by
+marketing decisions, not an independent force that should dictate them. @day1981
+offered a more balanced review. He distinguished **product classes**, **product
+forms**, and **brands**, and argued that the concept is most defensible for
+product forms, least defensible for brands, and useful mainly as a framework
+for thinking about how market conditions evolve rather than as a forecasting
+tool.
+:::
+
+Later empirical research has replaced the generic curve with models of specific
+**turning points**. @golder1997 modelled the **takeoff** of new consumer
+durables, the point at which slow early sales give way to rapid growth, and
+@golder2004 studied the **slowdown** that ends the growth stage. They explained
+the PLC's sharp turns partly through informational cascades, in which
+consumers' adoption decisions follow the observed decisions of others. These
+studies keep the
+PLC's core insight, that markets pass through qualitatively different phases,
+while making the phases measurable and predictable.
+
+### Applications in business
+
+::: {.business-case}
+**Extending mature products.** Levitt's strategy of finding new uses has a
+classic illustration in Arm & Hammer baking soda. In the early 1970s the brand
+promoted placing an open box in the refrigerator to absorb odours, giving a
+mature, slow-growing product a new and recurring use. The revival of vinyl
+records since the late 2000s shows the limits of PLC determinism from another
+angle: a product form widely assumed to be in terminal decline found new demand
+among collectors and younger buyers, supported by record labels and retailers
+that kept supply alive. Both cases support the Dhalla and Yuspeh critique.
+Whether a product is "mature" or "declining" depends partly on how managers
+define its market and whether they continue to invest. For forecasting genuinely
+new categories, managers are better served by diffusion models such as the
+[Bass model](#bass-model) (Section \@ref(bass-model)) than by a generic curve.
+:::
+
+::: {.research-toolkit}
+**Research uses.** Model stage transitions as events (hazard models of takeoff
+and slowdown), estimate diffusion parameters by product form, or test whether
+marketing-mix elasticities differ across stages. *Sample hypothesis:* advertising
+elasticity will be higher in the growth stage than in maturity, whereas price
+elasticity will be higher in maturity. **Data.** Category sales histories,
+scanner data, and industry association statistics.
+:::
+
+::: {.pitfall}
+**Reading the stage, then cutting the budget.** Labelling a brand as "in
+decline" on the basis of a few flat quarters, then harvesting it, can turn a
+temporary slowdown into a permanent one. Diagnose *why* sales are flattening
+(saturation, substitution, or under-investment) before concluding that the
+product has entered a new stage.
+:::
+
+## Marketing Mix {#marketing-mix}
+
+::: {.theory-card}
+**Core claim.** A marketing program is a combination of controllable decision
+variables that managers blend to reach target customers. The best-known
+classification is McCarthy's 4Ps: product, price, place, and promotion.
+
+**Origins.** Marketing management. @borden1964 popularised the "marketing mix",
+@mccarthy1960 condensed it into the 4Ps, and @booms1981 added three Ps for
+services. Critically reviewed by @constantinides2006.
+
+**Level of analysis.** Firm and offering.
+
+**Key constructs.** Product, price, place (distribution), promotion
+(communication), people (participants), physical evidence, process.
+
+**Boundary conditions.** An organizing framework rather than a causal theory.
+Most suited to consumer goods. Less complete for services, relationships, and
+digital platforms.
+
+**Related theories.** [Market orientation](#market-orientation),
+[Service-dominant logic](#service-dominant-logic),
+[Product life cycle](#product-life-cycle),
+[Five forces](#five-forces) (Section \@ref(five-forces)).
+:::
+
+### Origins and core logic
+
+@borden1964 described the marketing manager as a "mixer of ingredients", a
+phrase he credited to his Harvard colleague James Culliton, who blends a set of
+elements into a program suited to the firm's market. Borden's list was long,
+covering product planning, pricing, branding, channels of distribution,
+personal selling, advertising, promotions, packaging, display, servicing,
+physical handling, and fact finding and analysis. @mccarthy1960 condensed the
+idea into four categories, **product**, **price**, **place**, and
+**promotion**, a framework that became the organizing structure of introductory
+marketing textbooks.
+
+Services researchers argued that four Ps were not enough. Because services are
+produced and consumed at the same time, the people who deliver them, the setting
+in which they are delivered, and the steps customers go through are part of
+the offering. @booms1981 therefore added **participants** (usually called
+people), **physical evidence**, and **process**, yielding the **7Ps**. The
+physical-evidence element connects to research on **servicescapes**, the
+designed physical environment of service delivery [@bitner1992] (Table \@ref(tab:tab-ms-mix)).
+
+```{r tab-ms-mix}
+tibble::tribble(
+  ~Element, ~`Core decision`, ~`Airline illustration`, ~`Origin`,
+  "Product", "What is offered: features, quality, brand, service level", "Routes, cabin classes, baggage allowance", "McCarthy (1960)",
+  "Price", "What customers pay and how", "Fare classes, dynamic pricing, fees", "McCarthy (1960)",
+  "Place", "How the offering reaches customers", "Direct website and app, travel agents, alliances", "McCarthy (1960)",
+  "Promotion", "How the firm communicates", "Advertising, loyalty-programme offers", "McCarthy (1960)",
+  "People", "Who delivers and co-produces the service", "Gate agents, cabin crew, other passengers", "Booms & Bitner (1981)",
+  "Physical evidence", "Tangible cues to quality", "Lounge design, cabin interior, uniforms", "Booms & Bitner (1981)",
+  "Process", "How the service is delivered", "Check-in, boarding sequence, rebooking", "Booms & Bitner (1981)"
+) |>
+  book_table(caption = "The 4Ps and the services extension to 7Ps, illustrated for an airline.")
+```
+
+### Evidence and critiques
+
+As a classification scheme, the marketing mix is not "tested" in the way a causal
+theory is. Its empirical legacy lies instead in research on how the elements
+work: price and advertising elasticities, distribution effects, and the
+interactions among them. The critiques concern whether the classification
+directs managerial attention well.
+
+::: {.debate}
+**Is the 4P framework obsolete?** @constantinides2006 reviewed critiques of the
+mix across consumer, relationship, services, retail, and industrial marketing,
+and e-commerce. A common theme is that the 4Ps are **internally oriented**: they
+list what the firm controls rather than what customers experience, they treat
+the customer as a passive target, and they say little about relationships,
+interaction, or co-creation. Relationship marketing scholars argued that
+retention and trust do not fit in any P (see
+[commitment-trust theory](#commitment-trust-theory) (Section \@ref(commitment-trust-theory)) [@morgan1994]). S-D logic
+goes further and questions the idea that value is something the firm "mixes"
+at all [@vargo2004]. Defenders reply that the 4Ps were never intended as a
+theory of value. They are a checklist that ensures no major decision is
+forgotten, and their simplicity is the source of their longevity. Numerous
+alternative lists have been proposed, but none has displaced the original.
+:::
+
+Digital markets stretch each element. *Product* increasingly includes software
+that changes after purchase. *Price* is set by algorithms that respond to demand
+in real time and by subscription and freemium structures that separate the
+price of access from the price of use. *Place* is often a platform owned by
+someone else, such as an app store or marketplace, which shifts bargaining
+power toward the intermediary. And *promotion* now includes content created by
+customers themselves, which the firm can encourage but not control. None of
+these changes makes the mix irrelevant. They do make the boundary between
+controllable and uncontrollable variables less clear, which is precisely the
+concern raised by critics who argue that marketing is a process of interaction
+rather than a set of levers.
+
+### Applications in business
+
+::: {.business-case}
+**Designing a coherent mix.** The practical power of the marketing mix lies in
+**consistency** among elements. A premium price must be supported by product
+quality, selective distribution, and communication that justifies the price.
+Starbucks, under Howard Schultz, articulated its stores as a "third place"
+between home and work. In 7P terms, that positioning was delivered as much
+through physical evidence (store design), people (baristas), and process (how
+orders are taken and drinks prepared) as through product and price. A common
+failure is an inconsistent mix, such as a luxury product sold through discount
+channels or a low-cost service that promises personal attention it cannot
+deliver. The latter is also Gap 4 in the [gaps model](#service-quality-gap-model).
+:::
+
+::: {.research-toolkit}
+**Research uses.** Marketing-mix models (time-series regressions of sales on
+price, advertising, distribution, and promotion) estimate element-level
+elasticities and support budget allocation. *Sample hypothesis:* the effect of
+advertising on sales will be stronger when distribution breadth is high
+(complementarity among mix elements). **Designs.** Store-week scanner data,
+geo-experiments, and hierarchical Bayesian models that pool elasticities
+across markets.
+:::
+
+::: {.pitfall}
+**Optimising each P separately.** Separate budget owners for pricing,
+promotion, and distribution often optimise their own lever at the expense of
+the whole. Interactions among elements are the point of a *mix*. Model them
+explicitly, and evaluate the program from the customer's perspective as well as
+the firm's.
+:::
+
+## Chapter Summary {#marketing-strategy-summary}
+
+::: {.key-takeaways}
+- **Market orientation**, the generation, dissemination, and use of market
+  intelligence, is positively associated with performance, mainly through
+  innovation, quality, and loyalty [@kohli1990; @narver1990; @kirca2005]. A
+  proactive orientation guards against the trap of serving only current
+  customers [@narver2004].
+- **Service-dominant logic** reframes all exchange as service and locates value
+  in use, co-created by customers [@vargo2004; @vargo2016]. It is a powerful
+  lens for servitization and outcome-based business models, but it needs
+  mid-range theories to generate testable predictions.
+- The **gaps model** traces the customer's quality gap to four internal gaps
+  in knowledge, standards, delivery, and communication [@parasuraman1985].
+  SERVQUAL's difference scores are contested, and performance-only measures
+  often predict better [@cronin1992].
+- **Customer equity** values customers as assets. CLV is convex in retention, so
+  retention improvements often matter more than margin or acquisition-cost
+  improvements [@blattberg1996; @gupta2004; @rust2004].
+- The **hierarchy of effects** remains a useful set of measurable constructs,
+  but evidence does not support a fixed sequence from cognition to affect to
+  behaviour [@lavidge1961; @vakratsas1999].
+- The **product life cycle** describes how markets evolve, but stage
+  boundaries are hard to identify and the curve is partly shaped by managers'
+  own decisions [@levitt1965; @dhalla1976].
+- The **marketing mix** organises controllable decisions. The 7Ps extend it to
+  services, and critics argue that it remains firm-centric
+  [@borden1964; @booms1981; @constantinides2006].
+:::
+
+Table \@ref(tab:tab-ms-summary) presents the comparison of the chapter's theories.
+
+```{r tab-ms-summary}
+tibble::tribble(
+  ~Theory, ~`Unit of analysis`, ~`Core mechanism`, ~`Main critique`, ~`Typical business use`,
+  "[Market orientation](#market-orientation)", "Business unit", "Intelligence generation, dissemination, responsiveness", "Common-method bias, can favour current customers", "Organizational audits, cross-functional routines",
+  "[Service-dominant logic](#service-dominant-logic)", "Service ecosystem", "Value co-creation in use", "Broad and hard to falsify", "Servitization, outcome-based contracts",
+  "[Gaps model of service quality](#service-quality-gap-model)", "Firm and customer", "Expectations versus perceptions, four provider gaps", "Difference-score psychometrics", "Service diagnostics and improvement",
+  "[Customer equity](#customer-equity)", "Customer and firm", "Discounted margins weighted by retention", "Sensitive to retention estimates", "Subscription metrics, acquisition budgets",
+  "[Hierarchy of effects](#hierarchy-of-effects)", "Consumer", "Sequential cognitive, affective, conative stages", "Little support for fixed order", "Campaign objectives and funnel tracking",
+  "[Product life cycle](#product-life-cycle)", "Product class", "Diffusion, saturation, competition", "Self-fulfilling and descriptive", "Stage-based planning, portfolio reviews",
+  "[Marketing mix](#marketing-mix)", "Offering", "Consistent blend of controllable variables", "Internally oriented", "Program design and budget allocation"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#marketing-strategy-questions}
+
+1. Market orientation and disruptive innovation seem to give opposite advice
+   about listening to customers. Reconcile the two using the distinction between
+   responsive and proactive market orientation, and propose a measure that
+   would let you test your reconciliation.
+2. Service-dominant logic has been described as a perspective rather than a
+   theory. Derive two falsifiable hypotheses from it for an equipment
+   manufacturer considering a shift to outcome-based contracts.
+3. A hotel chain's SERVQUAL survey shows the largest gap in responsiveness. Using
+   the gaps model, list the internal sources that could produce this gap and the
+   data you would collect to distinguish among them.
+4. Using the CLV function in this chapter, find the retention rate at which a
+   subscription business with a monthly margin of 6 and an acquisition cost of
+   40 breaks even. How sensitive is your answer to the discount rate?
+5. Design a field experiment that tests whether the hierarchy of effects holds
+   for a low-involvement grocery product. What pattern of results would support
+   Vakratsas and Ambler's critique?
+6. A consumer-goods firm wants to cut support for a brand it believes has
+   entered the decline stage. What evidence would you request before agreeing,
+   and how does the Dhalla and Yuspeh critique inform your request?
+
+## Further Reading {#marketing-strategy-reading}
+
+- @kohli1990: the defining statement of market orientation as a behavioural
+  construct, with propositions that still organise the field.
+- @kirca2005: the meta-analytic synthesis of what market orientation does and
+  does not predict.
+- @vargo2004: the article that launched service-dominant logic. Read it with
+  @vargo2016 to see how the framework evolved.
+- @parasuraman1985: the gaps model. Pair it with @cronin1992 for the
+  measurement debate.
+- @gupta2004: a clear demonstration that customer metrics can value a firm, and
+  a template for CLV analysis.
+- @vakratsas1999: the essential review of how advertising works, and why the
+  hierarchy is too simple.
+- @dhalla1976: a short, forceful critique that every user of the product life
+  cycle should read.
+- @constantinides2006: a comprehensive review of critiques of the marketing mix.

@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://mikenguyen13.github.io/social-theory"><img src="images/social-card.png" alt="Social Science Theory: a field guide to 100+ theories, effects, and frameworks" width="100%"></a>
+  <a href="https://mikenguyen13.github.io/social-theory"><img src="images/social-card.png" alt="Social Science Theory: a field guide to 200+ theories, effects, and frameworks" width="100%"></a>
 </p>
 
 <h1 align="center">Social Science Theory</h1>
 
 <p align="center">
   <b>A free, open-source field guide to the theories, effects, and frameworks behind research and business.</b><br>
-  100+ entries · mechanism diagrams · evidence & critiques · business cases · ready-to-use hypotheses
+  150+ theories · 200+ entries · mechanism diagrams · evidence & critiques · business cases · ready-to-use hypotheses
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ depth researchers need and the examples practitioners want.
   operations, and policy show where each theory earns its keep.
 - **Research-ready.** Every major theory includes a *research toolkit*: sample
   hypotheses, operationalizations, designs, and data sources.
-- **Visual and reproducible.** 60+ figures and diagrams, all generated from R code
+- **Visual and reproducible.** 450+ figures and diagrams, all generated from R code
   in this repository, plus an interactive theory map and a searchable
   [Theory Atlas](data/theory-atlas.csv).
 
@@ -49,9 +49,11 @@ depth researchers need and the examples practitioners want.
 | Part | Chapters |
 |---|---|
 | **Foundations** | 1 Introduction · 2 What Is a Theory? · 3 Using Theory in Research and Practice |
-| **Organizations & Strategy** | 4 Resources and Competitive Advantage (RBV, VRIO, KBV, R-A theory) · 5 Dynamic Capabilities, Learning, and Renewal · 6 Governance, Contracts, and Leadership (agency, stewardship, TCE, upper echelons) · 7 Organizations and Their Environments (resource dependence, institutional, stakeholder, ecology) · 8 Information, Signals, and Markets · 9 Social Exchange and Networks · 10 Innovation Diffusion and Technology Adoption |
-| **Individuals & Groups** | 11 Culture · 12 Motivation · 13 Self-Regulation and Construal · 14 Social Comparison, Identity, and Influence · 15 Judgment and Decision Making · 16 Emotion and Well-Being · 17 Persuasion and Communication |
-| **Effects, Phenomena & Frameworks** | 18 Named Effects (mere exposure, decoy, IKEA, glass cliff, …) · 19 Social Phenomena (wisdom of crowds, Matthew effect, groupthink, …) · 20 Models and Frameworks · 21 Theory Atlas & Glossary |
+| **Organizations & Strategy** | 4 Resources and Competitive Advantage (RBV, VRIO, KBV) · 5 Dynamic Capabilities, Learning, and Renewal · 6 Governance, Contracts, and Leadership (agency, stewardship, TCE, upper echelons) · 7 Organizations and Their Environments (resource dependence, institutional, stakeholder, CSR) · 8 Information, Signals, and Markets · 9 Social Exchange and Networks · 10 Innovation Diffusion and Technology Adoption · 11 Strategy, Competition, and Industries · 12 Innovation and Entrepreneurship · 13 International Business · 14 Organizations, Teams, and Decision Processes · 15 Work, Jobs, and Leadership |
+| **Markets, Finance & Economics** | 16 Finance and Corporate Policy (portfolio theory, CAPM, efficient markets, Modigliani-Miller, behavioral finance) · 17 Economics of Markets and Institutions (Coase, collective action, network effects, two-sided markets, auctions, social preferences) |
+| **Individuals & Groups** | 18 Culture · 19 Motivation · 20 Self-Regulation and Construal · 21 Attitudes, Attribution, and Social Learning · 22 Social Comparison, Identity, and Influence · 23 Judgment and Decision Making · 24 Prospect Theory and Reference-Dependent Preferences · 25 Emotion and Well-Being · 26 Persuasion and Communication |
+| **Consumers & Marketing** | 27 Consumer Behavior and Branding · 28 Marketing Strategy and Services |
+| **Effects, Phenomena & Frameworks** | 29 Named Effects (mere exposure, decoy, IKEA, glass cliff) · 30 Social Phenomena (wisdom of crowds, Matthew effect, groupthink, bullwhip) · 31 Models and Frameworks · 32 Theory Atlas and Glossary |
 
 ## A taste: the theory card
 

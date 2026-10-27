@@ -1,0 +1,1934 @@
+# Economics of Markets and Institutions {#economics-institutions}
+
+In January 1914 the Ford Motor Company announced that it would pay many of its
+production workers five dollars a day, roughly double the prevailing wage for
+comparable work. A hardware store that raises the price of snow shovels the
+morning after a blizzard is condemned by its customers, even though the price
+rise is exactly what an introductory textbook would prescribe. Apple lets
+consumers download most apps without charge but takes a commission from
+developers, and payment-card networks reward cardholders while charging
+merchants. Governments now sell radio spectrum by auction and create markets in
+the right to emit carbon dioxide. None of these practices fits the frictionless
+model of a competitive market, in which prices clear markets, every good is
+privately owned, information is free, and people care only about their own
+consumption.
+
+This chapter assembles the theories that economists developed when they relaxed
+those assumptions one at a time: costly bargaining over externalities, shared
+goods, incomplete contracts, costly information, unobservable effort,
+interdependent demand, private valuations, weak rules, and other-regarding
+preferences. Together they form the analytical core of modern industrial
+organization, labour economics, law and economics, and market design, and they
+supply much of the vocabulary that strategy and marketing scholars use to study
+platforms, pricing, and governance (Table \@ref(tab:tab-econ-glance)).
+
+```{r tab-econ-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "[Coase theorem](#coase-theorem)", "When do private bargains solve externalities, and what happens when bargaining is costly?", "Dyad / market / policy", "Coase (1960)",
+  "[Collective action](#collective-action)", "Why do groups fail to provide goods their members want?", "Group / society", "Olson (1965)",
+  "[Property rights theory](#property-rights-theory)", "Who should own assets when contracts are incomplete?", "Dyad / firm", "Grossman & Hart (1986)",
+  "[Search theory](#search-theory)", "Why do prices differ for identical goods, and why do jobs and workers fail to meet?", "Individual / market", "Stigler (1961)",
+  "[Efficiency wages](#efficiency-wages)", "Why do firms pay more than the market-clearing wage?", "Firm / labour market", "Akerlof (1982), Shapiro & Stiglitz (1984)",
+  "[Network effects](#network-effects)", "Why do some markets tip to a single standard?", "Market / industry", "Katz & Shapiro (1985)",
+  "[Two-sided markets](#two-sided-markets)", "How should a platform price to two interdependent user groups?", "Platform / market", "Rochet & Tirole (2003)",
+  "[Auction theory](#auction-theory)", "How do the rules of a sale shape bidding, revenue, and efficiency?", "Market / mechanism", "Vickrey (1961), Milgrom & Weber (1982)",
+  "[New institutional economics](#new-institutional-economics)", "How do the rules of the game shape economic performance?", "Institution / society", "North (1990), Williamson (2000)",
+  "[Social preferences](#social-preferences)", "When do people sacrifice money for fairness, and how does that constrain markets?", "Individual / dyad", "Fehr & Schmidt (1999)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of markets and institutions.")
+```
+
+## Coase Theorem {#coase-theorem}
+
+::: {.theory-card}
+**Core claim.** If property rights are well defined and transaction costs are
+zero, the parties affected by an externality will bargain to the efficient
+outcome whatever the initial assignment of rights. Because transaction costs are
+rarely zero, the assignment of rights and the design of institutions do matter,
+and the real task is to compare the costs of alternative arrangements.
+
+**Origins.** Law and economics. @coase1960, written in reaction to the welfare
+economics of @pigou1920. Coase received the 1991 Nobel Memorial Prize in
+Economic Sciences, in part for this paper and for @coase1937.
+
+**Level of analysis.** Dyad (polluter and pollutee), market, and public policy.
+
+**Key constructs.** Externality, entitlement (property right), transaction costs,
+reciprocal nature of harm, Pigouvian tax, tradable permit.
+
+**Boundary conditions.** The invariance result requires few parties, clearly
+defined and enforceable rights, symmetric information, and negligible wealth and
+endowment effects.
+
+**Related theories.** [Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Collective action](#collective-action), [Property rights theory](#property-rights-theory),
+[Tragedy of the commons](#tragedy-of-the-commons) (Section \@ref(tragedy-of-the-commons)), [Endowment effect](#endowment-effect) (Section \@ref(endowment-effect)).
+:::
+
+### Origins and intellectual history
+
+@pigou1920 observed that the private net product of an activity can diverge from
+its social net product: a railway's sparks burn neighbouring crops without the
+railway paying for the damage. The Pigouvian remedy is a tax equal to the
+marginal damage or a liability rule that makes the injurer pay.
+
+@coase1960 challenged this view with a deceptively simple point: harm is
+**reciprocal**. If a rancher's cattle trample a farmer's crops, preventing the
+damage imposes a cost on the rancher. The question is not how to restrain the
+rancher but whether the rancher should be allowed to harm the farmer or the
+farmer to harm the rancher. Through examples drawn from English nuisance cases,
+Coase showed that if the parties can bargain without cost, they reach the
+arrangement that maximizes joint value whoever is initially liable. The legal
+rule determines who pays whom, not what is produced. A year earlier he had
+proposed selling radio frequencies to the highest bidder [@coase1959], an idea
+that became United States policy in 1993 (see [Auction theory](#auction-theory)).
+
+### Core logic and propositions
+
+Let a firm's private benefit from an activity of level $q$ be $B(q)$, and let the
+activity impose damage $D(q)$ on a neighbour, with $B$ concave and $D$ convex.
+The efficient level $q^{*}$ maximizes joint surplus and satisfies
+
+$$B'(q^{*}) \;=\; D'(q^{*}).$$
+
+The Pigouvian solution imposes a tax $t = D'(q^{*})$ per unit. The Coasean
+solution needs no tax. If the firm has the right to operate, the neighbour pays
+it to cut back. If the neighbour has the right to be free of harm, the firm buys
+permission. Both bargains end at $q^{*}$, and only the distribution of surplus
+differs. The theory's propositions are:
+
+- **P1 (Invariance).** With zero transaction costs and well-defined rights, the
+  efficient allocation is reached regardless of the initial assignment of rights.
+- **P2 (Transaction costs).** As the costs of negotiating and enforcing
+  agreements rise, the initial assignment increasingly determines the final
+  allocation.
+- **P3 (Comparative institutions).** The right response to an externality depends
+  on the comparative costs of bargaining, integration, regulation, and taxation.
+- **P4 (Markets in rights).** Where rights can be defined, monitored, and traded
+  cheaply, a market in rights meets a given target at the lowest total cost.
+
+Table \@ref(tab:tab-econ-instruments) compares the main instruments that
+follow from Pigou and Coase.
+
+```{r tab-econ-instruments}
+tibble::tribble(
+  ~Instrument, ~`What the policymaker fixes`, ~`Information required`, ~`Main strength`, ~`Main weakness`,
+  "Pigouvian tax", "Price of the externality", "Marginal damage at the optimum", "Equalizes marginal abatement cost across emitters", "Quantity of emissions is uncertain",
+  "Command-and-control standard", "Technology or emission rate per source", "Abatement options at each source", "Simple to monitor and enforce", "Ignores cost differences across sources",
+  "Cap-and-trade (tradable permits)", "Total quantity of emissions", "Aggregate target and monitoring", "Least-cost abatement with a known cap", "Price volatility, allocation politics",
+  "Liability rule or private bargaining", "Who holds the entitlement", "Courts must assess damages", "No regulator needed when parties are few", "Fails with many parties and high transaction costs"
+) |>
+  book_table(caption = "Policy instruments for externalities.")
+```
+
+### Mechanism
+
+Cap-and-trade is the clearest application of Coasean reasoning. A regulator
+creates a fixed quantity of emission rights. Firms that can abate cheaply abate
+more and sell permits to firms whose abatement is expensive, until marginal
+abatement costs are equal across firms, the condition for meeting the cap at
+minimum total cost [@montgomery1972]. Figure \@ref(fig:fig-econ-trading)
+illustrates the logic for two firms that must jointly abate 100 tonnes.
+
+```{r fig-econ-trading, fig.cap = "Stylised two-firm emissions market. A uniform standard (each firm abates 50 tonnes) leaves marginal abatement costs unequal. Trading moves abatement to the low-cost firm until marginal costs are equal at the permit price, cutting total abatement cost by a quarter in this example.", fig.height = 4.2}
+a <- seq(0, 100, by = 0.5)                 # abatement by firm A, firm B abates 100 - a
+mac <- bind_rows(
+  data.frame(a, mac = 1 * a, firm = "Firm A (low-cost abater)"),
+  data.frame(a, mac = 3 * (100 - a), firm = "Firm B (high-cost abater)")
+)
+cost_uniform <- 0.5 * 1 * 50^2 + 0.5 * 3 * 50^2   # 5000
+cost_trade   <- 0.5 * 1 * 75^2 + 0.5 * 3 * 25^2   # 3750
+ggplot(mac, aes(a, mac, colour = firm)) +
+  geom_vline(xintercept = 50, linetype = "dashed", colour = ink[["muted"]]) +
+  geom_line(linewidth = 1.1) +
+  annotate("point", x = 75, y = 75, size = 3.2, colour = ink[["primary"]]) +
+  annotate("text", x = 76, y = 140, label = "Trading equilibrium:\npermit price = 75", hjust = 0,
+           size = 3.3, colour = ink[["primary"]]) +
+  annotate("text", x = 52, y = 230, label = "Uniform standard\n(MAC 50 vs 150)", hjust = 0,
+           size = 3.2, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("Firm A (low-cost abater)" = pal[["blue"]],
+                                 "Firm B (high-cost abater)" = pal[["orange"]])) +
+  coord_cartesian(ylim = c(0, 250)) +
+  labs(x = "Tonnes abated by Firm A (Firm B abates the remainder of 100)",
+       y = "Marginal abatement cost", colour = NULL,
+       title = "Permit trading equalizes marginal abatement costs",
+       subtitle = sprintf("Total cost: %s under the uniform standard, %s with trading",
+                          format(cost_uniform, big.mark = ","), format(cost_trade, big.mark = ",")),
+       caption = "Stylised: MAC(A) = abatement, MAC(B) = 3 x abatement. Not empirical data.")
+```
+
+### Evidence and extensions
+
+In laboratory bargaining with full information, @hoffman1982 found that pairs
+and small groups usually reached the joint-payoff-maximizing agreement whichever
+party held the legal right. In the field, @cheung1973 documented that
+beekeepers and orchard owners in Washington State routinely contract for
+pollination, a textbook example of an uncompensated externality that turned out
+to be priced.
+
+Two literatures qualify the theorem. @kahneman1990 showed that people demand
+substantially more to give up a good than they would pay to acquire it, so the
+initial allocation of an entitlement affects its final allocation even when
+trading is costless (see [Endowment effect](#endowment-effect) (Section \@ref(endowment-effect))). @weitzman1974
+showed that when abatement costs are uncertain, a tax and a cap are no longer
+equivalent: which is better depends on the relative slopes of marginal cost and
+marginal damage.
+
+The largest natural experiment is the United States sulphur dioxide allowance
+market created by the 1990 Clean Air Act Amendments, which met its target at
+substantially lower cost than a comparable command-and-control approach
+[@stavins1998]. Later regulatory and judicial decisions layered source-specific
+constraints on top of the cap and drained the market of importance, a cautionary
+tale about the political durability of market-based instruments
+[@schmalensee2013].
+
+::: {.debate}
+**What does the Coase theorem actually say?** Coase himself objected that
+economists had read the zero-transaction-cost result as the main message. On his
+reading, because transaction costs are positive, rights assignments and
+institutions matter, and policy should compare real alternatives rather than
+idealized ones. A second debate concerns
+**strategic behaviour**: with private information about valuations, bargaining
+can break down even between two parties. A third concerns **distribution**:
+even when invariance holds, the assignment of rights determines who is richer,
+which is why permit allocation is the most contested part of every
+cap-and-trade programme.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Carbon markets.** The European Union Emissions Trading System, launched in
+2005, caps emissions from power generation and heavy industry and allows covered
+installations to trade allowances. Its first phase illustrated the importance of
+accurate rights definition: allowances were allocated largely free on the basis
+of estimated needs, and when verified emissions data showed that the market was
+over-allocated, prices collapsed to near zero by 2007 because first-phase
+allowances could not be carried into the next phase. Later reforms moved toward
+auctioning and introduced a Market Stability Reserve that withdraws surplus
+allowances. For firms, the managerial implications follow directly from
+Figure \@ref(fig:fig-econ-trading): treat carbon as a priced input, abate
+wherever internal abatement is cheaper than the allowance price, and buy
+allowances where it is not. Many firms also apply an internal carbon price to
+investment appraisal.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Bilateral disputes over externalities are more likely to be resolved by
+  private agreement when the number of affected parties is small and property
+  rights are clearly documented.
+- *H2.* Under a cap-and-trade programme, dispersion of marginal abatement cost
+  across covered firms declines as market liquidity rises.
+
+**Designs.** Laboratory bargaining experiments varying rights assignment and
+information. Difference-in-differences around the introduction or reform of
+permit markets. Event studies of allowance price shocks on covered firms'
+stock returns.
+:::
+
+::: {.pitfall}
+**Reading Coase as an argument against all regulation.** The theorem does not say
+that externalities take care of themselves. It says they would if transaction
+costs were zero, which they rarely are. When the affected parties number in the
+millions (as with air pollution or carbon dioxide), private bargaining is
+impossible, and the relevant comparison is among imperfect institutions: taxes,
+caps, standards, and liability. Citing Coase to oppose a carbon market inverts
+the theorem: tradable permits are themselves a Coasean creation of property
+rights.
+:::
+
+## Collective Action {#collective-action}
+
+::: {.theory-card}
+**Core claim.** Rational, self-interested members of a large group will not
+contribute voluntarily to a good that benefits the whole group, because each
+receives the benefit whether or not he or she contributes. Large groups therefore
+organize only when they can offer **selective incentives** or impose coercion.
+
+**Origins.** Public economics and political economy. @samuelson1954 formalized
+public goods. @olson1965 extended the logic to groups, unions, cartels, and
+lobbies.
+
+**Level of analysis.** Group, organization, industry, and society.
+
+**Key constructs.** Public good (non-rival and non-excludable), free riding,
+group size, selective incentives, privileged and latent groups, conditional
+cooperation, peer punishment.
+
+**Boundary conditions.** Benefits cannot be withheld from non-contributors,
+contributions are costly, and members interact anonymously. Repeated
+interaction and sanctioning weaken the prediction.
+
+**Related theories.** [Tragedy of the commons](#tragedy-of-the-commons) (Section \@ref(tragedy-of-the-commons)),
+[Social loafing](#social-loafing) (Section \@ref(social-loafing)), [Social preferences](#social-preferences),
+[Social norms](#social-norms) (Section \@ref(social-norms)), [New institutional economics](#new-institutional-economics).
+:::
+
+### Origins and intellectual history
+
+@samuelson1954 defined a collective consumption good as one whose consumption by
+one person does not reduce the amount available to anyone else. He showed that
+efficient provision requires the *sum* of individuals' marginal rates of
+substitution between the public good $G$ and a private good to equal the
+marginal rate of transformation:
+
+$$\sum_{i=1}^{n} MRS_{i}^{G,x} \;=\; MRT^{G,x}.$$
+
+Because people can free ride, decentralized markets underprovide public goods.
+
+@olson1965 showed that shared interests do not imply collective action. Every
+member of a trade association benefits from favourable legislation, but each
+firm's contribution barely affects the outcome and the firm benefits whether or
+not it pays. The argument explains why small, concentrated interests often
+defeat large, diffuse ones, and why unions and professional associations bundle
+political activity with private benefits for members. The closely related
+[Tragedy of the commons](#tragedy-of-the-commons) (Section \@ref(tragedy-of-the-commons)) concerns resources that are
+rival in consumption, and @ostrom1990's work on self-governing communities,
+discussed there, is the most influential response to both problems.
+
+### Core logic and propositions
+
+The **linear public goods game** captures the structure. Each of $n$ players
+receives an endowment $e$ and chooses a contribution $c_i$ to a group project.
+Contributions are multiplied and shared equally:
+
+$$\pi_i \;=\; e - c_i + m \sum_{j=1}^{n} c_j, \qquad \frac{1}{n} < m < 1.$$
+
+Each unit contributed returns only $m < 1$ to the contributor, so contributing
+nothing is a dominant strategy. Each unit contributed returns $nm > 1$ to the
+group, so full contribution is socially efficient. The gap between the two is
+the collective action problem. Olson's propositions follow:
+
+- **P1 (Group size).** Larger groups are less likely to provide collective goods,
+  because each member's share of the benefit is smaller, each contribution is less
+  noticeable, and organizing costs are higher.
+- **P2 (Selective incentives).** Large ("latent") groups mobilize when
+  participation is tied to private benefits available only to contributors, such
+  as insurance, journals, training, or certification.
+- **P3 (Privileged groups).** If one member values the good more than its full
+  cost, the good is provided, and the large member bears a disproportionate share
+  (Olson's "exploitation of the great by the small").
+- **P4 (Sanctions and reciprocity).** Contributions are sustained when members can
+  observe one another and punish free riders, an extension developed in
+  experimental work [@fehr2000a].
+
+### Mechanism
+
+In repeated public goods experiments, contributions typically start well above
+zero and decline as cooperative participants discover that others free ride. Many
+participants are **conditional cooperators** who contribute more when they
+believe others are contributing [@fischbacher2001]. @fehr2000a showed that
+allowing participants to pay to punish low contributors reverses the decline.
+Figure \@ref(fig:fig-econ-pgg) sketches the qualitative pattern.
+
+```{r fig-econ-pgg, fig.cap = "Stylised pattern of contributions in a repeated public goods game with and without peer punishment. Without punishment, contributions decay toward free riding. With costly punishment, contributions are sustained. Qualitative pattern consistent with Fehr and Gachter (2000a). Illustrative, not their data.", fig.height = 4}
+set.seed(1965)
+periods <- 1:10
+pgg <- bind_rows(
+  data.frame(period = periods,
+             share = pmax(0.05, 0.48 * exp(-0.17 * (periods - 1)) + rnorm(10, 0, 0.015)),
+             condition = "No punishment"),
+  data.frame(period = periods,
+             share = pmin(0.95, 0.55 + 0.035 * (periods - 1) + rnorm(10, 0, 0.015)),
+             condition = "With peer punishment")
+)
+ggplot(pgg, aes(period, share, colour = condition)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2.4) +
+  scale_colour_manual(values = c("No punishment" = pal[["orange"]], "With peer punishment" = pal[["blue"]])) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+  scale_x_continuous(breaks = periods) +
+  labs(x = "Period", y = "Average contribution (share of endowment)", colour = NULL,
+       title = "Free riding erodes cooperation unless it can be punished",
+       caption = "Illustrative simulation of a qualitative pattern. Not experimental data.")
+```
+
+### Evidence and extensions
+
+The free-rider prediction is confirmed in its direction but not in its
+magnitude: people contribute more than pure self-interest predicts, especially
+early, and their behaviour depends on what they expect others to do. Cultural
+context matters. @herrmann2008 ran the same public goods game with punishment in
+16 subject pools around the world and found that in some societies punished
+participants frequently retaliated against high contributors (**antisocial
+punishment**), which undermined cooperation. @ostrom2000 reviews field and
+laboratory evidence that communities develop norms and graduated sanctions that
+sustain collective action well beyond what Olson's model implies.
+
+Table \@ref(tab:tab-econ-ca-solutions) summarizes the main solutions identified
+across this literature.
+
+```{r tab-econ-ca-solutions}
+tibble::tribble(
+  ~Solution, ~Logic, ~`Business or policy example`,
+  "Selective incentives", "Bundle the public good with private benefits for contributors", "Trade association membership that includes data, events, and certification",
+  "Coercion or mandate", "Make contribution compulsory", "Taxes, compulsory levies for generic product advertising",
+  "Privileged sponsor", "A member large enough to gain from providing the good alone", "A dominant firm funding an open industry standard",
+  "Federated structure", "Organize small groups in which contributions are noticeable", "Local chapters of national associations",
+  "Monitoring and sanctions", "Make free riding visible and costly", "Peer review of contributions in research consortia",
+  "Norms and reputation", "Social approval for contributors, disapproval for free riders", "Public recognition of open-source maintainers"
+) |>
+  book_table(caption = "Solutions to collective action problems.")
+```
+
+::: {.debate}
+**Is group size really the enemy of cooperation?** If the good is purely
+non-rival, a larger group may include more members with high valuations, so the
+probability that someone provides it can rise with size, and field research on
+commons governance finds no simple monotonic effect [@ostrom2000]. A second
+critique targets the behavioural assumption: conditional cooperators and willing
+punishers mean that institutions which make contributions visible can unlock
+cooperation that Olson's model rules out [@fehr2000a; @fischbacher2001]. A third
+notes that large-scale successes such as open-source software rely on selective
+incentives Olson anticipated: reputation, learning, and career signalling.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Underfunded digital infrastructure.** Open-source software is a public good
+for the firms that build on it. In April 2014 the Heartbleed vulnerability in
+OpenSSL, a widely used cryptographic library, revealed that critical code relied
+on a very small group of mostly volunteer maintainers, although many large firms
+depended on it. The response followed Olson's playbook: the Linux Foundation
+organized the Core Infrastructure Initiative, through which large technology
+firms (a privileged group) jointly funded critical projects, with public
+recognition of sponsors as a selective incentive.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Contributions to an inter-firm consortium will be higher when contributions
+  are publicly disclosed to other members.
+- *H2.* The positive effect of membership benefits on association membership will
+  be stronger in industries with many small firms than in concentrated industries.
+
+**Designs.** Laboratory and online public goods games. Field experiments that
+vary the visibility of contributions (for example, charitable giving). Panel
+data on association membership and lobbying expenditure.
+:::
+
+::: {.pitfall}
+**Calling every shared good a public good.** Many "collective" goods are
+excludable: industry data, certification, and standards can be restricted to
+members. Such club goods face weaker free-rider problems, and the right remedy is
+pricing access, not subsidy or mandate.
+:::
+
+## Property Rights Theory {#property-rights-theory}
+
+::: {.theory-card}
+**Core claim.** When contracts are incomplete, ownership of physical assets
+confers **residual control rights**, the right to decide how assets are used in
+circumstances the contract does not cover. Ownership therefore shapes each
+party's bargaining position after investments are sunk, and hence each party's
+incentive to invest beforehand. Assets should be owned by the party whose
+investment matters most.
+
+**Origins.** Economics of the firm. @grossman1986, @hart1990, synthesized in
+@hart1995. Hart shared the 2016 Nobel Memorial Prize for contract theory.
+
+**Level of analysis.** Dyad (buyer and supplier) and the boundary of the firm.
+
+**Key constructs.** Incomplete contracts, residual control rights,
+relationship-specific investment, hold-up, outside option, asset
+complementarity, indispensability.
+
+**Boundary conditions.** Some investments cannot be specified in an enforceable
+contract, parties can renegotiate after uncertainty resolves, and ownership of
+physical (or legally protectable) assets affects outside options.
+
+**Related theories.** [Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Agency theory](#agency-theory) (Section \@ref(agency-theory)), [Coase theorem](#coase-theorem),
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)).
+:::
+
+### Origins and intellectual history
+
+@coase1937 asked why some transactions are organized inside firms rather than
+across markets. Williamson's [Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics))
+and @klein1978 answered that relationship-specific investments create
+appropriable quasi-rents that a trading partner can try to capture by
+threatening to walk away, the **hold-up** problem, and that vertical integration
+suppresses this opportunism. @grossman1986 accepted the hold-up premise but
+asked why, if integration cures opportunism, firms do not integrate everything.
+Their answer was that integration does not remove incentive problems. It moves
+them. When firm 1 buys firm 2, the former owner-manager of firm 2 becomes an
+employee with weaker incentives, because the assets she needs to capture the
+returns on her effort are now controlled by someone else. The crucial step was
+to define **ownership as the residual right** to decide everything the contract
+leaves unspecified. With complete contracts, ownership would not matter. With
+incomplete contracts, it determines who has the upper hand when the unexpected
+happens.
+
+### Core logic and propositions
+
+Consider two parties who each make a non-contractible investment $i_k$ before
+they trade. Trade generates joint value $v(i_1, i_2)$. If bargaining breaks down,
+each party receives an outside option $o_k^{g}(i_k)$ that depends on which assets
+it controls under ownership structure $g$ (non-integration, party 1 owns, party 2
+owns). With symmetric Nash bargaining, party 1's payoff is
+
+$$u_1 \;=\; o_1^{g} + \tfrac{1}{2}\left[v(i_1, i_2) - o_1^{g} - o_2^{g}\right] - i_1,$$
+
+so party 1's marginal return on investment is
+$\tfrac{1}{2}\,\partial v/\partial i_1 + \tfrac{1}{2}\,\partial o_1^{g}/\partial i_1$.
+Because the party captures only part of the value its investment creates,
+investment falls short of the first best. Owning more assets increases
+$\partial o_1^{g}/\partial i_1$ and therefore increases party 1's investment, but
+at the expense of party 2's. @hart1990 and @hart1995 derive the following
+propositions:
+
+- **P1 (Importance of investment).** Ownership should go to the party whose
+  non-contractible investment contributes more to joint value.
+- **P2 (Independent assets).** Assets that are economically independent should be
+  owned separately.
+- **P3 (Complementary assets).** Assets that are strictly complementary should be
+  owned together.
+- **P4 (Indispensability).** A party whose human capital is indispensable to an
+  asset should own that asset.
+- **P5 (Costs of integration).** Integration raises the investment incentives of
+  the acquirer and lowers those of the acquired party. It is efficient only when
+  the first effect dominates.
+
+Figure \@ref(fig:fig-econ-prt) summarizes the mechanism.
+
+```{r fig-econ-prt, fig.cap = "Mechanism of property rights theory: with incomplete contracts, ownership allocates residual control rights, which shape outside options and bargaining power ex post, and therefore investment incentives ex ante."}
+mechanism_diagram(sprintf('
+  C [label = "Incomplete\\ncontract", %s]
+  O [label = "Ownership of\\nphysical assets", %s]
+  R [label = "Residual control\\nrights", %s]
+  B [label = "Outside options and\\nex post bargaining power", %s]
+  I [label = "Ex ante specific\\ninvestment", %s]
+  V [label = "Joint surplus", %s]
+  S [label = "Asset complementarity\\nand specificity", %s]
+  C -> R
+  O -> R -> B -> I -> V
+  S -> B [style = dashed]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome, node_outcome, node_moderator))
+```
+
+### Evidence and extensions
+
+Clean tests are difficult because investments are, by assumption, hard to
+observe. @baker2003 provide one of the best: the diffusion of on-board computers
+in United States trucking changed what could be monitored and contracted, which
+in turn changed who owned the trucks. The most famous historical case is
+contested. @klein1978 described General Motors' 1926 acquisition of Fisher Body
+as a response to hold-up by a supplier that had refused to locate plants near
+GM's, but later archival work disputed that account [@coase2000; @freeland2000;
+@casadesus2000], a reminder that canonical examples deserve primary-source
+scrutiny.
+
+Table \@ref(tab:tab-econ-prt-tce) contrasts property rights theory with
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)), its closest relative.
+
+```{r tab-econ-prt-tce}
+tibble::tribble(
+  ~Dimension, ~`Transaction cost economics`, ~`Property rights theory`,
+  "Key source", "Williamson (1975, 1985)", "Grossman & Hart (1986), Hart & Moore (1990)",
+  "Unit of analysis", "The transaction", "Ownership of assets",
+  "Main inefficiency", "Ex post haggling and maladaptation", "Ex ante underinvestment",
+  "Role of integration", "Replaces haggling with authority (fiat)", "Reallocates residual control rights",
+  "Cost of integration", "Bureaucratic costs, weaker incentives", "Lower investment incentives for the acquired party",
+  "Prediction", "Integrate when asset specificity and uncertainty are high", "Give ownership to the party whose investment matters most",
+  "Typical evidence", "Make-or-buy regressions on asset specificity", "Ownership changes after shifts in contractibility"
+) |>
+  book_table(caption = "Transaction cost economics and property rights theory compared.")
+```
+
+::: {.debate}
+**How firm are the foundations?** @maskin1999 argued that if parties can foresee
+the payoffs of future contingencies, even without describing them, clever
+mechanisms can in principle restore efficient investment, undermining the
+incomplete-contracts premise. Defenders reply that such mechanisms are fragile
+and rarely observed. A second critique is empirical: because the two theories
+in Table \@ref(tab:tab-econ-prt-tce) often predict the same make-or-buy choice,
+findings that asset specificity predicts integration cannot distinguish them.
+Discriminating tests need settings where the theories diverge.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Illustrative scenario: who should own the tooling?** An automotive
+manufacturer asks a supplier to build specialized moulds for a new component.
+If the supplier owns the moulds, it has a strong incentive to maintain and
+improve them, but the manufacturer fears hold-up once switching is costly. If
+the manufacturer owns the moulds, it can move them if the relationship sours,
+which disciplines the supplier but weakens its incentive to improve the process.
+Property rights theory predicts manufacturer ownership when the manufacturer's
+investments matter more than the supplier's improvement effort.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Following a technology that makes a supplier's effort contractible, the
+  probability that the buyer owns the relevant asset will rise.
+- *H2.* In R&D alliances, the partner whose non-contractible know-how is more
+  important to the project is more likely to hold the resulting intellectual
+  property.
+
+**Designs.** Natural experiments in contractibility (new monitoring technologies,
+legal changes). Contract-level data on ownership and control clauses. Panel
+studies of inventors before and after acquisitions.
+:::
+
+::: {.pitfall}
+**Treating integration as free.** A common misuse is to cite hold-up as a reason
+to integrate without asking whose incentives integration destroys. Ownership is
+a zero-sum allocation of control: strengthening one party's investment
+incentives weakens another's. Ignoring this trade-off leads to systematic
+over-integration.
+:::
+
+## Search Theory {#search-theory}
+
+::: {.theory-card}
+**Core claim.** When information about prices, products, or trading partners is
+costly to acquire, buyers and job seekers search only until the expected gain
+from one more search falls to its cost. Price dispersion for identical goods and
+the coexistence of unemployment and vacancies are therefore equilibrium
+outcomes, not anomalies.
+
+**Origins.** Economics of information. @stigler1961, @mccall1970,
+@diamond1971, and for labour markets @mortensen1994. Diamond, Mortensen, and
+Pissarides shared the 2010 Nobel Memorial Prize.
+
+**Level of analysis.** Individual searcher, firm, and market.
+
+**Key constructs.** Search cost, price dispersion, reservation price and
+reservation wage, sequential versus fixed-sample search, matching function,
+market tightness.
+
+**Boundary conditions.** Offers vary across sellers or employers, finding them
+is costly. Free, universally used comparison tools shrink its predictions.
+
+**Related theories.** [Information asymmetry](#information-asymmetry) (Section \@ref(information-asymmetry)),
+[Bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)), [Two-sided markets](#two-sided-markets),
+[Reference price](#reference-price) (Section \@ref(reference-price)).
+:::
+
+### Origins and intellectual history
+
+@stigler1961 [p. 213] observed that information occupies "a slum dwelling in the
+town of economics": price theory had assumed away the problem of finding out
+what prices are. Because ignorance is costly to remove, rational buyers stop
+searching before they find the lowest price, and sellers can sustain different
+prices for identical goods. The more a buyer spends, the more search pays.
+
+@mccall1970 modelled **sequential** search for jobs, in
+which a worker samples one offer at a time and stops at the first offer above a
+**reservation wage**. @diamond1971 showed a startling equilibrium implication:
+if all consumers face even a tiny positive search cost and firms set prices,
+the unique equilibrium is for every firm to charge the monopoly price, because
+no consumer will search to find a slightly lower one (the **Diamond paradox**).
+Later work restored price dispersion as an equilibrium by allowing consumers to
+differ in search costs or in how many quotes they obtain [@varian1980;
+@burdett1983]. In labour economics, @mortensen1994 built a model of job creation
+and destruction in which a **matching function** links unemployed workers and
+vacancies, explaining why both exist at once and how they move over the business
+cycle.
+
+### Core logic and propositions
+
+In sequential search with cost $c$ per offer and wage offers drawn from
+distribution $F$, the optimal policy is to accept the first offer at or above a
+reservation wage $w^{R}$ that equates the cost of one more draw with its expected
+gain:
+
+$$c \;=\; \int_{w^{R}}^{\infty} \left(w - w^{R}\right)\, dF(w).$$
+
+Higher search costs lower the reservation wage, and a more dispersed offer
+distribution raises it. In matching models, hires $m(u, v)$ increase in
+unemployment $u$ and vacancies $v$, and **market tightness** $\theta = v/u$
+governs how fast workers find jobs and firms fill vacancies. The propositions
+are:
+
+- **P1 (Optimal stopping).** Searchers stop when the marginal gain of search
+  equals its cost, so they rationally accept prices above the minimum.
+- **P2 (Stakes).** Search effort and price convergence increase with the size of
+  the expenditure [@stigler1961].
+- **P3 (Search costs and market power).** Higher search costs raise equilibrium
+  prices. With homogeneous positive search costs, prices rise to the monopoly
+  level [@diamond1971].
+- **P4 (Frictional unemployment).** Unemployment and vacancies coexist, and lower
+  search frictions raise matching efficiency [@mortensen1994].
+
+### Mechanism
+
+Figure \@ref(fig:fig-econ-search) illustrates Stigler's fixed-sample logic: each
+additional quote lowers the expected minimum price by less and less, so a
+business buying ten units rationally collects many more quotes than a household
+buying one.
+
+```{r fig-econ-search, fig.cap = "Stylised Stigler search model. Prices are uniform between 80 and 120 and each quote costs 2. The expected saving from the k-th quote falls quickly, so a buyer of one unit stops at about four quotes while a buyer of ten units collects about thirteen.", fig.height = 4}
+k <- 2:16
+spread <- 40                                   # price range: 80 to 120
+gain <- spread / (k * (k + 1))                 # E[min of k-1] - E[min of k] for uniform prices
+search <- bind_rows(
+  data.frame(k, gain = 1 * gain, buyer = "Household buying 1 unit"),
+  data.frame(k, gain = 10 * gain, buyer = "Business buying 10 units")
+)
+quote_cost <- 2
+stop_at <- search |> group_by(buyer) |> filter(gain >= quote_cost) |> summarise(k = max(k))
+ggplot(search, aes(k, gain, colour = buyer)) +
+  geom_hline(yintercept = quote_cost, linetype = "dashed", colour = ink[["secondary"]]) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2) +
+  geom_vline(data = stop_at, aes(xintercept = k, colour = buyer), linetype = "dotted", show.legend = FALSE) +
+  annotate("text", x = 16, y = quote_cost + 1.5, label = "Cost of one more quote", hjust = 1,
+           size = 3.3, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("Household buying 1 unit" = pal[["orange"]],
+                                 "Business buying 10 units" = pal[["blue"]])) +
+  scale_y_log10() +
+  scale_x_continuous(breaks = seq(2, 16, 2)) +
+  labs(x = "Number of price quotes collected (k)", y = "Expected saving from the k-th quote (log scale)",
+       colour = NULL, title = "Search pays more when more is at stake",
+       caption = "Stylised: expected saving = units x 40 / (k(k + 1)). Dotted lines mark optimal stopping.")
+```
+
+### Evidence and extensions
+
+The internet was expected to collapse price dispersion. @brynjolfsson2000 found
+that online prices for books and CDs were lower than offline prices but that
+online dispersion remained substantial. @brown2002 found that the growth of
+comparison sites for term life insurance was associated with meaningful price
+reductions. @ellison2009 showed that retailers on a price comparison site
+responded to highly price-elastic search by **obfuscation**: advertising a
+low-quality product at a low price and steering buyers to higher-margin
+upgrades. Search costs are partly chosen by sellers. In labour economics,
+@shimer2005 showed that the standard matching model with plausible parameters
+generates far smaller fluctuations in unemployment and vacancies than observed,
+prompting a large literature on wage rigidity.
+
+```{r tab-econ-search}
+tibble::tribble(
+  ~Market, ~`Source of search cost`, ~`Observable consequence`, ~`Managerial lever`,
+  "Consumer retail", "Time to visit stores or compare sites", "Persistent price dispersion", "Price-match guarantees, comparison listings",
+  "Insurance and finance", "Complex products, hard to compare", "Dispersion in premiums and fees", "Standardized disclosures, aggregators",
+  "Labour", "Finding and screening candidates", "Unemployment and vacancies coexist", "Referral programmes, job platforms",
+  "Housing", "Viewing, negotiating, coordinating", "Long time-to-sale, agent intermediation", "Listing platforms, virtual tours",
+  "B2B procurement", "Qualifying suppliers, requesting quotes", "Sticky supplier relationships", "Reverse auctions, supplier portals"
+) |>
+  book_table(caption = "Search frictions across markets.")
+```
+
+::: {.debate}
+**Do lower search costs always help consumers?** Comparison tools should
+intensify competition, but firms respond by obfuscating, adding fees revealed
+late in the purchase, or differentiating products so that they are harder to
+compare [@ellison2009]. Lower search costs can also benefit sellers by improving
+matches. The welfare effect of a search technology therefore depends on how
+sellers adapt.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Comparison sites and obfuscation.** Price comparison platforms for insurance,
+flights, and consumer electronics lower search costs for consumers and push
+sellers toward the lowest headline price. Sellers have responded with
+partitioned prices, add-on fees, and stripped-down base products, a pattern
+consistent with @ellison2009. For managers, the headline price is only one
+dimension of search: firms can compete by being easy to compare or by making
+comparison harder (Table \@ref(tab:tab-econ-search) lists levers in other
+markets). For regulators, disclosure rules on total price can be more effective
+than measures that only make search cheaper.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Price dispersion for an identical product will be lower in categories
+  with higher average expenditure per purchase.
+- *H2.* Entry of a comparison platform into a market will reduce average prices
+  and increase the use of add-on fees.
+
+**Designs.** Web-scraped price panels, clickstream data on consumer search,
+field experiments that vary search costs, structural estimation of search
+models.
+:::
+
+::: {.pitfall}
+**Calling price dispersion irrational.** Paying more than the lowest available
+price is not evidence that consumers are irrational. It is exactly what
+optimal search predicts when search is costly. Before attributing dispersion to
+bias, measure search costs and the stakes of the purchase.
+:::
+
+## Efficiency Wages {#efficiency-wages}
+
+::: {.theory-card}
+**Core claim.** Firms may rationally pay more than the market-clearing wage
+because higher pay raises productivity: it elicits reciprocal effort, makes
+shirking costlier, reduces turnover, and attracts better applicants. Because
+firms do not cut wages even when job seekers are queuing, involuntary
+unemployment can persist in equilibrium.
+
+**Origins.** Labour economics and macroeconomics. @akerlof1982 (gift exchange),
+@shapiro1984 (shirking), with historical evidence from @raff1987. The
+cost-minimizing condition goes back to @solow1979.
+
+**Level of analysis.** Firm and labour market.
+
+**Key constructs.** Wage premium, effort, monitoring intensity, detection
+probability, unemployment as a discipline device, gift exchange, reference
+(fair) wage, turnover cost.
+
+**Boundary conditions.** Effort is imperfectly observable or contractible,
+turnover is costly, and workers compare pay with a reference. Where piece rates
+are feasible, efficiency wage motives weaken.
+
+**Related theories.** [Agency theory](#agency-theory) (Section \@ref(agency-theory)), [Social preferences](#social-preferences),
+[Equity theory](#equity-theory) (Section \@ref(equity-theory)), [Psychological contract](#psychological-contract) (Section \@ref(psychological-contract)),
+[Organizational justice](#organizational-justice) (Section \@ref(organizational-justice)), [Tournament theory](#tournament-theory) (Section \@ref(tournament-theory)).
+:::
+
+### Origins and intellectual history
+
+Competitive theory predicts that wages fall until the labour market clears, so
+persistent unemployment and firms' reluctance to cut pay in recessions are
+puzzles. Efficiency wage theory resolves them by noting that the wage is also an
+incentive. If productivity depends on the wage, a firm minimizes cost per
+unit of effective labour, not cost per worker. With effort $e(w)$, the firm
+chooses the wage that minimizes $w / e(w)$, which yields the condition that the
+elasticity of effort with respect to the wage equals one [@solow1979]:
+
+$$\frac{w\, e'(w)}{e(w)} \;=\; 1.$$
+
+If this wage exceeds the market-clearing level, the firm will not lower it, and
+unemployment persists.
+
+Two micro-foundations dominate. In the **shirking model** of @shapiro1984,
+shirkers are caught with probability $q$ and fired, a threat that bites only if
+losing the job is costly. @akerlof1982, inspired by a study of clerical workers
+who routinely exceeded their output standard, modelled employment as **partial
+gift exchange**: the firm pays above the outside option, and workers reciprocate
+with effort above the minimum. Other variants emphasize **turnover** costs and
+**[adverse selection](#information-asymmetry) (Section \@ref(information-asymmetry))**.
+
+### Core logic and propositions
+
+In the shirking model, a worker prefers working to shirking when the wage
+satisfies the **no-shirking condition** (NSC):
+
+$$w \;\geq\; \bar{w} + e + \frac{e}{q}\left(r + \frac{b}{u}\right),$$
+
+where $\bar{w}$ is the unemployment benefit, $e$ the disutility of effort, $q$
+the detection probability, $r$ the discount rate, $b$ the exogenous separation
+rate, and $u$ the unemployment rate. As unemployment falls, a fired worker finds
+a new job quickly, so the wage needed to deter shirking rises without limit.
+Full employment is incompatible with discipline: some unemployment is necessary
+to make dismissal a credible threat. The family of models yields these
+propositions:
+
+- **P1 (Wage premium).** Firms pay above the market-clearing wage when effort,
+  quality, or retention depends on the wage.
+- **P2 (Monitoring substitution).** Wage premiums are higher where monitoring is
+  costly or detection is unlikely.
+- **P3 (Reciprocity).** Wage gifts perceived as generous relative to a reference
+  wage elicit higher effort [@akerlof1982].
+- **P4 (Involuntary unemployment).** Equilibrium unemployment persists even
+  though unemployed workers would accept the going wage [@shapiro1984].
+- **P5 (Wage rigidity).** Firms resist cutting wages in downturns because cuts
+  damage morale and effort.
+
+### Mechanism
+
+Figure \@ref(fig:fig-econ-nsc) plots the no-shirking condition against labour
+demand. Equilibrium occurs where the curves cross, to the left of full
+employment, and the gap is involuntary unemployment.
+
+```{r fig-econ-nsc, fig.cap = "Stylised Shapiro-Stiglitz model. The no-shirking wage rises steeply as employment approaches the labour force, so equilibrium (where labour demand meets the no-shirking condition) leaves some workers involuntarily unemployed.", fig.height = 4.2}
+N <- 100; e_cost <- 1; q_det <- 0.5; r_disc <- 0.05; b_sep <- 0.1; w_bar <- 0.5
+nsc <- function(L) w_bar + e_cost + (e_cost / q_det) * (r_disc + b_sep * N / (N - L))
+ld  <- function(L) 7 - 0.05 * L
+L_star <- uniroot(function(L) nsc(L) - ld(L), c(1, 99))$root
+emp <- seq(0, 97, by = 0.5)
+curves <- bind_rows(
+  data.frame(L = emp, w = nsc(emp), curve = "No-shirking condition"),
+  data.frame(L = seq(0, 100, 0.5), w = ld(seq(0, 100, 0.5)), curve = "Labour demand")
+)
+ggplot(curves, aes(L, w, colour = curve)) +
+  geom_vline(xintercept = N, linetype = "dashed", colour = ink[["muted"]]) +
+  geom_line(linewidth = 1.1) +
+  annotate("point", x = L_star, y = ld(L_star), size = 3.2, colour = ink[["primary"]]) +
+  annotate("segment", x = L_star, xend = N, y = 1.5, yend = 1.5, colour = ink[["secondary"]],
+           arrow = arrow(ends = "both", length = unit(0.08, "inches"))) +
+  annotate("text", x = (L_star + N) / 2, y = 0.8, label = "Involuntary\nunemployment",
+           size = 3.2, colour = ink[["secondary"]]) +
+  annotate("text", x = 101.2, y = 5, label = "Labour force", angle = 90, size = 3.2, colour = ink[["muted"]]) +
+  scale_colour_manual(values = c("No-shirking condition" = pal[["orange"]], "Labour demand" = pal[["blue"]])) +
+  coord_cartesian(ylim = c(0, 8), xlim = c(40, 100)) +
+  labs(x = "Employment (labour force = 100)", y = "Real wage", colour = NULL,
+       title = "Unemployment as a worker discipline device",
+       caption = "Stylised parameters: e = 1, q = 0.5, r = 0.05, b = 0.1, unemployment benefit = 0.5.")
+```
+
+Table \@ref(tab:tab-econ-effwage) compares the main variants of the theory.
+
+```{r tab-econ-effwage}
+tibble::tribble(
+  ~Variant, ~`Why higher wages raise productivity`, ~`Key prediction`, ~`Illustrative evidence`,
+  "Shirking", "Job loss is costlier, so workers shirk less", "Premiums higher where monitoring is hard", "Cappelli & Chauvin (1991)",
+  "Gift exchange", "Workers reciprocate generous pay with effort", "Effort rises with wage relative to reference", "Fehr, Kirchsteiger & Riedl (1993)",
+  "Turnover", "Workers quit less, saving hiring and training costs", "Premiums higher where training is firm-specific", "Raff & Summers (1987)",
+  "Adverse selection", "Higher wages attract a better applicant pool", "Applicant quality rises with posted wage", "Applicant pools at high-wage employers",
+  "Morale and wage rigidity", "Pay cuts are seen as unfair and damage morale", "Firms prefer layoffs to pay cuts in downturns", "Bewley (1999)"
+) |>
+  book_table(caption = "Variants of efficiency wage theory.")
+```
+
+### Evidence and extensions
+
+@raff1987 examined the Ford Motor Company's introduction of the five-dollar day
+in 1914. After the change, turnover and absenteeism fell sharply, long queues
+of applicants formed at the plant, and the authors found evidence of
+productivity gains, a pattern they interpret as consistent with efficiency
+wages rather than a simple response to a labour shortage. @krueger1988 documented large and persistent wage differences
+across industries for observably similar workers, which are hard to reconcile
+with competitive labour markets. @cappelli1991 found that plants paying larger
+premiums over local wages had lower rates of disciplinary dismissal, as the
+shirking model predicts.
+
+In experimental labour markets, @fehr1993 found that employers offered wages
+well above the market-clearing level and workers reciprocated with higher
+effort. Interviewing managers, @bewley1999 concluded that firms avoid pay cuts
+mainly to protect morale. In the field, @gneezy2006 found that an unexpectedly
+high wage raised effort in the first hours of a short task, but the effect
+faded quickly.
+
+::: {.debate}
+**Efficiency wages or something else?** Inter-industry wage differentials may
+reflect unmeasured worker ability, compensating differentials for unpleasant
+work, or rent sharing rather than efficiency wages. Deferred compensation and
+seniority-based pay can in principle discipline workers without unemployment,
+which raises the question of why firms rely on wage premiums. The decay of
+gift-exchange effects in short field experiments [@gneezy2006] suggests that
+reciprocity may be strongest in long-term relationships, precisely where it is
+hardest to test cleanly.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Ford's five-dollar day and Costco's wage policy.** Ford's 1914 policy, which
+roughly doubled pay for eligible workers, is the canonical efficiency wage case
+[@raff1987]. A modern counterpart is the comparison between Costco and Walmart's
+Sam's Club. @cascio2006 documented that Costco paid considerably higher wages
+and benefits than its warehouse-club rival and argued that it was rewarded
+with lower employee turnover and higher productivity. The logic is the one in
+Table \@ref(tab:tab-econ-effwage): the relevant cost is labour cost per unit of
+effective output, and when turnover and service quality depend on pay, the
+cheapest wage per worker can be the most expensive wage per unit of output.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Establishments that pay a larger premium over the local market wage will
+  experience lower voluntary turnover and fewer disciplinary dismissals.
+- *H2.* The effect of a wage increase on effort will be larger when the increase
+  is framed as discretionary (a gift) than when it is mandated.
+
+**Designs.** Natural experiments from minimum wage changes or firm-level wage
+policy changes, linked employer-employee panels, field experiments with
+temporary workers, laboratory gift-exchange games.
+:::
+
+::: {.pitfall}
+**Assuming any wage increase pays for itself.** The theory says that the
+cost-minimizing wage may exceed the market wage, not that higher wages always
+raise profits. A premium that is not noticed, not attributed to the employer's
+generosity, or matched by every competitor yields little extra effort.
+:::
+
+## Network Effects {#network-effects}
+
+::: {.theory-card}
+**Core claim.** When the value of a product to each user rises with the number
+of other users, demand exhibits positive feedback. Markets can **tip** toward a
+single product or standard, expectations about who will win become
+self-fulfilling, and an inferior technology can become **locked in**.
+
+**Origins.** Industrial organization. @katz1985, @farrell1985, @arthur1989, with
+the historical case of the typewriter keyboard in @david1985.
+
+**Level of analysis.** Market and industry.
+
+**Key constructs.** Direct and indirect network effects, installed base,
+expectations, compatibility, switching costs, tipping, lock-in, excess inertia.
+
+**Boundary conditions.** Value depends substantially on network size,
+multi-homing is costly, and products are not highly differentiated. Local
+network effects and cheap multi-homing reduce tipping.
+
+**Related theories.** [Two-sided markets](#two-sided-markets),
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)), [Dominant design](#dominant-design) (Section \@ref(dominant-design)),
+[First-mover advantage](#first-mover-advantage) (Section \@ref(first-mover-advantage)), [Bass model](#bass-model) (Section \@ref(bass-model)).
+:::
+
+### Origins and intellectual history
+
+**Direct network effects** arise when users benefit directly from others'
+adoption (telephones, messaging). **Indirect network effects** arise when a
+larger user base attracts more complementary products (consoles and games). @katz1985 modelled competition among firms whose products exhibit
+network externalities and showed that consumer expectations about network size
+determine equilibrium outcomes. @farrell1985 analysed the
+coordination problem of switching to a new standard and identified **excess
+inertia**, in which users stick with an old standard because no one wants to move
+first, and its mirror image, excess momentum.
+
+@arthur1989 placed these ideas in a broader frame. Under increasing returns to
+adoption, the process of technology competition is path dependent: small
+historical events early in the process can determine which technology wins, the
+outcome is not predictable in advance, and the winner need not be the better
+technology. @david1985 argued that the QWERTY keyboard layout was such a case.
+
+### Core logic and propositions
+
+A standard formulation gives consumer $i$ utility from product $k$ of
+
+$$u_{ik} \;=\; r_{ik} + v\!\left(n_k^{e}\right) - p_k,$$
+
+where $r_{ik}$ is stand-alone value, $n_k^{e}$ is the expected number of users,
+and $v(\cdot)$ is increasing. Because utility depends on expectations about
+others' choices, there can be multiple **fulfilled-expectations equilibria**:
+if everyone expects product A to win, everyone adopts A, and the expectation is
+confirmed. The theory implies:
+
+- **P1 (Tipping).** With strong network effects and costly multi-homing, markets
+  tend toward a single dominant product.
+- **P2 (Expectations).** Firms that shape expectations about future network size
+  (through announcements, alliances, or commitments) can win even with a smaller
+  installed base [@katz1985].
+- **P3 (Compatibility strategy).** Firms with large networks or strong
+  reputations tend to oppose compatibility, while smaller firms favour it
+  [@katz1985].
+- **P4 (Path dependence and lock-in).** Early random events can decide the
+  outcome, and an inferior standard can persist because switching requires
+  coordination [@arthur1989; @farrell1985].
+- **P5 (Limits).** Differentiation, local network effects, and cheap multi-homing
+  reduce winner-take-all outcomes.
+
+### Mechanism
+
+Figure \@ref(fig:fig-econ-tipping) simulates Arthur's argument. Two technologies
+start with identical support, and each new adopter chooses technology A with a
+probability that rises more than proportionally with A's current share. Chance
+early choices decide the winner, and most runs drift toward dominance by one
+technology.
+
+```{r fig-econ-tipping, fig.cap = "Illustrative simulation of increasing returns to adoption. Each line is one market with identical starting conditions. Because each adopter favours the technology with the larger installed base, chance early choices tip markets toward one technology or the other.", fig.height = 4.2}
+set.seed(1989)
+simulate_market <- function(run, n_adopt = 1000, gamma = 1.6) {
+  a <- 10; b <- 10; share <- numeric(n_adopt)        # identical installed bases at launch
+  for (t in seq_len(n_adopt)) {
+    s <- a / (a + b)
+    p_a <- s^gamma / (s^gamma + (1 - s)^gamma)   # increasing returns: p_a > s when s > 0.5
+    if (runif(1) < p_a) a <- a + 1 else b <- b + 1
+    share[t] <- a / (a + b)
+  }
+  data.frame(run = run, adopter = seq_len(n_adopt), share = share)
+}
+runs <- bind_rows(lapply(1:14, simulate_market)) |>
+  group_by(run) |>
+  mutate(winner = if (last(share) > 0.5) "Technology A wins" else "Technology B wins") |>
+  ungroup()
+ggplot(runs, aes(adopter, share, group = run, colour = winner)) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", colour = ink[["muted"]]) +
+  geom_line(linewidth = 0.6, alpha = 0.85) +
+  scale_colour_manual(values = c("Technology A wins" = pal[["blue"]], "Technology B wins" = pal[["orange"]])) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+  labs(x = "Number of adopters", y = "Installed-base share of technology A", colour = NULL,
+       title = "Identical starts, divergent outcomes",
+       caption = "Illustrative simulation: P(choose A) = s^1.6 / (s^1.6 + (1 - s)^1.6), s = A's current share. Both start with 10 users.")
+```
+
+### Evidence and extensions
+
+@katz1994 review evidence and theory on systems competition. Empirically,
+estimating network effects is difficult because users who are connected tend to
+be similar and are exposed to common shocks. @tucker2008 used variation in the
+adoption of a video-messaging technology within an investment bank to separate
+network effects from correlated behaviour, and found that how much a colleague's
+adoption mattered depended on that colleague's position in the formal hierarchy
+and the informal communication network.
+
+The lock-in claim has been contested. @liebowitz1990 re-examined the QWERTY case
+and argued that the evidence for the superiority of the rival Dvorak layout was
+weak and that markets had not demonstrably locked in an inferior standard. Their
+critique shifted the burden of proof: documenting path dependence is not the
+same as documenting inefficient lock-in.
+
+```{r tab-econ-network}
+tibble::tribble(
+  ~Strategy, ~`Network-effects logic`, ~Example, ~Risk,
+  "Penetration pricing", "Subsidize early adopters to build the installed base", "Free tiers for consumer software", "Customers anchor on a low price",
+  "Seeding and targeting hubs", "Win central users whose adoption influences others", "Launching in a dense community first", "Hubs may multi-home",
+  "Compatibility and adapters", "Borrow a rival's network", "Backward-compatible consoles, file-format import", "Strengthens the rival standard",
+  "Open standard or licensing", "Grow the whole network quickly", "Broad licensing of a format to manufacturers", "Lose control of rents",
+  "Expectation management", "Make adoption look inevitable", "Preannouncements, alliance announcements", "Credibility loss if late",
+  "Lock-in through switching costs", "Make exit costly once users join", "Proprietary data formats, loyalty programmes", "Antitrust and customer resentment"
+) |>
+  book_table(caption = "Competitive strategies in markets with network effects.")
+```
+
+::: {.debate}
+**How strong are network effects in practice?** Strategy writing often treats
+network effects as an impregnable moat. History suggests caution: dominant social
+networks have been displaced, and many networked markets support several
+competitors. Researchers increasingly distinguish the *strength* of network
+effects, their *scope* (global versus local), and the *cost of multi-homing*,
+each of which moderates the tipping prediction.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**VHS versus Betamax.** Sony introduced the Betamax videocassette format in 1975
+and JVC introduced VHS in 1976. The formats were incompatible, and the value of a
+recorder depended on the availability of pre-recorded tapes, an indirect network
+effect. JVC licensed VHS widely to other manufacturers, and early VHS machines
+offered longer recording times. As the VHS installed base grew, video rental
+stores stocked more VHS titles, which further increased VHS's advantage. By the
+late 1980s VHS dominated, and Sony began producing VHS recorders in 1988. The
+case illustrates tipping and the strategic value of licensing to build an
+installed base (Table \@ref(tab:tab-econ-network)). Whether Betamax was
+technically superior matters less to the theory than how an early lead in
+complements became decisive.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The effect of installed base on a product's market share will be larger
+  in categories with higher multi-homing costs.
+- *H2.* Product preannouncements will slow adoption of a rival standard more in
+  markets with strong indirect network effects.
+
+**Designs.** Demand estimation with installed-base terms and instruments,
+peer-effects designs exploiting exogenous variation in network exposure,
+historical case comparisons of standards battles, agent-based simulation.
+:::
+
+::: {.pitfall}
+**Confusing popularity with network effects.** Network effects require that each
+user's value depends on others' use. Popularity driven by quality, advertising,
+or social learning produces similar adoption curves but different strategic
+implications. Identify the mechanism before invoking tipping.
+:::
+
+## Two-Sided Markets {#two-sided-markets}
+
+::: {.theory-card}
+**Core claim.** A platform that serves two distinct groups linked by **cross-side
+[network effects](#network-effects)** chooses not only a price level but a **price structure**. It
+typically subsidizes the side whose participation creates more value for the
+other side and whose demand is more price-sensitive, and earns its margin on the
+other side.
+
+**Origins.** Industrial organization. @rochet2003, @caillaud2003,
+@parker2005, @armstrong2006, reviewed in @rochet2006 and @rysman2009.
+
+**Level of analysis.** Platform and market.
+
+**Key constructs.** Cross-side externality, price level versus price structure,
+subsidy side and money side, multi-homing, competitive bottleneck,
+chicken-and-egg problem.
+
+**Boundary conditions.** A market is two-sided when the volume of transactions
+depends on how the total price is split between the sides, not only on its
+level. If the sides can pass charges through to each other, the market is
+effectively one-sided.
+
+**Related theories.** [Network effects](#network-effects),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Competitive dynamics](#competitive-dynamics) (Section \@ref(competitive-dynamics)), [Resource dependence theory](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)).
+:::
+
+### Origins and intellectual history
+
+Many networked businesses connect two groups that value each other: cardholders
+and merchants, players and game developers, riders and drivers. @rochet2003 showed that in such markets, the allocation of
+charges across sides matters, and that the profit-maximizing structure can
+involve prices below marginal cost on one side. @parker2005 reached a similar
+conclusion from information-product design: Adobe could give away its Acrobat
+Reader to consumers because doing so raised the value of its paid authoring
+software to document creators. @caillaud2003 analysed the chicken-and-egg
+problem of attracting both sides at once and the "divide-and-conquer" strategy of
+subsidizing one side to attract the other.
+
+### Core logic and propositions
+
+@rochet2006 offer a precise definition. Let a platform charge $a^{B}$ per
+transaction to buyers and $a^{S}$ to sellers. The market is two-sided if the
+volume of transactions depends on $a^{B}$ and $a^{S}$ separately and not only on
+their sum $a^{B} + a^{S}$. In @armstrong2006's model of a monopoly platform, the
+utility of a group-1 member is $u_1 = \alpha_1 n_2 - p_1$, where $\alpha_1$ is
+the benefit from each member of group 2, and participation is $n_1 = \phi_1(u_1)$.
+The profit-maximizing price for group 1 is
+
+$$p_1 \;=\; f_1 \;-\; \alpha_2 n_2 \;+\; \frac{\phi_1(u_1)}{\phi_1'(u_1)},$$
+
+where $f_1$ is the cost of serving a group-1 member. The middle term is the key
+insight: the price to group 1 is lowered by the external benefit an additional
+member confers on group 2, and can be zero or negative. The theory implies:
+
+- **P1 (Price structure).** The side that generates larger cross-side benefits and
+  has more elastic demand receives lower prices, possibly below cost.
+- **P2 (Skewed pricing is not predation).** A below-cost price on one side is
+  consistent with profit maximization and does not by itself indicate
+  anticompetitive intent [@rochet2006].
+- **P3 (Competitive bottlenecks).** When one side multi-homes and the other
+  single-homes, platforms compete for the single-homing side and charge the
+  multi-homing side for access to it [@armstrong2006].
+- **P4 (Chicken and egg).** Platforms must solve a coordination problem at launch,
+  often by subsidizing or seeding one side [@caillaud2003].
+
+### Mechanism
+
+Figure \@ref(fig:fig-econ-platform) shows the feedback loop that the price
+structure manages.
+
+```{r fig-econ-platform, fig.cap = "Mechanism of a two-sided platform: the price charged to each side determines its participation, and each side's participation raises the value of the platform to the other side. The platform chooses which side to subsidize."}
+mechanism_diagram(sprintf('
+  PA [label = "Price to side A\\n(e.g., consumers)", %s]
+  PB [label = "Price to side B\\n(e.g., developers)", %s]
+  NA [label = "Participation\\nof side A", %s]
+  NB [label = "Participation\\nof side B", %s]
+  R  [label = "Platform profit", %s]
+  M  [label = "Multi-homing\\ncosts", %s]
+  PA -> NA
+  PB -> NB
+  NA -> NB [label = " cross-side\\n value"]
+  NB -> NA [label = " cross-side\\n value"]
+  NA -> R
+  NB -> R
+  M -> NB [style = dashed]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome, node_moderator))
+```
+
+Table \@ref(tab:tab-econ-platforms) gives examples of price structures.
+
+```{r tab-econ-platforms}
+tibble::tribble(
+  ~Platform, ~`Side A`, ~`Side B`, ~`Typical price structure`,
+  "Payment cards", "Cardholders", "Merchants", "Cardholders often pay little or receive rewards. Merchants pay fees per transaction",
+  "App stores", "Device users", "App developers", "Many apps free to download. Developers pay commissions on paid apps and in-app purchases",
+  "Ride-hailing", "Riders", "Drivers", "Both sides priced, with dynamic prices balancing supply and demand",
+  "Video game consoles", "Players", "Game publishers", "Hardware has often been sold near cost. Publishers pay royalties",
+  "Search and social media", "Users", "Advertisers", "Users pay nothing. Advertisers pay for attention",
+  "Document formats", "Readers", "Authors", "Free reader software. Paid authoring software (Parker & Van Alstyne, 2005)"
+) |>
+  book_table(caption = "Price structures on two-sided platforms.")
+```
+
+### Evidence and extensions
+
+Payment cards are the most studied case. Interchange fees, paid by the
+merchant's bank to the cardholder's bank, shift costs between the sides, and
+regulators have capped them: the European Union's 2015 Interchange Fee
+Regulation capped consumer debit and credit interchange at 0.2 and 0.3 percent of
+transaction value, and in the United States the 2010 Dodd-Frank Act (through the
+Durbin Amendment) capped debit interchange for large issuers. Two-sidedness also
+reached the United States Supreme Court: in *Ohio v. American Express* (2018),
+the Court held that the credit-card market must be analysed as two-sided,
+weighing effects on both merchants and cardholders. @rysman2009 reviews the
+broader empirical literature.
+
+::: {.debate}
+**Efficient structure or market power?** Two-sided theory explains why a platform
+might charge one side heavily without implying abuse. Critics worry that the
+theory can be used to excuse high charges to a side that has no alternative, for
+instance merchants who cannot refuse a popular card or developers who cannot
+reach users except through a dominant app store. The analytical challenge is to
+separate the *structure* of prices, which may be legitimately skewed, from their
+*level*, which can reflect market power. A second debate concerns definitions:
+almost every firm intermediates between some groups, so two-sided analysis
+requires showing that cross-side effects are material.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**App store commissions.** Apple's App Store has long charged developers a
+standard commission of 30 percent on paid apps and in-app purchases of digital
+goods, while letting users download free apps at no charge. Two-sided theory
+explains the structure: users single-home on a phone platform and are the side
+developers need to reach, so the platform subsidizes users and charges the side
+that multi-homes (a competitive bottleneck). The structure has been contested.
+In 2021 Apple introduced a Small Business Program that cut the commission to 15
+percent for developers with up to one million dollars in annual proceeds, and
+litigation such as *Epic Games v. Apple* and the European Union's Digital
+Markets Act have targeted its payment and distribution rules. A price structure
+that maximizes short-run profit can provoke the regulatory and competitive
+responses that reshape it. Ride-hailing shows a different case:
+because drivers multi-home across apps and riders compare fares, both sides are
+price-sensitive, and dynamic pricing must balance them continuously, subject to
+the fairness limits discussed under [Social preferences](#social-preferences).
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Platforms will charge lower prices to the side whose participation
+  generates stronger cross-side effects.
+- *H2.* Regulatory caps on fees to one side will be partly offset by higher fees
+  or lower subsidies on the other side (a "waterbed" effect).
+
+**Designs.** Structural demand models with cross-side effects,
+difference-in-differences around fee regulation, natural experiments in platform entry, field
+experiments that vary fees to one side.
+:::
+
+::: {.pitfall}
+**Applying one-sided price-cost tests.** Concluding that a zero price to users
+is predatory, or that a high fee to merchants is exploitative, by looking at
+one side alone ignores the cross-side externality. Analyse total price and
+total cost across both sides before drawing conclusions about efficiency or
+competition.
+:::
+
+## Auction Theory {#auction-theory}
+
+::: {.theory-card}
+**Core claim.** The rules of a sale (who bids, in what format, with what
+information and reserve price) determine bidding strategies, revenue, and
+whether the good goes to the bidder who values it most. Under benchmark
+assumptions many formats yield the same expected revenue, but departures from
+those assumptions, especially common values, asymmetric bidders, collusion, and
+entry costs, make design decisive.
+
+**Origins.** Economics and game theory. @vickrey1961, @myerson1981,
+@riley1981, and @milgrom1982. Vickrey shared the 1996 Nobel Memorial Prize, and
+Milgrom and Robert Wilson received the 2020 prize.
+
+**Level of analysis.** Market mechanism, bidder, and seller.
+
+**Key constructs.** Private versus common values, bid shading, dominant strategy,
+revenue equivalence, reserve price, winner's curse, affiliation, linkage
+principle, collusion, entry.
+
+**Boundary conditions.** The benchmark results assume risk-neutral bidders with
+independent private values from a common distribution, no collusion, and a
+fixed number of bidders.
+
+**Related theories.** [Game theory](#game-theory) (Section \@ref(game-theory)),
+[Information asymmetry](#information-asymmetry) (Section \@ref(information-asymmetry)), [Search theory](#search-theory),
+[Social preferences](#social-preferences).
+:::
+
+### Origins and intellectual history
+
+@vickrey1961 founded the field by analysing auctions as games of incomplete
+information. He showed that when the highest bidder pays the *second*-highest
+bid, bidding one's true value is a dominant strategy. He also anticipated the
+**revenue equivalence theorem**, generalized by @myerson1981 and @riley1981:
+with risk-neutral bidders and independent private values, any auction that
+gives the good to the highest bidder and zero surplus to a bidder with the
+lowest possible value yields the same expected revenue.
+
+@milgrom1982 extended the analysis to settings in which bidders' values are
+**affiliated**, as when the value of an oil tract depends partly on the unknown
+amount of oil, which all bidders estimate with noise. In such settings the
+English auction yields expected revenue at least as high as the second-price
+auction, which in turn yields at least as much as the first-price auction, and
+sellers gain by committing to reveal information they hold (the **linkage
+principle**). Petroleum engineers had already noticed a practical counterpart:
+@capen1971 argued that
+oil companies bidding for Gulf of Mexico leases earned disappointing returns
+because the winner of a common-value auction is the bidder who most
+overestimated the tract's value, the **winner's curse**.
+
+### Core logic and propositions
+
+With $n$ bidders whose private values are independent and uniformly distributed
+on $[0, 1]$, the equilibrium strategies are:
+
+$$b^{\text{2nd}}(v) = v, \qquad b^{\text{1st}}(v) = \frac{n-1}{n}\, v.$$
+
+In the second-price auction, bidders bid their values. In the first-price
+auction, they shade their bids, but the winner's expected payment in both cases
+equals the expected second-highest value, $(n-1)/(n+1)$. In a common-value
+auction where the item is worth $V$ to everyone and bidder $i$ observes a noisy
+signal $s_i$, winning is bad news:
+
+$$\mathbb{E}\left[V \mid s_i,\; s_i = \max_j s_j\right] \;<\; \mathbb{E}\left[V \mid s_i\right],$$
+
+so a rational bidder must shade more as the number of competitors grows.
+Table \@ref(tab:tab-econ-auctions) summarizes common formats. The propositions
+are:
+
+- **P1 (Truthful bidding).** In second-price and English auctions with private
+  values, bidding one's value is a (weakly) dominant strategy [@vickrey1961].
+- **P2 (Revenue equivalence).** Under the benchmark assumptions, standard formats
+  yield equal expected revenue [@myerson1981; @riley1981].
+- **P3 (Linkage principle).** With affiliated values, formats that link the price
+  to more information, and sellers who disclose information, raise expected
+  revenue [@milgrom1982].
+- **P4 (Winner's curse).** In common-value auctions, naive bidders who bid their
+  estimates lose money on average, and the loss grows with the number of bidders
+  [@capen1971; @thaler1988].
+- **P5 (Design for entry and against collusion).** In practice, attracting
+  bidders and preventing collusion matter more than the fine points of the
+  benchmark ranking [@klemperer2002].
+
+```{r tab-econ-auctions}
+tibble::tribble(
+  ~Format, ~Rules, ~`Equilibrium bidding (private values)`, ~`Typical uses`,
+  "English (ascending)", "Price rises until one bidder remains. Winner pays the final price", "Stay in until price reaches own value", "Art, real estate, livestock, online consumer auctions",
+  "Dutch (descending)", "Price falls until a bidder accepts", "Strategically equivalent to first-price sealed bid", "Flowers, fish, perishable goods",
+  "First-price sealed bid", "Highest bid wins and pays own bid", "Shade bid below value", "Public procurement, construction tenders",
+  "Second-price sealed bid (Vickrey)", "Highest bid wins and pays second-highest bid", "Bid true value (dominant strategy)", "Benchmark in theory, some online ad systems",
+  "Generalized second price", "Several ranked slots. Each winner pays the next bid", "Not truthful in general", "Sponsored search advertising",
+  "Simultaneous ascending or clock auction", "Many items auctioned together over rounds", "Bid on items or packages as prices rise", "Spectrum licences, electricity, emission allowances"
+) |>
+  book_table(caption = "Common auction formats.")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-econ-winners) simulates the winner's curse. Each bidder
+naively bids an unbiased but noisy estimate of a common value. The winning bid
+is the highest estimate, which is biased upward, increasingly so as bidders are
+added.
+
+```{r fig-econ-winners, fig.cap = "Illustrative simulation of the winner's curse. A tract is worth 100 to every bidder. Each bidder receives an unbiased estimate with noise (standard deviation 15) and bids it. The winner's expected overpayment rises with the number of bidders. The band shows the 10th to 90th percentile across simulated auctions.", fig.height = 4}
+set.seed(1971)
+true_value <- 100
+wc <- lapply(2:20, function(n) {
+  win <- replicate(4000, max(true_value + rnorm(n, 0, 15)))   # naive bid = own estimate
+  data.frame(n = n, mean = mean(win - true_value),
+             lo = quantile(win - true_value, 0.1), hi = quantile(win - true_value, 0.9))
+}) |> bind_rows()
+ggplot(wc, aes(n, mean)) +
+  geom_hline(yintercept = 0, colour = ink[["muted"]]) +
+  geom_ribbon(aes(ymin = lo, ymax = hi), fill = pal[["blue"]], alpha = 0.15) +
+  geom_line(colour = pal[["blue"]], linewidth = 1.1) +
+  geom_point(colour = pal[["blue"]], size = 2) +
+  annotate("text", x = 20, y = -6, label = "Zero line: winner pays the true value", hjust = 1,
+           size = 3.2, colour = ink[["secondary"]]) +
+  scale_x_continuous(breaks = seq(2, 20, 2)) +
+  labs(x = "Number of bidders", y = "Winning bid minus true value",
+       title = "The more bidders, the worse the winner's curse for naive bidders",
+       caption = "Illustrative: common value = 100, estimate noise ~ Normal(0, 15), 4,000 auctions per point.")
+```
+
+### Evidence and extensions
+
+@kagel1986 found that inexperienced laboratory bidders in common-value auctions
+frequently lost money, and that the problem worsened in larger groups.
+@thaler1988 reviews field evidence from settings such as oil leases, corporate
+takeovers, and professional sports free agency.
+
+The most consequential applications are in market design. Decades after
+@coase1959's proposal, the United States Federal Communications Commission began auctioning
+spectrum licences in 1994, using a simultaneous multiple-round ascending format
+developed with input from auction theorists [@mcmillan1994; @milgrom2004]. The
+United Kingdom's 2000 auction of third-generation mobile licences raised about
+22.5 billion pounds, while auctions of similar licences in some other European
+countries raised far less per capita, a contrast that @klemperer2002 attributes
+to design choices that affected entry and the scope for tacit collusion. In
+online advertising, search engines adopted the **generalized second-price** (GSP)
+auction to sell ranked ad slots. @edelman2007 showed that, unlike the Vickrey
+auction, GSP does not make truthful bidding a dominant strategy, but that it has
+an equilibrium whose outcome mirrors the Vickrey-Clarke-Groves mechanism.
+
+::: {.debate}
+**Theory versus practice.** @klemperer2002 argues that "what really matters" in
+practical auction design is not the revenue-ranking of formats under textbook
+assumptions but robustness to collusion, entry deterrence, and political
+pressure. Ascending auctions are vulnerable to bidders signalling and dividing
+markets. Sealed-bid auctions are more robust to collusion and encourage entry by
+weaker bidders. A second debate concerns behavioural deviations: if bidders
+systematically fall prey to the winner's curse or overbid, the seller's optimal
+design changes.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Auctions in procurement and advertising.** Firms use **reverse auctions**, in
+which suppliers bid prices downward, to buy standardized inputs. Auction theory
+offers three lessons. Qualifying more suppliers usually matters more than the
+choice of format. When quality is not fully contractible, a pure price auction
+invites a supplier-side winner's curse followed by quality shading, so buyers
+often use scoring rules that weigh price against quality. Reserve prices
+protect the buyer when competition is thin. In online
+advertising, the choice between second-price and first-price formats is a live
+design question: in 2019 Google moved its Ad Manager exchange to a first-price
+auction, which shifted the burden of bid shading onto advertisers and their
+bidding tools.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Winning bids in common-value auctions will exceed ex post values more
+  often when the number of bidders is large and bidders are inexperienced.
+- *H2.* Procurement auctions with more qualified bidders will yield lower prices,
+  with diminishing marginal effects.
+
+**Designs.** Laboratory auctions, structural estimation of bidder values from bid
+data, natural experiments in auction rules (reserve prices, format changes),
+comparison of auction and negotiated sales.
+:::
+
+::: {.pitfall}
+**Assuming the winner got a bargain.** A high winning bid in a common-value
+setting is evidence of optimism, not of superior value. Researchers who treat
+winning bids as measures of value, and managers who treat winning as success,
+ignore selection on the most favourable estimate. Always ask what the winner's
+estimate implies conditional on having won.
+:::
+
+## New Institutional Economics {#new-institutional-economics}
+
+::: {.theory-card}
+**Core claim.** Institutions, the formal rules and informal constraints that
+structure human interaction, determine transaction costs and incentives, and
+therefore explain long-run differences in economic performance across societies.
+Institutions change slowly and path-dependently, shaped by the interests of
+those with power to change them.
+
+**Origins.** Economics and economic history. @north1990, @north1991, and
+@williamson2000, building on @coase1937 and @coase1960. Nobel Memorial Prizes
+went to North in 1993, Williamson in 2009, and Acemoglu, Johnson, and Robinson
+in 2024.
+
+**Level of analysis.** Institution and society, with implications for firms and
+transactions.
+
+**Key constructs.** Formal rules, informal constraints, enforcement,
+organizations as players, credible commitment, security of property rights, path
+dependence, levels of institutional analysis.
+
+**Boundary conditions.** Most informative for comparisons across societies or
+over long periods, and for explaining why identical contracts or technologies
+perform differently in different settings.
+
+**Related theories.** [Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)), [Institutional voids](#institutional-voids) (Section \@ref(institutional-voids)),
+[Legitimacy](#legitimacy) (Section \@ref(legitimacy)), [Coase theorem](#coase-theorem).
+:::
+
+### Origins and intellectual history
+
+Neoclassical growth theory explained output with capital, labour, and technology,
+but could not explain why societies with access to the same technologies
+diverged so dramatically. North argued that the answer lies in institutions,
+which he defined as "the humanly devised constraints that structure political,
+economic and social interaction" [@north1991, p. 97], both formal (constitutions,
+laws, property rights) and informal (sanctions, taboos, customs, codes of
+conduct). Institutions are the **rules of the game**. Organizations such as
+firms, unions, and parties are the **players**, who exploit the opportunities
+institutions create and lobby to change the rules [@north1990].
+@williamson2000 placed these ideas in a four-level scheme, from slow-changing
+social structures to the everyday allocation of resources (Figure
+\@ref(fig:fig-econ-levels)). Transaction cost economics occupies the governance
+level and North's work the institutional environment.
+
+```{r fig-econ-levels, fig.cap = "Four levels of social analysis in new institutional economics, after Williamson (2000). Higher levels constrain lower levels (solid arrows). Feedback from lower to higher levels (dashed arrows) is slower and weaker."}
+mechanism_diagram(sprintf('
+  L1 [label = "Level 1: Embeddedness\\ninformal institutions, customs, norms, religion\\n(changes over centuries)", %s]
+  L2 [label = "Level 2: Institutional environment\\nformal rules: polity, judiciary, property rights\\n(changes over decades)", %s]
+  L3 [label = "Level 3: Governance\\nplay of the game: contracts, firms, markets\\n(changes over years)", %s]
+  L4 [label = "Level 4: Resource allocation\\nprices, quantities, incentives\\n(changes continuously)", %s]
+  L1 -> L2 -> L3 -> L4
+  L4 -> L3 [style = dashed]
+  L3 -> L2 [style = dashed]
+  L2 -> L1 [style = dashed]
+', node_construct, node_mechanism, node_mechanism, node_outcome), rankdir = "TB", height = 520)
+```
+
+### Core logic and propositions
+
+The argument runs from rules to incentives to performance. Secure property
+rights and impartial enforcement lower the cost of impersonal exchange and
+encourage investment. Rules that permit expropriation push exchange into small,
+personal networks where reputation substitutes for courts. The propositions are:
+
+- **P1 (Institutions and transaction costs).** Institutions that protect property
+  and enforce contracts reduce transaction costs and expand the range of feasible
+  exchange [@north1990].
+- **P2 (Credible commitment).** Economic growth requires that the state commit not
+  to expropriate. Political institutions that constrain rulers make such
+  commitments credible [@north1989].
+- **P3 (Path dependence).** Because institutions create organizations with a
+  stake in preserving them, inefficient institutions can persist for long
+  periods [@north1990].
+- **P4 (Hierarchy of levels).** Informal institutions constrain formal rules,
+  which constrain governance choices, which constrain resource allocation
+  [@williamson2000].
+- **P5 (Private ordering).** Where public institutions are weak, private
+  institutions such as reputation-based coalitions can support exchange
+  [@greif1993].
+
+### Evidence and extensions
+
+The most influential empirical study is @acemoglu2001. They argued that European
+colonizers established extractive institutions where disease made settlement
+dangerous and institutions protecting property where Europeans settled in large
+numbers, and that those institutions persisted. Using historical settler mortality as an
+instrument for current institutions (measured by protection against
+expropriation risk), they estimated large effects of institutions on income per
+capita. @rodrik2004 similarly concluded that institutional quality dominates
+geography and trade integration as a determinant of income levels.
+
+@greif1993 illustrated private ordering: eleventh-century Maghribi traders in the
+Mediterranean formed a coalition in which an overseas agent who cheated one
+merchant would not be hired by the others, a reputation mechanism that supported
+long-distance agency relationships without courts. @north1989 argued that the
+settlement after England's Glorious Revolution of 1688 made government
+commitments to repay debt credible.
+
+Table \@ref(tab:tab-econ-nie-it) distinguishes new institutional economics from
+the sociological [Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)) covered earlier
+in the book, a frequent source of confusion.
+
+```{r tab-econ-nie-it}
+tibble::tribble(
+  ~Dimension, ~`New institutional economics`, ~`Sociological institutional theory`,
+  "Discipline", "Economics, economic history, law", "Sociology, organization theory",
+  "Institutions are", "Rules of the game that shape incentives", "Taken-for-granted beliefs, norms, and scripts",
+  "Actors are", "Boundedly rational, interest seeking", "Embedded, seeking legitimacy",
+  "Core mechanism", "Transaction costs and incentives", "Isomorphism and legitimacy",
+  "Typical outcome", "Efficiency, investment, growth", "Similarity of organizational forms and practices",
+  "Representative sources", "North (1990), Williamson (2000)", "Meyer & Rowan (1977), DiMaggio & Powell (1983)"
+) |>
+  book_table(caption = "New institutional economics and sociological institutional theory compared.")
+```
+
+::: {.debate}
+**Do institutions cause growth?** @glaeser2004 argued that the institutional
+measures used in cross-country studies capture policy outcomes rather than
+durable constraints, and that human capital is a more fundamental cause of both
+growth and institutional improvement. @albouy2012 questioned the settler
+mortality data underlying @acemoglu2001, arguing that many observations were
+imputed from other regions and that the results weaken with alternative codings.
+The debate has pushed the field toward within-country natural experiments with
+sharper identification. A conceptual critique also persists: if "institutions"
+include everything from constitutions to culture, the theory risks becoming
+unfalsifiable.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Contracting where courts are slow.** Firms operating where contract
+enforcement is weak rely more on relational contracting, vertically integrate
+activities that would be outsourced elsewhere, form diversified business groups
+(see [Institutional voids](#institutional-voids) (Section \@ref(institutional-voids))), and write arbitration clauses
+that move disputes to more reliable forums. The 1958 New York Convention on the
+Recognition and Enforcement of Foreign Arbitral Awards is itself an institution
+that lowers the transaction costs of cross-border contracting: by committing
+signatory states to enforce arbitral awards, it lets firms import credible
+enforcement that local courts may not provide.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Firms in jurisdictions with slower contract enforcement will be more
+  vertically integrated, controlling for industry.
+- *H2.* The positive effect of foreign direct investment on local supplier
+  productivity will be larger where property rights are secure.
+
+**Designs.** Cross-country panels with fixed effects, instrumental variables
+based on historical shocks, regression discontinuity at historical or
+administrative borders, comparative historical case studies.
+:::
+
+::: {.pitfall}
+**Treating "institutions" as a residual.** When a model fails to explain
+cross-country differences, it is tempting to attribute the remainder to
+"institutions". The theory is useful only if the specific rule, its enforcement
+mechanism, and the incentive it changes are identified and measured. Specify
+which institution, at which of Williamson's levels, alters which transaction cost.
+:::
+
+## Social Preferences {#social-preferences}
+
+::: {.theory-card}
+**Core claim.** Many people care not only about their own material payoff but
+also about the payoffs of others and the fairness of how outcomes come about.
+They sacrifice money to punish unfair treatment and to reward kindness, and
+these preferences constrain the prices, wages, and contracts that firms can
+sustain.
+
+**Origins.** Experimental and behavioural economics. @guth1982 introduced the
+ultimatum game. @kahneman1986 documented community standards of fairness in
+pricing. Formal models include @rabin1993, @fehr1999, and @bolton2000. @fehr2000b
+review the evidence on reciprocity.
+
+**Level of analysis.** Individual and dyad, with market-level consequences.
+
+**Key constructs.** Inequity aversion (disadvantageous and advantageous),
+reciprocity, intentions, reference transaction, dual entitlement, altruistic
+punishment, conditional cooperation.
+
+**Boundary conditions.** Effects are strongest in bilateral relationships,
+repeated interactions, and settings where fairness norms are salient. In
+anonymous competitive markets, inequity-averse agents may behave much like
+selfish ones [@fehr1999].
+
+**Related theories.** [Equity theory](#equity-theory) (Section \@ref(equity-theory)),
+[Organizational justice](#organizational-justice) (Section \@ref(organizational-justice)), [Reference price](#reference-price) (Section \@ref(reference-price)),
+[Efficiency wages](#efficiency-wages), [Collective action](#collective-action),
+[Prospect theory](#prospect-theory-model) (Section \@ref(prospect-theory-model)).
+:::
+
+### Origins and intellectual history
+
+In the **ultimatum game** studied by @guth1982, a proposer divides a sum of money
+and a responder either accepts the split or rejects it, in which case both get
+nothing. Self-interest predicts that the proposer offers the smallest positive
+amount and the responder accepts. Instead, proposers typically offer a
+substantial share, and responders often reject low offers, paying to punish what
+they see as unfair. The pattern has been replicated many times
+[@camerer1995].
+
+At about the same time, @kahneman1986 surveyed telephone respondents about the
+fairness of everyday pricing and wage decisions. A hardware store that raises
+the price of snow shovels from 15 to 20 dollars the morning after a large
+snowstorm was judged unfair by 82 percent of respondents. Firms were judged
+entitled to raise prices to protect profits when costs rose, but not to exploit
+shortages. This is the principle of **dual entitlement**: customers are entitled
+to the terms of a reference transaction, and firms to a reference profit.
+
+### Core logic and propositions
+
+@fehr1999 proposed a tractable model of **inequity aversion**. With $n$ players and
+material payoffs $x$, player $i$'s utility is
+
+$$U_i(x) \;=\; x_i \;-\; \frac{\alpha_i}{n-1}\sum_{j \neq i}\max(x_j - x_i, 0) \;-\; \frac{\beta_i}{n-1}\sum_{j \neq i}\max(x_i - x_j, 0),$$
+
+with $\beta_i \leq \alpha_i$ and $0 \leq \beta_i < 1$. The parameter $\alpha_i$
+captures aversion to being behind, $\beta_i$ aversion to being ahead. In a
+two-player ultimatum game with a pie of one, a responder offered share $s < 1/2$
+accepts only if $s - \alpha(1 - 2s) \geq 0$, that is, if
+
+$$s \;\geq\; \frac{\alpha}{1 + 2\alpha}.$$
+
+A responder with $\alpha = 1$ rejects any offer below one third. Reciprocity
+models such as @rabin1993 add that people respond to perceived *intentions*, not
+just outcomes: the same low offer is resented more when the proposer could have
+chosen a fair one. The theory's propositions are:
+
+- **P1 (Costly punishment).** People reject unfair offers and punish unfair
+  behaviour even at a cost to themselves [@guth1982; @fehr2000b].
+- **P2 (Reciprocity).** Kind actions elicit kind responses, which supports
+  cooperation and gift exchange beyond what contracts enforce [@fehr2000b].
+- **P3 (Dual entitlement).** Price and wage changes justified by cost increases
+  are accepted. Changes that exploit demand shocks or market power are resented
+  [@kahneman1986].
+- **P4 (Market context).** In competitive markets with many traders, fairness
+  concerns have limited effect on prices. In bilateral relationships and
+  bargaining, they can be decisive [@fehr1999].
+
+### Mechanism
+
+Figure \@ref(fig:fig-econ-ultimatum) shows how responders who differ in
+inequity aversion, each rejecting offers below $\alpha/(1+2\alpha)$, generate a
+smoothly declining rejection curve. Table \@ref(tab:tab-econ-socialpref)
+compares the main models.
+
+```{r fig-econ-ultimatum, fig.cap = "Stylised ultimatum-game rejection rates generated by a simulated population of responders: 35 percent purely self-interested and 65 percent inequity-averse with varying sensitivity. Low offers are frequently rejected and near-equal splits almost never are. Illustrative, not experimental data.", fig.height = 4}
+set.seed(1982)
+n_resp <- 5000
+alpha <- ifelse(runif(n_resp) < 0.35, 0, rexp(n_resp, rate = 1))   # aversion to disadvantageous inequity
+offers <- seq(0.05, 0.5, by = 0.05)
+ult <- data.frame(offer = offers,
+                  reject = sapply(offers, function(s) mean(alpha / (1 + 2 * alpha) > s)))
+ggplot(ult, aes(offer, reject)) +
+  geom_col(fill = pal[["blue"]], width = 0.035) +
+  geom_text(aes(label = scales::percent(reject, 1)), vjust = -0.4, size = 3.2, colour = ink[["secondary"]]) +
+  scale_x_continuous(labels = scales::percent, breaks = offers) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 0.75), expand = c(0, 0)) +
+  labs(x = "Offer to responder (share of the pie)", y = "Share of responders who reject",
+       title = "Inequity aversion makes low offers risky",
+       caption = "Stylised: responders reject if offer < alpha / (1 + 2 alpha). alpha = 0 for 35%, Exponential(1) otherwise.")
+```
+
+```{r tab-econ-socialpref}
+tibble::tribble(
+  ~Model, ~`What people care about`, ~`Signature prediction`, ~`Key source`,
+  "Pure altruism", "Others' payoffs, positively", "Giving in dictator games", "Classic welfare economics",
+  "Inequity aversion", "Differences between own and others' payoffs", "Rejection of low ultimatum offers, punishment of free riders", "Fehr & Schmidt (1999)",
+  "Equity, reciprocity, competition (ERC)", "Own share relative to the average", "Similar to inequity aversion in two-player games", "Bolton & Ockenfels (2000)",
+  "Intention-based reciprocity", "Whether others meant to be kind or unkind", "Same outcome judged differently by intention", "Rabin (1993)",
+  "Dual entitlement", "Reference transaction and reference profit", "Cost-based price rises fair, demand-based ones unfair", "Kahneman, Knetsch & Thaler (1986)"
+) |>
+  book_table(caption = "Models of social preferences and fairness.")
+```
+
+### Evidence and extensions
+
+The *direction* of ultimatum game results is widespread but their *magnitude*
+varies. @henrich2001 ran economic games, chiefly the ultimatum game, in 15
+small-scale societies and found that offers and rejections varied considerably
+and were related to how much a society's economic life involved cooperation and
+market exchange. @oosterbeek2004 meta-analysed cross-country variation in
+ultimatum game results, and university subject pools may not be representative
+of humanity [@henrich2010]. @levitt2007 caution that laboratory settings may
+inflate social preferences because participants know they are observed, stakes
+are small, and the choice set is artificial. The broad consensus is that social
+preferences are real and heterogeneous: some people behave selfishly, many are
+conditional cooperators, and institutions determine which type sets the tone
+[@fehr2000b; @fischbacher2001].
+
+::: {.debate}
+**Preferences or norms?** One interpretation is that people have stable
+preferences over the distribution of payoffs. Another is that behaviour in these
+games reflects social norms and the desire to be seen as fair, which depend on
+context and observability. Preference models imply that fair behaviour persists
+under anonymity, while norm models imply that it weakens when no one is watching
+or when the situation is framed as a market. Evidence supports elements of both.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Price gouging backlash.** The fairness constraint documented by
+@kahneman1986 recurs whenever firms raise prices in response to demand shocks.
+In 1999 Coca-Cola's chief executive drew widespread criticism after remarking to
+a magazine that vending machines could raise prices in hot weather, and the
+company stated that it had no plans to introduce such machines. Ride-hailing
+platforms faced similar criticism when surge pricing coincided with
+emergencies, and in 2014 Uber reached an agreement with the New York State
+Attorney General to limit surge pricing during declared emergencies and
+abnormal market disruptions, and many US states prohibit excessive price
+increases during declared emergencies. The guidance is clear: increases framed
+as passing on costs are tolerated, increases that exploit scarcity are resented,
+and capping prices in emergencies can protect long-run goodwill.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Customer complaints and churn following a price increase will be lower
+  when the increase is attributed to cost rises than to demand.
+- *H2.* Workers will reduce effort more after a wage cut attributed to
+  labour-market slack than after an equal cut attributed to the firm's losses.
+
+**Designs.** Laboratory games (ultimatum, dictator, trust, public goods), vignette
+surveys in the style of @kahneman1986, field experiments on price communication,
+analysis of social media reactions to pricing events.
+:::
+
+::: {.pitfall}
+**Assuming fairness norms are universal and fixed.** Fairness judgements depend
+on the reference transaction, on what is customary in a market, and on culture.
+A surge price that is accepted for concert tickets may be condemned for bottled
+water after a hurricane. Measure the reference point before predicting a
+backlash, and expect norms to shift as practices become familiar.
+:::
+
+## Chapter Summary {#economics-institutions-summary}
+
+::: {.key-takeaways}
+- Externalities can in principle be solved by bargaining, but positive
+  transaction costs make rights assignment and institutional design decisive.
+  Tradable permits are a Coasean market in rights [@coase1960; @pigou1920].
+- Groups underprovide shared goods because benefits are non-excludable. Selective
+  incentives, privileged members, and peer sanctions overcome free riding
+  [@olson1965; @fehr2000a].
+- With incomplete contracts, ownership allocates residual control rights and
+  shapes investment incentives. Integration helps one party and hurts another
+  [@grossman1986; @hart1990].
+- Costly search sustains price dispersion and frictional unemployment as
+  equilibrium outcomes [@stigler1961; @mortensen1994].
+- Firms may pay above market wages to elicit effort and reduce turnover, which
+  can leave unemployment in equilibrium [@akerlof1982; @shapiro1984].
+- Network effects create tipping and path dependence. Two-sided platforms manage
+  cross-side effects through price structure, often subsidizing one side
+  [@katz1985; @rochet2003].
+- Auction rules shape bids and revenue. The winner's curse, entry, and collusion
+  matter more in practice than benchmark revenue rankings [@milgrom1982; @klemperer2002].
+- Institutions, the rules of the game, shape transaction costs and long-run
+  performance, and fairness preferences constrain what markets can sustain
+  [@north1990; @fehr1999; @kahneman1986].
+:::
+
+Table \@ref(tab:tab-econ-summary) presents the comparison of the chapter's theories.
+
+```{r tab-econ-summary}
+tibble::tribble(
+  ~Theory, ~`Market imperfection addressed`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "[Coase theorem](#coase-theorem)", "Externalities", "Bargaining over rights, transaction costs", "Efficiency independent of rights when bargaining is cheap", "Emissions trading, dispute resolution",
+  "[Collective action](#collective-action)", "Public goods", "Free riding, selective incentives", "Large groups underprovide shared goods", "Consortia, trade associations, open source",
+  "[Property rights theory](#property-rights-theory)", "Incomplete contracts", "Residual control rights", "Owner is the party whose investment matters most", "Make-or-buy, joint venture design",
+  "[Search theory](#search-theory)", "Costly information", "Optimal stopping", "Price dispersion, frictional unemployment", "Pricing transparency, hiring speed",
+  "[Efficiency wages](#efficiency-wages)", "Unobservable effort", "Gift exchange, shirking deterrence", "Above-market wages, involuntary unemployment", "Wage policy, retention",
+  "[Network effects](#network-effects)", "Consumption externalities", "Positive feedback, expectations", "Tipping and lock-in", "Standards battles, launch strategy",
+  "[Two-sided markets](#two-sided-markets)", "Cross-group externalities", "Price structure across sides", "Subsidized side and money side", "Platform pricing",
+  "[Auction theory](#auction-theory)", "Private information about value", "Bidding strategy under rules", "Revenue equivalence, winner's curse", "Procurement, advertising, spectrum",
+  "[New institutional economics](#new-institutional-economics)", "Weak rules and enforcement", "Transaction costs, credible commitment", "Institutions drive long-run performance", "Market entry, governance choice",
+  "[Social preferences](#social-preferences)", "Self-interest assumption", "Inequity aversion, reciprocity", "Costly punishment of unfairness", "Price communication, wage setting"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#economics-institutions-questions}
+
+1. Coase argued that harm is reciprocal. Choose a current externality (for
+   example, noise from a delivery hub or data-centre water use) and analyse it from
+   both parties' perspectives. Which institution (private bargaining, liability,
+   tax, or tradable permits) would minimize total costs, and why?
+2. Olson predicted that large groups struggle to act collectively, yet open-source
+   projects with thousands of contributors thrive. Which selective incentives and
+   institutional features explain this, and how would you test your explanation?
+3. Design a study that distinguishes property rights theory from transaction cost
+   economics. What setting would make the two theories predict different
+   ownership structures?
+4. A comparison platform enters a market for home insurance. Using search theory,
+   predict how average prices, price dispersion, and product design will change.
+   What would count as evidence of obfuscation?
+5. A platform must decide which side to subsidize at launch. What information
+   would you need, and how would the answer change if one side could cheaply
+   multi-home?
+6. A retailer is considering dynamic pricing that raises prices when demand
+   spikes. Using dual entitlement, advise management on design and
+   communication, and propose a field experiment to evaluate the policy.
+
+## Further Reading {#economics-institutions-reading}
+
+- @coase1960: the original argument that harm is reciprocal and that transaction
+  costs, not externalities as such, determine the right institutional response.
+- @olson1965: the classic statement of the free-rider problem in groups, still the
+  starting point for research on associations and lobbying.
+- @rochet2006: a concise progress report on two-sided markets that defines the
+  concept precisely and summarizes its pricing implications.
+- @klemperer2002: a practical guide to auction design that explains why entry and
+  collusion dominate textbook concerns.
+- @north1991: a short and readable overview of how institutions shape economic
+  performance over history.
+- @kahneman1986: the foundational study of fairness as a constraint on pricing and
+  wage setting.

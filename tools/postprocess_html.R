@@ -6,7 +6,7 @@
 # Usage: Rscript tools/postprocess_html.R [dir]   (default: docs)
 
 args <- commandArgs(trailingOnly = TRUE)
-dir <- if (length(args)) args[1] else "docs"
+dir <- if (length(args) && dir.exists(args[1])) args[1] else "docs"
 EM <- "—"; EN <- "–"
 skip <- c("script", "style", "code", "pre", "math", "svg", "textarea")
 

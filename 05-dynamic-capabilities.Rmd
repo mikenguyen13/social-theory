@@ -17,12 +17,12 @@ rivals *at a point in time*. It says much less about how firms **renew** their
 resources when technologies, customers, and competitors change, and why the very
 resources that made a firm successful can become the reason it fails. This
 chapter develops the theories that address renewal. We begin with the
-**dynamic capabilities framework** and its main variants, then examine
-**absorptive capacity** (how firms learn from outside), the tension between
-**exploration and exploitation** (how firms allocate attention between the new and
-the known), and **organizational ambidexterity** (how firms try to do both). We
+**[dynamic capabilities](#dynamic-capabilities-framework) framework** and its main variants, then examine
+**[absorptive capacity](#absorptive-capacity)** (how firms learn from outside), the tension between
+**[exploration and exploitation](#exploration-exploitation)** (how firms allocate attention between the new and
+the known), and **[organizational ambidexterity](#ambidexterity)** (how firms try to do both). We
 close each section with business cases drawn from the public record: Netflix,
-Kodak and Fujifilm, Microsoft, and IBM.
+Kodak and Fujifilm, Microsoft, and IBM (Table \@ref(tab:tab-dc-glance)).
 
 ```{r tab-dc-glance}
 tibble::tribble(
@@ -47,7 +47,7 @@ sustained advantage depends less on the resources a firm owns than on its
 internal and external competences to address changing environments.
 
 **Origins.** Strategic management, building on evolutionary economics
-[@nelson1982] and the resource-based view, @teece1997, elaborated in @teece2007
+[@nelson1982] and the [resource-based view](#resource-based-theory) (Section \@ref(resource-based-theory)), @teece1997, elaborated in @teece2007
 and @helfat2007, contrasting interpretation in @eisenhardt2000.
 
 **Level of analysis.** Firm. Also specific organizational processes (product
@@ -63,12 +63,12 @@ cost more than it returns [@winter2003]. The form of effective dynamic
 capabilities differs between moderately dynamic and high-velocity markets
 [@eisenhardt2000].
 
-**Related theories.** [Resource-based view](#resource-based-theory),
-[Knowledge-based view](#knowledge-based-view),
+**Related theories.** [Resource-based view](#resource-based-theory) (Section \@ref(resource-based-theory)),
+[Knowledge-based view](#knowledge-based-view) (Section \@ref(knowledge-based-view)),
 [Absorptive capacity](#absorptive-capacity),
 [Exploration and exploitation](#exploration-exploitation),
 [Ambidexterity](#ambidexterity),
-[Diffusion of innovations](#diffusion-of-innovations).
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)).
 :::
 
 ### Origins and intellectual history
@@ -124,7 +124,7 @@ tibble::tribble(
 emphasise the exploitation of **market power**. The **competitive forces**
 approach [@porter1980industry] holds that profitability is determined by
 industry structure, and that firms should position themselves to defend against
-the five forces. The **strategic conflict** approach [@shapiro1989theory] uses game
+the [five forces](#five-forces) (Section \@ref(five-forces)). The **strategic conflict** approach [@shapiro1989theory] uses game
 theory to analyse how firms influence rivals' behaviour through investment,
 pricing, signalling, and commitment. Two emphasise **efficiency**. The
 **resource-based perspective** holds that firm-specific assets matter more than
@@ -211,7 +211,7 @@ intellectual-property protection and the inherent replicability of the
 technology. Process technologies hidden inside the factory are usually easier to
 protect than product technologies that can be reverse-engineered once sold. These
 arguments mirror the replication-imitation trade-off in the
-[knowledge-based view](#knowledge-based-view) [@kogut1992].
+[knowledge-based view](#knowledge-based-view) (Section \@ref(knowledge-based-view)) [@kogut1992].
 
 ### Microfoundations: sensing, seizing, and transforming
 
@@ -281,7 +281,7 @@ unpredictable, effective dynamic capabilities are **simple rules** and
 experiential processes that rely on rapidly created new knowledge, prototyping,
 and iterative execution. Their outcomes are unpredictable, and they are
 inherently fragile. Learning mechanisms such as repeated practice, codification,
-learning from small failures, and pacing guide their evolution.
+learning from small failures, and pacing guide their evolution (Table \@ref(tab:tab-dc-views)).
 
 ```{r tab-dc-views}
 tibble::tribble(
@@ -522,10 +522,10 @@ activation triggers, social integration mechanisms, regimes of appropriability.
 outside the firm (by universities, suppliers, customers, or rivals) and is
 partly tacit or complex.
 
-**Related theories.** [Knowledge-based view](#knowledge-based-view),
+**Related theories.** [Knowledge-based view](#knowledge-based-view) (Section \@ref(knowledge-based-view)),
 [Dynamic capabilities](#dynamic-capabilities-framework),
 [Exploration and exploitation](#exploration-exploitation),
-[Diffusion of innovations](#diffusion-of-innovations).
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)).
 :::
 
 ### Core logic
@@ -594,7 +594,7 @@ mechanism_diagram(sprintf('
 ```
 
 ::: {.business-case}
-**Illustrative scenario: open innovation in a consumer-goods firm.** A packaged-food
+**Illustrative scenario: [open innovation](#open-innovation) (Section \@ref(open-innovation)) in a consumer-goods firm.** A packaged-food
 company launches an open-innovation portal and a corporate venture unit to scout
 start-ups and university labs (potential absorptive capacity). Two years later,
 the scouting team has catalogued hundreds of technologies, yet few have reached
@@ -643,7 +643,7 @@ and when environments change.
 **Related theories.** [Ambidexterity](#ambidexterity),
 [Dynamic capabilities](#dynamic-capabilities-framework),
 [Absorptive capacity](#absorptive-capacity),
-[Bounded rationality](#bounded-rationality).
+[Bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)).
 :::
 
 ### Core logic
@@ -798,7 +798,7 @@ ways firms balance the two: **organizational separation** (different units),
 **temporal separation** (alternating over time), and **domain separation**
 (exploring in some domains, such as alliances, while exploiting in others).
 
-### Disruptive innovation
+### Disruptive innovation {#dc-disruptive-innovation}
 
 @christensen1997 provided a vivid, partly complementary account of why successful
 firms under-explore. In studies of the disk-drive industry and other sectors, he
@@ -815,7 +815,7 @@ remedy, an autonomous organization with a cost structure suited to the new marke
 is a form of structural ambidexterity.
 
 ::: {.debate}
-**How general is disruption?** The theory of disruptive innovation has been widely
+**How general is disruption?** The theory of [disruptive innovation](#disruptive-innovation) (Section \@ref(disruptive-innovation)) has been widely
 applied, some argue over-applied, to any successful entrant. Scholars have
 questioned whether disruption can be identified *ex ante* rather than only in
 hindsight, and have noted incumbents that responded successfully to apparently
@@ -849,8 +849,8 @@ stable environments may benefit more from focus.
 
 **Related theories.** [Exploration and exploitation](#exploration-exploitation),
 [Dynamic capabilities](#dynamic-capabilities-framework),
-[Contingency theory](#contingency-theory),
-[Upper echelons theory](#upper-echelons-theory).
+[Contingency theory](#contingency-theory) (Section \@ref(contingency-theory)),
+[Upper echelons theory](#upper-echelons-theory) (Section \@ref(upper-echelons-theory)).
 :::
 
 ### Three forms of ambidexterity
@@ -995,6 +995,8 @@ than the theory makes.
   organizational answer, and is best seen as a leadership capability
   [@oreilly2013; @gibson2004].
 :::
+
+Table \@ref(tab:tab-dc-summary) presents the comparison of the chapter's theories.
 
 ```{r tab-dc-summary}
 tibble::tribble(

@@ -1,0 +1,1854 @@
+# Work, Jobs, and Leadership {#work-leadership}
+
+Beginning in late 2010, a large Chinese travel agency ran an unusual experiment. Call-centre
+employees who volunteered to work from home were randomly assigned either to do so
+or to stay in the office. The home workers became more productive and quit less
+often, yet a large share of them later chose to come back to the office, citing
+isolation [@bloom2015]. Around the same time, managers everywhere were asking
+related questions. Why does one team thrive under a demanding manager while
+another burns out? Why do employees accept a pay cut with grace in one plant and
+retaliate in another? Why is the chief executive paid several times more than the
+vice presidents who report to her, even when their jobs look similar?
+
+These puzzles share a theme: the *design* of work and of the relationships around
+it shapes what people do, feel, and contribute. This chapter assembles the
+theories that organizational psychologists and personnel economists use to
+explain those effects. We start with the **job** itself (the job characteristics
+model, [job demands-resources theory](#job-demands-resources), [conservation of resources theory](#conservation-of-resources), and
+[affective events theory](#affective-events-theory)). We then turn to **leadership** ([leader-member exchange](#leader-member-exchange),
+[transformational leadership](#transformational-leadership), and [path-goal theory](#path-goal-theory)) and to the **employment
+relationship** (psychological contracts, [organizational justice](#organizational-justice), organizational
+commitment, and [person-environment fit](#person-environment-fit)). We close with two economic theories of
+**investment and rewards**: [human capital theory](#human-capital-theory) and [tournament theory](#tournament-theory). Together
+they form the analytical core of human resource management, people analytics, and
+leadership development (Table \@ref(tab:tab-wl-glance)).
+
+```{r tab-wl-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Job characteristics model", "Which features of a job make it motivating?", "Individual / job", "Hackman & Oldham (1976)",
+  "Job demands-resources", "What drives burnout and engagement?", "Individual / job", "Demerouti et al. (2001)",
+  "Conservation of resources", "Why is resource loss so stressful?", "Individual", "Hobfoll (1989)",
+  "Affective events theory", "How do daily events shape feelings and behaviour at work?", "Individual (within person)", "Weiss & Cropanzano (1996)",
+  "Leader-member exchange", "Why do leaders build different relationships with different followers?", "Dyad", "Graen & Uhl-Bien (1995)",
+  "Transformational leadership", "How do leaders inspire performance beyond expectations?", "Individual / group", "Bass (1985)",
+  "Path-goal theory", "Which leader behaviour fits which situation?", "Dyad / group", "House (1971)",
+  "Psychological contract", "What do employees believe they were promised?", "Individual / dyad", "Rousseau (1989)",
+  "Organizational justice", "When do people judge decisions and treatment as fair?", "Individual / organization", "Colquitt et al. (2001)",
+  "Organizational commitment", "What binds employees to an organization?", "Individual", "Meyer & Allen (1991)",
+  "Person-environment fit", "Does the match between person and setting matter?", "Individual / organization", "Kristof (1996)",
+  "Human capital theory", "Who should pay for skills, and which skills?", "Individual / firm", "Becker (1964)",
+  "Tournament theory", "Why do pay gaps widen up the hierarchy?", "Firm / labour market", "Lazear & Rosen (1981)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of work, jobs, and leadership.")
+```
+
+## Job Characteristics Model {#job-characteristics-model}
+
+::: {.theory-card}
+**Core claim.** Jobs that offer skill variety, task identity, task significance,
+autonomy, and feedback produce three critical psychological states, and these
+states raise internal work motivation, satisfaction, and performance, especially
+for people who want to grow at work.
+
+**Origins.** Organizational psychology. @hackman1975 developed the Job Diagnostic
+Survey, @hackman1976 stated and tested the model, and @hackman1980 applied it to
+the practice of work redesign.
+
+**Level of analysis.** The individual job holder and the job.
+
+**Key constructs.** Core job dimensions, experienced meaningfulness, experienced
+responsibility, knowledge of results, internal work motivation, growth need
+strength, motivating potential score.
+
+**Boundary conditions.** Strongest for employees with high growth need strength
+and adequate knowledge and skill. Weaker when pay, security, or supervision are
+so poor that they dominate attention.
+
+**Related theories.** [Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)),
+[Job demands-resources](#job-demands-resources),
+[Goal-setting theory](#goal-setting-theory) (Section \@ref(goal-setting-theory)),
+[Social information processing](#social-information-processing) (Section \@ref(social-information-processing)).
+:::
+
+### Origins and intellectual history
+
+Twentieth-century industrial engineering had a clear answer to the question of
+how to design a job: break it into the smallest possible units, standardise them,
+and remove discretion. The assembly line embodied this logic and delivered large
+productivity gains, but it also delivered boredom, absenteeism, and turnover.
+Herzberg's two-factor theory [@herzberg1959] and the human relations movement had
+already argued that the content of work matters for motivation. What was missing
+was a precise, measurable account of *which* job features matter and *why*.
+
+@hackman1975 supplied the measure, the Job Diagnostic Survey (JDS), and
+@hackman1976 supplied the theory. Their model specified a small set of objective
+job features, a set of psychological states through which those features work, and
+an individual difference that conditions the whole chain. The resulting **job
+characteristics model** (JCM) became the dominant framework for job design for
+three decades and remains the starting point for modern work design research
+[@parker2014].
+
+### Core logic and propositions
+
+The model links five **core job dimensions** to three **critical psychological
+states** (Table \@ref(tab:tab-wl-jcm)). **Skill variety**, **task identity**
+(completing a whole, identifiable piece of work), and **task significance**
+(impact on other people) jointly create **experienced meaningfulness**.
+**Autonomy** creates **experienced responsibility** for outcomes. **Feedback**
+from the job itself creates **knowledge of results**. When all three states are
+present, people feel good when they perform well, and this self-generated reward
+sustains **internal work motivation** [@hackman1976].
+
+```{r tab-wl-jcm}
+tibble::tribble(
+  ~`Core dimension`, ~Definition, ~`Psychological state`, ~`Low-scoring example`, ~`Redesign lever`,
+  "Skill variety", "Range of activities and skills the job requires", "Meaningfulness", "Single repetitive assembly step", "Job enlargement, rotation",
+  "Task identity", "Completing a whole, visible piece of work", "Meaningfulness", "Processing one field of a form", "Natural work units, case ownership",
+  "Task significance", "Impact of the work on other people", "Meaningfulness", "Back-office task with no visible user", "Contact with beneficiaries",
+  "Autonomy", "Discretion over scheduling and methods", "Responsibility", "Scripted call handling", "Vertical loading, self-managing teams",
+  "Feedback", "Direct information about performance from the work itself", "Knowledge of results", "Quality checked by a later department", "Open feedback channels, dashboards"
+) |>
+  book_table(caption = "The five core job dimensions of the job characteristics model and how they can be redesigned.")
+```
+
+The original propositions can be stated as follows:
+
+- **P1 (Dimensions to states).** Variety, identity, and significance raise
+  experienced meaningfulness. Autonomy raises experienced responsibility.
+  Feedback raises knowledge of results.
+- **P2 (States to outcomes).** The three states jointly raise internal motivation,
+  growth satisfaction, general satisfaction, and work quality, and reduce
+  absenteeism and turnover.
+- **P3 (Moderation).** These relationships are stronger for employees high in
+  **growth need strength**, the desire for challenge and personal development. In
+  the later formulation, knowledge and skill and satisfaction with the work
+  context were added as moderators [@hackman1980].
+
+Because the model argues that all three psychological states must be present,
+Hackman and Oldham proposed a **motivating potential score** (MPS) that combines
+the dimensions multiplicatively:
+
+$$
+\text{MPS} = \frac{\text{Skill variety} + \text{Task identity} + \text{Task significance}}{3}
+\times \text{Autonomy} \times \text{Feedback}
+$$
+
+The formula averages the three meaningfulness dimensions, so a weakness in one can
+be offset by strength in another, but it multiplies autonomy and feedback, so a
+job with no autonomy or no feedback has a motivating potential close to zero no
+matter how varied it is.
+
+### Mechanism
+
+Figure \@ref(fig:fig-wl-jcm) shows the job characteristics model.
+
+```{r fig-wl-jcm, fig.cap = "The job characteristics model. Core job dimensions create critical psychological states that drive motivation and performance. Growth need strength, knowledge and skill, and context satisfaction moderate the chain. Adapted from Hackman and Oldham (1976, 1980)."}
+mechanism_diagram(sprintf('
+  V [label = "Skill variety\\nTask identity\\nTask significance", %s]
+  A [label = "Autonomy", %s]
+  F [label = "Feedback", %s]
+  M [label = "Experienced\\nmeaningfulness", %s]
+  R [label = "Experienced\\nresponsibility", %s]
+  K [label = "Knowledge of\\nresults", %s]
+  O [label = "Internal motivation\\nSatisfaction\\nWork quality\\nLower turnover", %s]
+  G [label = "Growth need strength\\nKnowledge and skill\\nContext satisfaction", %s]
+  V -> M
+  A -> R
+  F -> K
+  M -> O
+  R -> O
+  K -> O
+  G -> O [style = dashed]
+', node_construct, node_construct, node_construct, node_mechanism, node_mechanism,
+   node_mechanism, node_outcome, node_moderator))
+```
+
+Figure \@ref(fig:fig-wl-mps) shows why the multiplicative formula matters.
+Consider four stylised jobs. The additive index (the simple mean of the five
+dimensions) ranks the scripted call-centre job as moderately enriched because it
+scores well on feedback and significance. The MPS ranks it near the bottom
+because autonomy is almost absent. Whether the multiplicative form is correct is
+an empirical question, and the evidence on it is discussed below.
+
+```{r fig-wl-mps, fig.cap = "Illustrative comparison of the multiplicative motivating potential score (MPS) and a simple additive index for four stylised jobs. Both indices are rescaled to a 0-100 range. Jobs that lack autonomy are penalised far more heavily by the MPS. Stylised scores, not empirical data.", fig.height = 3.8}
+jobs <- tibble::tribble(
+  ~job, ~variety, ~identity, ~significance, ~autonomy, ~feedback,
+  "Assembly-line operator", 2, 2, 3, 1.5, 4,
+  "Scripted call-centre agent", 3, 4, 5, 1.2, 6,
+  "Field service technician", 5, 6, 5, 5.5, 5,
+  "Product designer", 6.5, 5, 5.5, 6, 4.5
+)
+jobs <- jobs |>
+  mutate(mps = (variety + identity + significance) / 3 * autonomy * feedback,
+         additive = (variety + identity + significance + autonomy + feedback) / 5,
+         `MPS (multiplicative)` = 100 * mps / 343,
+         `Additive index` = 100 * (additive - 1) / 6) |>
+  select(job, `MPS (multiplicative)`, `Additive index`) |>
+  pivot_longer(-job, names_to = "index", values_to = "score") |>
+  mutate(job = factor(job, levels = rev(c("Assembly-line operator", "Scripted call-centre agent",
+                                          "Field service technician", "Product designer"))))
+ggplot(jobs, aes(score, job, fill = index)) +
+  geom_col(position = position_dodge(width = 0.7), width = 0.65) +
+  geom_text(aes(label = round(score)), position = position_dodge(width = 0.7),
+            hjust = -0.2, size = 3.2, colour = ink[["secondary"]]) +
+  scale_fill_manual(values = c("MPS (multiplicative)" = pal[["blue"]], "Additive index" = pal[["orange"]])) +
+  scale_x_continuous(limits = c(0, 100), expand = c(0, 0)) +
+  labs(x = "Motivating potential (rescaled, 0-100)", y = NULL, fill = NULL,
+       title = "Autonomy and feedback act as multipliers in the MPS",
+       caption = "Stylised: dimensions scored 1-7. MPS divided by its maximum (343). Additive index is the mean of the five dimensions.")
+```
+
+### Evidence and extensions
+
+The JCM generated hundreds of studies. An early meta-analysis found reasonable
+support for links between the core dimensions and psychological outcomes such as
+satisfaction and internal motivation, weaker links to behavioural outcomes such as
+performance and absenteeism, and little advantage for the multiplicative MPS over
+simpler additive combinations [@fried1987]. The psychological states received
+partial support as mediators.
+
+The most comprehensive later synthesis, by @humphrey2007, broadened the model in
+two ways. First, it confirmed that the motivational characteristics of the JCM
+relate to satisfaction, motivation, and performance, with experienced
+meaningfulness carrying much of the effect. Second, it showed that **social
+characteristics** (interdependence, social support, feedback from others) and
+**work context** explain additional variance in attitudes beyond the classic five
+dimensions. The Work Design Questionnaire was developed to measure this wider set
+of task, knowledge, social, and contextual features [@morgeson2006].
+
+Two further extensions changed how the field thinks about jobs. @grant2008 showed
+experimentally that connecting employees with the people who benefit from their
+work, for instance letting fundraising callers learn how scholarships changed
+recipients' lives, raised persistence and performance. This made **task
+significance** a relational, designable feature rather than a fixed property of a
+job. @wrzesniewski2001 introduced **job crafting**, the idea that employees
+actively reshape the task, relational, and cognitive boundaries of their own jobs.
+Work design is therefore not only something managers do to employees. It is also
+something employees do for themselves [@parker2014].
+
+::: {.debate}
+**How objective are job characteristics?** The JCM treats job characteristics as
+features of the work, but most studies measure them with incumbents' perceptions
+gathered in the same survey as satisfaction and motivation. Critics in the
+[social information processing](#social-information-processing) (Section \@ref(social-information-processing)) tradition argued
+that perceptions of a job are partly constructed from coworkers' cues, and that
+satisfied workers may simply describe their jobs more favourably. Common-method
+variance therefore inflates many correlations. Studies that use independent
+raters, objective job data (such as occupational databases), or field
+experiments that change jobs provide more credible estimates, and those effects
+are generally smaller, especially for performance. A second dispute concerns the
+MPS itself: the evidence offers little reason to prefer the multiplicative formula
+to a simple average [@fried1987].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Job redesign on the assembly line.** In 1974 Volvo opened an assembly plant at
+Kalmar, Sweden, organised around work teams that assembled larger portions of each
+car instead of performing short, repetitive cycles on a conventional moving line.
+The design applied JCM principles directly: larger work units raised task identity
+and variety, and team responsibility for scheduling and quality raised autonomy.
+Volvo later went further at its Uddevalla plant. Both plants were closed in the
+1990s, and analysts still disagree about whether their productivity record
+vindicated or undermined the approach. The lasting lesson is that enrichment
+interacts with technology and volume: the same design that motivates in
+low-volume, high-variety production may be uneconomic on a high-volume line.
+:::
+
+::: {.business-case}
+**Illustrative scenario: redesigning a claims-processing unit.** An insurer
+organises claims processing by function: one clerk verifies policy data, another
+assesses damage, a third approves payment. Customers wait, and clerks report low
+motivation. A JCM-based redesign assigns each adjuster a portfolio of whole claims
+(task identity), gives authority to approve payments below a threshold (autonomy),
+and shows each adjuster weekly data on cycle time and customer ratings for their
+own cases (feedback). The model predicts the largest gains among adjusters high in
+growth need strength, and it warns that adjusters lacking assessment skills will
+experience the redesign as overload. Training must therefore precede enrichment.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Autonomy is positively related to proactive behaviour, and the
+  relationship is mediated by experienced responsibility.
+- *H2.* The positive effect of task significance on performance is stronger when
+  employees have direct contact with beneficiaries.
+- *H3.* Job enrichment raises internal motivation more for employees high in
+  growth need strength than for those low in growth need strength.
+
+**Validated scales.** Job Diagnostic Survey [@hackman1975]. Work Design
+Questionnaire covering task, knowledge, social, and contextual characteristics
+[@morgeson2006].
+
+**Designs.** Field experiments or quasi-experiments around job redesign
+programmes. Multi-source designs pairing incumbent reports with supervisor or
+expert ratings of job features. Linking occupational databases to employee survey
+or administrative outcome data. Diary studies of job crafting.
+
+**Contexts.** Call centres, healthcare, manufacturing teams, platform and gig
+work, algorithmically managed jobs.
+:::
+
+::: {.pitfall}
+**Treating perceived job characteristics as objective causes.** When job features,
+motivation, and satisfaction come from the same respondent at the same time, a
+correlation between them says little about the effect of redesign. Use
+independent sources for job characteristics, exploit changes in jobs over time,
+and be cautious about the MPS, which adds measurement error without clear
+predictive gain.
+:::
+
+## Job Demands-Resources Theory {#job-demands-resources}
+
+::: {.theory-card}
+**Core claim.** Every job has demands that cost energy and resources that help
+achieve goals. High demands drive a health-impairment process that leads to
+burnout, and plentiful resources drive a motivational process that leads to
+engagement. Resources also buffer the strain caused by demands.
+
+**Origins.** Occupational health psychology. @demerouti2001 introduced the model
+as an account of burnout. @bakker2007 extended it to engagement, and @bakker2017
+restated it as a theory.
+
+**Level of analysis.** Individual employee within a job, increasingly studied at
+team and day level.
+
+**Key constructs.** Job demands, job resources, personal resources, exhaustion,
+disengagement, burnout, work engagement, buffering, job crafting.
+
+**Boundary conditions.** Demands and resources are defined by their function, so
+the same feature (for example, time pressure) may act as a challenge in one
+setting and a hindrance in another.
+
+**Related theories.** [Job characteristics model](#job-characteristics-model),
+[Conservation of resources](#conservation-of-resources),
+[Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)),
+[Broaden-and-build theory](#broaden-and-build-theory) (Section \@ref(broaden-and-build-theory)).
+:::
+
+### Origins and intellectual history
+
+Before JD-R, two research traditions dominated the study of job stress. The
+**demand-control model** argued that strain arises when high job demands meet low
+decision latitude [@karasek1979]. Burnout research, led by Christina Maslach,
+described a syndrome of exhaustion, cynicism, and reduced efficacy common in
+human-service jobs [@maslach2001]. Both traditions were productive but narrow:
+they named only a few demands and a single resource (control), and they focused on
+ill health rather than on positive states.
+
+@demerouti2001 proposed a more general model. Any job, they argued, can be
+described with two broad categories. **Job demands** are physical, psychological,
+social, or organizational aspects of the job that require sustained effort and
+therefore carry physiological or psychological costs. **Job resources** are aspects
+that help achieve work goals, reduce demands and their costs, or stimulate growth.
+In their study, demands were primarily related to exhaustion, while a lack of
+resources was primarily related to disengagement. The generality of the model,
+which lets researchers choose the demands and resources relevant to a given
+occupation, is a major reason for its spread.
+
+### Core logic and propositions
+
+@bakker2007 and @bakker2017 summarise the theory in a small set of propositions:
+
+- **P1 (Two categories).** Job characteristics can be classified as demands or
+  resources.
+- **P2 (Health impairment).** Chronic high demands exhaust mental and physical
+  energy and lead to burnout and health problems.
+- **P3 (Motivation).** Job resources foster work engagement and, through it,
+  performance and retention.
+- **P4 (Buffering).** Resources weaken the effect of demands on strain.
+- **P5 (Boosting).** Resources matter most for motivation when demands are high,
+  because resources become salient when they are needed to cope.
+- **P6 (Personal resources and crafting).** Optimism, [self-efficacy](#social-cognitive-theory) (Section \@ref(social-cognitive-theory)), and similar
+  personal resources work like job resources. Engaged employees craft their jobs
+  to gain resources, while exhausted employees may undermine themselves and create
+  more demands, producing reciprocal spirals.
+
+@schaufeli2004 tested the [dual-process](#dual-process-theory) (Section \@ref(dual-process-theory)) structure with structural equation models
+in several samples: burnout mediated the link between demands and health problems,
+and engagement mediated the link between resources and turnover intentions (Figure \@ref(fig:fig-wl-jdr)).
+
+```{r fig-wl-jdr, fig.cap = "The dual processes of job demands-resources theory. Demands drive burnout through a health-impairment process. Resources drive engagement through a motivational process. Dashed arrows show buffering and the reciprocal effect of engagement on resources through job crafting. Adapted from Bakker and Demerouti (2007, 2017)."}
+mechanism_diagram(sprintf('
+  D  [label = "Job demands\\n(workload, emotional\\ndemands, role conflict)", %s]
+  R  [label = "Job resources\\n(autonomy, support,\\nfeedback, development)", %s]
+  B  [label = "Burnout\\n(exhaustion,\\ncynicism)", %s]
+  E  [label = "Work engagement\\n(vigour, dedication,\\nabsorption)", %s]
+  H  [label = "Health problems\\nAbsence", %s]
+  P  [label = "Performance\\nRetention", %s]
+  D -> B [label = " health\\n impairment"]
+  R -> E [label = " motivation"]
+  B -> H
+  E -> P
+  B -> P [label = " (-)"]
+  R -> B [style = dashed, label = " buffers"]
+  E -> R [style = dashed, label = " job crafting", constraint = false]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome, node_outcome))
+```
+
+Figure \@ref(fig:fig-wl-jdr-sim) illustrates the buffering proposition with
+simulated data. Burnout rises with demands for everyone, but the slope is much
+steeper for employees with few resources.
+
+```{r fig-wl-jdr-sim, fig.cap = "Illustrative simulation of the buffering hypothesis. Burnout rises with job demands, but the slope is flatter for employees with high job resources. Simulated data, not empirical estimates.", fig.height = 4}
+set.seed(2001)
+n <- 1200
+jdr <- tibble(
+  demands = runif(n, 1, 7),
+  resources = runif(n, 1, 7)
+) |>
+  mutate(burnout = 3 + 0.55 * (demands - 4) - 0.45 * (resources - 4) -
+           0.10 * (demands - 4) * (resources - 4) + rnorm(n, 0, 0.6),
+         group = ifelse(resources >= 4, "High job resources", "Low job resources"))
+ggplot(jdr, aes(demands, burnout, colour = group)) +
+  geom_point(alpha = 0.18, size = 1.1) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1.2) +
+  scale_colour_manual(values = c("Low job resources" = pal[["orange"]], "High job resources" = pal[["blue"]])) +
+  scale_x_continuous(breaks = 1:7) +
+  labs(x = "Job demands (1-7)", y = "Burnout (simulated score)", colour = NULL,
+       title = "Resources buffer the strain caused by demands",
+       caption = "Stylised simulation (n = 1,200) with a negative demands x resources interaction.")
+```
+
+Table \@ref(tab:tab-wl-jdr) lists typical demands and resources studied in
+different occupations, which shows how the model's open-ended categories are
+adapted to context.
+
+```{r tab-wl-jdr}
+tibble::tribble(
+  ~Occupation, ~`Typical job demands`, ~`Typical job resources`, ~`Likely outcome if unbalanced`,
+  "Nursing", "Emotional demands, shift work, patient load", "Team support, autonomy in care decisions", "Exhaustion, absence, exit from profession",
+  "Software engineering", "Deadline pressure, on-call interruptions", "Autonomy, learning opportunities, clear priorities", "Cynicism, reduced code quality",
+  "Retail and hospitality", "Customer hostility, emotional labour, irregular hours", "Supervisor support, predictable scheduling", "Turnover, service failures",
+  "Teaching", "Classroom disruption, administrative load", "Collegial support, professional discretion", "Burnout, early career exit",
+  "Remote knowledge work", "Blurred boundaries, communication overload", "Schedule control, manager check-ins, peer contact", "Isolation, overwork"
+) |>
+  book_table(caption = "Examples of job demands and resources across occupations. Categories are illustrative and must be tailored in each study.")
+```
+
+### Evidence and extensions
+
+The dual-process structure is well supported across countries and occupations
+[@schaufeli2004; @bakker2017]. The most important refinement concerns demands.
+@lepine2005 distinguished **challenge stressors** (workload, responsibility, time
+urgency) from **hindrance stressors** (red tape, role ambiguity, politics) and
+showed meta-analytically that challenge stressors relate positively to motivation
+and performance while hindrance stressors relate negatively. @crawford2010
+integrated this distinction into JD-R: challenge demands were positively related
+to engagement, hindrance demands negatively, and both were positively related to
+burnout. A job can therefore be both energising and exhausting.
+
+Evidence on the interaction propositions is more mixed. Buffering and boosting
+effects appear in many studies, but they are typically small and are sensitive to
+how demands and resources are matched. Day-level diary studies show that
+engagement and exhaustion fluctuate within persons, which has moved JD-R toward
+dynamic, within-person tests [@bakker2017].
+
+::: {.debate}
+**Is JD-R a theory or a heuristic?** Because almost any job feature can be labelled
+a demand or a resource, critics argue that JD-R is too flexible to be falsified:
+a feature that predicts burnout becomes a demand, one that predicts engagement
+becomes a resource. The challenge-hindrance distinction sharpens predictions but
+also concedes that the same feature can play either role. Defenders reply that
+the theory specifies distinct processes, mediators, and interactions that can
+fail empirically, and that @bakker2017 added reciprocal and personal-resource
+propositions that are testable. Researchers should therefore classify demands and
+resources *before* seeing the data and justify the classification from the
+occupation's work processes.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Burnout and remote work (conceptual application).** Remote and hybrid work
+change both sides of the JD-R ledger. They typically add resources, notably
+schedule control and fewer commuting demands, and meta-analytic evidence links
+telecommuting to higher perceived autonomy and lower work-family conflict
+[@gajendran2007]. They can also remove resources (informal peer support,
+spontaneous feedback) and add demands (communication overload, blurred boundaries
+between work and home). The randomized experiment at the travel agency described in
+the chapter opening illustrates both sides: home work raised performance and
+reduced quits, but isolation led many employees to return [@bloom2015]. A JD-R
+audit of a hybrid policy therefore asks which resources are lost when people are
+apart and how to replace them (structured check-ins, team days, clear
+availability norms), rather than treating remote work as uniformly good or bad.
+:::
+
+::: {.business-case}
+**Illustrative scenario: an engagement survey that measures the wrong thing.** A
+retailer's annual engagement survey shows falling scores in distribution centres.
+Leadership responds with recognition programmes, a pure resource intervention.
+A JD-R diagnosis separates demands from resources and finds the real driver: a new
+scheduling algorithm that raised unpredictability, a hindrance demand. Resources
+cannot fully offset a hindrance demand that is cheap to remove. The more effective
+intervention restores advance notice of shifts and only then invests in
+recognition.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Workload is positively related to emotional exhaustion, and the
+  relationship is weaker for employees who report high supervisor support.
+- *H2.* Hindrance demands are negatively related to engagement, whereas challenge
+  demands are positively related to engagement.
+- *H3.* Day-level engagement predicts next-day job crafting, which in turn
+  increases job resources.
+
+**Validated scales.** Maslach Burnout Inventory [@maslach2001]. Oldenburg Burnout
+Inventory, which measures exhaustion and disengagement [@demerouti2001]. Utrecht
+Work Engagement Scale, short form [@schaufeli2006].
+
+**Designs.** Multi-wave panels with cross-lagged models. Daily diary studies with
+multilevel models that separate within-person from between-person effects.
+Intervention studies (workload reduction, job crafting training). Linking survey
+data to sickness absence and turnover records.
+
+**Contexts.** Healthcare, education, call centres, hybrid work, platform work.
+:::
+
+::: {.pitfall}
+**Labelling variables after the fact.** Post hoc classification of a feature as a
+demand or resource, chosen to fit the results, makes JD-R unfalsifiable. Specify
+classifications in advance, distinguish challenge from hindrance demands, and
+test the interaction propositions with adequately powered designs rather than
+reporting only main effects.
+:::
+
+## Conservation of Resources Theory {#conservation-of-resources}
+
+::: {.theory-card}
+**Core claim.** People strive to obtain, retain, and protect what they value.
+Stress occurs when resources are threatened, lost, or not regained after
+investment, and resource loss weighs more heavily than equivalent gain.
+
+**Origins.** Stress psychology. @hobfoll1989, reviewed for organizational research
+by @halbesleben2014 and @hobfoll2018.
+
+**Level of analysis.** Individual, with extensions to teams and organizations.
+
+**Key constructs.** Resources (objects, conditions, personal characteristics,
+energies), resource loss, resource investment, loss spirals, gain spirals,
+resource caravans.
+
+**Boundary conditions.** What counts as a resource depends on a person's goals and
+culture, so predictions require careful specification of the resource in
+question.
+
+**Related theories.** [Job demands-resources](#job-demands-resources),
+[Loss aversion](#loss-aversion) (Section \@ref(loss-aversion)), [Prospect theory](#prospect-theory-model) (Section \@ref(prospect-theory-model)).
+:::
+
+@hobfoll1989 proposed conservation of resources (COR) theory as an alternative to
+appraisal-based models of stress. He defined resources broadly: **objects**
+(a home, tools), **conditions** (tenure, a good marriage), **personal
+characteristics** (self-esteem, skills), and **energies** (time, money,
+knowledge). Stress follows when these are threatened or lost, or when people
+invest resources and fail to obtain a return.
+
+Two principles give the theory its distinctive predictions. The **primacy of
+loss** states that resource loss is disproportionately more salient than resource
+gain, a parallel to [loss aversion](#loss-aversion) (Section \@ref(loss-aversion)) in decision research. The
+**resource investment** principle states that people must invest resources to
+protect against loss, recover from it, and gain new resources. From these follow
+the corollaries that people with more resources are less vulnerable to loss and
+better able to gain, and that loss and gain both tend to cumulate in **spirals**
+[@hobfoll2018]. The later formulation also adds a **desperation** principle: when
+resources are outstretched or exhausted, people may switch to defensive,
+sometimes seemingly irrational, behaviour to preserve what is left (Figure \@ref(fig:fig-wl-cor)).
+
+```{r fig-wl-cor, fig.cap = "Illustrative simulation of resource spirals. Employees above a resource threshold tend to accumulate resources (gain spirals), while those below it tend to lose them (loss spirals), because both loss and gain are self-reinforcing. Simulated trajectories, not empirical data.", fig.height = 4}
+set.seed(1989)
+n_emp <- 40
+periods <- 12
+start <- seq(2.2, 7.8, length.out = n_emp)
+traj <- lapply(seq_len(n_emp), function(i) {
+  r <- numeric(periods)
+  r[1] <- start[i]
+  for (t in 2:periods) {
+    r[t] <- r[t - 1] + 0.12 * (r[t - 1] - 5) + rnorm(1, 0, 0.25)
+    r[t] <- min(max(r[t], 0), 10)
+  }
+  tibble(id = i, period = seq_len(periods), resources = r,
+         start_group = ifelse(start[i] >= 5, "Started above threshold", "Started below threshold"))
+}) |> bind_rows()
+ggplot(traj, aes(period, resources, group = id, colour = start_group)) +
+  geom_hline(yintercept = 5, linetype = "dashed", colour = ink[["muted"]]) +
+  geom_line(alpha = 0.55, linewidth = 0.6) +
+  annotate("label", x = 1, y = 5, label = "Resource threshold", hjust = 0, size = 3.2,
+           colour = ink[["secondary"]], fill = ink[["surface"]], label.size = 0) +
+  scale_colour_manual(values = c("Started above threshold" = pal[["blue"]], "Started below threshold" = pal[["orange"]])) +
+  scale_x_continuous(breaks = seq(1, periods, 2)) +
+  coord_cartesian(ylim = c(0, 10)) +
+  labs(x = "Period", y = "Resource stock (index)", colour = NULL,
+       title = "Gain spirals and loss spirals",
+       caption = "Stylised: resources change by 0.12 x (distance from threshold) plus noise each period. 40 simulated employees.")
+```
+
+COR has become one of the most cited theories in organizational behaviour, used
+to explain burnout, work-family conflict, the effects of abusive supervision, and
+why employees withhold discretionary effort when they feel depleted
+[@halbesleben2014]. Its breadth is also its main weakness. @halbesleben2014
+observe that almost anything has been called a resource, and they propose defining
+a resource as anything an individual perceives as helping attain his or her goals.
+That definition improves coherence but makes resources subjective and
+goal-dependent, which complicates measurement.
+
+::: {.business-case}
+**Illustrative scenario: protecting resources during a reorganization.** A bank
+merges two operations teams. COR predicts that the threat of losing valued
+conditions (a known role, a trusted manager, seniority) will produce stress before
+any loss occurs, and that employees who already have fewer resources (new hires,
+those caring for family members) will be most vulnerable to a loss spiral. Practical
+responses follow from the theory: announce what will *not* change, protect key
+resources such as schedule predictability during the transition, and target
+support at the employees with the thinnest resource reserves.
+:::
+
+## Affective Events Theory {#affective-events-theory}
+
+::: {.theory-card}
+**Core claim.** Discrete events at work trigger emotional reactions. These
+reactions drive immediate, affect-driven behaviours and, accumulated over time,
+shape attitudes such as job satisfaction, which in turn drive considered,
+judgment-driven behaviours.
+
+**Origins.** Organizational psychology. @weiss1996.
+
+**Level of analysis.** Individual, with emphasis on within-person variation over
+time.
+
+**Key constructs.** Work environment features, work events (hassles and uplifts),
+affective reactions (moods and emotions), affective dispositions, work attitudes,
+affect-driven behaviour, judgment-driven behaviour.
+
+**Boundary conditions.** Most useful for explaining short-term fluctuations and
+spontaneous behaviours. Less informative for stable, between-person differences
+in attitudes.
+
+**Related theories.** [Appraisal theory](#appraisal-theory) (Section \@ref(appraisal-theory)),
+[Affect circumplex](#affect-circumplex) (Section \@ref(affect-circumplex)),
+[Broaden-and-build theory](#broaden-and-build-theory) (Section \@ref(broaden-and-build-theory)).
+:::
+
+For decades, job satisfaction research treated satisfaction as an emotional
+state and studied it as a stable, between-person attitude explained by stable
+job features. @weiss1996 argued that this conflated two different things. Job
+satisfaction is an **evaluative judgment** about one's job. Emotions and moods are
+**affective experiences** that occur in response to events, fluctuate within a
+day, and have their own consequences. Affective events theory (AET) places the
+**event** at the centre of the analysis (Figure \@ref(fig:fig-wl-aet)).
+
+```{r fig-wl-aet, fig.cap = "Affective events theory. Features of the work environment make some events more likely. Events trigger affective reactions, moderated by dispositions. Affect drives spontaneous behaviour directly and, through attitudes, judgment-driven behaviour. Adapted from Weiss and Cropanzano (1996)."}
+mechanism_diagram(sprintf('
+  W [label = "Work environment\\nfeatures", %s]
+  E [label = "Work events\\n(hassles, uplifts)", %s]
+  A [label = "Affective reactions\\n(moods, emotions)", %s]
+  D [label = "Dispositions\\n(trait affect)", %s]
+  S [label = "Work attitudes\\n(job satisfaction)", %s]
+  B1 [label = "Affect-driven\\nbehaviour\\n(helping, outbursts)", %s]
+  B2 [label = "Judgment-driven\\nbehaviour\\n(quitting decisions)", %s]
+  W -> E -> A
+  D -> A [style = dashed]
+  A -> B1
+  A -> S -> B2
+  W -> S [style = dotted, label = " cognitive\\n evaluation"]
+', node_construct, node_construct, node_mechanism, node_moderator, node_mechanism, node_outcome, node_outcome))
+```
+
+AET makes three contributions. First, it distinguishes **affect-driven
+behaviours**, such as helping a colleague in a good mood or snapping at a customer
+after an insult, from **judgment-driven behaviours**, such as deciding to quit,
+which follow from considered attitudes. Second, it implies that the *pattern* of
+events over time, not only the average job, shapes satisfaction. Third, it
+requires methods that capture within-person dynamics. @weiss1999 showed that mood
+and beliefs about the job independently predict satisfaction, and experience
+sampling studies found that a substantial share of the variance in mood and job
+satisfaction lies within persons over time [@ilies2002].
+
+::: {.business-case}
+**Service work and the management of events.** In front-line service jobs, a small
+number of hostile customer interactions can dominate an employee's day. AET
+suggests that managers can influence affect by changing the *frequency* of
+negative events (better routing of difficult calls, clear escalation paths) and by
+providing recovery opportunities after them (short breaks, supervisor debriefs),
+not only by improving average pay or job content. Because affect-driven behaviour is
+immediate, the timing of support matters: help offered shortly after an incident
+prevents spillover into the next customer interaction.
+:::
+
+## Leader-Member Exchange {#leader-member-exchange}
+
+::: {.theory-card}
+**Core claim.** Leaders develop relationships of different quality with different
+followers. High-quality exchanges, built on trust, respect, and mutual obligation,
+lead to better performance, attitudes, and retention than low-quality exchanges
+limited to the formal employment contract.
+
+**Origins.** Organizational psychology. The vertical dyad linkage studies of
+@dansereau1975, consolidated as leader-member exchange (LMX) theory by
+@graen1995.
+
+**Level of analysis.** The leader-follower dyad, with extensions to the
+differentiation of relationships within teams.
+
+**Key constructs.** LMX quality, role making, leadership making (stranger,
+acquaintance, partnership), LMX differentiation, in-group and out-group.
+
+**Boundary conditions.** Assumes leaders have discretion over resources,
+assignments, and latitude. Effects of differentiation depend on whether team
+members see it as fair.
+
+**Related theories.** [Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Transformational leadership](#transformational-leadership),
+[Organizational justice](#organizational-justice),
+[Psychological safety](#psychological-safety) (Section \@ref(psychological-safety)).
+:::
+
+### Origins and intellectual history
+
+Most early leadership theories assumed an **average leadership style**: a leader
+behaves in roughly the same way toward everyone, and that style can be described by
+averaging subordinates' ratings. @dansereau1975 challenged this assumption with a
+longitudinal study of managers and their direct reports. They found that managers
+formed distinct relationships with different subordinates within the first months:
+some became trusted assistants with latitude and influence, others were managed
+through formal authority. They called this the **vertical dyad linkage** approach,
+and it implied that the proper unit of analysis is the dyad, not the leader.
+
+@graen1995 reviewed twenty-five years of subsequent work and described the
+theory's evolution in four stages: discovering differentiated dyads, linking
+exchange quality to outcomes, describing how partnerships are built (**leadership
+making**), and aggregating dyads to the group and network levels. They argued that
+leaders should aim to offer every follower the opportunity to develop a
+high-quality relationship rather than accept a fixed in-group and out-group.
+
+### Core logic and propositions
+
+LMX is an application of [social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)) to the
+leader-follower relationship [@cropanzano2005]. Leaders control resources that
+followers value: interesting assignments, information, support, discretion, and
+advocacy. Followers can offer effort beyond the formal role, loyalty, and
+expertise. When early exchanges go well, each side extends more, and the
+relationship moves through three stages: **stranger** (formal, contractual
+exchange), **acquaintance** (testing and limited reciprocity), and **mature
+partnership** (high trust, mutual influence, and obligation) [@graen1995].
+
+- **P1 (Differentiation).** Leaders form relationships of varying quality with
+  members of the same unit.
+- **P2 (Outcomes).** Higher LMX quality is associated with higher performance,
+  satisfaction, commitment, and lower turnover intentions.
+- **P3 (Reciprocity).** LMX develops through reciprocal exchange, with early
+  interactions and perceived similarity shaping its trajectory.
+- **P4 (Team context).** Within a team, large differences in LMX quality can
+  harm cooperation and fairness perceptions unless differentiation is seen as
+  based on contribution.
+
+### Evidence and extensions
+
+@gerstner1997 meta-analysed the early literature. LMX was associated with
+supervisor-rated performance, satisfaction with the supervisor, overall
+satisfaction, [organizational commitment](#organizational-commitment), role clarity, and lower turnover
+intentions, but not reliably with actual turnover. Two construct issues stood
+out: leaders' and members' ratings of the same relationship agreed only
+moderately, and correlations were stronger when outcomes were reported by the
+same person who rated LMX. @dulebohn2012 extended the synthesis to antecedents:
+follower characteristics (competence, conscientiousness), leader characteristics
+(expectations of the follower, transformational behaviour), and interpersonal
+factors (perceived similarity, liking) all predict LMX quality.
+
+Measurement has evolved with the theory. The seven-item LMX-7 treats exchange
+quality as a single dimension [@graen1995], whereas the multidimensional LMX-MDM
+separates affect, loyalty, contribution, and professional respect [@liden1998].
+More recent work studies **LMX differentiation** at the team level and
+**relative LMX**, a member's standing compared with teammates, which links the
+theory to [social comparison](#social-comparison-theory) (Section \@ref(social-comparison-theory)).
+
+::: {.debate}
+**Is LMX a cause or a consequence of performance?** Leaders form better
+relationships with followers who are already competent, and high performers
+receive more resources. Cross-sectional correlations between LMX and performance
+therefore confound the effect of the relationship with the selection of high
+performers into good relationships. The disagreement between leader and member
+ratings adds a further problem: if two parties see the same relationship
+differently, which view is "the" relationship? Longitudinal designs, dyadic
+models that use both reports, and instruments for early relationship formation
+are needed to separate the mechanisms [@antonakis2010].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Illustrative scenario: LMX in team management.** A newly promoted engineering
+manager inherits eight engineers. Within weeks, she relies heavily on two senior
+engineers for design decisions and status updates, while the others receive
+assignments by ticket. LMX theory predicts that the two will become more
+committed and influential and that the remaining six may disengage, especially if
+they see the split as favouritism. Practical steps drawn from the leadership-making
+stage model include offering every team member a stretch assignment early (an
+opening move in the exchange), holding regular one-to-one meetings with all
+reports, and making the criteria for access to high-visibility work explicit so
+that differentiation is seen as earned. Monitoring the *spread* of relationship
+quality, not just its average, becomes part of the manager's dashboard.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* LMX quality is positively related to organizational citizenship behaviour,
+  and the relationship is mediated by felt obligation.
+- *H2.* LMX differentiation within teams is negatively related to team
+  coordination when team members perceive differentiation as unfair.
+- *H3.* Relative LMX (a member's LMX compared with the team mean) predicts
+  self-efficacy beyond the member's absolute LMX.
+
+**Validated scales.** LMX-7 [@graen1995]. LMX-MDM [@liden1998].
+
+**Designs.** Dyadic data from both leaders and members analysed with dyadic or
+multilevel models. Longitudinal studies of newly formed dyads. Team-level designs
+with polynomial regression for relative standing. Field experiments in leader
+training that encourage equal opportunities for exchange.
+
+**Contexts.** New-hire onboarding, matrix organizations, remote teams, sales
+territories.
+:::
+
+::: {.pitfall}
+**Ignoring reverse causality and same-source bias.** A survey that asks employees
+to rate both their relationship with the manager and their own engagement will
+almost always find a strong correlation. Use supervisor- or record-based
+outcomes, measure LMX before outcomes, and model the possibility that
+performance shapes the relationship.
+:::
+
+## Transformational Leadership {#transformational-leadership}
+
+::: {.theory-card}
+**Core claim.** Transformational leaders raise followers' motivation and
+performance beyond what exchange-based incentives achieve by articulating an
+inspiring vision, serving as role models, stimulating new thinking, and attending
+to individual needs.
+
+**Origins.** Political science and organizational psychology. @burns1978
+distinguished transforming from transactional political leadership. @bass1985
+operationalised the distinction for organizations.
+
+**Level of analysis.** Individual leader and followers, with group-level
+extensions.
+
+**Key constructs.** Idealised influence (charisma), inspirational motivation,
+intellectual stimulation, individualised consideration, contingent reward,
+management by exception, laissez-faire leadership.
+
+**Boundary conditions.** Effects are thought to be stronger in uncertain or
+crisis conditions and when followers identify with the collective. Measurement
+problems limit what current evidence can show (see the debate below).
+
+**Related theories.** [Leader-member exchange](#leader-member-exchange),
+[Path-goal theory](#path-goal-theory),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)),
+[Upper echelons theory](#upper-echelons-theory) (Section \@ref(upper-echelons-theory)).
+:::
+
+### Origins and intellectual history
+
+@burns1978, a political historian, contrasted two kinds of leaders. **Transactional**
+leaders exchange one thing for another: jobs for votes, subsidies for
+contributions. **Transforming** leaders engage followers so that both are raised
+to higher levels of motivation and morality. @bass1985 brought the idea into
+organizational psychology and, unlike Burns, treated transformational and
+transactional leadership as complementary rather than opposite ends of a single
+continuum. A leader can do both, and transformational behaviour *adds* to the
+effect of transactional leadership, an idea known as the **augmentation
+effect**. Elaborated by Bass and colleagues into what they called the "full range"
+model of leadership, this framework became the most researched approach to
+leadership of the following three decades.
+
+### Core logic and propositions
+
+The full-range model distinguishes three families of behaviour
+(Table \@ref(tab:tab-wl-leadership) compares them with the other leadership
+theories in this chapter):
+
+- **Transformational**: *idealised influence* (acting as a role model who
+  inspires trust and identification), *inspirational motivation* (articulating an
+  appealing vision), *intellectual stimulation* (challenging assumptions and
+  encouraging creativity), and *individualised consideration* (coaching and
+  attending to each follower's needs).
+- **Transactional**: *contingent reward* (clarifying expectations and rewarding
+  their achievement) and *management by exception* (monitoring and correcting
+  deviations, either actively or passively).
+- **Laissez-faire**: the avoidance of leadership responsibilities.
+
+The theory's central proposition is that transformational behaviours change
+followers' values, self-concepts, and identification with the collective, so that
+they pursue collective goals for intrinsic reasons rather than for rewards alone.
+
+```{r tab-wl-leadership}
+tibble::tribble(
+  ~Feature, ~`Leader-member exchange`, ~`Transformational leadership`, ~`Path-goal theory`,
+  "Focal unit", "Leader-follower dyad", "Leader and followers as a group", "Leader, follower, and task",
+  "Core mechanism", "Reciprocal social exchange", "Identification and value change", "Expectancy: clarifying paths and raising valences",
+  "Key behaviours", "Offering latitude, support, and challenging assignments", "Vision, role modelling, stimulation, consideration", "Directive, supportive, participative, achievement-oriented",
+  "Contingency view", "Weak: quality varies by relationship", "Weak: broadly effective", "Strong: best behaviour depends on task and follower",
+  "Main measure", "LMX-7, LMX-MDM", "Multifactor Leadership Questionnaire", "Leader behaviour scales",
+  "Main critique", "Reverse causality, rater disagreement", "Conflates behaviour with effects", "Mixed tests, many untested propositions"
+) |>
+  book_table(caption = "Three leadership theories compared.")
+```
+
+### Evidence and extensions
+
+The quantitative evidence is large. @judge2004 meta-analysed studies of the full
+range model and found that transformational leadership was strongly related to
+follower satisfaction, motivation, and rated leader effectiveness. Contingent
+reward, a transactional behaviour, showed overall validities of a similar size and
+was in some settings as predictive as transformational leadership, while
+laissez-faire leadership was negatively related to outcomes. The authors also found
+that the relative validity of the dimensions differed across settings and that
+transformational and contingent reward leadership were highly correlated, which
+made their unique effects hard to separate.
+
+Experimental evidence is thinner but exists. In a small field experiment,
+@barling1996 trained bank branch managers in transformational leadership and
+found improvements in subordinates' perceptions of their managers, in
+subordinates' organizational commitment, and in branch-level financial outcomes
+compared with an untrained control group. The study is often cited because it
+combines random assignment with objective outcomes, but its sample was small.
+
+::: {.debate}
+**Back to the drawing board?** @vanknippenberg2013 published a sweeping critique of
+charismatic-transformational leadership research. They argued, first, that the
+construct lacks an independent definition: it is defined largely by its effects
+(followers who are inspired and perform beyond expectations), which makes the
+link between leadership and outcomes partly tautological. Second, the theory does
+not explain why these four particular dimensions belong together or how each
+produces its effects. Third, the dominant measures, especially the Multifactor
+Leadership Questionnaire, ask followers to rate behaviours in terms that already
+include positive outcomes, and the proposed dimensional structure is often not
+reproduced empirically. They recommended abandoning the umbrella construct and
+studying specific, well-defined leader behaviours and their mechanisms. A related
+methodological critique notes that follower ratings of leadership are endogenous
+to performance, liking, and attributions, so most observational estimates are
+biased [@antonakis2010]. Defenders point to experimental studies like
+@barling1996 and argue that refinement, not abandonment, is the appropriate
+response. The debate is not settled, but it has raised the standard of evidence
+expected of leadership research.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Leadership development programmes.** Transformational leadership is the
+intellectual backbone of many corporate leadership development curricula, which
+teach managers to communicate a vision, coach individuals, and encourage
+challenge to the status quo. The evidence suggests three design principles. First,
+do not neglect transactional basics: clear goals and contingent recognition are
+consistently effective [@judge2004]. Second, evaluate programmes with outcomes
+that are not rated by the same followers who rate the leader, as
+@barling1996 did with branch financial data. Third, teach specific behaviours
+(how to give developmental feedback, how to frame change around shared values)
+rather than an abstract "inspirational style", in line with
+@vanknippenberg2013.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Leaders' intellectual stimulation is positively related to team
+  creativity, and the relationship is mediated by psychological safety.
+- *H2.* Contingent reward leadership explains variance in follower performance
+  beyond transformational leadership in routine production settings.
+- *H3.* Training in vision communication increases objectively measured unit
+  performance relative to a control group.
+
+**Validated scales.** The Multifactor Leadership Questionnaire, developed from
+@bass1985, remains the most common instrument, but users should report evidence
+on its factor structure in their sample and consider behaviour-specific
+alternatives.
+
+**Designs.** Randomised leadership training with objective outcomes. Laboratory
+experiments that manipulate a specific leader behaviour (for example, a vision
+speech). Designs that address endogeneity, such as instrumental variables or
+exogenous leader turnover [@antonakis2010].
+
+**Contexts.** Organizational change and turnaround, start-ups, military and
+public-service organizations, healthcare teams.
+:::
+
+::: {.pitfall}
+**Measuring leadership with outcomes.** Items such as "my leader motivates me to
+do more than I expected" fold the dependent variable into the independent
+variable. Use behaviour-specific measures, separate sources, and designs that
+can support causal claims before concluding that a leader's style caused
+performance.
+:::
+
+## Path-Goal Theory {#path-goal-theory}
+
+::: {.theory-card}
+**Core claim.** Effective leaders increase followers' motivation by clarifying the
+paths to work goals, removing obstacles, and making goal attainment more
+rewarding. The behaviour that does this best depends on the task and the
+follower.
+
+**Origins.** Organizational psychology. @house1971, reformulated in
+@house1996.
+
+**Level of analysis.** Leader-follower dyad and work group.
+
+**Key constructs.** Directive, supportive, participative, and achievement-oriented
+leader behaviour, task structure, follower ability, locus of control,
+expectancies, valences.
+
+**Boundary conditions.** Leader behaviour matters only where the situation does not
+already provide clarity and rewards, that is, where there are few
+**substitutes for leadership** [@kerr1978].
+
+**Related theories.** [Expectancy theory](#expectancy-theory) (Section \@ref(expectancy-theory)),
+[Transformational leadership](#transformational-leadership),
+[Goal-setting theory](#goal-setting-theory) (Section \@ref(goal-setting-theory)).
+:::
+
+@house1971 built path-goal theory directly on [expectancy theory](#expectancy-theory) (Section \@ref(expectancy-theory))
+[@vroom1964]. Followers are motivated when they believe effort leads to
+performance and performance leads to valued rewards. The leader's job is to
+strengthen both links: clarify what effective performance requires, remove
+roadblocks, provide support, and tie rewards to goal attainment. Because these
+needs vary, the theory is explicitly **contingent**. Directive leadership helps
+when tasks are ambiguous and followers inexperienced, but is redundant or even
+irritating when tasks are routine and well understood. Supportive leadership
+helps most when tasks are stressful, boring, or dangerous. Participative
+leadership suits followers who want control, and achievement-oriented leadership
+suits complex tasks where high standards and confidence in followers raise
+expectancies (Figure \@ref(fig:fig-wl-pathgoal)).
+
+```{r fig-wl-pathgoal, fig.cap = "Path-goal theory. Leader behaviour affects follower expectancies and valences, which drive motivation and performance. Task and follower characteristics determine which behaviour is effective. Adapted from House (1971, 1996)."}
+mechanism_diagram(sprintf('
+  L [label = "Leader behaviour\\n(directive, supportive,\\nparticipative,\\nachievement-oriented)", %s]
+  X [label = "Follower expectancies\\nand valences\\n(path clarity, rewards)", %s]
+  M [label = "Motivation\\nSatisfaction\\nPerformance", %s]
+  T [label = "Task characteristics\\n(structure, stress)", %s]
+  F [label = "Follower characteristics\\n(ability, locus of control)", %s]
+  L -> X -> M
+  T -> X [style = dashed]
+  F -> X [style = dashed]
+', node_construct, node_mechanism, node_outcome, node_moderator, node_moderator))
+```
+
+The evidence is mixed. A meta-analysis by @wofford1993 found support for some
+propositions and not for others, and noted that many tests used weak designs and
+measures. @house1996 acknowledged these limitations and reformulated the theory
+around a broader set of leader behaviours, including work facilitation,
+interaction facilitation, group-oriented decision processes, representation and
+networking, and value-based behaviour, while retaining the core idea that leaders
+compensate for what the environment does not provide. A related line of work on
+**substitutes for leadership** argued that professional training, intrinsically
+satisfying tasks, and formalised procedures can make some leader behaviours
+unnecessary [@kerr1978]. Path-goal theory's lasting contribution is less any single
+prediction than the principle that leadership style should be matched to the
+motivational deficits of a specific situation.
+
+::: {.business-case}
+**Illustrative scenario: one manager, two teams.** A regional operations manager
+oversees a newly formed analytics team working on ill-defined problems and a
+mature payroll team running a stable, highly regulated process. Path-goal theory
+predicts that directive behaviour (clear problem definitions, milestones, and
+methods) will raise the analytics team's expectancies, while the same behaviour
+would be redundant for payroll. The payroll team, facing repetitive work and
+deadline stress at month end, benefits more from supportive behaviour and from
+removing obstacles such as late data from other departments. The prescription is
+not a single best style but a deliberate diagnosis of what each team lacks.
+:::
+
+## Psychological Contract Theory {#psychological-contract}
+
+::: {.theory-card}
+**Core claim.** Employees hold beliefs about the reciprocal promises that bind them
+and their employer. When they perceive that the organization has broken those
+promises, they react with feelings of violation and reduced trust, commitment,
+and effort, even if no written agreement was breached.
+
+**Origins.** Organizational behaviour. @rousseau1989 reconceptualised the
+psychological contract as an individual-level belief, extended in @rousseau1995.
+@robinson1994 and @morrison1997 developed the theory of breach and violation.
+
+**Level of analysis.** Individual employee, in relation to the organization and its
+agents.
+
+**Key constructs.** Perceived promises, transactional and relational contracts,
+breach, violation, reneging, incongruence.
+
+**Boundary conditions.** Applies where employment involves promises that are
+implicit, long-term, or incompletely specified. Contract content varies with
+career stage, labour market, and national employment norms.
+
+**Related theories.** [Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Organizational justice](#organizational-justice),
+[Organizational commitment](#organizational-commitment).
+:::
+
+### Core logic
+
+Earlier writers used "psychological contract" loosely to describe unwritten
+expectations between employees and employers. @rousseau1989 gave the concept a
+precise meaning: an individual's **belief** about the terms of a reciprocal
+exchange with another party, grounded in a perceived **promise**. Because it is a
+belief, two employees in the same job can hold different contracts, and the
+organization, which consists of many agents (recruiters, managers, HR policies),
+cannot simply read off what it has promised. @rousseau1995 distinguished
+**transactional** contracts, which are specific, short-term, and largely monetary,
+from **relational** contracts, which are open-ended and include loyalty, support,
+and development. Later typologies add balanced and transitional forms (Table \@ref(tab:tab-wl-contract)).
+
+```{r tab-wl-contract}
+tibble::tribble(
+  ~Feature, ~`Transactional contract`, ~`Relational contract`,
+  "Time frame", "Short-term, specified duration", "Open-ended, long-term",
+  "Content", "Pay for defined performance", "Pay plus loyalty, development, security",
+  "Specificity", "Explicit and narrow", "Implicit and broad",
+  "Typical setting", "Contract and gig work, fixed-term projects", "Career employment, internal labour markets",
+  "Typical reaction to breach", "Renegotiation or exit", "Felt betrayal, withdrawal of discretionary effort",
+  "Employer lever", "Clear terms and prompt payment", "Consistent signals from managers and policies"
+) |>
+  book_table(caption = "Transactional and relational psychological contracts, following Rousseau (1995).")
+```
+
+@morrison1997 separated two reactions that earlier work had merged. **Breach** is
+the cognitive perception that the organization has failed to fulfil one or more
+obligations. **Violation** is the emotional experience of anger and betrayal that
+may follow. Breach can arise from **reneging**, when agents knowingly fail to keep
+a promise, or from **incongruence**, when the two parties understood the promise
+differently. Whether breach turns into violation depends on how the employee
+interprets it, especially on attributions of intent and perceptions of fairness.
+
+### Evidence
+
+The landmark longitudinal study by @robinson1994 surveyed graduates of a master
+of business administration programme when they took up new jobs and again two
+years later. More than half reported that their
+employer had violated the psychological contract, which led the authors to
+describe violation as the norm rather than the exception. Violation was associated
+with lower trust, satisfaction, and intentions to remain. A follow-up longitudinal
+study confirmed that breach and violation are distinct, and that the step from one
+to the other depends on attributions of reneging and perceived unfairness
+[@robinson2000]. The meta-analysis by @zhao2007 found that breach is related to
+feelings of violation and mistrust, to lower job satisfaction and organizational
+commitment, to higher turnover intentions, and to reduced citizenship behaviour
+and in-role performance, with affective reactions mediating many of these links.
+
+::: {.debate}
+**Whose contract?** Because the psychological contract exists in the employee's
+mind, critics question whether "contract" is the right metaphor: a contract
+normally requires mutual agreement, and the organization is not a single party
+that can hold beliefs. Measurement adds a second problem. Many studies ask
+employees directly how well promises have been fulfilled, which mixes perceived
+promises, perceived delivery, and evaluation in a single item. Designs that
+measure promises at entry and fulfilment later, or that compare employee and
+manager views, are more informative.
+:::
+
+::: {.business-case}
+**Illustrative scenario: return-to-office policies as contract change.** A
+software firm hired many employees during a period when remote work was described
+in recruiting conversations as permanent. Two years later, it mandates four office
+days per week. Legally, nothing has been breached, since the employment contracts
+never mentioned location. Psychological contract theory predicts that employees
+who perceived a promise will experience breach, and those who attribute it to
+reneging will experience violation and withdraw discretionary effort or leave.
+The theory suggests three mitigations: acknowledge the change explicitly as a
+change, explain the reasons (to shift attributions from reneging to necessity),
+and offer something in exchange, such as transition time or flexible days, so that
+the reciprocal balance is restored.
+:::
+
+## Organizational Justice {#organizational-justice}
+
+::: {.theory-card}
+**Core claim.** Employees evaluate not only what they receive (distributive
+justice) but also how decisions are made (procedural justice) and how they are
+treated and informed (interactional justice). Each form of fairness has distinct
+effects on attitudes and behaviour.
+
+**Origins.** Social psychology and organizational behaviour.
+[Equity theory](#equity-theory) (Section \@ref(equity-theory)) [@adams1965], procedural justice in legal settings
+[@thibaut1975], allocation procedures [@leventhal1980], and interactional justice
+[@bies1986]. Integrated by @colquitt2001a and @colquitt2001.
+
+**Level of analysis.** Individual perceptions of organizational decisions, with
+extensions to team justice climate.
+
+**Key constructs.** Distributive, procedural, interpersonal, and informational
+justice, voice, fair process effect.
+
+**Boundary conditions.** The weight of procedural justice is greatest when outcomes
+are unfavourable or uncertain. Reactions to voice vary with cultural values such
+as power distance [@brockner2001b].
+
+**Related theories.** [Equity theory](#equity-theory) (Section \@ref(equity-theory)),
+[Psychological contract](#psychological-contract),
+[Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Leader-member exchange](#leader-member-exchange).
+:::
+
+### Origins and intellectual history
+
+Justice research began with outcomes. [Equity theory](#equity-theory) (Section \@ref(equity-theory)) proposed
+that people compare their ratio of outcomes to inputs with that of others and
+feel distress when the ratios differ [@adams1965]. This is **distributive
+justice**. @thibaut1975 shifted attention to process. Studying legal dispute
+resolution, they found that people's satisfaction depended heavily on **process
+control**, the opportunity to present their case, even when they had no control
+over the final decision. This became known as the **voice** effect. @leventhal1980
+extended procedural justice to organizational allocation decisions and proposed six
+rules that make procedures fair. @bies1986 added **interactional justice**: the
+quality of interpersonal treatment people receive when procedures are enacted,
+including truthfulness, justification, respect, and propriety.
+
+### Core logic and propositions
+
+Table \@ref(tab:tab-wl-justice) summarises the four dimensions that most
+researchers now use, following the construct validation by @colquitt2001a, which
+showed that separating interactional justice into interpersonal and informational
+components fit the data better than three-factor alternatives.
+
+```{r tab-wl-justice}
+tibble::tribble(
+  ~Dimension, ~`Focal question`, ~`Fairness criteria`, ~`Key source`,
+  "Distributive", "Are outcomes fair given contributions?", "Equity (also equality or need in some settings)", "Adams (1965)",
+  "Procedural", "Is the decision process fair?", "Voice, consistency, bias suppression, accuracy, correctability, representation, ethicality", "Thibaut & Walker (1975), Leventhal (1980)",
+  "Interpersonal", "Was I treated with dignity and respect?", "Respect, propriety", "Bies & Moag (1986)",
+  "Informational", "Was the decision explained truthfully and adequately?", "Truthfulness, justification, timeliness", "Bies & Moag (1986)"
+) |>
+  book_table(caption = "Four dimensions of organizational justice, following Colquitt (2001).")
+```
+
+The theory's main propositions are:
+
+- **P1 (Distinctiveness).** The justice dimensions are related but distinct, and
+  each explains unique variance in outcomes [@colquitt2001].
+- **P2 (Targets).** Procedural justice is most strongly tied to evaluations of the
+  organization and its systems, while interpersonal and informational justice are
+  most strongly tied to evaluations of the decision agent, typically the
+  supervisor.
+- **P3 (Fair process effect).** Fair procedures and treatment soften negative
+  reactions to unfavourable outcomes. Procedural justice matters most when
+  outcomes are poor [@brockner1996].
+- **P4 (Behaviour).** Perceived injustice leads to withdrawal, reduced citizenship,
+  and retaliation, while justice fosters trust, commitment, and cooperation.
+
+Figure \@ref(fig:fig-wl-fairprocess) sketches the interaction behind P3.
+
+```{r fig-wl-fairprocess, fig.cap = "Stylised fair process effect. When outcomes are favourable, procedures matter little. When outcomes are unfavourable, fair procedures and treatment greatly reduce negative reactions. Pattern consistent with the interaction reviewed by Brockner and Wiesenfeld (1996). Not empirical data.", fig.height = 3.8}
+fp <- tibble::tribble(
+  ~outcome, ~process, ~support,
+  "Unfavourable outcome", "Low procedural fairness", 2.0,
+  "Unfavourable outcome", "High procedural fairness", 4.1,
+  "Favourable outcome", "Low procedural fairness", 5.3,
+  "Favourable outcome", "High procedural fairness", 5.8
+) |>
+  mutate(outcome = factor(outcome, levels = c("Unfavourable outcome", "Favourable outcome")))
+ggplot(fp, aes(outcome, support, colour = process, group = process)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 3) +
+  annotate("segment", x = 0.92, xend = 0.92, y = 2.1, yend = 4.0,
+           colour = ink[["muted"]], linewidth = 0.4,
+           arrow = grid::arrow(ends = "both", length = grid::unit(0.08, "inches"))) +
+  annotate("text", x = 0.88, y = 3.05, label = "Large gap:\nprocess matters\nmost here",
+           hjust = 1, size = 3.2, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("High procedural fairness" = pal[["blue"]], "Low procedural fairness" = pal[["orange"]])) +
+  scale_y_continuous(limits = c(1, 7), breaks = 1:7) +
+  labs(x = NULL, y = "Support for the decision (1-7)", colour = NULL,
+       title = "Procedural fairness matters most when outcomes are bad",
+       caption = "Stylised values chosen to illustrate the outcome x procedure interaction.")
+```
+
+### Evidence and extensions
+
+The meta-analysis by @colquitt2001 integrated twenty-five years of research. It
+found that the justice dimensions are strongly correlated but distinguishable,
+that procedural justice predicts a wide range of attitudes and behaviours, and that
+interpersonal and informational justice add explanatory power beyond procedural
+and distributive justice. Two field studies became classics. In a manufacturing
+company that imposed a temporary pay cut, @greenberg1990 found that employee theft
+rose in the affected plants, and that it rose much less in the plant where
+management explained the cut thoroughly and with expressed regret. In a study of
+terminated employees, @lind2000 found that how fairly people felt they had been
+treated at the time of termination was a strong predictor of whether they
+filed wrongful-termination claims. Both studies show that the *manner* of an
+unfavourable decision has economic consequences.
+
+::: {.debate}
+**How many dimensions, and is fairness one judgment?** The four-factor structure
+is well supported psychometrically, but the dimensions are highly correlated and
+often have similar effects. Some researchers therefore argue for an **overall
+justice** judgment that people form quickly and then use as a heuristic, with the
+specific dimensions as its inputs. A second debate concerns the boundary between
+interactional and procedural justice: if a respectful explanation is part of the
+procedure, is it a separate dimension? Cultural research adds a third: the voice
+effect is weaker in high power-distance settings, where employees expect less say
+in decisions [@brockner2001b].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Layoffs and procedural justice.** Layoffs are the clearest test of the fair
+process effect: the outcome is unfavourable by definition, for victims and often
+for survivors. The research above suggests a practical checklist. Use consistent,
+pre-announced criteria (consistency and bias suppression). Give employees a way
+to correct errors in the data used for selection (correctability). Explain the
+business reasons candidly and early (informational justice). Deliver the news in
+person, privately, and with respect, never by mass e-mail (interpersonal justice).
+Provide fair severance and outplacement support (distributive justice). The
+evidence that poor treatment at termination predicts legal claims [@lind2000] and
+that explanations reduce retaliation [@greenberg1990] means these steps reduce
+legal and operational risk as well as human cost. Survivors watch how departing
+colleagues are treated and update their own trust and commitment accordingly
+[@brockner1996].
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Informational justice during an organizational change is positively
+  related to change acceptance, and the effect is stronger when the change is
+  unfavourable to the employee.
+- *H2.* Interpersonal justice from the supervisor predicts supervisor-directed
+  citizenship behaviour more strongly than procedural justice does.
+- *H3.* Team justice climate moderates the relationship between individual
+  justice perceptions and team commitment.
+
+**Validated scales.** Colquitt's four-dimension organizational justice measure
+[@colquitt2001a].
+
+**Designs.** Vignette and laboratory experiments manipulating outcome and process
+independently. Field quasi-experiments around layoffs, pay changes, or appraisal
+system redesign. Multilevel designs for justice climate. Archival data on
+grievances and legal claims.
+
+**Contexts.** Performance appraisal, pay decisions, downsizing, algorithmic
+management, promotion systems.
+:::
+
+::: {.pitfall}
+**Treating fairness as an outcome only.** Many organizations evaluate decisions
+solely by asking whether outcomes are defensible. Justice research shows that
+process and treatment often matter as much, especially when the outcome is bad.
+In research, the parallel mistake is to measure a single global fairness item
+and attribute effects to a specific dimension.
+:::
+
+## Organizational Commitment {#organizational-commitment}
+
+::: {.theory-card}
+**Core claim.** Commitment to an organization is a psychological state with three
+components: a desire to stay (affective commitment), a perceived need to stay
+because of the costs of leaving (continuance commitment), and a felt obligation to
+stay (normative commitment). Each has different antecedents and consequences.
+
+**Origins.** Organizational psychology. @meyer1991, with measures in
+@allen1990.
+
+**Level of analysis.** Individual employee.
+
+**Key constructs.** Affective, continuance, and normative commitment, commitment
+profiles, side bets, perceived alternatives.
+
+**Boundary conditions.** Developed in North American samples with conventional
+employment. Normative commitment may operate differently in more collectivist
+cultures.
+
+**Related theories.** [Psychological contract](#psychological-contract),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)),
+[Escalation of commitment](#escalation-of-commitment) (Section \@ref(escalation-of-commitment)).
+:::
+
+Earlier research on commitment had followed separate threads: some scholars saw
+commitment as emotional attachment, others as the accumulation of investments
+(side bets) that would be lost on leaving, and still others as a moral duty.
+@meyer1991 argued that these were not competing definitions but distinct
+**components** of commitment that can coexist in the same person in different
+strengths. All three tie an employee to the organization, but they do so for
+different reasons and should therefore have different effects on behaviour beyond
+staying (Table \@ref(tab:tab-wl-commitment)).
+
+```{r tab-wl-commitment}
+tibble::tribble(
+  ~Component, ~Mindset, ~`Typical antecedents`, ~`Relation to performance and citizenship`,
+  "Affective", "I want to stay", "Supportive leadership, justice, meaningful work", "Positive",
+  "Continuance", "I need to stay", "Investments that would be lost, few alternatives", "Weak or negative",
+  "Normative", "I ought to stay", "Socialization, reciprocity for benefits received", "Positive, weaker than affective"
+) |>
+  book_table(caption = "The three-component model of organizational commitment, following Meyer and Allen (1991) and Meyer et al. (2002).")
+```
+
+The meta-analysis by @meyer2002 supported this differentiation. All three
+components were negatively related to turnover intentions and turnover. Affective
+commitment had the strongest and most favourable correlations with attendance,
+performance, and citizenship behaviour, and the strongest negative correlation with
+stress and work-family conflict. Continuance commitment was unrelated or
+negatively related to these desirable outcomes. Normative commitment correlated
+highly with affective commitment, which has fuelled a long debate about whether it
+is a separate construct. Critics also note that continuance commitment appears to
+combine two facets, high personal sacrifice and lack of alternatives, which behave
+differently.
+
+::: {.business-case}
+**Illustrative scenario: the golden handcuffs problem.** A technology firm
+relies heavily on deferred equity that vests over four years to retain engineers.
+Retention is high, but engagement surveys show low enthusiasm among long-tenured
+staff. The three-component model diagnoses the problem: deferred pay builds
+continuance commitment, which keeps people in place without raising effort or
+citizenship. Building affective commitment requires different levers, such as
+meaningful work, fair treatment, and development, and the firm may prefer
+moderate voluntary turnover among people who stay only because they need to.
+:::
+
+## Person-Environment Fit {#person-environment-fit}
+
+::: {.theory-card}
+**Core claim.** Attitudes and behaviour depend on the compatibility between
+characteristics of the person and characteristics of the work environment. Good
+fit promotes satisfaction, commitment, and retention.
+
+**Origins.** Interactional psychology, systematised for organizations by
+@kristof1996 and synthesised by @kristofbrown2005.
+
+**Level of analysis.** Individual in relation to job, group, supervisor, and
+organization.
+
+**Key constructs.** Person-job, person-organization, person-group, and
+person-supervisor fit, supplementary and complementary fit, needs-supplies and
+demands-abilities fit, perceived and actual fit.
+
+**Boundary conditions.** Fit effects are stronger for attitudes than for
+performance. Strong emphasis on fit can reduce diversity and adaptability.
+
+**Related theories.** [Attraction-selection-attrition](#attraction-selection-attrition) (Section \@ref(attraction-selection-attrition)),
+[Organizational culture](#organizational-culture) (Section \@ref(organizational-culture)),
+[Job characteristics model](#job-characteristics-model).
+:::
+
+Fit is an old idea, but @kristof1996 brought conceptual order to it. She
+distinguished **supplementary fit**, when a person is similar to others in the
+environment (for example, sharing the organization's values), from
+**complementary fit**, when a person or environment supplies what the other lacks.
+Complementary fit has two forms: **needs-supplies** fit, when the job provides
+what the person wants, and **demands-abilities** fit, when the person has what the
+job requires. Fit can also be assessed at different levels of the environment, as
+Table \@ref(tab:tab-wl-fit) shows. Fit theory connects naturally to the
+[attraction-selection-attrition](#attraction-selection-attrition) (Section \@ref(attraction-selection-attrition)) framework, which
+argues that organizations become more homogeneous as similar people are attracted,
+selected, and retained [@schneider1987].
+
+```{r tab-wl-fit}
+tibble::tribble(
+  ~`Type of fit`, ~`Compatibility between`, ~`Strongest outcomes in meta-analysis`, ~`HR practice`,
+  "Person-job", "Abilities and job demands, needs and job supplies", "Job satisfaction, organizational commitment", "Job analysis, skills testing",
+  "Person-organization", "Values and organizational culture", "Organizational commitment, turnover intentions", "Values-based interviewing, realistic previews",
+  "Person-group", "Person and coworkers", "Coworker satisfaction, group cohesion", "Team-based selection",
+  "Person-supervisor", "Person and supervisor values or personality", "Satisfaction with supervisor", "Manager involvement in hiring"
+) |>
+  book_table(caption = "Types of person-environment fit, with outcomes following Kristof-Brown, Zimmerman and Johnson (2005).")
+```
+
+The meta-analysis by @kristofbrown2005 found that person-job fit was strongly
+related to job satisfaction and that person-organization fit was strongly related
+to organizational commitment, with weaker relationships to performance. These
+findings justify the widespread use of fit in hiring, but they come with two
+caveats. First, perceived fit (asking people how well they fit) produces much
+stronger correlations than fit calculated from separate measures of person and
+environment, partly because perceptions are contaminated by satisfaction
+[@cable2002]. Second, fit computed as a difference score conceals which component
+drives the effect. @edwards1993 showed how polynomial regression and response
+surface analysis can test fit hypotheses without these problems.
+
+::: {.business-case}
+**"Culture fit" in hiring.** Many firms screen candidates for culture fit, and the
+evidence that person-organization fit predicts commitment supports the practice.
+Yet fit theory also explains its risks. When interviewers judge fit intuitively,
+they tend to reward similarity to themselves, which can exclude candidates who
+would add complementary skills and can narrow the diversity of perspectives in the
+firm, an outcome predicted by the attraction-selection-attrition cycle
+[@schneider1987]. A disciplined application specifies the values that matter,
+assesses them with structured questions, and balances supplementary fit on core
+values with complementary fit on skills.
+:::
+
+## Human Capital Theory {#human-capital-theory}
+
+::: {.theory-card}
+**Core claim.** Skills and knowledge are a form of capital: people and firms invest
+in them, bearing costs today for returns later. Who pays for training depends on
+whether the skills are general (valuable to many employers) or firm-specific
+(valuable mainly to the current employer).
+
+**Origins.** Labour economics. @becker1962 and @becker1964, with the empirical
+earnings function of @mincer1974.
+
+**Level of analysis.** Individual worker and firm, with extensions to the firm's
+stock of human capital as a strategic resource.
+
+**Key constructs.** General human capital, firm-specific human capital, returns to
+schooling and experience, training investment, hold-up.
+
+**Boundary conditions.** The classic predictions assume competitive labour
+markets. Frictions, wage compression, and information asymmetries change who pays
+for training [@acemoglu1999].
+
+**Related theories.** [Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)),
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)),
+[Knowledge-based view](#knowledge-based-view) (Section \@ref(knowledge-based-view)),
+[Efficiency wages](#efficiency-wages) (Section \@ref(efficiency-wages)).
+:::
+
+### Origins and core logic
+
+@becker1962 and @becker1964 treated education and training as investments that
+raise future productivity and earnings. The theory's most influential
+organizational prediction concerns on-the-job training. **General** training
+raises a worker's productivity equally at many firms. In a competitive labour
+market, a firm that paid for it would see the worker poached or would have to pay
+the worker their higher market value, so the firm cannot recover its investment.
+The worker therefore pays, typically by accepting lower wages during training.
+**Firm-specific** training raises productivity only at the current employer. The
+worker's outside wage does not rise, so neither party can fully appropriate the
+returns alone, and the efficient arrangement is for firm and worker to **share**
+the costs and the returns. Sharing gives both parties a stake in continuing the
+relationship, which predicts lower quit and layoff rates for workers with
+firm-specific skills.
+
+@mincer1974 turned the theory into an empirical workhorse, the **Mincer earnings
+equation**, which regresses log earnings on years of schooling and a quadratic in
+labour market experience:
+
+$$
+\ln w_i = \beta_0 + \beta_1 S_i + \beta_2 X_i + \beta_3 X_i^2 + \varepsilon_i
+$$
+
+where $S_i$ is schooling and $X_i$ is experience. The coefficient $\beta_1$ is
+interpreted as an approximate rate of return to a year of schooling (Table \@ref(tab:tab-wl-hc)).
+
+```{r tab-wl-hc}
+tibble::tribble(
+  ~Dimension, ~`General human capital`, ~`Firm-specific human capital`,
+  "Definition", "Raises productivity at many employers", "Raises productivity mainly at the current employer",
+  "Examples", "Literacy, programming languages, accounting standards", "Proprietary systems, internal routines, client relationships",
+  "Who pays (competitive market)", "Worker, through lower training wages", "Shared between firm and worker",
+  "Who captures returns", "Worker", "Shared, which binds both parties",
+  "Strategic value to the firm", "Low: available in the labour market", "High: hard to imitate, but creates hold-up risk",
+  "Typical HR practice", "Tuition support with repayment clauses", "Internal academies, mentoring, job rotation"
+) |>
+  book_table(caption = "General versus firm-specific human capital, following Becker (1964).")
+```
+
+### Evidence and extensions
+
+The theory has been refined in three directions. First, @acemoglu1999 showed that
+when labour markets have frictions, such as search costs, information asymmetries
+about worker skill, or institutions that compress wages, firms can profit from
+paying for *general* training, because they capture part of the returns. This
+explains why many employers fund training that is partly general, as in
+firm-sponsored apprenticeship systems. Second, @lazear2009 proposed a
+**skill-weights** view: every individual skill may be general, but each firm uses
+a particular *combination* of skills, which makes a worker's skill bundle
+partly specific to the firm. Third, strategy scholars linked firm-specific human
+capital to sustainable advantage, while warning that human assets can walk out
+the door and bargain for the rents they create [@coff1997].
+
+The strategic payoff has been tested directly. The meta-analysis by @crook2011
+found a positive relationship between human capital and firm performance, which
+was stronger when the human capital was firm-specific and therefore harder for
+rivals to acquire. The theory also faces a long-standing rival:
+[signaling theory](#signaling-theory) (Section \@ref(signaling-theory)) argues that education may raise wages because
+it reveals pre-existing ability rather than because it creates productivity
+[@spence1973].
+
+::: {.debate}
+**Human capital or signaling?** Both theories predict that more educated workers
+earn more, so the earnings premium alone cannot discriminate between them. Human
+capital theory predicts that each year of schooling adds productivity, while
+signaling theory predicts extra returns to completing a credential ("sheepskin
+effects") and declining returns as employers learn workers' true ability over
+time. Research using compulsory schooling laws, twins, and employer learning
+models generally finds that a substantial part of the return reflects real
+productivity gains, but that signaling also plays a role. For managers, the
+practical implication is that credentials are informative but incomplete
+evidence of skill.
+:::
+
+::: {.business-case}
+**Illustrative scenario: a training investment decision.** A logistics company
+is deciding whether to fund a certification in supply-chain analytics for 50
+planners. The certification is general: competitors value it. Human capital
+theory predicts that, without safeguards, the company will lose some trained
+planners to rivals and capture little return. The company has three options
+consistent with the theory. It can share costs (employees contribute time or
+accept a repayment agreement if they leave within a defined period). It can
+bundle the general certification with firm-specific training on its own planning
+systems, raising the specific component and the value of staying. Or it can rely
+on labour market frictions, such as a strong employer reputation and internal
+promotion prospects, that make trained employees less likely to leave
+[@acemoglu1999]. A simple decision rule follows: fund general training fully only
+when expected retention multiplied by the productivity gain exceeds the cost.
+:::
+
+## Tournament Theory {#tournament-theory}
+
+::: {.theory-card}
+**Core claim.** When pay depends on relative rank rather than absolute output,
+the size of the prize gap between ranks motivates effort. Large pay jumps at the
+top of a hierarchy can therefore be efficient incentives for those competing for
+promotion, not rewards for the winner's own marginal product.
+
+**Origins.** Personnel economics. @lazear1981, reviewed for management by
+@connelly2014.
+
+**Level of analysis.** Contestants within a firm or market, and the firm's pay
+structure.
+
+**Key constructs.** Rank-order pay, prize spread, noise (luck), number of
+contestants, sabotage, pay dispersion.
+
+**Boundary conditions.** Works best when relative performance is easier to observe
+than absolute output and when contestants are similar in ability. Weakens or
+backfires when cooperation is essential or sabotage is possible.
+
+**Related theories.** [Agency theory](#agency-theory) (Section \@ref(agency-theory)),
+[Equity theory](#equity-theory) (Section \@ref(equity-theory)),
+[Upper echelons theory](#upper-echelons-theory) (Section \@ref(upper-echelons-theory)),
+[Matthew effect](#matthew-effect) (Section \@ref(matthew-effect)).
+:::
+
+### Core logic and propositions
+
+@lazear1981 asked why compensation is often based on rank: vice presidents
+compete for one chief executive position, associates for partnership, salespeople
+for a single President's Club. Their answer is that rank-order contracts can
+provide efficient incentives when output is costly to measure precisely but
+ordinal comparisons are cheap. In a tournament, the winner receives a prize fixed
+in advance, so the incentive to work depends on the **spread** between the
+winner's and loser's prizes and on how much effort raises the probability of
+winning.
+
+In a simple two-player tournament, output equals effort plus random noise, and
+each contestant chooses effort $e$ to maximise expected prize minus cost $c(e)$.
+In a symmetric equilibrium, the first-order condition is
+
+$$
+\Delta W \cdot g(0) = c'(e^*)
+$$
+
+where $\Delta W$ is the prize spread and $g(0)$ is the density of the difference
+in the two players' noise terms at zero. Effort rises with the spread and falls as
+noise rises, because a noisier contest makes effort matter less for winning.
+Figure \@ref(fig:fig-wl-tournament) plots this relationship.
+
+- **P1 (Spread).** Effort increases with the spread between prizes.
+- **P2 (Noise).** For a given spread, effort falls as luck becomes more
+  important, so firms must offer larger spreads in noisier settings.
+- **P3 (Hierarchy).** Because the top prize must motivate all who compete for
+  it, pay jumps grow larger at higher levels of the hierarchy.
+- **P4 (Costs).** Large spreads encourage sabotage, collusion, and excessive risk
+  taking, and they can undermine cooperation [@lazear1989].
+
+```{r fig-wl-tournament, fig.cap = "Stylised tournament model. Equilibrium effort rises linearly with the prize spread, but the slope is flatter when outcomes are noisier. Contestants with quadratic effort costs and normally distributed noise. Analytical solution of the Lazear-Rosen first-order condition, not empirical data.", fig.height = 4}
+set.seed(1981)
+spread <- seq(0, 100, by = 1)
+noise_levels <- c("Low noise (sd = 0.5)" = 0.5, "Medium noise (sd = 1)" = 1, "High noise (sd = 2)" = 2)
+tourn <- lapply(names(noise_levels), function(nm) {
+  s <- noise_levels[[nm]]
+  g0 <- dnorm(0, mean = 0, sd = s * sqrt(2))     # density of noise difference at zero
+  tibble(spread = spread, effort = spread * g0 / 10, noise = nm)  # c(e) = 5 e^2, so c'(e) = 10 e
+}) |> bind_rows() |>
+  mutate(noise = factor(noise, levels = names(noise_levels)))
+# Monte Carlo check of the win probability slope at equal effort (medium noise)
+eps <- rnorm(20000, 0, 1) - rnorm(20000, 0, 1)
+slope_mc <- (mean(eps < 0.05) - mean(eps < -0.05)) / 0.1
+ggplot(tourn, aes(spread, effort, colour = noise)) +
+  geom_line(linewidth = 1.1) +
+  scale_colour_manual(values = setNames(c(pal[["blue"]], pal[["orange"]], pal[["aqua"]]), names(noise_levels))) +
+  labs(x = "Prize spread between winner and loser (index)", y = "Equilibrium effort (index)", colour = NULL,
+       title = "Bigger prizes buy more effort, unless luck dominates",
+       caption = sprintf("Stylised: effort = spread x g(0) / 10. Simulated slope of win probability at medium noise = %.2f (theory = %.2f).",
+                         slope_mc, dnorm(0, 0, sqrt(2))))
+```
+
+### Evidence and extensions
+
+Sport offers clean tests because prize structures are public and performance is
+measured precisely. @ehrenberg1990 found that professional golfers' scores were
+better in tournaments with larger total prizes and when the marginal return to
+improving one's rank was higher. @becker1992 found that larger prize spreads in
+professional auto racing were associated with better individual performance and
+also with riskier driving, illustrating both the incentive effect and the
+risk-taking cost.
+
+In corporations, @main1993 found that executive pay rises sharply with
+hierarchical level, consistent with tournament logic, and @kale2009 found that the
+pay gap between a chief executive and the next tier of executives was positively
+related to firm performance, as the theory predicts if the gap motivates the
+executives who compete for the top job. The
+broader review by @connelly2014 documents support for incentive effects alongside
+substantial evidence of costs: sabotage, reduced helping, unethical behaviour, and
+lower collaboration in tasks that require interdependence. These costs echo
+[equity theory](#equity-theory) (Section \@ref(equity-theory)) and justice research, which predict that large,
+unexplained pay gaps can be perceived as unfair by those who lose.
+
+::: {.debate}
+**Tournament incentives or managerial power?** A competing explanation for large
+chief executive pay premiums is that powerful executives influence their own pay,
+so the gap reflects bargaining power rather than optimal incentives for those
+below. The two explanations predict different patterns: tournament theory
+predicts that the gap should matter for the *vice presidents'* effort and should
+weaken when the next chief executive is likely to be hired externally, while the
+power explanation predicts that the gap should track governance weakness. Studies
+that exploit succession events and board composition help to separate the two
+[@connelly2014].
+:::
+
+::: {.business-case}
+**CEO pay tournaments and the pay-ratio disclosure.** Since 2018, US public
+companies have disclosed the ratio of chief executive pay to the pay of the median
+employee, under a rule the Securities and Exchange Commission adopted to implement
+the Dodd-Frank Act. Tournament theory helps boards interpret their numbers. A large
+gap between the chief executive and the senior team can motivate senior executives
+*if* they realistically expect to compete for the top job, which is more likely
+when the firm has a credible internal succession process. If the board routinely
+hires chief executives from outside, the prize is out of reach for insiders and
+the gap buys little effort while signalling inequity. The same logic applies
+lower in the organization: forced-ranking systems and winner-take-all sales
+contests raise effort when tasks are independent and lucky outcomes are rare, but
+they damage cooperation in interdependent teams [@connelly2014].
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The pay gap between the chief executive and the next tier of executives
+  is positively related to firm performance when internal succession is likely,
+  and unrelated when external succession is likely.
+- *H2.* Larger prize spreads in internal sales contests increase individual sales
+  but reduce help given to colleagues.
+- *H3.* The incentive effect of prize spread is weaker in contests with higher
+  outcome variance.
+
+**Measures.** Pay gaps between hierarchical levels from proxy statements.
+Number of contestants (for example, the number of vice presidents). Succession
+type. Performance variance.
+
+**Designs.** Panel data on executive compensation with firm fixed effects.
+Natural experiments in sport, sales contests, and innovation contests. Laboratory
+tournaments that vary spread, noise, and the opportunity to sabotage.
+
+**Contexts.** Executive compensation, professional services partnerships, sales
+organizations, innovation challenges, promotion systems.
+:::
+
+::: {.pitfall}
+**Ignoring the losers.** Tournament effects are often evaluated by looking at the
+winner. The theory's incentive effect operates on the contestants who do not win,
+and its costs (sabotage, exit, reduced cooperation) also fall mostly on them.
+Evaluate a tournament by the behaviour of the whole field.
+:::
+
+## Chapter Summary {#work-leadership-summary}
+
+::: {.key-takeaways}
+- Job design shapes motivation: autonomy, feedback, and meaningful work raise
+  internal motivation, although the multiplicative MPS adds little over a simple
+  average [@hackman1976; @humphrey2007].
+- **Job demands-resources theory** explains burnout and engagement as two
+  processes, one driven by demands and one by resources, with resources buffering
+  strain [@bakker2007]. **Conservation of resources theory** adds that loss weighs
+  more than gain and that resources spiral [@hobfoll1989].
+- **Affective events theory** shifts attention to daily events and within-person
+  emotional dynamics, separating affect-driven from judgment-driven behaviour
+  [@weiss1996].
+- Leadership theories differ in their unit and mechanism: **LMX** focuses on
+  dyadic exchange [@graen1995], **transformational leadership** on inspiration and
+  identification, with serious measurement critiques [@vanknippenberg2013], and
+  **path-goal theory** on matching behaviour to the situation [@house1971].
+- The employment relationship rests on beliefs about promises
+  (**psychological contracts**), perceptions of **justice**, and the **commitment**
+  and **fit** that result [@rousseau1989; @colquitt2001; @meyer1991; @kristof1996].
+- **Human capital theory** explains who should pay for training and why
+  firm-specific skills bind employer and employee [@becker1964]. **Tournament
+  theory** explains why pay jumps grow up the hierarchy and when they backfire
+  [@lazear1981].
+:::
+
+Table \@ref(tab:tab-wl-summary) presents the comparison of the chapter's theories.
+
+```{r tab-wl-summary}
+tibble::tribble(
+  ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "[Job characteristics model](#job-characteristics-model)", "Psychological states from job features", "Enriched jobs raise internal motivation", "Job redesign",
+  "[Job demands-resources](#job-demands-resources)", "Health impairment and motivation processes", "Resources buffer the strain of demands", "Burnout prevention, engagement surveys",
+  "[Conservation of resources](#conservation-of-resources)", "Primacy of loss, resource spirals", "Loss of resources is disproportionately stressful", "Change management, well-being support",
+  "[Affective events theory](#affective-events-theory)", "Events trigger emotions that drive behaviour", "Daily events predict daily behaviour", "Service work design, recovery breaks",
+  "[Leader-member exchange](#leader-member-exchange)", "Dyadic social exchange", "High-quality relationships raise performance", "Manager training, onboarding",
+  "[Transformational leadership](#transformational-leadership)", "Identification and value change", "Inspiration adds to transactional effects", "Leadership development",
+  "[Path-goal theory](#path-goal-theory)", "Clarifying paths, raising valences", "Best style depends on task and follower", "Situational coaching",
+  "[Psychological contract](#psychological-contract)", "Beliefs about reciprocal promises", "Perceived breach reduces trust and effort", "Change communication, employer branding",
+  "[Organizational justice](#organizational-justice)", "Fairness of outcomes, process, treatment", "Fair process softens bad outcomes", "Layoffs, appraisal, pay decisions",
+  "[Organizational commitment](#organizational-commitment)", "Desire, need, obligation", "Affective commitment predicts effort, not just staying", "Retention strategy",
+  "[Person-environment fit](#person-environment-fit)", "Congruence of person and setting", "Fit predicts satisfaction and commitment", "Selection, culture fit",
+  "[Human capital theory](#human-capital-theory)", "Investment in skills", "Workers pay for general, share firm-specific training", "Training investment",
+  "[Tournament theory](#tournament-theory)", "Rank-order prizes", "Effort rises with prize spread", "Executive pay, promotion systems"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#work-leadership-questions}
+
+1. The job characteristics model and job demands-resources theory both treat
+   autonomy as beneficial. Under what conditions might autonomy act as a demand
+   rather than a resource? Formulate a testable hypothesis.
+2. Design a study that could separate the effect of leader-member exchange on
+   performance from the effect of performance on leader-member exchange.
+3. Evaluate the critique of transformational leadership by van Knippenberg and
+   Sitkin (2013). Which of its arguments would a well-designed field experiment
+   answer, and which would it not?
+4. A firm must close one of three plants. Using organizational justice and
+   psychological contract theory, draft a communication and implementation plan,
+   and explain how you would measure its effects on survivors.
+5. Human capital theory predicts that workers pay for general training. Why do
+   many employers nonetheless fund degrees and certifications? Which
+   extension of the theory best explains your answer?
+6. A board is considering widening the pay gap between its chief executive and
+   the senior team. Using tournament theory, list the conditions under which this
+   will raise performance and the evidence you would need to see first.
+
+## Further Reading {#work-leadership-reading}
+
+- @hackman1980: the classic book-length treatment of job design, still useful for
+  its practical diagnosis of jobs.
+- @humphrey2007: the best quantitative synthesis of work design research, extending
+  the job characteristics model to social and contextual features.
+- @bakker2017: a concise statement of job demands-resources theory, including
+  reciprocal and personal-resource extensions.
+- @halbesleben2014: a critical review of what counts as a resource in conservation
+  of resources theory.
+- @graen1995: the authors' own account of how LMX theory developed and where it
+  should go.
+- @vanknippenberg2013: an essential critique for anyone planning research on
+  charismatic or transformational leadership.
+- @colquitt2001: the meta-analysis that organised the organizational justice
+  literature around four dimensions.
+- @connelly2014: a thorough review of tournament theory across economics,
+  management, and sport.

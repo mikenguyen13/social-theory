@@ -1,0 +1,2103 @@
+# Consumer Behavior and Branding {#consumer-behavior}
+
+In April 1985 the Coca-Cola Company replaced the formula of its flagship drink
+with a sweeter recipe that had beaten both the original and Pepsi in extensive
+blind taste tests. The launch of "New Coke" provoked letters, protests, and a
+wave of press coverage, and within three months the company brought the
+original back as Coca-Cola Classic. Consumers had rejected a product they
+preferred when they could not see the label. The episode is the most famous
+demonstration of a point this chapter develops at length: what consumers buy is
+rarely just a bundle of physical attributes. They buy expectations that can be
+met or disappointed, chains of meaning that link attributes to personal values,
+memories of a brand, a partner in a relationship, a mirror for the self, a
+licence to indulge, a feeling of "mine", a reference point against which a
+price feels fair, and a share in a culture.
+
+Similar puzzles appear across categories. Why do some owners of Harley-Davidson
+motorcycles tattoo the company's logo on their skin, while few owners of
+equally reliable machines feel any such loyalty? Why did Porsche's move into
+sport utility vehicles succeed while Bic's move from pens and lighters into
+perfume did not? Why do shoppers at outlet malls respond to "compare at" prices
+that they may not fully believe, and why did a large US department store chain
+lose customers when it abolished the discounts that its shoppers claimed to
+dislike? Why does touching a mug in a store make it feel more valuable, and why
+do people choose less-preferred options "for the sake of variety"?
+
+This chapter introduces twelve theories that consumer researchers and brand
+managers use to answer such questions. We begin with the cognitive core of
+post-purchase evaluation (**[expectancy-disconfirmation](#expectancy-disconfirmation)**) and the
+motivational logic linking product features to personal values (**means-end
+chain theory**). We then turn to the brand: how it lives in consumer memory
+(**[customer-based brand equity](#customer-based-brand-equity)**), how it acquires human characteristics
+(**[brand personality](#brand-personality)**), how consumers form relationships with it
+(**[consumer-brand relationships](#consumer-brand-relationships)**), and how it expresses the self
+(**[self-congruity](#self-congruity)**). Four theories address how consumers evaluate and choose:
+**schema congruity** (new products and brand extensions), the
+**hedonic-utilitarian** distinction, **[psychological ownership](#psychological-ownership)**, and
+**[variety seeking](#variety-seeking)**. Two final theories widen the lens to price perception
+(**[reference price](#reference-price)**) and to the cultural meanings of consumption
+(**[consumer culture theory](#consumer-culture-theory)**). Table \@ref(tab:tab-cb-glance) summarises the
+territory.
+
+```{r tab-cb-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "[Expectancy-disconfirmation](#expectancy-disconfirmation)", "How do consumers judge whether they are satisfied?", "Individual", "Oliver (1980)",
+  "[Means-end chain](#means-end-chain)", "How do product attributes connect to personal values?", "Individual", "Gutman (1982)",
+  "[Customer-based brand equity](#customer-based-brand-equity)", "Why does the same marketing work better for some brands?", "Individual / brand", "Keller (1993), Aaker (1991)",
+  "[Brand personality](#brand-personality)", "Which human traits do consumers ascribe to brands?", "Brand", "Aaker (1997)",
+  "[Consumer-brand relationships](#consumer-brand-relationships)", "Can consumers have relationships with brands, and of what kind?", "Dyad (consumer-brand)", "Fournier (1998)",
+  "[Self-congruity](#self-congruity)", "Why do consumers prefer brands that match who they are?", "Individual", "Sirgy (1982), Belk (1988)",
+  "[Schema congruity](#schema-congruity)", "Why are moderately unexpected products evaluated favourably?", "Individual", "Meyers-Levy & Tybout (1989)",
+  "[Hedonic and utilitarian consumption](#hedonic-utilitarian)", "How do pleasure and function shape choice and justification?", "Individual", "Hirschman & Holbrook (1982), Dhar & Wertenbroch (2000)",
+  "[Psychological ownership](#psychological-ownership)", "Why do people value what feels like theirs?", "Individual", "Pierce, Kostova & Dirks (2001)",
+  "[Variety seeking](#variety-seeking)", "Why do consumers switch away from a favourite?", "Individual", "McAlister & Pessemier (1982)",
+  "[Reference price](#reference-price)", "Against what standard do consumers judge a price?", "Individual / market", "Winer (1986), Mazumdar et al. (2005)",
+  "[Consumer culture theory](#consumer-culture-theory)", "How do consumers use goods and brands to make cultural meaning?", "Individual / community / society", "Arnould & Thompson (2005)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of consumer behavior and branding.")
+```
+
+Three organising ideas recur. First, consumers evaluate offerings against
+**standards** (expectations, schemas, reference prices, the self), so the same
+objective product can delight one person and disappoint another. Second, brands
+are **knowledge structures** in memory that carry functional, symbolic, and
+emotional meaning, and that meaning is co-authored by firms, consumers, and the
+wider culture. Third, many of the most consequential effects in this chapter are
+**asymmetric**: losses loom larger than gains, transgressions matter more for
+some brands than others, and extensions can dilute as well as leverage. The
+chapter connects to [Prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)), the
+[Endowment effect](#endowment-effect) (Section \@ref(endowment-effect)), [Social identity
+theory](#social-identity-theory) (Section \@ref(social-identity-theory)), and the [Elaboration likelihood
+model](#elaboration-likelihood-model) (Section \@ref(elaboration-likelihood-model)), and it prepares the ground for the
+firm-level theories of the next chapter, such as [Market
+orientation](#market-orientation) (Section \@ref(market-orientation)) and [Customer equity](#customer-equity) (Section \@ref(customer-equity)).
+
+## Expectancy-Disconfirmation Theory {#expectancy-disconfirmation}
+
+::: {.theory-card}
+**Core claim.** Satisfaction results from comparing perceived performance with
+prior expectations. Performance that exceeds expectations (positive
+disconfirmation) raises satisfaction, and performance that falls short
+(negative disconfirmation) lowers it, over and above the levels of expectations
+and performance themselves.
+
+**Origins.** Consumer psychology and marketing, building on adaptation-level
+and assimilation-contrast ideas [@anderson1973]. Formalised by @oliver1980 and
+tested against rival specifications by @churchill1982. Extended to firm-level
+data by @anderson1993.
+
+**Level of analysis.** Individual consumer, aggregated to firms, industries, and
+national indices.
+
+**Key constructs.** Expectations (predictive standards), perceived performance,
+disconfirmation (subjective comparison), satisfaction, repurchase intention,
+complaining, [word of mouth](#social-transmission) (Section \@ref(social-transmission)).
+
+**Boundary conditions.** Expectations must exist before consumption and
+performance must be evaluable. For complex durables or credence services,
+performance may dominate and disconfirmation matters less. Asymmetries are
+expected: shortfalls hurt more than equivalent surpluses help.
+
+**Related theories.** [Prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)),
+[Hedonic adaptation](#hedonic-adaptation) (Section \@ref(hedonic-adaptation)), [Service quality gap
+model](#service-quality-gap-model) (Section \@ref(service-quality-gap-model)), [Customer equity](#customer-equity) (Section \@ref(customer-equity)),
+[Cognitive dissonance theory](#cognitive-dissonance-theory) (Section \@ref(cognitive-dissonance-theory)).
+:::
+
+### Origins and intellectual history
+
+Early research on consumer satisfaction borrowed two ideas from psychology. The
+first was **assimilation**: consumers who expect a product to be good may
+perceive it as better than it is, pulling perceptions toward expectations. The
+second was **contrast**: a product that falls short may be perceived as worse
+than it is because the gap is magnified. @anderson1973 set these rival
+predictions against each other experimentally and helped establish disconfirmed
+expectations as a central variable in satisfaction research.
+
+@oliver1980 reorganised the field around a simple but powerful structure.
+Expectations create a frame of reference. After consumption, the consumer
+judges whether performance was better or worse than expected. That
+**disconfirmation** judgment, together with the expectation level, determines
+satisfaction, and satisfaction in turn updates attitudes and purchase
+intentions. Satisfaction is therefore not a property of the product. It is a
+**relative judgment** that depends on what the consumer brought to the
+encounter.
+
+### Core logic and propositions
+
+The theory involves four constructs and two paths to satisfaction: a direct
+effect of expectations (which anchor judgments) and an effect of
+disconfirmation (which captures surprise relative to that anchor).
+
+- **P1 (Disconfirmation).** Holding performance constant, satisfaction
+  increases with positive disconfirmation and decreases with negative
+  disconfirmation [@oliver1980].
+- **P2 (Performance).** Perceived performance affects satisfaction both directly
+  and through disconfirmation. For some products, the direct path dominates:
+  @churchill1982 found that satisfaction with a durable product was driven
+  by performance alone, whereas expectations and disconfirmation also mattered
+  for a nondurable product.
+- **P3 (Asymmetry).** Negative disconfirmation has a larger effect on
+  satisfaction than positive disconfirmation of the same size
+  [@anderson1993].
+- **P4 (Evaluability).** Disconfirmation is more likely to be perceived when
+  quality is easy to evaluate [@anderson1993].
+- **P5 (Consequences).** Satisfaction raises repurchase intention, but the link
+  between stated satisfaction and actual repurchase is nonlinear and differs
+  across customer groups [@mittal2001] (Figure \@ref(fig:fig-cb-satisfaction)).
+
+```{r fig-cb-satisfaction, fig.cap = "Stylised expectancy-disconfirmation relationship. Each point is a simulated customer. Satisfaction rises with disconfirmation (perceived performance minus expectations), but the slope is steeper for shortfalls than for surpluses, the asymmetry reported by Anderson and Sullivan (1993). Illustrative data, not empirical estimates.", fig.height = 4.2}
+set.seed(1980)
+n <- 600
+cust <- tibble::tibble(
+  expect  = rnorm(n, 6, 1),
+  perform = rnorm(n, 6, 1.3)
+) |>
+  mutate(disc = perform - expect,
+         sat = 60 + 3 * (expect - 6) + ifelse(disc < 0, 12 * disc, 6 * disc) + rnorm(n, 0, 5),
+         sat = pmin(pmax(sat, 0), 100),
+         side = ifelse(disc < 0, "Negative disconfirmation", "Positive disconfirmation"))
+ggplot(cust, aes(disc, sat, colour = side)) +
+  geom_vline(xintercept = 0, linetype = "dashed", colour = ink[["muted"]]) +
+  geom_point(alpha = 0.35, size = 1.4) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1.1) +
+  annotate("text", x = -3.2, y = 95, label = "Shortfalls: steep slope", hjust = 0,
+           size = 3.4, colour = ink[["secondary"]]) +
+  annotate("text", x = 1.2, y = 20, label = "Surpluses: flatter slope", hjust = 0,
+           size = 3.4, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("Negative disconfirmation" = pal[["orange"]],
+                                 "Positive disconfirmation" = pal[["blue"]])) +
+  scale_y_continuous(limits = c(0, 100)) +
+  labs(x = "Disconfirmation (perceived performance minus expectation)",
+       y = "Satisfaction (0-100)", colour = NULL,
+       title = "Falling short hurts more than exceeding helps",
+       caption = "Illustrative simulation (n = 600). Slope for shortfalls set at twice the slope for surpluses.")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-cb-satisfaction-mech) shows the causal structure. The
+dashed edge from expectations to perceived performance represents assimilation:
+high expectations can colour the experience itself. The dotted moderator
+captures evaluability, which governs how much the comparison process, rather
+than raw performance, drives the judgment.
+
+```{r fig-cb-satisfaction-mech, fig.cap = "Mechanism of expectancy-disconfirmation. Expectations and perceived performance feed a subjective comparison (disconfirmation), which shapes satisfaction and downstream loyalty. Based on Oliver (1980), Churchill and Surprenant (1982), and Anderson and Sullivan (1993)."}
+mechanism_diagram(sprintf('
+  E [label = "Expectations\\n(prior standard)", %s]
+  P [label = "Perceived\\nperformance", %s]
+  D [label = "Disconfirmation\\n(better or worse\\nthan expected)", %s]
+  S [label = "Satisfaction", %s]
+  L [label = "Repurchase, word of\\nmouth, complaints", %s]
+  V [label = "Ease of evaluating\\nquality", %s]
+  E -> D
+  P -> D
+  E -> S [style = dashed, label = " anchor"]
+  P -> S [label = " direct"]
+  E -> P [style = dashed, label = " assimilation"]
+  D -> S -> L
+  V -> D [style = dotted, arrowhead = none]
+', node_construct, node_construct, node_mechanism, node_outcome, node_outcome, node_moderator))
+```
+
+### Evidence and extensions
+
+The model has been tested in hundreds of studies. A meta-analysis by
+@szymanski2001 found that disconfirmation and perceived fairness (equity) are
+among the strongest correlates of satisfaction, while the direct effect of
+expectations is weaker and more variable. @spreng1996 argued that expectations
+are not the only relevant standard: consumers also compare performance with
+their **desires**, and desire congruency adds explanatory power. At the firm
+level, @anderson1993 used Swedish national survey data to show that perceived
+quality and disconfirmation drive satisfaction and that negative
+disconfirmation weighs more heavily, an asymmetry that echoes [Loss
+aversion](#loss-aversion) (Section \@ref(loss-aversion)). Satisfaction research also scaled up into national
+indices: the **American Customer Satisfaction Index** (ACSI) models
+satisfaction as the outcome of customer expectations, perceived quality, and
+perceived value, with complaints and loyalty as consequences
+[@fornell1996]. @fornell2006 reported that a portfolio of firms with high ACSI
+scores outperformed the market, which suggested that satisfaction is an
+under-priced intangible asset.
+
+::: {.debate}
+**Is satisfaction a comparison or a feeling?** Critics argue that the
+disconfirmation paradigm is too cognitive. Satisfaction also has affective
+roots: @oliver1993 showed that positive and negative affect experienced during
+consumption contribute to satisfaction alongside disconfirmation and
+attribute-level judgments. A second debate concerns measurement:
+**inferred** disconfirmation (performance minus expectation scores) and
+**perceived** disconfirmation ("better or worse than expected") are not
+equivalent, and the perceived version is contaminated by the satisfaction
+judgment it is supposed to explain. A third debate concerns financial
+consequences. @jacobson2009 re-examined the claim that satisfaction predicts
+abnormal stock returns and found the effect concentrated in a small set of
+firms, mostly in computer and internet industries, which raised doubts about a
+general market mispricing. The exchange is a useful reminder that
+satisfaction-performance links depend on industry, time window, and model
+specification.
+:::
+
+### Applications in business
+
+Expectancy-disconfirmation gives managers two levers rather than one. Firms can
+raise performance, but they can also **manage expectations**: promise what
+they can reliably deliver, then exceed it. Overpromising in advertising may win
+the first purchase but sets up negative disconfirmation, the costliest outcome
+in the asymmetric model.
+
+::: {.business-case}
+**Customer satisfaction measurement: the ACSI.** The American Customer
+Satisfaction Index, launched in 1994 at the University of Michigan, surveys
+customers of companies across the US economy and estimates a structural model
+in which expectations, perceived quality, and perceived value drive
+satisfaction, which in turn drives complaints and loyalty [@fornell1996]. Its
+design embodies the theory: it does not ask only "how satisfied are you" but
+measures the standards against which satisfaction is formed. Firms use ACSI
+benchmarks to compare themselves with competitors and to diagnose whether a
+fall in satisfaction reflects rising expectations or declining quality. The
+contrast with single-question loyalty metrics is instructive. The Net
+Promoter Score asks only about likelihood to recommend [@reichheld2003], and
+@keiningham2007 did not find that it outperformed the ACSI in predicting
+revenue growth.
+:::
+
+Table \@ref(tab:tab-cb-satisfaction-metrics) presents the approaches to measuring customer satisfaction and their relation to expectancy-disconfirmation theory.
+
+```{r tab-cb-satisfaction-metrics}
+tibble::tribble(
+  ~Approach, ~`What is measured`, ~`Link to the theory`, ~`Main limitation`,
+  "Inferred disconfirmation", "Separate expectation and performance ratings, difference computed", "Operationalises the comparison explicitly", "Difference scores are unreliable",
+  "Perceived disconfirmation", "Direct rating: better or worse than expected", "Captures the subjective comparison", "Overlaps with the satisfaction judgment",
+  "ACSI structural model", "Expectations, quality, value, satisfaction, complaints, loyalty", "Embeds satisfaction in its antecedents and consequences", "Survey cost, annual cadence",
+  "Net Promoter Score", "Likelihood to recommend (0-10)", "Outcome only, no standard of comparison", "Weak diagnostic value",
+  "Behavioural metrics", "Repurchase, churn, complaints, returns", "Tests the satisfaction-loyalty link", "Confounded by switching costs"
+) |>
+  book_table(caption = "Approaches to measuring customer satisfaction and their relation to expectancy-disconfirmation theory.")
+```
+
+::: {.business-case}
+**Illustrative scenario: launch messaging for a meal-kit service.** A start-up
+tests two launch messages. Version A promises "restaurant quality in 20
+minutes". Version B promises "a good weeknight dinner in about 30 minutes".
+Version A lifts trial, but customers report recipes taking 35-40 minutes.
+Under expectancy-disconfirmation, Version A converts a performance that is
+adequate in absolute terms into a shortfall. The theory predicts higher
+first-box churn for Version A, and an A/B test that tracks second-order rates
+rather than sign-ups is the appropriate check.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Holding perceived performance constant, customers exposed to
+  higher-expectation advertising will report lower satisfaction.
+- *H2.* The effect of negative disconfirmation on churn will be larger than the
+  effect of positive disconfirmation of equal magnitude.
+- *H3.* The effect of disconfirmation on satisfaction will be weaker for credence
+  services (e.g., financial advice) than for search or experience goods.
+
+**Established measures.** Oliver's satisfaction items [@oliver1980], perceived
+disconfirmation scales ("much worse than expected" to "much better than
+expected"), and the ACSI model and survey items [@fornell1996].
+
+**Designs.** Experiments that manipulate expectations (advertising claims) and
+performance (product quality) orthogonally. Panel surveys linking satisfaction
+to observed repurchase [@mittal2001]. Firm-level panels using ACSI data with
+financial outcomes [@fornell2006; @jacobson2009].
+
+**Data sources.** ACSI firm scores, customer review text (with star ratings as
+satisfaction and review content as disconfirmation cues), CRM churn data.
+:::
+
+::: {.pitfall}
+**Treating satisfaction as absolute.** A satisfaction score is relative to a
+standard. Comparing scores across segments, brands, or time without asking
+whether expectations moved can produce wrong conclusions: a luxury hotel and a
+budget motel can earn identical scores for very different performance. A
+related error is to measure disconfirmation and satisfaction in the same
+survey block and then report a large correlation as support for the theory.
+Separate the measures in time or method, or manipulate expectations directly.
+:::
+
+## Means-End Chain Theory {#means-end-chain}
+
+::: {.theory-card}
+**Core claim.** Consumers value product attributes not for their own sake but as
+means to desired consequences, which in turn serve personal values. Product
+knowledge is organised as chains linking **attributes**, **consequences**, and
+**values**.
+
+**Origins.** Consumer research. @gutman1982, drawing on value theory and
+categorisation research. The **laddering** interview method was systematised
+by @reynolds1988. @zeithaml1988 applied the logic to price, quality, and value.
+
+**Level of analysis.** Individual consumer, aggregated to segments through
+hierarchical value maps.
+
+**Key constructs.** Concrete and abstract attributes, functional and
+psychosocial consequences, instrumental and terminal values, ladders,
+implication matrix, hierarchical value map.
+
+**Boundary conditions.** Most informative for involving products where
+consumers can articulate reasons. Less useful for habitual, low-involvement
+purchases where chains are short or absent.
+
+**Related theories.** [Schwartz values](#schwartz-values) (Section \@ref(schwartz-values)),
+[Expectancy theory](#expectancy-theory) (Section \@ref(expectancy-theory)), [Self-congruity](#self-congruity),
+[Hedonic and utilitarian consumption](#hedonic-utilitarian).
+:::
+
+### Core logic
+
+@gutman1982 proposed that consumers choose actions that produce desired
+consequences and minimise undesired ones, and that values give consequences
+their positive or negative valence. Product attributes matter because they are
+associated, in the consumer's mind, with consequences that are themselves
+linked to values. The result is a cognitive chain: *attribute* (what the product
+has) leads to *consequence* (what it does for me) leads to *value* (why that
+matters to me).
+
+Figure \@ref(fig:fig-cb-ladder) shows an illustrative ladder for a running shoe.
+The same attribute can lead to different values for different consumers, which
+is why means-end analysis is a segmentation tool as much as a theory of
+motivation.
+
+```{r fig-cb-ladder, fig.cap = "Illustrative means-end ladders for a running shoe. Two consumers start from the same attribute (cushioning) but reach different terminal values through different consequences. Laddering interviews elicit such chains by repeatedly asking why an element is important. Illustrative example, not interview data.", fig.height = 5}
+mechanism_diagram(sprintf('
+  A1 [label = "Attribute:\\nextra cushioning", %s]
+  A2 [label = "Attribute:\\nlight weight", %s]
+  C1 [label = "Functional consequence:\\nfewer injuries", %s]
+  C2 [label = "Functional consequence:\\nfaster times", %s]
+  P1 [label = "Psychosocial consequence:\\nkeep running with friends", %s]
+  P2 [label = "Psychosocial consequence:\\nfeel capable", %s]
+  V1 [label = "Value:\\nbelonging", %s]
+  V2 [label = "Value:\\nhealth and longevity", %s]
+  V3 [label = "Value:\\naccomplishment", %s]
+  A1 -> C1
+  A2 -> C2
+  A1 -> C2 [style = dashed]
+  C1 -> P1
+  C1 -> V2
+  C2 -> P2
+  P1 -> V1
+  P2 -> V3
+', node_construct, node_construct, node_mechanism, node_mechanism, node_mechanism, node_mechanism,
+   node_outcome, node_outcome, node_outcome), rankdir = "BT", height = 520)
+```
+
+### Laddering as method
+
+@reynolds1988 described **laddering** as a semi-structured interview that
+begins with a distinction the consumer draws between products (often elicited by
+sorting or preference comparisons) and then repeatedly asks "why is that
+important to you?" until the respondent reaches a value or cannot go further.
+Responses are content-coded into attributes, consequences, and values. An
+**implication matrix** counts how often each element leads to every other, and
+a **hierarchical value map** (HVM) draws the dominant links above a cut-off.
+Table \@ref(tab:tab-cb-laddering) summarises the levels.
+
+```{r tab-cb-laddering}
+tibble::tribble(
+  ~Level, ~Definition, ~`Typical laddering prompt`, ~`Coffee example`, ~`Marketing use`,
+  "Concrete attribute", "Physical, observable feature", "What makes this one different?", "Single-origin beans", "Product specification",
+  "Abstract attribute", "Subjective characterisation of features", "What does that mean for the product?", "Rich flavour", "Positioning claims",
+  "Functional consequence", "Direct, tangible outcome of use", "Why is that important to you?", "Enjoyable morning ritual", "Benefit copy",
+  "Psychosocial consequence", "Social or psychological outcome", "And why does that matter?", "Moment to myself before work", "Emotional appeals",
+  "Instrumental value", "Preferred mode of conduct", "Why is that important to you?", "Being in control of my day", "Brand character",
+  "Terminal value", "Desired end state", "And why is that important?", "Inner harmony, self-respect", "Leverage point for advertising"
+) |>
+  book_table(caption = "Levels of a means-end chain with an illustrative coffee ladder. Example responses are hypothetical.")
+```
+
+### Evidence and critique
+
+Means-end analysis has been used to study food, financial services, tourism,
+and advertising, and it shaped how agencies translate product features into
+value-based communication. @zeithaml1988 used a means-end framework to show
+that consumers move from intrinsic and extrinsic cues to perceived quality,
+perceived sacrifice, and perceived value, a structure still used in pricing
+research.
+
+::: {.debate}
+**Are ladders discovered or constructed?** @grunert1995 questioned whether
+laddering reveals stable cognitive structures or prompts respondents to
+construct plausible chains on the spot. "Why" probing may push people to
+higher abstraction than their actual decision process involves. Hard laddering
+(questionnaire formats) and the **association pattern technique**, which asks
+respondents to tick links in predefined attribute-consequence and
+consequence-value matrices, offer more scalable and comparable alternatives
+[@terhofstede1998]. The cost is that predefined lists can miss idiosyncratic
+meanings that soft interviews reveal.
+:::
+
+::: {.business-case}
+**From attribute claims to value platforms.** Many mature categories compete on
+attribute parity: most toothpastes fight cavities, most cars are safe. Means-end
+analysis helps brand managers find the level of the ladder where
+differentiation is still possible. A car maker's safety engineering
+(attribute) can lead to "protecting my family" (psychosocial consequence) and to
+"being a responsible parent" (value). Volvo's long association with safety is a
+familiar public example of a brand that built its positioning around one ladder
+and kept it consistent across decades. The research task is to verify that the
+target segment's ladder actually runs through the claimed attribute, rather
+than assuming it.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Advertising that connects an attribute to a terminal value from the
+  segment's dominant ladder will produce more favourable brand attitudes than
+  advertising that stops at the functional consequence.
+- *H2.* Ladders will be longer (reach more abstract levels) for high-involvement
+  than for low-involvement categories.
+
+**Measures and designs.** Soft laddering interviews coded into an implication
+matrix and HVM [@reynolds1988]. The association pattern technique for large
+samples and cross-national segmentation [@terhofstede1998]. Value inventories
+such as the [Schwartz value](#schwartz-values) (Section \@ref(schwartz-values)) survey to validate the value
+level.
+:::
+
+## Customer-Based Brand Equity {#customer-based-brand-equity}
+
+::: {.theory-card}
+**Core claim.** A brand has positive equity when consumers respond more
+favourably to its marketing (its product, price, promotion, or distribution)
+than they would to the same marketing for an unnamed or fictitious version.
+That differential response arises from **brand knowledge** in memory: awareness
+of the brand and the favourability, strength, and uniqueness of its
+associations [@keller1993].
+
+**Origins.** Marketing. @aaker1991 framed brand equity as a set of assets and
+liabilities linked to a brand name. @keller1993 developed the
+consumer-psychological account grounded in associative memory. @keller2006
+review the research programme.
+
+**Level of analysis.** Individual consumer (brand knowledge), aggregated to the
+brand and the firm (price premiums, market share, firm value).
+
+**Key constructs.** Brand awareness (recall, recognition), brand image, brand
+associations (type, favourability, strength, uniqueness), perceived quality,
+brand loyalty, differential response.
+
+**Boundary conditions.** Equity is defined relative to a comparison (an
+unbranded or fictitious product) and to a consumer segment. Associations that
+are favourable in one segment or market may be neutral or negative in another.
+
+**Related theories.** [Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)),
+[Market-based assets](#market-based-assets) (Section \@ref(market-based-assets)), [Brand personality](#brand-personality),
+[Schema congruity](#schema-congruity), [Mere exposure effect](#mere-exposure-effect) (Section \@ref(mere-exposure-effect)).
+:::
+
+### Origins and intellectual history
+
+Brand equity became a managerial priority in the late 1980s, when a wave of
+acquisitions placed large financial values on brand names and practitioners
+asked what, exactly, they were paying for. @aaker1991 answered with an asset
+view: brand equity comprises **brand loyalty**, **name awareness**,
+**perceived quality**, **brand associations**, and other proprietary assets
+such as trademarks and channel relationships. Each adds or subtracts value for
+the customer and the firm.
+
+@keller1993 moved the definition inside the consumer's head. Building on
+associative network models of memory, he defined **customer-based brand
+equity** as the differential effect that brand knowledge has on how consumers
+respond to the brand's marketing. Brand knowledge has two components. **Brand
+awareness** is the ability to recall or recognise the brand. **Brand image** is
+the set of associations linked to the brand node in memory. The definition's
+power lies in its comparative structure: equity is not how much people like a
+brand, but how much *more* they respond to the same marketing action because the
+brand name is attached.
+
+### Core logic and propositions
+
+- **P1 (Awareness as a threshold).** Brand awareness is necessary for equity: a
+  brand must be in the consideration set before its associations can matter.
+- **P2 (Image).** Given awareness, equity increases with the **favourability**,
+  **strength**, and **uniqueness** of brand associations [@keller1993].
+- **P3 (Differential response).** High-equity brands enjoy higher willingness
+  to pay, lower price elasticity, greater advertising and promotion
+  effectiveness, and more favourable evaluations of brand extensions.
+- **P4 (Credibility).** Brand investments make brand promises credible, which
+  reduces perceived risk and information costs. @erdem1998 formalise this as a
+  [signaling](#signaling-theory) (Section \@ref(signaling-theory)) account of brand equity (Figure \@ref(fig:fig-cb-cbbe)).
+
+```{r fig-cb-cbbe, fig.cap = "Customer-based brand equity as a memory structure. Awareness and the characteristics of brand associations jointly produce a differential response to marketing, which appears in market and financial outcomes. Based on Keller (1993) and Keller and Lehmann (2006)."}
+mechanism_diagram(sprintf('
+  AW [label = "Brand awareness\\n(recall, recognition)", %s]
+  IM [label = "Brand image\\n(associations)", %s]
+  FA [label = "Favourability", %s]
+  ST [label = "Strength", %s]
+  UN [label = "Uniqueness", %s]
+  DR [label = "Differential response\\nto marketing", %s]
+  OUT [label = "Price premium, loyalty,\\nextension success,\\nfirm value", %s]
+  FA -> IM
+  ST -> IM
+  UN -> IM
+  AW -> DR
+  IM -> DR
+  DR -> OUT
+', node_construct, node_construct, node_moderator, node_moderator, node_moderator, node_mechanism, node_outcome))
+```
+
+Figure \@ref(fig:fig-cb-demand) translates P3 into a stylised demand
+comparison. The branded and unbranded products are physically identical. The
+branded product sells more at every price and loses fewer buyers when the price
+rises: brand equity shows up as both a level shift and a flatter demand curve.
+
+```{r fig-cb-demand, fig.cap = "Stylised differential response. The same product sold under a strong brand name and without a brand faces different demand curves: more buyers at every price and lower price sensitivity. The vertical gap at a common price corresponds to the revenue premium measure of Ailawadi, Lehmann and Neslin (2003). Illustrative curves, not estimates.", fig.height = 4}
+price <- seq(2, 10, by = 0.1)
+dem <- bind_rows(
+  tibble::tibble(price, units = 1000 * exp(-0.16 * (price - 2)), version = "Branded"),
+  tibble::tibble(price, units = 700 * exp(-0.30 * (price - 2)), version = "Unbranded (same product)")
+)
+ggplot(dem, aes(price, units, colour = version)) +
+  geom_line(linewidth = 1.1) +
+  annotate("segment", x = 6, xend = 6, y = 700 * exp(-0.30 * 4), yend = 1000 * exp(-0.16 * 4),
+           colour = ink[["secondary"]], arrow = arrow(length = unit(0.15, "cm"), ends = "both")) +
+  annotate("text", x = 6.2, y = 300, label = "Differential response\nat the same price", hjust = 0,
+           size = 3.4, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("Branded" = pal[["blue"]], "Unbranded (same product)" = pal[["orange"]])) +
+  labs(x = "Price", y = "Units demanded", colour = NULL,
+       title = "Brand equity as a shift and a flattening of demand",
+       caption = "Stylised: branded demand = 1000 exp(-0.16 (p - 2)), unbranded = 700 exp(-0.30 (p - 2)).")
+```
+
+### Evidence and extensions
+
+Evidence comes from three levels, summarised by @keller2006 and in Table
+\@ref(tab:tab-cb-equity-levels). At the **customer-mindset** level, survey scales
+measure awareness, associations, perceived quality, and loyalty
+[@yoo2001]. At the **product-market** level, @ailawadi2003 proposed the
+**revenue premium**, the extra revenue a brand earns relative to a private
+label, as an outcome measure that is objective, comparable across brands, and
+sensitive to changes in brand health. At the **financial-market** level,
+researchers relate brand metrics to firm value. Brand equity also predicts the
+success of brand extensions [@aaker1990; @volckner2006], a topic we return to
+under [schema congruity](#schema-congruity).
+
+```{r tab-cb-equity-levels}
+tibble::tribble(
+  ~Level, ~`What is measured`, ~`Example measures`, ~Strength, ~Weakness,
+  "Customer mindset", "Awareness, associations, perceived quality, loyalty", "Multidimensional brand equity scale (Yoo & Donthu, 2001), association elicitation", "Diagnostic: shows why equity is high or low", "Does not directly show market value",
+  "Product market", "Price and volume premium over a benchmark", "Revenue premium versus private label (Ailawadi et al., 2003), conjoint brand part-worths", "Objective, comparable, tracks change", "Needs a credible benchmark product",
+  "Financial market", "Contribution of the brand to firm value", "Event studies, brand value rankings", "Speaks the language of finance", "Hard to isolate the brand from other intangibles",
+  "Asset view", "Loyalty, awareness, perceived quality, associations, proprietary assets", "Aaker (1991) brand equity dimensions", "Managerially complete", "Mixes causes and outcomes"
+) |>
+  book_table(caption = "Three levels at which brand equity is measured, plus Aaker's asset view. Organised following Keller and Lehmann (2006).")
+```
+
+::: {.debate}
+**Memory, signal, or market asset?** The associative-memory account
+[@keller1993] and the signaling account [@erdem1998] make overlapping
+predictions but differ in mechanism. Memory accounts emphasise what consumers
+know and feel about a brand. Signaling accounts emphasise that brand investments
+are a bond the firm forfeits if it cheats, so equity should be greatest where
+quality is hard to observe. A second critique targets measurement
+proliferation: customer-mindset scales can be high while market outcomes
+stagnate, and many studies validate a scale against attitudes measured in the
+same survey. Linking mindset metrics to observed market behaviour remains the
+field's central measurement challenge [@keller2006].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**New Coke and the location of brand equity.** Coca-Cola's 1985 reformulation
+was supported by blind taste tests in which the new formula was preferred.
+What the tests did not measure was the brand knowledge that consumers attached
+to the original product: associations with tradition, personal memories, and
+American identity. Replacing the formula threatened those associations, and
+the company restored the original under the Coca-Cola Classic name within
+months. In CBBE terms, the taste tests measured the response to the *unbranded*
+product, while the market responded to the *branded* product. The difference
+between the two is precisely what Keller's definition calls brand equity.
+:::
+
+::: {.business-case}
+**Private labels and the revenue premium.** Retailers' own brands compete
+directly on the dimension where manufacturer brands claim superiority. Tracking
+the revenue premium of a national brand over the store brand in the same
+category, as @ailawadi2003 propose, gives brand managers an early warning
+signal: a shrinking premium indicates eroding equity even when unit share is
+stable because of promotions.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The price elasticity of demand will be lower for brands with stronger and
+  more unique associations, controlling for perceived quality.
+- *H2.* The positive effect of brand equity on extension evaluations will be
+  stronger when perceived fit is high.
+- *H3.* The effect of brand equity on choice will be larger for experience and
+  credence goods than for search goods (signaling account).
+
+**Established scales and measures.** Multidimensional brand equity scale
+[@yoo2001]. Aaker's dimensions [@aaker1991]. Free association tasks coded for
+favourability, strength, and uniqueness. Revenue premium from scanner data
+[@ailawadi2003].
+
+**Designs.** Branded versus unbranded (or fictitious-brand) experiments. Choice
+models estimating brand intercepts and price coefficients. Panel data linking
+brand-tracking surveys to sales.
+:::
+
+::: {.pitfall}
+**Measuring equity without the "differential".** Many studies label brand
+attitude, awareness, or advertising spend "brand equity". Keller's construct is
+comparative: it requires a benchmark (an unbranded, fictitious, or private-label
+version) and a response to marketing. Without the comparison, a study measures
+liking or awareness, not equity.
+:::
+
+## Brand Personality {#brand-personality}
+
+::: {.theory-card}
+**Core claim.** Consumers ascribe human personality traits to brands. In the
+United States these perceptions are organised along five dimensions:
+**sincerity**, **excitement**, **competence**, **sophistication**, and
+**ruggedness** [@aaker1997].
+
+**Origins.** Consumer psychology, adapting trait psychology and the Big Five
+lexical approach to brands [@aaker1997].
+
+**Level of analysis.** The brand, as perceived by consumers.
+
+**Key constructs.** Brand personality dimensions and facets, brand-user
+imagery, self-expression.
+
+**Boundary conditions.** The five-factor structure was derived from ratings
+aggregated across brands from many categories. It does not necessarily hold for
+individual brands within one category or in other cultures.
+
+**Related theories.** [Self-congruity](#self-congruity),
+[Consumer-brand relationships](#consumer-brand-relationships),
+[Customer-based brand equity](#customer-based-brand-equity),
+[Identity signaling](#identity-signaling) (Section \@ref(identity-signaling)).
+:::
+
+### Core logic
+
+@aaker1997 defined **brand personality** as the set of human characteristics
+associated with a brand. Personality traits can be transferred to a brand
+directly, through the people associated with it (typical users, employees,
+endorsers), and indirectly, through product attributes, logo, advertising style,
+and price. Brand personality serves a **self-expressive** function: consumers
+can use brands to express their actual or ideal selves, which links the theory
+to [self-congruity](#self-congruity).
+
+Aaker developed her scale by having a large US sample rate well-known brands
+on a broad set of traits and then reducing the ratings by factor analysis.
+Three of the resulting dimensions (sincerity, excitement, competence) resemble
+Big Five human personality factors, while sophistication and ruggedness have no
+close human counterpart and appear to capture aspirational qualities that
+consumers want but do not necessarily have. Table
+\@ref(tab:tab-cb-personality) lists the dimensions and their facets.
+
+```{r tab-cb-personality}
+tibble::tribble(
+  ~Dimension, ~Facets, ~`Human personality analogue`, ~`Typical positioning`,
+  "Sincerity", "Down-to-earth, honest, wholesome, cheerful", "Agreeableness", "Family, trust, care",
+  "Excitement", "Daring, spirited, imaginative, up-to-date", "Extraversion", "Youth, novelty, energy",
+  "Competence", "Reliable, intelligent, successful", "Conscientiousness", "Expertise, dependability",
+  "Sophistication", "Upper class, charming", "No close analogue", "Luxury, refinement",
+  "Ruggedness", "Outdoorsy, tough", "No close analogue", "Strength, outdoors, masculinity"
+) |>
+  book_table(caption = "Aaker's (1997) five dimensions of brand personality and their facets.")
+```
+
+Figure \@ref(fig:fig-cb-personality) shows the illustrative brand personality profiles for two hypothetical brands in the same category, measured on Aaker's five dimensions (1-5 scale).
+
+```{r fig-cb-personality, fig.cap = "Illustrative brand personality profiles for two hypothetical brands in the same category, measured on Aaker's five dimensions (1-5 scale). Profile comparisons like this guide positioning, but within-category differences may not reproduce the five-factor structure. Stylised data.", fig.height = 3.8}
+set.seed(1997)
+prof <- tibble::tibble(
+  dimension = factor(rep(c("Sincerity", "Excitement", "Competence", "Sophistication", "Ruggedness"), 2),
+                     levels = rev(c("Sincerity", "Excitement", "Competence", "Sophistication", "Ruggedness"))),
+  brand = rep(c("Brand A (heritage)", "Brand B (challenger)"), each = 5),
+  score = c(4.3, 2.6, 4.0, 3.1, 2.4, 2.9, 4.4, 3.5, 2.7, 3.0)
+)
+ggplot(prof, aes(score, dimension, colour = brand)) +
+  geom_line(aes(group = dimension), colour = ink[["grid"]], linewidth = 2) +
+  geom_point(size = 3.4) +
+  scale_colour_manual(values = c("Brand A (heritage)" = pal[["blue"]], "Brand B (challenger)" = pal[["orange"]])) +
+  scale_x_continuous(limits = c(1, 5), breaks = 1:5) +
+  labs(x = "Mean rating (1 = not at all descriptive, 5 = extremely descriptive)", y = NULL, colour = NULL,
+       title = "Two positioning strategies on the brand personality map",
+       caption = "Stylised scores for hypothetical brands. Not empirical data.")
+```
+
+### Evidence and critique
+
+Brand personality has been linked to brand attitudes, attachment, and loyalty,
+and it moderates how consumers respond to brand transgressions: relationships
+with **sincere** brands can be more fragile after a transgression than
+relationships with **exciting** brands [@aaker2004], which we discuss in the
+next section. @malar2011 show that a brand personality that matches the
+consumer's actual self strengthens emotional attachment.
+
+::: {.debate}
+**Does the scale measure personality, and does it generalise?** Three critiques
+dominate. First, @azoulay2003 argue that the scale's definition is too loose:
+items such as "upper class", "intelligent", or "successful" describe social
+status, competence, or user imagery rather than personality in the
+psychological sense. Second, @austin2003 found that the five-factor framework
+did not replicate when applied to individual brands within a single product
+category, which is exactly the setting in which brand managers want to use it.
+Third, the structure varies across cultures. In response, @geuens2009
+developed a shorter measure restricted to personality traits that performs
+better at the level of individual brands and across categories. Researchers
+should choose between the scales according to the comparison they need to make.
+:::
+
+::: {.business-case}
+**Personifying platforms: Apple's "Get a Mac" campaign.** Between 2006 and 2009
+Apple ran a long series of television spots in which two actors personified the
+Mac (casual, relaxed, creative) and the PC (formal, fussy, prone to problems).
+The campaign is an unusually literal application of brand personality: it
+assigned excitement and sincerity to one brand and a caricature of
+bureaucratic competence to its rival, and it invited viewers to choose the
+character they would rather be. It also illustrates the risk of personality
+positioning: a personality defined against a rival depends on consumers
+accepting the caricature, and a competitor can respond by reclaiming the
+traits, as Microsoft's own counter-campaign attempted.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Congruence between a brand's personality and the consumer's actual
+  self will predict emotional brand attachment more strongly than congruence with
+  the ideal self, especially for consumers low in self-esteem.
+- *H2.* An advertising style manipulation (spontaneous versus formal) will shift
+  perceived excitement but not perceived competence.
+
+**Established scales.** Aaker's 42-item brand personality scale [@aaker1997].
+The 12-item scale of @geuens2009 for within-category comparisons.
+
+**Designs.** Repeated-measures ratings of multiple brands with multilevel
+factor analysis (separating between-brand and within-respondent variance).
+Experiments manipulating personality cues in advertising or packaging.
+:::
+
+::: {.pitfall}
+**Using the scale off the shelf for within-category positioning.** Aaker's
+dimensions were derived across categories. Applying them to compare three
+banks or four running-shoe brands, and then interpreting each dimension as if
+the structure held, invites the problem documented by @austin2003. Test the
+factor structure in your own data, consider the @geuens2009 alternative, and
+do not treat "competence" ratings of a bank as a statement about its
+personality rather than its perceived performance.
+:::
+
+## Consumer-Brand Relationships {#consumer-brand-relationships}
+
+::: {.theory-card}
+**Core claim.** Consumers can form relationships with brands that resemble
+interpersonal relationships in their forms, norms, and dynamics. The brand is
+an active partner whose marketing actions are interpreted as behaviour, and
+relationship quality predicts stability, forgiveness, and loyalty
+[@fournier1998].
+
+**Origins.** Consumer research. @fournier1998, using phenomenological case
+studies and interpersonal relationship theory. Extended by work on relationship
+norms [@aggarwal2004], transgressions [@aaker2004], emotional attachment
+[@thomson2005], brand attachment [@park2010], and brand love [@batra2012].
+
+**Level of analysis.** Dyad (consumer and brand), embedded in communities.
+
+**Key constructs.** Relationship forms, brand relationship quality (BRQ),
+relationship norms (exchange and communal), brand attachment (brand-self
+connection, prominence), brand love, transgression and repair.
+
+**Boundary conditions.** Most applicable when brands carry symbolic or emotional
+meaning and are used repeatedly. For many low-involvement purchases, consumers
+have habits, not relationships.
+
+**Related theories.** [Commitment-trust theory](#commitment-trust-theory) (Section \@ref(commitment-trust-theory)),
+[Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Self-congruity](#self-congruity), [Brand personality](#brand-personality).
+:::
+
+### Origins and core logic
+
+@fournier1998 argued that the relationship metaphor is legitimate only if
+brands can act as partners. Brands do act, she reasoned, because consumers
+interpret marketing actions (a new advertising campaign, a price increase, a
+product change) as the behaviour of a partner. Through in-depth interviews
+with three women about the brands in their lives, Fournier identified a
+typology of relationship forms, from arranged marriages and casual friendships
+to committed partnerships, flings, dependencies, and enmities, and a model of
+**brand relationship quality** with six facets: love and passion, self-connection,
+interdependence, commitment, intimacy, and brand partner quality.
+
+Later work specified the mechanisms more precisely:
+
+- **Norms.** @aggarwal2004 showed that consumers apply interpersonal
+  relationship norms to brands. In **exchange** relationships, consumers expect
+  quid pro quo. In **communal** relationships, they expect care, and being
+  charged for a small favour feels like a violation.
+- **Transgressions.** @aaker2004 followed consumers' relationships with an
+  online photo service in a longitudinal field experiment. Relationships with a
+  brand given a **sincere** personality deepened over time but were damaged by a
+  service transgression, while relationships with an **exciting** brand showed
+  signs of reinvigoration after a transgression followed by repair.
+- **Attachment.** @thomson2005 developed a scale of emotional attachment to
+  brands (affection, passion, connection). @park2010 defined **brand
+  attachment** as the strength of the bond connecting the brand with the self,
+  reflected in brand-self connection and the prominence of brand-related
+  thoughts, and showed that attachment predicts behaviours that require
+  consumers to invest their own resources better than attitude strength does (Figure \@ref(fig:fig-cb-transgression)).
+
+```{r fig-cb-transgression, fig.cap = "Stylised relationship trajectories after a brand transgression, following the pattern reported by Aaker, Fournier and Brasel (2004). Relationship strength with a sincere brand grows faster but does not recover after a service failure, while relationship strength with an exciting brand dips and then partially rebounds after repair. Illustrative values, not study data.", fig.height = 4}
+wk <- 0:10
+traj <- bind_rows(
+  tibble::tibble(week = wk, strength = c(3.0, 3.4, 3.8, 4.1, 4.3, 3.4, 3.3, 3.3, 3.2, 3.2, 3.2), brand = "Sincere brand"),
+  tibble::tibble(week = wk, strength = c(3.0, 3.2, 3.4, 3.5, 3.6, 3.0, 3.3, 3.6, 3.8, 3.9, 3.9), brand = "Exciting brand")
+)
+ggplot(traj, aes(week, strength, colour = brand)) +
+  annotate("rect", xmin = 4.5, xmax = 5.5, ymin = -Inf, ymax = Inf, fill = pal[["red"]], alpha = 0.10) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2.4) +
+  annotate("text", x = 5, y = 4.55, label = "Transgression\nand apology", size = 3.3, colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("Sincere brand" = pal[["blue"]], "Exciting brand" = pal[["orange"]])) +
+  scale_x_continuous(breaks = wk) +
+  coord_cartesian(ylim = c(2.5, 4.7)) +
+  labs(x = "Week of relationship", y = "Relationship strength (index)", colour = NULL,
+       title = "Personality shapes how relationships survive a failure",
+       caption = "Stylised trajectories for illustration only.")
+```
+
+Table \@ref(tab:tab-cb-relationships) presents the selected relationship forms and constructs in consumer-brand relationship research.
+
+```{r tab-cb-relationships}
+tibble::tribble(
+  ~Construct, ~Definition, ~`Illustrative consumer statement`, ~Source,
+  "Committed partnership", "Long-term, voluntary, socially supported union with high love and intimacy", "I would never switch, this brand is part of how I cook", "Fournier (1998)",
+  "Arranged marriage", "Non-voluntary union imposed by a third party, with little affect", "It is the detergent my partner always buys", "Fournier (1998)",
+  "Fling", "Short-term, high emotional reward, no commitment", "I tried that energy drink all summer", "Fournier (1998)",
+  "Enmity", "Intense negative affect and desire to avoid or harm the partner", "I tell everyone not to use that airline", "Fournier (1998)",
+  "Exchange norm", "Benefits given in expectation of comparable return", "I pay, they deliver, that is the deal", "Aggarwal (2004)",
+  "Communal norm", "Benefits given out of concern for the partner's needs", "They should help me without charging for it", "Aggarwal (2004)",
+  "Brand attachment", "Strength of the bond between brand and self (connection, prominence)", "Thoughts about this brand come to me naturally", "Park et al. (2010)",
+  "Brand love", "Passion, self-brand integration, positive emotional connection, anticipated separation distress", "I would feel anxious if this brand disappeared", "Batra et al. (2012)"
+) |>
+  book_table(caption = "Selected relationship forms and constructs in consumer-brand relationship research. Consumer statements are illustrative.")
+```
+
+### Evidence and critique
+
+The relationship perspective has been productive: it explains why loyal
+customers sometimes punish a beloved brand harshly after a betrayal, why
+communal brands face backlash when they monetise previously free services
+[@aggarwal2004], and why attachment predicts costly behaviours such as
+recommending, defending, and paying a premium [@park2010].
+
+::: {.debate}
+**Relationship or habit?** Sceptics argue that the metaphor overreaches. Most
+purchase behaviour in repeat-purchase categories follows regularities that
+require no relationship construct: small brands have fewer buyers who are also
+somewhat less loyal, the pattern known as **double jeopardy**
+[@ehrenberg1990b]. On this view, "loyalty" is mostly a by-product of
+penetration and habit, and investments in deep relationships pay off only for a
+minority of customers. Relationship theorists reply that the metaphor is most
+useful where it was developed, for symbolically rich brands and heavy users,
+and that it predicts responses to transgressions and norm violations that
+penetration models cannot. The productive position is to treat relationship
+strength as a variable that is high for some consumer-brand dyads and absent
+for most.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Harley-Davidson and Apple: relationship brands with communities.**
+Harley-Davidson founded the Harley Owners Group (H.O.G.) in 1983, giving
+owners rides, rallies, and local chapters organised around the brand. An
+ethnography of new bikers by @schouten1995 described a **subculture of
+consumption** whose core values (personal freedom, American heritage, and
+machismo) were expressed through the motorcycle, clothing, and rituals, and
+in which the company actively participated. @muniz2001 studied brand
+communities around Ford Bronco, Macintosh, and Saab and identified three
+markers of community: consciousness of kind, shared rituals and traditions,
+and a sense of moral responsibility to other members. Apple users' defence of
+the Mac against a dominant rival is a canonical example of the oppositional
+loyalty that such communities sustain. The managerial lesson from both brands
+is that a relationship is not only between a consumer and a brand. It is
+embedded in a community that the firm can support but not fully control.
+:::
+
+::: {.business-case}
+**Illustrative scenario: monetising a communal brand.** A consumer electronics
+brand known for friendly, free support begins charging for phone help. The
+fee is modest and consistent with industry practice. Under
+@aggarwal2004's norms account, customers in a communal relationship will
+perceive a norm violation, and the backlash will exceed what the money
+involved would predict. A better design reframes the change in exchange terms
+from the outset (a premium support tier) and preserves a free communal core.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* After a service failure, customers with high brand attachment will be
+  more forgiving of minor failures but more punitive after failures framed as
+  betrayals of trust.
+- *H2.* Charging for a previously free service will lower brand evaluations more
+  under communal than under exchange relationship norms.
+- *H3.* Brand attachment will predict share of wallet and advocacy better than
+  brand attitude, controlling for satisfaction.
+
+**Established scales.** Brand relationship quality facets [@fournier1998].
+Emotional attachment scale [@thomson2005]. Brand attachment (connection and
+prominence) [@park2010]. Brand love [@batra2012].
+
+**Designs.** Longitudinal field experiments with manipulated brand personality
+and transgressions [@aaker2004]. Relationship-norm priming experiments
+[@aggarwal2004]. Phenomenological interviews and netnography for discovery.
+Panel data on churn after service failures.
+:::
+
+::: {.pitfall}
+**Assuming every customer wants a relationship.** Relationship marketing
+programmes often treat all customers as potential partners. For most consumers
+in most categories, brand ties are weak and choice is habitual. Segment by
+relationship strength before investing in intimacy, and test whether
+relationship measures add predictive power beyond satisfaction and purchase
+history.
+:::
+
+## Self-Congruity Theory {#self-congruity}
+
+::: {.theory-card}
+**Core claim.** Consumers prefer products and brands whose image matches their
+self-concept. The match between brand-user image and self-image
+(**self-congruity**) motivates choice through the needs for self-consistency
+and self-esteem [@sirgy1982]. Possessions become part of an **extended self**
+[@belk1988].
+
+**Origins.** Consumer research, drawing on self theory and symbolic
+interactionism. Early statement by @grubb1967. Review and integration by
+@sirgy1982. The extended self by @belk1988.
+
+**Level of analysis.** Individual consumer.
+
+**Key constructs.** Actual self, ideal self, social self, ideal social self,
+brand-user image, self-congruity, self-consistency motive, self-esteem motive,
+self-brand connection, extended self.
+
+**Boundary conditions.** Strongest for publicly consumed, symbolically rich
+products and for consumers high in self-monitoring or public
+self-consciousness. Weaker for functional, privately consumed products.
+
+**Related theories.** [Brand personality](#brand-personality),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)),
+[Identity signaling](#identity-signaling) (Section \@ref(identity-signaling)),
+[Psychological ownership](#psychological-ownership).
+:::
+
+### Core logic
+
+@sirgy1982 distinguished four components of the self-concept: the **actual
+self** (how I see myself), the **ideal self** (how I would like to see myself),
+the **social self** (how I believe others see me), and the **ideal social
+self** (how I would like others to see me). Products carry images, often
+stereotypes of their typical users. When product-user image matches a
+component of the self, consumption satisfies a motive: congruity with the
+actual self satisfies **self-consistency**, while congruity with the ideal
+self satisfies **self-esteem**. Table \@ref(tab:tab-cb-selfconcept)
+summarises the logic.
+
+```{r tab-cb-selfconcept}
+tibble::tribble(
+  ~`Self-concept component`, ~Definition, ~`Motive served by congruity`, ~`Positioning implication`,
+  "Actual self", "How I see myself", "Self-consistency", "Authentic, relatable users",
+  "Ideal self", "How I would like to see myself", "Self-esteem", "Aspirational users and settings",
+  "Social self", "How I believe others see me", "Social consistency", "Fit with the consumer's reference group",
+  "Ideal social self", "How I would like others to see me", "Social approval", "Visible, status-conferring cues"
+) |>
+  book_table(caption = "Components of the self-concept and the motives served by self-congruity (Sirgy, 1982).")
+```
+
+@belk1988 broadened the argument: people regard their possessions as parts
+of themselves. Possessions, including objects, places, people, and
+collections, are incorporated into an **extended self**, for example by
+controlling, creating, or coming to know them, and the involuntary loss of
+possessions can feel like a loss of self. @belk2013 later extended the idea to
+digital possessions, online profiles, and shared digital spaces (Figure \@ref(fig:fig-cb-selfcongruity)).
+
+```{r fig-cb-selfcongruity, fig.cap = "Mechanism of self-congruity. A brand-user image is compared with components of the self-concept. Actual-self congruity serves self-consistency and ideal-self congruity serves self-esteem, both feeding attachment and choice. Public consumption and self-monitoring strengthen the link. Based on Sirgy (1982) and Malar et al. (2011)."}
+mechanism_diagram(sprintf('
+  BI [label = "Brand-user image", %s]
+  AS [label = "Actual self", %s]
+  IS [label = "Ideal self", %s]
+  C1 [label = "Actual-self\\ncongruity", %s]
+  C2 [label = "Ideal-self\\ncongruity", %s]
+  M1 [label = "Self-consistency\\nmotive", %s]
+  M2 [label = "Self-esteem\\nmotive", %s]
+  OUT [label = "Brand attitude,\\nattachment, choice", %s]
+  MOD [label = "Public consumption,\\nself-monitoring", %s]
+  BI -> C1
+  BI -> C2
+  AS -> C1
+  IS -> C2
+  C1 -> M1 -> OUT
+  C2 -> M2 -> OUT
+  MOD -> OUT [style = dotted, arrowhead = none]
+', node_construct, node_construct, node_construct, node_mechanism, node_mechanism,
+   node_mechanism, node_mechanism, node_outcome, node_moderator), height = 380)
+```
+
+### Evidence and extensions
+
+Self-congruity predicts brand preference, store patronage, and loyalty across
+many categories. Three extensions refine it. First, @escalas2003 showed that
+consumers form **self-brand connections** with brands used by groups they
+belong to or aspire to join, and avoid brands associated with dissociative
+groups, which links the theory to [Social identity
+theory](#social-identity-theory) (Section \@ref(social-identity-theory)). Second, @aaker1999 showed that the self is
+malleable: the traits that drive brand preference depend on which aspects of
+the self are made salient by the situation. Third, @malar2011 found that
+congruity with the actual self drives emotional brand attachment more strongly
+than congruity with the ideal self, with the ideal-self effect depending on
+involvement, self-esteem, and public self-consciousness. Aspirational branding
+is therefore not always the stronger strategy.
+
+::: {.debate}
+**How should congruity be measured?** Traditional studies rated the brand and
+the self on the same list of adjectives and computed a discrepancy score.
+@sirgy1997 argued that this method suffers from the unreliability of difference
+scores, the use of predetermined images that may be irrelevant to the
+consumer, and an implausible assumption that consumers compute congruity
+attribute by attribute. They proposed a **direct** method: respondents imagine
+the typical user and rate how well that image matches their own, and the direct
+method showed stronger predictive validity.
+:::
+
+::: {.business-case}
+**Actual versus ideal self in beauty advertising.** For decades, beauty
+advertising relied on ideal-self appeals: idealised models and aspirational
+settings. Dove's "Campaign for Real Beauty", launched in 2004, used women of
+varied ages and body types instead, an actual-self appeal. The campaign is
+widely studied as a repositioning that traded the self-esteem motive for
+self-consistency and authenticity. The research of @malar2011 offers one
+explanation for why such a move can strengthen attachment: actual-self
+congruity tends to be the more powerful driver of emotional bonds.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The effect of self-congruity on brand preference will be stronger for
+  publicly consumed than for privately consumed products.
+- *H2.* Actual-self congruity will predict emotional brand attachment more strongly
+  than ideal-self congruity, and the difference will be larger for consumers
+  low in public self-consciousness.
+
+**Established measures.** Direct self-congruity items [@sirgy1997].
+Self-brand connection scale [@escalas2003]. Brand personality ratings for the
+brand and the self [@aaker1997].
+
+**Designs.** Experiments that prime the actual or ideal self. Surveys linking
+congruity to observed choice. Qualitative studies of the extended self and
+possession rituals.
+:::
+
+::: {.pitfall}
+**Equating congruity with similarity scores.** Computing the absolute
+difference between self and brand ratings on a fixed list of traits is the
+default in many studies, but it inherits the problems of difference scores and
+may miss the images that actually matter to the consumer. Use direct congruity
+measures or polynomial regression with response surface analysis when you need
+to model fit between two separately measured profiles.
+:::
+
+## Schema Congruity Theory {#schema-congruity}
+
+::: {.theory-card}
+**Core claim.** Consumers evaluate a new product by comparing it with the
+schema of the category or brand it belongs to. Products that are
+**moderately incongruent** with the schema can be evaluated more favourably
+than fully congruent or extremely incongruent ones, because resolving a modest
+surprise is itself rewarding [@mandler1982; @meyerslevy1989].
+
+**Origins.** Cognitive psychology [@mandler1982], brought into consumer research
+by @meyerslevy1989. Applied to brand extensions by @aaker1990 and
+@meyerslevy1994.
+
+**Level of analysis.** Individual consumer evaluating a product, brand
+extension, or advertisement.
+
+**Key constructs.** Schema, congruity, moderate incongruity, extreme
+incongruity, incongruity resolution, elaboration, perceived fit, dilution.
+
+**Boundary conditions.** The moderate incongruity advantage requires that
+consumers are motivated and able to resolve the incongruity. It weakens when
+perceived risk is high [@campbell2001] and depends on prior knowledge
+[@peracchio1996].
+
+**Related theories.** [Goldilocks effect](#goldilocks-effect) (Section \@ref(goldilocks-effect)),
+[Customer-based brand equity](#customer-based-brand-equity),
+[Processing fluency](#processing-fluency) (Section \@ref(processing-fluency)),
+[Mere exposure effect](#mere-exposure-effect) (Section \@ref(mere-exposure-effect)).
+:::
+
+### Origins and core logic
+
+@mandler1982 proposed that the value people place on an object depends partly
+on how well it fits the schema they bring to it. A congruent object is
+familiar and predictable, which produces mild positive affect. An object that
+is moderately incongruent creates arousal and prompts cognitive work. When the
+incongruity can be resolved within the existing schema, the successful
+resolution is experienced as positive and evaluations rise above those for
+congruent objects. Extreme incongruity cannot be resolved without changing the
+schema, and the resulting frustration tends to lower evaluations.
+
+@meyerslevy1989 tested this account with new product descriptions that
+matched a category schema, departed from it moderately, or departed from it
+extremely. Moderately incongruent products were evaluated most favourably and
+also generated more elaborative thought, consistent with Mandler's resolution
+mechanism. The general pattern, an inverted U between incongruity and
+evaluation, is sketched in Figure \@ref(fig:fig-cb-congruity). The same shape
+appears in research on attention to stimuli that are neither too simple nor too
+complex, the [Goldilocks effect](#goldilocks-effect) (Section \@ref(goldilocks-effect)).
+
+```{r fig-cb-congruity, fig.cap = "Stylised schema congruity effects. With low perceived risk, evaluations peak at moderate incongruity (resolution is rewarding). With high perceived risk, consumers prefer the norm and the advantage of moderate incongruity disappears. Pattern consistent with Meyers-Levy and Tybout (1989) and Campbell and Goodstein (2001). Illustrative curves.", fig.height = 4}
+x <- seq(0, 1, by = 0.01)
+cong <- bind_rows(
+  tibble::tibble(incong = x, eval = 5 + 3.5 * x - 5.5 * x^2, context = "Low perceived risk"),
+  tibble::tibble(incong = x, eval = 5.1 - 0.4 * x - 2.2 * x^2, context = "High perceived risk")
+)
+ggplot(cong, aes(incong, eval, colour = context)) +
+  geom_line(linewidth = 1.1) +
+  annotate("text", x = c(0.03, 0.32, 0.97), y = 6.5,
+           label = c("Congruent", "Moderately\nincongruent", "Extremely\nincongruent"),
+           size = 3.2, colour = ink[["secondary"]], hjust = c(0, 0.5, 1)) +
+  scale_colour_manual(values = c("Low perceived risk" = pal[["blue"]], "High perceived risk" = pal[["orange"]])) +
+  scale_x_continuous(labels = NULL) +
+  coord_cartesian(ylim = c(2, 6.8)) +
+  labs(x = "Incongruity between product and category or brand schema", y = "Product evaluation",
+       colour = NULL, title = "A little surprise helps, a lot of surprise hurts",
+       caption = "Stylised quadratic curves for illustration only.")
+```
+
+### Brand extensions as schema congruity problems
+
+A **brand extension** uses an established brand name to enter a new category.
+The parent brand is a schema, and the extension's fit with that schema shapes
+evaluations. @aaker1990 found that extensions were evaluated more favourably
+when the parent brand was perceived as high quality and when the extension fit
+the parent, with fit reflecting complementarity, substitutability, and the
+transferability of the parent's manufacturing skills. Extensions perceived as
+too easy to make were evaluated less favourably, as if consumers questioned
+what the brand added. A secondary analysis of eight studies across countries
+by @bottomley2001 confirmed that parent quality and fit matter in general but
+that the weights vary across contexts. @volckner2006 identified fit between
+the parent brand and the extension as the most important driver of extension
+success, followed by marketing support, parent-brand conviction, retailer
+acceptance, and parent-brand experience.
+
+Extensions also feed back into the parent schema. @loken1993 showed that
+extensions with attributes inconsistent with the family brand's beliefs can
+**dilute** those beliefs, especially when the extension is seen as typical of
+the brand. @meyerslevy1994 found that brand names moderately incongruent with
+the extension category could produce more favourable evaluations than fully
+congruent names, which extends the moderate incongruity logic to naming (Table \@ref(tab:tab-cb-extensions)).
+
+```{r tab-cb-extensions}
+tibble::tribble(
+  ~Brand, ~`Parent schema`, ~Extension, ~Outcome, ~`Schema congruity reading`,
+  "Arm & Hammer", "Baking soda: cleaning, deodorising", "Toothpaste, deodorisers, laundry products", "Long-lived extensions", "Transfer of a core benefit makes moderate category distance resolvable",
+  "Honda", "Engines, reliability", "Cars, lawn mowers, generators", "Durable multi-category brand", "Fit through shared manufacturing competence",
+  "Porsche", "Performance sports cars", "Cayenne sport utility vehicle (2002)", "Commercially successful despite enthusiast criticism", "Moderate incongruity resolved by performance positioning",
+  "Starbucks", "Premium coffeehouse", "Bottled Frappuccino in grocery channels (with PepsiCo)", "Durable line", "Complementary category, coffee credentials transfer",
+  "Bic", "Cheap, disposable pens, lighters, razors", "Low-priced perfume (late 1980s)", "Withdrawn, widely cited failure", "Extreme incongruity: disposability clashes with the symbolism of fragrance",
+  "Virgin", "Challenger, irreverent service brand", "Virgin Cola (1990s)", "Failed to win lasting share", "Attitude fit, but no capability transfer against entrenched leaders"
+) |>
+  book_table(caption = "Brand extensions from the public record interpreted through schema congruity. Outcomes are summarised at the level of public reporting.")
+```
+
+::: {.debate}
+**How robust is the moderate incongruity advantage?** The inverted U is
+attractive but conditional. @peracchio1996 found that prior knowledge moderates
+the effect: consumers with richer category knowledge can accommodate or
+discount incongruities and may evaluate products on their attributes instead.
+@campbell2001 showed that when perceived risk is high, consumers prefer
+congruent products, a "preference for the norm". Brand extension findings also
+travel imperfectly across cultures and product sets [@bottomley2001]. A
+further measurement concern is that studies rarely verify that participants
+actually resolved the incongruity, the mechanism the theory relies on. The
+safer claim is that moderate incongruity *can* be an advantage when
+consumers have the motivation, ability, and low risk needed to resolve it.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Brand extensions that worked and failed.** Porsche's Cayenne, launched in
+2002, was a sport utility vehicle from a brand defined by sports cars. Many
+enthusiasts objected, but the vehicle was engineered and marketed around
+performance, which allowed consumers to resolve the incongruity within the
+Porsche schema ("a sports car that happens to be an SUV"). It became one of the
+brand's highest-volume models. Bic's late-1980s entry into perfume offers the
+contrast. The Bic schema of cheap, functional, disposable products could not
+accommodate the sensory, emotional, and status meanings of fragrance, and the
+line was withdrawn. The managerial test suggested by the theory is whether a
+consumer can complete the sentence "It makes sense for this brand because..."
+with a reason drawn from the parent schema.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Moderately incongruent brand extensions will be evaluated more
+  favourably than congruent extensions under low perceived risk, but not under
+  high perceived risk.
+- *H2.* The moderate incongruity advantage will be mediated by incongruity
+  resolution, measured as the number of resolution-related thoughts.
+- *H3.* Atypical extensions with negative performance will dilute parent-brand
+  beliefs less than typical extensions with negative performance.
+
+**Measures.** Perceived fit (complementarity, substitutability, transfer)
+[@aaker1990]. Thought listing coded for elaboration and resolution
+[@meyerslevy1989]. Typicality ratings. Parent-brand belief change [@loken1993].
+
+**Designs.** Between-subjects experiments with pretested congruity levels.
+Field data on extension survival [@volckner2006]. Secondary analysis across
+studies [@bottomley2001].
+:::
+
+::: {.pitfall}
+**Confusing incongruity with novelty or quality.** An "incongruent" stimulus
+often also differs in attractiveness, novelty, or information content. Without
+pretests that hold quality constant and a check that resolution occurred, a
+favourable evaluation of the moderately incongruent product may reflect a
+better product, not the resolution mechanism.
+:::
+
+## Hedonic and Utilitarian Consumption {#hedonic-utilitarian}
+
+::: {.theory-card}
+**Core claim.** Products deliver **hedonic** value (pleasure, fun, fantasy,
+sensory experience) and **utilitarian** value (function, instrumentality,
+practicality). The two kinds of value are evaluated differently: hedonic
+consumption evokes a stronger need for justification and more guilt, which
+makes choice sensitive to framing, effort, and prior virtuous acts
+[@hirschman1982; @dhar2000; @okada2005; @khan2006].
+
+**Origins.** Consumer research. @hirschman1982 and @holbrook1982 introduced the
+hedonic and experiential perspective. @dhar2000 and later work brought it into
+behavioural decision research.
+
+**Level of analysis.** Individual consumer, product, and attribute.
+
+**Key constructs.** Hedonic value, utilitarian value, guilt, justification,
+licensing, effort, acquisition versus forfeiture, mode of payment.
+
+**Boundary conditions.** Most products have both dimensions. Effects depend on
+the salience of the hedonic dimension and on whether the decision context
+calls for justification (joint evaluation, accountability).
+
+**Related theories.** [Mental accounting](#mental-accounting) (Section \@ref(mental-accounting)),
+[Self-control](#self-control) (Section \@ref(self-control)), [[Feelings-as-information](#feelings-as-information-theory) (Section \@ref(feelings-as-information-theory))
+theory](#feelings-as-information-theory) (Section \@ref(feelings-as-information-theory)),
+[Warm-glow heuristic](#warm-glow-heuristic) (Section \@ref(warm-glow-heuristic)).
+:::
+
+### Origins and core logic
+
+@hirschman1982 defined **hedonic consumption** as the facets of consumer
+behaviour that relate to the multisensory, fantasy, and emotive aspects of
+product experience. Together with @holbrook1982, who described an
+experiential view of consumption built on "fantasies, feelings, and fun", they
+challenged the information-processing paradigm that treated consumers as
+problem solvers choosing among attribute bundles. Behavioural decision
+researchers later asked how the two kinds of value trade off in choice.
+
+Four propositions summarise the core findings:
+
+- **P1 (Loss aversion differs).** Hedonic attributes loom larger when consumers
+  give something up than when they acquire it. @dhar2000 found that consumers
+  were relatively more likely to choose a hedonic item in a forfeiture decision
+  (which item to give up) than in an acquisition decision (which item to get).
+- **P2 (Justification).** Hedonic options are harder to justify. @okada2005
+  showed that a hedonic option tends to be rated more highly when evaluated on
+  its own, while a utilitarian option is more often chosen when the two are
+  compared side by side, and that consumers prefer to pay for hedonic goods
+  with time and for utilitarian goods with money.
+- **P3 (Licensing).** A prior virtuous act, or even the intention to act
+  virtuously, boosts the self-concept and licenses a subsequent hedonic choice
+  [@khan2006].
+- **P4 (Earned indulgence).** Effort provides a justification. @kivetz2002
+  found that requiring more effort in a frequency programme shifted preferences
+  toward luxury rather than necessity rewards (Figure \@ref(fig:fig-cb-hedonic)).
+
+```{r fig-cb-hedonic, fig.cap = "Justification mechanism in hedonic consumption. Hedonic options evoke anticipated guilt and a need for justification. Justification cues (effort, prior virtue, a charitable tie-in, evaluating the option on its own) relieve that need and increase hedonic choice. Based on Okada (2005), Khan and Dhar (2006), Kivetz and Simonson (2002), and Strahilevitz and Myers (1998)."}
+mechanism_diagram(sprintf('
+  H [label = "Hedonic option\\n(pleasure, indulgence)", %s]
+  G [label = "Anticipated guilt,\\nneed for justification", %s]
+  C [label = "Choice of the\\nhedonic option", %s]
+  J1 [label = "Effort earned\\n(loyalty points)", %s]
+  J2 [label = "Prior virtuous act\\n(licensing)", %s]
+  J3 [label = "Charity tie-in", %s]
+  J4 [label = "Single rather than\\njoint evaluation", %s]
+  H -> G
+  G -> C [label = " inhibits", style = dashed]
+  J1 -> G [label = " relieves", arrowhead = tee]
+  J2 -> G [arrowhead = tee]
+  J3 -> G [arrowhead = tee]
+  J4 -> G [arrowhead = tee]
+', node_construct, node_mechanism, node_outcome, node_moderator, node_moderator, node_moderator, node_moderator),
+  rankdir = "LR", height = 360)
+```
+
+Table \@ref(tab:tab-cb-hedonic) presents the how hedonic and utilitarian value differ in consumer decision making.
+
+```{r tab-cb-hedonic}
+tibble::tribble(
+  ~Dimension, ~Hedonic, ~Utilitarian, ~`Key evidence`,
+  "Nature of benefit", "Pleasure, fantasy, sensory and emotional experience", "Function, problem solving, instrumentality", "Hirschman & Holbrook (1982)",
+  "Need for justification", "High: evokes guilt", "Low: easy to justify", "Okada (2005)",
+  "Acquisition versus forfeiture", "Weighs more when giving up", "Weighs relatively more when acquiring", "Dhar & Wertenbroch (2000)",
+  "Preferred payment", "Time", "Money", "Okada (2005)",
+  "Effect of a prior virtuous act", "Licensed: choice share rises", "Little change", "Khan & Dhar (2006)",
+  "Effect of required effort", "Effort justifies luxury rewards", "Necessity rewards preferred at low effort", "Kivetz & Simonson (2002)",
+  "Charity incentive effectiveness", "More effective", "Less effective", "Strahilevitz & Myers (1998)",
+  "Measurement", "HED subscale", "UT subscale", "Voss et al. (2003)"
+) |>
+  book_table(caption = "How hedonic and utilitarian value differ in consumer decision making.")
+```
+
+### Evidence and extensions
+
+The distinction is now standard in consumer research and is reviewed by
+@alba2013. @strahilevitz1998 showed that charity incentives (a donation tied to
+purchase) are more effective for frivolous products than for practical ones,
+consistent with the idea that the donation offsets guilt. The two dimensions
+can be measured with the HED/UT scale of @voss2003, which treats them as
+separate attitude components rather than poles of a single continuum, and
+shopping itself can deliver hedonic and utilitarian value [@babin1994].
+
+::: {.debate}
+**Category or dimension?** Much research classifies products as hedonic
+(chocolate, concerts) or utilitarian (detergent, printer cartridges). Critics
+note that the same product can be bought for either reason and that the
+hedonic-utilitarian distinction overlaps with other contrasts, such as vice
+versus virtue, wants versus shoulds, and luxuries versus necessities, which
+have different theoretical mechanisms (self-control, status, price). Studies
+that manipulate the salient goal of a purchase, or measure both dimensions
+with validated scales, yield cleaner inferences than studies that rely on
+category labels.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Hedonic purchase framing and loyalty programme design.** The justification
+mechanism suggests several practical levers. **Effort framing**: points that
+consumers feel they have earned are more likely to be spent on indulgences,
+which supports offering luxury rewards (spa days, upgrades) in programmes that
+require sustained effort [@kivetz2002]. **Progress framing**: loyalty cards
+that present progress as already under way increase completion
+[@nunes2006]. **Programme mechanics**: Starbucks moved its Rewards programme in
+2016 from earning per transaction to earning per dollar spent, a change that
+altered what customers had to do to earn a treat and illustrates how programme
+rules shape the effort-reward link. **Cause tie-ins**: the (PRODUCT)RED
+initiative, launched in 2006, partnered with brands such as Apple and Gap to
+contribute part of the proceeds from special-edition products to the Global
+Fund, pairing discretionary consumer products with a charitable justification,
+consistent with @strahilevitz1998.
+:::
+
+::: {.business-case}
+**Illustrative scenario: framing a premium headphone.** A retailer tests two
+product pages for premium noise-cancelling headphones. Page A emphasises sound
+quality and immersive listening (hedonic). Page B adds a utilitarian frame:
+"focus at work, fewer distractions on your commute". The theory predicts that
+Page B lowers the need for justification and raises conversion among buyers
+who would otherwise feel guilty, while Page A performs better among buyers
+shopping for a gift, where justification concerns are weaker.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Requiring effort to earn a reward will increase the share of hedonic
+  rewards chosen, and the effect will be mediated by reduced anticipated guilt.
+- *H2.* A charitable tie-in will raise purchase likelihood more for products
+  rated high on the HED subscale than for products rated high on the UT
+  subscale.
+- *H3.* Joint display of a hedonic and a utilitarian option will reduce the
+  hedonic choice share relative to sequential display.
+
+**Established scales.** HED/UT scale [@voss2003]. Hedonic and utilitarian
+shopping value [@babin1994].
+
+**Designs.** Choice experiments manipulating effort, prior virtue, and
+evaluation mode. Field experiments in loyalty programmes. Panel data on
+redemption choices.
+:::
+
+::: {.pitfall}
+**Labelling categories instead of measuring value.** Classifying a product as
+"hedonic" because it is chocolate, or "utilitarian" because it is a laptop,
+ignores that consumers buy laptops for gaming and chocolate as a gift. Measure
+the hedonic and utilitarian dimensions for the target consumers, and separate
+the hedonic-utilitarian contrast from vice-virtue and luxury-necessity
+contrasts when theorising mechanism.
+:::
+
+## Psychological Ownership {#psychological-ownership}
+
+::: {.theory-card}
+**Core claim.** People can feel that a target (an object, an idea, a brand, an
+organisation) is "theirs" without legal title. This feeling of
+**psychological ownership** arises from control, intimate knowledge, and
+investment of the self, and it raises valuation, attachment, and
+responsibility for the target [@pierce2001].
+
+**Origins.** Organisational behaviour [@pierce2001; @pierce2003], extended to
+consumers by research on touch [@peck2009], the endowment effect
+[@shu2011; @reb2007], and consumer empowerment [@fuchs2010].
+
+**Level of analysis.** Individual (with collective variants).
+
+**Key constructs.** Feelings of ownership, routes (control, intimate knowledge,
+investment of self), motives (efficacy, self-identity, having a place),
+valuation, territoriality.
+
+**Boundary conditions.** Requires a target that can be controlled, known, or
+invested in. Effects can turn negative, as territoriality, when ownership
+feels threatened.
+
+**Related theories.** [Endowment effect](#endowment-effect) (Section \@ref(endowment-effect)),
+[IKEA effect](#ikea-effect) (Section \@ref(ikea-effect)), [Self-congruity](#self-congruity),
+[Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)).
+:::
+
+### Core logic
+
+@pierce2001 defined psychological ownership as the state in which individuals
+feel as though the target of ownership, or a piece of it, is theirs. They
+proposed that the state serves three motives: **efficacy and effectance**
+(being in control), **self-identity** (expressing and maintaining the self),
+and **having a place** (a home or territory). Three routes produce it:
+**controlling** the target, **coming to know it intimately**, and **investing
+the self** in it through effort, time, or creativity. Figure
+\@ref(fig:fig-cb-ownership) shows the mechanism and its consumer outcomes.
+
+```{r fig-cb-ownership, fig.cap = "Routes to psychological ownership and their consumer outcomes. Touch, customisation, co-creation, and use produce feelings of ownership through control, intimate knowledge, and self-investment. Based on Pierce, Kostova and Dirks (2001) and Peck and Shu (2009)."}
+mechanism_diagram(sprintf('
+  T1 [label = "Touch, trial,\\nuse", %s]
+  T2 [label = "Customisation,\\nco-creation", %s]
+  R1 [label = "Control", %s]
+  R2 [label = "Intimate\\nknowledge", %s]
+  R3 [label = "Investment\\nof self", %s]
+  PO [label = "Psychological\\nownership\\n(this is mine)", %s]
+  OUT [label = "Higher valuation,\\nwillingness to pay,\\nword of mouth", %s]
+  M [label = "Motives: efficacy,\\nself-identity,\\nhaving a place", %s]
+  T1 -> R1
+  T1 -> R2
+  T2 -> R1
+  T2 -> R3
+  R1 -> PO
+  R2 -> PO
+  R3 -> PO
+  PO -> OUT
+  M -> PO [style = dotted, arrowhead = none]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_mechanism,
+   node_mechanism, node_outcome, node_moderator))
+```
+
+### Evidence
+
+@peck2009 showed that merely touching an object increases perceived ownership
+and valuation, and that vivid imagery of touching can substitute for touch when
+physical contact is not possible. @reb2007 separated legal ownership from
+physical possession and found that feelings of ownership tracked valuations,
+which places psychological ownership at the heart of the [Endowment
+effect](#endowment-effect) (Section \@ref(endowment-effect)). @shu2011 showed that psychological ownership and
+the affective reactions it produces help explain the size of the endowment
+effect. Investment of the self is the mechanism behind the [IKEA
+effect](#ikea-effect) (Section \@ref(ikea-effect)): people value products they have assembled themselves
+more highly [@norton2012]. @fuchs2010 found that consumers empowered to select
+which products a firm should produce showed stronger demand for those products,
+with psychological ownership mediating the effect. @jussila2015 review the
+marketing literature, and @morewedge2021 argue that the shift from owning to
+accessing (streaming, renting, sharing) reduces the routes to psychological
+ownership, with consequences for how much consumers value and care for what
+they use.
+
+::: {.business-case}
+**Designing for "mine".** Retailers and brands use each route. **Touch and
+trial**: open displays, in-store demonstrations, test drives, and generous
+home-trial periods let consumers control and get to know a product before
+purchase [@peck2009]. **Customisation**: configurators such as Nike's
+online customisation service let buyers invest the self in a product's design.
+**Co-creation**: LEGO Ideas invites fans to submit and vote on set designs,
+giving participants a stake in products they did not legally own,
+consistent with @fuchs2010. The theory also warns of a cost: customers with strong feelings
+of ownership can react territorially when a firm changes "their" product or
+community, as many brand-community backlashes show.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Allowing consumers to customise a product will raise willingness to pay,
+  mediated by psychological ownership.
+- *H2.* The effect of touch on valuation will be stronger for products with
+  positive than with neutral sensory properties.
+- *H3.* Access-based consumers (subscribers) will report lower psychological
+  ownership and take less care of products than owners.
+
+**Measures.** Psychological ownership items adapted from @vandyne2004 ("I feel
+this is my product"). Willingness to pay and willingness to accept.
+
+**Designs.** Touch versus no-touch experiments [@peck2009]. Empowerment
+manipulations [@fuchs2010]. Field experiments with trial periods.
+:::
+
+::: {.pitfall}
+**Equating psychological ownership with legal ownership or liking.** The
+construct is a feeling of possession, distinct from legal title and from
+attitude. Studies that infer it from ownership status or brand liking cannot
+test the theory. Measure the feeling directly and show that it mediates the
+outcome.
+:::
+
+## Variety Seeking {#variety-seeking}
+
+::: {.theory-card}
+**Core claim.** Consumers sometimes switch away from a familiar or preferred
+option not because of a better offer but because variety itself has value, or
+because they misforecast how much variety they will want [@mcalister1982;
+@simonson1990].
+
+**Origins.** Consumer research and economics of choice. Typology by
+@mcalister1982. Diversification bias by @simonson1990 and @read1995.
+Choosing less-preferred options for variety by @ratner1999.
+
+**Level of analysis.** Individual consumer, product category.
+
+**Key constructs.** Derived versus direct variety, satiation, stimulation
+seeking, optimum stimulation level, diversification bias, sensory-specific
+satiety.
+
+**Boundary conditions.** Strongest for hedonic, sensory, and frequently
+purchased categories, for simultaneous choices made for future consumption,
+and for consumers with a high optimum stimulation level.
+
+**Related theories.** [Hedonic adaptation](#hedonic-adaptation) (Section \@ref(hedonic-adaptation)),
+[Coolidge effect](#coolidge-effect) (Section \@ref(coolidge-effect)), [Choice architecture](#choice-architecture) (Section \@ref(choice-architecture)),
+[Hedonic and utilitarian consumption](#hedonic-utilitarian).
+:::
+
+### Core logic
+
+@mcalister1982 distinguished **derived** varied behaviour, which results from
+external forces (several household members, changing situations, price
+promotions, new products), from **direct** variety seeking, in which variety
+itself is the goal. Direct variety seeking can be intrapersonal (satiation with
+an attribute, the desire for stimulation) or interpersonal (affiliation with or
+distinction from others). Table \@ref(tab:tab-cb-variety) summarises the
+typology.
+
+```{r tab-cb-variety}
+tibble::tribble(
+  ~Type, ~Driver, ~Example, ~`Managerial implication`,
+  "Derived: multiple needs", "Different users or uses in a household", "One yoghurt for children, another for adults", "Not true variety seeking: target uses",
+  "Derived: changing constraints", "Promotions, stockouts, new products", "Switching to whichever brand is on deal", "Switching reflects price, not taste",
+  "Direct: intrapersonal", "Satiation with attributes, stimulation seeking", "Rotating snack flavours", "Offer flavour or format variety within the brand",
+  "Direct: interpersonal", "Affiliation with or distinction from others", "Trying what friends drink, or avoiding it", "Link to identity signaling and social influence"
+) |>
+  book_table(caption = "Typology of varied behaviour following McAlister and Pessemier (1982).")
+```
+
+Variety seeking is not always a stable preference. @simonson1990 showed that
+consumers who choose several items at once for future consumption choose more
+variety than those who choose one item at a time, a pattern @read1995 called
+**diversification bias** and demonstrated even among children choosing
+Halloween candy. @ratner1999 found that people choose less-preferred songs for
+the sake of variety, even though doing so lowers their enjoyment during
+consumption. At the attribute level, @inman2001 showed that variety seeking
+follows **sensory-specific satiety**: consumers switch flavours more than
+brands. Individual differences matter as well: consumers with a high
+**optimum stimulation level** engage in more exploratory behaviour, including
+variety seeking [@raju1980; @steenkamp1992], and category characteristics
+shape how much true variety seeking occurs [@vantrijp1996] (Figure \@ref(fig:fig-cb-variety)).
+
+```{r fig-cb-variety, fig.cap = "Illustrative simulation of diversification bias. Simulated consumers choose four snacks from six flavours either simultaneously (all at once, for the next four weeks) or sequentially (one each week). Simultaneous choosers spread choices across more distinct flavours, the pattern reported by Simonson (1990) and Read and Loewenstein (1995). Stylised parameters.", fig.height = 3.8}
+set.seed(1990)
+pref <- c(0.40, 0.22, 0.14, 0.10, 0.08, 0.06)
+sim_distinct <- function(n, mode) {
+  vapply(seq_len(n), function(i) {
+    if (mode == "Sequential (one per week)") {
+      length(unique(sample(1:6, 4, replace = TRUE, prob = pref)))
+    } else {
+      p_div <- (pref + 0.35) / sum(pref + 0.35)   # anticipated satiation flattens choice
+      length(unique(sample(1:6, 4, replace = TRUE, prob = p_div)))
+    }
+  }, numeric(1))
+}
+div <- bind_rows(lapply(c("Sequential (one per week)", "Simultaneous (all at once)"), function(m)
+  tibble::tibble(mode = m, distinct = sim_distinct(2000, m)))) |>
+  count(mode, distinct) |>
+  group_by(mode) |>
+  mutate(share = n / sum(n))
+ggplot(div, aes(factor(distinct), share, fill = mode)) +
+  geom_col(position = position_dodge(width = 0.75), width = 0.7) +
+  scale_fill_manual(values = c("Sequential (one per week)" = pal[["blue"]], "Simultaneous (all at once)" = pal[["orange"]])) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Number of distinct flavours among four choices", y = "Share of consumers", fill = NULL,
+       title = "Choosing in advance produces more variety",
+       caption = "Stylised simulation (2,000 consumers per condition). Not empirical data.")
+```
+
+::: {.business-case}
+**Illustrative scenario: subscription boxes and flavour rotation.** A snack
+subscription asks customers to choose a month of snacks at once. Diversification
+bias predicts that they will pick more variety than they will enjoy, which can
+raise later dissatisfaction with less-preferred items. Two design responses
+follow from the theory: allow week-by-week swaps (converting simultaneous into
+sequential choice), or default the box to a mix weighted toward each customer's
+revealed favourites. Snack and beverage brands also exploit genuine
+sensory-specific satiety with rotating limited-edition flavours that keep
+variety seekers inside the brand rather than switching to a competitor.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses and designs.** *H1.* Bundled, advance purchases will
+contain more distinct items than repeated single purchases by the same
+consumers. *H2.* Brand switching driven by satiation will occur more at the
+flavour than at the brand level [@inman2001]. Use scanner panels to separate
+true variety seeking from promotion-driven switching, choice experiments
+contrasting simultaneous and sequential choice [@simonson1990], and optimum
+stimulation level scales [@raju1980; @steenkamp1992].
+:::
+
+::: {.pitfall}
+**Calling every switch variety seeking.** Brand switching in panel data often
+reflects promotions, stockouts, or multiple household users, which
+@mcalister1982 classify as derived varied behaviour. Control for price and
+availability before attributing switching to a taste for variety.
+:::
+
+## Reference Price Theory {#reference-price}
+
+::: {.theory-card}
+**Core claim.** Consumers judge a price against a **reference price**, an
+internal standard formed from past prices or an external standard supplied by
+the environment. Prices below the reference are coded as gains and prices
+above it as losses, and losses affect choice more strongly than equivalent
+gains [@winer1986; @kalyanaram1995; @mazumdar2005].
+
+**Origins.** Behavioural pricing and marketing science, drawing on
+adaptation-level theory, [Prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory))
+[@kahneman1979], and transaction utility in [Mental
+accounting](#mental-accounting) (Section \@ref(mental-accounting)) [@thaler1985]. Brand choice models by
+@winer1986. Reviews by @kalyanaram1995 and @mazumdar2005.
+
+**Level of analysis.** Individual consumer, aggregated to brand demand and
+retail pricing policy.
+
+**Key constructs.** Internal reference price, external reference price,
+price expectation, gain and loss, loss aversion, transaction utility,
+promotion frequency.
+
+**Boundary conditions.** Strongest for frequently purchased goods with salient
+price histories and for consumers who track prices. Reference effects are
+harder to identify when consumers differ widely in price sensitivity
+[@bell2000].
+
+**Related theories.** [Prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)),
+[Loss aversion](#loss-aversion) (Section \@ref(loss-aversion)), [Anchoring effect](#anchoring-effect) (Section \@ref(anchoring-effect)),
+[Mental accounting](#mental-accounting) (Section \@ref(mental-accounting)), [Decoy effect](#decoy-effect) (Section \@ref(decoy-effect)).
+:::
+
+### Core logic and propositions
+
+Classical demand theory predicts that consumers respond to the current price.
+Reference price theory adds that they respond to the current price *relative to
+a standard*. @winer1986 built this idea into a brand choice model for
+frequently purchased products, in which the reference price is a consumer's
+expectation formed from the brand's past prices, and choice depends on both
+the observed price and its deviation from the reference. @mayhew1992 showed
+with scanner data that both **internal** (memory-based) and **external**
+(point-of-purchase) reference prices affect choice.
+
+- **P1 (Reference dependence).** Holding price constant, purchase probability
+  rises when price is below the reference price and falls when it is above
+  [@winer1986; @kalyanaram1995].
+- **P2 (Adaptive formation).** Internal reference prices are formed largely from
+  the brand's own past prices. @briesch1997 compared alternative specifications
+  and found that models based on the brand's past prices fit best.
+- **P3 (Asymmetry).** Consumers react more to prices above the reference (losses)
+  than to prices below it (gains) [@hardie1993; @kalyanaram1995], an
+  application of [Loss aversion](#loss-aversion) (Section \@ref(loss-aversion)).
+- **P4 (External anchors).** Advertised regular or "compare at" prices raise
+  perceived value and lower search, even when the reference is exaggerated
+  [@urbany1988; @grewal1998].
+- **P5 (Promotion erosion).** Because reference prices adapt, frequent
+  promotions lower the internal reference price, so that the regular price
+  later feels like a loss.
+
+Figure \@ref(fig:fig-cb-refprice) illustrates P5 with an adaptive reference
+price. Under frequent promotions, the reference price drifts toward the deal
+price, and every return to the regular price becomes a perceived loss.
+
+```{r fig-cb-refprice, fig.cap = "Illustrative adaptive reference prices under two promotion policies. The reference price is an exponentially weighted average of past prices. Frequent promotions pull the reference price toward the deal price, so the regular price is increasingly coded as a loss. Stylised simulation.", fig.height = 4.4}
+weeks <- 1:52
+make_rp <- function(promo_every, label) {
+  price <- ifelse(weeks %% promo_every == 0, 3, 4)
+  rp <- numeric(length(weeks)); rp[1] <- 4
+  for (t in 2:length(weeks)) rp[t] <- 0.75 * rp[t - 1] + 0.25 * price[t - 1]
+  tibble::tibble(week = weeks, `Shelf price` = price, `Reference price` = rp, policy = label)
+}
+rp <- bind_rows(make_rp(8, "Occasional promotions (every 8th week)"),
+                make_rp(2, "Frequent promotions (every 2nd week)")) |>
+  pivot_longer(c(`Shelf price`, `Reference price`), names_to = "series", values_to = "value")
+ggplot(rp, aes(week, value, colour = series)) +
+  geom_step(data = filter(rp, series == "Shelf price"), linewidth = 0.6) +
+  geom_line(data = filter(rp, series == "Reference price"), linewidth = 1.1) +
+  facet_wrap(~policy, ncol = 1) +
+  scale_colour_manual(values = c("Shelf price" = ink[["muted"]], "Reference price" = pal[["blue"]])) +
+  scale_y_continuous(labels = scales::dollar, limits = c(2.8, 4.1), breaks = c(3, 3.5, 4)) +
+  labs(x = "Week", y = "Price", colour = NULL,
+       title = "Frequent deals teach consumers a lower price",
+       caption = "Stylised: regular price $4, deal price $3, reference = 0.75 x previous reference + 0.25 x previous price.")
+```
+
+Table \@ref(tab:tab-cb-refprice) presents the internal and external reference prices (organised following Mazumdar, Raj, and Sinha, 2005).
+
+```{r tab-cb-refprice}
+tibble::tribble(
+  ~Feature, ~`Internal reference price`, ~`External reference price`,
+  "Definition", "A price standard held in memory", "A price standard presented in the purchase environment",
+  "Typical sources", "Past prices paid or seen, expected price, perceived fair price", "Advertised regular price, 'compare at' price, competitor prices, price of adjacent items",
+  "Formation", "Adaptive, updated by recent prices", "Supplied by the seller or context at the point of purchase",
+  "Typical measures", "Exponentially smoothed past prices, stated expected price", "Experimental manipulation of advertised reference prices",
+  "Managerial lever", "Promotion depth and frequency, price consistency", "Price-comparison advertising, assortment and display",
+  "Regulatory concern", "Low", "High: fictitious former prices can be deceptive",
+  "Key sources", "Winer (1986), Briesch et al. (1997)", "Urbany et al. (1988), Grewal et al. (1998)"
+) |>
+  book_table(caption = "Internal and external reference prices (organised following Mazumdar, Raj, and Sinha, 2005).")
+```
+
+### Evidence and critique
+
+@kalyanaram1995 summarised a set of empirical generalisations: reference prices
+affect brand choice, past prices are a central input to their formation, and
+the response to price losses is larger than the response to gains.
+@mazumdar2005 organise the literature around how reference prices are formed,
+how they are retrieved, and how they affect evaluations and choice, and they
+offer propositions for future research.
+
+::: {.debate}
+**Is loss aversion in scanner data real?** @bell2000 showed that heterogeneity
+in price sensitivity can masquerade as loss aversion. Price-sensitive
+households tend to buy when prices are low (gains) and price-insensitive
+households when prices are high (losses), so a pooled model can find
+asymmetric responses even when no individual is loss averse. Once heterogeneity
+was accounted for, estimated loss aversion shrank substantially. The debate
+does not overturn reference dependence, but it means that asymmetry estimates
+from aggregate data require careful modelling of consumer heterogeneity. A
+second debate concerns which standard consumers actually use: the brand's own
+past prices, the category's prices, or the external price at the shelf
+[@briesch1997; @mayhew1992].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Outlet stores and "compare at" prices.** Outlet malls allow manufacturers to
+segment price-sensitive shoppers who will travel and accept less service from
+consumers who buy at full-price stores [@coughlan2005]. Price tags in outlets
+often display a "compare at" or "original" price alongside the selling price.
+Reference price theory explains why: an external reference raises perceived
+transaction value even when consumers discount it [@urbany1988; @grewal1998].
+The same mechanism creates regulatory risk. The US Federal Trade Commission's
+guides against deceptive pricing address former-price comparisons, and in 2014
+several members of the US Congress asked the Commission to examine whether
+outlet pricing and labelling misled shoppers, partly because some outlet goods
+are made specifically for outlets and were never sold at the reference price.
+For managers, the lesson is that reference prices create value only while they
+remain credible.
+:::
+
+::: {.business-case}
+**JCPenney's "Fair and Square" pricing.** In 2012 the US department store
+chain JCPenney, under a new chief executive, replaced most of its frequent
+sales and coupons with simpler everyday prices. The strategy assumed that
+shoppers disliked the promotional game. Sales and store traffic fell steeply,
+the chief executive was replaced in 2013, and promotions returned. Reference
+price theory and transaction utility [@thaler1985] suggest why: years of
+promotions had taught customers low internal reference prices and a habit of
+enjoying the "deal". Removing external reference prices eliminated the
+perceived gain without lowering the price consumers expected to pay.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The effect of a price increase on brand choice will be larger than the
+  effect of an equivalent price decrease, after controlling for household
+  heterogeneity in price sensitivity.
+- *H2.* Increasing promotion frequency will lower consumers' stated expected
+  price for the brand.
+- *H3.* Plausible external reference prices will raise perceived transaction
+  value more than implausible ones, and the effect will be weaker among
+  consumers with high price knowledge.
+
+**Measures.** Internal reference price from exponentially smoothed past prices
+[@winer1986; @briesch1997]. Stated expected and fair prices. Acquisition and
+transaction value scales [@grewal1998].
+
+**Designs.** Brand choice models with reference price terms estimated on
+scanner panels, with latent-class or random-coefficient heterogeneity
+[@bell2000]. Experiments manipulating advertised reference prices
+[@urbany1988]. Field experiments varying promotion schedules.
+:::
+
+::: {.pitfall}
+**Estimating loss aversion from pooled data.** Asymmetric price responses in
+aggregate data can arise from heterogeneity, endogenous purchase timing, and
+stockpiling rather than loss aversion. Model heterogeneity, account for
+purchase timing, and treat asymmetry as a hypothesis to be tested rather than
+a parameter to be assumed.
+:::
+
+## Consumer Culture Theory {#consumer-culture-theory}
+
+::: {.theory-card}
+**Core claim.** Consumption is a cultural practice. Consumers use goods,
+brands, and services to construct identities, form communities, and negotiate
+social structures and ideologies, and the meanings of goods are produced and
+circulated by culture, firms, and consumers together [@arnould2005].
+
+**Origins.** Interpretive consumer research drawing on anthropology, sociology,
+and cultural studies [@mccracken1986; @belk1989; @holt2002]. The label
+"consumer culture theory" was introduced by @arnould2005 to name a family of
+perspectives rather than a single theory.
+
+**Level of analysis.** Individual, community, market, and society.
+
+**Key constructs.** Cultural meaning, meaning transfer, consumption rituals,
+identity projects, marketplace cultures and subcultures, brand communities,
+cultural capital, marketplace ideologies, authenticity.
+
+**Boundary conditions.** Best suited to explaining meaning, identity, and
+practice. It aims at theoretical transferability across contexts rather than
+statistical generalisation, and it is less suited to predicting the size of
+effects.
+
+**Related theories.** [Self-congruity](#self-congruity),
+[Consumer-brand relationships](#consumer-brand-relationships),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)),
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)),
+[Identity signaling](#identity-signaling) (Section \@ref(identity-signaling)).
+:::
+
+### Origins and core logic
+
+@mccracken1986 offered the foundational account of how goods acquire meaning.
+Cultural meaning resides first in the **culturally constituted world**, the
+categories and principles through which a society organises experience. Two
+institutions, **advertising** and the **fashion system**, transfer that meaning
+into consumer goods. Consumers then draw meaning from goods into their own
+lives through **rituals**: possession, exchange (such as gift giving), grooming,
+and divestment. @mccracken1989 applied the same logic to celebrity
+endorsement: celebrities carry meanings from their roles, which advertising
+transfers to products and consumption transfers to consumers. Figure
+\@ref(fig:fig-cb-meaning) shows the model.
+
+```{r fig-cb-meaning, fig.cap = "McCracken's (1986) model of the movement of cultural meaning. Meaning moves from the culturally constituted world into goods through advertising and the fashion system, and from goods into consumers' lives through possession, exchange, grooming, and divestment rituals."}
+mechanism_diagram(sprintf('
+  W [label = "Culturally\\nconstituted world", %s]
+  AF [label = "Advertising and\\nfashion system", %s]
+  G [label = "Consumer goods\\nand brands", %s]
+  R [label = "Consumption rituals\\n(possession, exchange,\\ngrooming, divestment)", %s]
+  C [label = "Individual\\nconsumer", %s]
+  W -> AF -> G -> R -> C
+  C -> W [style = dashed, constraint = false, label = " consumers reshape\\n cultural meaning"]
+', node_construct, node_mechanism, node_construct, node_mechanism, node_outcome), height = 300)
+```
+
+@arnould2005 reviewed two decades of interpretive research and organised it
+into four research programmes (Table \@ref(tab:tab-cb-cct)). The common
+thread is that consumers are not merely choosers among attribute bundles but
+active producers of meaning who work with, and sometimes against, the meanings
+that marketers offer. @holt2002 developed this point into a dialectical theory
+of branding: consumers increasingly resist brands they perceive as cultural
+engineering, and brands retain value when they serve as authentic cultural
+resources for consumers' own identity projects. In later work, @holt2004
+argued that iconic brands succeed by offering myths that address
+contradictions in a society's culture at particular historical moments.
+
+```{r tab-cb-cct}
+tibble::tribble(
+  ~`Research programme`, ~`Central question`, ~`Illustrative study`, ~`Managerial relevance`,
+  "Consumer identity projects", "How do consumers use market resources to construct coherent selves?", "Extended self (Belk, 1988)", "Positioning brands as identity resources",
+  "Marketplace cultures", "How do consumers forge communities and subcultures around consumption?", "Harley-Davidson bikers (Schouten & McAlexander, 1995), brand communities (Muniz & O'Guinn, 2001)", "Community management, co-creation",
+  "Sociohistoric patterning of consumption", "How do class, gender, ethnicity, and institutions structure consumption?", "Cultural capital and taste (Holt, 1998)", "Segmentation beyond demographics",
+  "Mass-mediated marketplace ideologies", "How do consumers interpret, adopt, or resist commercial meanings?", "Doppelganger brand images (Thompson et al., 2006)", "Monitoring brand meaning and backlash"
+) |>
+  book_table(caption = "The four research programmes of consumer culture theory identified by Arnould and Thompson (2005).")
+```
+
+### Evidence and critique
+
+CCT research has produced influential concepts: the **sacred and profane** in
+consumption [@belk1989], **subcultures of consumption** [@schouten1995],
+**brand communities** [@muniz2001], the structuring role of **cultural
+capital** in taste [@holt1998], and the **doppelganger brand image**, a
+parody of a brand's image circulated by critics that signals when emotional
+branding has lost authenticity [@thompson2006]. Methodologically, it
+introduced ethnography, phenomenological interviewing, and **netnography**, the
+ethnographic study of online communities [@kozinets2002], into marketing.
+
+::: {.debate}
+**Theory or label, and how much context?** Sceptics from the positivist
+tradition question whether findings from small, purposive samples generalise,
+and whether a "family of perspectives" is a theory at all. Defenders respond
+that CCT seeks analytic rather than statistical generalisation and that its
+concepts have proved transferable across markets. A critique from within the
+tradition is equally pointed. @askegaard2011 argue that CCT has focused too
+heavily on individual consumers' lived experience and needs to attend to the
+"context of context": the social, historical, and institutional structures that
+shape what consumers can experience in the first place.
+:::
+
+::: {.business-case}
+**Meaning transfer in celebrity endorsement and cultural branding.** Nike's Air
+Jordan line, launched in 1985 around a then-rookie basketball player, is a
+textbook case of McCracken's meaning transfer: the athlete's cultural meanings
+(excellence, style, defiance) moved into the product through advertising and
+into consumers' lives through use, collecting, and display [@mccracken1989].
+CCT also explains the limits of such strategies. When consumers perceive a
+brand's meanings as manufactured, they produce counter-meanings, the
+doppelganger images that @thompson2006 identified around Starbucks. The
+managerial implication is to monitor not only what the brand says but also
+what consumers and critics are saying about it, and to ground brand meaning in
+practices consumers can recognise as authentic [@holt2002].
+:::
+
+::: {.research-toolkit}
+**Typical research questions and propositions.** CCT studies usually build
+theory rather than test hypotheses, but they generate propositions that other
+methods can test, for example: *P1.* Brand communities that share rituals and
+a sense of moral responsibility will show greater resistance to competitor
+switching than communities based only on product use. *P2.* Consumers with high
+cultural capital will favour brands whose meanings are subtle and require
+interpretive knowledge.
+
+**Designs and data.** Ethnography and participant observation
+[@schouten1995]. Phenomenological interviews. Netnography of online communities
+[@kozinets2002]. Historical and archival analysis of advertising and media.
+Mixed methods that pair interpretive discovery with survey or experimental
+tests.
+:::
+
+::: {.pitfall}
+**Using interpretive research as decoration.** A handful of quotations does not
+make a CCT study. The tradition's contribution comes from sustained engagement
+with a context, theoretically motivated sampling, and an explicit account of
+how meanings are produced and contested. Conversely, quantitative researchers
+should not dismiss CCT findings for lacking statistical generalisation: they
+are best treated as theoretical mechanisms to be tested and bounded.
+:::
+
+## Chapter Summary {#consumer-behavior-summary}
+
+::: {.key-takeaways}
+- Satisfaction is a **relative judgment**. Expectations, performance, and their
+  comparison all matter, and shortfalls hurt more than surpluses help
+  [@oliver1980; @anderson1993].
+- Product attributes matter because they lead to **consequences and values**,
+  and laddering reveals these chains [@gutman1982; @reynolds1988].
+- **Brand equity** is a differential response to marketing that originates in
+  brand knowledge, and it should be measured against a benchmark
+  [@keller1993; @aaker1991].
+- Brands acquire **personalities** and become **relationship partners** whose
+  transgressions, norms, and attachment shape loyalty [@aaker1997;
+  @fournier1998; @park2010].
+- Consumers prefer brands that fit their **self-concept**, and possessions
+  become part of an **extended self** [@sirgy1982; @belk1988].
+- **Moderate incongruity** with a schema can be an advantage, but only when
+  consumers can resolve it and risk is low [@meyerslevy1989; @campbell2001].
+- **Hedonic** consumption requires justification, so effort, prior virtue, and
+  charity tie-ins change choices [@dhar2000; @okada2005; @khan2006].
+- **Psychological ownership** and **variety seeking** explain valuation and
+  switching beyond price and quality [@pierce2001; @simonson1990].
+- Prices are judged against **reference prices**, and promotions reshape those
+  standards [@winer1986; @mazumdar2005].
+- **Consumer culture theory** treats consumption as meaning-making that firms
+  shape but do not control [@mccracken1986; @arnould2005].
+:::
+
+Table \@ref(tab:tab-cb-summary) presents the comparison of the chapter's theories.
+
+```{r tab-cb-summary}
+tibble::tribble(
+  ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "[Expectancy-disconfirmation](#expectancy-disconfirmation)", "Comparison with expectations", "Shortfalls hurt more than surpluses help", "Satisfaction measurement, expectation management",
+  "[Means-end chain](#means-end-chain)", "Attribute to consequence to value", "Value-level appeals outperform attribute claims for involving products", "Positioning, advertising strategy",
+  "[Customer-based brand equity](#customer-based-brand-equity)", "Brand knowledge in memory", "Same marketing works better for the brand than for an unbranded version", "Brand tracking, price premiums",
+  "[Brand personality](#brand-personality)", "Trait inference and self-expression", "Personality shapes attitudes and relationship dynamics", "Brand identity, creative briefs",
+  "[Consumer-brand relationships](#consumer-brand-relationships)", "Relationship norms and attachment", "Transgression effects depend on relationship type", "CRM, communities, crisis response",
+  "[Self-congruity](#self-congruity)", "Self-consistency and self-esteem", "Preference for brands matching the self", "Target user imagery",
+  "[Schema congruity](#schema-congruity)", "Incongruity resolution", "Inverted U in evaluations", "Brand extensions, new product design",
+  "[Hedonic and utilitarian consumption](#hedonic-utilitarian)", "Guilt and justification", "Justification cues raise hedonic choice", "Loyalty rewards, cause marketing, framing",
+  "[Psychological ownership](#psychological-ownership)", "Control, knowledge, self-investment", "Touch and customisation raise valuation", "Trials, configurators, co-creation",
+  "[Variety seeking](#variety-seeking)", "Satiation and anticipated satiation", "More variety in simultaneous choices", "Assortment, flavour rotation, subscriptions",
+  "[Reference price](#reference-price)", "Gains and losses against a standard", "Frequent deals lower reference prices", "Promotion policy, price communication",
+  "[Consumer culture theory](#consumer-culture-theory)", "Cultural meaning transfer and resistance", "Brands thrive as authentic cultural resources", "Cultural branding, community strategy"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#consumer-behavior-questions}
+
+1. A hotel chain's satisfaction scores fall after a successful advertising
+   campaign while service quality is unchanged. Use expectancy-disconfirmation
+   theory to explain the pattern and design a study to test your explanation.
+2. Conduct three short laddering interviews about a product you recently bought.
+   Draw a hierarchical value map. Which level of the ladder offers the best
+   positioning opportunity, and why?
+3. Keller defines brand equity as a *differential* response. Design a study that
+   measures brand equity for a national brand of breakfast cereal at the
+   customer-mindset and product-market levels. What benchmark will you use?
+4. Aaker, Fournier, and Brasel found that sincere and exciting brands respond
+   differently to transgressions. How should a crisis communication plan differ
+   for the two kinds of brands? State a testable hypothesis.
+5. Choose a brand extension announced in the past five years. Predict its
+   success using schema congruity theory and the drivers identified by Völckner
+   and Sattler. What evidence would falsify your prediction?
+6. A retailer plans to cut its promotion frequency in half. Using reference price
+   theory, forecast the short-run and long-run effects on sales and perceived
+   value, and explain how you would separate loss aversion from consumer
+   heterogeneity in the data.
+
+## Further Reading {#consumer-behavior-reading}
+
+- @oliver1980: the classic statement of expectancy-disconfirmation and the
+  starting point for satisfaction research.
+- @keller1993: the foundational definition of customer-based brand equity and
+  its memory-based logic.
+- @aaker1997: the brand personality scale, best read together with the critique
+  in @azoulay2003.
+- @fournier1998: the paper that legitimised the study of consumer-brand
+  relationships, rich in qualitative detail.
+- @meyerslevy1989: a compact and elegant test of schema congruity with a clear
+  mechanism.
+- @mazumdar2005: the most comprehensive review of reference price research,
+  with testable propositions.
+- @arnould2005: the map of consumer culture theory and its research programmes.
+- @alba2013: a review of hedonic consumption that connects the
+  hedonic-utilitarian distinction to broader research on pleasure.

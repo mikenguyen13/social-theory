@@ -1,0 +1,1711 @@
+# Organizations, Teams, and Decision Processes {#organizations-decisions}
+
+On the night of 27 January 1986, engineers at a NASA contractor argued against
+launching the space shuttle *Challenger* in record cold. The next morning the
+shuttle broke apart 73 seconds after lift-off. Seventeen years later, a piece of
+insulating foam struck the wing of *Columbia* during launch, engineers asked for
+better imagery of the damage, and the request went nowhere. The official
+investigation concluded that NASA's [organizational culture](#organizational-culture) and decision processes
+were as much a cause of the second accident as the foam itself [@caib2003]. Both
+tragedies involved talented people, abundant data, and formal review procedures.
+Neither can be explained by individual incompetence. They are failures of
+*organizing*: of how groups notice problems, interpret ambiguous signals, learn
+from the past, and decide whether to speak up or press on.
+
+This chapter assembles the theories that explain how decisions are actually made
+inside organizations and teams, as opposed to how they should be made in a
+textbook. We begin with two accounts of decision processes that depart sharply
+from rational choice: the **[garbage can model](#garbage-can-model)** and **[escalation of commitment](#escalation-of-commitment)**.
+We then turn to how organizations accumulate and create knowledge
+(**[organizational learning](#organizational-learning)** and **[knowledge creation](#knowledge-creation)**), to the shared
+self-understandings and values that steer behaviour (**[organizational identity](#organizational-identity)**,
+**organizational culture**, and **[paradox theory](#paradox-theory)**), to the interpersonal climate
+of teams (**[psychological safety](#psychological-safety)**), to how the composition and social context of
+the workforce shape attitudes (**[attraction-selection-attrition](#attraction-selection-attrition)** and **social
+information processing**), and finally to **[sensemaking](#sensemaking)**, the process through
+which people construct the situations they then act upon. Together these theories
+form the core of the behavioural and interpretive tradition in organization
+theory, a tradition that starts from the observation that organizations are
+boundedly rational, socially constructed, and path dependent
+[@cyert1963; @weick1979] (Table \@ref(tab:od-tab-glance)).
+
+```{r od-tab-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "[Garbage can model](#garbage-can-model)", "How are choices made when goals, technology, and participation are all unclear?", "Organization", "Cohen, March & Olsen (1972)",
+  "[Escalation of commitment](#escalation-of-commitment)", "Why do decision makers keep investing in failing courses of action?", "Individual / group / organization", "Staw (1976)",
+  "[Organizational learning](#organizational-learning)", "How do organizations encode experience into routines, and when do they question them?", "Organization", "Argyris & Schön (1978), Levitt & March (1988)",
+  "[Knowledge creation](#knowledge-creation)", "How is new knowledge created through conversion of tacit and explicit knowledge?", "Individual to organization", "Nonaka (1994)",
+  "[Organizational identity](#organizational-identity)", "Who are we as an organization, and how does that shape action?", "Organization", "Albert & Whetten (1985)",
+  "[Organizational culture](#organizational-culture)", "What shared assumptions and values guide behaviour?", "Organization / group", "Schein (2010)",
+  "[Paradox theory](#paradox-theory)", "How can organizations sustain contradictory demands over time?", "Individual / organization", "Smith & Lewis (2011)",
+  "[Psychological safety](#psychological-safety)", "When do team members feel safe to speak up, admit errors, and learn?", "Team", "Edmondson (1999)",
+  "[Attraction-selection-attrition](#attraction-selection-attrition)", "Why do organizations become homogeneous over time?", "Individual / organization", "Schneider (1987)",
+  "[Social information processing](#social-information-processing)", "How do social cues shape job attitudes?", "Individual / workgroup", "Salancik & Pfeffer (1978)",
+  "[Sensemaking](#sensemaking)", "How do people construct meaning from ambiguous events and act on it?", "Individual / group / organization", "Weick (1995)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of organizations, teams, and decision processes.")
+```
+
+## Garbage Can Model {#garbage-can-model}
+
+::: {.theory-card}
+**Core claim.** In "organized anarchies", decisions are not the output of a
+sequence that runs from problem to analysis to choice. They emerge when
+independent streams of problems, solutions, participants, and choice
+opportunities happen to meet. Timing and access, not intention, explain much of
+what gets decided.
+
+**Origins.** Organization theory and public administration. @cohen1972,
+extending the behavioural theory of @cyert1963. Applied to public policy by
+@kingdon1984.
+
+**Level of analysis.** Organization (universities, government agencies,
+professional firms, new ventures), and policy systems.
+
+**Key constructs.** Problematic preferences, unclear technology, fluid
+participation, problem stream, solution stream, participant stream, choice
+opportunities, decision by resolution, oversight, and flight, load, access
+structure.
+
+**Boundary conditions.** Strongest when goals are inconsistent or ill-defined,
+cause-effect knowledge is weak, and attention is scarce and shifting. Weaker in
+tightly coupled, well-understood operational settings.
+
+**Related theories.** [Behavioral theory of the firm](#behavioral-theory-of-the-firm) (Section \@ref(behavioral-theory-of-the-firm)),
+[Attention-based view](#attention-based-view) (Section \@ref(attention-based-view)), [Bounded rationality](#bounded-rationality) (Section \@ref(bounded-rationality)),
+[Sensemaking](#sensemaking).
+:::
+
+### Origins and core logic
+
+@cohen1972 began with an empirical observation about universities. Their goals are
+multiple and contested (**problematic preferences**), nobody fully understands
+how teaching or research produce results (**unclear technology**), and faculty,
+students, and administrators drift in and out of decisions depending on their
+other commitments (**fluid participation**). The authors called such settings
+**organized anarchies** and argued that standard models of choice, which assume
+that problems precede and motivate solutions, describe them poorly.
+
+Instead, an organization can be viewed as a collection of choices looking for
+problems, issues and feelings looking for decision situations in which they might
+be aired, solutions looking for issues to which they might be the answer, and
+decision makers looking for work. Four relatively independent **streams** flow
+through the organization. A **choice opportunity**, such as a budget meeting, a
+hiring committee, or a strategic review, is the "garbage can" into which
+participants dump whatever problems and solutions are currently active. What
+comes out depends on the mix in the can at that moment.
+
+The authors formalized the argument in a computer simulation and identified three
+ways in which choices are made:
+
+- **Resolution.** A choice resolves the problems attached to it, the classic
+  rational pattern.
+- **Oversight.** A choice is made quickly, before problems attach to it, so it
+  resolves nothing that was not already settled.
+- **Flight.** Problems attach to a choice, but the choice is delayed until the
+  problems leave for another, more attractive choice opportunity. The choice is
+  then made without resolving them.
+
+A central result of the simulation was that resolution is *not* the dominant
+style of decision making except when the load on the system is light. Under
+heavy load, oversight and flight dominate, important problems are more likely to
+remain unresolved, and decision makers spend much of their time on the same
+problems in different arenas [@cohen1972].
+
+### Mechanism
+
+Figure \@ref(fig:od-fig-garbage) shows the garbage can model: four loosely coupled streams meet in choice opportunities.
+
+```{r od-fig-garbage, fig.cap = "The garbage can model: four loosely coupled streams meet in choice opportunities. Whether a choice resolves problems depends on timing, load, and access rules rather than on a planned problem-solving sequence. Based on Cohen, March & Olsen (1972)."}
+mechanism_diagram(sprintf('
+  P  [label = "Problems\\n(issues, complaints,\\nperformance gaps)", %s]
+  S  [label = "Solutions\\n(ideas, technologies,\\npet projects)", %s]
+  A  [label = "Participants\\n(who has time\\nand access)", %s]
+  C  [label = "Choice opportunity\\n(the garbage can:\\nmeeting, budget, review)", %s]
+  R  [label = "Resolution", %s]
+  O  [label = "Oversight", %s]
+  F  [label = "Flight", %s]
+  M  [label = "Organized anarchy\\nand system load", %s]
+  P -> C
+  S -> C
+  A -> C
+  C -> R
+  C -> O
+  C -> F
+  M -> C [style = dashed]
+', node_construct, node_construct, node_construct, node_mechanism,
+   node_outcome, node_outcome, node_outcome, node_moderator))
+```
+
+The garbage can model does not claim that organizations are irrational. It claims
+that **temporal coincidence** matters. A solution championed by a powerful
+participant can wait years for a problem to which it can be attached, and a
+problem that arrives when attention is elsewhere may be ignored even if it is
+severe. @kingdon1984 adapted this idea to public policy as the **multiple streams
+framework**: a policy change becomes likely when a problem stream, a policy
+(solution) stream, and a political stream converge during a brief **policy
+window**, often with help from a **policy entrepreneur** who couples them (Table \@ref(tab:od-tab-gcm)).
+
+```{r od-tab-gcm}
+tibble::tribble(
+  ~`Classic rational sequence`, ~`Garbage can account`, ~`Managerial implication`,
+  "Problems are identified, then solutions are sought", "Solutions often exist first and search for problems", "Track which solutions are being promoted, not only which problems exist",
+  "Goals are clear and stable", "Preferences are discovered through action", "Expect goals to be rationalised after the fact",
+  "Participants are fixed", "Participation depends on time, energy, and other arenas", "Agenda and attendance shape outcomes as much as arguments",
+  "Choices resolve problems", "Many choices are made by oversight or flight", "Audit whether decisions actually closed the issues they were meant to address",
+  "Timing is incidental", "Timing and coincidence are central", "Prepare solutions in advance and act when windows open"
+) |>
+  book_table(caption = "Rational choice versus the garbage can account of organizational decisions.")
+```
+
+### Evidence and extensions
+
+The original article was a thought experiment illustrated by simulation, and its
+empirical support comes mostly from qualitative studies of universities, public
+agencies, and policy making. Kingdon's interview-based study of United States
+federal policy agendas is the most influential application [@kingdon1984]. The
+model also influenced work on attention allocation and organizational routines,
+including the [attention-based view](#attention-based-view) (Section \@ref(attention-based-view)).
+
+::: {.debate}
+**Does the simulation match the theory?** @bendor2001 offered the sharpest
+critique. They argued that the computer model implements a far more structured
+organization than the verbal theory describes (for example, access rules and
+energy loads are fixed by design), that individual agency disappears from the
+model, and that several of the verbal claims do not follow from the simulation.
+Defenders reply that the garbage can is best read as a sensitizing metaphor about
+loose coupling and timing, not as a precise predictive model. A second
+limitation is falsifiability: almost any decision outcome can be narrated as the
+product of colliding streams, so researchers need to specify ex ante which stream
+configurations should produce which outcomes.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Illustrative scenario: the technology looking for a problem.** A retailer's
+analytics team has built a sophisticated recommendation engine. No business unit
+asked for it. For two years it is presented at quarterly planning meetings
+without adoption. Then a sharp drop in online conversion coincides with a new
+chief digital officer's arrival and an open budget cycle. Within weeks the engine
+is funded as "the answer" to conversion, although nobody has diagnosed why
+conversion fell. The garbage can lens explains the timing and warns about the
+risk: the problem may not be the one the solution solves. A practical response is
+to separate the *window* (the moment of attention) from the *diagnosis* by
+requiring a short root-cause analysis before any solution already in the pipeline
+is attached to a newly salient problem.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The probability that a pre-existing internal proposal is adopted rises
+  sharply in periods following an exogenous performance shock, independent of the
+  proposal's fit with the shock.
+- *H2.* Under high decision load (many concurrent choice opportunities), a larger
+  share of decisions will be recorded without resolution of the issues raised in
+  meeting minutes.
+
+**Designs and data.** Meeting minutes and board agendas coded for problems,
+solutions, and attendance. Event-history models of proposal adoption. Agent-based
+simulation that explicitly varies access structures. Policy-agenda datasets for
+public-sector applications.
+:::
+
+::: {.pitfall}
+**Using the garbage can as an all-purpose excuse.** Calling a decision process a
+"garbage can" explains nothing unless the analyst shows that the streams were in
+fact independent and that timing, rather than deliberate choice, determined the
+outcome. The model is a description of particular conditions (organized anarchy
+and high load), not a general claim that organizations are chaotic.
+:::
+
+## Escalation of Commitment {#escalation-of-commitment}
+
+::: {.theory-card}
+**Core claim.** Decision makers who are responsible for a course of action tend to
+continue, and even increase, investment in it after receiving negative feedback,
+beyond the point that a forward-looking analysis would justify.
+
+**Origins.** Organizational behaviour and social psychology. @staw1976, with the
+theoretical framework of @staw1981. The related **sunk cost effect** was
+documented by @arkes1985.
+
+**Level of analysis.** Individual, group, and organization (projects, product
+lines, acquisitions, public programmes).
+
+**Key constructs.** Sunk costs, personal responsibility, self-justification,
+negative feedback, project completion, framing of losses, public commitment,
+de-escalation.
+
+**Boundary conditions.** Requires a prior decision, ambiguous or negative feedback,
+and an opportunity to reinvest. Effects are weaker when decision makers are not
+responsible for the initial choice, when the cost of continuation is salient, and
+when exit is institutionally easy.
+
+**Related theories.** [Cognitive dissonance](#cognitive-dissonance-theory) (Section \@ref(cognitive-dissonance-theory)),
+[Prospect theory](#prospect-theory-overview) (Section \@ref(prospect-theory-overview)), [Mental accounting](#mental-accounting) (Section \@ref(mental-accounting)),
+[Agency theory](#agency-theory) (Section \@ref(agency-theory)), [Real options](#real-options-theory) (Section \@ref(real-options-theory)),
+[Groupthink](#groupthink) (Section \@ref(groupthink)).
+:::
+
+### Origins and intellectual history
+
+The title of Staw's 1976 article, "Knee-deep in the big muddy", alludes to a
+Vietnam-era protest song, and the war itself, in which the United States
+government repeatedly increased its commitment in the face of discouraging
+results, was a motivating example. @staw1976 tested the underlying idea in a role-playing experiment. Business
+students acting as a corporate financial officer allocated research and
+development funds to one of two divisions, then learned how the division had
+performed, then allocated a second round of funds. Participants who had
+personally chosen the initial division and then learned it had performed poorly
+allocated significantly more money to it in the second round than participants
+who had not made the original choice. Responsibility for a losing decision
+produced more, not less, investment in it.
+
+@staw1981 interpreted the finding through **self-justification**: people are
+motivated to demonstrate, to themselves and others, that an earlier decision was
+correct. Reinvesting keeps open the possibility that the decision will be
+vindicated. Admitting failure closes it. Four years later, @arkes1985 documented
+the closely related **sunk cost effect**, the tendency to continue an endeavour
+once an investment of money, effort, or time has been made. In one of their field
+studies, theatre patrons who had been randomly assigned to pay full price for
+season tickets attended more performances in the first part of the season than
+patrons who had received discounts, although the money was spent either way.
+
+The biologist Richard Dawkins and a colleague had independently named the error
+the **Concorde fallacy**, after the Anglo-French supersonic airliner whose
+development continued despite mounting evidence that it would not be a
+commercial success [@dawkins1976]. @arkes1999 reviewed the animal and human
+evidence and argued that the effect is distinctively human, rooted in an
+overgeneralised rule against wasting resources.
+
+### Core logic and propositions
+
+Escalation is an error only relative to a normative benchmark. In rational
+choice, past costs are **sunk**: they cannot be recovered whatever one does next,
+so they should not influence a forward-looking decision. The right question is
+always whether the *incremental* cost of continuing is justified by the
+*incremental* expected value. Escalation occurs when sunk costs, prior
+commitments, or identity concerns enter that comparison. Building on
+@staw1981, @brockner1992, and the meta-analysis of @sleesman2012, the theory can
+be summarised in propositions:
+
+- **P1 (Responsibility).** Decision makers who are personally responsible for an
+  initial decision escalate more after negative feedback than decision makers who
+  inherit it.
+- **P2 (Sunk costs).** The larger the prior investment, the greater the
+  willingness to continue, holding forward-looking prospects constant.
+- **P3 (Loss framing).** Because continuing offers a chance to avoid a certain
+  loss, decision makers in the loss domain take the risky option of
+  continuation, consistent with [prospect theory](#prospect-theory-overview) (Section \@ref(prospect-theory-overview)).
+- **P4 (Completion).** Willingness to continue rises as a project approaches
+  completion, even when the remaining cost exceeds the remaining value.
+- **P5 (Structural and social binding).** Public commitment, political support,
+  and institutionalised projects make exit costly for the organization, even
+  after individual decision makers have lost confidence.
+
+Figure \@ref(fig:od-fig-escalation) illustrates the economic logic with a
+stylised project. The value of completion is fixed. Each quarter, the estimate of
+the cost still required to finish rises. A forward-looking decision maker exits
+once the remaining cost exceeds the remaining value. An escalating decision maker,
+anchored on what has already been spent, continues long after that point.
+
+```{r od-fig-escalation, fig.cap = "Stylised escalation of commitment. The rational exit point is where the estimated cost to complete first exceeds the value of completion. Funds spent after that point (shaded) represent escalation. Illustrative numbers only.", fig.height = 4.2}
+set.seed(1976)
+q <- 1:12
+value_complete <- 100                                       # value if the project is finished
+remaining <- 40 * 1.16^(q - 1) + rnorm(12, 0, 2)              # cost-to-complete estimate keeps rising
+spent <- cumsum(c(0, rep(18, 11)))                            # cumulative spending each quarter
+proj <- bind_rows(
+  data.frame(q, value = remaining, series = "Estimated cost to complete"),
+  data.frame(q, value = spent, series = "Cumulative spending (sunk)")
+)
+exit_q <- min(q[remaining > value_complete])
+ggplot(proj, aes(q, value, colour = series)) +
+  annotate("rect", xmin = exit_q, xmax = 12, ymin = -Inf, ymax = Inf, fill = pal[["orange"]], alpha = 0.08) +
+  geom_hline(yintercept = value_complete, linetype = "dashed", colour = ink[["secondary"]]) +
+  geom_line() +
+  geom_point(size = 1.8) +
+  geom_vline(xintercept = exit_q, colour = ink[["muted"]], linewidth = 0.4) +
+  annotate("text", x = 1, y = value_complete + 8, label = "Value of completing the project", hjust = 0,
+           size = 3.3, colour = ink[["secondary"]]) +
+  annotate("text", x = exit_q + 0.15, y = 75, label = "Forward-looking\nexit point", hjust = 0,
+           size = 3.3, colour = ink[["secondary"]]) +
+  annotate("text", x = 10.4, y = 20, label = "Escalation zone", size = 3.5, fontface = "bold",
+           colour = ink[["primary"]]) +
+  scale_colour_manual(values = c("Estimated cost to complete" = pal[["blue"]],
+                                 "Cumulative spending (sunk)" = pal[["orange"]])) +
+  scale_x_continuous(breaks = 1:12) +
+  labs(x = "Quarter since project launch", y = "Money (index)", colour = NULL,
+       title = "Sunk costs should not enter the continuation decision",
+       caption = "Stylised simulation. Continue only while the cost to complete is below the value of completion.")
+```
+
+### Determinants of escalation
+
+@ross1993 organized the many determinants of escalation into four classes, a
+framework that later reviews retained [@sleesman2012; @sleesman2018] (Table \@ref(tab:od-tab-escalation)).
+
+```{r od-tab-escalation}
+tibble::tribble(
+  ~`Class of determinant`, ~Examples, ~`Theoretical root`, ~`De-escalation lever`,
+  "Project", "Ambiguous feedback, large payoff on completion, long time horizons, closeness to completion", "Expected value, information economics", "Pre-set milestones and kill criteria tied to forward-looking value",
+  "Psychological", "Personal responsibility, self-justification, loss framing, sunk cost reasoning", "Dissonance, prospect theory", "Rotate decision makers and separate initial and continuation decisions",
+  "Social", "Public commitment, face-saving, norms of consistency for leaders", "Impression management", "Reward accurate early reporting of bad news",
+  "Structural", "Political coalitions, institutionalised projects, side bets, sunk investments in people and assets", "Institutional theory, resource dependence", "Independent review boards and staged funding"
+) |>
+  book_table(caption = "Determinants of escalation of commitment, organized following Ross and Staw (1993).")
+```
+
+### Evidence and extensions
+
+The phenomenon is well supported. @sleesman2012 meta-analysed escalation research
+and confirmed that sunk costs, personal responsibility, and project-related
+factors such as proximity to completion predict continued commitment, while
+showing that effect sizes vary considerably across settings. Field studies trace
+escalation in nuclear power, information systems, banking, and professional
+sports. @ross1993 reconstructed the history of the Shoreham nuclear power plant on
+Long Island, whose cost estimates rose from tens of millions to billions of
+dollars over two decades, and which was completed but never entered commercial
+operation. They showed how project, psychological, social, and structural forces
+dominated at different stages: early commitment was driven by projected
+economics, later commitment by political and structural binding. In information
+systems, @keil2000 surveyed audit professionals about runaway software projects
+and compared four explanations (self-justification, [prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)), agency
+theory, and approach-avoidance theory), finding that several of them contributed
+to explaining escalation.
+
+::: {.debate}
+**Error or rational persistence?** Not every decision to continue is escalation.
+Persistence can be rational when feedback is noisy, when early losses are
+expected in innovation, or when reputational benefits of consistency are real.
+Critics note that many laboratory designs make it impossible to tell whether
+participants are biased or are updating sensibly on ambiguous information.
+Case labels can also oversimplify. The Concorde programme was governed by an
+Anglo-French intergovernmental agreement that made unilateral cancellation
+diplomatically costly, a structural rather than a purely psychological driver
+of continuation. The
+theoretical frontier, reviewed by @sleesman2018, is a multilevel account that
+separates individual biases from team and organizational forces and studies
+**de-escalation** as a process in its own right.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Large IT programmes.** Enterprise software and public-sector IT projects are
+the modern home of escalation research because they combine long horizons,
+ambiguous progress measures, and highly visible sponsors. The United Kingdom's
+National Programme for IT in the National Health Service, launched in 2002 and
+dismantled in 2011 after sustained criticism from parliamentary committees and
+the National Audit Office, is a widely discussed public example. Research on such
+projects [@keil2000] suggests three practical safeguards: **stage-gated funding**
+that requires a fresh forward-looking business case at each gate, **separation
+of roles** so that the sponsor who initiated a project does not alone decide
+whether it continues, and **pre-registered kill criteria** written when the
+project is launched and the sponsor's ego is not yet invested.
+:::
+
+::: {.business-case}
+**Venture capital and real options.** Venture investors explicitly structure
+funding in stages, so that each round is a new decision about the incremental
+investment. In principle, staging converts a single large commitment into a
+sequence of [real options](#real-options-theory) (Section \@ref(real-options-theory)). In practice, escalation can
+reappear through follow-on investments made to protect earlier positions. Many
+funds therefore have partners other than the original sponsor evaluate follow-on
+rounds.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Executives who championed an acquisition will be less likely to divest
+  the acquired unit after poor performance than successor executives, controlling
+  for unit performance.
+- *H2.* The positive effect of cumulative project spending on continuation will be
+  weaker when funding is staged and continuation decisions are made by an
+  independent committee.
+- *H3.* Proximity to completion will increase continuation more strongly when
+  progress is measured by spending than when it is measured by delivered
+  functionality.
+
+**Designs.** The classic two-stage allocation experiment [@staw1976] remains the
+workhorse. Field designs exploit executive turnover as a shift in personal
+responsibility, compare initiators and successors, or use project-level data
+from IT portfolios, pharmaceutical pipelines, and sports drafts.
+
+**Measures.** Additional resources allocated after negative feedback, time to
+project termination, responsibility (initiator versus successor), sunk cost
+magnitude, and proximity to completion.
+:::
+
+::: {.pitfall}
+**Labelling every failed persistence as bias.** Escalation is defined relative to
+a forward-looking benchmark. To claim escalation, researchers and managers need
+to show that the information available at the time implied that continuation had
+negative incremental expected value. Hindsight makes this look easier than it
+was. Conversely, managers who quote "sunk costs are sunk" to kill every
+struggling innovation project risk the opposite error of premature abandonment.
+:::
+
+## Organizational Learning {#organizational-learning}
+
+::: {.theory-card}
+**Core claim.** Organizations learn by encoding inferences from experience into
+routines that guide behaviour. Most learning refines existing routines
+(single-loop), while deeper learning questions the goals and assumptions behind
+them (double-loop).
+
+**Origins.** Organization theory and the behavioural theory of the firm.
+@argyris1978, @levitt1988, @huber1991, and the learning-curve tradition
+summarised by @argote1990.
+
+**Level of analysis.** Organization, with links to teams and individuals.
+
+**Key constructs.** Routines, single-loop and double-loop learning, theories in
+use versus espoused theories, knowledge acquisition, information distribution,
+interpretation, organizational memory, learning curves, knowledge depreciation
+and transfer, competency traps, superstitious learning.
+
+**Boundary conditions.** Learning requires feedback that can be observed and
+attributed. Learning is weaker when experience is rare, outcomes are noisy, or
+cause and effect are separated in time.
+
+**Related theories.** [Exploration and exploitation](#exploration-exploitation) (Section \@ref(exploration-exploitation)),
+[Absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity)),
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)),
+[Behavioral theory of the firm](#behavioral-theory-of-the-firm) (Section \@ref(behavioral-theory-of-the-firm)),
+[Psychological safety](#psychological-safety).
+:::
+
+### Origins and intellectual history
+
+Three intellectual lines converge in organizational learning theory. The first
+is the **behavioural theory of the firm**, in which organizations adapt their
+goals, attention, and search rules in response to experience [@cyert1963]. The
+second is the action-science tradition of @argyris1978, which focused on the gap
+between what managers say they believe and what their behaviour reveals. The
+third is the economics and engineering literature on **learning curves**, dating
+back to the observation that the labour required to build an airframe falls
+predictably as cumulative production rises [@wright1936].
+
+@levitt1988 synthesised the first line in an influential review. Organizational
+learning, they argued, is **routine-based**, **history-dependent**, and
+**target-oriented**. Organizations encode inferences from history into routines
+(rules, procedures, technologies, conventions) that persist even as personnel
+change. Routines are adjusted when performance falls short of aspirations.
+@huber1991 then mapped four constructs that organize the field: **knowledge
+acquisition**, **information distribution**, **information interpretation**, and
+**organizational memory**. @fiol1985 distinguished lower-level learning, which
+adjusts behaviour within existing rules, from higher-level learning, which
+changes the rules themselves.
+
+### Core logic: single-loop and double-loop learning
+
+@argyris1976 and @argyris1978 distinguished two kinds of learning. In
+**single-loop learning**, an organization detects an error and corrects it by
+changing its action strategy while leaving its governing values intact, much as a
+thermostat adjusts heating to hold a set temperature. In **double-loop learning**,
+the organization questions the governing variables themselves: it asks whether
+the target temperature is right. Argyris and Schön also distinguished **espoused
+theories** (what people say guides their action) from **theories in use**
+(what their behaviour reveals). They argued that defensive routines, designed to
+avoid embarrassment or threat, systematically block double-loop learning (Figure \@ref(fig:od-fig-loops)).
+
+```{r od-fig-loops, fig.cap = "Single-loop and double-loop learning. Single-loop learning changes action strategies to close a gap between consequences and governing variables. Double-loop learning questions the governing variables themselves. Based on Argyris and Schön (1978)."}
+mechanism_diagram(sprintf('
+  G [label = "Governing variables\\n(goals, values,\\nassumptions)", %s]
+  A [label = "Action strategies\\n(routines, plans,\\ntechniques)", %s]
+  C [label = "Consequences\\n(match or\\nmismatch)", %s]
+  G -> A -> C
+  C -> A [label = " single loop", constraint = false, style = dashed]
+  C -> G [label = " double loop", constraint = false, style = dashed, color = "#eb6834", fontcolor = "#eb6834"]
+', node_construct, node_mechanism, node_outcome))
+```
+
+Table \@ref(tab:od-tab-loops) presents the single-loop versus double-loop learning.
+
+```{r od-tab-loops}
+tibble::tribble(
+  ~Feature, ~`Single-loop learning`, ~`Double-loop learning`,
+  "Question asked", "Are we doing things right?", "Are we doing the right things?",
+  "What changes", "Action strategies and routines", "Goals, norms, and underlying assumptions",
+  "Typical trigger", "Performance below target", "Repeated failure, crisis, or new framing",
+  "Typical method", "Process improvement, root-cause fixes", "Reframing, strategic review, surfacing assumptions",
+  "Main obstacle", "Weak feedback or poor measurement", "Defensive routines that make assumptions undiscussable",
+  "Related idea", "Exploitation", "Exploration"
+) |>
+  book_table(caption = "Single-loop versus double-loop learning.")
+```
+
+### Learning curves: experience, transfer, and forgetting
+
+The quantitative heart of the field is the **learning curve**: unit cost or
+labour hours fall as a power function of cumulative output. @wright1936 observed
+this regularity in aircraft manufacturing. @argote1990 reviewed evidence from
+many industries and drew three conclusions that transformed the learning curve
+from an engineering rule of thumb into an organizational theory. First, **rates
+of learning vary dramatically across organizations**, even those producing the
+same product. Second, **knowledge depreciates**: it decays when production is
+interrupted or staff turn over. Third, **knowledge transfers** across units, but
+imperfectly. @darr1995 showed these patterns in pizza franchises: stores learned
+from cumulative experience, knowledge transferred across stores owned by the same
+franchisee but not across stores with different owners, and acquired knowledge
+depreciated quickly (Figure \@ref(fig:od-fig-learning)).
+
+```{r od-fig-learning, fig.cap = "Stylised learning curves. Unit cost falls with cumulative output, but organizations learn at different rates, and an interruption causes knowledge to depreciate. Axes are logarithmic, so a constant learning rate appears as a straight line. Illustrative numbers only.", fig.height = 4.2}
+set.seed(1990)
+n <- unique(round(10^seq(0, 3, length.out = 60)))
+curve_fn <- function(ratio) 100 * n^(log2(ratio))             # progress ratio: cost multiplier per doubling
+fast <- curve_fn(0.80)
+slow <- curve_fn(0.90)
+dep <- fast
+dep[n > 100] <- 100 * (pmax(n[n > 100] - 90, 1))^(log2(0.80))
+lc <- bind_rows(
+  data.frame(n, cost = fast * exp(rnorm(length(n), 0, 0.02)), plant = "Plant A: 80% progress ratio"),
+  data.frame(n, cost = slow * exp(rnorm(length(n), 0, 0.02)), plant = "Plant B: 90% progress ratio"),
+  data.frame(n, cost = dep * exp(rnorm(length(n), 0, 0.02)), plant = "Plant A with interruption at 100 units")
+)
+lc$plant <- factor(lc$plant, levels = c("Plant A: 80% progress ratio", "Plant B: 90% progress ratio",
+                                        "Plant A with interruption at 100 units"))
+ggplot(lc, aes(n, cost, colour = plant)) +
+  geom_line() +
+  scale_x_log10(labels = scales::comma) +
+  scale_y_log10() +
+  scale_colour_manual(values = c(pal[["blue"]], pal[["orange"]], pal[["aqua"]])) +
+  guides(colour = guide_legend(ncol = 1)) +
+  labs(x = "Cumulative units produced (log scale)", y = "Unit cost (log scale, first unit = 100)", colour = NULL,
+       title = "Organizations learn at different rates and also forget",
+       caption = "Stylised curves. A progress ratio of 80% means unit cost falls 20% with each doubling of output.")
+```
+
+### Evidence and extensions
+
+Learning-curve heterogeneity is now well documented in manufacturing, services,
+and medicine. @pisano2001 found large differences across hospitals in how quickly
+surgical teams improved after adopting a new minimally invasive cardiac
+procedure, and @edmondson2001 traced the differences to team learning practices,
+including whether team members felt able to speak up. Research on failure shows
+that organizations often learn more from failures than from successes: in the
+global orbital launch vehicle industry, @madsen2010 found that knowledge from
+failures was retained longer than knowledge from successes. @haunschild2002 found
+that airlines learned more from accidents and incidents with heterogeneous
+causes, which force broader search. @argote2011 offer an integrative framework in
+which experience interacts with organizational context to create knowledge that
+is embedded in members, tools, and routines.
+
+::: {.debate}
+**The dark side of learning.** Learning can be myopic. @levinthal1993 argued that
+organizations overweight the short run, the near neighbourhood, and success, so
+that learning itself drives out exploration. @levitt1988 described **competency
+traps**, in which favourable performance with an inferior routine leads the
+organization to accumulate more experience with it, making a superior routine
+unattractive to try, and **superstitious learning**, in which the link between
+action and outcome is misread. Others question whether "organizations" learn at
+all, or whether the construct is simply the aggregation of individual learning.
+Most contemporary scholars locate organizational learning in changes to
+routines, tools, and transactive memory that persist when individuals leave
+[@argote2011].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Toyota and learning as an operating system.** The Toyota Production System is
+widely studied as an organization designed for continuous single-loop learning
+on the shop floor. @spear1999 argued that its distinctive feature is not any
+particular tool but a set of tacit rules that make every activity, connection,
+and flow a structured hypothesis that can be tested. Problems are surfaced
+immediately (for example, by stopping the line), and countermeasures are
+developed by the people closest to the work. Taiichi Ohno's practice of asking
+"why" repeatedly until a root cause is reached is a disciplined form of
+problem-oriented search [@ohno1988]. The system also illustrates the limits of
+transfer: many firms copied visible tools such as kanban cards without the
+learning routines behind them, and saw smaller gains.
+:::
+
+::: {.business-case}
+**Learning from failure in safety-critical industries.** Commercial aviation's
+incident reporting systems, which protect reporters who disclose their own near
+misses, are an institutional design for converting rare and costly failures into
+shared knowledge. Research on airlines and launch vehicles suggests that such
+systems work best when they encourage analysis of diverse causes rather than
+single-cause attributions [@haunschild2002; @madsen2010]. @cannon2005 argue that
+most organizations fail to learn from failure because of social and technical
+barriers to identifying, analysing, and deliberately experimenting with failure,
+and propose a sequence of practices to overcome each barrier.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Production units with higher rates of team learning behaviour will show
+  steeper learning curves for a newly introduced product.
+- *H2.* Knowledge depreciation (the loss of productivity after a production gap)
+  will be smaller in units with codified routines than in units relying on
+  individual expertise.
+- *H3.* Organizations learn more from failures with heterogeneous causes than
+  from failures with a single dominant cause.
+
+**Designs and data.** Learning-curve regressions of unit cost or quality on
+cumulative experience with depreciation parameters [@argote1990; @darr1995].
+Panel data on accidents, recalls, or surgical outcomes. Ethnographies of
+routines. Field experiments that vary after-action reviews.
+
+**Measures.** Cumulative output, progress ratio, depreciation rate, transfer
+across units, frequency of after-action reviews, changes in codified procedures.
+:::
+
+::: {.pitfall}
+**Equating learning with improvement.** Organizations can learn the wrong lessons.
+A measured fall in errors may reflect less reporting rather than fewer errors,
+and success can teach complacency. Studies should separate changes in knowledge
+(routines, cognition) from changes in performance and test whether the
+experience-performance link runs through the proposed knowledge mechanism.
+:::
+
+## Knowledge Creation {#knowledge-creation}
+
+::: {.theory-card}
+**Core claim.** Organizations create new knowledge through a continuous dialogue
+between **tacit** and **explicit** knowledge, captured in four modes of
+conversion (socialization, externalization, combination, internalization) that
+spiral from individuals to groups to the whole organization.
+
+**Origins.** Management and Japanese innovation studies. @nonaka1994 and
+@nonaka1995, building on Polanyi's concept of tacit knowledge [@polanyi1966].
+
+**Level of analysis.** Individual, group, organization, and interorganizational
+networks.
+
+**Key constructs.** Tacit and explicit knowledge, SECI modes, knowledge spiral,
+redundancy, requisite variety, middle-up-down management.
+
+**Boundary conditions.** Most relevant for product development and
+knowledge-intensive work in which much know-how cannot be written down.
+Cultural and organizational context shapes the ease of socialization.
+
+**Related theories.** [Knowledge-based view](#knowledge-based-view) (Section \@ref(knowledge-based-view)),
+[Absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity)),
+[Organizational learning](#organizational-learning).
+:::
+
+### Core logic
+
+@polanyi1966 observed that people know more than they can tell. Such **tacit
+knowledge** (the feel of a skilled baker's hands, the judgement of an experienced
+engineer) is personal, context specific, and hard to formalize. **Explicit
+knowledge** can be codified in documents, formulas, and databases. Organizational
+learning theory tended to treat organizations as processors of information.
+@nonaka1994 argued instead that the core of innovation is the *creation* of new
+knowledge, and that it happens when tacit and explicit knowledge are converted
+into one another. The four modes form the **SECI** model shown in Figure
+\@ref(fig:od-fig-seci).
+
+```{r od-fig-seci, fig.cap = "The SECI model of knowledge creation. Knowledge moves through four modes of conversion and spirals outward from individuals to groups, the organization, and partners. Based on Nonaka (1994) and Nonaka and Takeuchi (1995).", fig.height = 4.6}
+mechanism_diagram(sprintf('
+  S [label = "Socialization\\ntacit to tacit\\n(apprenticeship, shared experience)", %s]
+  E [label = "Externalization\\ntacit to explicit\\n(metaphor, concept, prototype)", %s]
+  C [label = "Combination\\nexplicit to explicit\\n(documents, databases, specs)", %s]
+  I [label = "Internalization\\nexplicit to tacit\\n(learning by doing)", %s]
+  L [label = "Knowledge spiral:\\nindividual, group,\\norganization, network", %s]
+  {rank = same; S; E}
+  {rank = same; I; C}
+  S -> E
+  E -> C
+  C -> I
+  I -> S
+  L -> E [style = dotted, arrowhead = none]
+', node_construct, node_mechanism, node_construct, node_outcome, node_moderator), rankdir = "TB", height = 440)
+```
+
+Table \@ref(tab:od-tab-seci) presents the four modes of knowledge conversion.
+
+```{r od-tab-seci}
+tibble::tribble(
+  ~Mode, ~Conversion, ~`Typical practices`, ~`Business example`,
+  "Socialization", "Tacit to tacit", "Apprenticeship, job rotation, site visits, working side by side", "A new engineer shadows a senior field technician",
+  "Externalization", "Tacit to explicit", "Metaphors, analogies, concept papers, prototypes", "A design team turns a customer frustration into a product concept",
+  "Combination", "Explicit to explicit", "Reports, specifications, knowledge bases, training manuals", "Merging test results into a standard operating procedure",
+  "Internalization", "Explicit to tacit", "Simulation, practice, learning by doing", "Staff practise a new procedure until it becomes routine"
+) |>
+  book_table(caption = "The four modes of knowledge conversion.")
+```
+
+@nonaka1995 illustrated the model with Japanese product development cases. The
+best-known is the development of an automatic home bread-making machine at
+Matsushita in the 1980s. Early prototypes produced poor bread, so a software
+developer trained alongside the head baker at a leading Osaka hotel to absorb
+his kneading technique (socialization), and the team then translated what she
+had learned into a design specification for the machine (externalization). The
+authors also emphasised organizational conditions that enable the spiral,
+including intention, autonomy, creative chaos, redundancy of information, and
+requisite variety, and argued for **middle-up-down** management in which middle
+managers translate top management's vision into concepts that front-line teams
+can work with.
+
+::: {.debate}
+**Is tacit knowledge convertible at all?** The most persistent critique concerns
+externalization. Following Polanyi, some scholars argue that tacit knowledge is by
+definition inexpressible, so it cannot be "converted" into explicit form, only
+supported or demonstrated. @gourlay2006 questioned the empirical basis of the
+model and whether the four modes are distinct processes. @nonaka2009 responded by
+clarifying that tacit and explicit knowledge lie on a continuum and that
+conversion is a social process of articulation, not a literal transfer. A second
+critique is cultural: the model was developed from Japanese cases, and its
+assumptions about long tenure and dense socialization may not transfer to
+organizations with high turnover and contractual employment.
+:::
+
+::: {.business-case}
+**Illustrative scenario: capturing field know-how.** An industrial equipment
+company finds that its best service technicians fix faults in half the time of
+others, but its manuals do not explain why. A knowledge-creation approach would
+not start with a database. It would pair junior and senior technicians on
+difficult jobs (socialization), hold structured debriefs in which experts explain
+their diagnostic hunches through analogies (externalization), consolidate the
+debriefs into decision trees embedded in the service app (combination), and use
+simulated faults in training (internalization). The spiral then repeats as the
+decision trees are tested in the field.
+:::
+
+::: {.research-toolkit}
+**Designs and measures.** Survey scales for the four SECI modes, case studies of
+product development, network analysis of knowledge flows, and studies of
+knowledge codification and its effects on transfer. Hypotheses typically link
+the intensity of particular modes to innovation outcomes (for example, that
+externalization practices predict new product concept quality more strongly
+than combination practices do).
+:::
+
+## Organizational Identity {#organizational-identity}
+
+::: {.theory-card}
+**Core claim.** Organizational members share beliefs about what is central,
+enduring, and distinctive about their organization. These beliefs filter how
+issues are interpreted, which actions feel legitimate, and how members respond to
+outside images that conflict with them.
+
+**Origins.** Organization theory. @albert1985, with major empirical work by
+@dutton1991 and the social identity foundation of @ashforth1989.
+
+**Level of analysis.** Organization (collective identity) and individual
+(organizational identification).
+
+**Key constructs.** Central, enduring, and distinctive attributes, organizational
+identification, construed external image, reputation, identity threat, adaptive
+instability.
+
+**Boundary conditions.** Identity matters most when issues are ambiguous and when
+members identify strongly. In loosely coupled or newly formed organizations,
+identity claims may be weakly shared.
+
+**Related theories.** [Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)),
+[Organizational culture](#organizational-culture), [Legitimacy](#legitimacy) (Section \@ref(legitimacy)),
+[Optimal distinctiveness](#optimal-distinctiveness-theory) (Section \@ref(optimal-distinctiveness-theory)).
+:::
+
+### Core logic
+
+@albert1985 proposed that an organization's identity consists of members'
+self-referential claims about what is **central** to the organization, what is
+**enduring** about it over time, and what is **distinctive** compared with
+similar organizations. Identity questions ("Who are we?") become salient at
+critical junctures such as founding, loss of a sustaining resource, mergers,
+rapid growth, or retrenchment. @whetten2006 later sharpened the concept, arguing
+that identity claims are most visible when organizations face "fork in the road"
+choices that would commit them to one self-definition over another.
+
+At the individual level, @ashforth1989 applied [social identity
+theory](#social-identity-theory) (Section \@ref(social-identity-theory)) to organizations. **Organizational
+identification** is the perception of oneness with or belongingness to an
+organization. When people identify strongly, the organization's successes and
+failures feel personal, which motivates effort and loyalty but also defensiveness
+when the organization is criticised (Table \@ref(tab:od-tab-identity)).
+
+```{r od-tab-identity}
+tibble::tribble(
+  ~Concept, ~`Core question`, ~`Whose view`, ~`Example measure`,
+  "Organizational identity", "Who do we believe we are?", "Members about the organization", "Members' ratings of central, enduring, and distinctive attributes",
+  "Organizational identification", "How much is the organization part of who I am?", "Individual member", "Identification scale items on oneness with the organization",
+  "Construed external image", "What do outsiders think of us, in our view?", "Members about outsiders' views", "Members' beliefs about how the public sees the firm",
+  "Reputation", "What do outsiders actually think of us?", "External stakeholders", "Rankings, media tone, stakeholder surveys",
+  "Organizational culture", "How do we do things here, and why?", "Members, often tacit", "Value profiles, observed practices, underlying assumptions"
+) |>
+  book_table(caption = "Organizational identity and neighbouring concepts.")
+```
+
+### Evidence and extensions
+
+@dutton1991 provided the field's foundational case study. In the 1980s the Port
+Authority of New York and New Jersey faced a growing number of homeless people in
+its bus terminal, train stations, and airports. The agency's members saw it as a
+professional, technically excellent transportation organization, not a social
+service agency, and they initially treated homelessness as a policing and
+facilities problem. As media coverage and public criticism damaged the agency's
+**construed external image**, members felt the gap between how they saw
+themselves and how they believed outsiders saw them. That discomfort helped push
+the agency to reframe the issue and invest in more humane and collaborative
+responses. Identity and image, the authors argued, act as a mirror that shapes
+how organizations interpret and respond to issues.
+
+@elsbach1996 found a similar dynamic when *Business Week* rankings of business
+schools threatened members' perceptions of their schools. Members responded by
+highlighting alternative comparison categories and dimensions on which their
+school excelled. @gioia2000 challenged the assumption that identity is enduring,
+proposing **adaptive instability**: identity labels may stay constant while their
+meanings shift as members reinterpret them in light of changing images.
+@tripsas2009 showed how a firm's identity as a "digital photography company" made
+it difficult to pursue opportunities that technology made possible but that did
+not fit that identity, complementing the cognitive account of Polaroid's
+difficulties in digital imaging in @tripsas2000.
+
+::: {.debate}
+**Enduring or fluid?** The original definition required identity to be enduring,
+but empirical work repeatedly shows identity claims changing in response to
+image, strategy, and leadership. Social-actor perspectives treat identity as
+institutional claims that change slowly. Social-constructionist perspectives
+treat identity as shared understandings that are continually renegotiated.
+@whetten2006 defends a narrower definition to keep the concept distinct from
+culture and image. A second debate concerns measurement: identity is easily
+conflated with culture or reputation, and many studies infer identity from
+self-presentation materials that may be impression management rather than
+belief.
+:::
+
+::: {.business-case}
+**Identity in strategic change.** Firms that redefine their business often
+discover that identity, not capability, is the binding constraint. When a
+company that has seen itself as a hardware manufacturer moves to services or
+software subscriptions, engineers may resist work that feels peripheral to "who
+we are". Effective leaders in such transitions tend to reinterpret existing
+identity labels rather than discard them (for example, moving from "we build
+the best machines" to "we keep our customers' operations running"), which is the
+adaptive instability that @gioia2000 describe.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Firms whose stated identity claims are inconsistent with a new strategic
+  initiative will adopt it more slowly, controlling for capabilities.
+- *H2.* Negative media coverage that conflicts with members' identity beliefs will
+  trigger more issue-reframing activity than negative coverage that is consistent
+  with those beliefs.
+
+**Designs and data.** Longitudinal case studies with interviews and archival
+documents. Text analysis of letters to shareholders, mission statements, and
+internal communications. Survey measures of organizational identification.
+Event studies of identity threats such as rankings or scandals.
+:::
+
+::: {.pitfall}
+**Treating the mission statement as the identity.** Formal statements are
+identity *claims*, often written for external audiences. Identity theory concerns
+what members actually believe is central and distinctive. Valid studies
+triangulate official claims with members' own accounts and with choices made at
+identity-relevant forks in the road.
+:::
+
+## Organizational Culture {#organizational-culture}
+
+::: {.theory-card}
+**Core claim.** Organizations develop shared, largely taken-for-granted
+assumptions, learned as the group solved problems of external adaptation and
+internal integration. These assumptions are expressed in espoused values and
+visible artifacts, and they shape behaviour more powerfully than formal
+structures.
+
+**Origins.** Organizational psychology and anthropology. @schein2010 (first
+edition 1985) and @schein1990. Quantitative measurement through the
+Organizational Culture Profile of @oreilly1991.
+
+**Level of analysis.** Organization and subgroups (functions, units,
+professions).
+
+**Key constructs.** Artifacts, espoused beliefs and values, basic underlying
+assumptions, culture strength (intensity and consensus), culture content,
+subcultures, person-culture fit.
+
+**Boundary conditions.** Culture is most consequential where formal controls are
+incomplete and behaviour cannot be fully specified. Culture strength is valuable
+in stable environments and can become a liability when the environment shifts.
+
+**Related theories.** [Organizational identity](#organizational-identity),
+[Attraction-selection-attrition](#attraction-selection-attrition),
+[Hofstede's cultural dimensions](#hofstede) (Section \@ref(hofstede)), [Tight and loose cultures](#tight-loose) (Section \@ref(tight-loose)),
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)).
+:::
+
+### Core logic: Schein's three levels
+
+@schein2010 defines culture as a pattern of shared basic assumptions that a group
+has learned as it solved its problems of adapting to its environment and
+integrating its members, which has worked well enough to be considered valid and
+is therefore taught to new members as the correct way to perceive, think, and
+feel. The definition has two important implications. Culture is **learned
+history**, not management decree, and it is **deep**: its most important layer
+is taken for granted and rarely discussed (Figure \@ref(fig:od-fig-culture)).
+
+```{r od-fig-culture, fig.cap = "Schein's three levels of organizational culture. Artifacts are easy to observe but hard to interpret. Basic assumptions are hard to observe but explain the levels above them. Based on Schein (2010).", fig.height = 4.6}
+mechanism_diagram(sprintf('
+  A [label = "Artifacts\\nvisible structures, rituals, dress,\\noffice layout, stories, processes", %s]
+  V [label = "Espoused beliefs and values\\nstated strategies, goals,\\nphilosophies, codes of conduct", %s]
+  B [label = "Basic underlying assumptions\\nunconscious, taken-for-granted beliefs\\nabout reality, people, time, and work", %s]
+  X [label = "Easy to see,\\nhard to decipher", %s]
+  Y [label = "Hard to see,\\nultimate source of\\nvalues and action", %s]
+  B -> V [label = " expressed in"]
+  V -> A [label = " expressed in"]
+  X -> A [style = dotted, arrowhead = none]
+  Y -> B [style = dotted, arrowhead = none]
+  {rank = same; X; A}
+  {rank = same; Y; B}
+', node_outcome, node_mechanism, node_construct, node_moderator, node_moderator), rankdir = "BT", height = 440)
+```
+
+Because artifacts are ambiguous, an outsider who sees an open-plan office cannot
+know whether it reflects a belief in egalitarian collaboration or simply a cost
+reduction. Espoused values may also diverge from the assumptions actually in use,
+the same gap Argyris and Schön identified between espoused theories and theories
+in use [@argyris1978]. Schein therefore argues that culture can be diagnosed
+only by probing the assumptions that make artifacts and values coherent, usually
+through iterative interviews with insiders.
+
+### Measuring culture: the Organizational Culture Profile
+
+Quantitative research needed a way to compare cultures and to assess fit between
+people and organizations. @oreilly1991 developed the **Organizational Culture
+Profile (OCP)**, in which respondents sort 54 value statements according to how
+characteristic they are of an organization, or how desirable they are to the
+individual. Comparing the two profiles yields a measure of person-organization
+fit. Factor analyses revealed dimensions such as innovation, stability, respect
+for people, outcome orientation, attention to detail, team orientation, and
+aggressiveness. In the original studies, person-culture fit predicted later job
+satisfaction, [organizational commitment](#organizational-commitment) (Section \@ref(organizational-commitment)), and turnover. @chatman2016 argue that
+the field should distinguish clearly between culture **content** (which norms)
+and culture **strength** (how widely shared and intensely held), and should
+connect culture explicitly to strategy.
+
+### Evidence and extensions
+
+The most cited quantitative finding concerns culture strength. @sorensen2002
+showed that firms with strong cultures have more reliable (less variable)
+performance in relatively stable environments, but that the advantage diminishes
+in volatile environments, where strong cultures make it harder to detect and
+respond to change. This finding connects culture to the
+[exploration and exploitation](#exploration-exploitation) (Section \@ref(exploration-exploitation)) tension: strong culture
+supports exploitation and can impede exploration.
+
+::: {.debate}
+**Can culture be managed?** Schein treats leaders as the primary creators and
+embedders of culture, especially founders. Critics from interpretive and critical
+traditions argue that culture is emergent, contested, and fragmented into
+subcultures, so that "managing culture" often means managing artifacts and
+rhetoric rather than assumptions. A related measurement debate concerns whether
+survey instruments capture culture or only climate (shared perceptions of
+policies and practices). The current consensus is that both qualitative
+diagnosis and quantitative profiles are needed, and that norms are best measured
+by what is rewarded and sanctioned in practice [@chatman2016].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Culture integration in mergers.** Cultural incompatibility is a common
+explanation for disappointing mergers. The 1998 combination of Daimler-Benz and
+Chrysler, announced as a merger of equals, is a frequently cited public example:
+reports of friction between German and American management styles and
+decision-making norms accompanied the combined firm's difficulties, and Daimler
+sold a majority of Chrysler in 2007. Because many factors affect merger
+outcomes, case evidence alone cannot isolate culture. @weber2003 therefore
+created cultures in the laboratory. Groups developed their own shorthand codes
+for describing pictures of office scenes, and then two groups were merged.
+Performance fell after the merger, participants overestimated how well the
+merged group would perform, and they tended to attribute the decline to members
+of the other group. The experiment shows that even trivially created cultures
+generate coordination costs and attribution conflict when combined. Practical
+implications include culture due diligence before a deal, explicit integration
+of decision rights and vocabulary, and patience about early performance dips.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Acquisitions in which the acquirer's and target's culture profiles differ
+  more will show larger post-merger turnover among target executives.
+- *H2.* Culture strength will reduce performance variability more in stable than
+  in volatile industries [@sorensen2002].
+
+**Data and measures.** The OCP and its variants, employer review text (analysed
+with dictionary or embedding methods for culture content), ethnography,
+interviews probing assumptions, and archival indicators of rewarded behaviour.
+:::
+
+::: {.pitfall}
+**Mistaking espoused values for culture.** Values posted on walls and websites
+are espoused values. Culture lives in the assumptions that predict what people do
+when values conflict or nobody is watching. A study that measures only stated
+values cannot test claims about culture's effects on behaviour.
+:::
+
+## Paradox Theory {#paradox-theory}
+
+::: {.theory-card}
+**Core claim.** Organizations face persistent contradictory yet interrelated
+demands (for example, exploration and exploitation, control and flexibility,
+global and local). Sustainable performance comes not from choosing one pole but
+from accepting the tension and continually attending to both over time, a
+dynamic equilibrium.
+
+**Origins.** Organization theory. @smith2011, building on @lewis2000 and reviewed
+by @schad2016.
+
+**Level of analysis.** Individual (leaders' cognition), team, and organization.
+
+**Key constructs.** Latent and salient tensions, paradox categories (learning,
+belonging, organizing, performing), acceptance, resolution through splitting and
+integration, virtuous and vicious cycles, paradoxical cognition.
+
+**Boundary conditions.** Applies to tensions that are persistent and
+interdependent. Simple trade-offs that can be resolved once by a choice are
+dilemmas, not paradoxes.
+
+**Related theories.** [Ambidexterity](#ambidexterity) (Section \@ref(ambidexterity)),
+[Exploration and exploitation](#exploration-exploitation) (Section \@ref(exploration-exploitation)),
+[Contingency theory](#contingency-theory) (Section \@ref(contingency-theory)).
+:::
+
+Contingency theory asks which pole of a tension fits a given environment.
+Paradox theory asks how organizations can live with both. @smith2011 define
+**paradox** as contradictory yet interrelated elements that exist simultaneously
+and persist over time. Such tensions are **latent**, embedded in organizing, and
+become **salient** under conditions of **plurality** (multiple stakeholders and
+views), **change**, and **scarcity** of resources. Responses that suppress one
+pole (defensiveness, splitting without reconnection) produce **vicious cycles**.
+Responses that combine **acceptance** of the tension with periodic, iterative
+**resolution** produce **virtuous cycles** and long-term sustainability (Table \@ref(tab:od-tab-paradox)).
+
+```{r od-tab-paradox}
+tibble::tribble(
+  ~`Paradox category`, ~`Underlying tension`, ~`Organizational example`,
+  "Learning", "Building on the past versus destroying it to create the future", "Investing in the core product while cannibalising it with a new platform",
+  "Belonging", "Identity and affiliation: the individual versus the collective, one group versus another", "Professional identities of physicians versus hospital-wide standardisation",
+  "Organizing", "Structuring and leading: control versus flexibility, collaboration versus competition", "Centralised compliance controls alongside autonomous product teams",
+  "Performing", "Competing goals of different stakeholders", "Social mission versus financial returns in a social enterprise"
+) |>
+  book_table(caption = "Four categories of organizational paradox, following Smith and Lewis (2011).")
+```
+
+::: {.debate}
+**Theory or vocabulary?** Paradox theory has spread rapidly, and @schad2016 warn
+that the term is often used loosely for any tension or trade-off. Critics argue
+that "accept and attend to both" can become unfalsifiable advice. The research
+frontier focuses on precise constructs (for example, paradoxical cognition and
+paradox mindset at the individual level), on the conditions under which
+acceptance improves performance, and on multilevel dynamics of how tensions at
+one level are managed at another.
+:::
+
+::: {.business-case}
+**Illustrative scenario: the social enterprise.** A microfinance organization
+must serve poor borrowers (social mission) while remaining financially
+self-sustaining (commercial logic). If leaders let the commercial pole dominate,
+mission drift follows. If the social pole dominates, the organization runs out
+of capital. A paradox approach would separate the poles structurally in some
+respects (distinct metrics and governance reviews for each), integrate them
+elsewhere (a board that deliberates on both at once), and revisit the balance
+regularly rather than fixing it once.
+:::
+
+::: {.research-toolkit}
+**Designs and measures.** Longitudinal process studies of how leaders oscillate
+between poles, survey measures of paradox mindset, and comparative cases of
+hybrid organizations. A testable hypothesis: leaders with higher paradoxical
+cognition will sustain investment in both exploratory and exploitative projects
+for longer under resource scarcity.
+:::
+
+## Psychological Safety {#psychological-safety}
+
+::: {.theory-card}
+**Core claim.** Team members learn, speak up, and report errors when they share a
+belief that the team is safe for interpersonal risk taking. Psychological safety
+enables learning behaviour, which in turn improves team performance in
+uncertain, interdependent work.
+
+**Origins.** Organizational behaviour. @edmondson1999, drawing on @kahn1990 and
+earlier work on organizational change. Reviewed by @edmondson2014 and
+meta-analysed by @frazier2017.
+
+**Level of analysis.** Team (shared climate), with individual-level variants.
+
+**Key constructs.** Psychological safety, team learning behaviour (asking
+questions, seeking feedback, discussing errors, experimenting), voice, leader
+inclusiveness, status differences, accountability.
+
+**Boundary conditions.** Matters most when work is uncertain, interdependent, and
+learning-intensive. In routine, independent work, its effects on performance
+are weaker.
+
+**Related theories.** [Organizational learning](#organizational-learning),
+[Leader-member exchange](#leader-member-exchange) (Section \@ref(leader-member-exchange)),
+[Spiral of silence](#spiral-of-silence) (Section \@ref(spiral-of-silence)), [Groupthink](#groupthink) (Section \@ref(groupthink)),
+[Transformational leadership](#transformational-leadership) (Section \@ref(transformational-leadership)).
+:::
+
+### Origins and intellectual history
+
+The research programme started with a puzzle. In a study of hospital nursing
+units, @edmondson1996 expected that better-led, better-functioning units would
+make fewer medication errors. Instead, they appeared to make *more*. The
+explanation was that these units were more willing to report errors, while in
+units with punitive managers errors went unreported. Detected error rates partly
+measured the climate for speaking up, not only the underlying frequency of
+mistakes.
+
+@edmondson1999 developed the construct of **team psychological safety**, a shared
+belief that the team is safe for interpersonal risk taking, and distinguished it
+from trust (which concerns one party's expectations of another) and from
+cohesiveness (which can actually suppress dissent). @kahn1990 had already
+identified psychological safety as one of three conditions, together with
+meaningfulness and availability, under which people bring their full selves to
+work. In a multimethod field study of 51 work teams in a manufacturing company,
+@edmondson1999 found that psychological safety was associated with **team
+learning behaviour**, which in turn was associated with team performance.
+
+### Mechanism
+
+Figure \@ref(fig:od-fig-safety-model) shows the model of team learning.
+
+```{r od-fig-safety-model, fig.cap = "Model of team learning. Team leader coaching and context support foster psychological safety, which enables learning behaviour and, through it, team performance. Based on Edmondson (1999)."}
+mechanism_diagram(sprintf('
+  L [label = "Team leader coaching\\nand inclusiveness", %s]
+  K [label = "Context support\\n(resources, information,\\nrewards)", %s]
+  P [label = "Team psychological\\nsafety", %s]
+  B [label = "Team learning behaviour\\n(asking, seeking feedback,\\ndiscussing errors)", %s]
+  O [label = "Team\\nperformance", %s]
+  T [label = "Task uncertainty and\\ninterdependence", %s]
+  L -> P
+  K -> P
+  P -> B -> O
+  T -> B [style = dashed]
+', node_construct, node_construct, node_mechanism, node_mechanism, node_outcome, node_moderator))
+```
+
+Psychological safety is not the same as low standards. @edmondson2018 crosses
+psychological safety with performance standards to describe four zones
+(Figure \@ref(fig:od-fig-zones)). High safety with low standards produces a
+**comfort zone**. Low safety with high standards produces an **anxiety zone**,
+where people work hard but hide problems. The **learning zone** combines both.
+
+```{r od-fig-zones, fig.cap = "Psychological safety and performance standards: four zones. Stylised teams are plotted for illustration. Framework based on Edmondson (2018).", fig.height = 4.6}
+set.seed(2018)
+teams <- data.frame(safety = runif(40, 0.05, 0.95), standards = runif(40, 0.05, 0.95))
+zones <- data.frame(
+  x = c(0.25, 0.75, 0.25, 0.75), y = c(0.25, 0.25, 0.75, 0.75),
+  lab = c("Apathy zone", "Comfort zone", "Anxiety zone", "Learning zone")
+)
+ggplot(teams, aes(safety, standards)) +
+  annotate("rect", xmin = 0.5, xmax = 1, ymin = 0.5, ymax = 1, fill = pal[["aqua"]], alpha = 0.12) +
+  geom_hline(yintercept = 0.5, colour = ink[["muted"]], linewidth = 0.4) +
+  geom_vline(xintercept = 0.5, colour = ink[["muted"]], linewidth = 0.4) +
+  geom_point(colour = pal[["blue"]], alpha = 0.55, size = 2) +
+  geom_label(data = zones, aes(x, y, label = lab), size = 3.8, fontface = "bold",
+             colour = ink[["primary"]], fill = "white", label.size = 0) +
+  scale_x_continuous(limits = c(0, 1), breaks = c(0.1, 0.9), labels = c("Low", "High")) +
+  scale_y_continuous(limits = c(0, 1), breaks = c(0.1, 0.9), labels = c("Low", "High")) +
+  labs(x = "Psychological safety", y = "Performance standards (motivation and accountability)",
+       title = "Safety without standards is comfort, standards without safety is anxiety",
+       caption = "Stylised teams (illustrative). Quadrant labels follow Edmondson (2018).")
+```
+
+### Evidence and extensions
+
+The construct has a large and broadly consistent evidence base. @frazier2017
+meta-analysed research on psychological safety and found it positively related
+to information sharing, learning behaviour, engagement, and task performance,
+with supportive leadership and peer relationships among its antecedents. In
+healthcare, @nembhard2006 studied neonatal intensive care unit teams and found
+that lower-status professionals felt less psychologically safe than physicians,
+but that **leader inclusiveness** (words and deeds by leaders that invite and
+appreciate others' contributions) raised psychological safety and weakened the
+status gap. @edmondson2001 showed that surgical teams that successfully adopted a
+new cardiac procedure were those whose leaders framed the change as a team
+learning challenge and made it safe for nurses and technicians to speak up.
+@edmondson2014 review the construct's history and its extension from teams to
+organizations and to topics such as innovation, voice, and safety.
+
+::: {.debate}
+**Climate, trait, or fad?** Three critiques recur. First, measurement: the
+standard seven-item scale is a perception measure, and aggregating it to the team
+level requires evidence of within-team agreement. Second, causality: most studies
+are cross-sectional, so high-performing teams may feel safe because they perform
+well. Third, popularization: in practitioner discourse, psychological safety is
+sometimes equated with comfort or the absence of criticism, which is close to
+the opposite of the construct. Edmondson's own framing pairs safety with high
+standards and candour [@edmondson2018].
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Hospitals and tech teams.** Healthcare offers the clearest evidence that
+speaking up saves lives and money. Checklists, structured briefings, and
+practices that let any team member stop a procedure are institutional designs
+for psychological safety, and the research above shows that leader behaviour
+determines whether they are used [@nembhard2006; @edmondson2001]. In technology,
+Google's internal research project on team effectiveness, known as Project
+Aristotle, became widely publicised in 2015 and 2016. Google reported that
+psychological safety was the most important of five dynamics that distinguished
+effective teams, alongside dependability, structure and clarity, meaning, and
+impact [@duhigg2016]. Blameless post-incident reviews, common in site reliability
+engineering, apply the same logic: they focus on systemic causes so that
+engineers disclose what actually happened.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Team psychological safety will be positively related to the number of
+  near misses reported, controlling for workload.
+- *H2.* Leader inclusiveness will weaken the negative relationship between
+  professional status and individual psychological safety [@nembhard2006].
+- *H3.* The effect of psychological safety on team performance will be stronger
+  for teams with high task uncertainty.
+
+**Measures.** Edmondson's team psychological safety scale aggregated to the team
+level after checking agreement indices, behavioural measures of voice and error
+reporting, and observational coding of meetings.
+
+**Designs.** Multilevel field surveys, longitudinal panels to address reverse
+causality, and field experiments with leader training or structured debriefs.
+:::
+
+::: {.pitfall}
+**Confusing safety with comfort.** Psychological safety is about the freedom to
+take interpersonal risks such as admitting mistakes and challenging ideas, not
+about being shielded from disagreement or accountability. Interventions that
+reduce candour in the name of "safety" undermine the mechanism the theory
+describes.
+:::
+
+## Attraction-Selection-Attrition {#attraction-selection-attrition}
+
+::: {.theory-card}
+**Core claim.** People are attracted to organizations whose members resemble
+them, are selected by organizations that prefer people who fit, and leave when
+they do not fit. Over time the cycle makes organizations increasingly
+homogeneous, and that homogeneity, not formal structure, defines the place.
+
+**Origins.** Industrial and organizational psychology. @schneider1987, updated in
+@schneider1995.
+
+**Level of analysis.** Individual and organization.
+
+**Key constructs.** Attraction, selection, attrition, homogeneity, person-organization
+fit, founder influence.
+
+**Boundary conditions.** Requires voluntary labour mobility and discretion in
+selection. Weaker in tight labour markets or under strict diversity mandates.
+
+**Related theories.** [Person-environment fit](#person-environment-fit) (Section \@ref(person-environment-fit)),
+[Organizational culture](#organizational-culture), [Homophily](#homophily) (Section \@ref(homophily)).
+:::
+
+@schneider1987 argued, in a paper titled "The people make the place", that
+organizational behaviour should be explained by the characteristics of the
+people in the organization rather than by structures and technologies alone.
+Founders' personalities shape early goals and hiring. Applicants who share those
+values find the organization attractive. Recruiters select people who seem to
+fit. Employees who do not fit leave. The **homogeneity hypothesis** follows:
+organizations become more homogeneous in personality and values over time. This
+helps explain why cultures persist [@schneider1995] and links the theory to
+person-organization fit research [@chatman1989; @kristof1996; @oreilly1991].
+Figure \@ref(fig:od-fig-asa) simulates the process.
+
+```{r od-fig-asa, fig.cap = "Illustrative simulation of the attraction-selection-attrition cycle. Under ASA, applicants and leavers are filtered by distance from the founder's values and the spread of values shrinks. With fit-neutral hiring, diversity is maintained. Stylised data.", fig.height = 4}
+set.seed(1987)
+simulate_asa <- function(asa = TRUE, years = 20, n = 200) {
+  v <- rnorm(n, 0, 1)                                             # employees' values (founder = 0)
+  out <- numeric(years)
+  for (t in 1:years) {
+    p_leave <- if (asa) plogis(-3 + 1.2 * abs(v)) else rep(plogis(-3 + 1.2 * 0.8), n)
+    v <- v[runif(length(v)) > p_leave]                             # attrition
+    pool <- rnorm(600, 0, 1)                                       # labour market
+    if (asa) pool <- pool[runif(600) < plogis(1 - 1.5 * abs(pool))] # attraction
+    need <- n - length(v)
+    hires <- if (asa) pool[order(abs(pool))][seq_len(need)] else sample(pool, need)  # selection
+    v <- c(v, hires)
+    out[t] <- sd(v)
+  }
+  out
+}
+asa <- bind_rows(
+  data.frame(year = 1:20, sd = simulate_asa(TRUE), regime = "ASA cycle (fit-based attraction, selection, attrition)"),
+  data.frame(year = 1:20, sd = simulate_asa(FALSE), regime = "Fit-neutral hiring and turnover")
+)
+ggplot(asa, aes(year, sd, colour = regime)) +
+  geom_line() +
+  geom_point(size = 1.6) +
+  scale_colour_manual(values = c(pal[["blue"]], pal[["orange"]])) +
+  scale_y_continuous(limits = c(0, 1.2)) +
+  guides(colour = guide_legend(ncol = 1)) +
+  labs(x = "Year", y = "Spread of employee values (SD)", colour = NULL,
+       title = "The people make the place, and the place selects the people",
+       caption = "Stylised agent simulation (n = 200 employees, founder values = 0).")
+```
+
+::: {.debate}
+**Homogeneity: asset or liability?** Homogeneity eases coordination and supports
+a strong culture, but Schneider himself warned that it can make organizations
+unable to perceive or adapt to environmental change. Empirical support for
+organization-level homogeneity in personality is moderate, and critics note that
+job and occupational requirements also produce similarity. The theory also sits
+uneasily with diversity goals: "cultural fit" in hiring can become a vehicle for
+similarity bias.
+:::
+
+::: {.business-case}
+**Hiring for culture fit or culture add.** Many technology firms once screened
+explicitly for "culture fit", and some have publicly reframed the criterion as
+"culture add" or values alignment, precisely to avoid the homogenising spiral that
+ASA predicts. The practical design question is which attributes should be
+selected for fit (for example, integrity and core values) and which should be
+deliberately diversified (for example, backgrounds, cognitive styles, and
+functional expertise).
+:::
+
+::: {.research-toolkit}
+**Designs and measures.** Multi-wave data on applicants, hires, and leavers with
+personality or values measures. Within-organization variance over time as the
+outcome. A sample hypothesis: the variance of employee values declines with
+organizational age, and the decline is steeper when founders retain control of
+hiring.
+:::
+
+## Social Information Processing {#social-information-processing}
+
+::: {.theory-card}
+**Core claim.** Job attitudes and perceptions of tasks are not simple reactions to
+objective job features. They are constructed from social information: what
+coworkers say, how supervisors frame the work, and what people infer from their
+own past behaviour.
+
+**Origins.** Organizational behaviour. @salancik1978, as a critique of
+need-satisfaction and job design models.
+
+**Level of analysis.** Individual within a workgroup.
+
+**Key constructs.** Social cues, salience of information, commitment and
+retrospective rationalization, socially constructed task perceptions.
+
+**Boundary conditions.** Social cues matter most when tasks are ambiguous, when
+newcomers are socialized, and when sources are credible and similar.
+
+**Related theories.** [Job characteristics model](#job-characteristics-model) (Section \@ref(job-characteristics-model)),
+[Self-perception theory](#self-perception-theory) (Section \@ref(self-perception-theory)), [Social norms](#social-norms) (Section \@ref(social-norms)),
+[Conformity](#conformity) (Section \@ref(conformity)), [Sensemaking](#sensemaking).
+:::
+
+@salancik1978 challenged the dominant view that workers have stable needs and
+evaluate jobs by how well objective characteristics satisfy those needs. They
+proposed that the social environment provides cues about which aspects of a job
+are important and how to evaluate them, and that people also infer their
+attitudes from their own behaviour. A job is "interesting" partly because
+colleagues say it is. @griffin1983 tested the idea in a field experiment in which
+supervisors provided social cues about task characteristics, and found that
+social information as well as objective changes in tasks affected workers'
+perceptions of their jobs. @thomas1983 reviewed early evidence and concluded
+that social information has real effects on task perceptions, while objective
+task characteristics also continue to matter.
+
+::: {.debate}
+**Complement or competitor?** The theory was framed as an alternative to the job
+characteristics model, but most researchers now treat the two as complementary:
+objective features and social cues jointly shape perceptions. Critics also note
+that SIP is difficult to falsify unless researchers specify which cues should
+dominate and when.
+:::
+
+::: {.business-case}
+**Onboarding and remote work.** New hires form their view of a role in the first
+weeks, largely from what peers and managers communicate. SIP implies that
+onboarding buddies, team rituals, and managers' framing of work as meaningful
+shape engagement as much as the job design itself. In remote or hybrid settings,
+fewer informal cues are available, which may make the few explicit cues, such as
+how leaders talk about the work in meetings, disproportionately influential.
+:::
+
+::: {.research-toolkit}
+**Designs.** Field experiments manipulating supervisor or peer cues, network
+studies of attitude contagion within workgroups, and longitudinal studies of
+newcomers. A sample hypothesis: newcomers' job satisfaction will converge toward
+the average satisfaction of their immediate network contacts, more strongly when
+the task is ambiguous.
+:::
+
+## Sensemaking {#sensemaking}
+
+::: {.theory-card}
+**Core claim.** People in organizations do not simply perceive an objective
+environment. When expectations are violated, they extract cues, build plausible
+stories about what is going on, and act on those stories, and their actions
+partly create the environment they then interpret.
+
+**Origins.** Social psychology of organizing. @weick1979, @weick1993, and
+@weick1995a. Updated by @weick2005 and reviewed by @maitlis2014.
+
+**Level of analysis.** Individual, group, and organization.
+
+**Key constructs.** Ambiguity and equivocality, triggers, extracted cues,
+plausibility, enactment, retrospection, identity, sensegiving, sensebreaking,
+cosmology episodes.
+
+**Boundary conditions.** Most visible during crises, change, and novel situations,
+when routine interpretations fail. In stable settings, sensemaking runs in the
+background of habitual action.
+
+**Related theories.** [Social information processing](#social-information-processing),
+[Organizational identity](#organizational-identity),
+[Organizational learning](#organizational-learning),
+[Attribution theory](#attribution-theory) (Section \@ref(attribution-theory)).
+:::
+
+### Origins and core logic
+
+Weick's organization theory starts with the claim that organizing is the process
+of reducing **equivocality**, the existence of multiple, conflicting
+interpretations [@weick1979]. **Sensemaking** is the process by which people
+give meaning to experience. @maitlis2014 define it as the process through which
+people work to understand issues or events that are novel, ambiguous, confusing,
+or in some other way violate expectations. In @weick1995a, Weick described seven
+properties of sensemaking, summarised in Table \@ref(tab:od-tab-sensemaking).
+
+```{r od-tab-sensemaking}
+tibble::tribble(
+  ~Property, ~Meaning, ~`Organizational illustration`,
+  "Grounded in identity construction", "Who I think I am shapes what I notice and how I interpret it", "Engineers and managers read the same data through different professional identities",
+  "Retrospective", "Meaning is assigned to events after they have happened", "Post-mortems construct the story of a project's failure",
+  "Enactive of sensible environments", "Action creates part of the environment that is then interpreted", "A firm that cuts prices creates the price war it then perceives",
+  "Social", "Sensemaking is shaped by actual, imagined, or implied others", "Teams converge on a shared account in meetings",
+  "Ongoing", "Sensemaking never starts or stops, it is interrupted", "A sudden outage interrupts routine work and demands interpretation",
+  "Focused on and by extracted cues", "Small, familiar cues are elaborated into larger meanings", "One customer complaint is read as a sign of a broader trend",
+  "Driven by plausibility rather than accuracy", "People act on stories that are good enough, not on full information", "Managers act on a coherent narrative before all data are in"
+) |>
+  book_table(caption = "Seven properties of sensemaking, following Weick (1995).")
+```
+
+@weick2005 emphasised that sensemaking is about the interplay of action and
+interpretation. It answers two questions: what is going on here, and what
+should I do next? It begins with **noticing and bracketing** cues from the flow
+of experience, proceeds through **labelling** and categorizing, and is completed
+in action, which generates new cues. Leaders also engage in **sensegiving**,
+attempts to influence how others make sense. In their study of a new university
+president launching strategic change, @gioia1991 showed how the president
+alternated between understanding the institution (sensemaking) and articulating
+a vision for it (sensegiving), while stakeholders in turn made sense of his
+vision and gave feedback (Figure \@ref(fig:od-fig-sensemaking)).
+
+```{r od-fig-sensemaking, fig.cap = "The sensemaking cycle. A violated expectation triggers noticing and bracketing of cues, which are interpreted into a plausible account and enacted. Action changes the environment and produces new cues. Based on Weick (1995) and Weick, Sutcliffe and Obstfeld (2005)."}
+mechanism_diagram(sprintf('
+  T [label = "Trigger\\n(violated expectation,\\nambiguity, crisis)", %s]
+  N [label = "Noticing and\\nbracketing cues", %s]
+  I [label = "Interpretation\\n(labels, plausible story)", %s]
+  A [label = "Action\\n(enactment)", %s]
+  E [label = "Changed\\nenvironment", %s]
+  D [label = "Identity, roles,\\nand sensegiving", %s]
+  T -> N -> I -> A -> E
+  E -> N [label = " new cues", constraint = false, style = dashed]
+  D -> I [style = dashed]
+', node_construct, node_mechanism, node_mechanism, node_outcome, node_outcome, node_moderator))
+```
+
+### Evidence: Mann Gulch and the collapse of sensemaking
+
+@weick1993 reanalysed the 1949 Mann Gulch fire in Montana, drawing on Norman
+Maclean's account, in which thirteen smokejumpers died. The crew had been told to
+expect a routine fire. As the fire behaved in ways that contradicted that
+expectation, their shared interpretation and their role structure collapsed
+together. The foreman told the crew to drop their heavy tools, then lit an
+escape fire and called on them to join him in the burned area, actions that made
+little sense within the crew's framework and that the crew did not
+follow. Weick called this a **cosmology episode**:
+a moment when people suddenly feel that the universe is no longer a rational,
+orderly system, and lose both the sense of what is happening and the means to
+rebuild it. He identified sources of **resilience**, including improvisation,
+virtual role systems (each person able to mentally simulate the whole group),
+respectful interaction, and an attitude of wisdom that combines confidence and
+doubt. Related work on aircraft carrier flight decks introduced **collective
+mind**, the heedful interrelating of individual actions that allows complex
+systems to operate reliably [@weick1993a].
+
+@maitlis2014 review a large literature that applies sensemaking to strategic
+change, crises, innovation, and identity. Their review notes three recurrent
+features: sensemaking is triggered by violated expectations, it is social and
+often contested, and it shapes action that alters the environment.
+
+::: {.debate}
+**Process richness versus predictive power.** Sensemaking studies are mostly
+qualitative and retrospective, and critics argue that the perspective explains
+events well after the fact but rarely generates testable predictions. The
+emphasis on plausibility over accuracy also invites a normative question: when is
+a plausible but wrong story dangerous? Proponents respond that the theory's value
+lies in directing attention to interpretive processes that variance models miss,
+and recent work has developed more specific constructs (for example, triggers,
+sensegiving, and prospective sensemaking) that are measurable in field settings.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**NASA's *Challenger* and *Columbia* accidents.** The two space shuttle losses
+are among the most thoroughly documented organizational failures, and they
+illustrate several theories in this chapter at once. In her study of the
+*Challenger* launch decision, @vaughan1996 argued that the disaster resulted not
+from rule breaking but from the **normalization of deviance**: over many flights,
+evidence of erosion in the solid rocket booster O-ring seals was interpreted,
+step by step and through accepted engineering procedures, as an acceptable risk.
+Each successful flight with some erosion became evidence that erosion was
+tolerable, a sensemaking process in which plausibility and precedent outweighed
+alarm. @starbuck1988 described the same pattern as fine-tuning: past successes
+encourage organizations to reduce safety margins until something breaks, a form
+of the superstitious and myopic learning discussed under
+[organizational learning](#organizational-learning).
+
+After foam debris struck *Columbia*'s left wing during its January 2003 launch,
+engineers' requests for imagery of the wing did not lead to action, and foam
+strikes, which had occurred on earlier flights without catastrophe, were treated
+as a maintenance issue rather than a safety-of-flight issue. The Columbia
+Accident Investigation Board concluded that NASA's organizational causes were as
+important as the physical cause and drew explicit parallels with *Challenger*,
+including schedule pressure, a culture in which dissenting engineering views
+struggled to reach decision makers, and the reinterpretation of repeated
+anomalies as normal [@caib2003]. Read through this chapter's theories, the
+accidents combine normalized interpretations (sensemaking), learning from
+success (organizational learning), barriers to raising concerns (psychological
+safety), schedule commitments that made delay costly (escalation), and a strong
+culture whose assumptions went unexamined (organizational culture).
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Following an unexpected performance shock, top management teams whose
+  members have more heterogeneous functional backgrounds will generate more
+  distinct interpretations of the shock in internal communications.
+- *H2.* Leader sensegiving that links a change initiative to existing identity
+  labels will increase middle managers' support for the change.
+
+**Designs and data.** Longitudinal case studies with real-time observation, crisis
+communications, meeting transcripts and earnings call text, interviews using
+critical incident techniques, and experimental manipulations of ambiguous cues.
+
+**Measures.** Coded interpretations (threat or opportunity framing), number and
+diversity of accounts, timing of convergence on a shared account, and actions
+taken.
+:::
+
+::: {.pitfall}
+**Using sensemaking as a label for any interpretation.** Sensemaking is a
+specific process triggered by interruptions and resolved through action. Studies
+that simply describe how people interpret events, without tracing triggers,
+cues, plausibility, and enactment, use the vocabulary without the theory.
+:::
+
+## Chapter Summary {#organizations-decisions-summary}
+
+::: {.key-takeaways}
+- Organizational decisions often depart from the rational sequence. In
+  **organized anarchies**, choices emerge from the timing of problems,
+  solutions, and participants [@cohen1972], and once committed, decision makers
+  tend to **escalate** investments in failing courses of action
+  [@staw1976; @sleesman2012].
+- **Organizational learning** encodes experience into routines. Single-loop
+  learning refines them, double-loop learning questions their assumptions, and
+  learning curves vary, depreciate, and transfer imperfectly
+  [@argyris1978; @levitt1988; @argote1990].
+- **Knowledge creation** depends on converting tacit and explicit knowledge
+  through socialization, externalization, combination, and internalization
+  [@nonaka1994].
+- **Identity** and **culture** are deep, shared understandings that filter
+  interpretation and action. Identity answers "who are we?", culture answers
+  "how do we do things here and why?" [@albert1985; @schein2010].
+- **Paradox theory** argues that persistent tensions should be accepted and
+  managed dynamically rather than resolved once [@smith2011].
+- **Psychological safety** enables team learning, especially in uncertain,
+  interdependent work, and is distinct from comfort [@edmondson1999].
+- **ASA** and **[social information processing](#social-information-processing)** explain how the composition and
+  social context of the workforce shape attitudes and cultures
+  [@schneider1987; @salancik1978].
+- **Sensemaking** shows how people construct the situations they act on, and how
+  plausible but wrong interpretations can contribute to disaster
+  [@weick1993; @weick1995a].
+:::
+
+Table \@ref(tab:od-tab-summary) presents the comparison of the chapter's theories.
+
+```{r od-tab-summary}
+tibble::tribble(
+  ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Garbage can model", "Temporal coincidence of streams", "Many choices made by oversight or flight under load", "Agenda design, policy windows",
+  "Escalation of commitment", "Self-justification, sunk cost reasoning", "Responsible decision makers reinvest after losses", "Stage gates, kill criteria, project reviews",
+  "Organizational learning", "Encoding experience into routines", "Unit costs fall with experience at varying rates", "Continuous improvement, after-action reviews",
+  "Knowledge creation", "Tacit and explicit conversion", "Innovation follows the SECI spiral", "Product development, knowledge management",
+  "Organizational identity", "Central, enduring, distinctive self-beliefs", "Identity-image gaps trigger issue reframing", "Strategic change, reputation management",
+  "Organizational culture", "Shared basic assumptions", "Strong cultures give reliable performance in stable settings", "Merger integration, culture diagnosis",
+  "Paradox theory", "Acceptance plus dynamic resolution", "Virtuous cycles sustain contradictory goals", "Hybrid organizations, ambidexterity",
+  "Psychological safety", "Freedom to take interpersonal risks", "Safety predicts learning behaviour and error reporting", "Team leadership, healthcare, incident reviews",
+  "Attraction-selection-attrition", "Fit-based entry and exit", "Organizations become homogeneous over time", "Hiring strategy, diversity",
+  "Social information processing", "Social cues shape attitudes", "Attitudes converge within workgroups", "Onboarding, remote work",
+  "Sensemaking", "Plausible stories enacted in action", "Interruptions trigger interpretation and action cycles", "Crisis management, change leadership"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#organizations-decisions-questions}
+
+1. Choose a recent major decision in an organization you know. Reconstruct it
+   once as a rational sequence and once as a garbage can process. Which account
+   fits the evidence better, and what evidence would discriminate between them?
+2. Design a governance process for a multi-year IT programme that minimizes
+   escalation of commitment without causing premature abandonment of promising
+   but slow projects.
+3. Single-loop learning made Toyota's shop floor exceptionally productive. Under
+   what conditions might the same strength impede double-loop learning?
+4. How would you distinguish empirically between organizational identity and
+   organizational culture in a study of a post-merger integration?
+5. A hospital reports a sharp rise in recorded medication errors after a new
+   nurse manager arrives. Using psychological safety theory, propose two
+   competing explanations and a research design to test them.
+6. Revisit the *Challenger* and *Columbia* accidents. Which theory in this chapter
+   best explains each accident, and what single organizational change would each
+   theory recommend?
+
+## Further Reading {#organizations-decisions-reading}
+
+- @cohen1972: the original garbage can article, still the most provocative
+  statement of decision making under ambiguity.
+- @staw1981 and @sleesman2012: the classic theoretical framing of escalation and
+  the meta-analytic synthesis of its determinants.
+- @levitt1988 and @argote2011: two complementary reviews of organizational
+  learning, one behavioural, one focused on experience and knowledge.
+- @nonaka1994: the canonical statement of knowledge-creation theory and the SECI
+  model.
+- @schein2010: the standard treatment of culture's levels and of leaders' roles
+  in creating and changing culture.
+- @edmondson1999 and @edmondson2014: the founding study and the authoritative
+  review of psychological safety.
+- @weick1993: a short, vivid analysis of how sensemaking and organization collapse
+  together, and how resilience can be built.
+- @vaughan1996: a landmark organizational analysis of the *Challenger* decision
+  and the normalization of deviance.

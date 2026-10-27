@@ -16,12 +16,12 @@ anyone calls it one.
 Chapter \@ref(what-is-theory) asked what theory *is*. This chapter asks what
 researchers and managers *do* with it. We trace the path from a theory to a
 testable hypothesis, explain how constructs earn their meaning in a nomological
-network, set out the logic of mediation and moderation, discuss how to choose
+network, set out the logic of [mediation and moderation](#mediation-moderation), discuss how to choose
 among competing theories, distinguish types of theoretical contribution and modes
 of reasoning, show how causal diagrams make a theory's assumptions explicit, and
-confront the replication crisis and what it implies for credible research. We
+confront the [replication crisis](#replication-crisis) and what it implies for credible research. We
 close with theory in managerial practice, from A/B tests to evidence-based
-management.
+management (Table \@ref(tab:tab-use-glance)).
 
 ```{r tab-use-glance}
 tibble::tribble(
@@ -95,7 +95,7 @@ tibble::tribble(
 Consider a study of whether young business-to-business software firms win more
 enterprise contracts when they obtain an independent security audit report (for
 example, a SOC 2 report). The relevant theory is
-[signaling theory](#signaling-theory): an informed party can credibly reveal
+[signaling theory](#signaling-theory) (Section \@ref(signaling-theory)): an informed party can credibly reveal
 hidden quality through a costly action that low-quality types find too expensive
 to imitate [@spence1973; @connelly2010].
 
@@ -246,7 +246,7 @@ and *who/where/when* into a statistical model [@whetten1989]. A **mediator**
 answers *how* or *why* X affects Y: it is the mechanism through which the effect
 travels. A **moderator** answers *when* or *for whom*: it changes the strength or
 direction of the X-Y relationship. @baron1986 drew the distinction sharply in a
-paper that became one of the most cited in the social sciences.
+paper that became one of the most cited in the social sciences (Table \@ref(tab:tab-use-medmod)).
 
 ```{r tab-use-medmod}
 tibble::tribble(
@@ -321,7 +321,7 @@ interval rather than with the causal-steps procedure or the Sobel test. A
 significant total effect of X on Y is not required: an indirect effect can exist
 even when opposing mechanisms cancel out in the total effect. @hayes2018 provides
 the standard regression-based treatment, including **conditional process
-models** that combine mediation and moderation.
+models** that combine mediation and moderation (Table \@ref(tab:tab-use-zhao)).
 
 ```{r tab-use-zhao}
 tibble::tribble(
@@ -433,8 +433,8 @@ mediation model, and would tell the retailer where to invest.
 ## Choosing Among Theories {#choosing-theory}
 
 Most business phenomena can be approached through more than one theory. Executive
-compensation can be studied through agency theory, tournament theory, or social
-comparison. A firm's decision to outsource through transaction cost economics or
+compensation can be studied through [agency theory](#agency-theory) (Section \@ref(agency-theory)), [tournament theory](#tournament-theory) (Section \@ref(tournament-theory)), or social
+comparison. A firm's decision to outsource through [transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)) or
 capability-based reasoning. Choosing well requires matching the theory to the
 research question, its phenomenon, level of analysis, and the type of
 explanation sought, and, where theories compete, designing tests that can tell
@@ -467,26 +467,26 @@ tibble::tribble(
 ```
 
 For quick navigation, the core sections are:
-[Resource-based theory](#resource-based-theory),
-[Dynamic capabilities](#dynamic-capabilities-framework),
-[Transaction cost economics](#transaction-cost-economics),
-[Agency theory](#agency-theory), [Stewardship theory](#stewardship-theory),
-[Upper echelons theory](#upper-echelons-theory),
-[Institutional theory](#institutional-theory),
-[Resource dependence theory](#resource-dependence-theory),
-[Signaling theory](#signaling-theory), [Screening theory](#screening-theory),
-[Social exchange theory](#social-exchange-theory),
-[Structural holes](#structural-holes),
-[Diffusion of innovations](#diffusion-of-innovations),
-[Technology acceptance model](#technology-acceptance-model),
-[Hofstede's dimensions](#hofstede), [Expectancy theory](#expectancy-theory),
-[Goal-setting theory](#goal-setting-theory),
-[Self-determination theory](#self-determination-theory),
-[Regulatory focus theory](#regulatory-focus-theory),
-[Prospect theory](#prospect-theory),
-[Social identity theory](#social-identity-theory),
-[Optimal distinctiveness theory](#optimal-distinctiveness-theory), and the
-[Elaboration likelihood model](#elaboration-likelihood-model).
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)),
+[Dynamic capabilities](#dynamic-capabilities-framework) (Section \@ref(dynamic-capabilities-framework)),
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)),
+[Agency theory](#agency-theory) (Section \@ref(agency-theory)), [Stewardship theory](#stewardship-theory) (Section \@ref(stewardship-theory)),
+[Upper echelons theory](#upper-echelons-theory) (Section \@ref(upper-echelons-theory)),
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)),
+[Resource dependence theory](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)),
+[Signaling theory](#signaling-theory) (Section \@ref(signaling-theory)), [Screening theory](#screening-theory) (Section \@ref(screening-theory)),
+[Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Structural holes](#structural-holes) (Section \@ref(structural-holes)),
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)),
+[Technology acceptance model](#technology-acceptance-model) (Section \@ref(technology-acceptance-model)),
+[Hofstede's dimensions](#hofstede) (Section \@ref(hofstede)), [Expectancy theory](#expectancy-theory) (Section \@ref(expectancy-theory)),
+[Goal-setting theory](#goal-setting-theory) (Section \@ref(goal-setting-theory)),
+[Self-determination theory](#self-determination-theory) (Section \@ref(self-determination-theory)),
+[Regulatory focus theory](#regulatory-focus-theory) (Section \@ref(regulatory-focus-theory)),
+[Prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)),
+[Optimal distinctiveness theory](#optimal-distinctiveness-theory) (Section \@ref(optimal-distinctiveness-theory)), and the
+[Elaboration likelihood model](#elaboration-likelihood-model) (Section \@ref(elaboration-likelihood-model)).
 
 Three further questions help narrow the choice. First, **does the theory's level
 match the outcome?** A theory of individual motivation will not, on its own,
@@ -607,7 +607,7 @@ explanation that would, if true, make it unsurprising. It is the logic of
 anomaly-driven discovery. @timmermans2012 argue that abductive analysis, the
 iterative confrontation of surprising data with multiple existing theories, is a
 more accurate description of how qualitative researchers actually build theory
-than pure induction.
+than pure induction (Table \@ref(tab:tab-use-reasoning)).
 
 ```{r tab-use-reasoning}
 tibble::tribble(
@@ -654,7 +654,7 @@ of the effect one may be trying to estimate. A **collider** is caused by both
 treatment and outcome (or their causes). Controlling for it, or selecting the
 sample on it, *opens* a spurious path and creates bias where none existed
 [@elwert2014]. Pearl's **back-door criterion** formalizes which sets of control
-variables suffice to identify a causal effect given the diagram [@pearl2009].
+variables suffice to identify a causal effect given the diagram [@pearl2009] (Figure \@ref(fig:fig-use-dag)).
 
 ```{r fig-use-dag, fig.cap = "A causal diagram (DAG) for evaluating a sales-training programme. Representative experience is a confounder (control for it). Pitch quality is a mediator (do not control if the total effect is of interest). Being retained in the sample is a collider (do not condition on it). Illustrative example.", fig.height = 4.4}
 mechanism_diagram(sprintf('
@@ -671,6 +671,8 @@ mechanism_diagram(sprintf('
   Y -> K
 ', node_moderator, node_construct, node_mechanism, node_outcome))
 ```
+
+Table \@ref(tab:tab-use-dagroles) presents the role of a variable in the causal diagram determines whether to control for it.
 
 ```{r tab-use-dagroles}
 tibble::tribble(
@@ -824,7 +826,7 @@ advance, converting exploratory findings into apparently confirmatory tests
 practices** were not rare: in a large survey of academic psychologists,
 substantial proportions admitted to practices such as failing to report all
 dependent measures or deciding whether to collect more data after looking at
-results [@john2012].
+results [@john2012] (Table \@ref(tab:tab-use-qrp)).
 
 ```{r tab-use-qrp}
 tibble::tribble(
@@ -927,7 +929,7 @@ effects in the earliest sites were larger than in later ones, because the
 utilities that adopted the programme first differed systematically from those that
 adopted later: a reminder that **boundary conditions** shape what a theory
 delivers when it moves from one setting to many (see
-[Social norms](#social-norms)).
+[Social norms](#social-norms) (Section \@ref(social-norms))).
 
 ### Evidence-based management
 
@@ -989,6 +991,8 @@ use the mechanism to decide where they should, and should not, travel.
 - In practice, A/B tests, scaled interventions, and evidence-based management are
   all forms of theory testing [@kohavi2020; @allcott2015; @rousseau2006].
 :::
+
+Table \@ref(tab:tab-use-summary) presents the comparison of the chapter's tools for using theory.
 
 ```{r tab-use-summary}
 tibble::tribble(

@@ -15,11 +15,11 @@ a bad one, and how scholars and practitioners can tell the difference. We begin
 with what theory is, and, just as importantly, what it is not. We then take
 theories apart into their **building blocks** (constructs, relationships,
 mechanisms, and boundary conditions), distinguish **types** of theory, set out the
-**criteria** by which theories are judged, examine the **levels of analysis** at
+**criteria** by which theories are judged, examine the **[levels of analysis](#levels-of-analysis)** at
 which theories operate, and close with how theories change over time. Along the
 way we argue a simple thesis: managers do not choose between "theory" and
 "practice". They choose between theories that are explicit, tested, and bounded
-and theories that are implicit, untested, and unbounded.
+and theories that are implicit, untested, and unbounded (Table \@ref(tab:tab-wit-glance)).
 
 ```{r tab-wit-glance}
 tibble::tribble(
@@ -111,7 +111,7 @@ other links are plausible.
 A useful way to understand theory is through its imitations. In a widely cited
 editorial essay, @sutton1995 identified five things that are often presented as
 theory in management manuscripts but are not, on their own, theory. Each is a
-legitimate *part* of a theoretical argument. None can substitute for it.
+legitimate *part* of a theoretical argument. None can substitute for it (Table \@ref(tab:tab-wit-not)).
 
 ```{r tab-wit-not}
 tibble::tribble(
@@ -161,6 +161,8 @@ observable parts of a theory.
 
 ### What, how, why, and who/where/when
 
+Table \@ref(tab:tab-wit-whetten) presents the whetten's (1989) four elements of a complete theory, illustrated with [resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)) (Wernerfelt, 1984, Barney, 1991).
+
 ```{r tab-wit-whetten}
 tibble::tribble(
   ~Element, ~Question, ~`What it supplies`, ~`Illustration: resource-based theory`,
@@ -188,7 +190,7 @@ theories.
 ::: {.definition}
 **Construct.** An abstract concept, deliberately invented or adopted for a
 scientific purpose, that cannot be observed directly (e.g., *trust*, *brand
-equity*, *absorptive capacity*). **Variable.** An observable, measurable
+equity*, *[absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity))*). **Variable.** An observable, measurable
 operationalization of a construct (e.g., a five-item trust scale, a price premium,
 R&D intensity). **Measure.** The concrete instrument or data source that produces
 values of the variable.
@@ -233,11 +235,11 @@ paper may advance only propositions. An empirical paper translates them into
 hypotheses that a particular dataset can test. Both rest on **assumptions**:
 statements the theorist takes as given rather than tests. @bacharach1989
 emphasizes that the theorist's implicit values and the spatial and temporal
-bounds of a theory are among its most consequential assumptions. Agency theory,
+bounds of a theory are among its most consequential assumptions. [Agency theory](#agency-theory) (Section \@ref(agency-theory)),
 for instance, assumes self-interested agents and goal conflict. Stewardship
 theory relaxes the first assumption and therefore predicts different governance
-arrangements (see [Agency theory](#agency-theory) and
-[Stewardship theory](#stewardship-theory)).
+arrangements (see [Agency theory](#agency-theory) (Section \@ref(agency-theory)) and
+[Stewardship theory](#stewardship-theory) (Section \@ref(stewardship-theory))).
 
 Figure \@ref(fig:fig-wit-anatomy) assembles these building blocks into one
 picture, using a signaling example developed fully in Chapter \@ref(information).
@@ -293,9 +295,9 @@ mechanism (micro to micro), transformational mechanism (micro to macro).
 property produced by many individual actions. Less informative for purely
 individual-level phenomena.
 
-**Related theories.** [Social exchange theory](#social-exchange-theory),
-[Institutional theory](#institutional-theory),
-[Wisdom of the crowd](#wisdom-of-the-crowd).
+**Related theories.** [Social exchange theory](#social-exchange-theory) (Section \@ref(social-exchange-theory)),
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)),
+[Wisdom of the crowd](#wisdom-of-the-crowd) (Section \@ref(wisdom-of-the-crowd)).
 :::
 
 Coleman's diagram, often called **Coleman's boat** or the "bathtub", is
@@ -415,7 +417,7 @@ If you cannot, the arrow is an empirical conjecture, not theory.
 
 ::: {.try-it}
 Pick a management idea you have encountered recently: "remote work lowers
-innovation", "subscriptions increase customer lifetime value", "diverse boards
+innovation", "subscriptions increase [customer lifetime value](#customer-equity) (Section \@ref(customer-equity))", "diverse boards
 improve decisions". Write it out using Whetten's four elements: list the
 constructs (*what*), state the relationship (*how*), specify the mechanism
 (*why*), and name at least two boundary conditions (*who, where, when*). Then
@@ -442,7 +444,7 @@ the theory of role-sets.
 
 Most of the theories in this book are middle-range in Merton's sense. Signaling
 theory does not try to explain all of economic life, only how informed parties
-reveal hidden quality. [Optimal distinctiveness theory](#optimal-distinctiveness-theory)
+reveal hidden quality. [Optimal distinctiveness theory](#optimal-distinctiveness-theory) (Section \@ref(optimal-distinctiveness-theory))
 does not explain all of identity, only the tension between assimilation and
 differentiation [@Brewer_1991]. The middle range is where theory is most easily
 tested, accumulated, and applied, and where most business research operates.
@@ -450,7 +452,7 @@ tested, accumulated, and applied, and where most business research operates.
 ### Gregor's taxonomy of theory types
 
 Writing for information systems, @gregor2006 proposed a taxonomy that applies
-well beyond that field. It distinguishes theories by their *primary goal*.
+well beyond that field. It distinguishes theories by their *primary goal* (Table \@ref(tab:tab-wit-gregor)).
 
 ```{r tab-wit-gregor}
 tibble::tribble(
@@ -563,7 +565,7 @@ frameworks and narrow, precise models, and why neither is simply "better".
 Theories must also be *worth* attention. In a classic essay, @davis1971 argued
 that theories are judged interesting when they deny some assumption their
 audience holds, when what seems to be the case turns out not to be, and boring
-when they affirm what the audience already believes. Prospect theory was
+when they affirm what the audience already believes. [Prospect theory](#prospect-theory) (Chapter \@ref(prospect-theory)) was
 interesting because it contradicted the assumption that decision-makers evaluate
 final wealth states consistently [@kahneman1979]. The finding that open offices
 reduce face-to-face interaction is interesting because it contradicts the design
@@ -733,7 +735,7 @@ difference between a sound engagement programme and an overreaching one.
 
 The theories in this book can be organized by the level at which they primarily
 operate. Table \@ref(tab:tab-wit-map) serves as a navigational map. Many theories
-span levels, signaling theory has been applied to individuals, firms, and
+span levels, [signaling theory](#signaling-theory) (Section \@ref(signaling-theory)) has been applied to individuals, firms, and
 nations, so the "dominant level" column indicates centre of gravity, not
 exclusive domain.
 
@@ -744,20 +746,31 @@ tibble::tribble(
   "Organizations & Strategy", "4. Resources", "Resource-based theory, VRIO, knowledge-based view, resource-advantage theory", "Firm",
   "Organizations & Strategy", "5. Dynamic capabilities", "Dynamic capabilities, absorptive capacity, exploration-exploitation, ambidexterity", "Firm, business unit",
   "Organizations & Strategy", "6. Governance", "Agency, stewardship, transaction cost economics, upper echelons", "Dyad, top management team, firm",
-  "Organizations & Strategy", "7. Environment", "Resource dependence, institutional, legitimacy, stakeholder, ecology, contingency", "Organization, field, population",
+  "Organizations & Strategy", "7. Environment", "Resource dependence, institutional, legitimacy, stakeholder, ecology, contingency, CSR", "Organization, field, population",
   "Organizations & Strategy", "8. Information", "Information asymmetry, signaling, screening, costly signaling", "Dyad, market",
   "Organizations & Strategy", "9. Networks & exchange", "Social exchange, network exchange, weak ties, structural holes, social capital", "Dyad, network",
-  "Organizations & Strategy", "10. Innovation & adoption", "Diffusion of innovations, Bass model, TAM, UTAUT", "Individual adopter, market",
-  "Individuals & Groups", "11. Culture", "Hofstede, power distance, GLOBE, Schwartz values, tight-loose", "Society, individual",
-  "Individuals & Groups", "12. Motivation", "Expectancy, equity, goal setting, goal gradient, self-determination", "Individual",
-  "Individuals & Groups", "13. Self-regulation", "Regulatory focus and fit, construal level, self-control", "Individual",
-  "Individuals & Groups", "14. Social influence", "Social comparison, social identity, optimal distinctiveness, conformity, norms", "Individual within groups",
-  "Individuals & Groups", "15. Judgment & decision", "Bounded rationality, heuristics and biases, prospect theory, dual process", "Individual",
-  "Individuals & Groups", "16. Emotion & well-being", "Broaden-and-build, hedonic adaptation, appraisal theory", "Individual",
-  "Individuals & Groups", "17. Persuasion & communication", "Elaboration likelihood, persuasion knowledge, agenda setting", "Individual, audience",
-  "Effects, Phenomena & Frameworks", "18. Effects", "Mere exposure, decoy, anchoring, IKEA, snob, glass cliff", "Individual (mostly)",
-  "Effects, Phenomena & Frameworks", "19. Phenomena", "Similarity asymmetry, assortative mating, wisdom of the crowd", "Individual, dyad, collective",
-  "Effects, Phenomena & Frameworks", "20. Frameworks", "Information processing, five forces, creativity models, mechanism toolkit", "Individual to industry"
+  "Organizations & Strategy", "10. Innovation & adoption", "Diffusion of innovations, Bass model, TAM, UTAUT, IS success", "Individual adopter, market",
+  "Organizations & Strategy", "11. Strategy & competition", "Structure-conduct-performance, competitive dynamics, game theory, real options, behavioral theory of the firm", "Firm, industry",
+  "Organizations & Strategy", "12. Innovation & entrepreneurship", "Creative destruction, disruptive innovation, profiting from innovation, effectuation", "Firm, venture, industry",
+  "Organizations & Strategy", "13. International business", "Uppsala model, OLI paradigm, internalization, institutional voids", "Multinational firm, country",
+  "Organizations & Strategy", "14. Organizations & decisions", "Garbage can, escalation, organizational learning, culture, sensemaking", "Organization, team",
+  "Organizations & Strategy", "15. Work & leadership", "Job design, JD-R, LMX, transformational leadership, justice, tournaments", "Individual, dyad, team",
+  "Markets, Finance & Economics", "16. Finance", "Portfolio theory, CAPM, efficient markets, capital structure, behavioral finance", "Investor, firm, market",
+  "Markets, Finance & Economics", "17. Economics & institutions", "Coase theorem, collective action, network effects, auctions, social preferences", "Market, institution",
+  "Individuals & Groups", "18. Culture", "Hofstede, power distance, GLOBE, Schwartz values, tight-loose", "Society, individual",
+  "Individuals & Groups", "19. Motivation", "Expectancy, equity, goal setting, goal gradient, self-determination", "Individual",
+  "Individuals & Groups", "20. Self-regulation", "Regulatory focus and fit, construal level, self-control", "Individual",
+  "Individuals & Groups", "21. Attitudes & attribution", "Cognitive dissonance, attribution, self-perception, social cognitive theory, reactance", "Individual",
+  "Individuals & Groups", "22. Social influence", "Social comparison, social identity, optimal distinctiveness, conformity, norms", "Individual within groups",
+  "Individuals & Groups", "23. Judgment & decision", "Bounded rationality, heuristics and biases, dual process, choice architecture", "Individual",
+  "Individuals & Groups", "24. Prospect theory", "Expected utility, prospect theory, loss aversion, reference dependence", "Individual, market",
+  "Individuals & Groups", "25. Emotion & well-being", "Broaden-and-build, hedonic adaptation, appraisal theory", "Individual",
+  "Individuals & Groups", "26. Persuasion & communication", "Elaboration likelihood, persuasion knowledge, agenda setting", "Individual, audience",
+  "Consumers & Marketing", "27. Consumer behavior", "Satisfaction, brand equity, brand relationships, self-congruity, reference price", "Consumer",
+  "Consumers & Marketing", "28. Marketing strategy", "Market orientation, service-dominant logic, service quality, customer equity", "Firm, customer base",
+  "Effects, Phenomena & Frameworks", "29. Effects", "Mere exposure, decoy, anchoring, IKEA, snob, glass cliff", "Individual (mostly)",
+  "Effects, Phenomena & Frameworks", "30. Phenomena", "Similarity asymmetry, wisdom of the crowd, groupthink, bullwhip effect", "Individual, dyad, collective",
+  "Effects, Phenomena & Frameworks", "31. Frameworks", "Information processing, five forces, creativity models, mechanism toolkit", "Individual to industry"
 ) |>
   book_table(caption = "A map of the book: theory families by part, chapter, and dominant level of analysis.")
 ```
@@ -828,7 +841,7 @@ retained much of its predecessor. None was a clean Kuhnian revolution. In
 behavioural decision research, by contrast, the accumulation of anomalies for
 expected-utility theory produced something closer to a paradigm contest, with
 prospect theory offering a descriptive alternative built on reference dependence
-and loss aversion [@kahneman1979].
+and [loss aversion](#loss-aversion) (Section \@ref(loss-aversion)) [@kahneman1979].
 
 ::: {.debate}
 **Does management have, or need, a paradigm?** @pfeffer1993 argued that
@@ -880,6 +893,8 @@ cannot, or does it re-describe familiar facts in new vocabulary?
 - Managers always act on theories. The choice is between explicit, tested theories
   and implicit, untested ones [@christensen2003; @rousseau2006].
 :::
+
+Table \@ref(tab:tab-wit-summary) presents the summary of the chapter's core ideas.
 
 ```{r tab-wit-summary}
 tibble::tribble(

@@ -12,15 +12,15 @@ These questions concern the **adoption** of new ideas, products, and
 technologies by individuals and organizations, and the **diffusion** of those
 innovations through a population over time. This chapter brings together two
 traditions that address them at different levels. The *macro* tradition,
-**diffusion of innovations** theory and the **Bass model**, explains the
+**[diffusion of innovations](#diffusion-of-innovations)** theory and the **[Bass model](#bass-model)**, explains the
 aggregate shape of adoption over time: why cumulative adoption follows an S-curve
 and how communication among adopters drives it. The *micro* tradition, the
-**theory of reasoned action**, the **theory of planned behavior**, the
-**technology acceptance model**, and the **unified theory of acceptance and use
+**theory of reasoned action**, the **[theory of planned behavior](#theory-of-planned-behavior)**, the
+**[technology acceptance model](#technology-acceptance-model)**, and the **unified theory of acceptance and use
 of technology**, explains why a given individual decides to adopt and use a
 technology. Each tradition supplies what the other lacks: diffusion models
 describe the curve but say little about individual decisions, while acceptance
-models explain individual decisions but say little about social dynamics.
+models explain individual decisions but say little about social dynamics (Table \@ref(tab:tab-inn-glance)).
 
 ```{r tab-inn-glance}
 tibble::tribble(
@@ -60,10 +60,10 @@ are connected. Mandated adoption, network-externality goods, and fads follow
 different dynamics.
 
 **Related theories.** [Bass model](#bass-model),
-[Strength of weak ties](#weak-ties),
+[Strength of weak ties](#weak-ties) (Section \@ref(weak-ties)),
 [Technology acceptance model](#technology-acceptance-model),
-[Institutional theory](#institutional-theory),
-[Social influence](#social-influence).
+[Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)),
+[Social influence](#social-influence) (Chapter \@ref(social-influence)).
 :::
 
 ### Origins and intellectual history
@@ -92,7 +92,7 @@ both *perceived profitability* and *social communication* shape diffusion.
 study of physicians' adoption of a new antibiotic in four Illinois cities.
 Doctors who were more integrated into professional networks adopted earlier, and
 the authors interpreted the pattern as evidence of social contagion. The study
-became the classic demonstration of network effects in diffusion, and, decades
+became the classic demonstration of [network effects](#network-effects) (Section \@ref(network-effects)) in diffusion, and, decades
 later, a cautionary tale (see the debate box below).
 
 @rogers2003 synthesized these and thousands of later studies into a general
@@ -246,8 +246,8 @@ research.
   redundant ties than in random networks, suggesting that behaviours requiring
   social reinforcement are **complex contagions** that travel through dense
   clusters rather than the long, weak bridges that carry information
-  (compare the [weak-ties argument](#weak-ties)).
-- **Contagion versus homophily.** Correlated adoption among connected people
+  (compare the [weak-ties argument](#weak-ties) (Section \@ref(weak-ties))).
+- **Contagion versus [homophily](#homophily) (Section \@ref([homophily](#homophily) (Section \@ref(homophily)))).** Correlated adoption among connected people
   need not mean that one influenced the other. @aral2009 showed that a large share
   of apparent contagion in the adoption of a mobile service could be attributed to
   homophily: similar people adopting for similar reasons.
@@ -344,7 +344,7 @@ are needed for repeat purchases, multiple product generations, and strong
 supply constraints or marketing-mix changes.
 
 **Related theories.** [Diffusion of innovations](#diffusion-of-innovations),
-[Wisdom of the crowd](#wisdom-of-the-crowd).
+[Wisdom of the crowd](#wisdom-of-the-crowd) (Section \@ref(wisdom-of-the-crowd)).
 :::
 
 ### Core logic
@@ -361,7 +361,7 @@ $$
 
 where $p$ is the **coefficient of innovation** (external influence, such as
 advertising and media) and $q$ is the **coefficient of imitation** (internal
-influence, such as word of mouth from previous adopters). With market
+influence, such as [word of mouth](#social-transmission) (Section \@ref(social-transmission)) from previous adopters). With market
 potential $m$, the number of new adopters at $t$ is $n(t) = m\,f(t)$. Solving the
 differential equation with $F(0) = 0$ gives the closed form
 
@@ -561,8 +561,8 @@ compatibility: same action, target, context, and time). Weaker for habitual,
 impulsive, or highly constrained behaviours.
 
 **Related theories.** [Technology acceptance model](#technology-acceptance-model),
-[UTAUT](#utaut), [Social norms](#social-norms),
-[Self-regulation](#self-regulation).
+[UTAUT](#utaut), [Social norms](#social-norms) (Section \@ref(social-norms)),
+[Self-regulation](#self-regulation) (Chapter \@ref(self-regulation)).
 :::
 
 The theory of reasoned action provides the micro-foundation on which most
@@ -667,7 +667,7 @@ replaced the elicitation of salient beliefs for each new behaviour with two
 general beliefs that apply to almost any technology, and it dropped the
 subjective norm, which Davis and colleagues found to have little effect on
 intentions in their setting. The result was a short, reliable survey that could be
-deployed in virtually any IT implementation.
+deployed in virtually any IT implementation (Figure \@ref(fig:fig-inn-tam)).
 
 ```{r fig-inn-tam, fig.cap = "The technology acceptance model (Davis, 1989, Davis et al., 1989) with the TAM2 extensions of Venkatesh and Davis (2000). Social-influence and cognitive-instrumental processes shape perceived usefulness. Experience and voluntariness moderate the effect of subjective norm."}
 mechanism_diagram(sprintf('
@@ -706,7 +706,7 @@ proposed **TAM2**, which explained perceived usefulness and intention in terms o
 demonstrability, and perceived ease of use). In four longitudinal field studies,
 subjective norm affected intention directly in mandatory settings, and its
 effects weakened as users gained experience. @venkatesh2008 then proposed **TAM3**,
-adding determinants of perceived ease of use, such as computer self-efficacy,
+adding determinants of perceived ease of use, such as computer [self-efficacy](#social-cognitive-theory) (Section \@ref(social-cognitive-theory)),
 perceptions of external control, computer anxiety, and perceived enjoyment, and
 an agenda for designing interventions before and after implementation.
 
@@ -943,6 +943,317 @@ use [@webb2006]. Measure actual use, preferably from system logs and at a later
 time, and test whether the model explains *behaviour*, not just stated plans.
 :::
 
+## Information Systems Success Model {#is-success-model}
+
+::: {.theory-card}
+**Core claim.** The success of an information system is multidimensional.
+**System quality**, **information quality**, and **service quality** shape
+**use** and **user satisfaction**, which in turn produce **net benefits** for
+individuals, groups, and organizations. Net benefits feed back into further use
+and satisfaction.
+
+**Origins.** Information systems. @delone1992 synthesized the fragmented
+measures of IS success into six interrelated categories. @delone2003 updated
+the model in response to a decade of tests and critiques, notably @seddon1997.
+@petter2008 reviewed the evidence.
+
+**Level of analysis.** Individual users, workgroups, and organizations.
+
+**Key constructs.** System quality, information quality, service quality,
+intention to use and use, user satisfaction, net benefits (in the 1992 model,
+individual impact and organizational impact).
+
+**Boundary conditions.** Use is an informative success measure only when it is
+at least partly voluntary. When use is mandated, satisfaction, the quality of
+use, and net benefits carry more information. The relative weight of each
+quality dimension depends on the system: service quality matters most when
+users depend on an IT function or provider for support.
+
+**Related theories.** [Technology acceptance model](#technology-acceptance-model),
+[UTAUT](#utaut), [Task-technology fit](#task-technology-fit),
+[Service quality gap model](#service-quality-gap-model) (Section \@ref(service-quality-gap-model)),
+[Expectancy disconfirmation](#expectancy-disconfirmation) (Section \@ref(expectancy-disconfirmation)).
+:::
+
+### Origins and core logic
+
+The acceptance models in this chapter explain whether people *use* a technology.
+Managers who fund systems also need to know whether the systems *work*: whether
+they deliver accurate information, satisfy users, and improve performance. By
+the late 1980s, IS researchers had measured "success" in dozens of
+incompatible ways, from system response time to user satisfaction to return on
+investment. @delone1992 called this the search for the **dependent variable**
+of IS research. Drawing on communication theory's distinction between the
+technical level (is the message transmitted accurately?), the semantic level
+(does it convey the intended meaning?), and the effectiveness level (does it
+influence the receiver?), they reviewed the empirical literature and organized
+its measures into six categories: system quality, information quality, use,
+user satisfaction, individual impact, and organizational impact. Their central
+argument was that these categories are *interdependent* and that studies should
+measure several of them rather than choosing one.
+
+The original model was criticized for mixing two kinds of model. @seddon1997
+argued that it combined a process model (a system is built, then used, then has
+impacts) with a causal or variance model (more quality causes more use and
+more benefits), and that "use" was ambiguous: more use can reflect a valuable
+system or an inefficient one that consumes users' time. @delone2003 responded
+with an updated model that made three changes. They added **service quality**
+to capture the support users receive from the IS function or provider. They
+distinguished **intention to use** (an attitude) from **use** (a behaviour). And
+they combined individual and organizational impacts into a single **net
+benefits** construct whose referent (individual, group, firm, society) should
+be chosen to fit the research question. Figure \@ref(fig:fig-ia2-ismodel) shows
+the updated model.
+
+```{r fig-ia2-ismodel, fig.cap = "The updated DeLone and McLean model of information systems success (DeLone and McLean, 2003). Three quality dimensions shape intention to use, use, and user satisfaction, which jointly produce net benefits. Dashed arrows show the feedback of net benefits to subsequent use and satisfaction."}
+mechanism_diagram(sprintf('
+  SQ [label = "System quality", %s]
+  IQ [label = "Information quality", %s]
+  VQ [label = "Service quality", %s]
+  IU [label = "Intention to use", %s]
+  U  [label = "Use", %s]
+  US [label = "User satisfaction", %s]
+  NB [label = "Net benefits\\n(individual, group,\\norganization)", %s]
+  SQ -> IU
+  SQ -> US
+  IQ -> IU
+  IQ -> US
+  VQ -> IU
+  VQ -> US
+  IU -> U
+  U -> US [dir = both]
+  U -> NB
+  US -> NB
+  NB -> IU [style = dashed, constraint = false]
+  NB -> US [style = dashed, constraint = false]
+', node_construct, node_construct, node_construct, node_mechanism, node_mechanism,
+   node_mechanism, node_outcome))
+```
+
+Table \@ref(tab:tab-ia2-is-measures) lists the dimensions with typical
+measures. Because each dimension can be measured objectively (from logs and
+audits) or perceptually (from user surveys), the model also serves as a
+checklist for system evaluation.
+
+```{r tab-ia2-is-measures}
+tibble::tribble(
+  ~Dimension, ~`What it captures`, ~`Example measures`,
+  "System quality", "Desirable technical characteristics of the system", "Reliability, response time, availability, ease of use, flexibility",
+  "Information quality", "Desirable characteristics of the system's outputs", "Accuracy, completeness, timeliness, relevance, format",
+  "Service quality", "Quality of support from the IS function or provider", "Responsiveness, assurance, empathy of support staff, resolution time",
+  "Intention to use / use", "Extent and nature of system utilization", "Frequency, duration, breadth of features used, logged transactions",
+  "User satisfaction", "Users' overall evaluation of the system", "Multi-item satisfaction scales, net promoter style ratings, complaints",
+  "Net benefits", "Contribution to individuals, groups, organizations", "Decision quality, productivity, cost savings, revenue, customer outcomes"
+) |>
+  book_table(caption = "Dimensions of the updated DeLone and McLean IS success model with example measures.")
+```
+
+### Evidence and extensions
+
+@petter2008 reviewed tests of each relationship in the model. Support was
+strongest for links involving user satisfaction, for example from system
+quality and information quality to satisfaction and from satisfaction to net
+benefits at the individual level. Evidence was weaker and more mixed for links
+involving system use, for service quality, and for net benefits at the
+organizational level, where many other factors intervene between a system and
+firm performance. The model is widely used as an evaluation framework for
+enterprise systems, e-commerce sites, e-government services, and knowledge
+management systems.
+
+::: {.business-case}
+**The launch of HealthCare.gov.** When the US federal health-insurance
+marketplace opened on 1 October 2013, many visitors were unable to create
+accounts or complete applications because the site suffered from outages,
+slow responses, and errors. In the language of the model, deficiencies in
+**system quality** blocked **use** and destroyed **user satisfaction**, so that
+the intended **net benefits** (enrolment in coverage) could not materialize
+regardless of the quality of the plan information on the site. The recovery
+effort that followed concentrated on reliability and capacity, the system
+quality dimension, before the site could deliver its intended benefits. The
+episode illustrates why the model insists on measuring several dimensions:
+a system can be well specified at the information level and still fail at the
+technical level.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* Service quality will have a stronger effect on user
+satisfaction for cloud software purchased by small firms (which lack internal IT
+support) than for large firms. *H2.* The effect of use on net benefits will be
+weaker when use is mandated. *H3.* Information quality will mediate the effect
+of a data-integration project on managers' decision quality.
+
+**Designs.** Multi-wave surveys linked to usage logs and performance data,
+comparisons of business units before and after system implementation,
+structural equation models that test the full set of paths.
+
+**Measures.** Validated scales for each quality dimension and satisfaction
+[@petter2008], logged use, objective performance outcomes.
+:::
+
+::: {.pitfall}
+**Measuring one dimension and calling it success.** Many evaluations report
+only satisfaction or only usage. The model's main lesson is that the dimensions
+are distinct and can diverge: a heavily used system may be unsatisfying, and a
+satisfying system may produce no net benefit. Measure several dimensions and
+state which level of net benefits is the target.
+:::
+
+## Task-Technology Fit {#task-technology-fit}
+
+::: {.theory-card}
+**Core claim.** A technology improves individual performance when its
+capabilities fit the tasks its users must perform. Use alone is not enough: use
+of a poorly fitting technology adds little or nothing to performance.
+
+**Origins.** Information systems. @goodhue1995 proposed the
+**technology-to-performance chain**. @goodhue1995a examined user evaluations of
+fit. Extensions to group support systems [@zigurs1998] and integration with TAM
+[@dishaw1999].
+
+**Level of analysis.** Individual user and task. Extended to groups.
+
+**Key constructs.** Task characteristics, technology characteristics,
+individual characteristics, task-technology fit, utilization, performance
+impacts.
+
+**Boundary conditions.** Fit matters most when tasks are well defined and
+technology is a significant input to performance. Fit is judged relative to
+a specific task, so the same system may fit one task and not another.
+
+**Related theories.** [Technology acceptance model](#technology-acceptance-model),
+[UTAUT](#utaut), [IS success model](#is-success-model),
+[Contingency theory](#contingency-theory) (Section \@ref(contingency-theory)).
+:::
+
+### Core logic
+
+@goodhue1995 observed that acceptance models focus on utilization and that IS
+success models assume that more use produces more benefit. They argued that
+both overlook the *match* between technology and task. A spreadsheet is an
+excellent tool for financial modelling and a poor tool for managing a customer
+database. Their **technology-to-performance chain** combines two links. First,
+the fit between the requirements of a task and the functionality of a
+technology, shaped by the characteristics of tasks, technologies, and
+individuals, determines how much a technology can contribute to performance.
+Second, utilization depends on beliefs about the consequences of use, social
+norms, habit, and facilitating conditions, and these beliefs are themselves
+informed by fit. Performance impacts follow from fit and utilization together.
+The core propositions are:
+
+- **P1.** Task-technology fit is a function of task characteristics, technology
+  characteristics, and individual characteristics.
+- **P2.** Task-technology fit influences beliefs about the consequences of use
+  and therefore utilization.
+- **P3.** Performance impacts depend on both utilization and task-technology
+  fit. Utilization of a technology with low fit produces little benefit.
+
+Figure \@ref(fig:fig-ia2-ttf) shows the chain.
+
+```{r fig-ia2-ttf, fig.cap = "The technology-to-performance chain (after Goodhue and Thompson, 1995). Task-technology fit arises from task, technology, and individual characteristics. It shapes utilization through beliefs about the consequences of use, and it affects performance both directly and through utilization."}
+mechanism_diagram(sprintf('
+  TA [label = "Task\\ncharacteristics", %s]
+  TE [label = "Technology\\ncharacteristics", %s]
+  IN [label = "Individual\\ncharacteristics", %s]
+  F  [label = "Task-technology\\nfit", %s]
+  P  [label = "Precursors of use:\\nexpected consequences,\\nnorms, habit, facilitating\\nconditions", %s]
+  U  [label = "Utilization", %s]
+  PI [label = "Performance\\nimpacts", %s]
+  TA -> F
+  TE -> F
+  IN -> F
+  F -> P
+  P -> U
+  F -> PI
+  U -> PI
+', node_construct, node_construct, node_construct, node_mechanism, node_moderator,
+   node_mechanism, node_outcome))
+```
+
+To measure fit, @goodhue1995 surveyed users across many departments and
+technologies and identified eight dimensions of user-evaluated fit, listed in
+Table \@ref(tab:tab-ia2-ttf-dims).
+
+```{r tab-ia2-ttf-dims}
+tibble::tribble(
+  ~Dimension, ~`What users evaluate`,
+  "Quality", "Currency, right level of detail, and accuracy of data for the task",
+  "Locatability", "Ease of finding data and understanding what it means",
+  "Authorization", "Having access to the data needed for the job",
+  "Compatibility", "Consistency of data from different sources",
+  "Ease of use and training", "Ease of using the system and adequacy of training",
+  "Production timeliness", "Whether scheduled operations and reports arrive on time",
+  "Systems reliability", "Dependability and availability of the system",
+  "Relationship with users", "Understanding, interest, and responsiveness of IS staff"
+) |>
+  book_table(caption = "Eight dimensions of user-evaluated task-technology fit identified by Goodhue and Thompson (1995).")
+```
+
+### Evidence and extensions
+
+In their survey, @goodhue1995 found that task-technology fit, together with
+utilization, predicted users' perceptions of the performance impacts of their
+systems, while support for the link from fit to utilization was weaker. The
+result supported their argument that fit is central to performance even when it
+does not strongly drive use. @dishaw1999 combined TAM and TTF constructs in a
+study of software maintenance tools and found that the integrated model
+explained use better than either model alone. @zigurs1998 extended the logic to
+group support systems by classifying group tasks by complexity and specifying
+which combinations of communication support, process structuring, and
+information processing would fit each task type. Figure
+\@ref(fig:fig-ia2-ttf-sim) illustrates the central implication: utilization
+pays off only when fit is high.
+
+```{r fig-ia2-ttf-sim, fig.cap = "Illustrative simulation of proposition P3. For workers whose tasks fit the technology well, more utilization raises performance. For workers with low fit, more utilization adds little. Simulated data (n = 400), not results from a published study.", fig.height = 3.7}
+set.seed(1995)
+n <- 400
+ttf_sim <- data.frame(
+  use = runif(n, 0, 10),
+  fit = sample(c("High task-technology fit", "Low task-technology fit"), n, replace = TRUE)
+)
+ttf_sim$perf <- 50 + ifelse(ttf_sim$fit == "High task-technology fit", 3.0, 0.4) * ttf_sim$use +
+  rnorm(n, 0, 5)
+ggplot(ttf_sim, aes(use, perf, colour = fit)) +
+  geom_point(alpha = 0.45, size = 1.6) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1.1) +
+  scale_colour_manual(values = c("High task-technology fit" = pal[["blue"]],
+                                 "Low task-technology fit" = pal[["orange"]])) +
+  labs(x = "Utilization (hours per week, stylised)", y = "Task performance (index)", colour = NULL,
+       title = "Use improves performance only when the tool fits the task",
+       caption = "Illustrative simulated data.")
+```
+
+::: {.business-case}
+**Illustrative scenario: deploying a generative-AI assistant.** A professional
+services firm gives all consultants access to a generative-AI writing
+assistant and tracks adoption. Usage is high, but measured productivity gains
+are uneven. A task-technology fit analysis explains why. For drafting
+summaries and first versions of standard documents, task requirements
+(fluent text, quick turnaround) fit the tool's capabilities. For tasks that
+require verified client data or precise calculations, fit is low on the
+quality and authorization dimensions, and heavy use may even reduce
+performance if outputs are not checked. The managerial implication is to map
+tasks before mandating tools: encourage use where fit is high, redesign or
+restrict use where it is low, and invest in integrations (for example, secure
+access to internal data) that raise fit on the weakest dimensions.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.** *H1.* The effect of CRM utilization on salesperson
+performance will be stronger for salespeople whose tasks involve managing many
+accounts than for those managing a few strategic accounts. *H2.* Perceived
+task-technology fit will predict perceived usefulness, which will mediate its
+effect on intention to use. *H3.* Task-technology fit will moderate the effect
+of mandated use on performance.
+
+**Designs.** Surveys of users across multiple tasks and technologies, multilevel
+models with tasks nested in individuals, field experiments that vary tool
+functionality for different task types, log data linked to output quality.
+
+**Measures.** Goodhue and Thompson's fit dimensions adapted to the context,
+task characteristics (non-routineness, interdependence), utilization from logs,
+objective and perceived performance.
+:::
+
 ## Chapter Summary {#innovation-adoption-summary}
 
 ::: {.key-takeaways}
@@ -972,6 +1283,8 @@ time, and test whether the model explains *behaviour*, not just stated plans.
   artifact and study post-adoption behaviour [@bagozzi2007; @benbasat2007].
 :::
 
+Table \@ref(tab:tab-inn-summary) presents the comparison of the chapter's theories.
+
 ```{r tab-inn-summary}
 tibble::tribble(
   ~Theory, ~Level, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
@@ -979,7 +1292,9 @@ tibble::tribble(
   "Bass model", "Market", "Innovation (p) and imitation (q)", "Bell-shaped new adoptions, peak at ln(q/p)/(p+q)", "Sales and capacity forecasting",
   "TRA / TPB", "Individual", "Attitudes, norms, perceived control -> intention", "Intention predicts volitional behaviour", "Behaviour-change campaigns, consumer research",
   "TAM / TAM2", "Individual", "Perceived usefulness and ease of use", "Usefulness dominates intention, ease works partly through usefulness", "Enterprise system rollout, user-centred design",
-  "UTAUT / UTAUT2", "Individual", "Four core determinants plus hedonic, price, habit", "Moderated effects by age, gender, experience", "Workplace and consumer technology adoption"
+  "UTAUT / UTAUT2", "Individual", "Four core determinants plus hedonic, price, habit", "Moderated effects by age, gender, experience", "Workplace and consumer technology adoption",
+  "IS success model", "Individual / organization", "System, information, service quality -> use and satisfaction -> net benefits", "Quality drives satisfaction and net benefits, with feedback to use", "Evaluating enterprise systems and digital services",
+  "Task-technology fit", "Individual / task", "Fit between task requirements and technology functionality", "Use improves performance only when fit is high", "Tool selection, system design, AI deployment"
 ) |>
   book_table(caption = "Comparison of the chapter's theories.")
 ```

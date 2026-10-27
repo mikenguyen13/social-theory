@@ -11,17 +11,17 @@ chains of favours, obligations, trust, and information that link people and
 organizations to one another.
 
 This chapter develops the family of theories that treat social life as
-**exchange embedded in networks**. We begin with **social exchange theory**, the
+**exchange embedded in networks**. We begin with **[social exchange theory](#social-exchange-theory)**, the
 foundational account of how reciprocity, dependence, and trust sustain
 relationships between two parties. We then move from the dyad to the structure
-in which dyads sit: **network exchange theory** explains how a position in a
-network of exchange opportunities creates power. The **strength of weak ties**
+in which dyads sit: **[network exchange theory](#network-exchange-theory)** explains how a position in a
+network of exchange opportunities creates power. The **[strength of weak ties](#weak-ties)**
 and **embeddedness** arguments explain how tie strength shapes the flow of
-information and trust. **Structural holes** theory explains the advantages of
-brokerage, and **social capital** theory integrates these ideas into a view of
-relationships as a productive asset. We close with the **commitment-trust theory**
+information and trust. **[Structural holes](#structural-holes)** theory explains the advantages of
+brokerage, and **[social capital](#social-capital)** theory integrates these ideas into a view of
+relationships as a productive asset. We close with the **[commitment-trust theory](#commitment-trust-theory)**
 of relationship marketing, which brought the exchange tradition into the study of
-buyer-seller relationships.
+buyer-seller relationships (Table \@ref(tab:tab-net-glance)).
 
 ```{r tab-net-glance}
 tibble::tribble(
@@ -64,8 +64,8 @@ pure altruism, or one-shot interactions with no prospect of repayment.
 
 **Related theories.** [Network exchange theory](#network-exchange-theory),
 [Commitment-trust theory](#commitment-trust-theory),
-[Resource dependence theory](#resource-dependence-theory),
-[Equity theory](#equity-theory), [Agency theory](#agency-theory).
+[Resource dependence theory](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)),
+[Equity theory](#equity-theory) (Section \@ref(equity-theory)), [Agency theory](#agency-theory) (Section \@ref(agency-theory)).
 :::
 
 ### Origins and intellectual history
@@ -208,8 +208,8 @@ In a review of the subsequent literature, @rhoades2002 found that fairness,
 supervisor support, and favourable rewards and job conditions were associated with
 POS, which was in turn associated with affective commitment, performance, and
 reduced withdrawal. @settoon1996 showed that the exchange with the organization
-(POS) and the exchange with the immediate supervisor (leader-member exchange) are
-distinct: the former was more closely tied to organizational commitment, the
+(POS) and the exchange with the immediate supervisor ([leader-member exchange](#leader-member-exchange) (Section \@ref(leader-member-exchange))) are
+distinct: the former was more closely tied to [organizational commitment](#organizational-commitment) (Section \@ref(organizational-commitment)), the
 latter to in-role performance and citizenship behaviour.
 
 Experimental sociology has refined the theory's account of trust. @molm2000
@@ -255,7 +255,7 @@ dependent, so the assembler holds power [@emerson1962]. Emerson's balancing
 operations suggest remedies: cultivating customers in adjacent industries,
 joining an industry consortium, or developing process know-how the assembler
 cannot easily replace. The same logic underlies
-[resource dependence theory](#resource-dependence-theory) at the level of the firm.
+[resource dependence theory](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)) at the level of the firm.
 :::
 
 ### Using the theory in research
@@ -320,7 +320,7 @@ The number of exchanges per round is limited.
 
 **Related theories.** [Social exchange theory](#social-exchange-theory),
 [Structural holes](#structural-holes),
-[Resource dependence theory](#resource-dependence-theory).
+[Resource dependence theory](#resource-dependence-theory) (Section \@ref(resource-dependence-theory)).
 :::
 
 ### Core logic
@@ -502,7 +502,7 @@ ties may matter more.
 
 **Related theories.** [Structural holes](#structural-holes),
 [Social capital](#social-capital),
-[Diffusion of innovations](#diffusion-of-innovations).
+[Diffusion of innovations](#diffusion-of-innovations) (Section \@ref(diffusion-of-innovations)).
 :::
 
 ### Origins and core logic
@@ -599,7 +599,7 @@ useful, because what job seekers needed was influence rather than information.
 @hansen1999 identified a **search-transfer problem** inside a multinational
 firm: weak inter-unit ties helped project teams *search* for useful knowledge but
 impeded the *transfer* of complex, tacit knowledge, which required strong ties.
-And @mcpherson2001 documented the pervasive **homophily** of social networks:
+And @mcpherson2001 documented the pervasive **[homophily](#homophily) (Section \@ref([homophily](#homophily) (Section \@ref(homophily))))** of social networks:
 because people tend to connect with similar others, even weak ties may carry less
 diversity than the theory assumes, and access to valuable weak ties is unequally
 distributed.
@@ -638,7 +638,7 @@ Economic action is neither the atomized behaviour of neoclassical models (an
 personal relations. Those relations generate trust and discourage malfeasance,
 because actors prefer partners of known reputation and because ongoing
 relationships carry expectations beyond the contract. The argument was directed in part at
-[transaction cost economics](#transaction-cost-economics), which attributed
+[transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)), which attributed
 order in exchange primarily to hierarchical governance.
 
 @uzzi1997 studied the networks of manufacturers and contractors in the New York
@@ -698,7 +698,7 @@ norm enforcement, closure may be more valuable.
 
 **Related theories.** [Weak ties](#weak-ties), [Social capital](#social-capital),
 [Network exchange theory](#network-exchange-theory),
-[Absorptive capacity](#absorptive-capacity).
+[Absorptive capacity](#absorptive-capacity) (Section \@ref(absorptive-capacity)).
 :::
 
 ### Core logic
@@ -886,8 +886,8 @@ its benefits may be appropriated by some at the expense of others.
 
 **Related theories.** [Weak ties](#weak-ties),
 [Structural holes](#structural-holes),
-[Resource-based theory](#resource-based-theory),
-[Knowledge-based view](#knowledge-based-view).
+[Resource-based theory](#resource-based-theory) (Section \@ref(resource-based-theory)),
+[Knowledge-based view](#knowledge-based-view) (Section \@ref(knowledge-based-view)).
 :::
 
 ### Two views: closure and brokerage
@@ -1020,7 +1020,7 @@ another. Its predictions are weaker for low-involvement, transactional customers
 
 **Related theories.** [Social exchange theory](#social-exchange-theory),
 [Social capital](#social-capital),
-[Transaction cost economics](#transaction-cost-economics).
+[Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)).
 :::
 
 ### Core logic and the KMV model
@@ -1106,7 +1106,7 @@ as a whole.
 the outcomes they predict, so survey-based tests risk measuring one underlying
 evaluation several times. Many consumers, moreover, do not want "relationships"
 with brands at all [@garbarino1999]. The theory also sits in tension with
-[transaction cost economics](#transaction-cost-economics), which emphasizes
+[transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)), which emphasizes
 safeguards against opportunism rather than trust. Contemporary research often
 treats contracts and relational governance as complements.
 :::
@@ -1177,6 +1177,8 @@ including the direct effects the model does *not* predict.
 - **Commitment and trust** are the key mediating variables of successful
   relational exchange in marketing [@morgan1994; @palmatier2006].
 :::
+
+Table \@ref(tab:tab-net-summary) presents the comparison of the chapter's theories.
 
 ```{r tab-net-summary}
 tibble::tribble(

@@ -9,12 +9,12 @@ party cannot observe it directly. The informed party therefore *does* something
 observable that the uninformed party can use to infer what is hidden.
 
 This chapter introduces the family of theories that explain how markets,
-organizations, and people cope with **information asymmetry**. We begin with the
-problem itself (Akerlof's "lemons"), then develop **signaling theory**, its mirror
-image **screening theory**, the biology-inspired idea of **costly signaling**, and
-two consumer-behaviour extensions: **identity signaling** and **countersignaling**.
+organizations, and people cope with **[information asymmetry](#information-asymmetry)**. We begin with the
+problem itself (Akerlof's "lemons"), then develop **[signaling theory](#signaling-theory)**, its mirror
+image **[screening theory](#screening-theory)**, the biology-inspired idea of **[costly signaling](#costly-signaling)**, and
+two consumer-behaviour extensions: **[identity signaling](#identity-signaling)** and **[countersignaling](#countersignaling)**.
 Together they form one of the most widely used theoretical toolkits in
-management, marketing, finance, and economics.
+management, marketing, finance, and economics (Table \@ref(tab:tab-sig-glance)).
 
 ```{r tab-sig-glance}
 tibble::tribble(
@@ -50,7 +50,7 @@ hazard), quality uncertainty, pooling.
 verify, and matters to the buyer. No cheap third-party verification exists.
 
 **Related theories.** [Signaling](#signaling-theory), [Screening](#screening-theory),
-[Agency theory](#agency-theory), [Transaction cost economics](#transaction-cost-economics).
+[Agency theory](#agency-theory) (Section \@ref(agency-theory)), [Transaction cost economics](#transaction-cost-economics) (Section \@ref(transaction-cost-economics)).
 :::
 
 ### Core logic
@@ -65,7 +65,7 @@ lesson is that **adverse selection**, the tendency of hidden-information markets
 to attract the "wrong" types, can make mutually beneficial trades disappear.
 
 Economists distinguish two forms of asymmetry
-[@stiglitz2000; @connelly2010]:
+[@stiglitz2000; @connelly2010] (Table \@ref(tab:tab-sig-types)):
 
 ```{r tab-sig-types}
 tibble::tribble(
@@ -156,7 +156,7 @@ know (or learn) how to interpret it.
 
 **Related theories.** [Information asymmetry](#information-asymmetry),
 [Screening](#screening-theory), [Costly signaling](#costly-signaling),
-[Agency theory](#agency-theory), [Institutional theory](#institutional-theory).
+[Agency theory](#agency-theory) (Section \@ref(agency-theory)), [Institutional theory](#institutional-theory) (Section \@ref(institutional-theory)).
 :::
 
 ### Origins and intellectual history
@@ -276,7 +276,7 @@ The empirical record is large and spans disciplines:
   [@milgrom1986]. @kirmani2000 synthesise this literature and argue that
   "no pain, no gain": signals work when a low-quality firm would lose money by
   sending them.
-- **Brands.** @erdem1998 conceptualise **brand equity itself as a signal**: a
+- **Brands.** @erdem1998 conceptualise **[brand equity](#customer-based-brand-equity) (Section \@ref(customer-based-brand-equity)) itself as a signal**: a
   brand is a credible promise because the firm has invested in it and stands to
   lose that investment if it cheats.
 - **Capital markets.** Prestigious boards and underwriters are associated with
@@ -394,14 +394,14 @@ information rents.
 **Boundary conditions.** The uninformed party can commit to a menu. Types differ
 in preferences or costs in a way the menu can exploit.
 
-**Related theories.** [Signaling](#signaling-theory), [Agency theory](#agency-theory).
+**Related theories.** [Signaling](#signaling-theory), [Agency theory](#agency-theory) (Section \@ref(agency-theory)).
 :::
 
 Signaling and screening are mirror images. In **signaling**, the informed party
 moves first. In **screening**, the uninformed party moves first by offering
 choices. An insurer that offers both a low-premium/high-deductible plan and a
 high-premium/low-deductible plan lets customers sort themselves: low-risk drivers
-prefer the high deductible because they expect few claims [@rothschild1976].
+prefer the high deductible because they expect few claims [@rothschild1976] (Table \@ref(tab:tab-sig-vs-screen)).
 
 ```{r tab-sig-vs-screen}
 tibble::tribble(
@@ -437,7 +437,7 @@ Veblen's analysis of conspicuous consumption [@veblen1899].
 
 **Key constructs.** Handicap, honest signal, conspicuous consumption, status.
 
-**Related theories.** [Signaling](#signaling-theory), [Snob effect](#snob-effect),
+**Related theories.** [Signaling](#signaling-theory), [Snob effect](#snob-effect) (Section \@ref(snob-effect)),
 [Identity signaling](#identity-signaling).
 :::
 
@@ -467,8 +467,8 @@ signalling an undesired identity.
 **Key constructs.** Identity-relevance of the domain, observability, outgroup
 adoption, misidentification cost.
 
-**Related theories.** [Optimal distinctiveness](#optimal-distinctiveness-theory),
-[Social identity theory](#social-identity-theory), [Snob effect](#snob-effect).
+**Related theories.** [Optimal distinctiveness](#optimal-distinctiveness-theory) (Section \@ref(optimal-distinctiveness-theory)),
+[Social identity theory](#social-identity-theory) (Section \@ref(social-identity-theory)), [Snob effect](#snob-effect) (Section \@ref(snob-effect)).
 :::
 
 People do not diverge everywhere. @Berger_2007 show that divergence is concentrated
@@ -482,7 +482,7 @@ taste, ingroup members abandon it because continued use risks
 This produces a cycle that marketers know well: identity signaling causes tastes
 to *catch on* within groups and also to *die out* once they diffuse too broadly.
 Counterfeits accelerate the cycle by diluting a signal's exclusivity, pushing
-early adopters toward the next thing [@Berger_2016].
+early adopters toward the next thing [@Berger_2016] (Figure \@ref(fig:fig-sig-identity)).
 
 ```{r fig-sig-identity, fig.cap = "Mechanism of identity signaling: outgroup adoption lowers a product's value as an identity signal in observable, identity-relevant domains, prompting ingroup abandonment."}
 mechanism_diagram(sprintf('
@@ -570,6 +570,8 @@ ggplot(tiers, aes(tier, prominence, group = 1)) +
 - **Countersignaling** explains why the highest types sometimes refuse to signal
   [@feltovich2002; @han2010].
 :::
+
+Table \@ref(tab:tab-sig-summary) presents the comparison of the chapter's theories.
 
 ```{r tab-sig-summary}
 tibble::tribble(
