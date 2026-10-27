@@ -10,16 +10,16 @@ would a firm give away its playbook, and why did the playbook not travel?
 
 The same puzzle appears across industries. Walmart's distribution system was
 described in business school cases for years before rivals approached its cost
-position; Disney's characters are known to every child, yet no competitor can
-simply build a comparable library; Zara's quick-response supply chain has been
+position. Disney's characters are known to every child, yet no competitor can
+simply build a comparable library. Zara's quick-response supply chain has been
 analysed in countless articles, yet it remains distinctive. Industry structure
 cannot explain these differences, because the firms face the same suppliers,
 customers, and substitutes as their rivals. The explanation must lie *inside* the
-firm — in what it owns, what it knows, and how it combines the two.
+firm: in what it owns, what it knows, and how it combines the two.
 
 This chapter develops the family of theories that locate competitive advantage
-in firm-specific **resources**. We begin with the **resource-based view (RBV)** —
-its origins, assumptions, and central propositions — and its best-known
+in firm-specific **resources**. We begin with the **resource-based view (RBV)**,
+its origins, assumptions, and central propositions, and its best-known
 diagnostic, the **VRIO framework**. We then examine the **knowledge-based view**,
 which treats knowledge as the most strategically important resource, and the
 related idea of **core competences**. Two marketing-born extensions follow:
@@ -31,11 +31,11 @@ then asks how firms *renew* their resources when environments change.
 ```{r tab-res-glance}
 tibble::tribble(
   ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
-  "Resource-based view", "Why do some firms persistently outperform rivals in the same industry?", "Firm", "Wernerfelt (1984); Barney (1991)",
-  "VRIO framework", "Which resources can sustain an advantage, and what must the firm do to exploit them?", "Resource / firm", "Barney (1991); Barney & Hesterly (2012)",
-  "Knowledge-based view", "Why do firms exist, and how do they create value by integrating knowledge?", "Firm / team", "Kogut & Zander (1992); Grant (1996)",
+  "Resource-based view", "Why do some firms persistently outperform rivals in the same industry?", "Firm", "Wernerfelt (1984), Barney (1991)",
+  "VRIO framework", "Which resources can sustain an advantage, and what must the firm do to exploit them?", "Resource / firm", "Barney (1991), Barney & Hesterly (2012)",
+  "Knowledge-based view", "Why do firms exist, and how do they create value by integrating knowledge?", "Firm / team", "Kogut & Zander (1992), Grant (1996)",
   "Core competences", "Which collective skills underpin a firm's portfolio of businesses?", "Corporation", "Prahalad & Hamel (1990)",
-  "Resource-advantage theory", "How does competition among heterogeneous firms unfold over time?", "Firm / market", "Hunt & Morgan (1995); Hunt (2000)",
+  "Resource-advantage theory", "How does competition among heterogeneous firms unfold over time?", "Firm / market", "Hunt & Morgan (1995), Hunt (2000)",
   "Market-based assets", "How do customer and channel relationships create shareholder value?", "Firm / market", "Srivastava, Shervani, & Fahey (1998)"
 ) |>
   book_table(caption = "Chapter at a glance: resource-based theories of competitive advantage.")
@@ -46,26 +46,26 @@ tibble::tribble(
 ::: {.theory-card}
 **Core claim.** Firms differ in the bundles of resources and capabilities they
 control. When a resource is valuable, rare, and costly for rivals to imitate or
-substitute — and the firm is organized to exploit it — it can yield a
+substitute, and the firm is organized to exploit it, it can yield a
 **sustained competitive advantage** and above-normal returns.
 
 **Origins.** Strategic management, with roots in economics: @penrose1959 on the
-firm as a bundle of productive resources; @Wernerfelt_1984 on resource position
-barriers; @barney1986 on strategic factor markets; @dierickx1989 on asset stock
-accumulation; @barney1991 on the conditions for sustained advantage;
+firm as a bundle of productive resources, @Wernerfelt_1984 on resource position
+barriers, @barney1986 on strategic factor markets, @dierickx1989 on asset stock
+accumulation, @barney1991 on the conditions for sustained advantage,
 @peteraf1993 on the cornerstones of advantage. @Barney_2011 argue that the
 perspective has matured into a *theory*, often called **resource-based theory
 (RBT)**.
 
-**Level of analysis.** Primarily the firm (business unit); also the resource,
+**Level of analysis.** Primarily the firm (business unit). Also the resource,
 process, and exchange-relationship levels [@Kozlenkova_2013; @ray2004].
 
-**Key constructs.** Resources; capabilities; resource heterogeneity; resource
-immobility; value; rarity; imitability; substitutability; isolating mechanisms;
-economic rent; sustained competitive advantage.
+**Key constructs.** Resources, capabilities, resource heterogeneity, resource
+immobility, value, rarity, imitability, substitutability, isolating mechanisms,
+economic rent, sustained competitive advantage.
 
 **Boundary conditions.** Strongest where resources are firm-specific and traded
-in imperfect factor markets; weaker in markets with rapid, discontinuous change,
+in imperfect factor markets. Weaker in markets with rapid, discontinuous change,
 where the value of today's resources can evaporate (see
 [Dynamic capabilities](#dynamic-capabilities-framework)).
 
@@ -94,7 +94,7 @@ framework, whose growth is driven by the
 *services* those resources can render and limited by the managerial capacity to
 plan and coordinate expansion. Because resources are lumpy and managers learn on
 the job, firms always carry unused productive services, which create an internal
-incentive to grow into new activities — an idea that later shaped theories of
+incentive to grow into new activities: an idea that later shaped theories of
 diversification and of capabilities.
 
 @Wernerfelt_1984 coined the phrase "resource-based view of the firm" and proposed
@@ -105,16 +105,16 @@ holders to catch up. @barney1986 added a crucial economic argument. If resources
 could be bought in competitive **strategic factor markets**, their price would
 reflect their expected value and no buyer could earn above-normal returns from
 them. Superior returns must therefore come from resources that are acquired with
-better expectations or luck, or — more importantly — that are developed *inside*
+better expectations or luck, or, more importantly, that are developed *inside*
 the firm rather than bought.
 
 @dierickx1989 sharpened that point. Strategic assets are **stocks** that are
 accumulated through a stream of **flows** (investment in R&D, advertising,
-training) over time; they cannot be bought ready-made. What sustains an advantage
+training) over time. They cannot be bought ready-made. What sustains an advantage
 is the difficulty rivals face in replicating the accumulation path. The capstone
 statement came with @barney1991, who specified the conditions under which
-resources yield **sustained competitive advantage** — the VRIN criteria (valuable,
-rare, imperfectly imitable, non-substitutable) — and @peteraf1993, who translated
+resources yield **sustained competitive advantage**, the VRIN criteria (valuable,
+rare, imperfectly imitable, non-substitutable), and @peteraf1993, who translated
 the argument into the language of economic rents. Reviews soon followed
 [@mahoney1992; @amit1993; @Barney_2001], and by the 2000s the RBV had become the
 most widely used theory in strategic management and a major lens in marketing
@@ -131,9 +131,9 @@ non-transferable firm-specific resource whose purpose is to improve the
 productivity of the other resources possessed by the firm" [@makadok2001, p. 389].
 :::
 
-The distinction matters. A resource is something the firm *has* — a patent, a
+The distinction matters. A resource is something the firm *has*: a patent, a
 brand, a plant location, a pool of cash. A capability is something the firm *can
-do* by deploying and combining resources — designing cars quickly, replenishing
+do* by deploying and combining resources: designing cars quickly, replenishing
 stores accurately, launching films globally. @amit1993 make the same distinction:
 resources are stocks of available factors owned or controlled by the firm, and
 capabilities are the firm's capacity to deploy them through organizational
@@ -151,8 +151,8 @@ picking rewards superior information and judgement, whereas building rewards
 organizational design and patience.
 
 Scholars have proposed several classifications of resources. @barney1991
-distinguishes physical, human, and organizational capital; later textbook
-treatments add financial capital [@Barney_2012]; and @hunt2000 proposes a
+distinguishes physical, human, and organizational capital. Later textbook
+treatments add financial capital [@Barney_2012], and @hunt2000 proposes a
 seven-category typology that is widely used in marketing. Table
 \@ref(tab:tab-res-types) adopts Hunt's categories and maps them to typical
 examples and to their usual degree of imitability.
@@ -168,7 +168,7 @@ tibble::tribble(
   "Informational", "Knowledge about customers, markets, technologies, competitors", "Store-level demand data feeding design decisions", "Moderate to hard",
   "Relational", "Relationships with customers, suppliers, partners, regulators", "Long-term, high-trust supplier networks", "Hard: socially complex and history-dependent"
 ) |>
-  book_table(caption = "A typology of firm resources (categories follow Hunt, 2000; examples are illustrative).")
+  book_table(caption = "A typology of firm resources (categories follow Hunt, 2000. Examples are illustrative).")
 ```
 
 In marketing, the resources most often studied are intangible: **brands**,
@@ -193,17 +193,17 @@ If both assumptions hold, some firms will possess resources that others find too
 costly or too difficult to obtain, and these firms can earn a **sustained
 competitive advantage** [@Barney_2012]. @barney1991 defines a competitive
 advantage as implementing a value-creating strategy that is not simultaneously
-being implemented by current or potential competitors; it is *sustained* when
+being implemented by current or potential competitors. It is *sustained* when
 those competitors are unable to duplicate its benefits. Note that "sustained"
-refers to resistance to imitation, not to a specific calendar period; an
+refers to resistance to imitation, not to a specific calendar period. An
 advantage can be sustained and still be destroyed by an unanticipated change in
 technology or demand.
 
 @peteraf1993 translated these ideas into four **cornerstones** of competitive
 advantage, each of which is necessary:
 
-- **Heterogeneity.** Superior resources yield **Ricardian rents** — returns to
-  scarce, more efficient factors — or monopoly rents.
+- **Heterogeneity.** Superior resources yield **Ricardian rents**, returns to
+  scarce, more efficient factors, or monopoly rents.
 - **Ex post limits to competition.** After a firm gains superior position,
   forces such as imperfect imitability and imperfect substitutability must
   prevent rivals from competing the rents away.
@@ -211,7 +211,7 @@ advantage, each of which is necessary:
   depends on co-specialized assets, remain bound to the firm, so the rents stay
   with it rather than being bid away by the resource owners.
 - **Ex ante limits to competition.** Before the superior position is established,
-  there must have been limited competition for it; otherwise, the cost of
+  there must have been limited competition for it. Otherwise, the cost of
   acquiring the position would have offset its rents [@barney1986].
 
 The theory's central propositions can be stated as follows:
@@ -226,8 +226,8 @@ The theory's central propositions can be stated as follows:
   advantage only if competitors face a cost disadvantage in obtaining or
   substituting for them.
 - **P4 (Organization).** The performance consequences of valuable, rare, and
-  inimitable resources depend on whether the firm is organized — through
-  structures, controls, and compensation — to exploit them [@Barney_2012].
+  inimitable resources depend on whether the firm is organized, through
+  structures, controls, and compensation, to exploit them [@Barney_2012].
 - **P5 (Accumulation).** The most durable advantages arise from resources that
   must be accumulated over time through internal investment, rather than bought
   in factor markets [@dierickx1989].
@@ -246,13 +246,13 @@ imitation slow or costly:
   brand-building blitz, or a rushed training effort produces less than the same
   spending spread over time.
 - **Asset mass efficiencies.** Existing stocks make further accumulation easier
-  — "success breeds success". A firm with a large base of customers learns more
-  from each new customer; a firm with a deep patent portfolio finds it easier to
+: "success breeds success". A firm with a large base of customers learns more
+  from each new customer. A firm with a deep patent portfolio finds it easier to
   generate the next invention.
 - **Interconnectedness of asset stocks.** Building one stock may require another
   (a dealer service network makes it easier to build a reputation for
   reliability).
-- **Asset erosion.** Stocks decay without maintenance; imitators must outrun
+- **Asset erosion.** Stocks decay without maintenance. Imitators must outrun
   the incumbent's own replenishment.
 - **Causal ambiguity.** It may not be clear which flows built the stock, so
   rivals do not know what to copy.
@@ -260,7 +260,7 @@ imitation slow or costly:
 Figure \@ref(fig:fig-res-bathtub) illustrates the first two properties. An
 incumbent invests steadily from year one. An imitator enters in year 15 and
 spends two and a half times as much each year. A naive projection that ignores
-accumulation dynamics suggests a quick catch-up; with time compression
+accumulation dynamics suggests a quick catch-up. With time compression
 diseconomies and the incumbent's mass efficiencies, catch-up takes much longer.
 
 ```{r fig-res-bathtub, fig.cap = "Illustrative simulation of asset stock accumulation (Dierickx & Cool, 1989). An imitator that enters late and outspends the incumbent catches up more slowly than a naive projection implies, because accelerated investment runs into time compression diseconomies while the incumbent enjoys asset mass efficiencies.", fig.height = 4}
@@ -300,7 +300,7 @@ ggplot(stocks, aes(year, stock, colour = firm, linetype = firm)) +
   labs(x = "Year", y = "Strategic asset stock (index)", colour = NULL, linetype = NULL,
        title = "Strategic assets are accumulated, not bought",
        subtitle = "An imitator outspending the incumbent 2.5x still needs more than a decade to catch up",
-       caption = "Stylised simulation: 8% annual decay; time compression exponent 0.4; saturating mass efficiencies.") +
+       caption = "Stylised simulation: 8% annual decay, time compression exponent 0.4, saturating mass efficiencies.") +
   guides(colour = guide_legend(nrow = 2), linetype = guide_legend(nrow = 2))
 ```
 
@@ -308,8 +308,8 @@ ggplot(stocks, aes(year, stock, colour = firm, linetype = firm)) +
 
 The term **isolating mechanisms** [@rumelt1984] describes the forces that protect
 a firm's rents from being competed away, much as mobility barriers protect groups
-of firms within an industry. @lippman1982 showed formally that **uncertain imitability** —
-uncertainty about the causes of a rival's efficiency — can sustain performance
+of firms within an industry. @lippman1982 showed formally that **uncertain imitability**,
+uncertainty about the causes of a rival's efficiency, can sustain performance
 differences in equilibrium even when entry is free: would-be imitators cannot be
 sure that copying will succeed, so fewer of them try. @barney1991 identified three
 reasons why resources may be imperfectly imitable: **unique historical
@@ -321,12 +321,12 @@ advantage. Table \@ref(tab:tab-res-isolating) summarises the main mechanisms.
 ```{r tab-res-isolating}
 tibble::tribble(
   ~Mechanism, ~Logic, ~`Key sources`, ~`Business illustration`,
-  "Unique historical conditions (path dependence)", "The resource was built along a path that cannot be re-run; being early or lucky mattered", "Barney (1991); Dierickx & Cool (1989)", "A character library accumulated over many decades",
-  "Causal ambiguity", "Neither rivals (nor sometimes the firm) know exactly which factors produce the advantage", "Lippman & Rumelt (1982); Reed & DeFillippi (1990)", "Tacit rules behind a production system that is open to visitors",
+  "Unique historical conditions (path dependence)", "The resource was built along a path that cannot be re-run. Being early or lucky mattered", "Barney (1991), Dierickx & Cool (1989)", "A character library accumulated over many decades",
+  "Causal ambiguity", "Neither rivals (nor sometimes the firm) know exactly which factors produce the advantage", "Lippman & Rumelt (1982), Reed & DeFillippi (1990)", "Tacit rules behind a production system that is open to visitors",
   "Social complexity", "The resource rests on culture, trust, reputation, or relationships that cannot be engineered quickly", "Barney (1991)", "High-trust, long-term supplier relationships",
-  "Time compression diseconomies", "Accelerated investment yields less than the same investment spread over time", "Dierickx & Cool (1989)", "Reputation for reliability; scientific know-how",
+  "Time compression diseconomies", "Accelerated investment yields less than the same investment spread over time", "Dierickx & Cool (1989)", "Reputation for reliability, scientific know-how",
   "Asset mass efficiencies", "Existing stocks make further accumulation cheaper", "Dierickx & Cool (1989)", "A large installed base attracts complementary developers",
-  "Complementarity and system fit", "Value depends on many interlocking activities; copying one element is not enough", "Porter (1996); Milgrom & Roberts (1995)", "A vertically integrated quick-response supply chain",
+  "Complementarity and system fit", "Value depends on many interlocking activities, copying one element is not enough", "Porter (1996), Milgrom & Roberts (1995)", "A vertically integrated quick-response supply chain",
   "Legal protection", "Property rights block direct copying for a period", "Teece (1986)", "Patents, copyrights, trademarks"
 ) |>
   book_table(caption = "Isolating mechanisms that make resources costly to imitate.")
@@ -352,7 +352,7 @@ can produce very different outcomes depending on how they are managed, and that
 the right orchestration depends on environmental uncertainty (Figure
 \@ref(fig:fig-res-orchestration)).
 
-```{r fig-res-orchestration, fig.cap = "Resource orchestration: managers structure the resource portfolio, bundle resources into capabilities, and leverage capabilities to create value; environmental uncertainty conditions each step. Adapted from the process model in Sirmon, Hitt, and Ireland (2007)."}
+```{r fig-res-orchestration, fig.cap = "Resource orchestration: managers structure the resource portfolio, bundle resources into capabilities, and leverage capabilities to create value. Environmental uncertainty conditions each step. Adapted from the process model in Sirmon, Hitt, and Ireland (2007)."}
 mechanism_diagram(sprintf('
   S [label = "Structuring\\n(acquire, accumulate,\\ndivest)", %s]
   B [label = "Bundling\\n(stabilize, enrich,\\npioneer)", %s]
@@ -377,27 +377,27 @@ contributions anchor the evidence base:
   examined *capabilities* and *core competences* than for those that measured
   static resource endowments, and he called for designs that test the full
   causal chain from resource attributes to advantage to performance.
-- **Meta-analysis.** @crook2008 meta-analysed the resource–performance
+- **Meta-analysis.** @crook2008 meta-analysed the resource-performance
   relationship and found it to be positive and meaningful. Importantly, the
   relationship was stronger for resources that met the theory's criteria for
-  strategic resources than for resources in general — evidence that the VRIN
+  strategic resources than for resources in general: evidence that the VRIN
   attributes matter, not just resource quantity.
 - **Choice of dependent variable.** @ray2004 argued that firm-level performance is
   too distal: a valuable resource may create advantage in one business process
   while being offset elsewhere. In a study of customer service in insurance
   firms, they showed that intangible, socially complex resources predicted
-  process-level performance — a design now widely recommended.
+  process-level performance: a design now widely recommended.
 
 ::: {.debate}
 **Is the RBV a useful theory?** In an influential critique, @priem2001 argued
 that the RBV is close to **tautological**: if a valuable resource is defined as
 one that produces advantage, then the statement "valuable resources produce
 advantage" cannot be false. They further argued that resource *value* is
-determined outside the theory — by product-market demand — so the RBV is
-silent on what makes a resource valuable; that it is largely **static**; and that
+determined outside the theory, by product-market demand, so the RBV is
+silent on what makes a resource valuable. That it is largely **static**, and that
 it offers few actionable prescriptions. In reply, @barney2001 contended that the
 theory's propositions are empirically testable because value, rarity, and
-imitability can be measured independently of performance; he accepted that value
+imitability can be measured independently of performance. He accepted that value
 is determined by the environment and called for integrating resource-based logic
 with models of product-market demand. The exchange spurred work on
 **demand-side** perspectives, process-level tests [@ray2004], resource management
@@ -411,9 +411,9 @@ stocks, employee tenure) that may not capture the theory's constructs.
 ### Applications in business
 
 ::: {.business-case}
-**Toyota Production System.** Toyota's production system — just-in-time flow,
+**Toyota Production System.** Toyota's production system, just-in-time flow,
 built-in quality (*jidoka*), the authority of any worker to stop the line, and
-continuous improvement (*kaizen*) — has been documented in detail since the 1980s
+continuous improvement (*kaizen*), has been documented in detail since the 1980s
 [@ohno1988; @womack1990]. That it remained hard to imitate is a textbook case of
 **causal ambiguity** and **social complexity**. @spear1999 argued that observers
 copied the visible tools (kanban cards, andon cords) while missing the tacit
@@ -433,7 +433,7 @@ minimal storage), and by investing early in information systems that linked
 stores, distribution centres, and suppliers. @stalk1992 used the company to argue
 that advantage comes from *business processes* rather than individual products.
 In RBV terms, the advantage rested on complementary physical, informational, and
-relational resources accumulated over decades — a system that could not be bought
+relational resources accumulated over decades: a system that could not be bought
 in a factor market. The case also illustrates Priem and Butler's point that value
 is set by the environment: the rise of e-commerce changed which logistics
 capabilities matter, forcing even strong incumbents to build new ones.
@@ -455,19 +455,19 @@ capabilities matter, forcing even strong incumbents to build new ones.
   (the "O" in VRIO).
 
 **Designs.** Panel data with resource stocks computed from flows (perpetual
-inventory method); process-level outcomes as dependent variables [@ray2004];
-natural experiments that shock resource value (regulatory change, technology
-shifts); multi-level designs that separate resource effects from industry and
-corporate effects; qualitative process studies of how resources are built.
+inventory method). Process-level outcomes as dependent variables [@ray2004].
+Natural experiments that shock resource value (regulatory change, technology
+shifts). Multi-level designs that separate resource effects from industry and
+corporate effects. Qualitative process studies of how resources are built.
 
 **Measures.** Resource stocks (R&D, advertising, patents, brand equity),
 human-capital indicators (tenure, education, turnover), relational measures
 (supplier tenure, alliance count), and survey scales of value, rarity, and
-imitability; [@Kozlenkova_2013] tabulate how marketing studies have
+imitability. [@Kozlenkova_2013] tabulate how marketing studies have
 operationalized these attributes.
 
-**Data sources.** Compustat and CRSP; patent databases; brand-equity indices;
-employer-review platforms for culture proxies; industry-specific regulatory
+**Data sources.** Compustat and CRSP, patent databases, brand-equity indices,
+employer-review platforms for culture proxies, industry-specific regulatory
 filings.
 :::
 
@@ -489,14 +489,14 @@ only if it is **V**aluable, **R**are, costly to **I**mitate, and the firm is
 **O**rganized to exploit it.
 
 **Origins.** @barney1991 proposed the VRIN criteria (with non-substitutability as
-the fourth condition); Barney's later formulation, popularised in his strategy
+the fourth condition). Barney's later formulation, popularised in his strategy
 textbook, replaced N with O and absorbed substitutability into imitability
 [@Barney_2012].
 
 **Level of analysis.** Individual resource or capability within a firm.
 
-**Key constructs.** Value; rarity; imitability (including substitution);
-organization; competitive implication (disadvantage, parity, temporary advantage,
+**Key constructs.** Value, rarity, imitability (including substitution),
+organization, competitive implication (disadvantage, parity, temporary advantage,
 sustained advantage).
 
 **Boundary conditions.** A diagnostic, not a predictive model: assessments are
@@ -515,11 +515,11 @@ implement strategies that lower its net costs or raise its net revenues beyond
 what would have been possible without them [@Barney_2017]. Value is always
 relative to a market: the same resource can be valuable in one environment and
 worthless in another. A large fleet of physical stores was valuable in
-pre-internet retailing; in some categories it became a cost burden.
+pre-internet retailing. In some categories it became a cost burden.
 
 **Rarity.** A resource is rare when it is held by few current or potential
-competitors. Valuable but common resources — modern accounting systems, standard
-manufacturing equipment — are necessary to compete but produce only parity.
+competitors. Valuable but common resources, modern accounting systems, standard
+manufacturing equipment, are necessary to compete but produce only parity.
 Rarity need not mean uniqueness: a resource held by fewer firms than are needed
 to generate perfect competition may suffice [@barney1991].
 
@@ -542,7 +542,7 @@ Figure \@ref(fig:fig-res-vrio) presents the framework as a sequential decision
 flow, and Table \@ref(tab:tab-res-vrio-firms) applies it to firms discussed in
 this chapter.
 
-```{r fig-res-vrio, fig.cap = "The VRIO framework as a decision flow. Each 'no' answer determines the competitive implication of a resource; only resources that pass all four tests support a sustained competitive advantage. Based on Barney (1991) and Barney and Hesterly (2012)."}
+```{r fig-res-vrio, fig.cap = "The VRIO framework as a decision flow. Each 'no' answer determines the competitive implication of a resource. Only resources that pass all four tests support a sustained competitive advantage. Based on Barney (1991) and Barney and Hesterly (2012)."}
 mechanism_diagram(sprintf('
   R  [label = "Resource or\\ncapability", %s]
   V  [label = "Valuable?", shape = diamond, %s]
@@ -595,8 +595,8 @@ when a strategy rests on a system of mutually reinforcing activities, a rival
 must imitate the entire system to match the outcome, and the probability of
 copying every element correctly is far lower than the probability of copying any
 one. @teece1986 adds that innovators often fail to profit from their innovations
-when **complementary assets** — manufacturing, distribution, service, or
-complementary technologies — are controlled by others.
+when **complementary assets**, manufacturing, distribution, service, or
+complementary technologies, are controlled by others.
 
 ::: {.business-case}
 **Apple's ecosystem complementarity.** Apple's products are rarely the first in
@@ -604,11 +604,11 @@ their categories, yet the company has captured a large share of industry profits
 in several of them. A resource-based explanation emphasises complementarity among
 hardware design, proprietary operating systems, services, and retail. The App
 Store (opened in 2008) turned the installed base of iPhones into an asset that
-attracted developers, whose applications in turn raised the value of the device —
+attracted developers, whose applications in turn raised the value of the device:
 an asset mass efficiency in Dierickx and Cool's terms. Apple's own retail stores
 (from 2001) and its later in-house processors (Apple silicon, introduced in Macs
 in 2020) extended control over complementary assets. Each component could, in
-principle, be imitated; the integrated system is much harder to replicate, which
+principle, be imitated. The integrated system is much harder to replicate, which
 is precisely the logic of ecosystem theories [@jacobides2018; @teece1986].
 :::
 
@@ -628,17 +628,17 @@ firm. Firms exist because they integrate specialized knowledge held by
 individuals more efficiently than markets can, and their advantage depends on how
 well they create, integrate, and transfer knowledge.
 
-**Origins.** Strategy and organization theory; @kogut1992 on combinative
-capabilities; @grant1996 on knowledge integration; @nonaka1994 on knowledge
-creation; drawing on @polanyi1966 on tacit knowledge and @penrose1959.
+**Origins.** Strategy and organization theory, @kogut1992 on combinative
+capabilities, @grant1996 on knowledge integration, @nonaka1994 on knowledge
+creation, drawing on @polanyi1966 on tacit knowledge and @penrose1959.
 
-**Level of analysis.** Firm; team; individual knowledge holders.
+**Level of analysis.** Firm, team, individual knowledge holders.
 
-**Key constructs.** Tacit vs. explicit knowledge; knowledge integration;
-combinative capabilities; codification; replication; stickiness.
+**Key constructs.** Tacit vs. explicit knowledge, knowledge integration,
+combinative capabilities, codification, replication, stickiness.
 
 **Boundary conditions.** Most applicable where production requires integrating
-specialized, partly tacit knowledge; less distinctive where knowledge is fully
+specialized, partly tacit knowledge. Less distinctive where knowledge is fully
 codified and traded in markets.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
@@ -650,10 +650,10 @@ codified and traded in markets.
 ### Core logic
 
 The knowledge-based view (KBV) begins with a distinction drawn by @polanyi1966:
-much of what people know is **tacit** — it can be demonstrated but not fully
-articulated — while some knowledge is **explicit** and can be codified in
+much of what people know is **tacit**, it can be demonstrated but not fully
+articulated, while some knowledge is **explicit** and can be codified in
 documents, formulas, and software. Explicit knowledge is easy to transfer but
-also easy to leak; tacit knowledge is hard to transfer within the firm and
+also easy to leak. Tacit knowledge is hard to transfer within the firm and
 correspondingly hard for rivals to acquire.
 
 @kogut1992 argue that firms are social communities that specialize in the
@@ -671,17 +671,17 @@ held by *individuals*, and efficient production requires *integrating* many
 specialists' knowledge. Because transferring specialized knowledge between people
 is costly, the firm's role is to integrate it without requiring everyone to learn
 what everyone else knows. Grant identifies four integration mechanisms (Table
-\@ref(tab:tab-res-kbv)); their efficiency depends on the common knowledge members
+\@ref(tab:tab-res-kbv)). Their efficiency depends on the common knowledge members
 share, the frequency and variability of the task, and the structure that
 minimises the need for communication.
 
 ```{r tab-res-kbv}
 tibble::tribble(
   ~`Integration mechanism`, ~`How it works`, ~`Communication burden`, ~`Business example`,
-  "Rules and directives", "Specialists' knowledge is converted into standards, procedures, and instructions others can follow", "Low", "Clinical protocols; safety standards in a plant",
+  "Rules and directives", "Specialists' knowledge is converted into standards, procedures, and instructions others can follow", "Low", "Clinical protocols, safety standards in a plant",
   "Sequencing", "Tasks are ordered so each specialist contributes in turn, with minimal interaction", "Low to moderate", "Stage-gate product development",
-  "Routines", "Recurring, partly tacit patterns of interaction coordinate many people without explicit communication", "Moderate (built through repetition)", "A pit crew; a restaurant kitchen at peak hours",
-  "Group problem solving and decision making", "Specialists interact face to face to address novel, complex, or high-stakes problems", "High", "A cross-functional launch team; an incident response war room"
+  "Routines", "Recurring, partly tacit patterns of interaction coordinate many people without explicit communication", "Moderate (built through repetition)", "A pit crew, a restaurant kitchen at peak hours",
+  "Group problem solving and decision making", "Specialists interact face to face to address novel, complex, or high-stakes problems", "High", "A cross-functional launch team, an incident response war room"
 ) |>
   book_table(caption = "Knowledge integration mechanisms in the knowledge-based view (after Grant, 1996).")
 ```
@@ -698,19 +698,19 @@ the main barriers were not motivational but knowledge-related: the recipient's
 lack of **absorptive capacity**, **causal ambiguity** about why the practice
 works, and an arduous relationship between source and recipient. He called this
 **internal stickiness**. The same features that protect knowledge from imitators
-therefore impede its replication inside the firm — the KBV restatement of the
+therefore impede its replication inside the firm: the KBV restatement of the
 double edge of causal ambiguity.
 
 ### Core competences
 
 Writing for managers, @prahalad1990 argued that diversified corporations should
 be understood not as portfolios of businesses but as portfolios of **core
-competences** — the collective learning of the organization, especially how to
+competences**: the collective learning of the organization, especially how to
 coordinate diverse production skills and integrate multiple streams of
 technology. They used the image of a tree: core competences are the roots, **core
 products** are the trunk, business units are the branches, and end products are
 the fruit. Honda's competence in engines and power trains, they noted, supported
-businesses from cars to motorcycles to lawn mowers; Canon's competences in
+businesses from cars to motorcycles to lawn mowers. Canon's competences in
 optics, imaging, and microprocessor controls supported cameras, copiers, and
 printers. A competence is *core* if it (a) provides potential access to a wide
 variety of markets, (b) makes a significant contribution to the benefits
@@ -724,16 +724,16 @@ when markets change [@leonardbarton1992], a theme taken up in Chapter
 ::: {.business-case}
 **Zara's knowledge loop.** Inditex's Zara is often analysed as a supply-chain
 success, but it is equally a case of knowledge integration. Store managers
-observe what customers ask for, try on, and reject; that information flows to
+observe what customers ask for, try on, and reject. That information flows to
 designers and commercial teams at headquarters, who translate it into new
-designs; a large share of production is sourced close to Spain, which allows
+designs. A large share of production is sourced close to Spain, which allows
 small batches to be made and shipped quickly through a centralized distribution
 system. The result is a fashion offer that is replenished frequently and adapts
 within a season. In KBV terms, Zara integrates tacit market knowledge (what is
 selling and why) with design and operations knowledge through routines and
 co-location rather than through long forecasting cycles. The advantage is hard to
 imitate because it depends on the *combination* of proximity sourcing, vertical
-integration, information flow, and decision rights — a rival that copies any one
+integration, information flow, and decision rights: a rival that copies any one
 element without the others gains little.
 :::
 
@@ -755,21 +755,21 @@ among firms for **comparative advantages in resources** that yield **marketplace
 positions of competitive advantage** for some market segments and thereby
 superior financial performance.
 
-**Origins.** Marketing; @hunt1995, @hunt1996, and the book-length treatment in
+**Origins.** Marketing. @hunt1995, @hunt1996, and the book-length treatment in
 @hunt2000 [see also @Hunt_2007]. The theory integrates resource-based strategy
 with evolutionary and Austrian economics and with heterogeneous-demand theory in
 marketing.
 
-**Level of analysis.** Firm and market segment; the economy as an evolving
+**Level of analysis.** Firm and market segment, the economy as an evolving
 system.
 
-**Key constructs.** Comparative advantage in resources; relative resource-produced
-value; relative resource costs; marketplace position; superior financial
-performance; efficiency and effectiveness advantage.
+**Key constructs.** Comparative advantage in resources, relative resource-produced
+value, relative resource costs, marketplace position, superior financial
+performance, efficiency and effectiveness advantage.
 
 **Boundary conditions.** Assumes heterogeneous demand, imperfect information for
-firms and consumers, and resources that are heterogeneous and imperfectly mobile;
-less informative in markets that approximate perfect competition.
+firms and consumers, and resources that are heterogeneous and imperfectly mobile.
+Less informative in markets that approximate perfect competition.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
 [Market-based assets](#market-based-assets),
@@ -782,10 +782,10 @@ less informative in markets that approximate perfect competition.
 of competition") as an alternative to neoclassical perfect competition, which
 assumes homogeneous demand, perfect information, and homogeneous, perfectly
 mobile resources. Resource-advantage (R-A) theory replaces each of these with
-its opposite. Demand is heterogeneous both across and within industries;
-information is imperfect and costly; firm resources — financial, physical, legal,
-human, organizational, informational, and relational — are heterogeneous and
-imperfectly mobile; and the firm's objective is **superior** financial
+its opposite. Demand is heterogeneous both across and within industries.
+Information is imperfect and costly. Firm resources, financial, physical, legal,
+human, organizational, informational, and relational, are heterogeneous and
+imperfectly mobile, and the firm's objective is **superior** financial
 performance relative to referents such as rivals or its own past, rather than
 "maximum" performance that no firm could identify [@hunt2000].
 
@@ -794,9 +794,9 @@ has a **comparative advantage in resources** when its resources allow it to
 produce a market offering that some segment perceives as having superior value,
 or to produce it at lower cost. This translates into a **marketplace position**,
 which in turn produces financial performance. Superior performance provides
-feedback and the means to invest in further resources; inferior performance
+feedback and the means to invest in further resources. Inferior performance
 signals rivals' advantages and motivates them to imitate, substitute, or
-**innovate** — which is why R-A competition is inherently dynamic and why
+**innovate**, which is why R-A competition is inherently dynamic and why
 innovation is endogenous to the theory [@hunt1996].
 
 ### The marketplace position matrix
@@ -812,7 +812,7 @@ cost). Two cells are **indeterminate**: superior value at higher cost, or lower
 value at lower cost, may produce advantage or disadvantage depending on how the
 segment trades off value against price.
 
-```{r fig-res-ra-matrix, fig.cap = "The resource-advantage marketplace position matrix. A firm's position for a given market segment depends on the value its resources produce and the cost of producing it, both relative to rivals. Adapted from Hunt and Morgan (1995); cell labels for the three advantage types follow Hunt (2007).", fig.height = 4.4}
+```{r fig-res-ra-matrix, fig.cap = "The resource-advantage marketplace position matrix. A firm's position for a given market segment depends on the value its resources produce and the cost of producing it, both relative to rivals. Adapted from Hunt and Morgan (1995). Cell labels for the three advantage types follow Hunt (2007).", fig.height = 4.4}
 cost_lv  <- c("Lower", "Parity", "Higher")
 value_lv <- c("Lower", "Parity", "Superior")
 ra <- expand.grid(cost = cost_lv, value = value_lv, stringsAsFactors = FALSE) |>
@@ -852,13 +852,13 @@ ggplot(ra, aes(cost, value, fill = position)) +
 
 R-A theory makes several distinctive predictions. Because demand is heterogeneous,
 a firm can hold an advantage in one segment and a disadvantage in another with
-the same resources; the unit of analysis for advantage is therefore the
-*firm–segment* pair, not the firm. Because firms seek superior rather than
+the same resources. The unit of analysis for advantage is therefore the
+*firm-segment* pair, not the firm. Because firms seek superior rather than
 maximum performance and learn through competition, the theory expects
 **proactive innovation** (firms seek new resources before being forced to) and
 **reactive innovation** (laggards innovate to neutralize rivals' advantages).
 And because competition continually upsets positions, sustained advantage is the
-exception rather than the rule — a view closer to Schumpeter's creative
+exception rather than the rule: a view closer to Schumpeter's creative
 destruction than to equilibrium economics.
 
 ::: {.debate}
@@ -877,11 +877,11 @@ explicit that advantage is defined relative to a segment and to competitors on
 **Illustrative scenario: one firm, three positions.** A regional grocery chain has
 superior fresh-food sourcing relationships and a cost structure slightly above
 national discounters. For *quality-focused urban shoppers* it delivers superior
-value at higher cost — an indeterminate cell that becomes an advantage because
+value at higher cost: an indeterminate cell that becomes an advantage because
 this segment pays a premium. For *price-focused family shoppers* the same
-resources produce parity value at higher cost — a disadvantage. For
+resources produce parity value at higher cost: a disadvantage. For
 *convenience shoppers* near its compact stores it offers superior value (location)
-at parity cost — an effectiveness advantage. The R-A lens tells managers to
+at parity cost: an effectiveness advantage. The R-A lens tells managers to
 evaluate resources segment by segment and to direct investment toward segments
 where the matrix position is favourable.
 :::
@@ -894,19 +894,19 @@ knowledge are **market-based assets** that create shareholder value by
 accelerating, enhancing, and stabilizing cash flows and by raising their residual
 value.
 
-**Origins.** Marketing strategy and finance; @srivastava1998, extended to
-market-based processes and the RBV in @srivastava2001; related to marketing
+**Origins.** Marketing strategy and finance, @srivastava1998, extended to
+market-based processes and the RBV in @srivastava2001, related to marketing
 capabilities in @day1994.
 
 **Level of analysis.** Firm (and the firm's relationships with customers,
 channels, and partners).
 
-**Key constructs.** Relational market-based assets; intellectual market-based
-assets; market-based processes; cash-flow acceleration, enhancement, volatility
-and vulnerability reduction; residual value; shareholder value.
+**Key constructs.** Relational market-based assets, intellectual market-based
+assets, market-based processes, cash-flow acceleration, enhancement, volatility
+and vulnerability reduction, residual value, shareholder value.
 
 **Boundary conditions.** Most relevant where customer relationships are durable
-and repeat purchase or network effects matter; harder to apply where
+and repeat purchase or network effects matter. Harder to apply where
 relationships are transactional.
 
 **Related theories.** [Resource-based view](#resource-based-theory),
@@ -921,10 +921,10 @@ Marketing has long struggled to show its value in the language of finance.
 @srivastava1998 addressed the problem by treating marketing outcomes as
 **assets** that sit outside the balance sheet but drive the cash flows investors
 value. They distinguish two types. **Relational market-based assets** are the
-outcomes of the relationships between a firm and its external stakeholders —
-customers, channels, and strategic partners — including brand equity, customer
+outcomes of the relationships between a firm and its external stakeholders,
+customers, channels, and strategic partners, including brand equity, customer
 loyalty, and installed bases. **Intellectual market-based assets** are the
-knowledge a firm possesses about its environment — customers' needs, competitors'
+knowledge a firm possesses about its environment: customers' needs, competitors'
 moves, channel economics. Both are typically intangible, are accumulated
 through investment over time, and are hard to imitate because they are embedded
 in relationships, which places them squarely within the RBV [@Kozlenkova_2013;
@@ -944,7 +944,7 @@ mechanism_diagram(sprintf('
   RA [label = "Relational assets\\n(customer, channel,\\npartner relationships)", %s]
   IA [label = "Intellectual assets\\n(knowledge of customers,\\ncompetitors, channels)", %s]
   MP [label = "Market performance\\n(faster adoption, price\\npremiums, retention,\\nlower service costs)", %s]
-  CF [label = "Cash flows: accelerated,\\nenhanced, less volatile and\\nvulnerable; higher residual value", %s]
+  CF [label = "Cash flows: accelerated,\\nenhanced, less volatile and\\nvulnerable, higher residual value", %s]
   SV [label = "Shareholder\\nvalue", %s]
   CP [label = "Market-based processes\\nand capabilities", %s]
   RA -> MP
@@ -955,7 +955,7 @@ mechanism_diagram(sprintf('
 ```
 
 @day1994 provides the capability counterpart. Market-driven organizations excel at
-**outside-in** capabilities — **market sensing** and **customer linking** — that
+**outside-in** capabilities, **market sensing** and **customer linking**, that
 connect internal processes to the market, complemented by **inside-out**
 capabilities (such as manufacturing and logistics) and **spanning** capabilities
 (such as pricing and new product development) that integrate the two. These
@@ -965,14 +965,14 @@ leveraged. Table \@ref(tab:tab-res-mba) summarises the main asset types.
 ```{r tab-res-mba}
 tibble::tribble(
   ~Type, ~Asset, ~`Illustrative indicators`, ~`Primary cash-flow effect`,
-  "Relational", "Customer relationships and brand equity", "Retention, share of wallet, price premium, brand-equity indices", "Enhance cash flows; reduce volatility",
+  "Relational", "Customer relationships and brand equity", "Retention, share of wallet, price premium, brand-equity indices", "Enhance cash flows, reduce volatility",
   "Relational", "Installed base and user network", "Active users, attach rates of complements", "Accelerate adoption of new offerings",
   "Relational", "Channel relationships", "Shelf space, distributor tenure, co-marketing commitments", "Accelerate and enhance cash flows",
-  "Relational", "Partner and ecosystem relationships", "Alliances, co-branding, developer participation", "Enhance cash flows; raise residual value",
+  "Relational", "Partner and ecosystem relationships", "Alliances, co-branding, developer participation", "Enhance cash flows, raise residual value",
   "Intellectual", "Customer and market knowledge", "Segment-level insight, data assets, research capability", "Accelerate cash flows via better-targeted launches",
   "Intellectual", "Competitor and channel knowledge", "Intelligence systems, channel economics models", "Reduce vulnerability to competitive moves"
 ) |>
-  book_table(caption = "Market-based assets and their links to cash flows (classification follows Srivastava, Shervani, & Fahey, 1998; indicators are illustrative).")
+  book_table(caption = "Market-based assets and their links to cash flows (classification follows Srivastava, Shervani, & Fahey, 1998. Indicators are illustrative).")
 ```
 
 ::: {.business-case}
@@ -980,14 +980,14 @@ tibble::tribble(
 market-based assets working as a system. Its characters and stories are protected
 by intellectual property law, but their economic value comes from relationships
 with audiences built over generations. Those relationships let Disney
-**accelerate** cash flows — a new film reaches a large, pre-committed audience —
+**accelerate** cash flows, a new film reaches a large, pre-committed audience,
 and **enhance** them by extending each franchise across theme parks, consumer
 products, and media. Its acquisitions of Pixar (2006), Marvel (2009), and
 Lucasfilm (2012) added further franchises that could be exploited through the
 same cross-business system, and its direct-to-consumer streaming service,
 launched in 2019, turned audience relationships into a subscription
 relationship. In VRIO terms, the brand-and-IP portfolio is valuable, rare, and
-protected by both law and history; in market-based-asset terms, its value lies in
+protected by both law and history. In market-based-asset terms, its value lies in
 the durability and leverage of audience relationships.
 :::
 
@@ -1002,8 +1002,8 @@ the durability and leverage of audience relationships.
   they are combined with complementary R&D or operations capabilities
   [@Morgan_2009].
 
-**Designs.** Event studies and long-horizon stock-return models; panel models of
-cash-flow level and volatility; customer-lifetime-value models linking relational
+**Designs.** Event studies and long-horizon stock-return models. Panel models of
+cash-flow level and volatility. Customer-lifetime-value models linking relational
 assets to firm value.
 :::
 
@@ -1011,19 +1011,19 @@ assets to firm value.
 
 ::: {.key-takeaways}
 - The **resource-based view** explains persistent performance differences within
-  industries by resource **heterogeneity** and **immobility**; advantage is
+  industries by resource **heterogeneity** and **immobility**. Advantage is
   sustained when valuable, rare resources are costly to imitate or substitute
   [@barney1991; @peteraf1993].
-- Strategic assets are **accumulated** rather than bought; time compression
+- Strategic assets are **accumulated** rather than bought. Time compression
   diseconomies, asset mass efficiencies, and causal ambiguity protect incumbents
   [@dierickx1989; @barney1986].
-- **VRIO** turns the theory into a diagnostic; the "O" reminds managers that
+- **VRIO** turns the theory into a diagnostic. The "O" reminds managers that
   resources create value only when structures, controls, and incentives allow
   them to be exploited [@Barney_2012].
 - Advantage often lies in **bundles** of complementary resources and in how they
   are **orchestrated**, not in single assets [@milgrom1995; @sirmon2007].
 - The **knowledge-based view** treats knowledge integration as the reason firms
-  exist; tacitness protects knowledge from rivals but also makes it sticky inside
+  exist. Tacitness protects knowledge from rivals but also makes it sticky inside
   the firm [@grant1996; @kogut1992; @szulanski1996].
 - **Resource-advantage theory** embeds resources in a dynamic, segment-specific
   theory of competition with efficiency and effectiveness advantages
@@ -1031,7 +1031,7 @@ assets to firm value.
 - **Market-based assets** connect customer, channel, and partner relationships to
   shareholder value through the level, timing, risk, and residual value of cash
   flows [@srivastava1998].
-- The empirical record supports the resource–performance link, especially for
+- The empirical record supports the resource-performance link, especially for
   resources that meet the theory's criteria, but measurement and tautology
   remain live concerns [@crook2008; @newbert2007; @priem2001].
 :::
@@ -1039,12 +1039,12 @@ assets to firm value.
 ```{r tab-res-summary}
 tibble::tribble(
   ~Theory, ~`Unit of analysis`, ~`Source of advantage`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
-  "Resource-based view", "Firm", "Heterogeneous, immobile resources", "Isolating mechanisms protect rents", "Within-industry performance differences persist", "Strategy formulation; M&A screening",
-  "VRIO", "Resource", "Valuable, rare, inimitable, organized resources", "Sequential tests of value and protection", "Only VRIO resources sustain advantage", "Capability audits; investment prioritization",
-  "Knowledge-based view", "Firm / team", "Integration of specialized, tacit knowledge", "Integration mechanisms; combinative capabilities", "Codification eases replication but invites imitation", "Organization design; knowledge transfer",
+  "Resource-based view", "Firm", "Heterogeneous, immobile resources", "Isolating mechanisms protect rents", "Within-industry performance differences persist", "Strategy formulation, M&A screening",
+  "VRIO", "Resource", "Valuable, rare, inimitable, organized resources", "Sequential tests of value and protection", "Only VRIO resources sustain advantage", "Capability audits, investment prioritization",
+  "Knowledge-based view", "Firm / team", "Integration of specialized, tacit knowledge", "Integration mechanisms, combinative capabilities", "Codification eases replication but invites imitation", "Organization design, knowledge transfer",
   "Core competences", "Corporation", "Collective, cross-business skills", "Competences feed core products across businesses", "Competence-based diversification outperforms", "Portfolio and outsourcing decisions",
   "Resource-advantage theory", "Firm-segment", "Comparative advantage in resources", "Relative value and relative cost", "Positions shift through innovation", "Segment-level positioning",
-  "Market-based assets", "Firm-market", "Customer, channel, partner relationships; market knowledge", "Cash-flow acceleration, enhancement, de-risking", "Relational assets raise firm value", "Justifying marketing investment to finance"
+  "Market-based assets", "Firm-market", "Customer, channel, partner relationships, market knowledge", "Cash-flow acceleration, enhancement, de-risking", "Relational assets raise firm value", "Justifying marketing investment to finance"
 ) |>
   book_table(caption = "Comparison of the chapter's theories.")
 ```
@@ -1073,18 +1073,18 @@ tibble::tribble(
 
 ## Further Reading {#resources-reading}
 
-- @barney1991 — the foundational statement of the conditions for sustained
-  competitive advantage; still the most cited entry point.
-- @dierickx1989 — a short, elegant paper on why strategic assets must be
+- @barney1991: the foundational statement of the conditions for sustained
+  competitive advantage. Still the most cited entry point.
+- @dierickx1989: a short, elegant paper on why strategic assets must be
   accumulated, introducing time compression diseconomies and asset mass
   efficiencies.
-- @peteraf1993 — translates the RBV into the economics of rents through four
+- @peteraf1993: translates the RBV into the economics of rents through four
   cornerstones.
-- @priem2001 and @barney2001 — read together as the defining debate about the
+- @priem2001 and @barney2001: read together as the defining debate about the
   theory's usefulness and testability.
-- @crook2008 — the meta-analytic evidence on strategic resources and performance.
-- @grant1996 — the clearest statement of the knowledge-based theory of the firm.
-- @Kozlenkova_2013 — a review of resource-based theory in marketing, with
+- @crook2008: the meta-analytic evidence on strategic resources and performance.
+- @grant1996: the clearest statement of the knowledge-based theory of the firm.
+- @Kozlenkova_2013: a review of resource-based theory in marketing, with
   guidance on operationalizing VRIO attributes.
-- @srivastava1998 — the market-based assets framework that links marketing to
+- @srivastava1998: the market-based assets framework that links marketing to
   shareholder value.

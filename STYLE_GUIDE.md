@@ -1,4 +1,4 @@
-# Style Guide — *Social Science Theory*
+# Style Guide: *Social Science Theory*
 
 This guide keeps every chapter of the book consistent. Contributors
 should read it before writing or editing a chapter. The exemplar chapter is
@@ -8,20 +8,20 @@ should read it before writing or editing a chapter. The exemplar chapter is
 
 - **Audience:** PhD students, faculty, and analytically minded practitioners in
   management, marketing, economics, psychology, sociology, and information systems.
-- **Voice:** authoritative, precise, and readable — the tone of a top handbook
+- **Voice:** authoritative, precise, and readable, the tone of a top handbook
   chapter (*Annual Review*, *Academy of Management Annals*) with the clarity of a
   great textbook. Third person or inclusive "we". No hype, no emoji, no filler.
 - **Every theory answers four questions:** *What* (constructs), *How* (relationships),
-  *Why* (mechanism), and *Who/Where/When* (boundary conditions) — Whetten (1989).
+  *Why* (mechanism), and *Who/Where/When* (boundary conditions), Whetten (1989).
 - Define a term in **bold** the first time it is used.
-- Prefer short paragraphs (3–6 sentences), concrete examples, and explicit logic.
+- Prefer short paragraphs (3-6 sentences), concrete examples, and explicit logic.
 
 ## Chapter template
 
 ```
 # Chapter Title {#chapter-id}
 
-Opening hook: a concrete puzzle from business or everyday life (1–2 paragraphs),
+Opening hook: a concrete puzzle from business or everyday life (1-2 paragraphs),
 then what the chapter covers and why it matters.
 
 Table: "Chapter at a glance" (theory | core question | level of analysis | key source).
@@ -75,8 +75,8 @@ Use `::: {.try-it}` for short exercises and `::: {.definition}` for formal defin
   `ggplot2` figure and at least one a `mechanism_diagram()`.
 - **At least three tables per chapter** via `book_table()`.
 - All helpers live in `_common.R` (sourced automatically): `theme_book()` (default),
-  `pal` (fixed categorical order — use `pal[["blue"]]`, `pal[["orange"]]`, … in
-  that order; at most 3 colours in scatter-type plots), `ink`, `brand`,
+  `pal` (fixed categorical order, use `pal[["blue"]]`, `pal[["orange"]]`, … in
+  that order. At most 3 colours in scatter-type plots), `ink`, `brand`,
   `scale_colour_book()`, `scale_fill_book()`, `scale_fill_seq()`, `scale_fill_div()`,
   `book_table()`, `mechanism_diagram()`, and node styles `node_construct`,
   `node_mechanism`, `node_outcome`, `node_moderator`.
@@ -84,7 +84,7 @@ Use `::: {.try-it}` for short exercises and `::: {.definition}` for formal defin
   stylised data must say "Illustrative" / "Stylised" in the caption and use
   `set.seed()`.
 - Chunk labels are unique across the book: prefix with the chapter id,
-  e.g. `fig-sig-timeline`, `tab-sig-glance`. Every figure has `fig.cap`; every
+  e.g. `fig-sig-timeline`, `tab-sig-glance`. Every figure has `fig.cap`, every
   table has `caption`. Cross-reference with `Figure \@ref(fig:fig-sig-timeline)`
   and `Table \@ref(tab:tab-sig-glance)`.
 - Charts: one y-axis only (no dual axes), thin marks, direct labels where helpful,
@@ -102,27 +102,27 @@ Use `::: {.try-it}` for short exercises and `::: {.definition}` for formal defin
   ', node_construct, node_mechanism, node_outcome))
   ```
 
-## Citations — accuracy is non-negotiable
+## Citations: accuracy is non-negotiable
 
 - Pandoc syntax: `[@spence1973]`, `@spence1973 argues …`, `[@spence1973, p. 359]`.
 - **Key convention:** lowercase first-author surname + year (+ `a`/`b` if needed),
   ASCII only: `spence1973`, `kahneman1979`, `dimaggio1983`.
 - Keys that already exist in `references.bib` must be **reused exactly**
   (e.g. `Barney_2001`, `connelly2010`, `Berger_2016`).
-- New entries go in `bib/<chapter-number>.bib` (e.g. `bib/08.bib`); they are
+- New entries go in `bib/<chapter-number>.bib` (e.g. `bib/08.bib`). They are
   merged and verified against Crossref at build time.
 - **Only cite works you are certain exist**, with correct authors, year, title,
   venue, volume, issue and pages. Add `doi` only when certain of it. When unsure
   of a detail, cite a different, better-known source instead. Never fabricate a
   citation, quotation, page number, statistic, or effect size.
-- Quote sparingly (< 40 words) and only with a page number you are sure of;
-  otherwise paraphrase.
+- Quote sparingly (< 40 words) and only with a page number you are sure of.
+  Otherwise paraphrase.
 
 ## Business examples
 
 - Prefer well-documented public cases (e.g., Opower home energy reports, Netflix vs.
   Blockbuster, Toyota Production System, Starbucks loyalty, Apple, Kodak, Airbnb
-  reviews). Describe them at the level of established public record; do not invent
+  reviews). Describe them at the level of established public record. Do not invent
   figures.
 - Clearly label hypothetical cases as **"Illustrative scenario"** and keep their
   numbers obviously stylised.
@@ -153,7 +153,7 @@ Use `::: {.try-it}` for short exercises and `::: {.definition}` for formal defin
 | 18 Effects | `effects` | `mere-exposure-effect`, `warm-glow-heuristic`, `goldilocks-effect`, `coolidge-effect`, `snob-effect`, `glass-cliff-effect`, `ikea-effect`, `decoy-effect`, `anchoring-effect`, `beauty-in-averageness` |
 | 19 Phenomena | `phenomena` | `similarity-asymmetry`, `assortative-mating`, `social-magnet`, `wisdom-of-the-crowd`, `pack-journalism`, `scent-and-emotion` |
 | 20 Frameworks | `frameworks` | `information-processing-model`, `geneplore-model`, `five-forces`, `combinatorial-creativity`, `mechanism-toolkit` |
-| 21 Theory atlas | `theory-atlas` | — |
+| 21 Theory atlas | `theory-atlas` |: |
 
 Write section headers as `## Signaling Theory {#signaling-theory}`.
 

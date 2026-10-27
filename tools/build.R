@@ -14,5 +14,6 @@ dir.create("docs/images", showWarnings = FALSE, recursive = TRUE)
 file.copy(c("images/social-card.png", "images/cover.png", "images/apple-touch-icon.png"),
           "docs/images", overwrite = TRUE)
 file.copy("data/theory-atlas.csv", "docs/theory-atlas.csv", overwrite = TRUE)
+source("tools/postprocess_html.R")   # house style: no en/em dashes or semicolons
 source("generate_sitemap.R")
 if ("--deploy" %in% args) source("tools/deploy.R")

@@ -5,7 +5,7 @@
 The Theory Atlas collects every entry in the book in one place. Use it to look up
 a theory's core claim, find theories that operate through the same mechanism, or
 locate candidates for a research question. In the online edition the table is
-searchable, sortable, and filterable; each theory name links to its full entry.
+searchable, sortable, and filterable. Each theory name links to its full entry.
 
 ```{r atlas-data}
 atlas <- readr::read_csv("data/theory-atlas.csv", show_col_types = FALSE)
@@ -96,7 +96,7 @@ mech_desc <- tibble::tribble(
 atlas |>
   dplyr::group_by(mechanism) |>
   dplyr::summarise(Entries = dplyr::n(),
-                   Examples = paste(head(theory, 4), collapse = "; ")) |>
+                   Examples = paste(head(theory, 4), collapse = ", ")) |>
   dplyr::left_join(mech_desc, by = "mechanism") |>
   dplyr::arrange(dplyr::desc(Entries)) |>
   dplyr::select(Mechanism = mechanism, `What drives behaviour`, Entries, Examples) |>
@@ -110,7 +110,7 @@ tibble::tribble(
   ~Term, ~Definition,
   "Adverse selection", "A hidden-information problem in which the parties most eager to transact are those the other side would least want to transact with.",
   "Boundary condition", "A limit on the who, where, and when to which a theory's predictions apply.",
-  "Construct", "An abstract concept (e.g., trust, legitimacy) that a theory relates to other concepts; measured imperfectly by variables.",
+  "Construct", "An abstract concept (e.g., trust, legitimacy) that a theory relates to other concepts. Measured imperfectly by variables.",
   "Countersignaling", "Deliberately not sending a signal because other information already separates the sender from low types.",
   "Descriptive norm", "Perception of what most people actually do.",
   "Dynamic capability", "A firm's ability to integrate, build, and reconfigure competences to address changing environments.",
@@ -121,12 +121,12 @@ tibble::tribble(
   "Isomorphism", "The tendency of organizations in a field to become similar in structure and practice.",
   "Level of analysis", "The unit (individual, dyad, group, firm, market) at which a construct or theory is defined.",
   "Loss aversion", "The tendency for losses to loom larger than gains of the same size.",
-  "Mechanism", "The process through which a cause produces an effect; the 'why' of a theory.",
+  "Mechanism", "The process through which a cause produces an effect. The 'why' of a theory.",
   "Mediator", "A variable that transmits the effect of an independent variable to a dependent variable.",
   "Moderator", "A variable that changes the strength or direction of a relationship.",
   "Moral hazard", "A hidden-action problem in which one party changes behaviour after a contract because the other cannot observe it.",
   "Nomological network", "The web of theoretical relationships in which a construct is embedded, used to establish construct validity.",
-  "Proposition", "A statement of relationship between constructs; a hypothesis is its testable counterpart in terms of variables.",
+  "Proposition", "A statement of relationship between constructs. A hypothesis is its testable counterpart in terms of variables.",
   "Reference point", "The benchmark against which outcomes are coded as gains or losses.",
   "Regulatory fit", "The increased value people experience when the manner of goal pursuit matches their regulatory orientation.",
   "Signal", "An observable action chosen by an informed party that conveys information about an unobservable characteristic.",

@@ -4,11 +4,11 @@ A television advertisement that sells life insurance in Chicago by promising
 "freedom to live your dream" may leave viewers in Seoul unmoved, while an
 advertisement that shows three generations protected by the same policy may move
 them. A junior engineer in Stockholm interrupts her vice-president to point out an
-error in a slide; an equally competent engineer in a high-hierarchy subsidiary
+error in a slide. An equally competent engineer in a high-hierarchy subsidiary
 waits until after the meeting, or says nothing at all. A manufacturer that has
 grown successfully through acquisitions at home chooses a joint venture, not an
 acquisition, when it enters a market whose business customs it does not
-understand. In each case the economics of the situation are similar; what differs
+understand. In each case the economics of the situation are similar. What differs
 is the set of shared assumptions that people bring to it.
 
 This chapter introduces the theories that social scientists use to describe and
@@ -16,22 +16,22 @@ explain such differences. We begin with what "culture" means as a scientific
 construct and with the methodological traps that accompany it. We then develop
 **Hofstede's cultural dimensions theory**, the most cited framework in
 international business, and its key derivative, **cultural distance**. We examine
-**power distance** in depth — both Mulder's power distance reduction theory and the
+**power distance** in depth: both Mulder's power distance reduction theory and the
 practical problem of voice in hierarchical workplaces. We turn to the
-psychological level with **individualism–collectivism** and **independent versus
+psychological level with **individualism-collectivism** and **independent versus
 interdependent self-construal**, then to two rival country-level frameworks, the
 **GLOBE** project and **Schwartz's theory of basic values**, and finally to
-**cultural tightness–looseness**. The chapter closes with the principal critiques of
+**cultural tightness-looseness**. The chapter closes with the principal critiques of
 the dimensional approach and with practical guidance on negotiation and
 multicultural teams.
 
 ```{r tab-cul-glance}
 tibble::tribble(
   ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
-  "Hofstede's cultural dimensions", "On which value dimensions do national cultures differ?", "Nation", "Hofstede (1980; 2001)",
+  "Hofstede's cultural dimensions", "On which value dimensions do national cultures differ?", "Nation", "Hofstede (1980, 2001)",
   "Cultural distance", "How different is a host country from a home country, and does it matter?", "Country dyad / firm", "Kogut & Singh (1988)",
-  "Power distance theory", "How do people respond to unequal power, and why do some accept it?", "Individual / group / nation", "Mulder (1977); Hofstede (1980)",
-  "Self-construal and individualism-collectivism", "Is the self defined as separate from or embedded in others?", "Individual / nation", "Markus & Kitayama (1991); Triandis (1995)",
+  "Power distance theory", "How do people respond to unequal power, and why do some accept it?", "Individual / group / nation", "Mulder (1977), Hofstede (1980)",
+  "Self-construal and individualism-collectivism", "Is the self defined as separate from or embedded in others?", "Individual / nation", "Markus & Kitayama (1991), Triandis (1995)",
   "GLOBE", "How do cultural practices and values shape leadership?", "Nation / organization", "House et al. (2004)",
   "Schwartz's basic values", "What universal structure organizes human values?", "Individual / nation", "Schwartz (1992)",
   "Tightness-looseness", "How strong are social norms and how tolerated is deviance?", "Nation / state", "Gelfand et al. (2011)"
@@ -42,8 +42,8 @@ tibble::tribble(
 ## What Do We Mean by Culture? {#culture-foundations}
 
 ::: {.definition}
-**Culture** is a system of shared meanings — values, beliefs, norms, and
-practices — that is learned, transmitted across generations, and that
+**Culture** is a system of shared meanings, values, beliefs, norms, and
+practices, that is learned, transmitted across generations, and that
 distinguishes the members of one group from those of another. @hofstede2010
 describe it as the *collective programming of the mind*: patterns of thinking,
 feeling, and acting that are acquired early and are largely taken for granted.
@@ -53,21 +53,21 @@ Three distinctions organize the cross-cultural literature and recur throughout
 this chapter.
 
 First, **values versus practices**. Values are broad preferences for some states of
-affairs over others ("what *should* be"); practices are the observable ways
-things are done ("what *is*"). Hofstede's work concentrates on values; the GLOBE
+affairs over others ("what *should* be"). Practices are the observable ways
+things are done ("what *is*"). Hofstede's work concentrates on values. The GLOBE
 project measures both and finds, provocatively, that they do not always move
 together [@house2004].
 
 Second, **etic versus emic** approaches. An *etic* approach compares cultures on
 dimensions assumed to be universal, which permits quantification and ranking. An
 *emic* approach studies a culture on its own terms, from the inside, using
-concepts that may not translate. Dimensional theories are etic by design; their
+concepts that may not translate. Dimensional theories are etic by design. Their
 power comes from comparability and their limitations from the same source.
 
 Third, and most important for research design, the **level of analysis**. Most
 dimensional frameworks are defined at the *national* level: they describe how
 societies differ on average, not how any given person thinks. Inferring individual
-attitudes from country scores commits the **ecological fallacy** — the error of
+attitudes from country scores commits the **ecological fallacy**: the error of
 assuming that relationships observed among aggregates hold among the individuals
 who make them up [@robinson1950]. Hofstede himself repeatedly warned against this
 use of his scores [@hofstede2001; @hofstede2011]. Psychological constructs such as
@@ -78,22 +78,22 @@ linked explicitly, typically with multilevel models.
 
 ::: {.theory-card}
 **Core claim.** National cultures differ systematically on a small number of
-value dimensions — power distance, individualism, masculinity, uncertainty
-avoidance, long-term orientation, and indulgence — and these differences shape
+value dimensions, power distance, individualism, masculinity, uncertainty
+avoidance, long-term orientation, and indulgence, and these differences shape
 institutions, organizations, and behaviour.
 
-**Origins.** Cross-cultural psychology and organization studies; @hofstede1980,
-based on employee attitude surveys at IBM subsidiaries; expanded in
-@hofstede2001 and @hofstede2010; summarised in @hofstede2011.
+**Origins.** Cross-cultural psychology and organization studies, @hofstede1980,
+based on employee attitude surveys at IBM subsidiaries, expanded in
+@hofstede2001 and @hofstede2010, summarised in @hofstede2011.
 
 **Level of analysis.** Nation (country-level averages of individual responses).
 
-**Key constructs.** Power distance; individualism–collectivism;
-masculinity–femininity; uncertainty avoidance; long- versus short-term orientation;
-indulgence–restraint; dimension scores (indices).
+**Key constructs.** Power distance, individualism-collectivism,
+masculinity-femininity, uncertainty avoidance, long- versus short-term orientation,
+indulgence-restraint, dimension scores (indices).
 
 **Boundary conditions.** Scores describe central tendencies of national
-populations, not individuals; they assume that nations are meaningful cultural
+populations, not individuals. They assume that nations are meaningful cultural
 units and that matched samples isolate national culture from occupation and
 organization.
 
@@ -119,7 +119,7 @@ how to deal with an uncertain future.
 
 The model grew in two steps. A fifth dimension, initially called *Confucian
 dynamism* and later **long-term orientation**, emerged from the Chinese Value Survey
-— an instrument deliberately designed by Chinese scholars to avoid a Western bias
+: an instrument deliberately designed by Chinese scholars to avoid a Western bias
 in item selection [@hofstede1988]. A sixth dimension, **indulgence versus
 restraint**, was added in the third edition of *Cultures and Organizations* on the
 basis of Michael Minkov's analyses of World Values Survey data, which also
@@ -133,11 +133,11 @@ Table \@ref(tab:tab-cul-dimensions) summarises the six dimensions.
 ```{r tab-cul-dimensions}
 tibble::tribble(
   ~Dimension, ~`Societal problem addressed`, ~`Low pole`, ~`High pole`, ~`Workplace illustration`,
-  "Power distance (PDI)", "How to handle inequality", "Inequality minimised; superiors accessible", "Hierarchy accepted as natural and proper", "Consultative vs. directive supervision",
-  "Individualism (IDV)", "Bond between individual and group", "Collectivism: loyalty to in-groups for protection", "Individualism: loose ties; 'I' identity", "Group vs. individual incentives and feedback",
+  "Power distance (PDI)", "How to handle inequality", "Inequality minimised, superiors accessible", "Hierarchy accepted as natural and proper", "Consultative vs. directive supervision",
+  "Individualism (IDV)", "Bond between individual and group", "Collectivism: loyalty to in-groups for protection", "Individualism: loose ties, 'I' identity", "Group vs. individual incentives and feedback",
   "Masculinity (MAS)", "Distribution of emotional roles", "Femininity: caring, quality of life, modesty", "Masculinity: achievement, assertiveness, competition", "Resolving conflict by compromise vs. by contest",
-  "Uncertainty avoidance (UAI)", "Tolerance of ambiguity", "Ambiguity tolerated; few rules", "Ambiguity threatening; rules and structure valued", "Detailed contracts and procedures",
-  "Long-term orientation (LTO)", "Focus on future vs. present and past", "Respect for tradition; quick results", "Perseverance, thrift, adaptation", "Patient market building vs. quarterly targets",
+  "Uncertainty avoidance (UAI)", "Tolerance of ambiguity", "Ambiguity tolerated, few rules", "Ambiguity threatening, rules and structure valued", "Detailed contracts and procedures",
+  "Long-term orientation (LTO)", "Focus on future vs. present and past", "Respect for tradition, quick results", "Perseverance, thrift, adaptation", "Patient market building vs. quarterly targets",
   "Indulgence (IVR)", "Gratification of desires", "Restraint: gratification regulated by norms", "Indulgence: enjoying life and having fun", "Attitudes toward leisure and positive emotion at work"
 ) |>
   book_table(caption = "Hofstede's six dimensions of national culture (summarised from Hofstede, Hofstede, & Minkov, 2010, and Hofstede, 2011).")
@@ -149,7 +149,7 @@ The dimensions are scored as indices, typically on a scale from roughly 0 to 100
 but it places a country above most others in the sample. Figure
 \@ref(fig:fig-cul-hofstede) compares six economically important countries.
 
-```{r fig-cul-hofstede, fig.cap = "Hofstede dimension scores for six countries. Index values as published in Hofstede, Hofstede, and Minkov (2010); long-term orientation and indulgence scores are the World Values Survey-based estimates introduced in that edition. Scores are relative country positions, not absolute measures.", fig.height = 5.4}
+```{r fig-cul-hofstede, fig.cap = "Hofstede dimension scores for six countries. Index values as published in Hofstede, Hofstede, and Minkov (2010). Long-term orientation and indulgence scores are the World Values Survey-based estimates introduced in that edition. Scores are relative country positions, not absolute measures.", fig.height = 5.4}
 hof <- tibble::tribble(
   ~country,        ~PDI, ~IDV, ~MAS, ~UAI, ~LTO, ~IVR,
   "United States",   40,   91,   62,   46,   26,   68,
@@ -179,10 +179,10 @@ ggplot(hof_long, aes(score, country)) +
 ```
 
 Several features of the figure are instructive. Japan and Germany, both
-industrial exporters, differ sharply on individualism; Sweden and Japan, both
-wealthy, sit at opposite ends of masculinity; China and India share high power
+industrial exporters, differ sharply on individualism. Sweden and Japan, both
+wealthy, sit at opposite ends of masculinity. China and India share high power
 distance but differ on long-term orientation. National culture is a *profile*,
-not a single position on a "Western–Eastern" continuum.
+not a single position on a "Western-Eastern" continuum.
 
 Hofstede's theoretical claims can be stated as propositions:
 
@@ -190,14 +190,14 @@ Hofstede's theoretical claims can be stated as propositions:
   parsimoniously by a small number of independent value dimensions.
 - **P2 (Stability).** Countries' *relative* positions on these dimensions change
   slowly, because values are acquired in childhood and reproduced by
-  institutions; absolute levels may drift as societies modernise
+  institutions. Absolute levels may drift as societies modernise
   [@hofstede2001].
 - **P3 (Institutional correlates).** Dimension scores covary with national
-  institutions — for example, power distance with centralisation of authority,
+  institutions: for example, power distance with centralisation of authority,
   individualism with national wealth, uncertainty avoidance with the density of
   rules and laws [@hofstede2001; @hofstede2010].
 - **P4 (Fit).** Management practices are more effective when they fit the cultural
-  profile of the setting in which they are used; imported practices that clash
+  profile of the setting in which they are used. Imported practices that clash
   with local values are resisted or reinterpreted.
 
 ### Evidence and extensions
@@ -208,7 +208,7 @@ literature has learned. @kirkman2006 reviewed a quarter-century of empirical wor
 that used the framework. They classified studies into those treating culture as a
 main effect (culture predicts an outcome) and those treating it as a moderator
 (culture changes the strength of another relationship), and they documented
-recurring problems: heavy concentration on individualism–collectivism, frequent
+recurring problems: heavy concentration on individualism-collectivism, frequent
 use of country as a proxy for culture without measuring values, and inattention
 to within-country variation.
 
@@ -224,12 +224,12 @@ influences on behaviour, not a master variable.
 ::: {.debate}
 **A triumph of faith?** The sharpest critique is @mcsweeney2002, who argues that
 Hofstede's identification of *national* culture rests on questionable assumptions:
-that IBM employees were representative of their nations; that the occupational and
+that IBM employees were representative of their nations. That the occupational and
 organizational cultures of IBM were uniform across countries, so that national
-differences could be "isolated" by subtraction; that a survey of attitudes can
-reveal deep and enduring values; and that nations are the right unit of cultural
+differences could be "isolated" by subtraction. That a survey of attitudes can
+reveal deep and enduring values, and that nations are the right unit of cultural
 analysis. Hofstede replied that the IBM matched-sample design was a strength, not
-a weakness — representativeness matters less than comparability — and that the
+a weakness, representativeness matters less than comparability, and that the
 dimensions have been validated by many later replications with other populations
 [@hofstede2001; @hofstede2011]. The debate is not resolved, but it has changed
 practice: careful researchers now measure values directly, test for
@@ -240,7 +240,7 @@ among several [@kirkman2006; @tung2010].
 ### Cultural distance
 
 The most influential derivative of Hofstede's work in strategy is the construct
-of **cultural distance** — how different the culture of a foreign market is from
+of **cultural distance**: how different the culture of a foreign market is from
 that of a firm's home country. @kogut1988 proposed an index that combines the four
 original dimensions, standardising each by its variance across countries:
 
@@ -249,8 +249,8 @@ $$CD_j \;=\; \frac{1}{4}\sum_{i=1}^{4} \frac{\left(I_{ij}-I_{iu}\right)^2}{V_i},
 where $I_{ij}$ is country $j$'s score on dimension $i$, $I_{iu}$ is the home
 country's score (the United States in the original study), and $V_i$ is the
 variance of dimension $i$. Kogut and Singh showed that, for entries into the
-United States, greater cultural distance — and higher uncertainty avoidance in
-the investor's home country — made firms more likely to choose joint ventures or
+United States, greater cultural distance, and higher uncertainty avoidance in
+the investor's home country, made firms more likely to choose joint ventures or
 greenfield investments over acquisitions. The intuition is that acquiring an
 existing firm means managing its culture, which is costly when that culture is
 unfamiliar. The idea complements the Uppsala internationalization model, in which
@@ -275,17 +275,17 @@ tibble::tibble(
 ) |>
   filter(Country != "United States") |>
   arrange(`Kogut-Singh index`) |>
-  book_table(caption = "Illustrative Kogut-Singh cultural distance from the United States, computed from the four original Hofstede indices. Variances are taken across these six countries only; published studies use the variance across the full country sample, so the index values here are for illustration.")
+  book_table(caption = "Illustrative Kogut-Singh cultural distance from the United States, computed from the four original Hofstede indices. Variances are taken across these six countries only. Published studies use the variance across the full country sample, so the index values here are for illustration.")
 ```
 
 ::: {.debate}
 **Is distance the right metaphor?** @shenkar2001 identified several "illusions" in
 the cultural-distance construct: *symmetry* (the distance from A to B is assumed
 equal to that from B to A, although a Swedish firm entering China may face
-different frictions than a Chinese firm entering Sweden); *stability* (distance is
-treated as fixed, although contact and convergence change it); *linearity* (each
-additional unit of distance is assumed to add the same difficulty); *causality*
-(culture is assumed to be the only source of difference that matters); and
+different frictions than a Chinese firm entering Sweden). *Stability* (distance is
+treated as fixed, although contact and convergence change it). *Linearity* (each
+additional unit of distance is assumed to add the same difficulty). *Causality*
+(culture is assumed to be the only source of difference that matters), and
 *discordance* (all differences are assumed to create friction, whereas some
 differences can be complementary). Shenkar called for measures of *cultural
 friction* that reflect the actual interaction between the two parties.
@@ -297,14 +297,14 @@ friction* that reflect the actual interaction between the two parties.
 **Entry mode and the Walmart Germany experience.** Walmart entered Germany in the
 late 1990s by acquiring two domestic hypermarket chains, Wertkauf and Interspar,
 and withdrew in 2006, selling its stores to Metro. Commentators frequently cite
-cultural mismatch — for example, the transfer of American service rituals such as
-store greeters and scripted friendliness — as a contributing factor. A careful
+cultural mismatch, for example, the transfer of American service rituals such as
+store greeters and scripted friendliness, as a contributing factor. A careful
 reading of the public record suggests a multi-causal story: Walmart also faced a
 mature, price-competitive discount sector, regulatory constraints on opening hours
 and pricing, a fragmented store base inherited through acquisition, and
 difficulties in labour relations. The case is therefore best used to illustrate
-Kogut and Singh's logic — acquisition requires managing an inherited
-organizational and national culture — rather than as proof that culture alone
+Kogut and Singh's logic, acquisition requires managing an inherited
+organizational and national culture, rather than as proof that culture alone
 determines success.
 :::
 
@@ -336,17 +336,17 @@ firm's prior international experience.
   categories more slowly, controlling for income and infrastructure.
 
 **Measures.** Country scores from @hofstede2010 (cite the edition and note
-which countries are estimated); Hofstede's Values Survey Module administered to
-one's own sample; Kogut–Singh or Euclidean distance indices; individual-level
+which countries are estimated). Hofstede's Values Survey Module administered to
+one's own sample. Kogut-Singh or Euclidean distance indices. Individual-level
 value scales when the hypothesis is about individuals.
 
-**Designs.** Multilevel models with individuals nested in countries; matched
-samples across subsidiaries of one multinational; panel data on entry decisions;
-experiments with participants from several countries (with measurement-invariance
+**Designs.** Multilevel models with individuals nested in countries. Matched
+samples across subsidiaries of one multinational. Panel data on entry decisions.
+Experiments with participants from several countries (with measurement-invariance
 tests).
 
-**Data sources.** Firm-level foreign direct investment databases; multinational
-employee surveys; the World Values Survey and European Social Survey; GLOBE and
+**Data sources.** Firm-level foreign direct investment databases, multinational
+employee surveys. The World Values Survey and European Social Survey. GLOBE and
 Schwartz country scores as robustness checks.
 :::
 
@@ -367,18 +367,18 @@ distance between themselves and more powerful others and to preserve or increase
 the distance from less powerful others. Societies differ in how much inequality
 their members expect and accept.
 
-**Origins.** Social psychology of power; @mulder1977 formulated *power distance
-reduction theory*; @hofstede1980 adopted "power distance" as a dimension of
+**Origins.** Social psychology of power, @mulder1977 formulated *power distance
+reduction theory*, @hofstede1980 adopted "power distance" as a dimension of
 national culture.
 
-**Level of analysis.** Individual and group (Mulder); nation (Hofstede).
+**Level of analysis.** Individual and group (Mulder), nation (Hofstede).
 
-**Key constructs.** Power distance; power distance reduction tendency; acceptance
-of inequality; centralisation; voice; dependence on superiors.
+**Key constructs.** Power distance, power distance reduction tendency, acceptance
+of inequality, centralisation, voice, dependence on superiors.
 
 **Boundary conditions.** The reduction tendency is strongest when the distance to
-the more powerful is small and when the less powerful have relevant expertise;
-large gaps in expertise can make participation *increase* inequality.
+the more powerful is small and when the less powerful have relevant expertise.
+Large gaps in expertise can make participation *increase* inequality.
 
 **Related theories.** [Hofstede](#hofstede), [GLOBE](#globe),
 [Social exchange theory](#social-exchange-theory),
@@ -420,22 +420,22 @@ and high power-distance settings.
 tibble::tribble(
   ~Aspect, ~`Lower power distance`, ~`Higher power distance`,
   "Meaning of hierarchy", "Inequality of roles, established for convenience", "Reflects existential inequality between levels",
-  "Structure", "Decentralised; flatter pyramids", "Centralised; tall pyramids",
+  "Structure", "Decentralised, flatter pyramids", "Centralised, tall pyramids",
   "Subordinates expect", "To be consulted", "To be told what to do",
   "Ideal superior", "Resourceful democrat", "Benevolent autocrat, 'good father'",
   "Pay differentials", "Narrow range between top and bottom", "Wide range",
   "Status symbols and privileges", "Frowned upon", "Normal and popular",
-  "Disagreeing with the boss", "Accepted as part of the job", "Seen as disrespectful; raised indirectly if at all"
+  "Disagreeing with the boss", "Accepted as part of the job", "Seen as disrespectful, raised indirectly if at all"
 ) |>
   book_table(caption = "Power distance and the workplace (adapted from the descriptive contrasts in Hofstede, Hofstede, & Minkov, 2010).")
 ```
 
 Power distance has measurable consequences for organizational processes. In
 cross-national studies, @brockner2001b found that the beneficial effect of giving
-employees **voice** in decisions — a classic procedural-justice mechanism — was
+employees **voice** in decisions, a classic procedural-justice mechanism, was
 weaker in higher power-distance cultures. Where employees do not expect to be
 consulted, the opportunity to speak up matters less for their reactions to
-decisions. This does not mean that voice is unimportant in such settings; it means
+decisions. This does not mean that voice is unimportant in such settings. It means
 that the psychological meaning of voice, and thus its motivational effect,
 depends on cultural expectations.
 
@@ -446,7 +446,7 @@ organization [@morrison2011]. Two beliefs suppress it: that speaking up is
 *risky* (it may damage one's image or relationships) and that it is *futile*
 (nothing will change). Power distance raises both. Leaders, in turn, can lower
 them by being visibly open to input [@detert2007] and by building **psychological
-safety** — a shared belief that the team is safe for interpersonal risk-taking
+safety**: a shared belief that the team is safe for interpersonal risk-taking
 [@edmondson1999]. Figure \@ref(fig:fig-cul-voice) summarises the mechanism.
 
 ```{r fig-cul-voice, fig.cap = "Mechanism linking power distance to employee silence and error persistence. Leader openness, psychological safety, and structured protocols such as crew resource management moderate the path from hierarchy to perceived risk and futility of speaking up."}
@@ -454,7 +454,7 @@ mechanism_diagram(sprintf('
   P  [label = "Power distance\\n(cultural and\\norganizational)", %s]
   R  [label = "Perceived risk and\\nfutility of speaking up", %s]
   S  [label = "Silence / indirect\\ncommunication upward", %s]
-  E  [label = "Errors persist;\\nlearning slows", %s]
+  E  [label = "Errors persist, \\nlearning slows", %s]
   L  [label = "Leader openness &\\npsychological safety", %s]
   C  [label = "Structured protocols\\n(e.g., CRM, checklists)", %s]
   P -> R -> S -> E
@@ -468,7 +468,7 @@ mechanism_diagram(sprintf('
 ::: {.business-case}
 **Crew resource management in aviation.** From the late 1970s onward, accident
 investigations repeatedly identified failures of communication and coordination
-on the flight deck — junior crew members who noticed a problem but did not
+on the flight deck: junior crew members who noticed a problem but did not
 challenge the captain effectively. The industry's response, **crew resource
 management** (CRM), trains all crew members in assertive, structured
 communication, shared situational awareness, and decision-making, and it has
@@ -477,7 +477,7 @@ documented systematic national differences in pilots' attitudes toward command
 authority and argued that CRM training must be adapted to national,
 organizational, and professional cultures rather than exported unchanged
 [@helmreich1998]. Practical tools include standardised phrasing for escalating
-concerns and explicit invitations by captains for crew to speak up — design
+concerns and explicit invitations by captains for crew to speak up: design
 solutions that lower the risk of voice regardless of cultural background.
 :::
 
@@ -488,8 +488,8 @@ cultural deference in the cockpit. Aviation-safety specialists have criticised
 such single-cause narratives: official accident investigations typically identify
 multiple contributing factors (training, procedures, equipment, fatigue,
 oversight), and attributing outcomes to national culture alone risks both
-oversimplification and stereotyping. The defensible lesson is narrower — that
-hierarchy can suppress voice and that structured communication protocols help —
+oversimplification and stereotyping. The defensible lesson is narrower, that
+hierarchy can suppress voice and that structured communication protocols help,
 and it applies in any high-hierarchy setting, including hospitals, engineering
 teams, and financial trading desks.
 :::
@@ -520,12 +520,12 @@ employees to violate deeply held norms about deference.
   engage in more power-reduction attempts (e.g., coalition building) than
   employees several levels below.
 
-**Measures.** Individual power-distance orientation scales; voice and silence
-scales [@morrison2011]; psychological safety [@edmondson1999]; hierarchical
+**Measures.** Individual power-distance orientation scales, voice and silence
+scales [@morrison2011], psychological safety [@edmondson1999], hierarchical
 steepness (number of levels, pay ratios).
 
-**Designs.** Multilevel field surveys; vignette experiments manipulating leader
-openness; archival data on incident reporting in hospitals or airlines.
+**Designs.** Multilevel field surveys, vignette experiments manipulating leader
+openness, archival data on incident reporting in hospitals or airlines.
 :::
 
 ::: {.pitfall}
@@ -533,8 +533,8 @@ openness; archival data on incident reporting in hospitals or airlines.
 universally superior. Directive leadership can be efficient and legitimate where
 it is expected, and imposing participative practices without regard to local
 expectations can create confusion rather than empowerment. The managerial
-question is how to secure the *functions* of voice — error detection and
-learning — in ways that fit the local context.
+question is how to secure the *functions* of voice, error detection and
+learning, in ways that fit the local context.
 :::
 
 ## Individualism, Collectivism, and Self-Construal {#self-construal}
@@ -542,21 +542,21 @@ learning — in ways that fit the local context.
 ::: {.theory-card}
 **Core claim.** Cultures differ in how they define the self. In individualist
 cultures the self is construed as an autonomous entity defined by internal
-attributes (independent self-construal); in collectivist cultures it is construed
+attributes (independent self-construal). In collectivist cultures it is construed
 as embedded in relationships and defined by social roles (interdependent
 self-construal). These construals shape cognition, emotion, and motivation.
 
-**Origins.** Cultural psychology; @markus1991; cross-cultural psychology,
-@triandis1995; Hofstede's individualism dimension [@hofstede1980].
+**Origins.** Cultural psychology, @markus1991, cross-cultural psychology,
+@triandis1995, Hofstede's individualism dimension [@hofstede1980].
 
 **Level of analysis.** Individual (self-construal) and nation
-(individualism–collectivism).
+(individualism-collectivism).
 
-**Key constructs.** Independent self-construal; interdependent self-construal;
-in-group; horizontal versus vertical individualism and collectivism.
+**Key constructs.** Independent self-construal, interdependent self-construal,
+in-group, horizontal versus vertical individualism and collectivism.
 
 **Boundary conditions.** Both construals exist within every person and can be
-primed situationally; national averages conceal large individual differences.
+primed situationally. National averages conceal large individual differences.
 
 **Related theories.** [Hofstede](#hofstede),
 [Regulatory focus](#regulatory-focus-theory),
@@ -567,10 +567,10 @@ primed situationally; national averages conceal large individual differences.
 ### Core logic
 
 @markus1991 argued that much of Western psychology assumed an *independent*
-self — bounded, unique, and stable across contexts — and that this assumption does
+self, bounded, unique, and stable across contexts, and that this assumption does
 not describe how people in many cultures experience themselves. In an
 **interdependent** self, relationships and roles are not external influences on a
-pre-existing self; they are constitutive of it. The authors traced the
+pre-existing self. They are constitutive of it. The authors traced the
 consequences across three domains. *Cognition*: interdependent selves attend more
 to context and to others' perspectives. *Emotion*: they experience and value more
 "other-focused" emotions, such as sympathy and shame, relative to "ego-focused"
@@ -578,8 +578,8 @@ ones such as pride and anger. *Motivation*: they are motivated to fit in,
 maintain harmony, and meet obligations, rather than primarily to stand out and
 express inner attributes.
 
-@triandis1995 developed the cultural counterpart, **individualism–collectivism**,
-and added a second axis. *Horizontal* patterns emphasise equality; *vertical*
+@triandis1995 developed the cultural counterpart, **individualism-collectivism**,
+and added a second axis. *Horizontal* patterns emphasise equality, *vertical*
 patterns accept hierarchy. The result is four types: horizontal individualism
 (self-reliance without status-seeking, often associated with Scandinavia),
 vertical individualism (competition and achievement), horizontal collectivism
@@ -592,12 +592,12 @@ tibble::tribble(
   "Definition of self", "Separate from social context", "Connected with social context",
   "Structure", "Bounded, unitary, stable", "Flexible, variable across roles",
   "Important features", "Internal, private (abilities, thoughts, feelings)", "External, public (status, roles, relationships)",
-  "Tasks", "Be unique; express self; promote own goals", "Belong; fit in; promote others' goals",
+  "Tasks", "Be unique, express self, promote own goals", "Belong, fit in, promote others' goals",
   "Role of others", "Self-evaluation through social comparison", "Self-definition through relationships",
   "Basis of self-esteem", "Ability to express self and validate attributes", "Ability to adjust, restrain self, maintain harmony",
   "Typical regulatory emphasis", "Promotion (gains, aspirations)", "Prevention (duties, avoiding losses)"
 ) |>
-  book_table(caption = "Independent versus interdependent self-construal (adapted from Markus & Kitayama, 1991; last row from Lee, Aaker, & Gardner, 2000).")
+  book_table(caption = "Independent versus interdependent self-construal (adapted from Markus & Kitayama, 1991. Last row from Lee, Aaker, & Gardner, 2000).")
 ```
 
 ### Evidence and extensions
@@ -627,8 +627,8 @@ their own culture, so a person surrounded by collectivists may rate themselves a
 relatively individualistic. Finally, @henrich2010 showed that much behavioural
 science rests on samples from Western, educated, industrialised, rich, and
 democratic (WEIRD) societies, which are often outliers rather than typical of
-humanity. Together these critiques argue for multiple methods — scenario
-studies, behavioural measures, and priming experiments — rather than
+humanity. Together these critiques argue for multiple methods, scenario
+studies, behavioural measures, and priming experiments, rather than
 cross-national self-report comparisons alone.
 :::
 
@@ -642,18 +642,18 @@ culture and persuasion suggests a more nuanced conclusion. @han1994 found that
 advertisements in the United States more often used individualistic appeals
 (personal benefit, self-improvement) and those in Korea more often used
 collectivistic appeals (family, group harmony), and that experimentally,
-culturally matched appeals tended to be more persuasive — particularly for
+culturally matched appeals tended to be more persuasive, particularly for
 products typically used with others. Combined with the regulatory-focus evidence
 [@Lee_2000; @Aaker_2001], the practical rule is *standardise the brand's core
-promise and visual identity; adapt the appeal and framing*. A financial-services
+promise and visual identity. Adapt the appeal and framing*. A financial-services
 brand might emphasise "achieve your ambitions" (promotion, independent) in one
 market and "protect those who depend on you" (prevention, interdependent) in
 another, while keeping the same brand platform.
 :::
 
 ::: {.try-it}
-Collect six print or video advertisements for the same product category — say,
-cars or insurance — from two countries with different individualism scores. Code
+Collect six print or video advertisements for the same product category, say,
+cars or insurance, from two countries with different individualism scores. Code
 each advertisement for (a) individual versus group benefit, (b) promotion versus
 prevention framing, and (c) direct versus indirect claims. Do the patterns match
 the predictions of self-construal theory? What alternative explanations (category
@@ -665,19 +665,19 @@ conventions, regulation, brand positioning) could account for any differences?
 ::: {.theory-card}
 **Core claim.** Societal and organizational cultures can be described by nine
 dimensions measured separately as *practices* ("as is") and *values* ("should
-be"); cultures hold shared implicit theories of leadership that determine which
+be"). Cultures hold shared implicit theories of leadership that determine which
 leader behaviours are seen as effective.
 
 **Origins.** The Global Leadership and Organizational Behavior Effectiveness
-(GLOBE) research program, led by Robert House; @house2004.
+(GLOBE) research program, led by Robert House. @house2004.
 
-**Level of analysis.** Society and organization; leadership perceptions.
+**Level of analysis.** Society and organization, leadership perceptions.
 
-**Key constructs.** Cultural practices; cultural values; culturally endorsed
-implicit leadership theories (CLTs); societal clusters.
+**Key constructs.** Cultural practices, cultural values, culturally endorsed
+implicit leadership theories (CLTs), societal clusters.
 
 **Boundary conditions.** Data come from middle managers in three industries
-(financial services, food processing, telecommunications); generalisation to other
+(financial services, food processing, telecommunications). Generalisation to other
 populations is an assumption.
 
 **Related theories.** [Hofstede](#hofstede),
@@ -712,7 +712,7 @@ tibble::tribble(
   book_table(caption = "The nine GLOBE cultural dimensions (summarised from House et al., 2004) and their nearest Hofstede counterparts.")
 ```
 
-On leadership, GLOBE identified six broad leadership dimensions — charismatic/
+On leadership, GLOBE identified six broad leadership dimensions: charismatic/
 value-based, team-oriented, participative, humane-oriented, autonomous, and
 self-protective. Charismatic/value-based and team-oriented leadership were
 broadly endorsed as contributing to outstanding leadership across societies,
@@ -727,20 +727,20 @@ One of GLOBE's most discussed findings is that, for several dimensions, societie
 practice scores and value scores were *negatively* correlated across countries.
 Societies that reported high uncertainty avoidance or high power distance as
 current practice tended to say they wanted *less* of it. One interpretation is
-that values express aspirations formed in reaction to current conditions — a
+that values express aspirations formed in reaction to current conditions: a
 "grass is greener" effect.
 
 ::: {.debate}
 **What did GLOBE measure?** @hofstede2006 argued that GLOBE's items, by asking
 respondents to describe their society or to state what it should be, captured
 researchers' categories rather than respondents' own values, and that the
-negative practice–value correlations suggest the "should be" items do not measure
+negative practice-value correlations suggest the "should be" items do not measure
 values in his sense. He reanalysed GLOBE's data and claimed that they could be
 reduced to dimensions resembling his own. @javidan2006 replied that GLOBE's
 theory-driven, multi-dimensional approach was more transparent and that
 practices and values are conceptually distinct constructs whose divergence is a
 finding, not an artefact. For researchers, the exchange is a reminder that the
-choice of framework is a measurement decision with substantive consequences; for
+choice of framework is a measurement decision with substantive consequences. For
 robustness, many studies now report results using both.
 :::
 
@@ -751,7 +751,7 @@ robustness, many studies now report results using both.
 services firm uses a single 360-degree feedback instrument worldwide, with
 "empowers others and invites dissent" as a core competency. GLOBE's findings
 suggest three adjustments. First, retain the competencies that are broadly
-endorsed — vision, integrity, and team-building — as global standards. Second,
+endorsed, vision, integrity, and team-building, as global standards. Second,
 treat participative behaviour as a *contingent* competency whose behavioural
 indicators are localised (for example, consulting privately before a meeting
 rather than inviting open dissent during it). Third, interpret ratings relative
@@ -767,17 +767,17 @@ values, each defined by its motivational goal, are arranged so that adjacent
 values are compatible and opposing values conflict. Individuals and cultures
 differ in their *priorities*, not in the *structure*.
 
-**Origins.** Social psychology; @schwartz1992, based on surveys in 20
-countries; extended to culture-level value orientations in @schwartz1999.
+**Origins.** Social psychology. @schwartz1992, based on surveys in 20
+countries. Extended to culture-level value orientations in @schwartz1999.
 
 **Level of analysis.** Individual (basic values) and nation (cultural value
 orientations).
 
-**Key constructs.** Ten basic values; four higher-order values (openness to change,
-conservation, self-enhancement, self-transcendence); compatibility and conflict
+**Key constructs.** Ten basic values, four higher-order values (openness to change,
+conservation, self-enhancement, self-transcendence), compatibility and conflict
 among values.
 
-**Boundary conditions.** The structure is a *continuum*; value boundaries are
+**Boundary conditions.** The structure is a *continuum*, value boundaries are
 conventions. Value priorities predict behaviour most strongly when values are
 activated and relevant to the choice.
 
@@ -794,7 +794,7 @@ is the **motivational goal** they express. Ten such goals were identified (Table
 pursuing any value has psychological, practical, and social consequences that
 may conflict or be compatible with pursuing others. Achievement and benevolence,
 for example, can conflict, since pursuing personal success may obstruct actions
-that enhance the welfare of others; conformity and tradition are compatible,
+that enhance the welfare of others. Conformity and tradition are compatible,
 since both subordinate the self to social expectations.
 
 ```{r tab-cul-schwartz}
@@ -819,7 +819,7 @@ organise the circle: **openness to change versus conservation** (independence an
 novelty versus order and resistance to change) and **self-enhancement versus
 self-transcendence** (pursuit of one's own interests versus concern for others).
 
-```{r fig-cul-schwartz, fig.cap = "Schematic of Schwartz's (1992) circular value structure. Adjacent values are motivationally compatible; values on opposite sides conflict. The outer ring shows the four higher-order values; hedonism straddles openness to change and self-enhancement. In Schwartz's original figure, tradition and conformity share one wedge (tradition on the outside); they are drawn side by side here for legibility.", fig.height = 6}
+```{r fig-cul-schwartz, fig.cap = "Schematic of Schwartz's (1992) circular value structure. Adjacent values are motivationally compatible, values on opposite sides conflict. The outer ring shows the four higher-order values. Hedonism straddles openness to change and self-enhancement. In Schwartz's original figure, tradition and conformity share one wedge (tradition on the outside). They are drawn side by side here for legibility.", fig.height = 6}
 vals <- tibble::tibble(
   value = c("Self-\ndirection", "Stimulation", "Hedonism", "Achievement", "Power",
             "Security", "Conformity", "Tradition", "Benevolence", "Universalism"),
@@ -846,7 +846,7 @@ ggplot() +
   coord_polar(theta = "x", start = 0) +
   scale_y_continuous(limits = c(0, 3.8)) +
   labs(title = "The circular structure of basic human values",
-       caption = "Schematic after Schwartz (1992); not data.") +
+       caption = "Schematic after Schwartz (1992), not data.") +
   theme_void() +
   theme(plot.title = element_text(face = "bold", colour = ink[["primary"]]),
         plot.caption = element_text(colour = ink[["muted"]], size = 8, hjust = 0))
@@ -856,7 +856,7 @@ At the cultural level, @schwartz1999 derived seven value orientations organised
 along three bipolar dimensions that describe how societies resolve basic problems:
 *embeddedness versus autonomy* (intellectual and affective), *hierarchy versus
 egalitarianism*, and *mastery versus harmony*. The cultural-level and
-individual-level structures are related but not identical — a further reminder
+individual-level structures are related but not identical: a further reminder
 that levels of analysis must be kept distinct.
 
 ### Evidence and applications
@@ -873,7 +873,7 @@ correlations around the circle.
 **Illustrative scenario: positioning and employer branding with the value
 circle.** A sustainable outdoor-apparel brand targets consumers high in
 universalism and self-direction. The value circle warns that messages invoking
-power and status — "be the envy of the trail" — sit on the opposite side and may
+power and status, "be the envy of the trail", sit on the opposite side and may
 undermine credibility with the core segment, whereas adjacent values such as
 benevolence ("gear that lasts, so less ends up in landfill") and stimulation
 ("explore further") reinforce one another. The same logic applies to employer
@@ -884,9 +884,9 @@ signals unless the trade-off is made explicit.
 
 ::: {.research-toolkit}
 **Using Schwartz's theory in research.** Measure values with the Schwartz Value
-Survey or the Portrait Values Questionnaire; centre scores within person to
-capture *priorities*; test circumplex predictions with the full set of ten values
-rather than cherry-picking one; at the country level, use Schwartz's cultural
+Survey or the Portrait Values Questionnaire. Centre scores within person to
+capture *priorities*. Test circumplex predictions with the full set of ten values
+rather than cherry-picking one. At the country level, use Schwartz's cultural
 orientation scores as an alternative to Hofstede for robustness checks.
 :::
 
@@ -894,21 +894,21 @@ orientation scores as an alternative to Hofstede for robustness checks.
 
 ::: {.theory-card}
 **Core claim.** Cultures differ in the strength of their social norms and their
-tolerance of deviance. **Tight** cultures have strong norms and sanction deviance;
-**loose** cultures have weaker norms and greater latitude. Tightness is an adaptive
+tolerance of deviance. **Tight** cultures have strong norms and sanction deviance.
+**Loose** cultures have weaker norms and greater latitude. Tightness is an adaptive
 response to ecological and historical threats that require coordination.
 
-**Origins.** Cultural psychology; @gelfand2011, a 33-nation study building on
-earlier anthropological ideas; extended to U.S. states in @harrington2014;
+**Origins.** Cultural psychology, @gelfand2011, a 33-nation study building on
+earlier anthropological ideas, extended to U.S. states in @harrington2014,
 popularised in @gelfand2018.
 
 **Level of analysis.** Nation, state, organization, and the everyday situation.
 
-**Key constructs.** Strength of norms; tolerance of deviance; ecological and
-historical threat; situational constraint; self-regulation.
+**Key constructs.** Strength of norms, tolerance of deviance, ecological and
+historical threat, situational constraint, self-regulation.
 
 **Boundary conditions.** Tightness is distinct from collectivism and power
-distance; tightness can be domain-specific (e.g., tight in workplace norms, loose
+distance. Tightness can be domain-specific (e.g., tight in workplace norms, loose
 in leisure).
 
 **Related theories.** [Hofstede](#hofstede), [Social norms](#social-norms),
@@ -919,8 +919,8 @@ in leisure).
 
 @gelfand2011 asked respondents in 33 nations how clear and pervasive social norms
 were in their society and how much deviance was tolerated, and combined the
-answers into a tightness–looseness score. Tightness was associated with a
-history of ecological and human-made threats — higher population density,
+answers into a tightness-looseness score. Tightness was associated with a
+history of ecological and human-made threats: higher population density,
 resource scarcity, territorial threats, natural disasters, and pathogen
 prevalence. The theoretical argument is functional: when threats are severe,
 groups that coordinate effectively survive, and strong norms are a coordination
@@ -929,11 +929,11 @@ governance, more media restrictions, stricter punishment), in everyday situation
 (which permit a narrower range of acceptable behaviour), and in individuals'
 psychology (stronger self-monitoring and impulse control).
 
-```{r fig-cul-tightloose, fig.cap = "Mechanism of cultural tightness-looseness (after Gelfand et al., 2011). Threats increase the need for coordination, which favours strong norms and low tolerance of deviance; tightness produces order and predictability but constrains openness and creativity."}
+```{r fig-cul-tightloose, fig.cap = "Mechanism of cultural tightness-looseness (after Gelfand et al., 2011). Threats increase the need for coordination, which favours strong norms and low tolerance of deviance. Tightness produces order and predictability but constrains openness and creativity."}
 mechanism_diagram(sprintf('
   T [label = "Ecological & historical\\nthreats (density, scarcity,\\ndisease, disasters, conflict)", %s]
   N [label = "Need for\\ncoordination", %s]
-  S [label = "Strong norms;\\nlow tolerance of deviance\\n(tightness)", %s]
+  S [label = "Strong norms, \\nlow tolerance of deviance\\n(tightness)", %s]
   O [label = "Order, predictability,\\nself-regulation", %s]
   C [label = "Lower openness,\\nnovelty, creativity", %s]
   I [label = "Institutions &\\nsocialisation", %s]
@@ -945,8 +945,8 @@ mechanism_diagram(sprintf('
 ```
 
 The trade-off is central. Tight cultures enjoy more order, synchrony, and
-self-control; loose cultures enjoy more openness, tolerance, and creativity, at
-the cost of more disorganisation. Neither pole is superior in general;
+self-control. Loose cultures enjoy more openness, tolerance, and creativity, at
+the cost of more disorganisation. Neither pole is superior in general.
 @gelfand2018 argues that extremes on either side carry costs. Within the United
 States, @harrington2014 found substantial variation among states, with tighter
 states concentrated in the South and looser states more often on the coasts, and
@@ -962,7 +962,7 @@ cultural tightness shaped success in this global creative work: tight-culture
 settings were less receptive to creative contributions from culturally distant
 outsiders. For firms using open innovation, the implication is that where
 contributors come from, and where the evaluating client sits, can shape which
-ideas succeed — independent of idea quality.
+ideas succeed: independent of idea quality.
 :::
 
 ::: {.business-case}
@@ -970,18 +970,18 @@ ideas succeed — independent of idea quality.
 whose plants run on detailed standard operating procedures and strict punctuality,
 acquires a loose-culture software start-up whose engineers value flexible hours
 and improvisation. Integration plans that impose the acquirer's rules wholesale
-are likely to provoke turnover among the engineers; plans that leave everything
+are likely to provoke turnover among the engineers. Plans that leave everything
 loose may fail to deliver the reliability the acquirer's customers expect.
-Tightness–looseness theory suggests a *differentiated* design — tight where
+Tightness-looseness theory suggests a *differentiated* design: tight where
 coordination failures are costly (security, safety, release processes) and loose
 where variation creates value (exploration, prototyping).
 :::
 
 ::: {.research-toolkit}
-**Using tightness–looseness in research.** Measure tightness with Gelfand et al.'s
-six-item scale at the individual level and aggregate after testing agreement;
-use country or state scores as moderators of norm-related outcomes (compliance,
-imitation, innovation); test whether tightness explains variance beyond
+**Using tightness-looseness in research.** Measure tightness with Gelfand et al.'s
+six-item scale at the individual level and aggregate after testing agreement.
+Use country or state scores as moderators of norm-related outcomes (compliance,
+imitation, innovation). Test whether tightness explains variance beyond
 collectivism and power distance, with which it is correlated but not identical.
 :::
 
@@ -998,7 +998,7 @@ intra- and inter-cultural negotiations and found that negotiators from low-conte
 cultures tended to exchange information directly, through questions and answers
 about priorities, whereas negotiators from high-context cultures tended to
 exchange information indirectly, by making and inferring from offers. Both
-routes can reach integrative agreements; problems arise when the two styles meet
+routes can reach integrative agreements. Problems arise when the two styles meet
 and each side misreads the other. @brett2007 synthesises such findings into
 practical advice for negotiating across cultures.
 
@@ -1017,12 +1017,12 @@ the role of devil's advocate, and explicitly rewarding dissent.
 ```{r tab-cul-practice}
 tibble::tribble(
   ~`Managerial task`, ~`Relevant theory`, ~`Key risk`, ~`Design response`,
-  "Choosing an entry mode", "Cultural distance", "Inherited culture of an acquired firm is hard to manage", "Joint venture or greenfield where distance is high; staged commitment",
-  "Global advertising", "Self-construal; regulatory focus", "Standardised appeal misfires", "Standardise brand core; adapt appeal and framing",
+  "Choosing an entry mode", "Cultural distance", "Inherited culture of an acquired firm is hard to manage", "Joint venture or greenfield where distance is high. Staged commitment",
+  "Global advertising", "Self-construal, regulatory focus", "Standardised appeal misfires", "Standardise brand core, adapt appeal and framing",
   "Cross-cultural negotiation", "High/low context", "Misreading direct vs. indirect information exchange", "Prepare both Q&A and offer-based strategies",
-  "Leading global teams", "GLOBE; power distance", "Silence from members who defer to hierarchy", "Asynchronous input; structured dissent",
+  "Leading global teams", "GLOBE, power distance", "Silence from members who defer to hierarchy", "Asynchronous input, structured dissent",
   "Post-merger integration", "Tightness-looseness", "Clash between rule-bound and improvisational units", "Tight where coordination is critical, loose elsewhere",
-  "Global HR practices", "Hofstede; Schwartz", "Incentives conflict with local values", "Localise incentive mix and feedback style"
+  "Global HR practices", "Hofstede, Schwartz", "Incentives conflict with local values", "Localise incentive mix and feedback style"
 ) |>
   book_table(caption = "From cultural theory to managerial design.")
 ```
@@ -1033,7 +1033,7 @@ Cross-cultural theory has matured through criticism. Five critiques deserve
 attention from anyone who uses these frameworks.
 
 1. **Nation as proxy for culture.** Countries contain multiple ethnic, regional,
-   religious, and class cultures; some cultural regions span several countries
+   religious, and class cultures. Some cultural regions span several countries
    [@mcsweeney2002; @tung2010].
 2. **Within-country variation.** Individual differences within countries are
    often larger than differences between country means, which limits what a
@@ -1048,7 +1048,7 @@ attention from anyone who uses these frameworks.
    from managerial or student samples may not generalise [@henrich2010].
 
 Current research responds to these critiques by combining multiple frameworks
-(Hofstede, GLOBE, Schwartz, tightness–looseness) as robustness checks, by using
+(Hofstede, GLOBE, Schwartz, tightness-looseness) as robustness checks, by using
 multilevel designs, by studying subnational culture (for example, U.S. states or
 Chinese provinces), and by turning from static "distance" to dynamic processes of
 cultural friction, learning, and adaptation [@shenkar2001; @tung2010].
@@ -1065,39 +1065,39 @@ individual level.
 ## Chapter Summary {#culture-summary}
 
 ::: {.key-takeaways}
-- Culture is a system of shared values, norms, and practices; dimensional theories
+- Culture is a system of shared values, norms, and practices. Dimensional theories
   describe *national* central tendencies, and applying them to individuals risks
   the **ecological fallacy** [@robinson1950; @hofstede2011].
-- **Hofstede's** six dimensions — power distance, individualism, masculinity,
-  uncertainty avoidance, long-term orientation, and indulgence — remain the most
+- **Hofstede's** six dimensions, power distance, individualism, masculinity,
+  uncertainty avoidance, long-term orientation, and indulgence, remain the most
   widely used framework, with modest but real predictive validity
   [@hofstede2010; @taras2010].
 - **Cultural distance** predicts entry-mode choices [@kogut1988], but the
   construct rests on simplifying assumptions of symmetry, stability, and
   linearity [@shenkar2001].
-- **Power distance** shapes whether people speak up; Mulder's reduction theory
+- **Power distance** shapes whether people speak up. Mulder's reduction theory
   and research on voice and psychological safety explain why hierarchy silences
   and how design can counteract it [@mulder1977; @edmondson1999; @detert2007].
 - **Independent and interdependent self-construals** shape cognition, emotion,
   and motivation, including promotion versus prevention focus
   [@markus1991; @Lee_2000].
 - **GLOBE** separates practices from values and links culture to implicit
-  leadership theories [@house2004]; **Schwartz** maps values onto a universal
+  leadership theories [@house2004]. **Schwartz** maps values onto a universal
   circle of compatibility and conflict [@schwartz1992].
-- **Tight cultures** trade openness for order; tightness emerges where threats
+- **Tight cultures** trade openness for order. Tightness emerges where threats
   demand coordination [@gelfand2011].
 :::
 
 ```{r tab-cul-summary}
 tibble::tribble(
   ~Framework, ~`Unit of analysis`, ~`Core constructs`, ~`Signature prediction`, ~`Typical business use`,
-  "Hofstede", "Nation", "Six value dimensions", "Practices that fit national values work better", "HR localisation; market segmentation",
-  "Cultural distance", "Country pair", "Standardised dimension differences", "Distance favours JVs and greenfield over acquisition", "Entry mode; M&A integration",
-  "Power distance theory", "Individual / nation", "Acceptance of inequality; reduction tendency", "Voice is weaker and less valued in high-PD settings", "Speak-up programs; safety-critical teams",
+  "Hofstede", "Nation", "Six value dimensions", "Practices that fit national values work better", "HR localisation, market segmentation",
+  "Cultural distance", "Country pair", "Standardised dimension differences", "Distance favours JVs and greenfield over acquisition", "Entry mode, M&A integration",
+  "Power distance theory", "Individual / nation", "Acceptance of inequality, reduction tendency", "Voice is weaker and less valued in high-PD settings", "Speak-up programs, safety-critical teams",
   "Self-construal", "Individual", "Independent vs. interdependent self", "Matched appeals persuade more", "Advertising appeals and framing",
-  "GLOBE", "Society / organization", "Nine dimensions; practices vs. values; CLTs", "Leader effectiveness depends on endorsed leadership prototypes", "Global leadership development",
-  "Schwartz", "Individual / nation", "Ten values on a circle", "Opposing values have opposite correlations", "Positioning; employer branding",
-  "Tightness-looseness", "Nation / state", "Norm strength; tolerance of deviance", "Tight cultures: order; loose: creativity", "Integration design; innovation sourcing"
+  "GLOBE", "Society / organization", "Nine dimensions, practices vs. values, CLTs", "Leader effectiveness depends on endorsed leadership prototypes", "Global leadership development",
+  "Schwartz", "Individual / nation", "Ten values on a circle", "Opposing values have opposite correlations", "Positioning, employer branding",
+  "Tightness-looseness", "Nation / state", "Norm strength, tolerance of deviance", "Tight cultures: order, loose: creativity", "Integration design, innovation sourcing"
 ) |>
   book_table(caption = "Comparison of the chapter's cultural frameworks.")
 ```
@@ -1112,7 +1112,7 @@ tibble::tribble(
    per-capita patent counts. What alternative explanations should be ruled out
    before concluding that individualism causes innovation? What individual-level
    evidence would strengthen the causal claim?
-3. Using the Kogut–Singh formula, compute the cultural distance between two
+3. Using the Kogut-Singh formula, compute the cultural distance between two
    countries of your choice. Then apply Shenkar's critique: in what ways might the
    *experienced* friction differ from the index?
 4. A U.S. hospital chain is opening a facility staffed largely by clinicians
@@ -1127,18 +1127,18 @@ tibble::tribble(
 
 ## Further Reading {#culture-reading}
 
-- @hofstede2011 — a concise, freely available overview of the six-dimension model
+- @hofstede2011: a concise, freely available overview of the six-dimension model
   by its author, including its history and intended uses.
-- @hofstede2010 — the most complete statement of the model, with country scores
+- @hofstede2010: the most complete statement of the model, with country scores
   and extensive discussion of implications for organizations.
-- @mcsweeney2002 — the most forceful critique of Hofstede's methodology; essential
+- @mcsweeney2002: the most forceful critique of Hofstede's methodology. Essential
   for understanding the framework's limits.
-- @taras2010 — a meta-analysis that quantifies how well cultural values predict
+- @taras2010: a meta-analysis that quantifies how well cultural values predict
   organizational outcomes.
-- @markus1991 — the classic statement of independent and interdependent
+- @markus1991: the classic statement of independent and interdependent
   self-construal and its psychological consequences.
-- @house2004 — the GLOBE study; read alongside @hofstede2006 and @javidan2006 for
+- @house2004: the GLOBE study. Read alongside @hofstede2006 and @javidan2006 for
   the debate it sparked.
-- @schwartz1992 — the foundational paper on the circular structure of values.
-- @gelfand2011 — a short, influential article introducing tightness–looseness at
+- @schwartz1992: the foundational paper on the circular structure of values.
+- @gelfand2011: a short, influential article introducing tightness-looseness at
   the national level.

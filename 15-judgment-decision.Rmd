@@ -5,8 +5,8 @@ standard economic model would regard as trivial. If merchants were to be allowed
 to charge card users more than cash customers, should the price difference be
 called a "credit card surcharge" or a "cash discount"? The two labels describe
 exactly the same prices, yet the industry insisted on the second
-[@thaler1980]. Its instinct was sound. Paying a surcharge feels like a loss;
-forgoing a discount feels like a missed gain, and people weigh losses more
+[@thaler1980]. Its instinct was sound. Paying a surcharge feels like a loss.
+Forgoing a discount feels like a missed gain, and people weigh losses more
 heavily than equivalent gains. The same insight explains why employees who are
 automatically enrolled in a retirement plan tend to stay enrolled, why a
 customer who has lived with a sofa for thirty days rarely returns it, and why
@@ -48,18 +48,18 @@ tibble::tribble(
 **Core claim.** Real decision makers have limited information, attention, and
 computational capacity. Instead of maximizing expected utility, they search
 sequentially and stop when they find an option that meets an aspiration level
-— they **satisfice**.
+: they **satisfice**.
 
-**Origins.** Economics, political science, and cognitive science;
-@simon1955 and @simon1956; developed for organizations by @cyert1963.
+**Origins.** Economics, political science, and cognitive science,
+@simon1955 and @simon1956, developed for organizations by @cyert1963.
 
 **Level of analysis.** Individual decision makers and organizations.
 
-**Key constructs.** Aspiration level; satisficing; sequential search; search
-costs; procedural (vs. substantive) rationality; task environment.
+**Key constructs.** Aspiration level, satisficing, sequential search, search
+costs, procedural (vs. substantive) rationality, task environment.
 
 **Boundary conditions.** Matters most when options are numerous, information
-is costly to gather, and outcomes are uncertain; least when options are few,
+is costly to gather, and outcomes are uncertain. Least when options are few,
 attributes are transparent, and computation is cheap.
 
 **Related theories.** [Heuristics and biases](#heuristics-biases),
@@ -73,7 +73,7 @@ attributes are transparent, and computation is cheap.
 By the early 1950s, economics had settled on a model of the decision maker as
 an agent with complete and consistent preferences who chooses the alternative
 that maximizes expected utility. @simon1955 did not dispute that people pursue
-goals; he disputed that they could possibly do so in the manner the model
+goals. He disputed that they could possibly do so in the manner the model
 assumed. Global rationality requires knowing all alternatives, the
 consequences of each, and the probabilities of those consequences, and then
 performing the computations needed to compare them. Simon proposed instead a
@@ -158,7 +158,7 @@ ggplot(sat, aes(aspiration, net, colour = cost_lab)) +
   labs(x = "Aspiration level (minimum acceptable value)", y = "Expected net payoff",
        colour = NULL, title = "Satisficing is adaptive when search is costly",
        subtitle = "Higher search costs favour lower aspiration levels",
-       caption = "Stylised simulation (3,000 replications per aspiration level; 50 options per search).")
+       caption = "Stylised simulation (3,000 replications per aspiration level. 50 Options per search).")
 ```
 
 ### Evidence and extensions
@@ -184,7 +184,7 @@ experience") and stop searching once a candidate clears them. Bounded
 rationality reframes the managerial question: rather than asking whether the
 chosen supplier was optimal, ask whether the threshold and the search budget
 were well calibrated to the cost of search and the variance of quality in the
-market. When the variance of quality is high, a longer search pays; when it is
+market. When the variance of quality is high, a longer search pays. When it is
 low, fast satisficing is efficient.
 :::
 
@@ -193,7 +193,7 @@ low, fast satisficing is efficient.
 decision rules should be evaluated relative to the decision maker's
 constraints and environment. A study that documents a departure from
 expected-utility maximization has not thereby shown that people are "boundedly
-rational" in Simon's sense; it must also show *why* the observed procedure is
+rational" in Simon's sense. It must also show *why* the observed procedure is
 a sensible response to limited information or computation.
 :::
 
@@ -204,16 +204,16 @@ a sensible response to limited information or computation.
 small number of heuristics. These heuristics are generally useful but produce
 systematic and predictable errors (biases).
 
-**Origins.** Cognitive psychology; @tversky1973 and @tversky1974; later
+**Origins.** Cognitive psychology, @tversky1973 and @tversky1974, later
 reformulated as **attribute substitution** by @kahneman2003.
 
 **Level of analysis.** Individual judgment.
 
-**Key constructs.** Representativeness; availability; anchoring and
-adjustment; base-rate neglect; conjunction fallacy; attribute substitution.
+**Key constructs.** Representativeness, availability, anchoring and
+adjustment, base-rate neglect, conjunction fallacy, attribute substitution.
 
 **Boundary conditions.** Biases are largest when judgments are intuitive,
-uncertain, and made without feedback; they shrink when information is
+uncertain, and made without feedback. They shrink when information is
 presented in natural frequencies, when incentives and expertise are aligned
 with accuracy, and when the task environment matches the heuristic's
 assumptions.
@@ -233,7 +233,7 @@ hard one. Table \@ref(tab:tab-jdm-heuristics) summarizes them.
 ```{r tab-jdm-heuristics}
 tibble::tribble(
   ~Heuristic, ~`Hard question`, ~`Easier substitute`, ~`Typical bias`, ~`Business illustration`,
-  "Representativeness", "How probable is it that A belongs to category B?", "How similar is A to the prototype of B?", "Base-rate neglect; conjunction fallacy; insensitivity to sample size", "Investors infer a great company from a great story, ignoring base rates of start-up failure",
+  "Representativeness", "How probable is it that A belongs to category B?", "How similar is A to the prototype of B?", "Base-rate neglect, conjunction fallacy, insensitivity to sample size", "Investors infer a great company from a great story, ignoring base rates of start-up failure",
   "Availability", "How frequent or likely is event X?", "How easily do instances of X come to mind?", "Overweighting vivid, recent, or publicized events", "Insurance demand rises after a widely reported disaster",
   "Anchoring and adjustment", "What is the value of quantity Q?", "Start from a salient number and adjust (insufficiently)", "Estimates biased toward arbitrary anchors", "List prices and first offers anchor negotiated prices"
 ) |>
@@ -244,7 +244,7 @@ Representativeness produces the **conjunction fallacy**, in which a detailed,
 coherent description is judged more probable than a more general one that
 contains it [@tversky1983]. Availability treats ease of recall as evidence of
 frequency [@tversky1973]. Anchoring lets even arbitrary numbers, such as the
-result of a spin of a wheel of fortune, shift estimates [@tversky1974]; see
+result of a spin of a wheel of fortune, shift estimates [@tversky1974]. See
 [Anchoring effect](#anchoring-effect).
 
 @kahneman2003 later unified these heuristics under a single mechanism,
@@ -271,12 +271,12 @@ effect in which partial ignorance improves inference [@goldstein2002].
 ```{r tab-jdm-programs}
 tibble::tribble(
   ~Dimension, ~`Heuristics and biases`, ~`Fast-and-frugal heuristics`,
-  "Key sources", "Tversky & Kahneman (1974); Kahneman (2003)", "Gigerenzer & Goldstein (1996); Gigerenzer & Gaissmaier (2011)",
+  "Key sources", "Tversky & Kahneman (1974), Kahneman (2003)", "Gigerenzer & Goldstein (1996), Gigerenzer & Gaissmaier (2011)",
   "Normative benchmark", "Probability theory and expected utility", "Ecological rationality: success in the actual environment",
   "View of heuristics", "Useful but error-prone shortcuts", "Adaptive tools that can outperform complex models",
   "Typical method", "Word problems revealing deviations from norms", "Simulation and prediction in real-world data",
-  "Characteristic finding", "Systematic biases (base-rate neglect, anchoring)", "Less-is-more effects; one-reason decisions",
-  "Managerial lesson", "De-bias decisions; use statistical aids", "Match simple rules to stable, predictable environments"
+  "Characteristic finding", "Systematic biases (base-rate neglect, anchoring)", "Less-is-more effects, one-reason decisions",
+  "Managerial lesson", "De-bias decisions, use statistical aids", "Match simple rules to stable, predictable environments"
 ) |>
   book_table(caption = "Two research programmes on heuristics.")
 ```
@@ -289,7 +289,7 @@ heuristics were too vaguely specified to be tested. @kahneman1996 replied that
 cognitive illusions are real and robust, that frequency formats reduce but do
 not eliminate them, and that their programme had never claimed people are
 generally irrational. Much of the disagreement concerns the benchmark. If the
-standard is coherence with probability theory, heuristics produce errors; if
+standard is coherence with probability theory, heuristics produce errors. If
 the standard is predictive accuracy in a particular environment, simple
 heuristics can be superior, especially when data are scarce and noisy
 [@gigerenzer2011]. A productive synthesis asks *which* heuristic is used,
@@ -310,33 +310,33 @@ heuristics can be superior, especially when data are scarce and noisy
   will predict supplier performance as accurately as a multi-attribute scoring
   model, but not in volatile environments.
 
-**Designs.** Vignette and incentive-compatible experiments; field data with
-exogenous anchors (e.g., random list prices, lottery numbers); out-of-sample
+**Designs.** Vignette and incentive-compatible experiments. Field data with
+exogenous anchors (e.g., random list prices, lottery numbers). Out-of-sample
 prediction contests comparing heuristics with statistical models.
 
-**Measures.** Deviation from Bayesian or actuarial benchmarks; anchoring
-indices; recall ease; cue-use patterns from process tracing.
+**Measures.** Deviation from Bayesian or actuarial benchmarks, anchoring
+indices, recall ease, cue-use patterns from process tracing.
 :::
 
 ## Prospect Theory {#prospect-theory}
 
 ::: {.theory-card}
 **Core claim.** People evaluate outcomes as gains and losses relative to a
-reference point; they are risk averse for gains, risk seeking for losses, and
+reference point. They are risk averse for gains, risk seeking for losses, and
 losses loom larger than gains. Probabilities are transformed into decision
 weights that overweight small probabilities and underweight moderate and
 large ones.
 
-**Origins.** Psychology and economics; @kahneman1979; cumulative version in
-@tversky1992; framing in @tversky1981 and @kahneman1984.
+**Origins.** Psychology and economics, @kahneman1979, cumulative version in
+@tversky1992, framing in @tversky1981 and @kahneman1984.
 
 **Level of analysis.** Individual choice, with aggregate implications for
 markets (finance, insurance, labour, pricing).
 
-**Key constructs.** Reference point; value function; loss aversion (λ);
-diminishing sensitivity; probability weighting; framing; editing.
+**Key constructs.** Reference point, value function, loss aversion (λ),
+diminishing sensitivity, probability weighting, framing, editing.
 
-**Boundary conditions.** Requires an identifiable reference point; loss
+**Boundary conditions.** Requires an identifiable reference point. Loss
 aversion is weaker or absent for goods held for exchange, such as money spent
 in routine transactions [@novemsky2005].
 
@@ -358,7 +358,7 @@ people simplify choices by discarding components that alternatives share,
 which makes choices sensitive to how a problem is decomposed. To account for
 these patterns, they proposed a two-phase model. In an **editing** phase,
 prospects are coded as gains or losses relative to a reference point and
-simplified; in an **evaluation** phase, a value function and a probability
+simplified. In an **evaluation** phase, a value function and a probability
 weighting function are combined to rank the edited prospects.
 
 @tversky1992 extended the theory to **cumulative prospect theory**, which
@@ -404,7 +404,7 @@ ggplot(vf, aes(x, v, colour = domain)) +
   scale_colour_manual(values = c(Gains = pal[["blue"]], Losses = pal[["orange"]])) +
   labs(x = "Outcome relative to reference point (x)", y = "Subjective value v(x)", colour = NULL,
        title = "Losses loom larger than gains",
-       caption = "Function plotted from published parameter estimates (Tversky & Kahneman, 1992); not new data.")
+       caption = "Function plotted from published parameter estimates (Tversky & Kahneman, 1992). Not new data.")
 ```
 
 The **probability weighting function** maps objective probabilities $p$ into
@@ -435,7 +435,7 @@ ggplot(pw, aes(p, w, colour = domain)) +
   scale_y_continuous(labels = scales::percent) +
   labs(x = "Objective probability p", y = "Decision weight w(p)", colour = NULL,
        title = "The inverse-S probability weighting function",
-       caption = "Function plotted from published parameter estimates (Tversky & Kahneman, 1992); not new data.")
+       caption = "Function plotted from published parameter estimates (Tversky & Kahneman, 1992). Not new data.")
 ```
 
 Combining the two functions produces the **fourfold pattern of risk
@@ -446,8 +446,8 @@ tickets.
 ```{r tab-jdm-fourfold}
 tibble::tribble(
   ~` `, ~Gains, ~Losses,
-  "High probability", "Risk aversion (accept a sure gain below the gamble's expected value; e.g., settling a strong lawsuit)", "Risk seeking (gamble to avoid a sure loss; e.g., holding a losing stock)",
-  "Low probability", "Risk seeking (lotteries; long-shot bets)", "Risk aversion (insurance; extended warranties)"
+  "High probability", "Risk aversion (accept a sure gain below the gamble's expected value. e.g., settling a strong lawsuit)", "Risk seeking (gamble to avoid a sure loss. e.g., holding a losing stock)",
+  "Low probability", "Risk seeking (lotteries, long-shot bets)", "Risk aversion (insurance, extended warranties)"
 ) |>
   book_table(caption = "The fourfold pattern of risk attitudes implied by cumulative prospect theory (Tversky & Kahneman, 1992).")
 ```
@@ -470,7 +470,7 @@ The theory's main propositions follow:
 
 The canonical demonstration of P5 is the "Asian disease" problem
 [@tversky1981]. When a public-health programme is described in terms of lives
-saved, a majority of respondents choose the certain option; when the same
+saved, a majority of respondents choose the certain option. When the same
 programmes are described in terms of lives lost, a majority choose the risky
 option. @levin1998 distinguish three kinds of framing effect: **risky choice
 framing** (the Asian disease type), **attribute framing** (e.g., meat labelled
@@ -495,7 +495,7 @@ its predictions have been tested well beyond the laboratory [@barberis2013].
   [@pope2011].
 - **Pricing and fairness.** Consumers judge price increases that exploit a
   shift in demand as unfair, because the previous price acts as a reference
-  transaction; firms that violate such reference-based fairness norms risk
+  transaction. Firms that violate such reference-based fairness norms risk
   consumer resistance [@kahneman1986].
 - **Status quo bias.** Loss aversion helps explain why people disproportionately
   stick with current options [@samuelson1988; @kahneman1991].
@@ -521,7 +521,7 @@ $\lambda \approx 2$ as a useful average rather than a universal constant.
 this chapter is a direct application of loss aversion and framing
 [@thaler1980]. The same logic guides many pricing decisions. A "late payment
 fee" frames a price difference as a loss, while an "early payment discount"
-frames it as a forgone gain; the former is typically more motivating but also
+frames it as a forgone gain. The former is typically more motivating but also
 more likely to be perceived as unfair. Utilities, airlines, and subscription
 businesses therefore face a trade-off: loss frames increase compliance, but
 reference-based fairness norms [@kahneman1986] constrain how aggressively a
@@ -560,12 +560,12 @@ as a rule.
   investors with greater trading experience.
 
 **Designs.** Incentive-compatible lottery choices to estimate $\alpha$,
-$\lambda$, and $\gamma$; field experiments varying frames; panel data on price
-changes for estimating asymmetric reference-price effects; structural models
+$\lambda$, and $\gamma$. Field experiments varying frames. Panel data on price
+changes for estimating asymmetric reference-price effects. Structural models
 with reference points.
 
-**Measures.** Certainty equivalents; mixed-gamble acceptance rates;
-reference prices (last price paid, average past price, list price); realized
+**Measures.** Certainty equivalents, mixed-gamble acceptance rates,
+reference prices (last price paid, average past price, list price), realized
 gain and loss ratios.
 :::
 
@@ -584,17 +584,17 @@ where possible, vary it experimentally.
 **Core claim.** People demand more to give up an object they own than they
 would pay to acquire the same object.
 
-**Origins.** Behavioural economics; named by @thaler1980; definitive
-experiments by @kahneman1990; reviewed by @kahneman1991 and
+**Origins.** Behavioural economics, named by @thaler1980, definitive
+experiments by @kahneman1990, reviewed by @kahneman1991 and
 @morewedge2015.
 
-**Level of analysis.** Individual valuation; dyadic exchange (buyer–seller).
+**Level of analysis.** Individual valuation, dyadic exchange (buyer-seller).
 
-**Key constructs.** Willingness to accept (WTA); willingness to pay (WTP);
-ownership; reference price; loss aversion; transaction disutility.
+**Key constructs.** Willingness to accept (WTA), willingness to pay (WTP),
+ownership, reference price, loss aversion, transaction disutility.
 
 **Boundary conditions.** Weak or absent for goods held for resale or exchange
-(money, tokens, inventory) and among experienced traders; sensitive to
+(money, tokens, inventory) and among experienced traders. Sensitive to
 elicitation procedures [@plott2005].
 
 **Related theories.** [Prospect theory](#prospect-theory),
@@ -626,9 +626,9 @@ and sellers focus on what they would forgo: sellers attend to the object,
 buyers to the money. @Weaver_2012 propose a **reference-price theory** in
 which the endowment effect reflects an aversion to *bad deals* rather than to
 losing the object itself. Sellers do not want to be "suckers" who sell for less
-than a salient reference price, such as the market price; buyers do not want
+than a salient reference price, such as the market price. Buyers do not want
 to pay more than the object is worth to them or more than they think it
-usually costs. On this account the WTA–WTP gap arises from **transaction
+usually costs. On this account the WTA-WTP gap arises from **transaction
 disutility** relative to reference prices, and it should vary with the
 information people have about those prices. @Weaver_2012 report evidence that
 the size of the gap changes with reference-price information in the ways the
@@ -641,7 +641,7 @@ mechanism_diagram(sprintf('
   L  [label = "Giving up the good\\ncoded as a loss\\n(loss aversion)", %s]
   R  [label = "Selling below a salient\\nreference price feels\\nlike a bad deal", %s]
   W  [label = "High willingness\\nto accept (WTA)", %s]
-  G  [label = "WTA-WTP gap;\\nlow trading volume", %s]
+  G  [label = "WTA-WTP gap, \\nlow trading volume", %s]
   M  [label = "Market price\\ninformation", %s]
   O -> L [label = " loss-aversion\\n account"]
   O -> R [label = " reference-price\\n account"]
@@ -653,7 +653,7 @@ mechanism_diagram(sprintf('
 ```
 
 ::: {.debate}
-**Is the endowment effect an artefact?** @plott2005 argued that WTA–WTP gaps
+**Is the endowment effect an artefact?** @plott2005 argued that WTA-WTP gaps
 can be produced by subjects' misconceptions about elicitation procedures and
 showed that, with extensive training, anonymity, and practice rounds, the gap
 for mugs could be eliminated in their experiments. Defenders reply that
@@ -702,14 +702,14 @@ separate mental accounts. Because money in different accounts is not treated
 as fungible, the framing and timing of gains, losses, and payments change
 choices.
 
-**Origins.** Behavioural economics and marketing; @thaler1980, @thaler1985,
+**Origins.** Behavioural economics and marketing, @thaler1980, @thaler1985,
 and @thaler1999.
 
-**Level of analysis.** Individual and household; firm pricing and promotion.
+**Level of analysis.** Individual and household, firm pricing and promotion.
 
-**Key constructs.** Mental accounts and budgets; hedonic editing; acquisition
-vs. transaction utility; coupling of payments and consumption; choice
-bracketing; fungibility.
+**Key constructs.** Mental accounts and budgets, hedonic editing, acquisition
+vs. transaction utility, coupling of payments and consumption, choice
+bracketing, fungibility.
 
 **Boundary conditions.** Strongest when money is labelled (gift cards, rebates,
 windfalls), when budgets are explicit, and when payment and consumption are
@@ -731,8 +731,8 @@ grouped affects their total subjective value. This yields four principles of
 ```{r tab-jdm-hedonic}
 tibble::tribble(
   ~Principle, ~`Situation`, ~`Prescription`, ~`Why (value function)`, ~`Business application`,
-  "Segregate gains", "Two gains", "Present them separately", "Concavity: v(x) + v(y) > v(x + y)", "Announce product benefits one by one; split a bonus into components",
-  "Integrate losses", "Two losses", "Combine them", "Convexity: v(-x) + v(-y) < v(-(x + y))", "All-inclusive pricing; bundled fees",
+  "Segregate gains", "Two gains", "Present them separately", "Concavity: v(x) + v(y) > v(x + y)", "Announce product benefits one by one, split a bonus into components",
+  "Integrate losses", "Two losses", "Combine them", "Convexity: v(-x) + v(-y) < v(-(x + y))", "All-inclusive pricing, bundled fees",
   "Cancel small losses", "Large gain, small loss", "Integrate the loss into the gain", "Small loss falls on the steep part of the loss curve", "Deduct fees from a refund rather than charging them separately",
   "Silver lining", "Large loss, small gain", "Segregate the small gain", "Small gain falls on the steep part of the gain curve", "Cash rebates on expensive purchases"
 ) |>
@@ -750,9 +750,9 @@ accounting to the reference-price account of the endowment effect
 [@Weaver_2012].
 
 @thaler1999 later organized the theory around three components: (1) how
-outcomes are perceived and experienced, including hedonic editing; (2) how
+outcomes are perceived and experienced, including hedonic editing. (2) How
 activities are assigned to specific accounts, including budgets for
-categories of spending; and (3) how frequently accounts are evaluated, which
+categories of spending, and (3) how frequently accounts are evaluated, which
 relates to **choice bracketing**. Budgeting can lead to underconsumption when a
 category budget is exhausted and to overconsumption of items that are not
 easily categorized [@heath1996].
@@ -761,7 +761,7 @@ easily categorized [@heath1996].
 
 @prelec1998 proposed that payments produce an immediate "pain of paying" and
 that consumers prefer to **decouple** payment from consumption. Prepaid
-vacations feel free at the time of consumption; per-use fees spoil
+vacations feel free at the time of consumption. Per-use fees spoil
 enjoyment. The flip side is **payment depreciation**: the psychological cost of
 a past payment fades over time. In a study of health-club members,
 @gourville1998 found that attendance was highest in the months immediately
@@ -797,11 +797,11 @@ such as shipping) can lower consumers' recalled total cost and increase demand
 - *H3.* Consumers will prefer an all-inclusive price to a partitioned price
   with the same total when the surcharge is large relative to the base price.
 
-**Designs.** Field experiments on promotion labels; transaction data around
-payment dates; scanner panels with windfalls such as rebates.
+**Designs.** Field experiments on promotion labels, transaction data around
+payment dates, scanner panels with windfalls such as rebates.
 
-**Measures.** Category spending; marginal propensity to consume out of labelled
-vs. unlabelled funds; usage relative to payment timing.
+**Measures.** Category spending, marginal propensity to consume out of labelled
+vs. unlabelled funds, usage relative to payment timing.
 :::
 
 ## Dual-Process Theory {#dual-process-theory}
@@ -811,18 +811,18 @@ vs. unlabelled funds; usage relative to payment timing.
 of processing: fast, autonomous **Type 1** processes and slow, effortful **Type
 2** processes that require working memory.
 
-**Origins.** Cognitive and social psychology; @stanovich2000 coined the System
-1 / System 2 labels; @evans2013 provide the canonical defence; popularized by
+**Origins.** Cognitive and social psychology, @stanovich2000 coined the System
+1 / System 2 labels, @evans2013 provide the canonical defence, popularized by
 @kahneman2011.
 
 **Level of analysis.** Individual cognition.
 
-**Key constructs.** Type 1 (intuitive) and Type 2 (reflective) processing;
-working memory; cognitive decoupling; default-interventionist architecture;
+**Key constructs.** Type 1 (intuitive) and Type 2 (reflective) processing,
+working memory, cognitive decoupling, default-interventionist architecture,
 cognitive reflection.
 
 **Boundary conditions.** Type 2 intervention requires capacity, motivation, and
-a cue that the intuitive response may be wrong; under time pressure, cognitive
+a cue that the intuitive response may be wrong. Under time pressure, cognitive
 load, or low motivation, Type 1 responses dominate.
 
 **Related theories.** [Heuristics and biases](#heuristics-biases),
@@ -844,7 +844,7 @@ features. Table \@ref(tab:tab-jdm-types) summarizes the distinction.
 ```{r tab-jdm-types}
 tibble::tribble(
   ~Feature, ~`Type 1 (intuitive)`, ~`Type 2 (reflective)`,
-  "Defining feature", "Does not require working memory; autonomous", "Requires working memory; cognitive decoupling and mental simulation",
+  "Defining feature", "Does not require working memory, autonomous", "Requires working memory, cognitive decoupling and mental simulation",
   "Typical correlates", "Fast, high capacity, parallel, often nonconscious", "Slow, capacity-limited, serial, conscious",
   "Basis", "Associations, experience, emotion", "Rules, abstraction, hypothetical thinking",
   "Relation to ability", "Largely independent of cognitive ability", "Correlated with cognitive ability and thinking dispositions",
@@ -861,10 +861,10 @@ doubt the default (Figure \@ref(fig:fig-jdm-dual)). A well-known individual
 difference measure is the Cognitive Reflection Test [@frederick2005]. Its
 best-known item asks: if a bat and a ball cost \$1.10 in total and the bat
 costs \$1.00 more than the ball, how much does the ball cost? The intuitive
-answer (10 cents) comes quickly to mind and is wrong; reaching the correct
+answer (10 cents) comes quickly to mind and is wrong. Reaching the correct
 answer (5 cents) requires noticing the error and checking.
 
-```{r fig-jdm-dual, fig.cap = "A default-interventionist model of dual processing. Type 1 processes produce a default response; Type 2 processes intervene only when capacity, motivation, and a conflict signal are present."}
+```{r fig-jdm-dual, fig.cap = "A default-interventionist model of dual processing. Type 1 processes produce a default response. Type 2 processes intervene only when capacity, motivation, and a conflict signal are present."}
 mechanism_diagram(sprintf('
   S  [label = "Decision\\nproblem", %s]
   T1 [label = "Type 1 processing\\n(fast, autonomous)", %s]
@@ -928,18 +928,18 @@ metacognitive experiences) as information when making judgments, asking
 implicitly "How do I feel about it?" The impact of a feeling depends on its
 perceived informational value.
 
-**Origins.** Social psychology; @schwarz1983; reviewed in @schwarz; consumer
+**Origins.** Social psychology, @schwarz1983, reviewed in @schwarz, consumer
 applications in @pham1998 and @pham2004 ("the logic of feeling"). Also known
 as the *affect-as-information* hypothesis.
 
 **Level of analysis.** Individual judgment.
 
-**Key constructs.** Mood; integral vs. incidental affect; misattribution;
-discounting; perceived relevance (representativeness) of feelings; processing
+**Key constructs.** Mood, integral vs. incidental affect, misattribution,
+discounting, perceived relevance (representativeness) of feelings, processing
 style.
 
 **Boundary conditions.** Feelings influence judgment when they are perceived
-as relevant to the target; their influence is reduced or eliminated when
+as relevant to the target. Their influence is reduced or eliminated when
 people attribute them to an irrelevant source.
 
 **Related theories.** [Processing fluency](#processing-fluency),
@@ -964,7 +964,7 @@ into question.
 
 - **P1.** People attend to their feelings as a source of information, and
   different feelings convey different information (e.g., a positive mood
-  signals a benign situation; fear signals threat).
+  signals a benign situation. Fear signals threat).
 - **P2.** The impact of a feeling depends on its **perceived informational
   value**. When a feeling is attributed to a source unrelated to the target,
   its influence is attenuated or eliminated (misattribution and discounting).
@@ -972,14 +972,14 @@ into question.
   attention, which is why incidental feelings are easily misread as
   reactions to the target.
 - **P4.** Feelings inform processing style. Negative affect signals a
-  problematic situation and fosters detail-oriented, systematic processing;
-  positive affect signals a benign situation and fosters reliance on
+  problematic situation and fosters detail-oriented, systematic processing.
+  Positive affect signals a benign situation and fosters reliance on
   heuristics and existing knowledge.
 - **P5.** Feelings are more likely to be used when they seem *representative*
   of and *relevant* to the target [@pham1998] and when other information is
   scarce or the judgment is made quickly [@greifeneder2011].
 
-```{r fig-jdm-fia, fig.cap = "The feelings-as-information mechanism. Incidental or integral feelings are consulted as information about the target; the effect disappears when the feeling is attributed to an irrelevant source."}
+```{r fig-jdm-fia, fig.cap = "The feelings-as-information mechanism. Incidental or integral feelings are consulted as information about the target. The effect disappears when the feeling is attributed to an irrelevant source."}
 mechanism_diagram(sprintf('
   F  [label = "Momentary feeling\\n(mood, emotion,\\nmetacognitive ease)", %s]
   Q  [label = "Implicit question:\\n\\"How do I feel\\nabout it?\\"", %s]
@@ -1005,7 +1005,7 @@ Feelings-as-information has been extended in three important directions.
    heuristic.
 2. **Risk and affect.** The "risk-as-feelings" hypothesis holds that emotional
    reactions to risky situations often diverge from cognitive assessments and
-   drive behaviour [@loewenstein2001]; the related **affect heuristic** proposes
+   drive behaviour [@loewenstein2001]. The related **affect heuristic** proposes
    that people consult an affective "pool" of positive and negative tags when
    judging risks and benefits [@slovic2007].
 3. **Consumer judgment.** @pham1998 showed that consumers rely on their
@@ -1045,16 +1045,16 @@ an irrelevant source, the feeling was being used as information
 itself a cue for judgment. Fluent processing is experienced as positive and
 increases judgments of liking, truth, familiarity, and confidence.
 
-**Origins.** Cognitive and social psychology; @jacoby1989 on fluency
-misattribution; @reber2004 on aesthetic pleasure; reviewed by @alter2009.
+**Origins.** Cognitive and social psychology, @jacoby1989 on fluency
+misattribution, @reber2004 on aesthetic pleasure, reviewed by @alter2009.
 
 **Level of analysis.** Individual judgment.
 
-**Key constructs.** Perceptual fluency; conceptual fluency; linguistic fluency;
-retrieval fluency; hedonic marking of fluency; prototypicality.
+**Key constructs.** Perceptual fluency, conceptual fluency, linguistic fluency,
+retrieval fluency, hedonic marking of fluency, prototypicality.
 
 **Boundary conditions.** Fluency effects depend on how the experience is
-interpreted; they are reduced when people attribute fluency to an irrelevant
+interpreted. They are reduced when people attribute fluency to an irrelevant
 source and can reverse when people hold a lay theory linking difficulty to
 value.
 
@@ -1068,11 +1068,11 @@ value.
 
 @reber2004 proposed that beauty is, in part, "in the perceiver's processing
 experience." Their account rests on four assumptions: objects differ in how
-fluently they can be processed; fluency is **hedonically marked**, so high
-fluency feels good; this positive feeling is used as information when people
-judge their liking for the object; and the impact of fluency depends on
+fluently they can be processed. Fluency is **hedonically marked**, so high
+fluency feels good. This positive feeling is used as information when people
+judge their liking for the object, and the impact of fluency depends on
 expectations and attributions. Features that make stimuli easier to
-process (symmetry, figure–ground contrast, clarity, repetition, and
+process (symmetry, figure-ground contrast, clarity, repetition, and
 prototypicality) should therefore increase aesthetic appreciation.
 
 Prototypicality offers a clean test. @winkielman2006 showed that prototypical
@@ -1092,10 +1092,10 @@ tibble::tribble(
   ~`Type of fluency`, ~`Source of ease`, ~`Illustrative effect`,
   "Perceptual", "Font legibility, contrast, presentation duration", "Hard-to-read instructions make a task seem more effortful (Song & Schwarz, 2008)",
   "Linguistic", "Pronounceability of names and words", "Firms with easy-to-pronounce ticker names performed better shortly after listing (Alter & Oppenheimer, 2006)",
-  "Conceptual", "Semantic priming; predictive contexts", "Brands encountered in congruent contexts are evaluated more favourably",
+  "Conceptual", "Semantic priming, predictive contexts", "Brands encountered in congruent contexts are evaluated more favourably",
   "Retrieval", "Ease of generating examples or arguments", "Generating few reasons to choose a brand can improve evaluations more than generating many (Wanke et al., 1997)",
   "Decision (preference)", "Ease of forming a preference", "Harder-to-read option descriptions increase choice deferral (Novemsky et al., 2007)",
-  "Memory (familiarity)", "Prior exposure; repetition", "Repeated names come to seem famous (Jacoby et al., 1989)"
+  "Memory (familiarity)", "Prior exposure, repetition", "Repeated names come to seem famous (Jacoby et al., 1989)"
 ) |>
   book_table(caption = "Sources and consequences of processing fluency (organized following Alter & Oppenheimer, 2009).")
 ```
@@ -1146,16 +1146,16 @@ information.
 such, but from processing that is *surprisingly* fluent relative to
 expectations. People attribute the unexpected fluency to prior experience.
 
-**Origins.** Cognitive psychology of memory; @whittlesea1993;
-@whittlesea1998; elaborated in @whittlesea2001a and @whittlesea2001b.
+**Origins.** Cognitive psychology of memory, @whittlesea1993,
+@whittlesea1998, elaborated in @whittlesea2001a and @whittlesea2001b.
 
 **Level of analysis.** Individual memory and judgment.
 
-**Key constructs.** Processing fluency; expectation; discrepancy (surprise);
-attribution to the past; feeling of familiarity.
+**Key constructs.** Processing fluency, expectation, discrepancy (surprise),
+attribution to the past, feeling of familiarity.
 
 **Boundary conditions.** The discrepancy must be attributed to the past
-rather than to an obvious current cause; when fluency is expected (as with a
+rather than to an obvious current cause. When fluency is expected (as with a
 close friend), it does not produce a feeling of familiarity.
 
 **Related theories.** [Processing fluency](#processing-fluency),
@@ -1187,7 +1187,7 @@ expectation and surprise play a causal role: fluent resolution of an
 uncertain context increases feelings of familiarity. Figure
 \@ref(fig:fig-jdm-dah) summarizes the mechanism.
 
-```{r fig-jdm-dah, fig.cap = "The discrepancy-attribution mechanism. Processing is continuously compared with context-based expectations; surprisingly fluent processing is attributed to prior experience and felt as familiarity."}
+```{r fig-jdm-dah, fig.cap = "The discrepancy-attribution mechanism. Processing is continuously compared with context-based expectations. Surprisingly fluent processing is attributed to prior experience and felt as familiarity."}
 mechanism_diagram(sprintf('
   S  [label = "Stimulus\\n(face, word, brand)", %s]
   P  [label = "Actual processing\\nfluency", %s]
@@ -1206,7 +1206,7 @@ mechanism_diagram(sprintf('
 ### Implications
 
 The discrepancy-attribution hypothesis sharpens the fluency account in a way
-that matters for practice. Fluency alone is not enough; what produces
+that matters for practice. Fluency alone is not enough. What produces
 familiarity, and the warm feelings that tend to accompany it, is fluency
 that exceeds expectations. Three implications follow for marketing and
 communication:
@@ -1230,12 +1230,12 @@ when it does not. *H2.* The familiarity advantage of a copycat package will be
 reduced when consumers are given an explicit reason for its ease of
 processing (e.g., told that it resembles a known brand).
 
-**Designs.** Recognition memory paradigms with lures that vary in fluency;
-manipulations of contextual expectation (predictive vs. non-predictive
-contexts); attribution manipulations.
+**Designs.** Recognition memory paradigms with lures that vary in fluency.
+Manipulations of contextual expectation (predictive vs. non-predictive
+contexts). Attribution manipulations.
 
-**Measures.** Hit and false-alarm rates; signal-detection parameters;
-subjective familiarity ratings; response times as a fluency index.
+**Measures.** Hit and false-alarm rates, signal-detection parameters,
+subjective familiarity ratings, response times as a fluency index.
 :::
 
 ## Choice Architecture and Defaults {#choice-architecture}
@@ -1247,14 +1247,14 @@ environment (defaults, ordering, framing, number of options, feedback)
 systematically shapes choices without restricting options or changing
 economic incentives.
 
-**Origins.** Behavioural economics and decision science; @thaler2008;
-defaults in @madrian2001 and @johnson2003; tools in @johnson2012.
+**Origins.** Behavioural economics and decision science, @thaler2008,
+defaults in @madrian2001 and @johnson2003, tools in @johnson2012.
 
-**Level of analysis.** Individual choice; organizational and public policy
+**Level of analysis.** Individual choice, organizational and public policy
 design.
 
-**Key constructs.** Choice architect; nudge; default; active choice; choice
-overload; decision aids; libertarian paternalism.
+**Key constructs.** Choice architect, nudge, default, active choice, choice
+overload, decision aids, libertarian paternalism.
 
 **Boundary conditions.** Defaults have less effect when preferences are strong
 and well-formed, when stakes are salient, and when the default is perceived
@@ -1279,7 +1279,7 @@ forced-choice condition producing rates close to the opt-out condition.
 
 Three mechanisms explain default effects [@dinner2011; @jachimowicz2019]:
 
-1. **Effort (ease).** Accepting the default requires no action; changing it
+1. **Effort (ease).** Accepting the default requires no action. Changing it
    requires time and attention.
 2. **Endorsement.** Decision makers infer that the default reflects the
    recommendation of the choice architect.
@@ -1303,7 +1303,7 @@ a default chosen for administrative convenience can lock employees into
 undersaving. The **Save More Tomorrow** programme [@thaler2004] addressed this
 by asking employees to precommit to allocating a portion of *future* salary
 increases to savings. Because contributions rose only when pay rose,
-take-home pay never fell, sidestepping loss aversion; participants' saving
+take-home pay never fell, sidestepping loss aversion. Participants' saving
 rates rose several-fold over the following years. Automatic enrollment and
 automatic escalation have since become widespread in employer-sponsored
 retirement plans.
@@ -1320,12 +1320,12 @@ options (e.g., translating attributes into more meaningful units).
 ```{r tab-jdm-tools}
 tibble::tribble(
   ~Principle, ~`What it means`, ~`Underlying theory`, ~`Business example`,
-  "Defaults", "Pre-select the option that is best for most people", "Status quo bias; endowment; endorsement", "Auto-enrollment in savings plans; green-energy tariffs as default",
-  "Expect error", "Design systems that anticipate and forgive mistakes", "Bounded rationality", "Undo buttons; reminders before a free trial converts",
+  "Defaults", "Pre-select the option that is best for most people", "Status quo bias, endowment, endorsement", "Auto-enrollment in savings plans, green-energy tariffs as default",
+  "Expect error", "Design systems that anticipate and forgive mistakes", "Bounded rationality", "Undo buttons, reminders before a free trial converts",
   "Give feedback", "Tell people how they are doing", "Learning under bounded rationality", "Real-time energy or spending dashboards",
-  "Understand mappings", "Help people translate choices into outcomes", "Evaluability; attribute substitution", "Total annual cost of ownership shown next to price",
-  "Structure complex choices", "Simplify and organize large choice sets", "Choice overload; satisficing", "Filters, curated bundles, recommended plans",
-  "Incentives", "Make costs and benefits salient", "Prospect theory; mental accounting", "Showing savings per month rather than per year"
+  "Understand mappings", "Help people translate choices into outcomes", "Evaluability, attribute substitution", "Total annual cost of ownership shown next to price",
+  "Structure complex choices", "Simplify and organize large choice sets", "Choice overload, satisficing", "Filters, curated bundles, recommended plans",
+  "Incentives", "Make costs and benefits salient", "Prospect theory, mental accounting", "Showing savings per month rather than per year"
 ) |>
   book_table(caption = "Principles of choice architecture (Thaler & Sunstein, 2008), with underlying theories and business examples.")
 ```
@@ -1378,8 +1378,8 @@ that defaults and frames be designed to help people achieve their *own* goals
 while preserving freedom of choice [@thaler2008]. Using the same tools to
 make cancellation difficult, to enrol customers in add-ons they would not
 choose, or to obscure total prices exploits bounded rationality for the
-firm's benefit. Such practices invite regulatory scrutiny and erode trust;
-they also violate the reference-based fairness norms customers apply to firms
+firm's benefit. Such practices invite regulatory scrutiny and erode trust.
+They also violate the reference-based fairness norms customers apply to firms
 [@kahneman1986].
 :::
 
@@ -1398,11 +1398,11 @@ they also violate the reference-based fairness norms customers apply to firms
   are difficult to compare on a common attribute.
 
 **Designs.** Randomized field experiments that vary defaults or the number of
-options; natural experiments from policy changes (e.g., auto-enrollment);
-regression discontinuity around eligibility dates.
+options. Natural experiments from policy changes (e.g., auto-enrollment).
+Regression discontinuity around eligibility dates.
 
-**Measures.** Opt-out rates; time spent on the choice; downstream outcomes
-(savings balances, retention, satisfaction); heterogeneity by preference
+**Measures.** Opt-out rates, time spent on the choice, downstream outcomes
+(savings balances, retention, satisfaction), heterogeneity by preference
 strength.
 :::
 
@@ -1412,12 +1412,12 @@ strength.
 - **Bounded rationality** replaces optimization with satisficing: decision
   makers search until an option meets an aspiration level, which can be
   adaptive when search is costly [@simon1955].
-- **Heuristics** substitute easy questions for hard ones; they produce
+- **Heuristics** substitute easy questions for hard ones. They produce
   systematic biases [@tversky1974] but can also be ecologically rational
   [@gigerenzer1996]. The two views differ mainly in their normative benchmark.
 - **Prospect theory** explains choices through reference dependence, loss
   aversion, diminishing sensitivity, and probability weighting
-  [@kahneman1979; @tversky1992]; framing changes choices by moving the
+  [@kahneman1979; @tversky1992]. Framing changes choices by moving the
   reference point.
 - The **endowment effect** reflects both loss aversion and an aversion to bad
   deals relative to reference prices [@kahneman1990; @Weaver_2012].
@@ -1428,7 +1428,7 @@ strength.
 - **Feelings-as-information**, **processing fluency**, and
   **discrepancy-attribution** explain how moods and the ease of processing are
   read as evidence about the world [@schwarz1983; @reber2004; @whittlesea1998].
-- **Choice architecture** applies these insights; defaults are its most
+- **Choice architecture** applies these insights. Defaults are its most
   powerful tool, but published effects of nudges and choice overload are more
   heterogeneous and smaller than early studies suggested
   [@johnson2003; @scheibehenne2010; @maier2022].
@@ -1437,16 +1437,16 @@ strength.
 ```{r tab-jdm-summary}
 tibble::tribble(
   ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
-  "Bounded rationality", "Satisficing against aspiration levels", "Search stops at the first acceptable option", "Search budgets; qualification thresholds",
+  "Bounded rationality", "Satisficing against aspiration levels", "Search stops at the first acceptable option", "Search budgets, qualification thresholds",
   "Heuristics and biases", "Attribute substitution", "Systematic deviations from probability norms", "De-biasing forecasts and evaluations",
   "Fast-and-frugal heuristics", "Ecological fit of simple rules", "Less-is-more effects", "Simple decision rules in stable environments",
-  "Prospect theory", "Reference dependence, loss aversion, probability weighting", "Risk aversion for gains, risk seeking for losses", "Pricing frames; loss-framed messaging; insurance",
-  "Endowment effect", "Ownership shifts reference point; aversion to bad deals", "WTA exceeds WTP", "Free trials; touch and try-on; return policies",
-  "Mental accounting", "Non-fungible accounts; hedonic editing", "Labelled money is spent differently", "Gift cards; rebates; bundled pricing",
+  "Prospect theory", "Reference dependence, loss aversion, probability weighting", "Risk aversion for gains, risk seeking for losses", "Pricing frames, loss-framed messaging, insurance",
+  "Endowment effect", "Ownership shifts reference point, aversion to bad deals", "WTA exceeds WTP", "Free trials, touch and try-on, return policies",
+  "Mental accounting", "Non-fungible accounts, hedonic editing", "Labelled money is spent differently", "Gift cards, rebates, bundled pricing",
   "Dual-process theory", "Type 1 defaults, Type 2 intervention", "Load and time pressure increase intuitive responses", "Friction and reflection cues in interfaces",
-  "Feelings-as-information", "Feelings used as evidence unless discounted", "Mood effects vanish under misattribution", "Atmospherics; timing of evaluations",
+  "Feelings-as-information", "Feelings used as evidence unless discounted", "Mood effects vanish under misattribution", "Atmospherics, timing of evaluations",
   "Processing fluency", "Ease of processing is hedonically marked", "Fluent stimuli are liked and believed", "Naming, design, readability",
-  "Discrepancy-attribution", "Surprising fluency attributed to the past", "False familiarity for unexpectedly fluent stimuli", "Brand recognition metrics; lookalike packaging",
+  "Discrepancy-attribution", "Surprising fluency attributed to the past", "False familiarity for unexpectedly fluent stimuli", "Brand recognition metrics, lookalike packaging",
   "Choice architecture", "Defaults, structure, framing", "Default options are disproportionately chosen", "Enrollment, subscriptions, product configuration"
 ) |>
   book_table(caption = "Comparison of the chapter's theories.")
@@ -1475,18 +1475,18 @@ tibble::tribble(
 
 ## Further Reading {#judgment-decision-reading}
 
-- @simon1955 — the founding statement of bounded rationality, still
+- @simon1955: the founding statement of bounded rationality, still
   remarkably current in its critique of global rationality.
-- @tversky1974 — the short *Science* article that launched the
+- @tversky1974: the short *Science* article that launched the
   heuristics-and-biases programme.
-- @gigerenzer2011 — a thorough review of the fast-and-frugal alternative and
+- @gigerenzer2011: a thorough review of the fast-and-frugal alternative and
   the concept of ecological rationality.
-- @kahneman1979 and @tversky1992 — the original and cumulative versions of
-  prospect theory; read together to see how the theory was formalized.
-- @thaler1999 — a lucid synthesis of mental accounting by its originator.
-- @evans2013 — the most careful defence of dual-process theory, with replies to
+- @kahneman1979 and @tversky1992: the original and cumulative versions of
+  prospect theory. Read together to see how the theory was formalized.
+- @thaler1999: a lucid synthesis of mental accounting by its originator.
+- @evans2013: the most careful defence of dual-process theory, with replies to
   the main criticisms.
-- @schwarz — an authoritative overview of feelings-as-information theory by its
+- @schwarz: an authoritative overview of feelings-as-information theory by its
   co-founder.
-- @thaler2008 — the book that turned choice architecture into a policy
-  movement; pair it with @maier2022 for a sober assessment of effect sizes.
+- @thaler2008: the book that turned choice architecture into a policy
+  movement. Pair it with @maier2022 for a sober assessment of effect sizes.

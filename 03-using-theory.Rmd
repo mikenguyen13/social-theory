@@ -3,7 +3,7 @@
 A subscription software company discovers that customers who use its
 collaboration feature in their first month are far less likely to cancel. The
 growth team proposes a simple plan: push every new customer into the feature.
-A data scientist asks a different question — *why* would the feature reduce
+A data scientist asks a different question: *why* would the feature reduce
 churn? If it creates switching costs (shared files are painful to move), forcing
 adoption should help. If it merely reveals customers who were already committed
 (teams that collaborate were always going to stay), forcing adoption will do
@@ -26,13 +26,13 @@ management.
 ```{r tab-use-glance}
 tibble::tribble(
   ~Task, ~`Core question`, ~`Key tools`, ~`Key sources`,
-  "From theory to hypotheses", "How does an abstract argument become a falsifiable prediction?", "Hypothesis-development paragraph; propositions vs. hypotheses", "Bacharach (1989); Whetten (1989)",
-  "Construct validity", "Does a measure capture the construct the theory names?", "Nomological network; convergent and discriminant validity", "Cronbach & Meehl (1955); Campbell & Fiske (1959)",
-  "Mediation and moderation", "Through what process, and under what conditions?", "Indirect effects; interactions; conditional process models", "Baron & Kenny (1986); Zhao et al. (2010); Hayes (2018)",
-  "Choosing among theories", "Which explanation survives a head-to-head test?", "Strong inference; competing predictions", "Platt (1964)",
-  "Theoretical contribution", "Does the work build theory, test it, or both?", "Contribution taxonomy; deduction, induction, abduction", "Colquitt & Zapata-Phelan (2007)",
-  "Causal identification", "Which variables must be controlled, and which must not?", "Directed acyclic graphs; back-door criterion", "Pearl (2009)",
-  "Research integrity", "Why do findings fail to replicate, and what helps?", "Preregistration; power; transparency", "Open Science Collaboration (2015); Simmons et al. (2011)"
+  "From theory to hypotheses", "How does an abstract argument become a falsifiable prediction?", "Hypothesis-development paragraph, propositions vs. hypotheses", "Bacharach (1989), Whetten (1989)",
+  "Construct validity", "Does a measure capture the construct the theory names?", "Nomological network, convergent and discriminant validity", "Cronbach & Meehl (1955), Campbell & Fiske (1959)",
+  "Mediation and moderation", "Through what process, and under what conditions?", "Indirect effects, interactions, conditional process models", "Baron & Kenny (1986), Zhao et al. (2010), Hayes (2018)",
+  "Choosing among theories", "Which explanation survives a head-to-head test?", "Strong inference, competing predictions", "Platt (1964)",
+  "Theoretical contribution", "Does the work build theory, test it, or both?", "Contribution taxonomy, deduction, induction, abduction", "Colquitt & Zapata-Phelan (2007)",
+  "Causal identification", "Which variables must be controlled, and which must not?", "Directed acyclic graphs, back-door criterion", "Pearl (2009)",
+  "Research integrity", "Why do findings fail to replicate, and what helps?", "Preregistration, power, transparency", "Open Science Collaboration (2015), Simmons et al. (2011)"
 ) |>
   book_table(caption = "Chapter at a glance: putting theory to work.")
 ```
@@ -42,12 +42,12 @@ tibble::tribble(
 Theory and evidence meet at the hypothesis. As Chapter \@ref(what-is-theory)
 explained, a **proposition** relates constructs and a **hypothesis** relates
 measured variables [@bacharach1989]. Moving from one to the other is a chain of
-translations — from the general theory to a proposition about the focal context,
-from constructs to variables, from variables to a research design — and each link
+translations, from the general theory to a proposition about the focal context,
+from constructs to variables, from variables to a research design, and each link
 can fail. Figure \@ref(fig:fig-use-ladder) shows the chain and the feedback loop
 by which evidence returns to revise the theory.
 
-```{r fig-use-ladder, fig.cap = "The ladder from theory to evidence. Each step translates the previous one into a more concrete claim; evidence feeds back to the theory, strengthening, bounding, or revising it."}
+```{r fig-use-ladder, fig.cap = "The ladder from theory to evidence. Each step translates the previous one into a more concrete claim. Evidence feeds back to the theory, strengthening, bounding, or revising it."}
 mechanism_diagram(sprintf('
   T [label = "General theory\\n(e.g., signaling theory)", %s]
   P [label = "Proposition\\n(construct level,\\nfocal context)", %s]
@@ -128,7 +128,7 @@ selling more.
 > are more likely to have sound security, lowering perceived risk and shortening
 > procurement reviews. Because the signal's value lies in closing an information
 > gap, its effect should be strongest when buyers have little other information
-> about the vendor — that is, for vendors with short track records — and weaker
+> about the vendor, that is, for vendors with short track records, and weaker
 > for established vendors whose reputation already conveys similar information
 > [@bergh2014].
 >
@@ -145,9 +145,9 @@ mechanism to a measurable outcome (opportunity-to-contract conversion), states a
 theoretically derived boundary condition, and produces a hypothesis pair that
 could fail in a specific way. It also suggests the right test: the theory implies
 a causal effect, so the design must address the possibility that better-run
-start-ups both certify and sell more — for example, by exploiting variation in
+start-ups both certify and sell more, for example, by exploiting variation in
 the timing of certification within firms or buyer-side requirements that change
-exogenously. H2 is a **moderation** hypothesis; the remainder of this chapter
+exogenously. H2 is a **moderation** hypothesis. The remainder of this chapter
 shows how such hypotheses are modelled.
 
 ### Direction, form, and magnitude
@@ -159,9 +159,9 @@ or an inverted U in which moderate levels of a variable are optimal. Testing suc
 claims requires more than a significant squared term. @haans2016 show that an
 inverted-U hypothesis should be supported by evidence that the slope is
 significantly positive at the low end of the observed range and significantly
-negative at the high end, and that the turning point lies within that range;
-otherwise the data may simply reflect a monotonic relationship with diminishing
-returns. Theories can also imply **magnitudes** — for instance, that an effect
+negative at the high end, and that the turning point lies within that range.
+Otherwise the data may simply reflect a monotonic relationship with diminishing
+returns. Theories can also imply **magnitudes**: for instance, that an effect
 should be larger in one condition than another by a meaningful amount, or that an
 effect too small to matter economically would count against the theory even if
 statistically significant.
@@ -192,33 +192,33 @@ social science.
 
 ::: {.theory-card}
 **Core claim.** A construct's meaning is given by the network of lawful
-relationships — its **nomological network** — that link it to other constructs and
+relationships, its **nomological network**, that link it to other constructs and
 to observable measures. A measure is valid to the extent that it behaves as that
 network predicts.
 
-**Origins.** Psychometrics; @cronbach1955, extended by the multitrait–multimethod
+**Origins.** Psychometrics. @cronbach1955, extended by the multitrait-multimethod
 logic of @campbell1959.
 
 **Level of analysis.** Constructs and measures at any level (individual, team,
 firm, market).
 
-**Key constructs.** Construct validity; nomological network; convergent validity;
-discriminant validity; content validity; criterion validity.
+**Key constructs.** Construct validity, nomological network, convergent validity,
+discriminant validity, content validity, criterion validity.
 
 **Boundary conditions.** Requires a theory rich enough to generate predictions
-about a construct's relationships; weakly theorized constructs cannot be
+about a construct's relationships. Weakly theorized constructs cannot be
 validated this way.
 
-**Related theories.** Construct clarity [@suddaby2010]; measurement and
+**Related theories.** Construct clarity [@suddaby2010], measurement and
 validation procedures [@mackenzie2011].
 :::
 
 @cronbach1955 argued that when a construct cannot be defined by a single
 criterion, validation is necessarily theoretical: the researcher predicts how the
 measure should relate to other measures and tests those predictions. Construct
-validation and theory testing are therefore intertwined — a failed prediction may
+validation and theory testing are therefore intertwined: a failed prediction may
 indicate a poor measure, a wrong theory, or both. @campbell1959 operationalized
-part of this logic in the **multitrait–multimethod matrix**: measures of the same
+part of this logic in the **multitrait-multimethod matrix**: measures of the same
 construct obtained by different methods should converge (**convergent
 validity**), and measures of different constructs should be distinguishable even
 when obtained by the same method (**discriminant validity**). Contemporary
@@ -227,8 +227,8 @@ reflective and formative measurement models, are reviewed by @mackenzie2011.
 
 ::: {.business-case}
 **The Net Promoter Score as a construct-validity problem.** @reichheld2003
-proposed that a single question — how likely a customer is to recommend a company
-to a friend or colleague — captures customer loyalty well enough to predict
+proposed that a single question, how likely a customer is to recommend a company
+to a friend or colleague, captures customer loyalty well enough to predict
 company growth. The claim is, in effect, a nomological-network prediction: if the
 measure captures loyalty, it should predict growth at least as well as
 alternative loyalty and satisfaction measures. @keiningham2007 examined this
@@ -245,7 +245,7 @@ Mediation and moderation are the two most common ways of putting Whetten's *why*
 and *who/where/when* into a statistical model [@whetten1989]. A **mediator**
 answers *how* or *why* X affects Y: it is the mechanism through which the effect
 travels. A **moderator** answers *when* or *for whom*: it changes the strength or
-direction of the X–Y relationship. @baron1986 drew the distinction sharply in a
+direction of the X-Y relationship. @baron1986 drew the distinction sharply in a
 paper that became one of the most cited in the social sciences.
 
 ```{r tab-use-medmod}
@@ -254,10 +254,10 @@ tibble::tribble(
   "Theoretical question", "How or why does X affect Y?", "When, for whom, or under what conditions does X affect Y?",
   "Whetten element", "Why (mechanism)", "Who / where / when (boundary condition)",
   "Causal structure", "X -> M -> Y", "W changes the X -> Y relationship",
-  "Typical statistical test", "Indirect effect a x b with bootstrap confidence interval", "Interaction term X x W; simple slopes; Johnson-Neyman region",
+  "Typical statistical test", "Indirect effect a x b with bootstrap confidence interval", "Interaction term X x W, simple slopes, Johnson-Neyman region",
   "Signaling example", "Certification -> perceived risk -> contract signed", "Certification effect weaker for vendors with long track records",
-  "Key threat", "Confounding of the M -> Y path, even when X is randomized", "Low power to detect interactions; arbitrary spotlight values",
-  "Key sources", "Baron & Kenny (1986); Zhao et al. (2010)", "Aiken & West (1991); Spiller et al. (2013)"
+  "Key threat", "Confounding of the M -> Y path, even when X is randomized", "Low power to detect interactions, arbitrary spotlight values",
+  "Key sources", "Baron & Kenny (1986), Zhao et al. (2010)", "Aiken & West (1991), Spiller et al. (2013)"
 ) |>
   book_table(caption = "Mediation and moderation compared.")
 ```
@@ -267,19 +267,19 @@ tibble::tribble(
 Moderation is tested by including the product of the focal predictor and the
 moderator in a regression [@aiken1991]. Because the coefficient on the product
 term is rarely meaningful on its own, researchers probe the interaction by
-estimating **simple effects** — the effect of X at particular values of the
+estimating **simple effects**: the effect of X at particular values of the
 moderator. @spiller2013 distinguish **spotlight** analysis, which tests simple
 effects at chosen values (such as one standard deviation above and below the
 mean), from **floodlight** analysis, which reports the full range of moderator
 values over which the simple effect is statistically significant (the
-Johnson–Neyman region). Floodlight analysis avoids arbitrary spotlight choices and
+Johnson-Neyman region). Floodlight analysis avoids arbitrary spotlight choices and
 is especially useful when the moderator has meaningful units, such as years of
 operation.
 
 Figure \@ref(fig:fig-use-interaction) applies this logic to hypothesis H2 from the
 worked example, using simulated data.
 
-```{r fig-use-interaction, fig.cap = "Illustrative moderation (floodlight) analysis of the worked example. The effect of a security certification on contract conversion is large for young vendors and shrinks with track record; the shaded region marks track-record values for which the simple effect is significant at the 5 percent level (Johnson-Neyman region). Simulated data.", fig.height = 4.2}
+```{r fig-use-interaction, fig.cap = "Illustrative moderation (floodlight) analysis of the worked example. The effect of a security certification on contract conversion is large for young vendors and shrinks with track record. The shaded region marks track-record values for which the simple effect is significant at the 5 percent level (Johnson-Neyman region). Simulated data.", fig.height = 4.2}
 set.seed(2013)
 n <- 400
 sim <- data.frame(cert = rbinom(n, 1, 0.5), track = runif(n, 0, 10)) |>
@@ -306,17 +306,17 @@ ggplot(pred, aes(track, conv, colour = group)) +
   labs(x = "Vendor track record (years)", y = "Opportunity-to-contract conversion (%)",
        title = "A signal matters most where information is scarce",
        subtitle = "Fitted lines from a regression with a certification x track-record interaction",
-       caption = "Illustrative simulation (n = 400; set.seed(2013)); not empirical estimates.")
+       caption = "Illustrative simulation (n = 400, set.seed(2013)), not empirical estimates.")
 ```
 
 ### Mediation: testing the mechanism
 
 @baron1986 proposed a sequence of conditions for mediation: X must predict Y, X
-must predict M, M must predict Y controlling for X, and the X–Y relationship must
+must predict M, M must predict Y controlling for X, and the X-Y relationship must
 shrink when M is controlled. Later work showed that several of these steps are
 neither necessary nor sufficient. @zhao2010 argue that the single requirement for
-establishing mediation is a significant **indirect effect** — the product of the
-X → M path (*a*) and the M → Y path (*b*) — best tested with a bootstrap confidence
+establishing mediation is a significant **indirect effect**, the product of the
+X → M path (*a*) and the M → Y path (*b*), best tested with a bootstrap confidence
 interval rather than with the causal-steps procedure or the Sobel test. A
 significant total effect of X on Y is not required: an indirect effect can exist
 even when opposing mechanisms cancel out in the total effect. @hayes2018 provides
@@ -326,11 +326,11 @@ models** that combine mediation and moderation.
 ```{r tab-use-zhao}
 tibble::tribble(
   ~Pattern, ~`Indirect effect (a x b)`, ~`Direct effect (c')`, ~Interpretation,
-  "Complementary mediation", "Significant", "Significant, same sign as a x b", "The hypothesized mediator is one of several mechanisms; others may be omitted",
+  "Complementary mediation", "Significant", "Significant, same sign as a x b", "The hypothesized mediator is one of several mechanisms. Others may be omitted",
   "Competitive mediation", "Significant", "Significant, opposite sign", "An omitted mediator likely works in the opposite direction",
-  "Indirect-only mediation", "Significant", "Not significant", "Consistent with the hypothesized mediator; omitted mediators less likely",
-  "Direct-only non-mediation", "Not significant", "Significant", "The hypothesized mediator is not the mechanism; look for another",
-  "No-effect non-mediation", "Not significant", "Not significant", "Neither effect detected; theory or design may be flawed"
+  "Indirect-only mediation", "Significant", "Not significant", "Consistent with the hypothesized mediator, omitted mediators less likely",
+  "Direct-only non-mediation", "Not significant", "Significant", "The hypothesized mediator is not the mechanism. Look for another",
+  "No-effect non-mediation", "Not significant", "Not significant", "Neither effect detected, theory or design may be flawed"
 ) |>
   book_table(caption = "A typology of mediation outcomes, following Zhao, Lynch and Chen (2010).")
 ```
@@ -339,7 +339,7 @@ Figure \@ref(fig:fig-use-bootstrap) shows how a bootstrap test works in a
 simulated loyalty-programme study, where enrolment is hypothesized to raise
 spending by increasing customers' perceived switching costs.
 
-```{r fig-use-bootstrap, fig.cap = "Illustrative bootstrap test of an indirect effect. Enrolment in a loyalty programme (randomized) raises perceived switching costs, which raise annual spending. The histogram shows 2,000 bootstrap estimates of the indirect effect a x b; dashed lines mark the 95 percent percentile interval, which excludes zero. Simulated data.", fig.height = 3.8}
+```{r fig-use-bootstrap, fig.cap = "Illustrative bootstrap test of an indirect effect. Enrolment in a loyalty programme (randomized) raises perceived switching costs, which raise annual spending. The histogram shows 2,000 bootstrap estimates of the indirect effect a x b. Dashed lines mark the 95 percent percentile interval, which excludes zero. Simulated data.", fig.height = 3.8}
 set.seed(2010)
 n <- 300
 X <- rbinom(n, 1, 0.5)
@@ -362,7 +362,7 @@ ggplot(data.frame(ab = boots), aes(ab)) +
   annotate("text", x = 0, y = Inf, vjust = 1.5, hjust = 1.1, size = 3.3, colour = ink[["secondary"]], label = "zero") +
   labs(x = "Bootstrap estimate of the indirect effect (a x b)", y = "Bootstrap samples",
        title = "Mediation is established by the indirect effect",
-       caption = "Illustrative simulation (n = 300; 2,000 resamples; set.seed(2010)).")
+       caption = "Illustrative simulation (n = 300, 2,000 resamples, set.seed(2010)).")
 ```
 
 Mediation and moderation are often combined. In a **moderated mediation** model,
@@ -372,7 +372,7 @@ the indirect effect depends on the moderator [@preacher2007; @hayes2018]. Figure
 example: certification works by reducing buyers' perceived risk, and this first
 stage of the mechanism is weaker for vendors with long track records.
 
-```{r fig-use-modmed, fig.cap = "A first-stage moderated mediation model for the worked example. Track record moderates the effect of certification on perceived risk, so the indirect effect of certification on contract signing is conditional on track record (Preacher et al., 2007; Hayes, 2018)."}
+```{r fig-use-modmed, fig.cap = "A first-stage moderated mediation model for the worked example. Track record moderates the effect of certification on perceived risk, so the indirect effect of certification on contract signing is conditional on track record (Preacher et al., 2007, Hayes, 2018)."}
 mechanism_diagram(sprintf('
   X [label = "Security certification\\n(X)", %s]
   M [label = "Buyer perceived risk\\n(M)", %s]
@@ -407,9 +407,9 @@ are plausible. Under an *economic* account, points create switching costs that
 lock customers in. Under a *psychological* account, tier status (silver, gold,
 platinum) provides recognition that customers value for its own sake. The
 accounts imply different designs: if switching costs drive the effect, raising
-the cash value of points should matter; if status drives it, making tiers more
+the cash value of points should matter. If status drives it, making tiers more
 visible should matter even with unchanged point values. A sequence of randomized
-tests — manipulating point value in some markets and tier visibility in others —
+tests, manipulating point value in some markets and tier visibility in others,
 would identify which mechanism dominates far more convincingly than a survey-based
 mediation model, and would tell the retailer where to invest.
 :::
@@ -420,8 +420,8 @@ mediation model, and would tell the retailer where to invest.
 - *State the mechanism in words first*, then map each step to a path (a, b, c').
 - *Derive moderators from the mechanism*: ask which conditions would strengthen or
   disable each step, and which path (first or second stage) the moderator acts on.
-- *Choose designs that match the claim*: randomize X where possible; consider
-  manipulating M in a follow-up study; use longitudinal data so that M is measured
+- *Choose designs that match the claim*: randomize X where possible. Consider
+  manipulating M in a follow-up study. Use longitudinal data so that M is measured
   between X and Y.
 - *Report* indirect effects with bootstrap intervals, simple effects across the
   moderator's range (floodlight), and the index of moderated mediation where
@@ -434,10 +434,10 @@ mediation model, and would tell the retailer where to invest.
 
 Most business phenomena can be approached through more than one theory. Executive
 compensation can be studied through agency theory, tournament theory, or social
-comparison; a firm's decision to outsource through transaction cost economics or
+comparison. A firm's decision to outsource through transaction cost economics or
 capability-based reasoning. Choosing well requires matching the theory to the
-research question — its phenomenon, level of analysis, and the type of
-explanation sought — and, where theories compete, designing tests that can tell
+research question, its phenomenon, level of analysis, and the type of
+explanation sought, and, where theories compete, designing tests that can tell
 them apart.
 
 ### Matching theory to question
@@ -450,18 +450,18 @@ explain the main effect and another to explain its boundary conditions.
 ```{r tab-use-decision}
 tibble::tribble(
   ~`Research question`, ~`Candidate theory families`, ~Level, ~`Where in this book`,
-  "Why do some firms earn persistently superior returns?", "Resource-based theory; VRIO; dynamic capabilities", "Firm", "Ch. 4-5",
-  "Should the firm make, buy, or ally?", "Transaction cost economics; resource-based and knowledge-based views", "Transaction; firm", "Ch. 4, 6",
-  "How should owners monitor and pay executives?", "Agency theory; stewardship theory; upper echelons", "Dyad; top team", "Ch. 6",
-  "Why do organizations adopt similar practices?", "Institutional theory; legitimacy; resource dependence", "Organization; field", "Ch. 7",
-  "How can a firm credibly convey hidden quality?", "Signaling; screening; costly signaling", "Dyad; market", "Ch. 8",
-  "How do relationships and network positions create value?", "Social exchange; structural holes; social capital", "Dyad; network", "Ch. 9",
-  "Why, and how fast, do new products spread?", "Diffusion of innovations; Bass model; technology acceptance", "Individual; market", "Ch. 10",
-  "How does national culture shape management practice?", "Hofstede's dimensions; GLOBE; tight-loose", "Society", "Ch. 11",
-  "What drives effort and persistence at work?", "Expectancy; goal setting; self-determination", "Individual", "Ch. 12",
-  "Why does framing as gains or losses change choices?", "Prospect theory; regulatory focus", "Individual", "Ch. 13, 15",
-  "Why do people follow, or avoid, the choices of others?", "Social comparison; social identity; optimal distinctiveness", "Individual in groups", "Ch. 14",
-  "How do messages change attitudes and behaviour?", "Elaboration likelihood; persuasion knowledge", "Individual; audience", "Ch. 17"
+  "Why do some firms earn persistently superior returns?", "Resource-based theory, VRIO, dynamic capabilities", "Firm", "Ch. 4-5",
+  "Should the firm make, buy, or ally?", "Transaction cost economics, resource-based and knowledge-based views", "Transaction, firm", "Ch. 4, 6",
+  "How should owners monitor and pay executives?", "Agency theory, stewardship theory, upper echelons", "Dyad, top team", "Ch. 6",
+  "Why do organizations adopt similar practices?", "Institutional theory, legitimacy, resource dependence", "Organization, field", "Ch. 7",
+  "How can a firm credibly convey hidden quality?", "Signaling, screening, costly signaling", "Dyad, market", "Ch. 8",
+  "How do relationships and network positions create value?", "Social exchange, structural holes, social capital", "Dyad, network", "Ch. 9",
+  "Why, and how fast, do new products spread?", "Diffusion of innovations, Bass model, technology acceptance", "Individual, market", "Ch. 10",
+  "How does national culture shape management practice?", "Hofstede's dimensions, GLOBE, tight-loose", "Society", "Ch. 11",
+  "What drives effort and persistence at work?", "Expectancy, goal setting, self-determination", "Individual", "Ch. 12",
+  "Why does framing as gains or losses change choices?", "Prospect theory, regulatory focus", "Individual", "Ch. 13, 15",
+  "Why do people follow, or avoid, the choices of others?", "Social comparison, social identity, optimal distinctiveness", "Individual in groups", "Ch. 14",
+  "How do messages change attitudes and behaviour?", "Elaboration likelihood, persuasion knowledge", "Individual, audience", "Ch. 17"
 ) |>
   book_table(caption = "Which theory family for which research question? A heuristic guide.")
 ```
@@ -501,26 +501,26 @@ one whose boundary is genuinely in doubt.
 
 In an influential essay, @platt1964 argued that some fields progress faster than
 others because they systematically practise **strong inference**: (1) devise
-alternative hypotheses; (2) devise a crucial experiment (or several) whose
-possible outcomes will exclude one or more of the hypotheses; (3) carry out the
-experiment so as to get a clean result; and (4) recycle the procedure, refining
+alternative hypotheses. (2) Devise a crucial experiment (or several) whose
+possible outcomes will exclude one or more of the hypotheses. (3) Carry out the
+experiment so as to get a clean result, and (4) recycle the procedure, refining
 the hypotheses that remain. Platt's examples came from molecular biology and
 high-energy physics, but the logic applies wherever theories make divergent
 predictions.
 
 The key is to find conditions under which theories *disagree*. Two theories that
 both predict a positive main effect cannot be distinguished by observing a
-positive main effect; they can be distinguished if they predict different
+positive main effect. They can be distinguished if they predict different
 moderators, mediators, or functional forms. Table \@ref(tab:tab-use-competing)
 gives examples from business research.
 
 ```{r tab-use-competing}
 tibble::tribble(
   ~Question, ~`Theory A`, ~`Theory B`, ~`Discriminating test`,
-  "Does CEO duality help or hurt shareholders?", "Agency: combining CEO and chair weakens monitoring (negative)", "Stewardship: unified leadership empowers a pro-organizational CEO (positive)", "Direction of the duality effect; moderation by ownership structure (Donaldson & Davis, 1991)",
+  "Does CEO duality help or hurt shareholders?", "Agency: combining CEO and chair weakens monitoring (negative)", "Stewardship: unified leadership empowers a pro-organizational CEO (positive)", "Direction of the duality effect. Moderation by ownership structure (Donaldson & Davis, 1991)",
   "Why do firms vertically integrate?", "Transaction costs: integrate when assets are specific and opportunism is likely", "Capabilities: integrate when the firm is better at the activity", "Do asset specificity and capability gaps predict integration independently?",
   "Why do degrees raise wages?", "Human capital: education raises productivity", "Signaling: education reveals pre-existing ability", "Sheepskin effects: wage jumps at degree completion beyond years of schooling",
-  "Why does the loyalty programme raise spending?", "Switching costs (economic)", "Status and recognition (psychological)", "Manipulate point value vs. tier visibility; examine behaviour near tier thresholds"
+  "Why does the loyalty programme raise spending?", "Switching costs (economic)", "Status and recognition (psychological)", "Manipulate point value vs. tier visibility, examine behaviour near tier thresholds"
 ) |>
   book_table(caption = "Competing-theory tests: finding the conditions under which theories disagree.")
 ```
@@ -531,7 +531,7 @@ finding a relationship that several other theories also predict. Before
 collecting data, list at least two alternative explanations for the expected
 result and ask what observation would favour your theory over each. If no
 observation would, the study can describe a relationship but cannot adjudicate
-among explanations — and should not claim to.
+among explanations, and should not claim to.
 :::
 
 ## Theoretical Contribution and Modes of Reasoning {#theoretical-contribution}
@@ -539,23 +539,23 @@ among explanations — and should not claim to.
 ### Building versus testing theory
 
 Empirical work can contribute to theory in two broad ways: by **testing**
-existing theory — deriving hypotheses from established arguments and confronting
-them with data — and by **building** theory — introducing new constructs,
+existing theory, deriving hypotheses from established arguments and confronting
+them with data, and by **building** theory, introducing new constructs,
 relationships, or mechanisms. @colquitt2007 rated five decades of empirical
 articles in the *Academy of Management Journal* on both dimensions and derived a
 five-category taxonomy, sketched in Figure \@ref(fig:fig-use-colquitt).
-**Reporters** do little of either; **testers** rigorously test existing theory;
-**builders** introduce new constructs or relationships with limited grounding in
-existing theory; **expanders** do both, testing existing theory while
-introducing new elements; and **qualifiers** occupy the middle ground,
+**Reporters** do little of either, **testers** rigorously test existing theory.
+**Builders** introduce new constructs or relationships with limited grounding in
+existing theory. **Expanders** do both, testing existing theory while
+introducing new elements, and **qualifiers** occupy the middle ground,
 testing and extending theory moderately.
 
-```{r fig-use-colquitt, fig.cap = "A schematic of the theory-building by theory-testing taxonomy of empirical articles proposed by Colquitt and Zapata-Phelan (2007). Each dimension is rated on a five-point scale; region boundaries here are drawn schematically for illustration.", fig.height = 4.8}
+```{r fig-use-colquitt, fig.cap = "A schematic of the theory-building by theory-testing taxonomy of empirical articles proposed by Colquitt and Zapata-Phelan (2007). Each dimension is rated on a five-point scale. Region boundaries here are drawn schematically for illustration.", fig.height = 4.8}
 regions <- data.frame(
   xmin = c(1, 3, 1, 3), xmax = c(3, 5, 3, 5), ymin = c(1, 1, 3, 3), ymax = c(3, 3, 5, 5),
   name = c("Reporters", "Testers", "Builders", "Expanders"),
-  desc = c("Replicate or describe;\nlittle theory used or built", "Test existing theory\nwith explicit hypotheses",
-           "Introduce new constructs or\nrelationships; limited testing", "Test existing theory while\nadding new constructs"),
+  desc = c("Replicate or describe, \nlittle theory used or built", "Test existing theory\nwith explicit hypotheses",
+           "Introduce new constructs or\nrelationships, limited testing", "Test existing theory while\nadding new constructs"),
   fill = c("a", "b", "b", "c")
 )
 ggplot() +
@@ -573,12 +573,12 @@ ggplot() +
   scale_y_continuous(breaks = 1:5, expand = c(0, 0)) +
   labs(x = "Theory testing (1 = low, 5 = high)", y = "Theory building (1 = low, 5 = high)",
        title = "Five ways an empirical article can relate to theory",
-       caption = "Schematic adapted from Colquitt & Zapata-Phelan (2007); boundaries are illustrative.") +
+       caption = "Schematic adapted from Colquitt & Zapata-Phelan (2007). Boundaries are illustrative.") +
   theme(panel.grid = element_blank())
 ```
 
 Neither building nor testing is intrinsically superior. A field with only builders
-accumulates untested constructs; a field with only testers stops generating new
+accumulates untested constructs. A field with only testers stops generating new
 ideas. Whetten's checklist of questions reviewers ask about a contribution
 remains a useful self-assessment tool (Table \@ref(tab:tab-use-whetten)).
 
@@ -588,8 +588,8 @@ tibble::tribble(
   "What's new?", "Does the work add something significant to current thinking?", "State precisely which construct, relationship, mechanism, or boundary changes",
   "So what?", "Will the contribution change how scholars (or managers) think or act?", "Show which prior conclusions or practices must be revised",
   "Why so?", "Is the underlying logic sound and convincing?", "Make the mechanism explicit and address rival explanations",
-  "Well done?", "Is the work thorough and does it reflect careful thinking?", "Match design to claim; report robustness and limitations",
-  "Done well?", "Is it clearly written and logically organized?", "One idea per paragraph; consistent construct labels",
+  "Well done?", "Is the work thorough and does it reflect careful thinking?", "Match design to claim, report robustness and limitations",
+  "Done well?", "Is it clearly written and logically organized?", "One idea per paragraph, consistent construct labels",
   "Why now?", "Is the topic of contemporary interest?", "Link to a current phenomenon, debate, or gap",
   "Who cares?", "What share of the audience will find it relevant?", "Identify the scholarly conversation and practitioners affected"
 ) |>
@@ -598,23 +598,23 @@ tibble::tribble(
 
 ### Deduction, induction, and abduction
 
-Behind the build–test distinction lie three modes of reasoning. **Deduction**
-derives specific predictions from general premises; it is the logic of hypothesis
-testing. **Induction** generalizes from observed cases to broader patterns; it is
+Behind the build-test distinction lie three modes of reasoning. **Deduction**
+derives specific predictions from general premises. It is the logic of hypothesis
+testing. **Induction** generalizes from observed cases to broader patterns. It is
 the logic of grounded theory [@glaser1967] and of case-based theory building
 [@eisenhardt1989]. **Abduction** reasons from a surprising observation to the
-explanation that would, if true, make it unsurprising; it is the logic of
-anomaly-driven discovery. @timmermans2012 argue that abductive analysis — the
-iterative confrontation of surprising data with multiple existing theories — is a
+explanation that would, if true, make it unsurprising. It is the logic of
+anomaly-driven discovery. @timmermans2012 argue that abductive analysis, the
+iterative confrontation of surprising data with multiple existing theories, is a
 more accurate description of how qualitative researchers actually build theory
 than pure induction.
 
 ```{r tab-use-reasoning}
 tibble::tribble(
   ~Mode, ~`Starting point`, ~Output, ~`Typical designs`, ~`Main risk`,
-  "Deduction", "General theory", "Testable hypotheses; support or refutation", "Experiments; surveys; archival regressions", "Testing only what the theory already says; confirmation bias",
-  "Induction", "Systematic observation of cases", "New concepts and generalizations", "Grounded theory; multiple-case studies", "Generalizing from idiosyncratic cases",
-  "Abduction", "A surprising fact or anomaly", "The most plausible new explanation", "Iterative qualitative analysis; exploratory data analysis followed by tests", "Mistaking a plausible story for a tested one"
+  "Deduction", "General theory", "Testable hypotheses, support or refutation", "Experiments, surveys, archival regressions", "Testing only what the theory already says. Confirmation bias",
+  "Induction", "Systematic observation of cases", "New concepts and generalizations", "Grounded theory, multiple-case studies", "Generalizing from idiosyncratic cases",
+  "Abduction", "A surprising fact or anomaly", "The most plausible new explanation", "Iterative qualitative analysis, exploratory data analysis followed by tests", "Mistaking a plausible story for a tested one"
 ) |>
   book_table(caption = "Three modes of reasoning in theory development.")
 ```
@@ -623,11 +623,11 @@ The modes are complementary stages of a cycle rather than rival philosophies: an
 anomaly prompts an abductive conjecture, case evidence refines it inductively,
 and a deductive test confronts it with new data. @edmondson2007 add that the
 appropriate method depends on the state of prior theory. Where theory is
-**nascent**, open-ended qualitative data help identify constructs; where it is
+**nascent**, open-ended qualitative data help identify constructs. Where it is
 **intermediate**, hybrid designs combine qualitative insight with preliminary
-measures; and where it is **mature**, precise quantitative tests of
-well-specified hypotheses are appropriate. Mismatches — such as a
-hypothesis-testing survey on a phenomenon nobody yet understands — weaken
+measures, and where it is **mature**, precise quantitative tests of
+well-specified hypotheses are appropriate. Mismatches, such as a
+hypothesis-testing survey on a phenomenon nobody yet understands, weaken
 contribution.
 
 ::: {.try-it}
@@ -649,14 +649,14 @@ to state the theory in a form from which the correct analysis can be derived.
 
 Three structures matter most. A **confounder** causes both treatment and outcome
 and must be controlled to block a non-causal "back-door" path. A **mediator**
-lies on the causal path from treatment to outcome; controlling for it removes part
+lies on the causal path from treatment to outcome. Controlling for it removes part
 of the effect one may be trying to estimate. A **collider** is caused by both
-treatment and outcome (or their causes); controlling for it — or selecting the
-sample on it — *opens* a spurious path and creates bias where none existed
+treatment and outcome (or their causes). Controlling for it, or selecting the
+sample on it, *opens* a spurious path and creates bias where none existed
 [@elwert2014]. Pearl's **back-door criterion** formalizes which sets of control
 variables suffice to identify a causal effect given the diagram [@pearl2009].
 
-```{r fig-use-dag, fig.cap = "A causal diagram (DAG) for evaluating a sales-training programme. Representative experience is a confounder (control for it); pitch quality is a mediator (do not control if the total effect is of interest); being retained in the sample is a collider (do not condition on it). Illustrative example.", fig.height = 4.4}
+```{r fig-use-dag, fig.cap = "A causal diagram (DAG) for evaluating a sales-training programme. Representative experience is a confounder (control for it). Pitch quality is a mediator (do not control if the total effect is of interest). Being retained in the sample is a collider (do not condition on it). Illustrative example.", fig.height = 4.4}
 mechanism_diagram(sprintf('
   C [label = "Rep experience\\n(confounder)", %s]
   X [label = "Sales training\\n(treatment)", %s]
@@ -676,10 +676,10 @@ mechanism_diagram(sprintf('
 tibble::tribble(
   ~`Variable role`, ~`Causal structure`, ~`Control for it?`, ~`Business example`,
   "Confounder", "C -> X and C -> Y", "Yes (blocks a back-door path)", "Experienced reps both choose training and sell more",
-  "Mediator", "X -> M -> Y", "No, if the total effect is the target; yes for a direct effect, with care", "Training improves pitches, which raise revenue",
+  "Mediator", "X -> M -> Y", "No, if the total effect is the target. Yes for a direct effect, with care", "Training improves pitches, which raise revenue",
   "Collider", "X -> K <- Y", "No (conditioning opens a spurious path)", "Analysing only reps still employed, when retention depends on both training and sales",
   "Outcome proxy / descendant of Y", "Y -> Z", "No", "Controlling for commission earned when estimating revenue effects",
-  "Instrument", "Z -> X only", "Not as a control; can be used for IV estimation", "Random assignment of training slots by calendar availability"
+  "Instrument", "Z -> X only", "Not as a control, can be used for IV estimation", "Random assignment of training slots by calendar availability"
 ) |>
   book_table(caption = "The role of a variable in the causal diagram determines whether to control for it.")
 ```
@@ -688,7 +688,7 @@ tibble::tribble(
 **Survivorship as collider bias.** Studies of "what successful start-ups have in
 common" sample on success, a collider influenced by many causes at once. Among
 surviving firms, two causes of survival can appear negatively related even if
-they are independent in the full population — for instance, founder experience
+they are independent in the full population: for instance, founder experience
 and market timing, if either one alone is often enough to survive. Strategy
 advice drawn from such samples can therefore recommend the wrong trade-offs. The
 remedy is theoretical before it is statistical: draw the diagram, identify
@@ -699,10 +699,10 @@ failures) or model selection explicitly [@elwert2014].
 ::: {.pitfall}
 **Kitchen-sink controls.** Adding every available variable as a control is often
 defended as conservative. It is not. Controlling for mediators removes part of the
-effect of interest; controlling for colliders introduces bias. Every control
+effect of interest. Controlling for colliders introduces bias. Every control
 variable should be justified by its role in a causal diagram, and the diagram
 should be reported. @antonakis2010 review the most common threats to causal
-claims in management research and the designs that address them; @shadish2002
+claims in management research and the designs that address them. @shadish2002
 remains the standard reference on experimental and quasi-experimental design.
 :::
 
@@ -718,11 +718,11 @@ evidence was weaker than it appeared.
 The most influential project, the Open Science Collaboration's attempt to
 reproduce 100 experimental and correlational studies published in three
 psychology journals, found that 97 percent of the original studies had reported
-statistically significant results but only 36 percent of the replications did;
-on average, replication effect sizes were about half as large as the original
-estimates [@2015_3305]. Depending on the criterion used — statistical
+statistically significant results but only 36 percent of the replications did.
+On average, replication effect sizes were about half as large as the original
+estimates [@2015_3305]. Depending on the criterion used, statistical
 significance, whether the original effect fell within the replication's
-confidence interval, or subjective assessments by the replication teams —
+confidence interval, or subjective assessments by the replication teams,
 estimates of how many findings replicated ranged from roughly one-third to just
 under one-half. A later project replicating 21 social-science experiments
 published in *Nature* and *Science* between 2010 and 2015 likewise found that
@@ -752,9 +752,9 @@ hypothesis is true: when most hypotheses tested are false, even a nominal 5
 percent false-positive rate can produce a literature in which a large share of
 significant findings are errors.
 
-@simmons2011 showed how undisclosed **researcher degrees of freedom** — choices
+@simmons2011 showed how undisclosed **researcher degrees of freedom**, choices
 about which dependent variables to report, when to stop collecting data, which
-covariates to include, and which conditions to compare — can push the actual
+covariates to include, and which conditions to compare, can push the actual
 false-positive rate far above 5 percent even when each choice seems reasonable in
 isolation. @gelman2014 emphasize that the problem does not require deliberate
 fishing: a **garden of forking paths** arises whenever analytic choices are
@@ -762,7 +762,7 @@ contingent on the data, even if only one analysis is ever run. Figure
 \@ref(fig:fig-use-phacking) reproduces the logic with a simple simulation in
 which there is *no* true effect.
 
-```{r fig-use-phacking, fig.cap = "Illustrative simulation of how analytic flexibility inflates false positives. Every simulated study compares two groups (20 per group) with no true difference. Each bar shows the share of studies that report p < .05 when the researcher may choose among the listed options and reports any significant result. Simulated data; 4,000 studies per strategy.", fig.height = 4}
+```{r fig-use-phacking, fig.cap = "Illustrative simulation of how analytic flexibility inflates false positives. Every simulated study compares two groups (20 per group) with no true difference. Each bar shows the share of studies that report p < .05 when the researcher may choose among the listed options and reports any significant result. Simulated data. 4,000 Studies per strategy.", fig.height = 4}
 set.seed(2011)
 p_t <- function(y, g) {
   y1 <- y[g == 1]; y0 <- y[g == 0]; n1 <- length(y1); n0 <- length(y0)
@@ -814,11 +814,11 @@ ggplot(fp, aes(rate, label)) +
   scale_x_continuous(labels = scales::percent, limits = c(0, max(fp$rate) * 1.25), expand = c(0, 0)) +
   labs(x = "Share of null studies reporting a significant effect", y = NULL,
        title = "Small, reasonable-looking choices add up",
-       caption = "Illustrative simulation (set.seed(2011)); logic follows Simmons, Nelson & Simonsohn (2011).")
+       caption = "Illustrative simulation (set.seed(2011)). Logic follows Simmons, Nelson & Simonsohn (2011).")
 ```
 
-Two further practices compound the problem. **HARKing** — hypothesizing after the
-results are known — presents post hoc hypotheses as if they had been specified in
+Two further practices compound the problem. **HARKing**, hypothesizing after the
+results are known, presents post hoc hypotheses as if they had been specified in
 advance, converting exploratory findings into apparently confirmatory tests
 [@kerr1998]. Survey evidence suggests that such **questionable research
 practices** were not rare: in a large survey of academic psychologists,
@@ -829,13 +829,13 @@ results [@john2012].
 ```{r tab-use-qrp}
 tibble::tribble(
   ~Practice, ~`Why it inflates false positives`, ~Remedy,
-  "Selective reporting of outcomes", "Multiple chances to find p < .05; only winners reported", "Preregister primary outcomes; report all measures",
+  "Selective reporting of outcomes", "Multiple chances to find p < .05. Only winners reported", "Preregister primary outcomes, report all measures",
   "Optional stopping", "Repeated testing as data accrue raises the error rate", "Fix sample size in advance or use sequential designs with corrected thresholds",
-  "Flexible covariates and exclusions", "Choices contingent on results create forking paths", "Prespecify; report results with and without covariates and exclusions",
-  "HARKing", "Exploratory findings presented as confirmatory tests", "Label exploratory analyses; preregister confirmatory hypotheses",
-  "Underpowered studies", "Significant results overestimate effects; low pre-study odds", "Power analysis; larger samples; multi-site collaboration",
-  "Publication bias", "Null results remain unpublished, distorting the literature", "Registered reports; publishing replications and null results",
-  "Misreading p-values", "Treating p < .05 as proof or p > .05 as proof of no effect", "Report effect sizes and intervals; interpret in context"
+  "Flexible covariates and exclusions", "Choices contingent on results create forking paths", "Prespecify. Report results with and without covariates and exclusions",
+  "HARKing", "Exploratory findings presented as confirmatory tests", "Label exploratory analyses, preregister confirmatory hypotheses",
+  "Underpowered studies", "Significant results overestimate effects, low pre-study odds", "Power analysis, larger samples, multi-site collaboration",
+  "Publication bias", "Null results remain unpublished, distorting the literature", "Registered reports, publishing replications and null results",
+  "Misreading p-values", "Treating p < .05 as proof or p > .05 as proof of no effect", "Report effect sizes and intervals, interpret in context"
 ) |>
   book_table(caption = "Questionable research practices and their remedies.")
 ```
@@ -846,7 +846,7 @@ The most widely adopted reform is **preregistration**: recording hypotheses,
 designs, and analysis plans in a time-stamped public registry before observing
 the data. @nosek2018 argue that its value lies in distinguishing **prediction**
 (testing hypotheses fixed in advance) from **postdiction** (generating hypotheses
-from data); both are legitimate, but only the former supports the inferential
+from data). Both are legitimate, but only the former supports the inferential
 claims that p-values imply. **Registered reports**, in which journals review and
 accept a study's design before results are known, address publication bias
 directly. Complementary reforms include data and code sharing, larger and
@@ -858,8 +858,8 @@ threshold [@wasserstein2016].
 
 For theory, the implication is direct. A theory "supported" by a body of small,
 flexible, selectively published studies is less well supported than it appears.
-Several effects discussed later in this book have faced replication challenges;
-where they have, the relevant chapters say so. Readers should weigh evidence by
+Several effects discussed later in this book have faced replication challenges.
+Where they have, the relevant chapters say so. Readers should weigh evidence by
 its design and transparency, not by the number of citations a finding has
 accumulated.
 
@@ -867,7 +867,7 @@ accumulated.
 **A credibility checklist for theory-testing studies.**
 
 - *Prespecify* confirmatory hypotheses, primary outcomes, sample size, exclusions,
-  and the analysis model; label everything else exploratory [@nosek2018].
+  and the analysis model. Label everything else exploratory [@nosek2018].
 - *Power the study* for the smallest effect that would matter theoretically or
   practically, remembering that published effects are likely inflated.
 - *Test the theory where it could fail*: include conditions under which rival
@@ -886,13 +886,13 @@ different names.
 
 ### A/B testing as theory testing
 
-Online controlled experiments — A/B tests — are the most widespread application
+Online controlled experiments, A/B tests, are the most widespread application
 of the experimental method in business. @kohavi2020 document how large technology
 firms run thousands of experiments a year to evaluate product changes. At their
 best, these experiments are theory tests: a product team holds a hypothesis about
 why a change should alter user behaviour, randomizes exposure, and measures the
 predicted outcome. At their worst, they are atheoretical searches in which many
-variants and metrics are tried and the "winners" are shipped — a corporate
+variants and metrics are tried and the "winners" are shipped: a corporate
 version of the garden of forking paths. Practitioners have developed defences that
 mirror academic reforms: pre-specified primary metrics, fixed experiment
 durations, corrections for multiple comparisons, and scepticism toward surprising
@@ -902,12 +902,12 @@ looks unusually interesting or different is usually the product of an error.
 ::: {.business-case}
 **Testing an idea nobody prioritized.** @kohavi2017 describe an experiment at
 Microsoft's Bing search engine in which a modest change to how advertisement
-headlines were displayed — an idea that had sat in the development backlog for
-months because it seemed unimportant — produced one of the largest revenue
+headlines were displayed, an idea that had sat in the development backlog for
+months because it seemed unimportant, produced one of the largest revenue
 improvements in the search engine's history when it was finally tested. The case
 is usually told as an argument for experimentation, but it is also a lesson about
 theory. Intuitions about which changes matter are themselves implicit theories,
-and they are often wrong. Experiments discipline those theories; explicit theory,
+and they are often wrong. Experiments discipline those theories. Explicit theory,
 in turn, tells teams which experiments are worth running and why a result should
 generalize to the next product decision.
 :::
@@ -917,15 +917,15 @@ generalize to the next product decision.
 The path from a theory to a business at scale is illustrated by home energy
 reports. @schultz2007 showed in a field experiment that telling households how
 their energy use compared with their neighbours' reduced consumption among
-above-average users but *increased* it among below-average users — a
-"boomerang" consistent with social-norms theory — and that adding a simple
+above-average users but *increased* it among below-average users, a
+"boomerang" consistent with social-norms theory, and that adding a simple
 signal of approval for low users eliminated the boomerang. The company Opower
 built a business on this logic, sending comparative reports to millions of
 utility customers. Large randomized evaluations found average reductions in
 energy use of about 2 percent [@allcott2011]. @allcott2015 then showed that
 effects in the earliest sites were larger than in later ones, because the
 utilities that adopted the programme first differed systematically from those that
-adopted later — a reminder that **boundary conditions** shape what a theory
+adopted later: a reminder that **boundary conditions** shape what a theory
 delivers when it moves from one setting to many (see
 [Social norms](#social-norms)).
 
@@ -951,7 +951,7 @@ that a theory needs revision rather than as noise to be ignored).
 3. *Derive divergent predictions* (who should respond most under each account?).
 4. *Choose the design* (randomized test, staggered roll-out, or quasi-experiment)
    and pre-specify the primary metric and sample size.
-5. *Interpret against the theory* — including boundary conditions — before
+5. *Interpret against the theory*, including boundary conditions, before
    generalizing to other markets or products.
 :::
 
@@ -960,31 +960,31 @@ that a theory needs revision rather than as noise to be ignored).
 worked in one population, at one time, for one metric. Without a theory of *why*
 it worked, a firm cannot know whether it will work in a new market, for a new
 customer segment, or after competitors respond. Replicate important results, and
-use the mechanism to decide where they should — and should not — travel.
+use the mechanism to decide where they should, and should not, travel.
 :::
 
 ## Chapter Summary {#using-theory-summary}
 
 ::: {.key-takeaways}
 - Hypotheses translate construct-level propositions into falsifiable claims about
-  variables; a strong hypothesis-development paragraph states the mechanism and a
+  variables. A strong hypothesis-development paragraph states the mechanism and a
   boundary condition, not just prior findings.
-- Constructs earn meaning through their **nomological network**; measures must show
+- Constructs earn meaning through their **nomological network**. Measures must show
   convergent and discriminant validity [@cronbach1955; @campbell1959].
-- **Mediation** tests the *why* (indirect effect a x b, bootstrapped); **moderation**
+- **Mediation** tests the *why* (indirect effect a x b, bootstrapped). **Moderation**
   tests the *when* (interactions, floodlight analysis) [@zhao2010; @spiller2013;
   @hayes2018]. Mechanism claims are strongest when mediators are manipulated
   [@spencer2005; @bullock2010].
-- Choose theories by fit to question, level, and assumptions; adjudicate between
-  rivals with **strong inference** — find where they disagree [@platt1964].
-- Empirical work can build theory, test it, or both [@colquitt2007]; deduction,
+- Choose theories by fit to question, level, and assumptions. Adjudicate between
+  rivals with **strong inference**: find where they disagree [@platt1964].
+- Empirical work can build theory, test it, or both [@colquitt2007]. Deduction,
   induction, and abduction are complementary stages of theory development.
 - **Causal diagrams** make a theory's assumptions explicit and determine which
-  variables to control — and which not to [@pearl2009; @elwert2014].
+  variables to control, and which not to [@pearl2009; @elwert2014].
 - Replication projects found that many published findings are weaker than
-  reported; in one large project only 36 percent of replications were significant
+  reported. In one large project only 36 percent of replications were significant
   [@2015_3305]. Flexibility, HARKing, and publication bias inflate false positives
-  [@simmons2011; @kerr1998; @ioannidis2005]; preregistration and transparency help
+  [@simmons2011; @kerr1998; @ioannidis2005]. Preregistration and transparency help
   [@nosek2018].
 - In practice, A/B tests, scaled interventions, and evidence-based management are
   all forms of theory testing [@kohavi2020; @allcott2015; @rousseau2006].
@@ -995,11 +995,11 @@ tibble::tribble(
   ~Tool, ~`Question answered`, ~`Signature practice`, ~`Common misuse`, ~`Key source`,
   "Hypothesis development", "What exactly does the theory predict here?", "Mechanism plus boundary plus directional prediction", "Theory as decoration", "Bacharach (1989)",
   "Nomological network", "Does the measure capture the construct?", "Convergent and discriminant validation", "Single-item metrics adopted on faith", "Cronbach & Meehl (1955)",
-  "Mediation", "How or why does X affect Y?", "Bootstrapped indirect effect; manipulating M", "Causal claims from cross-sectional mediation", "Zhao et al. (2010)",
-  "Moderation", "When or for whom?", "Interaction with floodlight analysis", "Arbitrary spotlights; underpowered tests", "Spiller et al. (2013)",
+  "Mediation", "How or why does X affect Y?", "Bootstrapped indirect effect, manipulating M", "Causal claims from cross-sectional mediation", "Zhao et al. (2010)",
+  "Moderation", "When or for whom?", "Interaction with floodlight analysis", "Arbitrary spotlights, underpowered tests", "Spiller et al. (2013)",
   "Strong inference", "Which rival explanation survives?", "Crucial tests where theories diverge", "Confirming a theory without rivals", "Platt (1964)",
-  "Causal diagrams", "Which controls identify the effect?", "Back-door criterion", "Kitchen-sink controls; collider bias", "Pearl (2009)",
-  "Preregistration", "Is this a prediction or a postdiction?", "Time-stamped plans; registered reports", "HARKing; forking paths", "Nosek et al. (2018)"
+  "Causal diagrams", "Which controls identify the effect?", "Back-door criterion", "Kitchen-sink controls, collider bias", "Pearl (2009)",
+  "Preregistration", "Is this a prediction or a postdiction?", "Time-stamped plans, registered reports", "HARKing, forking paths", "Nosek et al. (2018)"
 ) |>
   book_table(caption = "Comparison of the chapter's tools for using theory.")
 ```
@@ -1026,16 +1026,16 @@ tibble::tribble(
 
 ## Further Reading {#using-theory-reading}
 
-- @cronbach1955 — the foundational argument that measurement validity is
+- @cronbach1955: the foundational argument that measurement validity is
   inseparable from theory.
-- @zhao2010 — a concise and influential correction to the causal-steps approach to
-  mediation; pair with @hayes2018 for implementation.
-- @spiller2013 — a clear guide to probing interactions with spotlight and
+- @zhao2010: a concise and influential correction to the causal-steps approach to
+  mediation. Pair with @hayes2018 for implementation.
+- @spiller2013: a clear guide to probing interactions with spotlight and
   floodlight analyses.
-- @platt1964 — a short classic on how fields progress by testing rival hypotheses.
-- @colquitt2007 — a map of how empirical articles build and test theory.
-- @pearl2009 — the formal foundation of causal diagrams and identification;
+- @platt1964: a short classic on how fields progress by testing rival hypotheses.
+- @colquitt2007: a map of how empirical articles build and test theory.
+- @pearl2009: the formal foundation of causal diagrams and identification.
   @elwert2014 is a more accessible entry point on collider bias.
-- @2015_3305 and @simmons2011 — the empirical and methodological core of the
+- @2015_3305 and @simmons2011: the empirical and methodological core of the
   replication debate.
-- @kohavi2020 — the standard practitioner guide to trustworthy online experiments.
+- @kohavi2020: the standard practitioner guide to trustworthy online experiments.

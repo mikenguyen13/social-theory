@@ -3,7 +3,7 @@
 A coffee shop hands out loyalty cards: buy ten coffees, get one free. Customers
 who are one stamp away from the reward return noticeably sooner than customers
 who have just started a new card. A sales organization raises its quarterly
-quota and sees a burst of effort — and, in the final week of the quarter, a burst
+quota and sees a burst of effort, and, in the final week of the quarter, a burst
 of deals that are pulled forward, discounted, or quietly booked in ways that
 violate policy. A volunteer organization begins paying a small stipend and finds
 that volunteers work *less* than before. A basketball team that trails by a
@@ -14,25 +14,25 @@ the direction, intensity, and persistence of effort.
 This chapter develops the major theories that explain such patterns. After a
 brief contrast between *content* and *process* theories, we examine **expectancy
 theory**, which treats motivation as a product of beliefs about effort,
-performance, and rewards; **equity theory**, which explains how social comparison
-of rewards produces fairness judgements and behaviour; **goal-setting theory**,
+performance, and rewards. **Equity theory**, which explains how social comparison
+of rewards produces fairness judgements and behaviour. **Goal-setting theory**,
 the most practically influential theory of work motivation, together with the
-debate about its side effects; the **goal-gradient hypothesis**, which explains
-why effort accelerates as a goal approaches; **self-determination theory**, which
+debate about its side effects. The **goal-gradient hypothesis**, which explains
+why effort accelerates as a goal approaches. **Self-determination theory**, which
 distinguishes autonomous from controlled motivation and explains when rewards
-backfire; and the striking finding that **losing can lead to winning**. The
+backfire, and the striking finding that **losing can lead to winning**. The
 theories apply as readily to customers in a loyalty program as to employees under
 a sales plan, and the chapter draws its examples from both.
 
 ```{r tab-mot-glance}
 tibble::tribble(
   ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
-  "Need theories (Maslow; Herzberg)", "What needs or job factors energise behaviour?", "Individual", "Maslow (1943); Herzberg et al. (1959)",
+  "Need theories (Maslow, Herzberg)", "What needs or job factors energise behaviour?", "Individual", "Maslow (1943), Herzberg et al. (1959)",
   "Expectancy theory", "How do beliefs about effort, performance, and rewards combine into motivation?", "Individual", "Vroom (1964)",
-  "Equity theory", "How do people judge and respond to the fairness of their rewards?", "Individual / dyad", "Adams (1963; 1965)",
-  "Goal-setting theory", "Why do specific, difficult goals raise performance?", "Individual / team", "Locke & Latham (1990; 2002)",
-  "Goal-gradient hypothesis", "Why does effort accelerate as a goal approaches?", "Individual", "Hull (1932); Kivetz et al. (2006)",
-  "Self-determination theory", "When is motivation autonomous, and when do rewards undermine it?", "Individual", "Deci & Ryan (1985); Ryan & Deci (2000)",
+  "Equity theory", "How do people judge and respond to the fairness of their rewards?", "Individual / dyad", "Adams (1963, 1965)",
+  "Goal-setting theory", "Why do specific, difficult goals raise performance?", "Individual / team", "Locke & Latham (1990, 2002)",
+  "Goal-gradient hypothesis", "Why does effort accelerate as a goal approaches?", "Individual", "Hull (1932), Kivetz et al. (2006)",
+  "Self-determination theory", "When is motivation autonomous, and when do rewards undermine it?", "Individual", "Deci & Ryan (1985), Ryan & Deci (2000)",
   "Losing leads to winning", "Why can being slightly behind increase success?", "Individual / team", "Berger & Pope (2011)"
 ) |>
   book_table(caption = "Chapter at a glance: theories of motivation.")
@@ -50,8 +50,8 @@ exerted), and **persistence** (how long effort is sustained)
 
 Early theories of work motivation asked *what* motivates people. These
 **content theories** identify needs or job characteristics that energise
-behaviour. @maslow1943 proposed a hierarchy of needs — physiological, safety,
-love and belonging, esteem, and self-actualisation — in which higher needs become
+behaviour. @maslow1943 proposed a hierarchy of needs, physiological, safety,
+love and belonging, esteem, and self-actualisation, in which higher needs become
 motivating only once lower needs are reasonably satisfied. The hierarchy is
 intuitively appealing and remains popular in management education, but
 empirical tests have found little support for a strict ordering of needs or for
@@ -59,10 +59,10 @@ the claim that satisfying one level activates the next [@wahba1976].
 
 @herzberg1959 interviewed engineers and accountants about episodes in which they
 had felt exceptionally good or bad about their jobs. The two kinds of episode
-involved different factors. **Hygiene factors** — pay, supervision, working
-conditions, company policy — were associated with dissatisfaction when they were
-poor; **motivators** — achievement, recognition, responsibility, the work itself,
-advancement — were associated with satisfaction when present. The resulting
+involved different factors. **Hygiene factors**, pay, supervision, working
+conditions, company policy, were associated with dissatisfaction when they were
+poor. **Motivators**, achievement, recognition, responsibility, the work itself,
+advancement, were associated with satisfaction when present. The resulting
 two-factor theory has been criticised on methodological grounds, notably that
 people tend to attribute good experiences to themselves and bad experiences to
 the environment, but its practical message endured: removing sources of
@@ -78,9 +78,9 @@ tibble::tribble(
   ~Feature, ~`Content theories`, ~`Process theories`,
   "Central question", "What motivates people?", "How is motivated behaviour initiated, directed, and sustained?",
   "Core constructs", "Needs, motives, job factors", "Expectancies, valences, comparisons, goals, regulation",
-  "Exemplars", "Maslow's hierarchy; Herzberg's two-factor theory", "Expectancy, equity, goal-setting, self-determination theories",
+  "Exemplars", "Maslow's hierarchy, Herzberg's two-factor theory", "Expectancy, equity, goal-setting, self-determination theories",
   "Typical managerial implication", "Identify and satisfy important needs", "Design beliefs, comparisons, goals, and incentives",
-  "Empirical status", "Mixed; strict hierarchies poorly supported", "Generally stronger, with well-specified boundary conditions"
+  "Empirical status", "Mixed, strict hierarchies poorly supported", "Generally stronger, with well-specified boundary conditions"
 ) |>
   book_table(caption = "Content versus process theories of motivation.")
 ```
@@ -93,18 +93,18 @@ will lead to performance (expectancy), that performance will lead to outcomes
 (instrumentality), and that those outcomes are valued (valence). The three beliefs
 combine multiplicatively.
 
-**Origins.** Industrial–organizational psychology; @vroom1964; extended by
+**Origins.** Industrial-organizational psychology, @vroom1964, extended by
 @porter1968.
 
 **Level of analysis.** Individual (choices among levels of effort or courses of
 action).
 
-**Key constructs.** Expectancy (E); instrumentality (I); valence (V); motivational
-force; effort; performance.
+**Key constructs.** Expectancy (E), instrumentality (I), valence (V), motivational
+force, effort, performance.
 
-**Boundary conditions.** Assumes deliberate, calculative choice; predicts better
+**Boundary conditions.** Assumes deliberate, calculative choice. Predicts better
 for choices among alternatives within a person than for differences between
-people; less suited to habitual or impulsive behaviour.
+people. Less suited to habitual or impulsive behaviour.
 
 **Related theories.** [Goal-setting theory](#goal-setting-theory),
 [Self-determination theory](#self-determination-theory),
@@ -133,7 +133,7 @@ instrumentality).
 
 @porter1968 extended the model by adding that effort translates into performance
 only when ability and role clarity are present, and that the satisfaction produced
-by rewards depends on whether they are perceived as equitable — a bridge to equity
+by rewards depends on whether they are perceived as equitable: a bridge to equity
 theory.
 
 ### Mechanism
@@ -142,7 +142,7 @@ Figure \@ref(fig:fig-mot-expectancy) visualises the multiplicative logic.
 Motivation is high only in the corner of the space where expectancy and valence
 are both high, and the whole surface shrinks when instrumentality is weak.
 
-```{r fig-mot-expectancy, fig.cap = "Illustrative motivational force under the multiplicative expectancy model (M = E x I x V). Each panel fixes instrumentality at a different level. Motivation is high only when all three components are high; a near-zero value on any component collapses motivation.", fig.height = 3.9}
+```{r fig-mot-expectancy, fig.cap = "Illustrative motivational force under the multiplicative expectancy model (M = E x I x V). Each panel fixes instrumentality at a different level. Motivation is high only when all three components are high. A near-zero value on any component collapses motivation.", fig.height = 3.9}
 grid <- expand.grid(E = seq(0, 1, by = 0.025), V = seq(0, 1, by = 0.025), I = c(0.2, 0.5, 0.9)) |>
   mutate(M = E * I * V,
          panel = factor(paste0("Instrumentality = ", I),
@@ -159,7 +159,7 @@ ggplot(grid, aes(E, V, fill = M)) +
   labs(x = "Expectancy (effort -> performance)", y = "Valence of rewards",
        title = "Motivation is multiplicative",
        subtitle = "White contours at M = 0.1, 0.3, 0.5, 0.7",
-       caption = "Illustrative computation; not empirical data.") +
+       caption = "Illustrative computation, not empirical data.") +
   theme(legend.key.width = unit(1.4, "cm"))
 ```
 
@@ -169,17 +169,17 @@ levers and research measures.
 ```{r tab-mot-expectancy}
 tibble::tribble(
   ~Component, ~`Belief in question`, ~`What lowers it`, ~`Managerial levers`, ~`Example measure`,
-  "Expectancy (E)", "Effort -> performance", "Unrealistic targets; lack of skill, tools, or authority", "Training; resources; attainable goals; self-efficacy building", "Subjective probability of reaching a target with high vs. normal effort",
-  "Instrumentality (I)", "Performance -> outcomes", "Opaque or discretionary rewards; caps; favouritism", "Transparent pay-for-performance rules; credible commitments", "Perceived link between performance and pay or promotion",
-  "Valence (V)", "Value of outcomes", "Rewards that do not match preferences", "Cafeteria-style rewards; recognition; meaningful work", "Rated attractiveness of each outcome"
+  "Expectancy (E)", "Effort -> performance", "Unrealistic targets, lack of skill, tools, or authority", "Training, resources, attainable goals, self-efficacy building", "Subjective probability of reaching a target with high vs. normal effort",
+  "Instrumentality (I)", "Performance -> outcomes", "Opaque or discretionary rewards, caps, favouritism", "Transparent pay-for-performance rules, credible commitments", "Perceived link between performance and pay or promotion",
+  "Valence (V)", "Value of outcomes", "Rewards that do not match preferences", "Cafeteria-style rewards, recognition, meaningful work", "Rated attractiveness of each outcome"
 ) |>
   book_table(caption = "Components of expectancy theory and how to influence them.")
 ```
 
 ### Evidence and extensions
 
-@vaneerde1996 meta-analysed tests of Vroom's models. Each component —
-valence, instrumentality, and expectancy — was related to work criteria such as
+@vaneerde1996 meta-analysed tests of Vroom's models. Each component,
+valence, instrumentality, and expectancy, was related to work criteria such as
 performance, effort, intention, preference, and choice, but the multiplicative
 combination did not generally predict better than the components entered
 separately or additively. Effects were also larger in *within-subject* designs,
@@ -189,7 +189,7 @@ the theory models how an individual chooses among options, not why one person is
 more motivated than another.
 
 The expectancy component has a close cousin in Bandura's concept of
-**self-efficacy** — the belief that one can execute the behaviours required to
+**self-efficacy**: the belief that one can execute the behaviours required to
 produce an outcome [@bandura1977]. Self-efficacy has become one of the most
 robust predictors of effort and persistence, and it is a central moderator in
 goal-setting theory. @steel2006 integrated expectancy and valence with time
@@ -201,8 +201,8 @@ result of rewards that are valued but distant.
 ::: {.business-case}
 **Sales quotas and the shape of incentive plans.** Sales compensation is the
 purest field laboratory for expectancy theory, because the links between effort,
-performance (bookings), and pay are explicit. Research on nonlinear plans —
-quotas with lump-sum bonuses — shows that salespeople respond strategically to
+performance (bookings), and pay are explicit. Research on nonlinear plans,
+quotas with lump-sum bonuses, shows that salespeople respond strategically to
 where they stand relative to the threshold. @oyer1998 documented that sales
 across many industries are higher at the end of fiscal years, consistent with
 salespeople timing effort and deals to meet annual targets. @larkin2014 found that
@@ -212,8 +212,8 @@ a dynamic model of salespeople's responses to a bonus-based plan and concluded
 that bonuses enhanced sales productivity, with periodic bonuses helping to keep
 weaker performers on pace and overachievement commissions sustaining the effort
 of stronger performers who had already reached their quotas. In
-expectancy terms, a quota that is far out of reach destroys expectancy; a quota
-already met destroys instrumentality for the rest of the period; both lower effort.
+expectancy terms, a quota that is far out of reach destroys expectancy. A quota
+already met destroys instrumentality for the rest of the period. Both lower effort.
 :::
 
 ::: {.research-toolkit}
@@ -223,12 +223,12 @@ already met destroys instrumentality for the rest of the period; both lower effo
   pre-period performance is close to the new quota and decrease effort among those
   far below it (an inverted-U in expectancy).
 - *H2.* The effect of bonus size on effort will be stronger when the
-  performance–pay link is transparent (high instrumentality).
+  performance-pay link is transparent (high instrumentality).
 
-**Designs.** Within-person choice experiments (conjoint designs over effort–reward
-options); field data on nonlinear incentive plans exploiting distance to
-threshold; structural models of dynamic effort. **Measures.** Subjective
-probabilities and ratings for each component; self-efficacy scales.
+**Designs.** Within-person choice experiments (conjoint designs over effort-reward
+options). Field data on nonlinear incentive plans exploiting distance to
+threshold. Structural models of dynamic effort. **Measures.** Subjective
+probabilities and ratings for each component. Self-efficacy scales.
 :::
 
 ::: {.pitfall}
@@ -246,18 +246,18 @@ ratio of outcomes to inputs with that of a referent other. Unequal ratios create
 psychological tension, which people reduce by changing inputs, outcomes,
 perceptions, comparison others, or the relationship itself.
 
-**Origins.** Social psychology of exchange; @adams1963; @adams1965; rooted in
+**Origins.** Social psychology of exchange, @adams1963, @adams1965, rooted in
 [social exchange theory](#social-exchange-theory) and
 [social comparison theory](#social-comparison-theory).
 
-**Level of analysis.** Individual and dyad (employee–employer, employee–coworker).
+**Level of analysis.** Individual and dyad (employee-employer, employee-coworker).
 
-**Key constructs.** Inputs; outcomes; referent other; under-reward and over-reward
-inequity; distributive justice; equity sensitivity.
+**Key constructs.** Inputs, outcomes, referent other, under-reward and over-reward
+inequity, distributive justice, equity sensitivity.
 
 **Boundary conditions.** Requires a salient comparison other and comparable inputs
-and outcomes; reactions to over-reward are weaker than to under-reward;
-individuals differ in equity sensitivity.
+and outcomes. Reactions to over-reward are weaker than to under-reward.
+Individuals differ in equity sensitivity.
 
 **Related theories.** [Social exchange theory](#social-exchange-theory),
 [Social comparison](#social-comparison-theory),
@@ -274,7 +274,7 @@ $$\frac{O_p}{I_p} \quad \text{versus} \quad \frac{O_o}{I_o},$$
 where $O$ denotes perceived outcomes (pay, recognition, status, interesting
 assignments), $I$ denotes perceived inputs (effort, skill, education, seniority,
 time), $p$ is the person, and $o$ is the comparison other. **Equity** exists when
-the ratios are equal — not when outcomes are equal. A senior engineer who earns
+the ratios are equal, not when outcomes are equal. A senior engineer who earns
 more than a junior colleague perceives no inequity if the difference is
 proportional to differences in inputs.
 
@@ -288,12 +288,12 @@ responses (Table \@ref(tab:tab-mot-inequity)).
 ```{r tab-mot-inequity}
 tibble::tribble(
   ~Response, ~`Under-reward example`, ~`Over-reward example`, ~`Organizational consequence`,
-  "Alter own inputs", "Reduce effort; withdraw extra-role behaviour", "Work harder or longer", "Productivity and citizenship behaviour change",
-  "Alter own outcomes", "Request a raise; take resources (including theft)", "Decline a perk (rare)", "Pay negotiations; deviance",
+  "Alter own inputs", "Reduce effort, withdraw extra-role behaviour", "Work harder or longer", "Productivity and citizenship behaviour change",
+  "Alter own outcomes", "Request a raise, take resources (including theft)", "Decline a perk (rare)", "Pay negotiations, deviance",
   "Cognitively distort own inputs or outcomes", "'My job is less demanding than I thought'", "'I really do contribute more'", "Attitudes adjust without behaviour change",
-  "Act on or distort the other", "Pressure the other to work harder; belittle their inputs", "Encourage the other to do less", "Team conflict; norm enforcement",
+  "Act on or distort the other", "Pressure the other to work harder, belittle their inputs", "Encourage the other to do less", "Team conflict, norm enforcement",
   "Change the comparison other", "Compare with a worse-off group instead", "Compare with a better-paid group", "Shifts in reference groups",
-  "Leave the field", "Absenteeism; quitting; transfer", "Rare", "Turnover"
+  "Leave the field", "Absenteeism, quitting, transfer", "Rare", "Turnover"
 ) |>
   book_table(caption = "Responses to inequity (after Adams, 1965).")
 ```
@@ -313,7 +313,7 @@ mechanism_diagram(sprintf('
   O  [label = "Own outcomes /\\nown inputs", %s]
   R  [label = "Referent outcomes /\\nreferent inputs", %s]
   C  [label = "Social comparison\\nof ratios", %s]
-  D  [label = "Perceived inequity;\\ndistress (anger / guilt)", %s]
+  D  [label = "Perceived inequity, \\ndistress (anger / guilt)", %s]
   B  [label = "Restoration: change inputs,\\noutcomes, perceptions,\\nreferent, or leave", %s]
   S  [label = "Equity\\nsensitivity", %s]
   X  [label = "Explanation adequacy\\n(interactional justice)", %s]
@@ -333,12 +333,12 @@ theft rose in the plants with the pay cut and fell back when normal pay resumed.
 Crucially, theft rose much less in the plant where management explained the pay
 cut thoroughly and with expressions of regret than in the plant that received a
 brief, impersonal explanation. Theft, in equity terms, was a way of restoring
-outcomes; the explanation reduced the perceived unfairness of the same pay cut.
+outcomes. The explanation reduced the perceived unfairness of the same pay cut.
 
 Equity theory evolved into the broader field of **organizational justice**. In
 addition to **distributive justice** (fairness of outcomes, the domain of equity
-theory), researchers identified **procedural justice** — fairness of the process,
-including the opportunity for voice [@thibaut1975] — and **interactional
+theory), researchers identified **procedural justice**, fairness of the process,
+including the opportunity for voice [@thibaut1975], and **interactional
 justice**, which @colquitt2001 showed is best split into interpersonal and
 informational components. Their meta-analysis supported four distinct but
 correlated forms of justice with partly different consequences
@@ -347,9 +347,9 @@ correlated forms of justice with partly different consequences
 ```{r tab-mot-justice}
 tibble::tribble(
   ~`Justice dimension`, ~`Fairness of ...`, ~`Typical criteria`, ~`Managerial lever`,
-  "Distributive", "Outcomes", "Equity (proportional to inputs), equality, need", "Pay structure; bonus allocation",
-  "Procedural", "Decision processes", "Voice, consistency, bias suppression, accuracy, correctability", "Transparent criteria; appeal mechanisms",
-  "Interpersonal", "Treatment by decision-makers", "Dignity, respect, propriety", "Manager training; respectful delivery",
+  "Distributive", "Outcomes", "Equity (proportional to inputs), equality, need", "Pay structure, bonus allocation",
+  "Procedural", "Decision processes", "Voice, consistency, bias suppression, accuracy, correctability", "Transparent criteria, appeal mechanisms",
+  "Interpersonal", "Treatment by decision-makers", "Dignity, respect, propriety", "Manager training, respectful delivery",
   "Informational", "Explanations", "Truthfulness, adequacy, timeliness of explanations", "Explaining pay decisions and cuts"
 ) |>
   book_table(caption = "Four dimensions of organizational justice (following Colquitt et al., 2001).")
@@ -363,12 +363,12 @@ referent outcomes visible. @card2012 exploited a natural experiment: after a
 newspaper launched a searchable website of University of California employees'
 salaries, researchers informed a random subset of employees about the site.
 Employees whose pay was below the median for their unit and occupation reported
-lower job satisfaction and greater intention to look for a new job; those above
+lower job satisfaction and greater intention to look for a new job. Those above
 the median showed no corresponding increase in satisfaction. The asymmetry is
 exactly what equity theory predicts: under-reward hurts more than over-reward
 helps. For firms adopting pay transparency, the lesson is that the *inputs* side
-of the ratio must also be visible and credible — published pay bands, clear
-criteria for progression, and explanations for differences — or transparency will
+of the ratio must also be visible and credible, published pay bands, clear
+criteria for progression, and explanations for differences, or transparency will
 mainly reveal perceived inequities.
 :::
 
@@ -380,9 +380,9 @@ mainly reveal perceived inequities.
 - *H2.* The negative effect of a pay cut on discretionary effort will be weaker
   when the cut is accompanied by an adequate explanation.
 
-**Measures.** Colquitt's justice scales; equity sensitivity instrument
-[@huseman1987]; behavioural outcomes such as turnover, absenteeism, and shrinkage.
-**Designs.** Natural experiments in disclosure; field experiments on explanations;
+**Measures.** Colquitt's justice scales, equity sensitivity instrument
+[@huseman1987], behavioural outcomes such as turnover, absenteeism, and shrinkage.
+**Designs.** Natural experiments in disclosure, field experiments on explanations,
 laboratory games with manipulated referent outcomes.
 :::
 
@@ -390,7 +390,7 @@ laboratory games with manipulated referent outcomes.
 **Assuming the referent.** Researchers and managers often assume that employees
 compare themselves with the obvious peer group. Equity theory makes the choice of
 referent a variable, and people may compare with former colleagues, friends in
-other firms, or their own past outcomes. Measure the referent or manipulate it;
+other firms, or their own past outcomes. Measure the referent or manipulate it,
 do not assume it.
 :::
 
@@ -401,16 +401,16 @@ do not assume it.
 goals, vague goals, or exhortations to "do your best", provided that people are
 committed to the goal, have the ability to reach it, and receive feedback.
 
-**Origins.** Industrial–organizational psychology; @locke1990; summarised in
+**Origins.** Industrial-organizational psychology, @locke1990, summarised in
 @locke2002.
 
 **Level of analysis.** Individual, team, and organization.
 
-**Key constructs.** Goal specificity; goal difficulty; goal commitment;
-feedback; task complexity; self-efficacy; learning versus performance goals.
+**Key constructs.** Goal specificity, goal difficulty, goal commitment,
+feedback, task complexity, self-efficacy, learning versus performance goals.
 
 **Boundary conditions.** Effects weaken for complex tasks where people lack
-strategies, when commitment is low, and when goals conflict; poorly designed goals
+strategies, when commitment is low, and when goals conflict. Poorly designed goals
 produce side effects.
 
 **Related theories.** [Expectancy theory](#expectancy-theory),
@@ -433,12 +433,12 @@ studies. @locke2002 summarise its core propositions:
   *persistence*, and prompt the discovery and use of task *strategies*.
 - **P4 (Moderators).** Goal effects are stronger when commitment is high (goals are
   important and self-efficacy is high), when feedback shows progress, and when
-  tasks are simple; for complex tasks, learning goals can outperform performance
+  tasks are simple. For complex tasks, learning goals can outperform performance
   goals.
 
 Figure \@ref(fig:fig-mot-goalsetting) sketches the basic relationship.
 
-```{r fig-mot-goalsetting, fig.cap = "Stylised goal-difficulty function. Performance rises with goal difficulty up to the limit of ability; beyond that point, performance plateaus when commitment holds and falls when people abandon an impossible goal. A vague 'do your best' goal produces moderate performance.", fig.height = 3.9}
+```{r fig-mot-goalsetting, fig.cap = "Stylised goal-difficulty function. Performance rises with goal difficulty up to the limit of ability. Beyond that point, performance plateaus when commitment holds and falls when people abandon an impossible goal. A vague 'do your best' goal produces moderate performance.", fig.height = 3.9}
 d <- seq(0, 100, by = 1)
 ability <- 75
 gs <- bind_rows(
@@ -461,7 +461,7 @@ ggplot(gs, aes(difficulty, performance, colour = path, linetype = path)) +
   coord_cartesian(ylim = c(0, 90)) +
   labs(x = "Goal difficulty (index)", y = "Performance (index)", colour = NULL, linetype = NULL,
        title = "Harder goals, higher performance, up to a point",
-       caption = "Stylised after the propositions in Locke & Latham (2002); not empirical data.") +
+       caption = "Stylised after the propositions in Locke & Latham (2002). Not empirical data.") +
   guides(colour = guide_legend(nrow = 2), linetype = guide_legend(nrow = 2))
 ```
 
@@ -479,11 +479,11 @@ targets such as four hours [@allen2017].
 ```{r tab-mot-goal-moderators}
 tibble::tribble(
   ~Moderator, ~`How it changes the goal effect`, ~`Design implication`,
-  "Goal commitment", "Effects require commitment; increased by importance and self-efficacy", "Explain why the goal matters; build confidence; consider participation",
+  "Goal commitment", "Effects require commitment, increased by importance and self-efficacy", "Explain why the goal matters, build confidence, consider participation",
   "Feedback", "Allows people to track progress and adjust effort or strategy", "Provide frequent, specific progress information",
   "Task complexity", "Effects smaller on complex tasks requiring new strategies", "Use learning goals (e.g., 'identify five new approaches') on novel tasks",
-  "Ability", "Performance plateaus at the limit of ability", "Calibrate difficulty to capability; train",
-  "Goal conflict", "Multiple goals compete for attention", "Prioritise; avoid incompatible targets"
+  "Ability", "Performance plateaus at the limit of ability", "Calibrate difficulty to capability, train",
+  "Goal conflict", "Multiple goals compete for attention", "Prioritise, avoid incompatible targets"
 ) |>
   book_table(caption = "Moderators of goal-setting effects (summarised from Locke & Latham, 2002).")
 ```
@@ -499,8 +499,8 @@ very success, however, provoked a debate about its side effects.
 **Goals gone wild?** @ordonez2009 argued that goal setting had been
 "overprescribed" and that specific, challenging goals have systematic side
 effects: they narrow attention so that unrewarded dimensions of performance
-(quality, safety, learning) are neglected; they encourage riskier behaviour; they
-can crowd out intrinsic motivation; and, most seriously, they motivate unethical
+(quality, safety, learning) are neglected. They encourage riskier behaviour, they
+can crowd out intrinsic motivation, and, most seriously, they motivate unethical
 behaviour. They drew on organizational cases, including Sears' auto-repair
 centres and the Ford Pinto, and on experimental evidence. In one such experiment,
 @schweitzer2004 found that people with unmet specific goals were more likely to
@@ -508,8 +508,8 @@ overstate their performance than people told to do their best, and that the
 tendency was strongest when they fell just short of the goal. @locke2009 replied
 that the critics relied heavily on anecdotes, that the side effects are well known
 and are addressed within goal-setting theory, and that the remedy is better goal
-setting — appropriate difficulty, multiple goals that include quality and ethics,
-and monitoring — not abandoning goals. The productive synthesis is that goals are
+setting, appropriate difficulty, multiple goals that include quality and ethics,
+and monitoring, not abandoning goals. The productive synthesis is that goals are
 powerful and therefore need the same governance as any powerful incentive.
 :::
 
@@ -518,13 +518,13 @@ powerful and therefore need the same governance as any powerful incentive.
 ::: {.business-case}
 **Wells Fargo's cross-selling targets.** Wells Fargo's retail bank long promoted
 an aggressive cross-selling strategy, summarised internally by the slogan
-"Eight is great" — a goal of eight products per household. In September 2016,
+"Eight is great", a goal of eight products per household. In September 2016,
 the Consumer Financial Protection Bureau, the Office of the Comptroller of the
 Currency, and the Los Angeles City Attorney announced settlements totalling
 \$185 million over the opening of accounts that customers had not authorised. The
 regulators' analysis found that employees may have opened roughly 1.5 million
 deposit accounts and submitted roughly 565,000 credit-card applications without
-customers' consent; the bank had dismissed about 5,300 employees over several
+customers' consent. The bank had dismissed about 5,300 employees over several
 years for related misconduct. Subsequent reviews identified a far larger number of
 potentially unauthorised accounts, and in 2020 the bank agreed to pay \$3 billion
 to resolve criminal and civil investigations by the U.S. Department of Justice and
@@ -533,8 +533,8 @@ independent directors in 2017 attributed the misconduct to a sales culture and
 performance-management system built around high, specific product targets. In
 the vocabulary of this chapter, the case combines the conditions that
 @ordonez2009 and @schweitzer2004 identified: difficult, specific, and highly
-monitored goals; narrow measurement (accounts opened rather than accounts used);
-pressure that intensified as employees approached their targets; and weak
+monitored goals. Narrow measurement (accounts opened rather than accounts used).
+Pressure that intensified as employees approached their targets, and weak
 controls against gaming.
 :::
 
@@ -547,10 +547,10 @@ controls against gaming.
   period just below their goal.
 - *H3.* Learning goals will outperform performance goals on novel, complex tasks.
 
-**Designs.** Randomised goal assignments in the lab or field; regression
-discontinuity around goal thresholds; bunching estimators for outcomes near
-round-number goals [@allen2017]. **Measures.** Goal difficulty and specificity;
-commitment scales; objective performance; audit data on misreporting.
+**Designs.** Randomised goal assignments in the lab or field. Regression
+discontinuity around goal thresholds. Bunching estimators for outcomes near
+round-number goals [@allen2017]. **Measures.** Goal difficulty and specificity,
+commitment scales, objective performance, audit data on misreporting.
 :::
 
 ::: {.pitfall}
@@ -567,17 +567,17 @@ integrity metrics, and audit the behaviours that the goal makes tempting.
 **Core claim.** The tendency to approach a goal increases with proximity to the
 goal: effort accelerates as the reward draws near.
 
-**Origins.** Behaviourist learning theory; @Hull_1932 and @Hull_1934 on rats
-running toward food; @Brown_1948 on gradients of approach and avoidance; revived
+**Origins.** Behaviourist learning theory. @Hull_1932 and @Hull_1934 on rats
+running toward food. @Brown_1948 on gradients of approach and avoidance. Revived
 in consumer research by @Kivetz_2006.
 
 **Level of analysis.** Individual (animals, consumers, employees).
 
-**Key constructs.** Goal distance; perceived progress; effort acceleration;
-illusionary (endowed) progress; post-reward resetting.
+**Key constructs.** Goal distance, perceived progress, effort acceleration,
+illusionary (endowed) progress, post-reward resetting.
 
-**Boundary conditions.** Effects depend on *perceived* rather than actual progress;
-motivation can sag in the middle of a goal; in competition, being far behind can
+**Boundary conditions.** Effects depend on *perceived* rather than actual progress.
+Motivation can sag in the middle of a goal. In competition, being far behind can
 trigger quitting.
 
 **Related theories.** [Goal-setting theory](#goal-setting-theory),
@@ -600,7 +600,7 @@ consumers in reward programs. In a field study at a university café that used a
 as they approached the free coffee. In an online music-rating program that
 rewarded participants after a given number of ratings, participants visited more
 often and rated more songs per visit as they neared the reward. After earning a
-reward, purchase rates fell back — a *post-reward resetting* of motivation. The
+reward, purchase rates fell back: a *post-reward resetting* of motivation. The
 researchers also documented **illusionary goal progress**: a 12-stamp card
 pre-stamped with two stamps was completed faster than a 10-stamp card with no
 pre-stamps, although both required ten purchases.
@@ -620,7 +620,7 @@ gradient <- sim |>
   summarise(mean_days = mean(days), se = sd(days) / sqrt(n()))
 ggplot(gradient, aes(purchase, mean_days)) +
   geom_vline(xintercept = 10.5, linetype = "dashed", colour = ink[["muted"]]) +
-  annotate("text", x = 10.6, y = 8.7, label = "Reward earned;\nnew card begins", hjust = 0,
+  annotate("text", x = 10.6, y = 8.7, label = "Reward earned, \nnew card begins", hjust = 0,
            size = 3.2, colour = ink[["secondary"]]) +
   geom_errorbar(aes(ymin = mean_days - 1.96 * se, ymax = mean_days + 1.96 * se),
                 width = 0.25, colour = ink[["muted"]]) +
@@ -631,7 +631,7 @@ ggplot(gradient, aes(purchase, mean_days)) +
   labs(x = "Purchase number", y = "Mean days since previous purchase",
        title = "Customers speed up as the reward approaches",
        subtitle = "Inter-purchase time falls along each card and resets after the reward",
-       caption = "Illustrative simulation (set.seed(2006)); bars show 95% intervals of the simulated means.")
+       caption = "Illustrative simulation (set.seed(2006)). Bars show 95% intervals of the simulated means.")
 ```
 
 ### Mechanism and extensions
@@ -639,14 +639,14 @@ ggplot(gradient, aes(purchase, mean_days)) +
 Why does proximity motivate? Three explanations complement one another. In
 Hull's behaviourist account, actions closer to the reward are more strongly
 reinforced. In a cognitive account, each action produces a larger proportional
-reduction in the remaining distance as the goal approaches — the last stamp
-eliminates 100% of the remaining distance, the first only 10% — so the
+reduction in the remaining distance as the goal approaches, the last stamp
+eliminates 100% of the remaining distance, the first only 10%, so the
 *perceived marginal impact* of effort rises. In a reference-point account,
 falling just short of a goal is experienced as a loss [@heath1999].
 
 The perceived-progress mechanism explains the **endowed progress effect**.
 @nunes2006 gave car-wash customers loyalty cards that required eight purchases
-for a free wash. For half the customers the card had eight spaces; for the other
+for a free wash. For half the customers the card had eight spaces. For the other
 half it had ten spaces with two already stamped. Customers given the "endowed"
 cards completed them substantially more often and faster, although both groups
 needed the same eight purchases. Progress that is framed as already under way
@@ -675,12 +675,12 @@ protects the inference of high ability.
 architecture of modern loyalty and engagement systems: punch cards and stamp
 cards, points thresholds for status tiers, progress bars on profile completion,
 and streaks in learning apps. The research suggests five design principles.
-(1) *Make progress visible* — the gradient depends on perceived distance.
-(2) *Endow initial progress* — start customers part-way along the card, as in
-@nunes2006. (3) *Shorten the middle* — break long goals into sub-goals to avoid
-the mid-point slump [@bonezzi2011]. (4) *Plan for the reset* — after a reward,
+(1) *Make progress visible*: the gradient depends on perceived distance.
+(2) *Endow initial progress*: start customers part-way along the card, as in
+@nunes2006. (3) *Shorten the middle*: break long goals into sub-goals to avoid
+the mid-point slump [@bonezzi2011]. (4) *Plan for the reset*: after a reward,
 offer an immediate new goal so that resetting does not become attrition
-[@Kivetz_2006]. (5) *Beware of competitive leaderboards* — those far from the top
+[@Kivetz_2006]. (5) *Beware of competitive leaderboards*: those far from the top
 may disengage [@Fershtman_2011].
 :::
 
@@ -696,22 +696,22 @@ seasonal variation in purchases.
 
 ::: {.theory-card}
 **Core claim.** Motivation varies not only in amount but in *type*. Autonomous
-motivation — acting from interest or personally endorsed values — produces better
+motivation, acting from interest or personally endorsed values, produces better
 persistence, performance on complex tasks, and well-being than controlled
 motivation driven by rewards, punishments, or guilt. Satisfying the needs for
 autonomy, competence, and relatedness fosters autonomous motivation.
 
-**Origins.** Social psychology; @deci1985; @ryan2000; applied to work by
+**Origins.** Social psychology, @deci1985, @ryan2000, applied to work by
 @gagne2005.
 
 **Level of analysis.** Individual (with social-contextual antecedents).
 
-**Key constructs.** Intrinsic motivation; extrinsic motivation; internalisation;
-external, introjected, identified, and integrated regulation; basic psychological
-needs; undermining (crowding-out) effect.
+**Key constructs.** Intrinsic motivation, extrinsic motivation, internalisation,
+external, introjected, identified, and integrated regulation, basic psychological
+needs, undermining (crowding-out) effect.
 
 **Boundary conditions.** Undermining effects apply to tasks that are initially
-interesting; rewards perceived as informational rather than controlling can
+interesting. Rewards perceived as informational rather than controlling can
 support motivation.
 
 **Related theories.** [Expectancy theory](#expectancy-theory),
@@ -721,8 +721,8 @@ support motivation.
 
 ### Core logic
 
-@deci1985 distinguished **intrinsic motivation** — doing an activity for its
-inherent satisfaction — from **extrinsic motivation** — doing it for a separable
+@deci1985 distinguished **intrinsic motivation**, doing an activity for its
+inherent satisfaction, from **extrinsic motivation**: doing it for a separable
 outcome. Self-determination theory refines the second category. Extrinsic
 motivation can be more or less internalised, ranging from **external regulation**
 (acting to obtain rewards or avoid punishment), through **introjected regulation**
@@ -733,12 +733,12 @@ groups external and introjected regulation as *controlled* motivation, and
 identified, integrated, and intrinsic regulation as *autonomous* motivation
 (Figure \@ref(fig:fig-mot-sdt)).
 
-```{r fig-mot-sdt, fig.cap = "The self-determination continuum (after Ryan & Deci, 2000). Forms of motivation are ordered by the degree to which regulation is experienced as autonomous; external and introjected regulation are 'controlled', identified, integrated, and intrinsic regulation are 'autonomous'.", fig.height = 3.2}
+```{r fig-mot-sdt, fig.cap = "The self-determination continuum (after Ryan & Deci, 2000). Forms of motivation are ordered by the degree to which regulation is experienced as autonomous. External and introjected regulation are 'controlled', identified, integrated, and intrinsic regulation are 'autonomous'.", fig.height = 3.2}
 sdt <- tibble::tibble(
   pos = 1:6,
   type = c("Amotivation", "External\nregulation", "Introjected\nregulation",
            "Identified\nregulation", "Integrated\nregulation", "Intrinsic\nmotivation"),
-  source = c("No intention;\nno perceived value", "Rewards and\npunishments", "Guilt, pride,\nego involvement",
+  source = c("No intention, \nno perceived value", "Rewards and\npunishments", "Guilt, pride,\nego involvement",
              "Personal\nimportance", "Congruence with\nidentity and values", "Interest and\nenjoyment"),
   autonomy = c(0, 1, 2, 3, 4, 5)
 )
@@ -754,7 +754,7 @@ ggplot(sdt) +
   scale_colour_manual(values = c(`FALSE` = ink[["primary"]], `TRUE` = "white"), guide = "none") +
   scale_y_continuous(limits = c(0.6, 3.05)) +
   labs(title = "From controlled to autonomous motivation",
-       caption = "Schematic after Ryan & Deci (2000); not data.") +
+       caption = "Schematic after Ryan & Deci (2000), not data.") +
   theme_void() +
   theme(plot.title = element_text(face = "bold", colour = ink[["primary"]]),
         plot.caption = element_text(colour = ink[["muted"]], size = 8, hjust = 0))
@@ -763,9 +763,9 @@ ggplot(sdt) +
 Social contexts move people along this continuum by supporting or thwarting three
 **basic psychological needs**: *autonomy* (experiencing one's behaviour as
 self-endorsed), *competence* (feeling effective), and *relatedness* (feeling
-connected to others) [@ryan2000]. At work, autonomy-supportive supervision —
+connected to others) [@ryan2000]. At work, autonomy-supportive supervision,
 acknowledging employees' perspectives, offering choice, and explaining the
-rationale for requests — is associated with more autonomous motivation, better
+rationale for requests, is associated with more autonomous motivation, better
 performance on complex tasks, and higher well-being [@gagne2005].
 
 ### Mechanism: when rewards backfire
@@ -778,7 +778,7 @@ that preschool children who drew with markers in order to receive an expected
 been offered the award. Self-determination theory explains the effect through the
 *functional significance* of the reward: a reward experienced as **controlling**
 shifts the perceived locus of causality from "I do this because I enjoy it" to "I
-do this for the reward" and thwarts autonomy; a reward experienced as
+do this for the reward" and thwarts autonomy. A reward experienced as
 **informational** conveys competence and need not undermine motivation.
 
 ```{r fig-mot-crowding, fig.cap = "Mechanism of motivation crowding. Whether an extrinsic reward undermines or supports intrinsic motivation depends on whether it is experienced as controlling or informational, which in turn depends on reward type and contingency, and on whether the reward reframes the situation from a social to a market exchange."}
@@ -803,15 +803,15 @@ mechanism_diagram(sprintf('
 @deci1999 meta-analysed experiments on rewards and intrinsic motivation, measured
 by free-choice persistence and self-reported interest. Tangible rewards that
 were expected and contingent on doing, completing, or performing a task
-undermined intrinsic motivation for interesting tasks; unexpected tangible rewards
+undermined intrinsic motivation for interesting tasks. Unexpected tangible rewards
 and verbal rewards (positive feedback) did not, and verbal rewards tended to
 enhance it.
 
 Economists documented parallel phenomena under the label **motivation crowding**
 [@frey2001]. @gneezy2000a found that paying participants a small piece rate for
 answering IQ-test questions produced *lower* performance than paying nothing,
-whereas a larger piece rate raised performance above the small-payment level;
-similarly, students collecting
+whereas a larger piece rate raised performance above the small-payment level.
+Similarly, students collecting
 charitable donations collected less when offered a small commission than when
 offered nothing. Hence the title: "pay enough or don't pay at all". In a field
 experiment at Israeli day-care centres, @gneezy2000b found that introducing a
@@ -824,13 +824,13 @@ willing to pay.
 **How general is crowding out?** @cameron1994 meta-analysed many of the same
 experiments and concluded that rewards had little overall detrimental effect on
 intrinsic motivation, prompting a long-running exchange about which studies to
-include and how to classify reward conditions; @deci1999 was in part a response.
+include and how to classify reward conditions. @deci1999 was in part a response.
 A later synthesis by @cerasoli2014 suggests a reconciliation: intrinsic motivation
 predicted performance, especially its *quality*, while extrinsic incentives better
-predicted performance *quantity*; the two jointly predicted performance, and the
+predicted performance *quantity*. The two jointly predicted performance, and the
 role of intrinsic motivation was weaker when incentives were directly tied to
 performance. The practical conclusion is not that incentives are harmful, but that
-their *design* — contingency, framing, and the type of task — determines whether
+their *design*, contingency, framing, and the type of task, determines whether
 they complement or crowd out intrinsic motivation.
 :::
 
@@ -839,16 +839,16 @@ they complement or crowd out intrinsic motivation.
 ::: {.business-case}
 **Intrinsic motivation in knowledge work.** @amabile1996 argued that intrinsic
 motivation is conducive to creativity, whereas controlling extrinsic constraints
-— close monitoring, evaluation emphasised for its own sake, rewards contingent on
-narrow outputs — tend to undermine it, and that informational feedback and
+, close monitoring, evaluation emphasised for its own sake, rewards contingent on
+narrow outputs, tend to undermine it, and that informational feedback and
 recognition can support it. For managers of engineers, designers, analysts, and
 researchers, self-determination theory implies several practices: give teams
-meaningful choice over *how* they meet goals; frame metrics as feedback rather
-than surveillance; use recognition and development opportunities that signal
-competence; and avoid piece-rate incentives for open-ended creative work, where
+meaningful choice over *how* they meet goals. Frame metrics as feedback rather
+than surveillance. Use recognition and development opportunities that signal
+competence, and avoid piece-rate incentives for open-ended creative work, where
 contingent tangible rewards are most likely to crowd out interest
-[@gagne2005; @deci1999]. Pay still matters — as a fair, predictable base that
-removes concern about money, consistent with equity theory — but it is a poor tool
+[@gagne2005; @deci1999]. Pay still matters, as a fair, predictable base that
+removes concern about money, consistent with equity theory, but it is a poor tool
 for stimulating curiosity.
 :::
 
@@ -863,9 +863,9 @@ for stimulating curiosity.
   participation relative to no payment (crowding out), but larger payments will
   increase it.
 
-**Measures.** Free-choice persistence; Work Extrinsic and Intrinsic Motivation or
-Motivation at Work scales; basic need satisfaction scales. **Designs.** Randomised
-reward framing; field experiments with payment levels [@gneezy2000a]; panel data
+**Measures.** Free-choice persistence, Work Extrinsic and Intrinsic Motivation or
+Motivation at Work scales, basic need satisfaction scales. **Designs.** Randomised
+reward framing, field experiments with payment levels [@gneezy2000a], panel data
 following changes in incentive regimes.
 :::
 
@@ -883,17 +883,17 @@ them as fair and informational rather than controlling.
 **Core claim.** Being slightly behind a competitor or a reference point can
 increase effort enough to raise the probability of eventual success.
 
-**Origins.** Behavioural economics and psychology; @Berger_2011, building on
+**Origins.** Behavioural economics and psychology. @Berger_2011, building on
 reference-dependent preferences [@kahneman1979] and goals as reference points
 [@heath1999].
 
 **Level of analysis.** Individual and team in competitive settings.
 
-**Key constructs.** Reference point; distance from the reference point;
-motivational effort; competitive feedback.
+**Key constructs.** Reference point, distance from the reference point,
+motivational effort, competitive feedback.
 
-**Boundary conditions.** Applies only when the deficit is *small*; large deficits
-reduce perceived attainability and can trigger quitting; requires that effort can
+**Boundary conditions.** Applies only when the deficit is *small*. Large deficits
+reduce perceived attainability and can trigger quitting. Requires that effort can
 still affect the outcome.
 
 **Related theories.** [Goal gradient](#goal-gradient-hypothesis),
@@ -913,12 +913,12 @@ told that they were slightly behind their opponent exerted more effort than thos
 told that they were tied or slightly ahead.
 
 The explanation combines two ideas from this chapter. First, the tie acts as a
-salient **reference point**; trailing by a little places a team in the domain of
+salient **reference point**. Trailing by a little places a team in the domain of
 losses, where the value function is steepest and the motivation to close the gap
 is strongest [@kahneman1979; @heath1999]. Second, a small deficit preserves
 **expectancy**: catching up is clearly feasible. A large deficit preserves the
-loss frame but destroys expectancy, which is why the effect should — and in the
-data does — appear only for small margins. Figure \@ref(fig:fig-mot-halftime)
+loss frame but destroys expectancy, which is why the effect should, and in the
+data does, appear only for small margins. Figure \@ref(fig:fig-mot-halftime)
 shows the pattern in stylised form.
 
 ```{r fig-mot-halftime, fig.cap = "Stylised illustration of the 'losing leads to winning' pattern reported by Berger and Pope (2011): win probability generally rises with the half-time margin, but teams slightly behind win more often than a smooth trend predicts. Values are illustrative, not the published estimates.", fig.height = 3.9}
@@ -939,9 +939,9 @@ ggplot(halftime, aes(margin)) +
                                  "Stylised observed pattern" = pal[["blue"]])) +
   scale_x_continuous(breaks = seq(-8, 8, 2)) +
   scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
-  labs(x = "Half-time score margin (points; negative = behind)", y = "Probability of winning",
+  labs(x = "Half-time score margin (points, negative = behind)", y = "Probability of winning",
        colour = NULL, title = "Being slightly behind can help",
-       caption = "Stylised pattern consistent with Berger & Pope (2011); not the published estimates.")
+       caption = "Stylised pattern consistent with Berger & Pope (2011). Not the published estimates.")
 ```
 
 ::: {.debate}
@@ -975,13 +975,13 @@ and internal hackathons that publish interim standings.
 **Using the theory in research.**
 
 - *H1.* Teams or individuals slightly behind at an interim checkpoint will exert
-  more subsequent effort than those slightly ahead; the effect will reverse for
+  more subsequent effort than those slightly ahead. The effect will reverse for
   large deficits.
 - *H2.* The effect will be stronger when interim standings are salient and when
   effort can still affect outcomes.
 
 **Designs.** Regression discontinuity at interim ties in sports, sales contests, or
-crowdfunding; laboratory experiments manipulating interim feedback; field
+crowdfunding, laboratory experiments manipulating interim feedback, field
 experiments randomising peer-comparison feedback. **Outcomes.** Effort measures
 (activity counts, time on task) and final success.
 :::
@@ -989,12 +989,12 @@ experiments randomising peer-comparison feedback. **Outcomes.** Effort measures
 ## Integrating the Theories {#motivation-integration}
 
 The theories in this chapter are complementary rather than rival. Expectancy
-theory explains the *calculus* of effort; goal-setting theory explains how
-specific targets focus that calculus; the goal gradient and losing-leads-to-winning
-phenomena show how the calculus changes with distance from a reference point;
-equity theory adds that rewards are judged *relative to others*; and
+theory explains the *calculus* of effort. Goal-setting theory explains how
+specific targets focus that calculus. The goal gradient and losing-leads-to-winning
+phenomena show how the calculus changes with distance from a reference point.
+Equity theory adds that rewards are judged *relative to others*, and
 self-determination theory warns that the *type* of motivation matters as much as
-its quantity. A well-designed incentive system — for customers or employees —
+its quantity. A well-designed incentive system, for customers or employees,
 attends to all five: attainable goals (expectancy), credible links between
 performance and reward (instrumentality), fair comparisons (equity), progress
 visibility (gradient), and autonomy-supportive framing (self-determination).
@@ -1002,22 +1002,22 @@ visibility (gradient), and autonomy-supportive framing (self-determination).
 ## Chapter Summary {#motivation-summary}
 
 ::: {.key-takeaways}
-- **Content theories** (Maslow, Herzberg) ask what motivates; **process theories**
+- **Content theories** (Maslow, Herzberg) ask what motivates. **Process theories**
   ask how motivation works and generally have stronger empirical support
   [@wahba1976; @latham2005].
-- **Expectancy theory** treats motivation as E x I x V; a weak link anywhere
+- **Expectancy theory** treats motivation as E x I x V. A weak link anywhere
   collapses motivation, although meta-analytic evidence favours the components
   more than their exact multiplicative combination [@vroom1964; @vaneerde1996].
 - **Equity theory** explains reactions to the *ratio* of outcomes to inputs relative
-  to a referent; under-reward provokes withdrawal and even theft, mitigated by
+  to a referent. Under-reward provokes withdrawal and even theft, mitigated by
   adequate explanations [@adams1965; @greenberg1990; @colquitt2001].
 - **Specific, difficult goals** raise performance through direction, effort,
   persistence, and strategy [@locke2002], but poorly governed goals can motivate
   narrow focus and misconduct [@ordonez2009; @schweitzer2004].
-- **Effort accelerates near goals** — in rats, coffee buyers, and online raters —
+- **Effort accelerates near goals**, in rats, coffee buyers, and online raters,
   and perceived progress can be engineered [@Hull_1932; @Kivetz_2006; @nunes2006].
 - **Self-determination theory** distinguishes autonomous from controlled
-  motivation; expected, contingent tangible rewards can crowd out intrinsic
+  motivation. Expected, contingent tangible rewards can crowd out intrinsic
   motivation, and small payments or fines can backfire
   [@ryan2000; @deci1999; @gneezy2000a; @gneezy2000b].
 - **Being slightly behind** can increase effort and success, within a narrow band
@@ -1027,12 +1027,12 @@ visibility (gradient), and autonomy-supportive framing (self-determination).
 ```{r tab-mot-summary}
 tibble::tribble(
   ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Main boundary condition`, ~`Typical business use`,
-  "Expectancy theory", "Beliefs about effort, performance, and rewards", "A near-zero component collapses motivation", "Calculative choice; within-person", "Quota and bonus design",
-  "Equity theory", "Social comparison of outcome/input ratios", "Under-reward triggers withdrawal or restitution", "Salient referent; equity sensitivity", "Pay transparency; pay-cut communication",
-  "Goal-setting theory", "Direction, effort, persistence, strategy", "Specific difficult goals beat 'do your best'", "Commitment, feedback, task complexity", "Performance management; OKRs",
-  "Goal gradient", "Perceived progress and marginal impact", "Effort accelerates near the goal", "Perceived not actual distance; competition", "Loyalty programs; gamification",
-  "Self-determination theory", "Need satisfaction; internalisation", "Controlling rewards undermine interest", "Initially interesting tasks", "Knowledge-work incentives; volunteering",
-  "Losing leads to winning", "Reference point plus attainability", "Small deficits raise success", "Only for small deficits", "Contests; peer-comparison feedback"
+  "Expectancy theory", "Beliefs about effort, performance, and rewards", "A near-zero component collapses motivation", "Calculative choice, within-person", "Quota and bonus design",
+  "Equity theory", "Social comparison of outcome/input ratios", "Under-reward triggers withdrawal or restitution", "Salient referent, equity sensitivity", "Pay transparency, pay-cut communication",
+  "Goal-setting theory", "Direction, effort, persistence, strategy", "Specific difficult goals beat 'do your best'", "Commitment, feedback, task complexity", "Performance management, OKRs",
+  "Goal gradient", "Perceived progress and marginal impact", "Effort accelerates near the goal", "Perceived not actual distance, competition", "Loyalty programs, gamification",
+  "Self-determination theory", "Need satisfaction, internalisation", "Controlling rewards undermine interest", "Initially interesting tasks", "Knowledge-work incentives, volunteering",
+  "Losing leads to winning", "Reference point plus attainability", "Small deficits raise success", "Only for small deficits", "Contests, peer-comparison feedback"
 ) |>
   book_table(caption = "Comparison of the chapter's motivation theories.")
 ```
@@ -1061,19 +1061,19 @@ tibble::tribble(
 
 ## Further Reading {#motivation-reading}
 
-- @latham2005 — an authoritative review of work-motivation theory and evidence at
+- @latham2005: an authoritative review of work-motivation theory and evidence at
   the turn of the century.
-- @vroom1964 — the founding statement of expectancy theory; read with
+- @vroom1964: the founding statement of expectancy theory. Read with
   @vaneerde1996 for the empirical record.
-- @adams1965 — the definitive presentation of equity theory and the responses to
-  inequity; pair with @greenberg1990 for a vivid field test.
-- @locke2002 — a concise synthesis of 35 years of goal-setting research; read with
+- @adams1965: the definitive presentation of equity theory and the responses to
+  inequity. Pair with @greenberg1990 for a vivid field test.
+- @locke2002: a concise synthesis of 35 years of goal-setting research. Read with
   @ordonez2009 and @locke2009 for the debate on side effects.
-- @Kivetz_2006 — the modern demonstration that the goal gradient governs consumer
+- @Kivetz_2006: the modern demonstration that the goal gradient governs consumer
   behaviour in reward programs.
-- @ryan2000 — the clearest short introduction to self-determination theory; see
+- @ryan2000: the clearest short introduction to self-determination theory. See
   @deci1999 for the evidence on rewards and intrinsic motivation.
-- @gneezy2000a and @gneezy2000b — two short, influential papers showing when
+- @gneezy2000a and @gneezy2000b: two short, influential papers showing when
   incentives backfire.
-- @Berger_2011 — an elegant combination of field and laboratory evidence that
+- @Berger_2011: an elegant combination of field and laboratory evidence that
   being slightly behind can increase success.

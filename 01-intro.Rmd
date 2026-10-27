@@ -1,6 +1,6 @@
 # Introduction {#intro}
 
-Doing social science research requires knowing a great many theories — and
+Doing social science research requires knowing a great many theories, and
 knowing which one fits which problem. For a new doctoral student this can be
 overwhelming. Senior colleagues seem to speak theory as a second language:
 "that's an agency problem", "it's a signaling story", "sounds like optimal
@@ -13,10 +13,10 @@ used in business and the social sciences into a single, consistent reference,
 so that a reader can (1) find the right theory quickly, (2) understand its logic
 well enough to use it correctly, and (3) see how it connects to its neighbours.
 It began as the author's personal notes and grew into a field guide meant for
-anyone who needs theory to do serious work — in a dissertation, a journal
+anyone who needs theory to do serious work: in a dissertation, a journal
 article, a classroom, or a boardroom.
 
-## Why theory matters — in research and in business
+## Why theory matters: in research and in business
 
 A **theory** is a set of statements about how and why a set of constructs are
 related, and under what conditions (Chapter \@ref(what-is-theory)). Theory does
@@ -26,7 +26,7 @@ three jobs that data alone cannot do:
    anyone could test. Theory narrows the search to relationships that should
    exist *if* a particular mechanism operates.
 2. **It explains why.** An observed effect without a mechanism cannot be
-   generalized. Knowing that a warranty raises sales is useful; knowing that it
+   generalized. Knowing that a warranty raises sales is useful. Knowing that it
    does so because it is a [costly signal](#signaling-theory) tells you when it
    will stop working (when competitors can match it cheaply).
 3. **It travels.** Mechanisms transfer across settings. The logic of
@@ -34,9 +34,9 @@ three jobs that data alone cannot do:
    hiring, and venture capital alike.
 
 Managers use theory constantly, usually without naming it. A pricing manager who
-offers a "good–better–best" menu is applying [screening](#screening-theory); an
+offers a "good-better-best" menu is applying [screening](#screening-theory). An
 HR director worried that a bonus will undermine intrinsic interest is invoking
-[self-determination theory](#self-determination-theory); a utility that tells
+[self-determination theory](#self-determination-theory). A utility that tells
 households how their energy use compares with their neighbours' is using
 [social norms](#social-norms). Making these theories explicit lets decision
 makers anticipate side effects and boundary conditions *before* they become
@@ -46,12 +46,12 @@ expensive surprises.
 **Theory as a decision tool.** Consider a subscription business deciding whether
 to offer a free trial. Four theories in this book make different predictions:
 the [endowment effect](#endowment-effect) suggests trial users will value the
-product more once they "own" it; [hedonic adaptation](#hedonic-adaptation)
-warns that novelty fades; [signaling theory](#signaling-theory) suggests that a
-long free trial signals confidence in quality; and
+product more once they "own" it. [Hedonic adaptation](#hedonic-adaptation)
+warns that novelty fades. [Signaling theory](#signaling-theory) suggests that a
+long free trial signals confidence in quality, and
 [choice architecture](#choice-architecture) highlights that whether the trial
 converts *by default* will dominate the outcome. A manager who knows all four can
-design an experiment that tells them apart — and a researcher can turn the same
+design an experiment that tells them apart, and a researcher can turn the same
 contrast into a paper.
 :::
 
@@ -60,7 +60,7 @@ contrast into a paper.
 The theories in this book are not isolated islands. Many share mechanisms (for
 example, *information*, *incentives*, *identity*, or *power*), and many were
 developed in dialogue with one another. Figure \@ref(fig:fig-intro-map) shows
-every entry in the book as a node, coloured by part of the book; edges connect
+every entry in the book as a node, coloured by part of the book. Edges connect
 theories that cross-reference each other in the text. In the online edition the
 map is interactive: hover to see a theory's core claim, click to highlight its
 neighbours, and use the menu to select a theory.
@@ -103,7 +103,7 @@ part_levels <- c("Foundations", "Organizations & Strategy", "Individuals & Group
 part_cols <- setNames(unname(pal[c("violet", "blue", "orange", "aqua")]), part_levels)
 ```
 
-```{r fig-intro-map, fig.cap = "The theory map: each node is an entry in the book, coloured by part; edges connect entries that cross-reference each other. Interactive in the online edition.", fig.height = 7, out.width = "100%"}
+```{r fig-intro-map, fig.cap = "The theory map: each node is an entry in the book, coloured by part. Edges connect entries that cross-reference each other. Interactive in the online edition.", fig.height = 7, out.width = "100%"}
 if (is_html()) {
   nodes <- atlas |>
     dplyr::transmute(
@@ -146,8 +146,8 @@ Figure \@ref(fig:fig-intro-heat) cross-tabulates the entries by **level of
 analysis** and **dominant mechanism**. Two patterns stand out. First, most
 organization-level theories explain outcomes through *resources*, *incentives*,
 *power*, or *legitimacy*, while individual-level theories rely on *cognition*,
-*emotion*, *motivation*, and *identity*. Second, a handful of mechanisms —
-especially information and social comparison — work at every level, which is
+*emotion*, *motivation*, and *identity*. Second, a handful of mechanisms,
+especially information and social comparison, work at every level, which is
 why theories built on them (signaling, social comparison, social norms) travel so
 widely across disciplines.
 
@@ -191,20 +191,20 @@ managerial questions to the families of theory that address them.
 ```{r tab-intro-questions}
 tibble::tribble(
   ~`If your question is about...`, ~`Start with`, ~Chapter,
-  "Why some firms persistently outperform others", "Resource-based view; dynamic capabilities", "4–5",
-  "Whether to make, buy, or partner", "Transaction cost economics; resource dependence", "6–7",
-  "Aligning managers or employees with owners", "Agency theory; stewardship theory", "6",
-  "Why firms in a field look alike", "Institutional theory; legitimacy", "7",
-  "Communicating quality that buyers cannot see", "Signaling; screening; information asymmetry", "8",
-  "Who gets information, power, and opportunities", "Social exchange; weak ties; structural holes", "9",
-  "How new products and technologies spread", "Diffusion of innovations; Bass model; TAM/UTAUT", "10",
-  "Adapting strategy or messages across countries", "Hofstede; GLOBE; self-construal", "11",
-  "Designing incentives, goals, and rewards", "Expectancy; equity; goal setting; self-determination", "12",
-  "Framing messages for different audiences", "Regulatory focus and fit; construal level", "13",
-  "Using peers, norms, and identity to change behaviour", "Social comparison; social norms; optimal distinctiveness", "14",
-  "Pricing, defaults, and seemingly irrational choices", "Prospect theory; mental accounting; choice architecture", "15",
-  "Customer experience, satisfaction, and virality", "Peak-end rule; hedonic adaptation; emotion and virality", "16",
-  "Persuasion, word of mouth, and media effects", "ELM; persuasion knowledge; social transmission", "17"
+  "Why some firms persistently outperform others", "Resource-based view, dynamic capabilities", "4-5",
+  "Whether to make, buy, or partner", "Transaction cost economics, resource dependence", "6-7",
+  "Aligning managers or employees with owners", "Agency theory, stewardship theory", "6",
+  "Why firms in a field look alike", "Institutional theory, legitimacy", "7",
+  "Communicating quality that buyers cannot see", "Signaling, screening, information asymmetry", "8",
+  "Who gets information, power, and opportunities", "Social exchange, weak ties, structural holes", "9",
+  "How new products and technologies spread", "Diffusion of innovations, Bass model, TAM/UTAUT", "10",
+  "Adapting strategy or messages across countries", "Hofstede, GLOBE, self-construal", "11",
+  "Designing incentives, goals, and rewards", "Expectancy, equity, goal setting, self-determination", "12",
+  "Framing messages for different audiences", "Regulatory focus and fit, construal level", "13",
+  "Using peers, norms, and identity to change behaviour", "Social comparison, social norms, optimal distinctiveness", "14",
+  "Pricing, defaults, and seemingly irrational choices", "Prospect theory, mental accounting, choice architecture", "15",
+  "Customer experience, satisfaction, and virality", "Peak-end rule, hedonic adaptation, emotion and virality", "16",
+  "Persuasion, word of mouth, and media effects", "ELM, persuasion knowledge, social transmission", "17"
 ) |>
   book_table(caption = "From research question to theory: a quick-start guide.")
 ```
@@ -225,8 +225,8 @@ tibble::tribble(
 
 ::: {.pitfall}
 **Theory shopping.** It is tempting to pick a theory *after* the results are in
-and choose whichever one "explains" them. This is a form of HARKing —
-hypothesizing after the results are known — and it produces fragile findings
+and choose whichever one "explains" them. This is a form of HARKing,
+hypothesizing after the results are known, and it produces fragile findings
 (Chapter \@ref(using-theory)). Choose theories for their mechanisms before
 collecting data, and, where possible, pit two theories with different
 predictions against each other.
@@ -234,8 +234,8 @@ predictions against each other.
 
 ## Conventions
 
-Citations follow author–year style and link to the full reference list. Figures
+Citations follow author-year style and link to the full reference list. Figures
 labelled *Illustrative* or *Stylised* are built from simulated or schematic data
-to show a theory's logic; they are not empirical results. All code used to make
+to show a theory's logic. They are not empirical results. All code used to make
 the figures is in the book's [GitHub repository](https://github.com/mikenguyen13/social-theory),
 so every figure can be reproduced and adapted.

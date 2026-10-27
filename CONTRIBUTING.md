@@ -32,7 +32,7 @@ citation errors, please include the source that supports the correction.
 
 ## Standards
 
-- **Accuracy first.** Cite only sources you have read or verified; never invent
+- **Accuracy first.** Cite only sources you have read or verified. Never invent
   statistics, quotations, or page numbers. References are checked against
   Crossref (`tools/verify_refs.R`).
 - **Balance.** Present critiques and replication evidence alongside the theory.

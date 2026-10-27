@@ -71,6 +71,7 @@ jobs:
           mkdir -p docs/images
           cp images/social-card.png images/cover.png images/apple-touch-icon.png docs/images/
           cp data/theory-atlas.csv docs/theory-atlas.csv
+          Rscript tools/postprocess_html.R docs
           Rscript generate_sitemap.R
 
       - uses: actions/upload-pages-artifact@v3

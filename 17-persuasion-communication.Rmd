@@ -6,8 +6,8 @@ thirty-second spot with a catchy jingle and a famous face? Why does a sponsored
 post from an influencer persuade some followers and irritate others, and why does
 the word "#ad" sometimes change how the very same message is received? Why do some
 stories spread through social networks within hours while carefully produced
-corporate content goes unseen? And why can a single choice of words — "95% fat
-free" rather than "5% fat", "lives saved" rather than "lives lost" — reverse what
+corporate content goes unseen? And why can a single choice of words, "95% fat
+free" rather than "5% fat", "lives saved" rather than "lives lost", reverse what
 people prefer?
 
 Each puzzle concerns how messages change minds, and each has been addressed by a
@@ -33,7 +33,7 @@ tibble::tribble(
   "Two-step flow", "How does media influence travel through interpersonal ties?", "Network / community", "Katz & Lazarsfeld (1955)",
   "Undirected communication (microblogging)", "Why broadcast to no one in particular?", "Individual", "Buechel & Berger (2017)",
   "Agenda setting", "How do media shape what the public thinks is important?", "Society / public", "McCombs & Shaw (1972)",
-  "Framing", "How does the packaging of information change judgment?", "Individual / society", "Tversky & Kahneman (1981); Entman (1993)",
+  "Framing", "How does the packaging of information change judgment?", "Individual / society", "Tversky & Kahneman (1981), Entman (1993)",
   "Uses and gratifications", "Why do audiences choose the media they do?", "Individual", "Katz, Blumler & Gurevitch (1973)"
 ) |>
   book_table(caption = "Chapter at a glance: theories of persuasion and communication.")
@@ -42,13 +42,13 @@ tibble::tribble(
 Two organising ideas recur throughout. First, **receivers are not passive**. The
 earliest research on mass communication imagined messages as injections whose
 effects could be read off their content. Each theory in this chapter replaces that
-image with an active audience — one that decides how much effort to invest
+image with an active audience: one that decides how much effort to invest
 (dual-process models), interprets the sender's motives (persuasion knowledge),
 selects and passes on content for its own reasons (social transmission, uses and
 gratifications), and constructs meaning from the frames it encounters. Second,
 **effects are conditional**. None of these theories predicts that a message will
-work everywhere; each specifies the moderators — involvement, accessibility of
-motives, emotional arousal, issue obtrusiveness, audience goals — that determine
+work everywhere. Each specifies the moderators, involvement, accessibility of
+motives, emotional arousal, issue obtrusiveness, audience goals, that determine
 when it will.
 
 ## The Elaboration Likelihood Model {#elaboration-likelihood-model}
@@ -56,22 +56,22 @@ when it will.
 ::: {.theory-card}
 **Core claim.** Attitudes can change through two qualitatively different routes.
 When people are motivated and able to think about a message, persuasion depends on
-the quality of its arguments (the **central route**); when motivation or ability is
+the quality of its arguments (the **central route**). When motivation or ability is
 low, persuasion depends on simple cues such as source attractiveness or the number
 of arguments (the **peripheral route**).
 
-**Origins.** Social psychology; @petty1986, building on the Yale communication
-programme [@hovland1953] and cognitive-response research; first tested in an
+**Origins.** Social psychology. @petty1986, building on the Yale communication
+programme [@hovland1953] and cognitive-response research. First tested in an
 advertising context by @petty1983.
 
 **Level of analysis.** Individual message recipient.
 
-**Key constructs.** Elaboration likelihood; motivation (personal relevance,
-involvement, need for cognition); ability (distraction, repetition, prior
-knowledge); argument quality; peripheral cues; attitude strength.
+**Key constructs.** Elaboration likelihood, motivation (personal relevance,
+involvement, need for cognition), ability (distraction, repetition, prior
+knowledge), argument quality, peripheral cues, attitude strength.
 
 **Boundary conditions.** Assumes recipients hold or form an attitude toward a
-definable object; applies most directly to message-based influence. Predictions
+definable object. Applies most directly to message-based influence. Predictions
 about route depend on accurately measuring or manipulating elaboration rather than
 inferring it from outcomes.
 
@@ -87,8 +87,8 @@ The Yale Communication Research Program after the Second World War organised
 persuasion research around the question "who says what to whom with what effect",
 and studied source credibility, message order, fear appeals, and audience
 characteristics as separate variables [@hovland1953]. The programme produced a
-large body of findings but also a frustrating pattern: the same variable — an
-expert source, a long message, a fear appeal — sometimes increased persuasion,
+large body of findings but also a frustrating pattern: the same variable, an
+expert source, a long message, a fear appeal, sometimes increased persuasion,
 sometimes had no effect, and sometimes backfired. By the 1970s, the field lacked a
 framework for predicting *which* outcome would occur.
 
@@ -98,8 +98,8 @@ taken into account how much recipients were thinking. They defined
 arguments contained in a message, and argued that elaboration likelihood varies
 along a continuum. At the high end, people scrutinise arguments, generate their own
 favourable or unfavourable thoughts, and integrate those thoughts into an attitude.
-At the low end, people form attitudes by applying simple inferences — "experts are
-usually right", "if so many arguments are offered, the position must be sound" — or
+At the low end, people form attitudes by applying simple inferences, "experts are
+usually right", "if so many arguments are offered, the position must be sound", or
 through affective associations. Variables such as source expertise therefore have
 different effects at different levels of elaboration.
 
@@ -111,8 +111,8 @@ the postulates set out by @petty1986:
 - **P1 (Correctness motive).** People are motivated to hold correct attitudes,
   but the amount of effort they are willing or able to devote to evaluating a
   message varies with individual and situational factors.
-- **P2 (Elaboration continuum).** Elaboration varies continuously from low to high;
-  the two "routes" describe the endpoints of this continuum rather than two
+- **P2 (Elaboration continuum).** Elaboration varies continuously from low to high.
+  The two "routes" describe the endpoints of this continuum rather than two
   discrete boxes.
 - **P3 (Trade-off).** As elaboration increases, the impact of argument quality on
   attitudes increases and the impact of peripheral cues decreases.
@@ -126,9 +126,9 @@ the postulates set out by @petty1986:
 ::: {.definition}
 **Argument quality** is defined empirically in ELM research: strong arguments are
 those that, when people are instructed to think about them, elicit predominantly
-favourable thoughts; weak arguments elicit predominantly unfavourable thoughts.
+favourable thoughts. Weak arguments elicit predominantly unfavourable thoughts.
 **Peripheral cues** are features of the persuasion context that allow an attitude
-judgment without scrutiny of the issue-relevant merits — source attractiveness,
+judgment without scrutiny of the issue-relevant merits: source attractiveness,
 celebrity, the sheer number of arguments, audience applause.
 :::
 
@@ -136,7 +136,7 @@ celebrity, the sheer number of arguments, audience applause.
 
 Figure \@ref(fig:fig-pc-elm-routes) traces the two routes. Motivation and ability
 act as gatekeepers. If both are present, the recipient processes the arguments and
-the valence of the resulting thoughts drives attitude change; if either is
+the valence of the resulting thoughts drives attitude change. If either is
 missing, the recipient looks for a peripheral cue. Note the dashed path in the
 figure: when no cue is present, or when cognitive processing produces no net
 change, the person retains the initial attitude.
@@ -173,7 +173,7 @@ involvement). The advertisement contained either strong or weak arguments and wa
 endorsed either by famous athletes or by ordinary citizens. Argument quality had a
 much larger effect on attitudes under high involvement, whereas the celebrity
 endorsement mattered more under low involvement. An earlier study had found the
-same pattern for argument quality versus source expertise in a policy context —
+same pattern for argument quality versus source expertise in a policy context:
 students evaluating a proposal to introduce comprehensive examinations either at
 their own university next year (high relevance) or at some later date [@petty1981].
 
@@ -182,7 +182,7 @@ simulated data. The two panels are mirror images: the factor that matters most
 under high involvement (argument quality) matters least under low involvement,
 and vice versa for the peripheral cue.
 
-```{r fig-pc-elm-interaction, fig.cap = "Illustrative simulation of the ELM interaction. Under high involvement, argument quality drives attitudes and the endorser matters little; under low involvement, the pattern reverses. Points are cell means with 95% confidence intervals; data are simulated, not empirical.", fig.height = 4.2}
+```{r fig-pc-elm-interaction, fig.cap = "Illustrative simulation of the ELM interaction. Under high involvement, argument quality drives attitudes and the endorser matters little. Under low involvement, the pattern reverses. Points are cell means with 95% confidence intervals. Data are simulated, not empirical.", fig.height = 4.2}
 set.seed(1983)
 cells <- expand.grid(involvement = c("Low involvement", "High involvement"),
                      level = c("high", "low"),
@@ -221,12 +221,12 @@ ggplot(elm, aes(involvement, m, group = label, colour = level)) +
 
 The ELM's closest relative is the **heuristic-systematic model** (HSM), developed
 by @chaiken1980 and elaborated in @eagly1993. **Systematic processing** is a
-comprehensive, analytic treatment of judgment-relevant information;
-**heuristic processing** applies simple decision rules ("experts can be trusted",
+comprehensive, analytic treatment of judgment-relevant information.
+**Heuristic processing** applies simple decision rules ("experts can be trusted",
 "consensus implies correctness") that are stored in memory and cued by the
 situation. In her original experiments, Chaiken manipulated recipients' issue
 involvement together with the likability of the communicator and the number of
-arguments in the message; communicator likability mattered more when involvement
+arguments in the message. Communicator likability mattered more when involvement
 was low, whereas the content of the arguments carried more weight when
 involvement was high [@chaiken1980].
 
@@ -241,7 +241,7 @@ models.
 ```{r tab-pc-elm-hsm}
 tibble::tribble(
   ~Feature, ~`Elaboration likelihood model`, ~`Heuristic-systematic model`,
-  "Key source", "Petty & Cacioppo (1986)", "Chaiken (1980); Eagly & Chaiken (1993)",
+  "Key source", "Petty & Cacioppo (1986)", "Chaiken (1980), Eagly & Chaiken (1993)",
   "Low-effort mode", "Peripheral route: any cue-based process (heuristics, affect, conditioning)", "Heuristic processing: application of stored decision rules",
   "High-effort mode", "Central route: scrutiny of issue-relevant arguments", "Systematic processing: comprehensive analysis of information",
   "Relation between modes", "Trade-off: cue impact falls as elaboration rises", "Co-occurrence: modes can add, attenuate, or bias one another",
@@ -264,12 +264,12 @@ Several lines of evidence stand out:
   whereas *value-relevant* involvement (the issue engages core values) tends to
   reduce persuasion regardless of argument quality, because people defend their
   existing positions.
-- **Individual differences.** People high in **need for cognition** — a stable
-  tendency to engage in and enjoy effortful thinking — are more influenced by
+- **Individual differences.** People high in **need for cognition**, a stable
+  tendency to engage in and enjoy effortful thinking, are more influenced by
   argument quality and less by peripheral cues [@cacioppo1982].
 - **Multiple roles.** The same variable can play different roles. An attractive
   endorser is a peripheral cue for a low-involvement snack, but an *argument* for a
-  beauty product whose benefit is appearance; under moderate elaboration, a
+  beauty product whose benefit is appearance. Under moderate elaboration, a
   surprising source can increase scrutiny itself [@petty1986].
 - **Attitude strength.** Central-route attitudes are more durable and better
   predictors of behaviour, which is why the quality of the attitude, not only its
@@ -286,8 +286,8 @@ of the dual-process view reply that the ELM was always defined in terms of the
 *process* (scrutiny of merits versus simple inference) rather than the *content*
 type, and that the multiple-roles postulate already anticipates a cue acting as an
 argument. The debate remains instructive for researchers: claims about "route" must
-be supported by process evidence — thought listings, argument-quality
-manipulations, response latencies — rather than inferred from which variable
+be supported by process evidence, thought listings, argument-quality
+manipulations, response latencies, rather than inferred from which variable
 happened to predict attitudes.
 :::
 
@@ -302,9 +302,9 @@ the message?"
 **Ad creative for high- versus low-involvement categories.** Categories differ
 systematically in the elaboration they invite. A buyer comparing mortgages,
 enterprise software, or family cars faces significant financial and performance
-risk; the buyer is motivated to scrutinise claims and often has time to do so.
-Communication in these categories typically leads with verifiable arguments —
-specifications, total cost of ownership, independent ratings, case studies — and
+risk. The buyer is motivated to scrutinise claims and often has time to do so.
+Communication in these categories typically leads with verifiable arguments,
+specifications, total cost of ownership, independent ratings, case studies, and
 supplies them in formats that support processing (comparison tables, configurators,
 white papers). By contrast, a shopper choosing chewing gum, soft drinks, or
 snacks is rarely motivated to read argument-heavy copy. Advertising in these
@@ -312,7 +312,7 @@ categories leans on cues that operate with minimal thought: celebrity and
 likeable characters, music, humour, brand repetition, and packaging that is easy
 to recognise at shelf. The ELM also explains why the *same* category can require
 both approaches. A first-time buyer of a smartphone may be highly involved,
-whereas a loyal repeat buyer is not; brands therefore pair detailed launch
+whereas a loyal repeat buyer is not. Brands therefore pair detailed launch
 communications with simpler reminder advertising.
 :::
 
@@ -330,13 +330,13 @@ communications with simpler reminder advertising.
   advertising.
 
 **Designs.** Factorial experiments that cross argument quality with a motivation or
-ability manipulation (relevance, distraction, time pressure); field experiments
-that vary creative executions across audiences with different involvement;
-thought-listing protocols to measure elaboration directly.
+ability manipulation (relevance, distraction, time pressure). Field experiments
+that vary creative executions across audiences with different involvement.
+Thought-listing protocols to measure elaboration directly.
 
-**Measures.** Thought listing and cognitive-response coding; need for cognition
-scale [@cacioppo1982]; attitude strength (certainty, accessibility, resistance to
-counter-messages); recall of arguments versus cues.
+**Measures.** Thought listing and cognitive-response coding, need for cognition
+scale [@cacioppo1982], attitude strength (certainty, accessibility, resistance to
+counter-messages), recall of arguments versus cues.
 
 **Contexts.** Advertising pretesting, health communication, sales presentations,
 online reviews (review content as arguments, star ratings as cues), and
@@ -347,8 +347,8 @@ recommendation interfaces.
 **Inferring the route from the result.** A common misuse is to observe that a cue
 predicted attitudes and conclude that people "used the peripheral route", or that
 argument quality predicted attitudes and conclude that they "used the central
-route". This is circular. Route should be established independently — by
-manipulating motivation or ability, or by measuring elaboration — and the theory's
+route". This is circular. Route should be established independently, by
+manipulating motivation or ability, or by measuring elaboration, and the theory's
 evidence is the *interaction* between elaboration and message features, not a main
 effect of either.
 :::
@@ -356,19 +356,19 @@ effect of either.
 ## The Persuasion Knowledge Model {#persuasion-knowledge-model}
 
 ::: {.theory-card}
-**Core claim.** Consumers develop knowledge about persuasion — what marketers and
-other agents are trying to do, how their tactics work, and how to respond — and use
+**Core claim.** Consumers develop knowledge about persuasion, what marketers and
+other agents are trying to do, how their tactics work, and how to respond, and use
 that knowledge to interpret and cope with influence attempts. Recognising a
 behaviour as a persuasion tactic can change its meaning and its effect.
 
-**Origins.** Consumer research; @friestad1994; tested and extended by
+**Origins.** Consumer research, @friestad1994, tested and extended by
 @campbell2000.
 
 **Level of analysis.** Individual target and dyad (target and persuasion agent).
 
-**Key constructs.** Target; agent; persuasion attempt; persuasion episode;
-persuasion knowledge; agent knowledge; topic knowledge; coping behaviour;
-change-of-meaning principle; accessibility of ulterior motives; cognitive capacity.
+**Key constructs.** Target, agent, persuasion attempt, persuasion episode,
+persuasion knowledge, agent knowledge, topic knowledge, coping behaviour,
+change-of-meaning principle, accessibility of ulterior motives, cognitive capacity.
 
 **Boundary conditions.** Persuasion knowledge must be available (learned) and
 accessible (activated) at the moment of exposure, and the target must have the
@@ -382,7 +382,7 @@ biases](#heuristics-biases).
 ### Core logic
 
 @friestad1994 reframed persuasion from the target's point of view. Earlier theories
-asked how a message changes an attitude; the persuasion knowledge model (PKM) asks
+asked how a message changes an attitude. The persuasion knowledge model (PKM) asks
 how ordinary people make sense of the fact that someone is trying to influence them.
 Over a lifetime, consumers acquire folk theories about advertising, selling,
 negotiation, and social influence: why agents do what they do, which tactics are
@@ -403,10 +403,10 @@ tibble::tribble(
 Two ideas carry most of the model's predictive power. The first is the
 **change-of-meaning principle**: once a target recognises an agent's action as a
 persuasion tactic, the action can acquire a different meaning. Flattery that seemed
-sincere becomes ingratiation; a "limited-time offer" becomes a pressure tactic; a
+sincere becomes ingratiation, a "limited-time offer" becomes a pressure tactic, a
 glowing product mention becomes advertising. The second idea is that targets are
 **coping**, not merely reacting. Their goal is to manage the episode in a way that
-serves their own interests — sometimes resisting, sometimes accepting the message
+serves their own interests, sometimes resisting, sometimes accepting the message
 while discounting the source, sometimes enjoying a clever tactic for what it is.
 
 ### Mechanism
@@ -415,13 +415,13 @@ Persuasion knowledge does not operate automatically. @campbell2000 showed that i
 use depends on the **accessibility** of the agent's ulterior motive and on the
 target's **cognitive capacity**. In their studies, consumers who encountered a
 salesperson's flattery were more likely to infer an ulterior motive when the motive
-was highly accessible — for example, when the flattery came *before* a purchase
-decision rather than after — and cognitively busy targets were less likely to draw
+was highly accessible, for example, when the flattery came *before* a purchase
+decision rather than after, and cognitively busy targets were less likely to draw
 on persuasion knowledge unless the motive was highly salient. Observers, who had
 spare capacity, were more likely than the targets themselves to see the tactic for
 what it was. Figure \@ref(fig:fig-pc-pkm) summarises the mechanism.
 
-```{r fig-pc-pkm, fig.cap = "Mechanism of the persuasion knowledge model. An agent's tactic leads to persuasion-motive inference only when persuasion knowledge is accessible and the target has capacity to use it; recognition changes the tactic's meaning and shapes coping."}
+```{r fig-pc-pkm, fig.cap = "Mechanism of the persuasion knowledge model. An agent's tactic leads to persuasion-motive inference only when persuasion knowledge is accessible and the target has capacity to use it. Recognition changes the tactic's meaning and shapes coping."}
 mechanism_diagram(sprintf('
   T  [label = "Agent tactic\\n(flattery, endorsement,\\nscarcity claim)", %s]
   K  [label = "Persuasion knowledge\\n(folk theories of tactics)", %s]
@@ -441,8 +441,8 @@ mechanism_diagram(sprintf('
 
 The PKM and the ELM are complementary. Persuasion knowledge can be thought of as
 one of the things people think *about* when they elaborate. A highly involved
-target may scrutinise not only the arguments but also the agent's motives;
-recognising a manipulative intent can then produce counter-arguments and resistance.
+target may scrutinise not only the arguments but also the agent's motives.
+Recognising a manipulative intent can then produce counter-arguments and resistance.
 Conversely, the PKM explains why peripheral cues sometimes fail: a celebrity
 endorsement that is recognised as purchased may stop working as a cue of quality and
 start working as a cue of persuasive intent.
@@ -453,9 +453,9 @@ The model has been used to study advertising literacy among children and
 adolescents, covert marketing, product placement, native advertising, sales
 interactions, and corporate social responsibility claims. A recurring finding is
 that recognising persuasive intent is not uniformly harmful to the persuader.
-When a tactic is judged appropriate — an honest disclosure, a transparent
-comparison — recognition can increase perceived fairness and trust. When a tactic is
-judged inappropriate — a hidden payment, a deceptive claim — recognition produces
+When a tactic is judged appropriate, an honest disclosure, a transparent
+comparison, recognition can increase perceived fairness and trust. When a tactic is
+judged inappropriate, a hidden payment, a deceptive claim, recognition produces
 discounting and a lasting penalty to agent knowledge ("this brand tries to trick
 people"). The model therefore predicts asymmetric long-run consequences: the
 short-run gains from covert tactics must be weighed against the costs incurred when
@@ -464,8 +464,8 @@ they are discovered.
 ::: {.business-case}
 **Influencer marketing and sponsorship disclosure.** Influencer content is
 persuasive in part because it looks like ordinary peer communication rather than
-advertising. The PKM predicts that disclosing the commercial relationship — "#ad",
-"paid partnership", "sponsored" — activates persuasion knowledge, increasing the
+advertising. The PKM predicts that disclosing the commercial relationship, "#ad",
+"paid partnership", "sponsored", activates persuasion knowledge, increasing the
 likelihood that followers recognise the post as advertising. Regulators have
 taken the same view: the US Federal Trade Commission's guidance on endorsements
 requires that material connections between endorsers and brands be disclosed
@@ -474,7 +474,7 @@ labels. For brands, the managerial question is not whether to disclose (that is 
 legal obligation in many jurisdictions) but how to design partnerships that survive
 disclosure. The model's answer is **fit and appropriateness**: when the influencer
 plausibly uses and values the product, the persuasion motive is seen as compatible
-with the influencer's genuine opinion; when the fit is poor, disclosure highlights
+with the influencer's genuine opinion. When the fit is poor, disclosure highlights
 the payment and invites discounting. Several practical rules follow: choose
 creators whose prior content demonstrates authentic topic knowledge, allow them to
 express qualified opinions, and avoid scripts that read as advertising copy.
@@ -490,12 +490,12 @@ express qualified opinions, and avoid scripts that read as advertising copy.
 - *H3.* Cognitive load reduces the effect of an inappropriate sales tactic on
   perceived manipulative intent [@campbell2000].
 
-**Measures.** Advertising recognition; inferences of manipulative intent;
-perceived appropriateness of tactics; source trustworthiness; resistance
+**Measures.** Advertising recognition, inferences of manipulative intent,
+perceived appropriateness of tactics, source trustworthiness, resistance
 (counter-arguing, sharing intentions).
 
 **Designs.** Between-subject experiments varying disclosure presence, wording, and
-position; field experiments with platform disclosure labels; eye tracking to measure
+position. Field experiments with platform disclosure labels. Eye tracking to measure
 whether disclosures are noticed.
 :::
 
@@ -511,23 +511,23 @@ the target must have capacity to use it.
 
 ::: {.theory-card}
 **Core claim.** People share information, opinions, and content because sharing
-serves their own needs — managing impressions, regulating emotions, acquiring
+serves their own needs: managing impressions, regulating emotions, acquiring
 information, bonding with others, and persuading. These motives, together with
 features of the content and the audience, determine *what* is shared and how far it
 spreads.
 
-**Origins.** Sociology of personal influence [@katz1955]; marketing research on
-word of mouth [@godes2004; @chevalier2006]; synthesised in @berger2014 and
+**Origins.** Sociology of personal influence [@katz1955], marketing research on
+word of mouth [@godes2004; @chevalier2006], synthesised in @berger2014 and
 @Berger_2013.
 
 **Level of analysis.** Individual sharer, dyad, and social network.
 
-**Key constructs.** Word of mouth (WOM); sharer motives; content characteristics
-(emotional arousal, practical value, social currency); audience size; triggers;
-opinion leaders; cascades.
+**Key constructs.** Word of mouth (WOM), sharer motives, content characteristics
+(emotional arousal, practical value, social currency), audience size, triggers,
+opinion leaders, cascades.
 
 **Boundary conditions.** Predictions about content features assume people choose
-what to share; network position, platform algorithms, and paid amplification can
+what to share. Network position, platform algorithms, and paid amplification can
 dominate content effects in some settings.
 
 **Related theories.** [Emotion and virality](#emotion-and-virality),
@@ -549,7 +549,7 @@ affairs, and film-going. Opinion leaders were found at every social level, diffe
 by domain, and were distinguished by greater media exposure and by their social
 position, not merely by status.
 
-```{r fig-pc-twostep, fig.cap = "The two-step flow of communication (Katz & Lazarsfeld, 1955) and its modern revision. Media content reaches opinion leaders, who interpret and relay it through interpersonal ties; network research suggests that large cascades depend on many easily influenced individuals rather than a few influentials (Watts & Dodds, 2007)."}
+```{r fig-pc-twostep, fig.cap = "The two-step flow of communication (Katz & Lazarsfeld, 1955) and its modern revision. Media content reaches opinion leaders, who interpret and relay it through interpersonal ties. Network research suggests that large cascades depend on many easily influenced individuals rather than a few influentials (Watts & Dodds, 2007)."}
 mechanism_diagram(sprintf('
   MM [label = "Mass media\\nand brand content", %s]
   OL [label = "Opinion leaders\\n(high exposure, domain\\ninterest, central ties)", %s]
@@ -568,7 +568,7 @@ The two-step flow shaped decades of marketing practice, from seeding products wi
 "influentials" to opinion-leader scales in consumer research. Later network research
 has qualified it. In simulations of influence networks, @watts2007 found that large
 cascades were usually driven not by a small number of highly influential people but
-by a critical mass of easily influenced individuals; influentials can trigger
+by a critical mass of easily influenced individuals. Influentials can trigger
 cascades, but only when the network is ready. The practical implication is that
 seeding strategy depends on network structure as much as on the identity of the
 seed.
@@ -583,10 +583,10 @@ them.
 ```{r tab-pc-wom-functions}
 tibble::tribble(
   ~Function, ~`What sharing does for the sharer`, ~`Predicted content features`, ~`Business implication`,
-  "Impression management", "Signals identity, expertise, and status; supports self-enhancement", "Remarkable, novel, or insider content; positive self-relevant stories", "Give customers something that makes them look good to share",
-  "Emotion regulation", "Generates social support, venting, sense-making, and reducing dissonance", "Emotionally intense experiences, positive and negative", "Expect negative WOM after service failures; offer channels to vent",
+  "Impression management", "Signals identity, expertise, and status, supports self-enhancement", "Remarkable, novel, or insider content, positive self-relevant stories", "Give customers something that makes them look good to share",
+  "Emotion regulation", "Generates social support, venting, sense-making, and reducing dissonance", "Emotionally intense experiences, positive and negative", "Expect negative WOM after service failures, offer channels to vent",
   "Information acquisition", "Seeks advice and resolves uncertainty", "Questions, requests for recommendations", "Be present where customers ask for advice",
-  "Social bonding", "Reinforces shared views and reduces loneliness", "Common-ground content; shared experiences", "Design for communal experiences and conversation",
+  "Social bonding", "Reinforces shared views and reduces loneliness", "Common-ground content, shared experiences", "Design for communal experiences and conversation",
   "Persuasion", "Convinces others or changes their behaviour", "Arguments, strong opinions, polarised content", "Equip advocates with credible arguments"
 ) |>
   book_table(caption = "Five functions of word of mouth (organised following Berger, 2014).")
@@ -606,13 +606,13 @@ to forgo small monetary payments to talk about themselves.
 @berger2012 analysed which *New York Times* articles made the newspaper's
 most-emailed list over a three-month period. Controlling for placement and other
 features, positive content was more likely to be shared than negative content, but
-emotion was not simply a matter of valence. Content evoking high-arousal emotions —
-awe, anger, and anxiety — was more likely to be shared, whereas content evoking a
+emotion was not simply a matter of valence. Content evoking high-arousal emotions,
+awe, anger, and anxiety, was more likely to be shared, whereas content evoking a
 low-arousal emotion, sadness, was less likely to be shared. A complementary
 experiment found that physiological arousal, even arousal induced by an unrelated
 activity such as jogging in place, increased participants' willingness to share
 content [@berger2011]. Figure \@ref(fig:fig-pc-arousal) places these emotions in
-the valence–arousal space.
+the valence-arousal space.
 
 ```{r fig-pc-arousal, fig.cap = "Conceptual map of emotions by valence and arousal, with the direction of their association with sharing reported by Berger & Milkman (2012) and Berger (2011). Positions are illustrative, not measured values.", fig.height = 4.2}
 emo <- tibble::tribble(
@@ -638,14 +638,14 @@ ggplot(emo, aes(valence, arousal, colour = sharing)) +
   scale_y_continuous(limits = c(0, 1), breaks = NULL) +
   labs(x = "Valence", y = "Arousal", colour = "Association with sharing",
        title = "Arousal, not only valence, predicts sharing",
-       caption = "Conceptual placement after Berger & Milkman (2012) and Berger (2011); amusement and contentment from Berger (2011).")
+       caption = "Conceptual placement after Berger & Milkman (2012) and Berger (2011). Amusement and contentment from Berger (2011).")
 ```
 
 Content characteristics also determine *when* sharing happens. @berger2011b found
 that products that were more publicly visible and more frequently cued by the
 environment received more word of mouth, and that interesting products received more
-immediate but not more ongoing word of mouth. Environmental **triggers** — cues
-that bring a product to mind — sustain conversation long after novelty fades.
+immediate but not more ongoing word of mouth. Environmental **triggers**, cues
+that bring a product to mind, sustain conversation long after novelty fades.
 
 ### The STEPPS framework
 
@@ -657,11 +657,11 @@ empirical support.
 ```{r tab-pc-stepps}
 tibble::tribble(
   ~Principle, ~`Underlying mechanism`, ~`Design question`, ~`Illustrative tactic`,
-  "Social currency", "Impression management; self-enhancement", "Does sharing make the sharer look good, smart, or in the know?", "Insider access, remarkable facts, game mechanics",
-  "Triggers", "Accessibility; environmental cueing", "What in the everyday environment will bring this to mind?", "Link the product to a frequent context or time of day",
+  "Social currency", "Impression management, self-enhancement", "Does sharing make the sharer look good, smart, or in the know?", "Insider access, remarkable facts, game mechanics",
+  "Triggers", "Accessibility, environmental cueing", "What in the everyday environment will bring this to mind?", "Link the product to a frequent context or time of day",
   "Emotion", "High-arousal emotion increases transmission", "Does the content evoke awe, amusement, anger, or anxiety?", "Focus on feelings rather than features",
-  "Public", "Observability; social proof", "Can others see people using it?", "Visible packaging, shareable badges, branded artefacts",
-  "Practical value", "Other-oriented helping; usefulness", "Is it useful enough to pass on?", "Tips, deals that are framed as unusual, how-to guides",
+  "Public", "Observability, social proof", "Can others see people using it?", "Visible packaging, shareable badges, branded artefacts",
+  "Practical value", "Other-oriented helping, usefulness", "Is it useful enough to pass on?", "Tips, deals that are framed as unusual, how-to guides",
   "Stories", "Narrative transportation carries information", "Is the message embedded in a story people want to tell?", "Make the brand integral to the narrative, not an add-on"
 ) |>
   book_table(caption = "The STEPPS framework for designing shareable content (Berger, 2013).")
@@ -673,13 +673,13 @@ launch to generate organic conversation rather than relying entirely on paid
 media. Social transmission research suggests several design choices. To create
 **social currency**, the launch might offer early access to a limited group, giving
 those customers something remarkable to report. To create **triggers**, the firm
-might tie the product to a recurring context — a commute, a weekly routine — so
+might tie the product to a recurring context, a commute, a weekly routine, so
 that it is cued repeatedly after launch. The firm would aim for **high-arousal
 emotion** (awe at a capability, amusement in a demonstration) rather than
 low-arousal contentment. It would make use **public** through visible design or a
 shareable output, and package **practical value** in tips that users would pass on
-to help friends. Finally, it would embed the brand in a **story** — the problem a
-customer solved — rather than adding a logo to unrelated entertainment. The theory
+to help friends. Finally, it would embed the brand in a **story**, the problem a
+customer solved, rather than adding a logo to unrelated entertainment. The theory
 also flags risks: content optimised for arousal can attract anger as easily as awe,
 and broadcast audiences reward self-presentation, so content that makes sharers look
 foolish will not travel.
@@ -717,13 +717,13 @@ rates, implying that the difference was driven by human sharing decisions rather
 than by bots.
 
 These findings connect directly to the functions of word of mouth. Novel
-information confers social currency on the sharer; arousing content is more likely
-to be passed on; and broadcasting to many followers emphasises self-presentation
+information confers social currency on the sharer. Arousing content is more likely
+to be passed on, and broadcasting to many followers emphasises self-presentation
 over careful verification. Correcting misinformation is difficult because of the
 **continued influence effect**: retracted information often continues to shape
 reasoning, especially when no alternative explanation is offered
 [@lewandowsky2012]. Interventions that shift attention to accuracy at the moment of
-sharing — for example, asking people to rate the accuracy of an unrelated headline —
+sharing, for example, asking people to rate the accuracy of an unrelated headline,
 have been found to improve the quality of news that people subsequently share,
 including in a field experiment on Twitter [@pennycook2021].
 
@@ -738,12 +738,12 @@ including in a field experiment on Twitter [@pennycook2021].
   (but not more immediate) word of mouth [@berger2011b].
 
 **Designs.** Archival analysis of shares, retweets, and reviews with content coded
-by text analysis; field experiments with seeding strategies; laboratory
-experiments that manipulate arousal or audience size; natural experiments
+by text analysis. Field experiments with seeding strategies. Laboratory
+experiments that manipulate arousal or audience size. Natural experiments
 created by platform changes.
 
-**Measures.** Share counts and cascade depth; dispersion of conversation across
-communities; sentiment and emotion dictionaries; self-reported sharing motives.
+**Measures.** Share counts and cascade depth, dispersion of conversation across
+communities, sentiment and emotion dictionaries, self-reported sharing motives.
 :::
 
 ::: {.pitfall}
@@ -758,17 +758,17 @@ possible, and treat cascade size as a highly skewed outcome.
 ## Microblogging and Undirected Communication {#microblogging}
 
 ::: {.theory-card}
-**Core claim.** Microblogging — status updates, posts, and short messages
-broadcast to one's network — is valuable precisely because it is **undirected**: it
+**Core claim.** Microblogging, status updates, posts, and short messages
+broadcast to one's network, is valuable precisely because it is **undirected**: it
 lets people reach out and invite social interaction without imposing communication
 on any particular person.
 
-**Origins.** Consumer psychology; @Buechel_2017.
+**Origins.** Consumer psychology, @Buechel_2017.
 
 **Level of analysis.** Individual communicator.
 
-**Key constructs.** Directed versus undirected communication; social apprehension;
-fear of rejection; social connection.
+**Key constructs.** Directed versus undirected communication, social apprehension,
+fear of rejection, social connection.
 
 **Boundary conditions.** Most relevant where people have a choice between directed
 channels (messages, calls) and undirected ones (public posts), and where the
@@ -779,22 +779,22 @@ audience is a loose network rather than a close dyad.
 [Social comparison theory](#social-comparison-theory).
 :::
 
-Directed communication — a phone call, a direct message, an email to a specific
-person — carries an implicit demand: the recipient is expected to respond. For
+Directed communication, a phone call, a direct message, an email to a specific
+person, carries an implicit demand: the recipient is expected to respond. For
 people who worry about being rejected or about imposing on others, that demand
 creates a barrier to reaching out. @Buechel_2017 argue that undirected
 communication removes the barrier. A status update is addressed to no one in
-particular; whoever responds does so voluntarily, so the poster can seek
+particular. Whoever responds does so voluntarily, so the poster can seek
 interaction without the risk of a specific person declining it. Their studies
-suggest that **socially apprehensive** individuals — those who are anxious about
-communicating with others and concerned about rejection — find undirected
+suggest that **socially apprehensive** individuals, those who are anxious about
+communicating with others and concerned about rejection, find undirected
 communication particularly attractive.
 
 The insight complements the broader transmission literature. @barasch2014 showed
-that audience size changes *what* people share; @Buechel_2017 show that directness
+that audience size changes *what* people share. @Buechel_2017 show that directness
 changes *whether* some people communicate at all. Research on why people post on
 microblogging platforms also distinguishes intrinsic motives (enjoyment of posting)
-from image-related motives (the status of having an audience); @toubia2013 found
+from image-related motives (the status of having an audience). @toubia2013 found
 evidence that image-related utility plays a substantial role for many
 non-commercial users.
 
@@ -803,7 +803,7 @@ non-commercial users.
 often find that a small share of members post while most only read. Undirected
 communication research suggests one reason and one remedy. Directed requests ("Ask
 an expert", "Message our team") may deter socially apprehensive customers, whereas
-low-stakes undirected formats — open threads, reactions, "share your setup" posts —
+low-stakes undirected formats, open threads, reactions, "share your setup" posts,
 let them participate without making a specific demand on anyone. The same logic
 applies inside organisations: enterprise social platforms can surface questions from
 employees who would hesitate to email a senior colleague directly. Designers should
@@ -818,19 +818,19 @@ that receives no response can itself feel like rejection.
 highly influential in telling people *what to think about*: the issues that
 receive the most coverage come to be seen by the public as the most important.
 
-**Origins.** Political communication; @mccombs1972, building on @cohen1963 and on
-the voter studies of @lazarsfeld1944; extended to priming by @iyengar1987.
+**Origins.** Political communication, @mccombs1972, building on @cohen1963 and on
+the voter studies of @lazarsfeld1944, extended to priming by @iyengar1987.
 
-**Level of analysis.** Society and public opinion (aggregate issue salience);
-individual (issue importance judgments).
+**Level of analysis.** Society and public opinion (aggregate issue salience).
+Individual (issue importance judgments).
 
-**Key constructs.** Media agenda; public agenda; issue salience; obtrusive versus
-unobtrusive issues; need for orientation; attribute (second-level) agenda setting;
+**Key constructs.** Media agenda, public agenda, issue salience, obtrusive versus
+unobtrusive issues, need for orientation, attribute (second-level) agenda setting,
 priming.
 
 **Boundary conditions.** Strongest for **unobtrusive** issues that people cannot
 observe directly (foreign policy, macroeconomic trends) and among people with a
-high **need for orientation**; weaker for issues experienced first-hand. Fragmented
+high **need for orientation**. Weaker for issues experienced first-hand. Fragmented
 and personalised media environments complicate the notion of a single media agenda.
 
 **Related theories.** [Framing](#framing-theory),
@@ -850,8 +850,8 @@ to the rank order on the voters' agenda. Because undecided voters lacked strong
 partisan filters, they were a sensible population in which to look for media
 influence.
 
-The correlational design left open the direction of causality — do media follow
-the public or lead it? — and later work used time-series designs and experiments to
+The correlational design left open the direction of causality: do media follow
+the public or lead it?and later work used time-series designs and experiments to
 address the question. @iyengar1987 manipulated the content of television news
 broadcasts that participants watched over several days and found that issues
 emphasised in the broadcasts became more important to viewers. They also documented
@@ -864,8 +864,8 @@ Later research distinguished **first-level** agenda setting (salience of objects
 such as issues or candidates) from **attribute** or **second-level** agenda setting
 (salience of particular attributes of those objects). Attribute agenda setting
 overlaps with framing, and @scheufele2007 argue that agenda setting and priming
-rest on accessibility — making some considerations easier to retrieve — whereas
-framing rests on applicability — the fit between a frame and how an issue is
+rest on accessibility, making some considerations easier to retrieve, whereas
+framing rests on applicability: the fit between a frame and how an issue is
 interpreted. Table \@ref(tab:tab-pc-media-effects) summarises the distinction.
 
 ```{r tab-pc-media-effects}
@@ -873,7 +873,7 @@ tibble::tribble(
   ~`Media effect`, ~`What media change`, ~`Psychological mechanism`, ~`Classic study`, ~`Business analogue`,
   "Agenda setting", "Perceived importance of issues", "Accessibility (salience)", "McCombs & Shaw (1972)", "Which attributes buyers consider at all",
   "Priming", "Criteria used to evaluate actors", "Accessibility of evaluative standards", "Iyengar & Kinder (1987)", "Which attribute dominates brand evaluation",
-  "Framing", "Interpretation of an issue", "Applicability of an interpretive schema", "Entman (1993); Tversky & Kahneman (1981)", "How a price, risk, or crisis is understood"
+  "Framing", "Interpretation of an issue", "Applicability of an interpretive schema", "Entman (1993), Tversky & Kahneman (1981)", "How a price, risk, or crisis is understood"
 ) |>
   book_table(caption = "Agenda setting, priming, and framing distinguished (following Scheufele & Tewksbury, 2007).")
 ```
@@ -889,7 +889,7 @@ announcements around the news cycle. The priming corollary is equally important:
 during a public debate about data privacy, consumers may weight privacy more heavily
 when evaluating a technology brand, even if their underlying preferences have not
 changed. Firms whose reputations rest on an attribute that becomes salient should
-expect amplified effects — positive or negative.
+expect amplified effects: positive or negative.
 :::
 
 ::: {.pitfall}
@@ -903,24 +903,24 @@ setting with persuasion.
 ## Framing Theory {#framing-theory}
 
 ::: {.theory-card}
-**Core claim.** The way information is presented — which aspects are emphasised,
-and whether logically equivalent outcomes are described as gains or losses —
+**Core claim.** The way information is presented, which aspects are emphasised,
+and whether logically equivalent outcomes are described as gains or losses,
 systematically changes judgments and choices.
 
 **Origins.** Two traditions: behavioural decision research on **equivalence
-framing** [@tversky1981; @levin1998]; and communication and sociology research on
+framing** [@tversky1981; @levin1998], and communication and sociology research on
 **emphasis framing** [@entman1993].
 
 **Level of analysis.** Individual (choice and judgment) and societal (public
 discourse).
 
-**Key constructs.** Gain versus loss frames; risky-choice, attribute, and goal
-framing; frame selection and salience; problem definition; causal interpretation;
-moral evaluation; treatment recommendation.
+**Key constructs.** Gain versus loss frames, risky-choice, attribute, and goal
+framing, frame selection and salience, problem definition, causal interpretation,
+moral evaluation, treatment recommendation.
 
 **Boundary conditions.** Equivalence-framing effects are strongest when people do
-not spontaneously translate between frames and when the decision is unfamiliar;
-emphasis-framing effects are weaker when audiences hold strong prior attitudes or
+not spontaneously translate between frames and when the decision is unfamiliar.
+Emphasis-framing effects are weaker when audiences hold strong prior attitudes or
 encounter competing frames.
 
 **Related theories.** [Prospect theory](#prospect-theory),
@@ -936,16 +936,16 @@ one version, outcomes are described in terms of lives saved: Programme A will sa
 200 people for certain, whereas Programme B offers a one-third probability of saving
 all 600 and a two-thirds probability of saving no one. In a second version, the same
 outcomes are described in terms of deaths: under Programme C, 400 people will die
-for certain; under Programme D, there is a one-third probability that nobody will
+for certain. Under Programme D, there is a one-third probability that nobody will
 die and a two-thirds probability that all 600 will die. The programmes are
 numerically identical across versions, yet preferences reverse (Figure
 \@ref(fig:fig-pc-asian-disease)). In the gain frame most participants chose the
-certain option; in the loss frame most chose the gamble. The pattern follows from
+certain option. In the loss frame most chose the gamble. The pattern follows from
 [prospect theory](#prospect-theory): a value function that is concave for gains and
 convex for losses produces risk aversion in the domain of gains and risk seeking in
 the domain of losses.
 
-```{r fig-pc-asian-disease, fig.cap = "The framing of decisions. Percentages choosing the certain versus the risky programme in the Asian disease problem, as reported by Tversky & Kahneman (1981); the gain-frame problem was answered by 152 respondents and the loss-frame problem by 155.", fig.height = 3.6}
+```{r fig-pc-asian-disease, fig.cap = "The framing of decisions. Percentages choosing the certain versus the risky programme in the Asian disease problem, as reported by Tversky & Kahneman (1981). The gain-frame problem was answered by 152 respondents and the loss-frame problem by 155.", fig.height = 3.6}
 asian <- tibble::tribble(
   ~frame, ~option, ~pct,
   "Gain frame (lives saved)", "Certain option", 72,
@@ -991,15 +991,15 @@ aspects of a perceived reality and making them more salient in a communicating t
 so as to promote a particular problem definition, causal interpretation, moral
 evaluation, and/or treatment recommendation. A news report about rising fuel prices
 can frame the issue as a problem of corporate profits, of geopolitical supply, of
-environmental policy, or of household budgets — each frame highlighting different
+environmental policy, or of household budgets: each frame highlighting different
 causes and remedies. Entman's four functions provide a coding scheme widely used in
 content analysis: does the text define a problem, diagnose causes, make a moral
 judgment, and suggest a remedy?
 
 The two traditions are complementary rather than competing. Equivalence framing
-shows that even *logically identical* information can change choices; emphasis
+shows that even *logically identical* information can change choices. Emphasis
 framing shows that the selection of *which* true considerations to foreground shapes
-interpretation. Both are pervasive in business communication — in pricing ("less than
+interpretation. Both are pervasive in business communication: in pricing ("less than
 a dollar a day"), in risk communication ("99% success rate" versus "1% failure
 rate"), and in organisational change ("restructuring for growth" versus "cost
 cutting").
@@ -1012,15 +1012,15 @@ stakeholders ask who is responsible. **Situational crisis communication theory**
 [@coombs2007] builds on attribution theory to argue that the appropriate response
 depends on how much responsibility stakeholders attribute to the organisation. Crises
 in the *victim* cluster (natural disasters, product tampering by outsiders) attract
-little attribution of responsibility; *accidental* crises (technical errors) attract
-moderate attribution; *preventable* crises (management misconduct, known risks that
+little attribution of responsibility. *Accidental* crises (technical errors) attract
+moderate attribution. *Preventable* crises (management misconduct, known risks that
 were ignored) attract strong attribution. Response strategies range from **deny**
 (attack the accuser, deny the crisis) through **diminish** (excuse, justification) to
 **rebuild** (compensation, apology). Framing is central: the firm's first
 communications shape which cluster stakeholders assign the crisis to. Johnson &
-Johnson's response to the 1982 Tylenol poisonings — a nationwide recall and the
+Johnson's response to the 1982 Tylenol poisonings, a nationwide recall and the
 introduction of tamper-resistant packaging, despite the poisonings having been
-caused by an outside criminal — is widely taught as a case in which the firm framed
+caused by an outside criminal, is widely taught as a case in which the firm framed
 itself as acting to protect customers rather than as a defendant. The theory also
 warns against mismatches: a firm that uses a "victim" frame for a crisis the public
 perceives as preventable invites further reputational damage.
@@ -1038,19 +1038,19 @@ perceives as preventable invites further reputational damage.
 - *H3.* News articles that frame a corporate event using a "moral" frame will generate
   more negative social-media sentiment than articles using an "economic" frame.
 
-**Designs.** Randomised framing experiments; content analysis of news and
-social-media frames (manual coding or supervised text classification); event
+**Designs.** Randomised framing experiments. Content analysis of news and
+social-media frames (manual coding or supervised text classification). Event
 studies of market reactions to differently framed announcements.
 
-**Measures.** Choice shares; risk preferences; evaluations; frame-coding schemes
-based on Entman's four functions; attributions of responsibility.
+**Measures.** Choice shares, risk preferences, evaluations, frame-coding schemes
+based on Entman's four functions, attributions of responsibility.
 :::
 
 ::: {.pitfall}
 **Calling every message difference a "frame".** If two messages differ in the
 information they contain, not just in its presentation or emphasis, differences in
 outcome may reflect information rather than framing. Equivalence-framing designs
-require logically equivalent descriptions; emphasis-framing designs should hold
+require logically equivalent descriptions. Emphasis-framing designs should hold
 facts constant and vary only which considerations are foregrounded.
 :::
 
@@ -1061,17 +1061,17 @@ facts constant and vary only which considerations are foregrounded.
 content to satisfy needs, and the effects of media depend on the gratifications
 people seek and obtain.
 
-**Origins.** Mass-communication research; @katz1973; @blumler1974; updated for
+**Origins.** Mass-communication research, @katz1973, @blumler1974, updated for
 digital media by @ruggiero2000.
 
 **Level of analysis.** Individual audience member.
 
-**Key constructs.** Social and psychological needs; expectations of media;
-gratifications sought; gratifications obtained; media choice; functional
+**Key constructs.** Social and psychological needs, expectations of media,
+gratifications sought, gratifications obtained, media choice, functional
 alternatives (non-media sources of gratification).
 
-**Boundary conditions.** Assumes people are aware of, and can report, their motives;
-habitual and algorithmically curated media use may weaken the assumption of
+**Boundary conditions.** Assumes people are aware of, and can report, their motives.
+Habitual and algorithmically curated media use may weaken the assumption of
 deliberate selection.
 
 **Related theories.** [Self-determination theory](#self-determination-theory),
@@ -1084,10 +1084,10 @@ deliberate selection.
 Most media-effects theories ask what media do to people. **Uses and
 gratifications** reverses the question and asks what people do with media.
 @katz1973 summarised the approach in a set of assumptions: the audience is active
-and its media use is goal-directed; the initiative in linking need gratification to
-media choice lies with the audience member; media compete with other sources of
-need satisfaction; people are sufficiently self-aware to report their interests and
-motives; and value judgments about the cultural significance of media should be
+and its media use is goal-directed. The initiative in linking need gratification to
+media choice lies with the audience member. Media compete with other sources of
+need satisfaction. People are sufficiently self-aware to report their interests and
+motives, and value judgments about the cultural significance of media should be
 suspended while audience orientations are explored. The approach locates the
 origin of media effects in the social and psychological needs that generate
 expectations of media and lead to differential patterns of exposure.
@@ -1099,19 +1099,19 @@ the same medium can serve several of them at once.
 ```{r tab-pc-ug}
 tibble::tribble(
   ~Gratification, ~`Underlying need`, ~`Traditional media example`, ~`Digital and business example`,
-  "Information / surveillance", "Understanding the environment; reducing uncertainty", "News bulletins", "Product reviews; industry newsletters",
-  "Personal identity", "Reinforcing values; self-understanding", "Lifestyle magazines", "Following creators who express one's identity",
-  "Integration and social interaction", "Belonging; conversation material", "Watching the same broadcast as friends", "Brand communities; group chats; live-streams",
-  "Entertainment / diversion", "Escape, relaxation, emotional release", "Television drama", "Short-video platforms; mobile games",
-  "Self-expression and status", "Being seen; building an audience", "Letters to the editor", "Posting reviews; microblogging"
+  "Information / surveillance", "Understanding the environment, reducing uncertainty", "News bulletins", "Product reviews, industry newsletters",
+  "Personal identity", "Reinforcing values, self-understanding", "Lifestyle magazines", "Following creators who express one's identity",
+  "Integration and social interaction", "Belonging, conversation material", "Watching the same broadcast as friends", "Brand communities, group chats, live-streams",
+  "Entertainment / diversion", "Escape, relaxation, emotional release", "Television drama", "Short-video platforms, mobile games",
+  "Self-expression and status", "Being seen, building an audience", "Letters to the editor", "Posting reviews, microblogging"
 ) |>
   book_table(caption = "A typology of media gratifications with business examples.")
 ```
 
 ### Evidence, extensions, and critique
 
-The approach has proved adaptable. Each new medium — radio, television, the
-internet, mobile phones, social networks — has been studied by asking which needs
+The approach has proved adaptable. Each new medium, radio, television, the
+internet, mobile phones, social networks, has been studied by asking which needs
 it serves and how it competes with older media. @ruggiero2000 argued that the
 interactivity, demassification, and asynchroneity of digital media make the active
 audience assumption more plausible than in the broadcast era, and that uses and
@@ -1130,7 +1130,7 @@ looks like goal-directed choice is partly the product of design. One way to reco
 the views is to distinguish **gratifications sought** from **gratifications
 obtained**: a platform may attract users by promising social connection
 (gratification sought) while delivering mainly diversion (gratification obtained).
-Persistent gaps between the two predict dissatisfaction and churn — a testable
+Persistent gaps between the two predict dissatisfaction and churn: a testable
 implication with clear managerial relevance.
 :::
 
@@ -1144,8 +1144,8 @@ the forum *social interaction* and *self-expression* needs (helping peers, build
 a reputation). Metrics follow from the gratification: search traffic and task
 completion for information content, completion rates and subscriptions for the
 podcast, and contribution rates and reciprocal replies for the forum. Content that
-fails to deliver the gratification its audience seeks — a promotional podcast
-episode, an unanswered forum post — erodes use even if it is widely distributed.
+fails to deliver the gratification its audience seeks, a promotional podcast
+episode, an unanswered forum post, erodes use even if it is widely distributed.
 :::
 
 ::: {.try-it}
@@ -1159,12 +1159,12 @@ and what would a firm need to change to close it?
 
 ::: {.key-takeaways}
 - Persuasion depends on **how much people think**. Under high elaboration,
-  argument quality dominates; under low elaboration, peripheral cues and heuristics
+  argument quality dominates. Under low elaboration, peripheral cues and heuristics
   dominate, and the resulting attitudes are weaker [@petty1986; @chaiken1980].
 - Audiences recognise and cope with persuasion. The **persuasion knowledge model**
   explains why disclosed or recognised tactics can change meaning and lose force,
   and why appropriate tactics can survive disclosure [@friestad1994; @campbell2000].
-- People share because sharing serves **their own functions** — impression
+- People share because sharing serves **their own functions**: impression
   management, emotion regulation, information, bonding, and persuasion
   [@berger2014]. High-arousal content travels further [@berger2012].
 - Influence flows through **people as well as media** [@katz1955], but large
@@ -1175,7 +1175,7 @@ and what would a firm need to change to close it?
 - Falsehood spreads farther and faster than truth, driven by human sharing of novel,
   arousing content [@vosoughi2018].
 - Media shape **what people think about** (agenda setting) and which criteria they
-  use (priming) [@mccombs1972; @iyengar1987]; **framing** shapes how issues and
+  use (priming) [@mccombs1972; @iyengar1987]. **Framing** shapes how issues and
   choices are interpreted [@tversky1981; @entman1993].
 - **Uses and gratifications** treats audiences as goal-directed and explains media
   choice by the needs it serves [@katz1973].
@@ -1185,12 +1185,12 @@ and what would a firm need to change to close it?
 tibble::tribble(
   ~Theory, ~`Focal actor`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
   "ELM / HSM", "Message recipient", "Elaboration (motivation x ability)", "Arguments matter under high, cues under low involvement", "Creative strategy by category involvement",
-  "Persuasion knowledge model", "Target of persuasion", "Recognition of persuasive intent; change of meaning", "Recognised inappropriate tactics backfire", "Influencer disclosure; sales tactics",
-  "Social transmission", "Sharer", "Self-serving functions of sharing; arousal", "High-arousal, socially valuable content spreads", "Shareable content; referral design",
+  "Persuasion knowledge model", "Target of persuasion", "Recognition of persuasive intent, change of meaning", "Recognised inappropriate tactics backfire", "Influencer disclosure, sales tactics",
+  "Social transmission", "Sharer", "Self-serving functions of sharing, arousal", "High-arousal, socially valuable content spreads", "Shareable content, referral design",
   "Two-step flow", "Opinion leader", "Interpersonal relay of media content", "Influence passes through social ties", "Seeding and advocacy programmes",
   "Undirected communication", "Poster", "Reaching out without imposition", "Socially apprehensive people favour broadcasting", "Community and platform design",
-  "Agenda setting / priming", "Public", "Accessibility of issues and criteria", "Media emphasis predicts issue importance", "Issue management; PR timing",
-  "Framing", "Decision maker / public", "Reference points; applicability of schemas", "Equivalent descriptions change choices", "Pricing, risk, and crisis communication",
+  "Agenda setting / priming", "Public", "Accessibility of issues and criteria", "Media emphasis predicts issue importance", "Issue management, PR timing",
+  "Framing", "Decision maker / public", "Reference points, applicability of schemas", "Equivalent descriptions change choices", "Pricing, risk, and crisis communication",
   "Uses and gratifications", "Audience member", "Need-driven media selection", "Media chosen for gratifications sought", "Channel strategy and content metrics"
 ) |>
   book_table(caption = "Comparison of the chapter's theories.")
@@ -1220,17 +1220,17 @@ tibble::tribble(
 
 ## Further Reading {#persuasion-communication-reading}
 
-- @petty1986 — the definitive statement of the elaboration likelihood model, its
+- @petty1986: the definitive statement of the elaboration likelihood model, its
   postulates, and the early evidence.
-- @petty1983 — the canonical advertising experiment showing the involvement ×
+- @petty1983: the canonical advertising experiment showing the involvement ×
   argument quality × peripheral cue pattern.
-- @friestad1994 — the original persuasion knowledge model; essential for research on
+- @friestad1994: the original persuasion knowledge model. Essential for research on
   disclosure, covert marketing, and sales tactics.
-- @berger2014 — a comprehensive review of word of mouth organised around the
+- @berger2014: a comprehensive review of word of mouth organised around the
   functions sharing serves.
-- @berger2012 — an influential empirical study of which content goes viral and why
+- @berger2012: an influential empirical study of which content goes viral and why
   arousal matters.
-- @vosoughi2018 — a large-scale analysis of how true and false news spread online.
-- @scheufele2007 — a clear conceptual comparison of agenda setting, priming, and
+- @vosoughi2018: a large-scale analysis of how true and false news spread online.
+- @scheufele2007: a clear conceptual comparison of agenda setting, priming, and
   framing.
-- @katz1973 — the foundational statement of the uses and gratifications approach.
+- @katz1973: the foundational statement of the uses and gratifications approach.

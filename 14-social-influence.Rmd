@@ -7,22 +7,22 @@ the price of electricity has changed, and the chart contains no technical advice
 yet households that receive such reports reliably use less energy. A hotel guest
 reads a card saying that most guests who stayed in this room reused their towels,
 and hangs hers back on the rail. A teenager wants the same brand of trainers as
-her friends — but in a colour none of them owns. An engineer notices a serious
+her friends, but in a colour none of them owns. An engineer notices a serious
 flaw in a project plan, looks around a meeting room in which no one else seems
 worried, and says nothing.
 
 Each scene turns on the same fact: people do not evaluate themselves, form
-preferences, or decide how to act in isolation. They look to others — to learn
+preferences, or decide how to act in isolation. They look to others: to learn
 what is true, to know where they stand, to belong, and to stand out. This chapter
 assembles the core theories of social influence that operate at the level of the
 individual in a social context. We begin with **social comparison theory**, which
 explains how people evaluate themselves by reference to others, and **social
 identity theory**, which explains how group memberships become part of the self.
 **Optimal distinctiveness theory** reconciles the competing needs to belong and to
-be unique. We then examine **conformity** and **social norms** — the processes by
-which groups shape individual judgement and behaviour — before turning to the
+be unique. We then examine **conformity** and **social norms**, the processes by
+which groups shape individual judgement and behaviour, before turning to the
 effects of the mere presence of others on performance (**social facilitation** and
-**distraction–conflict theory**) and, finally, to the dynamics by which perceived
+**distraction-conflict theory**) and, finally, to the dynamics by which perceived
 majorities silence minorities (**the spiral of silence**).
 
 ```{r tab-si-glance}
@@ -31,10 +31,10 @@ tibble::tribble(
   "Social comparison theory", "How do people evaluate their abilities and opinions?", "Individual", "Festinger (1954)",
   "Social identity theory", "How do group memberships shape the self and intergroup behaviour?", "Individual / group", "Tajfel & Turner (1979)",
   "Optimal distinctiveness theory", "How do people balance belonging and uniqueness?", "Individual / group", "Brewer (1991)",
-  "Conformity", "Why do individuals adopt the judgements of a group?", "Individual / group", "Asch (1956); Deutsch & Gerard (1955)",
+  "Conformity", "Why do individuals adopt the judgements of a group?", "Individual / group", "Asch (1956), Deutsch & Gerard (1955)",
   "Social norms (focus theory)", "When do beliefs about what others do and approve guide behaviour?", "Individual / community", "Cialdini, Reno, & Kallgren (1990)",
-  "Social facilitation / inhibition", "How does the presence of others change performance?", "Individual", "Triplett (1898); Zajonc (1965)",
-  "Distraction-conflict theory", "Why does the presence of others raise arousal?", "Individual", "Sanders, Baron, & Moore (1978); Baron (1986)",
+  "Social facilitation / inhibition", "How does the presence of others change performance?", "Individual", "Triplett (1898), Zajonc (1965)",
+  "Distraction-conflict theory", "Why does the presence of others raise arousal?", "Individual", "Sanders, Baron, & Moore (1978), Baron (1986)",
   "Spiral of silence", "Why do perceived minorities stop expressing their views?", "Individual / public", "Noelle-Neumann (1974)"
 ) |>
   book_table(caption = "Chapter at a glance: theories of social comparison, identity, and influence.")
@@ -47,15 +47,15 @@ tibble::tribble(
 When objective standards are unavailable, they evaluate themselves by comparison
 with other people, preferably similar others.
 
-**Origins.** Social psychology; @festinger1954; later developments on downward
+**Origins.** Social psychology, @festinger1954, later developments on downward
 comparison [@wills1981], upward comparison [@collins1996], and self-evaluation
-maintenance [@tesser1988]; reviewed in @suls2002 and @gerber2018.
+maintenance [@tesser1988], reviewed in @suls2002 and @gerber2018.
 
 **Level of analysis.** Individual (the comparer) in relation to comparison
 targets (individuals or groups).
 
-**Key constructs.** Comparison target; similarity; upward versus downward
-comparison; assimilation versus contrast; relevance; attainability; closeness.
+**Key constructs.** Comparison target, similarity, upward versus downward
+comparison, assimilation versus contrast, relevance, attainability, closeness.
 
 **Boundary conditions.** Comparison is most likely when objective standards are
 absent or ambiguous, when the dimension matters to the self, and when information
@@ -71,9 +71,9 @@ target as similar and the target's standing as attainable.
 
 @festinger1954 began from a simple premise: people need to know whether their
 opinions are correct and how good their abilities are. Where physical reality
-provides an answer — whether a piece of furniture will fit through a doorway —
-people consult it. Where it does not — whether one is a good writer, or whether
-one's political views are reasonable — they turn to **social reality**, comparing
+provides an answer, whether a piece of furniture will fit through a doorway,
+people consult it. Where it does not, whether one is a good writer, or whether
+one's political views are reasonable, they turn to **social reality**, comparing
 themselves with others. Festinger further proposed that people prefer to compare
 with **similar others**, because comparison with someone very different is
 uninformative, and that for abilities (in Western cultures at least) there is a
@@ -81,9 +81,9 @@ uninformative, and that for abilities (in Western cultures at least) there is a
 
 Later work distinguished the *direction* of comparison:
 
-- **Downward comparison** — comparing with someone worse off — can protect or
+- **Downward comparison**, comparing with someone worse off, can protect or
   restore self-esteem, especially when people are under threat [@wills1981].
-- **Upward comparison** — comparing with someone better off — can be either
+- **Upward comparison**, comparing with someone better off, can be either
   deflating or inspiring. It deflates when the comparer feels *contrasted* with
   the target, and it inspires when the comparer *assimilates* toward the target,
   seeing the target's success as a glimpse of what is possible [@collins1996].
@@ -103,21 +103,21 @@ depend strongly on context [@gerber2018].
 tibble::tribble(
   ~Feature, ~`Upward comparison`, ~`Downward comparison`,
   "Target", "Someone better off or more able", "Someone worse off or less able",
-  "Typical motive", "Self-improvement; accurate self-evaluation", "Self-enhancement; coping with threat",
+  "Typical motive", "Self-improvement, accurate self-evaluation", "Self-enhancement, coping with threat",
   "Assimilative effect", "Inspiration ('I could be like that')", "Worry ('I could become like that')",
   "Contrastive effect", "Deflation, envy, lower self-evaluation", "Relief, higher self-evaluation",
   "Key moderators", "Attainability, similarity, relevance", "Threat, perceived control",
   "Business example", "Leaderboards showing top performers", "Messages that one is 'doing better than most'"
 ) |>
-  book_table(caption = "Upward and downward social comparison (based on Wills, 1981; Collins, 1996; Lockwood & Kunda, 1997).")
+  book_table(caption = "Upward and downward social comparison (based on Wills, 1981, Collins, 1996, Lockwood & Kunda, 1997).")
 ```
 
 ### Mechanism
 
 Figure \@ref(fig:fig-si-comparison) summarises how a comparison produces its
-effects. The comparison target and its direction set up the comparison; whether
+effects. The comparison target and its direction set up the comparison. Whether
 the comparer assimilates or contrasts depends on attainability, similarity, and
-the relevance of the dimension; and the outcome is a change in self-evaluation,
+the relevance of the dimension, and the outcome is a change in self-evaluation,
 affect, and motivation.
 
 ```{r fig-si-comparison, fig.cap = "Mechanism of social comparison: a comparison target produces assimilation or contrast depending on attainability, similarity, and relevance, which in turn shape self-evaluation, affect, and motivation."}
@@ -144,8 +144,8 @@ large, apparently unbridgeable gaps.
 ::: {.business-case}
 **Opower and the power of position.** The utility-reporting firm Opower built its
 business on a comparison. Its home energy reports did not try to teach customers
-the science of energy efficiency; they told customers where they stood relative to
-their neighbours — whether they were better or worse at conserving energy than
+the science of energy efficiency. They told customers where they stood relative to
+their neighbours: whether they were better or worse at conserving energy than
 similar households nearby [@Cuddy_2010]. The insight was that *position relative
 to others* is a more powerful motivator than abstract facts. The reports also
 illustrate the theory's boundary conditions: the comparison group was chosen to be
@@ -171,20 +171,20 @@ and anticipate effects on those who are already ahead.
 groups. People are motivated to achieve a positive social identity, which they do
 by favourably distinguishing their ingroups from relevant outgroups.
 
-**Origins.** Social psychology; minimal group experiments [@tajfel1971];
-@tajfel1979; extended by self-categorization theory [@turner1987]; reviewed in
+**Origins.** Social psychology, minimal group experiments [@tajfel1971],
+@tajfel1979, extended by self-categorization theory [@turner1987], reviewed in
 @hornsey2008.
 
-**Level of analysis.** Individual and group; extended to organizations
-[@ashforth1989] and to consumer–brand relationships [@bhattacharya2003].
+**Level of analysis.** Individual and group. Extended to organizations
+[@ashforth1989] and to consumer-brand relationships [@bhattacharya2003].
 
-**Key constructs.** Social categorization; social identification; social
-comparison between groups; positive distinctiveness; ingroup favouritism;
-permeability, stability, and legitimacy of group boundaries; depersonalization;
+**Key constructs.** Social categorization, social identification, social
+comparison between groups, positive distinctiveness, ingroup favouritism,
+permeability, stability, and legitimacy of group boundaries, depersonalization,
 prototypes.
 
 **Boundary conditions.** Effects depend on the salience of the category in the
-situation and on how strongly people identify with the group; when personal
+situation and on how strongly people identify with the group. When personal
 identity is salient, behaviour is guided more by individual than by group
 considerations.
 
@@ -197,8 +197,8 @@ considerations.
 
 Social identity theory began with a surprising experimental result. In the
 **minimal group paradigm**, @tajfel1971 assigned participants to groups on the
-basis of trivial criteria — such as a preference between paintings by two abstract
-artists — and asked them to allocate rewards to anonymous ingroup and outgroup
+basis of trivial criteria, such as a preference between paintings by two abstract
+artists, and asked them to allocate rewards to anonymous ingroup and outgroup
 members. Even though the groups had no history, no interaction, and no conflict
 of interest, participants favoured their own group, and in some allocation
 choices preferred to maximise the *difference* between groups rather than the
@@ -209,7 +209,7 @@ intergroup discrimination.
 sorts people, including oneself, into groups. **Social identification** makes
 group membership part of the self-concept, so that the group's fortunes become
 one's own. **Social comparison** between groups then motivates people to seek
-**positive distinctiveness** — a favourable difference between ingroup and
+**positive distinctiveness**: a favourable difference between ingroup and
 relevant outgroups. When a group's identity is unsatisfactory, members choose
 among strategies whose viability depends on the social structure, as summarised in
 Table \@ref(tab:tab-si-sit).
@@ -218,7 +218,7 @@ Table \@ref(tab:tab-si-sit).
 tibble::tribble(
   ~Strategy, ~`What members do`, ~`When it is likely`, ~`Business illustration`,
   "Individual mobility", "Leave the group or dissociate from it", "Group boundaries are permeable", "Employees of a struggling firm move to a competitor",
-  "Social creativity", "Change the comparison dimension or reframe its value", "Boundaries impermeable; status relations seen as stable and legitimate", "A challenger brand positions itself on authenticity rather than scale",
+  "Social creativity", "Change the comparison dimension or reframe its value", "Boundaries impermeable. Status relations seen as stable and legitimate", "A challenger brand positions itself on authenticity rather than scale",
   "Social competition", "Compete directly for status or resources", "Status relations seen as unstable and illegitimate", "Rival professions lobby over regulatory recognition"
 ) |>
   book_table(caption = "Identity-management strategies in social identity theory (Tajfel & Turner, 1979).")
@@ -239,9 +239,9 @@ situation activates [@hornsey2008].
 @ashforth1989 imported social identity theory into organization studies, defining
 **organizational identification** as the perception of oneness with or
 belongingness to an organization. Identification helps explain loyalty,
-cooperation, and support for organizational goals — and also resistance to
+cooperation, and support for organizational goals, and also resistance to
 mergers that threaten a valued identity. In marketing, @bhattacharya2003 proposed
-**consumer–company identification**: consumers identify with companies whose
+**consumer-company identification**: consumers identify with companies whose
 identities are distinctive, prestigious, and similar to their own, and such
 identification fosters loyalty, advocacy, and resilience to negative information.
 
@@ -254,7 +254,7 @@ response to a threat to valued identities rather than as mere resistance to
 change. Remedies suggested by the theory include creating a superordinate
 identity that both groups can embrace, preserving valued elements of each legacy
 identity, ensuring that integration is seen as fair (legitimacy), and avoiding
-status signals — office location, leadership appointments, systems choices —
+status signals, office location, leadership appointments, systems choices,
 that mark one side as the "acquired" group.
 :::
 
@@ -263,7 +263,7 @@ that mark one side as the "acquired" group.
 not the same as identifying with it. Many studies use membership (for example,
 working for a firm or owning a brand) as a proxy for social identity. The theory's
 predictions apply to identification and to situations in which the identity is
-salient; both should be measured or manipulated.
+salient. Both should be measured or manipulated.
 :::
 
 ## Optimal Distinctiveness Theory {#optimal-distinctiveness-theory}
@@ -272,18 +272,18 @@ salient; both should be measured or manipulated.
 **Core claim.** Social identities satisfy two opposing needs: a need for
 **assimilation** (inclusion, belonging) and a need for **differentiation**
 (uniqueness, distinctiveness). People identify most strongly with groups that
-reconcile these needs — groups inclusive enough to provide belonging but
+reconcile these needs: groups inclusive enough to provide belonging but
 exclusive enough to provide distinctiveness.
 
-**Origins.** Social psychology; @Brewer_1991; reviewed and extended in
-@leonardelli2010; consumer applications in @Chan_2012.
+**Origins.** Social psychology, @Brewer_1991, reviewed and extended in
+@leonardelli2010, consumer applications in @Chan_2012.
 
 **Level of analysis.** Individual and group.
 
-**Key constructs.** Need for assimilation; need for differentiation; inclusiveness
-of the social category; optimal distinctiveness; need for uniqueness.
+**Key constructs.** Need for assimilation, need for differentiation, inclusiveness
+of the social category, optimal distinctiveness, need for uniqueness.
 
-**Boundary conditions.** Distinctiveness is context-specific; the optimum shifts
+**Boundary conditions.** Distinctiveness is context-specific. The optimum shifts
 with the frame of reference and with the relative strength of the two needs,
 which vary across cultures, individuals, and recent experience.
 
@@ -298,12 +298,12 @@ which vary across cultures, individuals, and recent experience.
 membership provides self-esteem, why do people not simply identify with the
 largest, most inclusive, highest-status groups available? Her answer was that
 social identity is the reconciliation of two opposing needs. **Personal identity**
-is the individuated self — the characteristics that differentiate one person
+is the individuated self: the characteristics that differentiate one person
 from others. **Social identities** are categorizations of the self into more
 inclusive social units that depersonalize the self-concept, so that "I" becomes
-"we". Too much individuation produces isolation; too much deindividuation means
+"we". Too much individuation produces isolation. Too much deindividuation means
 that self-definition is lost. People therefore seek a balance between
-**assimilation** and **differentiation** — a state of optimal distinctiveness.
+**assimilation** and **differentiation**: a state of optimal distinctiveness.
 Brewer also noted that while some group memberships are imposed, the identities
 people embrace among the groups available to them are partly a matter of choice.
 
@@ -332,12 +332,12 @@ A2 is a notable departure from social identity theory: Brewer argued that people
 may identify strongly with small, distinctive groups even when those groups have
 modest status. Figure \@ref(fig:fig-si-odt) depicts the opposing-processes logic.
 As a category becomes more inclusive, the need for differentiation is
-increasingly activated; as it becomes more exclusive, the need for assimilation
+increasingly activated. As it becomes more exclusive, the need for assimilation
 is increasingly activated. The optimum lies where the two forces balance, and,
 consistent with A4, it shifts toward more inclusive groups when the need to belong
-is temporarily heightened — for example, after an experience of rejection.
+is temporarily heightened: for example, after an experience of rejection.
 
-```{r fig-si-odt, fig.cap = "Stylised optimal distinctiveness model (after Brewer, 1991). The need for differentiation rises as a group becomes more inclusive and the need for assimilation rises as it becomes more exclusive; identification peaks where the drives balance. A stronger assimilation drive (dashed line) shifts the optimum toward more inclusive groups.", fig.height = 4.2}
+```{r fig-si-odt, fig.cap = "Stylised optimal distinctiveness model (after Brewer, 1991). The need for differentiation rises as a group becomes more inclusive and the need for assimilation rises as it becomes more exclusive. Identification peaks where the drives balance. A stronger assimilation drive (dashed line) shifts the optimum toward more inclusive groups.", fig.height = 4.2}
 incl <- seq(0, 1, by = 0.005)
 odt <- bind_rows(
   data.frame(x = incl, activation = incl^1.6, drive = "Need for differentiation", scenario = "Baseline"),
@@ -364,7 +364,7 @@ ggplot(odt, aes(x, activation, colour = drive, linetype = scenario)) +
   theme(legend.box = "vertical", legend.spacing.y = unit(0, "pt")) +
   labs(x = "Inclusiveness of the social category", y = "Activation of the need",
        colour = NULL, linetype = NULL, title = "Belonging and uniqueness pull in opposite directions",
-       caption = "Stylised functional forms chosen for illustration; not empirical estimates.") +
+       caption = "Stylised functional forms chosen for illustration, not empirical estimates.") +
   guides(colour = guide_legend(order = 1), linetype = guide_legend(order = 2))
 ```
 
@@ -391,8 +391,8 @@ choice by assimilating on one dimension and differentiating on another.
 Consumers conform to their group on attributes that signal group identity, such as
 the brand, while distinguishing themselves on attributes that signal individuality,
 such as colour. The desire to communicate social identity leads consumers to
-conform on dimensions strongly associated with their group — particularly in
-identity-relevant categories such as clothing — while higher need for uniqueness
+conform on dimensions strongly associated with their group, particularly in
+identity-relevant categories such as clothing, while higher need for uniqueness
 leads them to differentiate *within* the group by choosing less popular options
 among those associated with it. The result is a self-concept that is, in the
 title's phrase, identifiable but not identical.
@@ -404,7 +404,7 @@ costs of misidentification [@Berger_2007; @berger2008]. This mechanism is
 developed in the section on [identity signaling](#identity-signaling).
 
 The creativity literature offers an intriguing parallel. Novel ideas tend to
-balance familiarity and novelty — recombining established elements in new ways —
+balance familiarity and novelty, recombining established elements in new ways,
 and averaged, prototypical forms are often judged attractive. Those ideas are
 developed elsewhere in the book, in the sections on the
 [Geneplore model](#geneplore-model) and [beauty in averageness](#beauty-in-averageness).
@@ -418,16 +418,16 @@ tibble::tribble(
   "Join a small, distinctive community", "Both (optimal group size)", "Group membership", "A niche brand community or enthusiasts' club",
   "Abandon a taste adopted by an outgroup", "Differentiation (between groups)", "Identity-relevant domain", "Dropping a style once a dissimilar group adopts it"
 ) |>
-  book_table(caption = "How consumers reconcile assimilation and differentiation (based on Brewer, 1991; Chan, Berger, & Van Boven, 2012; Berger & Heath, 2007).")
+  book_table(caption = "How consumers reconcile assimilation and differentiation (based on Brewer, 1991, Chan, Berger, & Van Boven, 2012, Berger & Heath, 2007).")
 ```
 
 ::: {.business-case}
 **Identifiable but not identical: designing product lines.** Optimal
 distinctiveness suggests that brands with strong group associations should
 offer variety along dimensions that do *not* dilute the identity signal. A
-sportswear brand can keep its logo, silhouette, and brand name constant —
-the assimilation cues — while offering many colours, limited editions, and
-personalisation — the differentiation cues. The theory also warns that variety
+sportswear brand can keep its logo, silhouette, and brand name constant,
+the assimilation cues, while offering many colours, limited editions, and
+personalisation: the differentiation cues. The theory also warns that variety
 on the identity-signalling dimension itself (for example, removing the logo) may
 weaken the reason consumers chose the brand. For managers, the practical question
 is to identify which attributes in their category carry group meaning and which
@@ -438,7 +438,7 @@ carry individual meaning, and to design assortment accordingly [@Chan_2012].
 **Treating uniqueness and conformity as opposite ends of one scale.** The theory's
 central claim is that both needs operate simultaneously and are satisfied on
 different dimensions or at different levels of inclusiveness. Measuring a single
-"conformity versus uniqueness" preference will miss the pattern; research should
+"conformity versus uniqueness" preference will miss the pattern. Research should
 distinguish the attributes or groups on which consumers assimilate from those on
 which they differentiate.
 :::
@@ -451,18 +451,18 @@ of a group, either because they take others' responses as evidence about reality
 (**informational influence**) or because they want to meet others' expectations
 and be accepted (**normative influence**).
 
-**Origins.** Social psychology; @sherif1936; @asch1956; @Deutsch_1955; reviewed in
+**Origins.** Social psychology, @sherif1936, @asch1956, @Deutsch_1955, reviewed in
 @cialdini2004.
 
-**Level of analysis.** Individual within a group; aggregated to markets and
+**Level of analysis.** Individual within a group, aggregated to markets and
 networks [@Mason_2007; @salganik2006].
 
-**Key constructs.** Informational influence; normative influence; public
-compliance versus private acceptance; unanimity; group size; anonymity; social
-proof; herding.
+**Key constructs.** Informational influence, normative influence, public
+compliance versus private acceptance, unanimity, group size, anonymity, social
+proof, herding.
 
 **Boundary conditions.** Informational influence is strongest when the task is
-ambiguous and others seem knowledgeable; normative influence is strongest when
+ambiguous and others seem knowledgeable. Normative influence is strongest when
 responses are public, the group is valued, and the majority is unanimous.
 
 **Related theories.** [Social norms](#social-norms),
@@ -473,7 +473,7 @@ responses are public, the group is valued, and the majority is unanimous.
 ### Origins and core logic
 
 @sherif1936 showed that when people judged the apparent movement of a point of
-light in a dark room — an inherently ambiguous stimulus — their estimates
+light in a dark room, an inherently ambiguous stimulus, their estimates
 converged on a group norm, which persisted when they later judged alone. Here
 conformity looks like rational learning: when reality is uncertain, others'
 judgements are informative.
@@ -489,11 +489,11 @@ single dissenting ally sharply reduced conformity, highlighting the power of
 unanimity.
 
 @Deutsch_1955 distinguished the two forces at work. **Informational influence**
-is the tendency to accept information from others as evidence about reality;
-**normative influence** is the tendency to conform to the positive expectations of
+is the tendency to accept information from others as evidence about reality.
+**Normative influence** is the tendency to conform to the positive expectations of
 others. Their experiments showed that conformity in an Asch-type
-task declined when participants responded anonymously — evidence of a normative
-component — but did not disappear, consistent with informational influence.
+task declined when participants responded anonymously, evidence of a normative
+component, but did not disappear, consistent with informational influence.
 @cialdini2004 integrate the literature by linking conformity to three goals:
 **accuracy** (informational), **affiliation** (normative), and the maintenance of
 a **positive self-concept**.
@@ -503,12 +503,12 @@ tibble::tribble(
   ~Dimension, ~`Informational influence`, ~`Normative influence`,
   "Underlying goal", "Accuracy: be right about reality", "Affiliation: be liked and accepted",
   "Type of change", "Private acceptance (internalisation)", "Often public compliance only",
-  "Strongest when", "Task is ambiguous; others seem expert", "Responses are public; group is valued; majority unanimous",
-  "Weakened by", "Clear objective evidence; own expertise", "Anonymity; a dissenting ally",
+  "Strongest when", "Task is ambiguous, others seem expert", "Responses are public, group is valued, majority unanimous",
+  "Weakened by", "Clear objective evidence, own expertise", "Anonymity, a dissenting ally",
   "Classic study", "Sherif (1936) autokinetic effect", "Asch (1956) line judgements",
-  "Business example", "Best-seller lists and review counts", "Dress codes; visible participation in team rituals"
+  "Business example", "Best-seller lists and review counts", "Dress codes, visible participation in team rituals"
 ) |>
-  book_table(caption = "Informational versus normative social influence (based on Deutsch & Gerard, 1955; Cialdini & Goldstein, 2004).")
+  book_table(caption = "Informational versus normative social influence (based on Deutsch & Gerard, 1955, Cialdini & Goldstein, 2004).")
 ```
 
 ### Evidence and extensions
@@ -518,7 +518,7 @@ collectivist than in individualist cultures and had declined in the United State
 since the 1950s [@bond1996], suggesting that conformity is shaped by cultural
 values (see [Hofstede](#hofstede)). In markets, conformity aggregates into
 **herding** and **social proof**. In a large online experiment, @salganik2006
-created parallel "worlds" in which participants could download songs; when
+created parallel "worlds" in which participants could download songs. When
 participants could see how often others had downloaded each song, popularity
 became more unequal and less predictable across worlds than when they could not.
 A randomized experiment on a social news site found that giving a comment an
@@ -535,7 +535,7 @@ with observational learning [@cai2009].
 uncertainty about quality, others' choices are a signal. The research above
 suggests two managerial cautions. First, social proof amplifies early random
 advantages, so displayed popularity may reflect luck as much as quality
-[@salganik2006]; platforms that care about matching customers to the best products
+[@salganik2006]. Platforms that care about matching customers to the best products
 should guard against self-reinforcing rankings, for example by mixing popularity
 with quality signals or by randomising exposure for new items. Second, herding is
 asymmetric: positive signals snowball more readily than negative ones
@@ -546,8 +546,8 @@ asymmetric: positive signals snowball more readily than negative ones
 **Interpreting all similarity of behaviour as conformity.** People who behave alike
 may have been influenced by one another, may share unobserved preferences
 (homophily), or may face common shocks. Inferring social influence from
-correlated behaviour in observational data is notoriously difficult; randomised
-manipulations of what others are seen to do — as in the studies above — provide
+correlated behaviour in observational data is notoriously difficult. Randomised
+manipulations of what others are seen to do, as in the studies above, provide
 the clearest evidence.
 :::
 
@@ -559,15 +559,15 @@ kinds of norm must be distinguished: **descriptive norms** (what most people do)
 and **injunctive norms** (what most people approve or disapprove of). Messages
 that activate the wrong norm can backfire.
 
-**Origins.** Social psychology; focus theory of normative conduct
-[@cialdini1990]; field applications in energy [@schultz2007; @allcott2011],
+**Origins.** Social psychology, focus theory of normative conduct
+[@cialdini1990], field applications in energy [@schultz2007; @allcott2011],
 hotels [@goldstein2008], and taxation [@hallsworth2017].
 
-**Level of analysis.** Individual within a community; designed interventions at
+**Level of analysis.** Individual within a community. Designed interventions at
 the level of firms and public agencies.
 
-**Key constructs.** Descriptive norm; injunctive norm; norm salience (focus);
-reference group; boomerang effect; pluralistic ignorance.
+**Key constructs.** Descriptive norm, injunctive norm, norm salience (focus),
+reference group, boomerang effect, pluralistic ignorance.
 
 **Boundary conditions.** Norm messages work best when the reference group is
 similar and identifiable, the norm is credible, and the behaviour is feasible.
@@ -585,8 +585,8 @@ it was invoked after the fact to explain almost anything. Their **focus theory o
 normative conduct** restores predictive content by distinguishing two kinds of norm
 and by holding that a norm guides behaviour only when attention is focused on it.
 In field experiments on littering, people were least likely to litter when they
-saw someone drop litter into a *clean* environment — an act that drew attention to
-the descriptive norm that people here do not litter — and most likely to litter
+saw someone drop litter into a *clean* environment, an act that drew attention to
+the descriptive norm that people here do not litter, and most likely to litter
 when the environment was already littered. Seeing someone *pick up* litter, which
 focused attention on the injunctive norm, reduced littering regardless of the state
 of the environment.
@@ -604,7 +604,7 @@ tibble::tribble(
 ```
 
 Norm perceptions are often inaccurate. @prentice1993 showed that university
-students systematically overestimated their peers' comfort with heavy drinking — a
+students systematically overestimated their peers' comfort with heavy drinking: a
 case of **pluralistic ignorance**, in which most members of a group privately
 reject a norm but believe that most others accept it. Correcting such
 misperceptions is one of the main levers of norm-based interventions. A striking
@@ -620,14 +620,14 @@ saving money [@nolan2008].
 backfire. Households in a Californian community received feedback comparing their
 electricity use to the average in their neighbourhood. Households that had been
 using *more* than average subsequently reduced consumption, as intended. But
-households that had been using *less* than average increased their consumption —
+households that had been using *less* than average increased their consumption:
 a **boomerang effect**, as the descriptive norm pulled them toward the average.
-When the feedback was accompanied by an injunctive cue — a smiling emoticon for
-below-average users and a frowning emoticon for above-average users — the
+When the feedback was accompanied by an injunctive cue, a smiling emoticon for
+below-average users and a frowning emoticon for above-average users, the
 boomerang effect among low users disappeared. Figure \@ref(fig:fig-si-boomerang)
 reproduces the pattern with simulated data.
 
-```{r fig-si-boomerang, fig.cap = "Stylised boomerang effect of descriptive-norm feedback. Households above the neighbourhood average reduce use under both message types; households below the average drift upward when they receive descriptive feedback alone, but not when an injunctive cue (approval) is added. Simulated data; bars show means with 95% confidence intervals.", fig.height = 4}
+```{r fig-si-boomerang, fig.cap = "Stylised boomerang effect of descriptive-norm feedback. Households above the neighbourhood average reduce use under both message types. Households below the average drift upward when they receive descriptive feedback alone, but not when an injunctive cue (approval) is added. Simulated data. Bars show means with 95% confidence intervals.", fig.height = 4}
 set.seed(2007)
 n_hh <- 600
 hh <- data.frame(baseline = rnorm(n_hh, 30, 6),
@@ -653,12 +653,12 @@ ggplot(boom, aes(group, m, fill = message)) +
                                "Descriptive + injunctive cue" = pal[["blue"]])) +
   labs(x = NULL, y = "Change in energy use (%)", fill = NULL,
        title = "Descriptive norms pull everyone toward the average",
-       caption = "Stylised simulation (n = 600 households) consistent with the pattern in Schultz et al. (2007); not their data.")
+       caption = "Stylised simulation (n = 600 households) consistent with the pattern in Schultz et al. (2007). Not their data.")
 ```
 
 Hotel guests show the same sensitivity to descriptive norms. @goldstein2008 found
 that a card stating that most guests reused their towels produced more towel reuse
-than the hotel industry's standard environmental appeal — and that a "provincial"
+than the hotel industry's standard environmental appeal, and that a "provincial"
 norm referring to guests who had stayed in *the same room* was more effective
 still, even though that reference group is not more meaningful in any objective
 sense.
@@ -687,8 +687,8 @@ element in preventing boomerang effects among already-efficient households.
 **Social-norm letters and tax compliance.** In two large natural field
 experiments, the UK tax authority varied the wording of reminder letters sent to
 taxpayers who had not yet paid what they owed [@hallsworth2017]. Adding a
-descriptive-norm statement — that the great majority of people pay their tax on
-time — increased payment rates relative to a standard letter, and messages that
+descriptive-norm statement, that the great majority of people pay their tax on
+time, increased payment rates relative to a standard letter, and messages that
 made the norm more specific to the recipient's situation tended to be more
 effective. Because the intervention cost almost nothing to implement, the
 additional revenue collected represented a very high return. The study has become
@@ -699,7 +699,7 @@ extension, in business collections, compliance, and renewal reminders.
 ::: {.debate}
 **Norms as policy: scale, persistence, and ethics.** Norm-based nudges are cheap,
 scalable, and well-evidenced in field experiments, but three debates remain.
-First, effects are typically modest in size — a few percent in energy use — so
+First, effects are typically modest in size, a few percent in energy use, so
 their value depends on scale and low cost rather than on transforming behaviour.
 Second, persistence varies: effects can decay when messages stop, although
 repeated messaging can build habits [@allcott2014]. Third, the ethics of
@@ -713,7 +713,7 @@ misleading destroys the credibility that makes such messages work.
 **Sample hypotheses.**
 
 - *H1.* Descriptive-norm feedback will reduce resource use among above-average
-  users and increase it among below-average users; adding an injunctive cue will
+  users and increase it among below-average users. Adding an injunctive cue will
   eliminate the increase.
 - *H2.* Norm messages that refer to a more proximal reference group (same
   neighbourhood, same team, same room) will be more effective than messages that
@@ -722,36 +722,36 @@ misleading destroys the credibility that makes such messages work.
   (pluralistic ignorance) will increase employees' reporting of misconduct.
 
 **Designs.** Randomised field experiments varying message content (the Opower
-and tax-letter designs are templates); survey measures of perceived descriptive
-and injunctive norms with experimental corrections; difference-in-differences
+and tax-letter designs are templates). Survey measures of perceived descriptive
+and injunctive norms with experimental corrections. Difference-in-differences
 analyses of staggered roll-outs.
 
-**Measures.** Behavioural outcomes (consumption, payment, reuse, reporting);
-perceived norms (estimated percentage of peers who perform a behaviour; perceived
-approval); heterogeneity by baseline position relative to the norm.
+**Measures.** Behavioural outcomes (consumption, payment, reuse, reporting).
+Perceived norms (estimated percentage of peers who perform a behaviour. Perceived
+approval). Heterogeneity by baseline position relative to the norm.
 :::
 
 ## Social Facilitation and Inhibition {#social-facilitation}
 
 ::: {.theory-card}
-**Core claim.** The presence of others — as an audience or as co-actors —
+**Core claim.** The presence of others, as an audience or as co-actors,
 improves performance on simple or well-learned tasks (**social facilitation**) and
 impairs performance on complex or novel tasks (**social inhibition**).
 
-**Origins.** Social psychology; @Triplett_1898; the term "social facilitation" from
-@Allport_1920; the drive theory synthesis of @zajonc1965; evaluation apprehension
-[@Cottrell_1968]; meta-analysis in @bond1983.
+**Origins.** Social psychology, @Triplett_1898, the term "social facilitation" from
+@Allport_1920, the drive theory synthesis of @zajonc1965, evaluation apprehension
+[@Cottrell_1968], meta-analysis in @bond1983.
 
 **Level of analysis.** Individual performing in the presence of others.
 
-**Key constructs.** Audience effect; coaction effect; dominant response; drive or
-arousal; task complexity or familiarity; mere presence; evaluation apprehension.
+**Key constructs.** Audience effect, coaction effect, dominant response, drive or
+arousal, task complexity or familiarity, mere presence, evaluation apprehension.
 
 **Boundary conditions.** Effects depend on the task: facilitation requires that
-the correct response be dominant (well-learned); inhibition arises when the
+the correct response be dominant (well-learned). Inhibition arises when the
 dominant response is incorrect. Effects are generally small in magnitude.
 
-**Related theories.** [Distraction–conflict theory](#distraction-conflict-theory),
+**Related theories.** [Distraction-conflict theory](#distraction-conflict-theory),
 [Social comparison](#social-comparison-theory), [Goal-setting theory](#goal-setting-theory).
 :::
 
@@ -764,7 +764,7 @@ he followed this with a laboratory study in which children wound fishing reels
 either alone or alongside another child. He reported that many children worked
 faster in competition. A modern reanalysis of Triplett's data concluded that, by
 contemporary statistical standards, the evidence in the original experiment was
-considerably weaker than textbook accounts suggest [@strube2005] — a useful
+considerably weaker than textbook accounts suggest [@strube2005]: a useful
 reminder that founding studies are not always the strongest.
 
 @Allport_1920 coined the term **social facilitation**. Working on "the influence
@@ -774,7 +774,7 @@ that the quality of their reasoning did not improve in the same way. Two researc
 streams developed:
 
 - **Audience effects**, in which passive spectators influence performance. Skilled
-  participants performed an eye–hand coordination task better before a small
+  participants performed an eye-hand coordination task better before a small
   audience [@Travis_1925], whereas the presence of a spectator impaired the learning
   of lists of nonsense syllables [@Pessin_1933].
 - **Coaction effects**, in which others perform the same task independently. These
@@ -789,10 +789,10 @@ sometimes helped and sometimes hurt.
 
 @zajonc1965 resolved the contradiction with an elegant argument from learning
 theory. The presence of members of one's own species increases **generalized
-drive** (arousal). Drive increases the likelihood of **dominant responses** — the
+drive** (arousal). Drive increases the likelihood of **dominant responses**: the
 responses that are most strongly established in a given situation. On simple or
 well-learned tasks the dominant response is usually correct, so performance
-improves; on complex or novel tasks the dominant response is often incorrect, so
+improves. On complex or novel tasks the dominant response is often incorrect, so
 performance suffers. In short, an audience facilitates the emission of
 well-learned responses and impairs the acquisition of new ones.
 @Zajonc_1966 provided direct support: after participants had practised nonsense
@@ -812,7 +812,7 @@ tibble::tribble(
 Figure \@ref(fig:fig-si-facil) shows the resulting interaction with illustrative
 data, and Figure \@ref(fig:fig-si-drive) depicts the mechanism.
 
-```{r fig-si-facil, fig.cap = "Illustrative social facilitation and inhibition: the presence of an audience improves performance on a simple, well-learned task and impairs performance on a complex, novel task. Simulated data; points are means with 95% confidence intervals.", fig.height = 4}
+```{r fig-si-facil, fig.cap = "Illustrative social facilitation and inhibition: the presence of an audience improves performance on a simple, well-learned task and impairs performance on a complex, novel task. Simulated data. Points are means with 95% confidence intervals.", fig.height = 4}
 set.seed(1965)
 facil <- expand.grid(task = c("Simple, well-learned task", "Complex, novel task"),
                      context = c("Alone", "Observed by others"), stringsAsFactors = FALSE)
@@ -833,10 +833,10 @@ ggplot(facil_sum, aes(context, m, colour = task, group = task)) +
   scale_x_discrete(expand = expansion(add = c(0.4, 0.7))) +
   labs(x = NULL, y = "Performance score", colour = NULL,
        title = "The same audience helps on easy tasks and hurts on hard ones",
-       caption = "Illustrative simulation (n = 50 per cell); not empirical data.")
+       caption = "Illustrative simulation (n = 50 per cell). Not empirical data.")
 ```
 
-```{r fig-si-drive, fig.cap = "Mechanism of social facilitation and inhibition (drive theory, after Zajonc, 1965): the presence of others raises arousal, which strengthens dominant responses; task complexity determines whether the dominant response is correct. Evaluation apprehension and distraction-conflict are alternative accounts of why presence raises arousal."}
+```{r fig-si-drive, fig.cap = "Mechanism of social facilitation and inhibition (drive theory, after Zajonc, 1965): the presence of others raises arousal, which strengthens dominant responses. Task complexity determines whether the dominant response is correct. Evaluation apprehension and distraction-conflict are alternative accounts of why presence raises arousal."}
 mechanism_diagram(sprintf('
   P [label = "Presence of others\\n(audience or\\ncoactors)", %s]
   EA [label = "Evaluation\\napprehension", %s]
@@ -873,7 +873,7 @@ answers have been proposed (Table \@ref(tab:tab-si-facil-accounts)).
   evaluate did not. On this view the passive spectator is not really passive: what
   matters is the performer's knowledge of being evaluated, a concern closely
   related to impression management in organizations.
-- **Distraction–conflict.** Others are a source of distraction that competes with
+- **Distraction-conflict.** Others are a source of distraction that competes with
   the task for attention, and the resulting attentional conflict raises arousal
   (see the next section).
 
@@ -885,10 +885,10 @@ fully explained by evaluation apprehension [@bond1983].
 ```{r tab-si-facil-accounts}
 tibble::tribble(
   ~Account, ~`Why presence matters`, ~`Key evidence`, ~`Distinctive prediction`,
-  "Drive / mere presence", "Others are inherently arousing and unpredictable", "Zajonc (1965); Markus (1978)", "Effects even with an inattentive other",
+  "Drive / mere presence", "Others are inherently arousing and unpredictable", "Zajonc (1965), Markus (1978)", "Effects even with an inattentive other",
   "Evaluation apprehension", "Others are associated with evaluation", "Cottrell et al. (1968)", "No effect if others cannot evaluate",
-  "Distraction-conflict", "Others divide attention between task and audience", "Sanders et al. (1978); Baron (1986)", "Non-social distractions produce similar effects",
-  "Contrast: social loafing", "Individual contributions are not identifiable in a collective task", "Latane et al. (1979); Karau & Williams (1993)", "Effort falls when outputs are pooled"
+  "Distraction-conflict", "Others divide attention between task and audience", "Sanders et al. (1978), Baron (1986)", "Non-social distractions produce similar effects",
+  "Contrast: social loafing", "Individual contributions are not identifiable in a collective task", "Latane et al. (1979), Karau & Williams (1993)", "Effort falls when outputs are pooled"
 ) |>
   book_table(caption = "Explanations of social facilitation and a contrasting phenomenon.")
 ```
@@ -896,7 +896,7 @@ tibble::tribble(
 Social facilitation should be distinguished from **social loafing**, the tendency
 to exert less effort when working collectively than individually
 [@latane1979; @karau1993]. Facilitation arises when individual performance is
-visible to others; loafing arises when individual contributions are pooled and
+visible to others. Loafing arises when individual contributions are pooled and
 cannot be identified. The same team can show either, depending on how work and
 evaluation are designed.
 
@@ -909,20 +909,20 @@ facilitation theory predicts that visibility will help routine, well-practised
 work and hinder complex, novel work that demands concentration. Field evidence
 is consistent with a cautious view. In two studies of corporate headquarters
 that moved to open-plan layouts, face-to-face interaction fell sharply while
-electronic communication rose — the opposite of the intended effect
+electronic communication rose: the opposite of the intended effect
 [@bernstein2018]. In a laboratory study of electronic performance monitoring,
 monitoring raised the productivity of highly skilled participants but lowered
 that of less skilled participants, and monitored participants reported more
-stress [@aiello1995] — the facilitation–inhibition pattern applied to skill rather
+stress [@aiello1995]: the facilitation-inhibition pattern applied to skill rather
 than task. Visibility to peers can also raise effort: among supermarket cashiers,
 productivity rose when a highly productive co-worker joined the shift, especially
 when the cashier was in that co-worker's line of sight [@mas2009]. The
 managerial implication is to match visibility to task: open, observable settings
-for practised, routine work; quiet, protected settings for learning and complex
+for practised, routine work. Quiet, protected settings for learning and complex
 problem solving.
 :::
 
-## Distraction–Conflict Theory {#distraction-conflict-theory}
+## Distraction-Conflict Theory {#distraction-conflict-theory}
 
 ::: {.theory-card}
 **Core claim.** Others (and other distractors) draw attention away from a task.
@@ -930,12 +930,12 @@ When a person feels pulled between attending to the task and attending to the
 distraction, the resulting **attentional conflict** raises arousal and narrows
 attention, producing facilitation on simple tasks and impairment on complex ones.
 
-**Origins.** Social psychology; @sanders1978; reviewed in @baron1986b.
+**Origins.** Social psychology, @sanders1978, reviewed in @baron1986b.
 
 **Level of analysis.** Individual.
 
-**Key constructs.** Distraction; attentional conflict; drive; attentional
-overload; narrowing of attention (cue utilization).
+**Key constructs.** Distraction, attentional conflict, drive, attentional
+overload, narrowing of attention (cue utilization).
 
 **Boundary conditions.** Effects require that the distractor be salient and that
 the person feel pressure to attend to both the task and the distractor.
@@ -948,28 +948,28 @@ Distractors that can be ignored easily produce little conflict.
 
 ### Core logic
 
-Distraction–conflict theory offers a mechanism for social facilitation that does
+Distraction-conflict theory offers a mechanism for social facilitation that does
 not depend on anything uniquely social. @sanders1978 proposed that others are
-distracting — people glance at them, wonder what they think, and compare their own
-progress with that of co-actors — and that distraction creates a conflict between
+distracting, people glance at them, wonder what they think, and compare their own
+progress with that of co-actors, and that distraction creates a conflict between
 two attentional demands. In their experiments, co-actors produced the classic
 pattern of facilitation on simple tasks and impairment on complex tasks mainly
 when they were working on the *same* task, making them relevant targets for social
-comparison and thus more distracting; participants in those conditions also
+comparison and thus more distracting. Participants in those conditions also
 reported greater distraction.
 
 @baron1986b developed the theory in two directions. First, attentional conflict can
 raise drive, producing Zajonc's dominant-response effects. Second, conflict can
 create **attentional overload**, which leads people to narrow their attention to a
 smaller set of cues. Narrowing helps on simple tasks that require attention to only
-a few central cues — irrelevant cues are screened out — but harms complex tasks that
+a few central cues, irrelevant cues are screened out, but harms complex tasks that
 require attention to many cues. Because the account is about attention rather than
 about other people as such, it predicts that non-social distractions such as noise
 or flashing lights can produce effects similar to those of an audience, and Baron
 reviewed evidence consistent with that prediction. Figure \@ref(fig:fig-si-dct)
 summarises the mechanism.
 
-```{r fig-si-dct, fig.cap = "Mechanism of distraction-conflict theory (after Sanders, Baron, & Moore, 1978; Baron, 1986): a salient distractor creates attentional conflict with the task, which raises drive and produces attentional overload and narrowing; task complexity determines whether narrowing helps or hurts."}
+```{r fig-si-dct, fig.cap = "Mechanism of distraction-conflict theory (after Sanders, Baron, & Moore, 1978, Baron, 1986): a salient distractor creates attentional conflict with the task, which raises drive and produces attentional overload and narrowing. Task complexity determines whether narrowing helps or hurts."}
 mechanism_diagram(sprintf('
   S [label = "Salient distractor\\n(audience, coactor,\\nnotification, noise)", %s]
   C [label = "Attentional conflict\\n(task vs.\\ndistractor)", %s]
@@ -987,11 +987,11 @@ mechanism_diagram(sprintf('
 ::: {.business-case}
 **Illustrative scenario: dashboards and interruptions in the contact centre.**
 A customer-service centre installs wall-mounted screens showing each agent's
-live call statistics and ranking. Distraction–conflict theory predicts mixed
+live call statistics and ranking. Distraction-conflict theory predicts mixed
 effects. For experienced agents handling routine queries, the screens may
 narrow attention onto the core script and raise throughput. For newer agents, or
-for complex complaints that require attention to many cues — the customer's tone,
-account history, policy exceptions — the competing pull of the leaderboard may
+for complex complaints that require attention to many cues, the customer's tone,
+account history, policy exceptions, the competing pull of the leaderboard may
 divide attention and increase errors. Similar logic applies to knowledge workers
 facing frequent notifications. A testable design would randomise the visibility
 of real-time metrics across teams and examine effects separately for routine and
@@ -1007,20 +1007,20 @@ complex cases and for experienced and novice staff.
 - *H2.* The effect of observation on complex-task performance will be mediated by
   self-reported distraction and attentional narrowing.
 - *H3.* Non-social interruptions (notifications) will reproduce the
-  facilitation–inhibition pattern produced by an observer.
+  facilitation-inhibition pattern produced by an observer.
 
 **Designs.** Laboratory experiments crossing presence (alone, audience,
-blindfolded audience, non-social distractor) with task complexity; field
-experiments that vary monitoring or workspace openness; natural experiments from
+blindfolded audience, non-social distractor) with task complexity. Field
+experiments that vary monitoring or workspace openness. Natural experiments from
 office redesigns or remote-work transitions.
 
-**Measures.** Speed and accuracy separately; physiological arousal; self-reported
-distraction; peripheral-cue recall as an index of attentional narrowing.
+**Measures.** Speed and accuracy separately, physiological arousal, self-reported
+distraction, peripheral-cue recall as an index of attentional narrowing.
 :::
 
 ::: {.pitfall}
 **Ignoring task complexity.** The most common error in applying social
-facilitation and distraction–conflict theory is to predict a main effect of
+facilitation and distraction-conflict theory is to predict a main effect of
 observation, monitoring, or open workspaces on "performance". The theories predict
 an interaction: the same social presence helps on simple, practised tasks and
 hurts on complex, novel ones. Studies and workplace policies that average across
@@ -1031,19 +1031,19 @@ task types will find small or inconsistent effects.
 
 ::: {.theory-card}
 **Core claim.** Because people fear social isolation, they continuously monitor
-the climate of opinion. Those who believe their view is in the minority — or
-losing ground — become less willing to express it, which makes the view appear
+the climate of opinion. Those who believe their view is in the minority, or
+losing ground, become less willing to express it, which makes the view appear
 even weaker and further silences its holders, in a self-reinforcing spiral.
 
-**Origins.** Political science and mass communication; @noelleneumann1974;
+**Origins.** Political science and mass communication, @noelleneumann1974,
 meta-analytic assessment in @glynn1997.
 
-**Level of analysis.** Individual expression aggregated to public opinion;
-analogues in organizations (employee voice and silence).
+**Level of analysis.** Individual expression aggregated to public opinion.
+Analogues in organizations (employee voice and silence).
 
-**Key constructs.** Fear of isolation; quasi-statistical sense of the climate of
-opinion; perceived current and future majority; willingness to speak out; mass
-media as a source of climate perceptions; the "hard core" who speak out regardless.
+**Key constructs.** Fear of isolation, quasi-statistical sense of the climate of
+opinion, perceived current and future majority, willingness to speak out, mass
+media as a source of climate perceptions, the "hard core" who speak out regardless.
 
 **Boundary conditions.** The spiral is most likely for morally loaded or
 controversial issues, in public settings, and when people rely on media or other
@@ -1060,7 +1060,7 @@ and in settings where dissent is protected.
 with which they estimate the distribution of opinion in their environment and
 whether it is shifting. Driven by **fear of isolation**, people who perceive that
 their opinion is shared by the majority, or is gaining ground, speak out more
-confidently; those who perceive their view to be in the minority, or losing
+confidently. Those who perceive their view to be in the minority, or losing
 ground, fall silent. Because public expression is itself one of the main cues that
 others use to judge the climate of opinion, silence makes the minority view seem
 even rarer than it is, which further suppresses its expression. The mass media
@@ -1096,8 +1096,8 @@ positive but small relationship between perceived support for one's opinion and
 willingness to speak out [@glynn1997]. The theory thus captures a real tendency
 but not a deterministic law, and its effect is easily swamped by individual
 differences in conviction, interest, and personality. The closely related concept
-of **pluralistic ignorance** [@prentice1993] — widespread private rejection of a
-norm that everyone believes others accept — describes the end state that a spiral
+of **pluralistic ignorance** [@prentice1993], widespread private rejection of a
+norm that everyone believes others accept, describes the end state that a spiral
 of silence can produce.
 
 ::: {.debate}
@@ -1109,7 +1109,7 @@ algorithmic amplification of popular content, and the permanence of online
 statements may make the climate of opinion more salient and the costs of
 deviation higher. Researchers also debate whether "willingness to speak out" in
 hypothetical survey scenarios captures actual expression. The theory's core
-mechanisms — perceived climate, fear of isolation, and expression as a signal —
+mechanisms, perceived climate, fear of isolation, and expression as a signal,
 offer a framework for these questions, but the size and direction of effects in
 digital environments must be established empirically rather than assumed.
 :::
@@ -1119,16 +1119,16 @@ digital environments must be established empirically rather than assumed.
 The organizational analogue of the spiral of silence is **organizational
 silence**: a collective-level phenomenon in which employees withhold information
 about problems and concerns [@morrison2000]. @morrison2000 argued that silence
-develops when managers fear negative feedback and hold implicit beliefs — for
-example, that employees are self-interested or that management knows best — which
-shape structures and behaviours that discourage upward communication; employees
+develops when managers fear negative feedback and hold implicit beliefs, for
+example, that employees are self-interested or that management knows best, which
+shape structures and behaviours that discourage upward communication. Employees
 then form shared perceptions that speaking up is futile or dangerous. In
 interviews, most employees in one study reported having remained silent about
 issues that concerned them at work, frequently citing fear of being labelled
 negatively or damaging relationships [@milliken2003]. Leadership matters: managerial
 openness has been linked to higher employee voice through its effect on employees'
-sense that speaking up is safe [@detert2007], and team **psychological safety** — a
-shared belief that the team is safe for interpersonal risk-taking — supports
+sense that speaking up is safe [@detert2007], and team **psychological safety**, a
+shared belief that the team is safe for interpersonal risk-taking, supports
 learning behaviour in work teams [@edmondson1999].
 
 ::: {.business-case}
@@ -1140,8 +1140,8 @@ directly onto the theory's mechanisms. *Anonymous or simultaneous input* (writte
 pre-reads, independent estimates before discussion, anonymous polling) prevents
 early speakers from defining the climate of opinion. *Designated dissent*
 (red teams, pre-mortems, a rotating "devil's advocate") lowers the isolation cost
-of disagreement by making it a role. *Leader behaviour* — senior people speaking
-last and visibly rewarding bad news — changes the perceived climate. And
+of disagreement by making it a role. *Leader behaviour*, senior people speaking
+last and visibly rewarding bad news, changes the perceived climate. And
 *measurement* through confidential surveys can reveal pluralistic ignorance,
 showing employees that concerns they believed were idiosyncratic are widely
 shared.
@@ -1158,27 +1158,27 @@ from public expression, and treat the gap between them as an outcome of interest
 ## Chapter Summary {#social-influence-summary}
 
 ::: {.key-takeaways}
-- People evaluate themselves through **social comparison** with similar others;
-  upward comparisons inspire when success seems attainable and deflate when it does
+- People evaluate themselves through **social comparison** with similar others.
+  Upward comparisons inspire when success seems attainable and deflate when it does
   not [@festinger1954; @lockwood1997].
 - **Social identity theory** explains how group memberships become part of the self
   and why people seek positive distinctiveness for their groups
   [@tajfel1979; @turner1987].
 - **Optimal distinctiveness theory** holds that identification is strongest for
-  groups that balance assimilation and differentiation; consumers often conform on
+  groups that balance assimilation and differentiation. Consumers often conform on
   identity attributes and differentiate on others [@Brewer_1991; @Chan_2012].
 - **Conformity** reflects informational influence (to be right) and normative
-  influence (to be accepted); in markets it appears as social proof and herding
+  influence (to be accepted). In markets it appears as social proof and herding
   [@Deutsch_1955; @asch1956; @salganik2006].
-- **Descriptive norms** can backfire by pulling low users toward the average;
-  pairing them with **injunctive** cues prevents boomerang effects, as in Opower's
+- **Descriptive norms** can backfire by pulling low users toward the average.
+  Pairing them with **injunctive** cues prevents boomerang effects, as in Opower's
   home energy reports [@cialdini1990; @schultz2007; @allcott2011].
 - The presence of others facilitates simple, well-learned performance and impairs
-  complex, novel performance; **drive**, **evaluation apprehension**, and
-  **distraction–conflict** offer complementary explanations
+  complex, novel performance. **Drive**, **evaluation apprehension**, and
+  **distraction-conflict** offer complementary explanations
   [@zajonc1965; @Cottrell_1968; @baron1986b].
 - The **spiral of silence** describes how fear of isolation suppresses minority
-  views; its organizational analogue is employee silence, which psychological
+  views. Its organizational analogue is employee silence, which psychological
   safety and process design can counteract [@noelleneumann1974; @morrison2000].
 :::
 
@@ -1186,9 +1186,9 @@ from public expression, and treat the gap between them as an outcome of interest
 tibble::tribble(
   ~Theory, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
   "Social comparison", "Self-evaluation against similar others", "Assimilation vs. contrast depending on attainability", "Leaderboards, peer benchmarks, customer feedback",
-  "Social identity", "Categorization, identification, positive distinctiveness", "Ingroup favouritism; identity-management strategies", "Mergers, employer branding, brand communities",
+  "Social identity", "Categorization, identification, positive distinctiveness", "Ingroup favouritism, identity-management strategies", "Mergers, employer branding, brand communities",
   "Optimal distinctiveness", "Opposing needs for assimilation and differentiation", "Conform on identity attributes, differentiate on others", "Product-line and assortment design, customisation",
-  "Conformity", "Informational and normative influence", "Convergence on group judgements; herding", "Social proof, ratings, best-seller lists",
+  "Conformity", "Informational and normative influence", "Convergence on group judgements, herding", "Social proof, ratings, best-seller lists",
   "Social norms", "Salient descriptive and injunctive norms", "Boomerang without injunctive cue", "Energy reports, tax letters, compliance messaging",
   "Social facilitation", "Arousal strengthens dominant responses", "Help on simple tasks, harm on complex tasks", "Workspace design, monitoring, team visibility",
   "Distraction-conflict", "Attentional conflict, overload, narrowing", "Non-social distractors mimic audience effects", "Notifications, dashboards, interruptions",
@@ -1210,7 +1210,7 @@ tibble::tribble(
    ratings better explained by informational or normative influence? What
    evidence would distinguish the two?
 4. A firm plans to move all teams into an open-plan office to increase
-   collaboration. Using social facilitation and distraction–conflict theory,
+   collaboration. Using social facilitation and distraction-conflict theory,
    advise which teams should and should not move, and propose metrics to evaluate
    the change.
 5. Triplett's original findings appear weaker on reanalysis, and the overall
@@ -1222,19 +1222,19 @@ tibble::tribble(
 
 ## Further Reading {#social-influence-reading}
 
-- @festinger1954 — the founding statement of social comparison theory, still
+- @festinger1954: the founding statement of social comparison theory, still
   worth reading for its compact, propositional style.
-- @tajfel1979 — the classic integrative statement of social identity theory and
+- @tajfel1979: the classic integrative statement of social identity theory and
   its identity-management strategies.
-- @Brewer_1991 — a short, influential article that reframes social identity as a
+- @Brewer_1991: a short, influential article that reframes social identity as a
   balance between belonging and uniqueness.
-- @Chan_2012 — shows how consumers satisfy assimilation and differentiation
+- @Chan_2012: shows how consumers satisfy assimilation and differentiation
   motives on different dimensions of the same choice.
-- @cialdini2004 — an authoritative review of compliance and conformity organized
+- @cialdini2004: an authoritative review of compliance and conformity organized
   around the goals of accuracy, affiliation, and self-concept.
-- @schultz2007 — a compact field experiment demonstrating the boomerang effect of
+- @schultz2007: a compact field experiment demonstrating the boomerang effect of
   descriptive norms and its cure.
-- @bond1983 — the meta-analysis that put the social facilitation literature in
+- @bond1983: the meta-analysis that put the social facilitation literature in
   quantitative perspective.
-- @noelleneumann1974 — the original statement of the spiral of silence; read
+- @noelleneumann1974: the original statement of the spiral of silence. Read
   alongside @glynn1997 for the meta-analytic evidence.

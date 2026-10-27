@@ -3,19 +3,20 @@ title: "Social Science Theory"
 subtitle: "A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business"
 author: "Mike Nguyen"
 date: "Last updated: `r format(Sys.Date(), '%B %d, %Y')`"
-url: https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/
+url: https://mikenguyen13.github.io/social-theory/
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [references.bib, packages.bib]
 biblio-style: apalike
+csl: csl/chicago-author-date.csl
 link-citations: yes
 colorlinks: yes
 lot: yes
 lof: yes
 description: |
   An open, rigorous, and practical field guide to 100+ social science theories,
-  effects, and frameworks — from signaling, agency, and the resource-based view
-  to prospect theory, social identity, and diffusion of innovations — each with
+  effects, and frameworks, from signaling, agency, and the resource-based view
+  to prospect theory, social identity, and diffusion of innovations, each with
   its core logic, mechanism diagrams, evidence, critiques, business applications,
   and ready-to-use research hypotheses.
 github-repo: "mikenguyen13/social-theory"
@@ -40,7 +41,7 @@ knitr::include_graphics("images/cover.png")
 :::
 
 **Social Science Theory** is an open-access field guide to the ideas that social
-scientists and evidence-minded managers use to explain behaviour — of people,
+scientists and evidence-minded managers use to explain behaviour: of people,
 teams, firms, markets, and societies. It covers more than one hundred theories,
 effects, and frameworks drawn from management, marketing, economics, psychology,
 sociology, communication, and information systems.
@@ -59,7 +60,7 @@ atlas |>
                                                "Individuals & Groups",
                                                "Effects, Phenomena & Frameworks"))) |>
   dplyr::arrange(part) |>
-  dplyr::mutate(Chapters = c("1–3", "4–10", "11–17", "18–20"),
+  dplyr::mutate(Chapters = c("1-3", "4-10", "11-17", "18-20"),
                 `What you will find` = c(
                   "What theory is, how to evaluate it, and how to turn it into hypotheses",
                   "Resources, capabilities, governance, institutions, information, networks, diffusion",
@@ -76,8 +77,8 @@ atlas |>
   a research question.
 - **Faculty** looking for a free, citable companion text for seminars in
   management, marketing, organizational behaviour, and consumer behaviour.
-- **Practitioners** — strategists, marketers, product managers, analysts, HR
-  leaders, and consultants — who want to understand *why* interventions work,
+- **Practitioners**, strategists, marketers, product managers, analysts, HR
+  leaders, and consultants, who want to understand *why* interventions work,
   not just *that* they work.
 
 ## How each chapter is built {-}
@@ -86,10 +87,10 @@ Theories are presented in a consistent format so they can be compared at a
 glance:
 
 ::: {.theory-card}
-**Core claim** — the theory in one or two sentences. **Origins** — who proposed
-it, when, and in which discipline. **Level of analysis** — individual, dyad,
+**Core claim**: the theory in one or two sentences. **Origins**, who proposed
+it, when, and in which discipline. **Level of analysis**: individual, dyad,
 group, firm, market, or institution. **Key constructs** and **boundary
-conditions**. **Related theories** — links to neighbouring entries.
+conditions**. **Related theories**: links to neighbouring entries.
 :::
 
 Each card is followed by the theory's **core logic and propositions**, a
@@ -133,7 +134,7 @@ If this book is useful in your work, please cite it:
 
 > Nguyen, M. (`r format(Sys.Date(), "%Y")`). *Social Science Theory: A Field Guide to the
 > Theories, Effects, and Frameworks Behind Research and Business*.
-> https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/
+> https://mikenguyen13.github.io/social-theory/
 
 ```
 @book{nguyen_social_theory,
@@ -141,7 +142,7 @@ If this book is useful in your work, please cite it:
   title  = {Social Science Theory: A Field Guide to the Theories, Effects,
             and Frameworks Behind Research and Business},
   year   = {`r format(Sys.Date(), "%Y")`},
-  url    = {https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/}
+  url    = {https://mikenguyen13.github.io/social-theory/}
 }
 ```
 
@@ -149,7 +150,7 @@ If this book is useful in your work, please cite it:
 
 This is a living book. Corrections, new theories, better examples, and
 translations are welcome. Every page has an **Edit this page** link that opens
-the source on GitHub; you can also open an
+the source on GitHub. You can also open an
 [issue](https://github.com/mikenguyen13/social-theory/issues) to suggest a theory.
 Contributors should follow the
 [style guide](https://github.com/mikenguyen13/social-theory/blob/master/STYLE_GUIDE.md).
@@ -169,6 +170,6 @@ grown into a reference for students, scholars, and practitioners.
 
 The book is written in [R Markdown](https://rmarkdown.rstudio.com) and built with
 **bookdown** [@R-bookdown], **knitr** [@R-knitr], and **rmarkdown** [@R-rmarkdown].
-Figures use **ggplot2** [@R-ggplot2] and **DiagrammeR** [@R-DiagrammeR]; tables use
-**kableExtra** [@R-kableExtra]; interactive maps and tables use **visNetwork**
+Figures use **ggplot2** [@R-ggplot2] and **DiagrammeR** [@R-DiagrammeR]. Tables use
+**kableExtra** [@R-kableExtra]. Interactive maps and tables use **visNetwork**
 [@R-visNetwork] and **DT** [@R-DT].
