@@ -26,7 +26,7 @@ at a time. This book puts them in one place, in one consistent format, with the
 depth researchers need and the examples practitioners want.
 
 > **Read it online:** **[mikenguyen13.github.io/social-theory](https://mikenguyen13.github.io/social-theory/)**  
-> Mirror: [Posit Connect Cloud](https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/)
+> Mirror: [Posit Connect Cloud](https://mike-social-theory.share.connect.posit.cloud/)
 
 ## Why this book
 

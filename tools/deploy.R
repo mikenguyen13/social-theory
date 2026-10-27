@@ -7,7 +7,7 @@
 stopifnot(file.exists("docs/index.html"))
 rsconnect::deployApp(
   appDir = "docs",
-  appId = "01a17b63-f04b-c542-bc6c-ece12120ea40",  # live at https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/
+  appId = "01a17b63-f04b-c542-bc6c-ece12120ea40",  # live at https://mike-social-theory.share.connect.posit.cloud/
   appPrimaryDoc = "index.html",
   appName = "social-science-theory",
   appTitle = "Social Science Theory",
