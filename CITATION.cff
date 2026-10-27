@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this book, please cite it as below."
 title: "Social Science Theory: A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business"
 type: software
+license: CC-BY-4.0
 authors:
   - family-names: Nguyen
     given-names: Mike

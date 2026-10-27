@@ -13,6 +13,7 @@
   <a href="https://mikenguyen13.github.io/social-theory"><img alt="Read the book" src="https://img.shields.io/badge/read-the%20book-1f4e79?style=for-the-badge"></a>
   <a href="https://github.com/mikenguyen13/social-theory/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/mikenguyen13/social-theory?style=for-the-badge&color=eda100"></a>
   <a href="https://github.com/mikenguyen13/social-theory/actions/workflows/book.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/mikenguyen13/social-theory/book.yml?branch=master&style=for-the-badge&label=build"></a>
+  <a href="LICENSE"><img alt="License: CC BY 4.0" src="https://img.shields.io/badge/license-CC%20BY%204.0-6250d6?style=for-the-badge"></a>
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-1baf7a?style=for-the-badge"></a>
 </p>
 
@@ -112,6 +113,19 @@ translation? Contributions are very welcome: see
 
 If this book helps you, **please ⭐ the repository**: it is the simplest way to
 help other students and researchers find it.
+
+## License
+
+- **Book text, figures, and tables:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+  You may share and adapt the material for any purpose, including commercially,
+  as long as you give appropriate credit, link to the license, and indicate if
+  changes were made. Full text in [`LICENSE`](LICENSE).
+- **Code** (R scripts in `tools/`, `_common.R`, and the code chunks that build
+  figures and tables): [MIT License](LICENSE-CODE).
+
+Suggested attribution: *Nguyen, M. Social Science Theory: A Field Guide to the
+Theories, Effects, and Frameworks Behind Research and Business.
+https://mikenguyen13.github.io/social-theory/, licensed under CC BY 4.0.*
 
 ## Related
 

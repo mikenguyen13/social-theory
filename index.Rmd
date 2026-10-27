@@ -158,6 +158,15 @@ If the book helps you, starring the
 [GitHub repository](https://github.com/mikenguyen13/social-theory) helps others
 find it.
 
+## License {-}
+
+The text, figures, and tables of this book are licensed under the
+[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+You may share and adapt the material for any purpose, including commercially,
+provided you give appropriate credit, link to the license, and indicate if
+changes were made. The code that builds the book is released under the
+[MIT License](https://github.com/mikenguyen13/social-theory/blob/master/LICENSE-CODE).
+
 ## About the author {-}
 
 Mike Nguyen is the author of the open-source *A Guide on Data Analysis*, a
