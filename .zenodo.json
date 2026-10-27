@@ -1,0 +1,34 @@
+{
+  "title": "Social Science Theory: A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "description": "<p>An open-access field guide to more than 150 social science theories (200+ entries in all) used in management, strategy, marketing, finance, economics, psychology, and sociology. Each entry gives the core claim, mechanism, key sources, evidence and critiques, business applications, and sample research hypotheses, with figures, tables, and reproducible R code. Read online at <a href=\"https://mikenguyen13.github.io/social-theory/\">https://mikenguyen13.github.io/social-theory/</a>.</p>",
+  "creators": [
+    {
+      "name": "Nguyen, Mike",
+      "orcid": "0000-0002-3432-8595"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "keywords": [
+    "social science theory",
+    "management theory",
+    "marketing theory",
+    "organizational behavior",
+    "consumer behavior",
+    "behavioral economics",
+    "prospect theory",
+    "psychology",
+    "sociology",
+    "research methods"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://mikenguyen13.github.io/social-theory/",
+      "relation": "isIdenticalTo",
+      "resource_type": "publication-book"
+    }
+  ]
+}
