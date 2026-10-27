@@ -1,0 +1,936 @@
+# What Is a Theory? {#what-is-theory}
+
+A regional grocery chain notices that its best-performing stores employ more
+staff per square metre than its worst-performing stores. The operations team
+proposes adding staff everywhere. The finance team objects: perhaps busy stores
+were *given* more staff because they were already busy. A third executive
+suggests that the real driver is the store manager — good managers both hire well
+and sell more. A fourth points out that the comparison mixes urban and rural
+stores, which differ in almost everything. Four people, one correlation, four
+different accounts of *what causes what and why*. Each account is a theory, and
+the decision the chain makes will depend on which theory it acts on.
+
+This chapter is about what such accounts are, what distinguishes a good one from
+a bad one, and how scholars and practitioners can tell the difference. We begin
+with what theory is — and, just as importantly, what it is not. We then take
+theories apart into their **building blocks** (constructs, relationships,
+mechanisms, and boundary conditions), distinguish **types** of theory, set out the
+**criteria** by which theories are judged, examine the **levels of analysis** at
+which theories operate, and close with how theories change over time. Along the
+way we argue a simple thesis: managers do not choose between "theory" and
+"practice"; they choose between theories that are explicit, tested, and bounded
+and theories that are implicit, untested, and unbounded.
+
+```{r tab-wit-glance}
+tibble::tribble(
+  ~Concept, ~`Core question`, ~`Key sources`,
+  "What theory is (and is not)", "What separates a theory from data, lists, diagrams, or hypotheses?", "Sutton & Staw (1995); Weick (1995); DiMaggio (1995)",
+  "Building blocks", "What, how, why, and who/where/when?", "Whetten (1989); Bacharach (1989); Dubin (1978)",
+  "Mechanisms", "Through what process does a cause produce its effect?", "Hedstrom & Swedberg (1998); Coleman (1990)",
+  "Types of theory", "Does the theory analyse, explain, predict, or prescribe?", "Merton (1968); Gregor (2006)",
+  "Criteria for good theory", "Is it falsifiable, useful, parsimonious, general, and interesting?", "Popper (1959); Davis (1971); Corley & Gioia (2011)",
+  "Levels of analysis", "At what level do constructs live, and can findings cross levels?", "Rousseau (1985); Klein, Dansereau & Hall (1994)",
+  "Theory change", "How do theories and paradigms rise and fall?", "Kuhn (1962); Lakatos (1970)"
+) |>
+  book_table(caption = "Chapter at a glance: the anatomy and evaluation of theory.")
+```
+
+## Why Theory Matters {#why-theory-matters}
+
+The word *theory* suffers in everyday speech. "That's just a theory" suggests
+speculation; "in theory, yes, but in practice …" suggests irrelevance. In the
+sciences the word means something closer to the opposite: a theory is the most
+disciplined form of understanding available, an account that has been stated
+precisely enough to be checked and has survived attempts to show it wrong.
+
+::: {.definition}
+**Theory.** A coherent set of statements about the relationships among constructs,
+together with an explanation of *why* those relationships hold and a specification
+of the conditions under which they are expected to hold. In Bacharach's
+formulation, a theory is a system of constructs and variables in which constructs
+are related by propositions and variables by hypotheses, the whole bounded by the
+theorist's assumptions [@bacharach1989]. In everyday managerial language,
+@christensen2003 offer a compact equivalent: a theory is a statement of what
+causes what, and why.
+:::
+
+### Managers run on implicit theories
+
+Every managerial decision embeds a causal claim. A sales incentive presumes that
+pay shapes effort; a rebrand presumes that perceptions drive choice; a
+reorganization presumes that structure shapes coordination. @mcgregor1960 made the
+point vividly half a century ago: managers who assume that people dislike work and
+must be controlled ("Theory X") design very different organizations from managers
+who assume that people seek responsibility under the right conditions ("Theory
+Y"). Neither manager thinks of himself or herself as a theorist, yet each acts on a
+theory of human motivation — and each theory tends to produce the behaviour it
+predicts.
+
+@christensen2003 argue that executives should care about management theory
+precisely because they cannot avoid using it. Their critique targets the
+"best-practice" habit: copying what successful firms do without understanding the
+circumstances in which those practices work. Early attempts at human flight, they
+observe, imitated the *attributes* of birds — feathers and flapping wings — rather
+than the underlying mechanism of lift. Management advice built on attributes
+("successful companies have flat structures") fails in the same way when it is
+transplanted to circumstances where the mechanism does not operate. Good theory,
+in their account, progresses from describing phenomena, to sorting them into
+categories defined by *circumstances* rather than surface attributes, to stating
+causal relationships that hold within each category — and it improves fastest
+when someone finds an anomaly the existing theory cannot explain.
+
+### Evidence-based management
+
+The **evidence-based management** movement makes the same argument from a
+different direction. @rousseau2006 defines it as translating principles based on
+the best available evidence into organizational practice, and contrasts it with
+decisions grounded in personal preference, imitation, and unsystematic
+experience. @pfeffer2006 document how often popular management practices —
+forced ranking, merger strategies, pay schemes — are adopted on the strength of
+anecdote or fashion rather than evidence. Evidence-based management is not
+anti-theoretical; it depends on theory to tell managers which evidence is
+relevant to their circumstances and why a finding from one setting should (or
+should not) generalize to another.
+
+::: {.business-case}
+**Open-plan offices and the theory of collaboration.** Many firms moved to
+open-plan offices on the strength of an implicit theory: removing walls increases
+chance encounters, encounters increase face-to-face interaction, and interaction
+improves collaboration. @bernstein2018 tested the second link directly. Using
+wearable sensors and electronic communication records in two corporate
+headquarters that switched to open-plan layouts, they found that face-to-face
+interaction *fell* sharply after the change while email and messaging rose. A
+plausible mechanism is that employees seek privacy when visual exposure
+increases. The case illustrates a general lesson: an intuitively appealing causal
+chain is a theory, and like any theory it can be wrong in one link even when the
+other links are plausible.
+:::
+
+## What Theory Is Not {#what-theory-is-not}
+
+A useful way to understand theory is through its imitations. In a widely cited
+editorial essay, @sutton1995 identified five things that are often presented as
+theory in management manuscripts but are not, on their own, theory. Each is a
+legitimate *part* of a theoretical argument; none can substitute for it.
+
+```{r tab-wit-not}
+tibble::tribble(
+  ~`Not theory on its own`, ~`Why it falls short`, ~`What turns it into theory`,
+  "References", "Citing prior work signals which literature a paper belongs to but does not explain anything", "State the logic the cited work supplies and how it applies here",
+  "Data", "Data describe which patterns were observed, not why they arose", "Explain the process that generated the pattern",
+  "Lists of variables or constructs", "Naming predictors says what matters, not how or why", "Specify relationships and the mechanism linking them",
+  "Diagrams", "Boxes and arrows show structure but rarely the reasoning behind each arrow", "Accompany each arrow with an explicit causal argument",
+  "Hypotheses or predictions", "Hypotheses state what is expected, not why", "Derive hypotheses from the underlying logic and its assumptions"
+) |>
+  book_table(caption = "Five things that are not theory on their own, following Sutton and Staw (1995).")
+```
+
+The common thread is the missing *why*. A paper can be well referenced, rich in
+data, and full of diagrams and hypotheses, yet still fail to tell the reader the
+causal process that connects one construct to another, or why that process should
+operate in some settings but not others. Strong theory, in Sutton and Staw's
+account, delves into underlying processes, explores the connections among
+phenomena, and tells a story about why acts, events, structures, and thoughts occur.
+
+::: {.debate}
+**Theory as product or as process?** Sutton and Staw's essay prompted two
+influential replies in the same issue of *Administrative Science Quarterly*.
+@weick1995 argued that theory is better seen as a continuum than as a binary:
+references, data, lists, diagrams, and hypotheses are often the visible traces of
+**theorizing**, an ongoing process whose products are approximations. Judging only
+finished theory, he warned, may discourage the interim work from which theory
+grows. @dimaggio1995 distinguished three conceptions of theory — theory as
+*covering laws* (general statements that subsume particulars), theory as
+*enlightenment* (a way of seeing that reveals what was hidden), and theory as
+*narrative* (an account of how a process unfolds) — and argued that the most
+valuable theories combine elements of all three. The exchange remains a useful
+reminder that standards for theory depend partly on the stage of a research
+programme. Weick's earlier essay describes theory construction itself as
+"disciplined imagination": generating many conjectures and selecting among them
+with explicit criteria [@weick1989].
+:::
+
+## The Building Blocks of Theory {#theory-building-blocks}
+
+If theory is not a list, a diagram, or a hypothesis, what is it made of? The most
+widely used answer in management comes from @whetten1989, who proposed that a
+complete theory answers four questions. Earlier, @dubin1978 had laid out a
+similar architecture of units, laws of interaction, boundaries, and system
+states; and @bacharach1989 sharpened the distinction between the abstract and the
+observable parts of a theory.
+
+### What, how, why, and who/where/when
+
+```{r tab-wit-whetten}
+tibble::tribble(
+  ~Element, ~Question, ~`What it supplies`, ~`Illustration: resource-based theory`,
+  "What", "Which factors (constructs) logically belong in the explanation?", "Comprehensiveness balanced against parsimony", "Firm resources and capabilities; competitive advantage",
+  "How", "How are the factors related?", "Direction, form, and often causality of relationships", "Resources that are valuable, rare, and costly to imitate lead to sustained advantage",
+  "Why", "What psychological, economic, or social dynamics justify the relationships?", "The mechanism; the theory's explanatory core", "Imperfect imitability (causal ambiguity, path dependence, social complexity) blocks competitive erosion",
+  "Who / where / when", "To which actors, settings, and times does the theory apply?", "Boundary conditions; limits of generalizability", "Markets with resource heterogeneity and imperfect factor mobility; advantage can erode when environments shift"
+) |>
+  book_table(caption = "Whetten's (1989) four elements of a complete theory, illustrated with resource-based theory (Wernerfelt, 1984; Barney, 1991).")
+```
+
+Whetten placed particular weight on the *why*. The *what* and *how* together
+describe a theory's domain — they could be read off a diagram — but the *why*
+supplies the reasons a reader should believe the diagram, and it is the element
+reviewers most often find missing. Resource-based theory illustrates the four
+elements well: @Wernerfelt_1984 and @barney1991 identify the constructs (resources
+and competitive advantage), the relationship (certain resources produce
+sustained advantage), the mechanism (imitation is blocked), and the conditions
+(resource heterogeneity and immobility). Later work refined each element
+[@Barney_2001; @Barney_2011; @Kozlenkova_2013], a pattern typical of productive
+theories.
+
+### Constructs and variables
+
+::: {.definition}
+**Construct.** An abstract concept, deliberately invented or adopted for a
+scientific purpose, that cannot be observed directly (e.g., *trust*, *brand
+equity*, *absorptive capacity*). **Variable.** An observable, measurable
+operationalization of a construct (e.g., a five-item trust scale, a price premium,
+R&D intensity). **Measure.** The concrete instrument or data source that produces
+values of the variable.
+:::
+
+Bacharach's distinction between the two levels of a theory is essential for
+reading and writing research [@bacharach1989]. **Constructs** are related to one
+another by **propositions**; **variables** are related to one another by
+**hypotheses**. A proposition ("customer trust increases loyalty") is a claim
+about the world at the level of concepts; a hypothesis ("respondents' scores on
+the trust scale predict repurchase within twelve months") is a claim about
+measured data. Because the link from construct to variable is never perfect, every
+empirical test is simultaneously a test of the theory *and* of the measurement
+assumptions — a point that returns in Chapter \@ref(using-theory) under the
+heading of construct validity.
+
+@suddaby2010 argues that many theories in management suffer from poor **construct
+clarity**: constructs are defined loosely, overlap with neighbouring constructs,
+or shift meaning across studies. Clear constructs have precise definitions, a
+stated scope (the conditions under which the construct applies), explicit
+relationships to other constructs, and coherence with the theory's broader logic.
+Table \@ref(tab:tab-wit-ladder) illustrates the ladder from construct to measure
+across business functions.
+
+```{r tab-wit-ladder}
+tibble::tribble(
+  ~Function, ~Construct, ~Variable, ~`Example measure`,
+  "Marketing", "Brand equity", "Price premium over a private-label equivalent", "Scanner-panel prices for matched products",
+  "Strategy", "Absorptive capacity", "R&D intensity; prior related knowledge", "R&D spend divided by sales",
+  "HR / OB", "Psychological safety", "Team members' perception that interpersonal risk is safe", "Multi-item survey scale aggregated to the team",
+  "Finance", "Information asymmetry", "Dispersion of analysts' earnings forecasts", "Standard deviation of forecasts for a firm-year",
+  "Operations", "Process flexibility", "Number of products a plant can switch among", "Plant-level product-assignment records",
+  "Information systems", "Perceived usefulness", "User beliefs that a system improves performance", "Validated survey items"
+) |>
+  book_table(caption = "From construct to variable to measure: the two levels of a theory (following Bacharach, 1989).")
+```
+
+### Propositions, hypotheses, and assumptions
+
+Propositions and hypotheses differ in abstraction, not in importance. A theory
+paper may advance only propositions; an empirical paper translates them into
+hypotheses that a particular dataset can test. Both rest on **assumptions** —
+statements the theorist takes as given rather than tests. @bacharach1989
+emphasizes that the theorist's implicit values and the spatial and temporal
+bounds of a theory are among its most consequential assumptions. Agency theory,
+for instance, assumes self-interested agents and goal conflict; stewardship
+theory relaxes the first assumption and therefore predicts different governance
+arrangements (see [Agency theory](#agency-theory) and
+[Stewardship theory](#stewardship-theory)).
+
+Figure \@ref(fig:fig-wit-anatomy) assembles these building blocks into one
+picture, using a signaling example developed fully in Chapter \@ref(information).
+The upper row is the theory proper; the lower row is its empirical shadow.
+
+```{r fig-wit-anatomy, fig.cap = "The anatomy of a theory. Constructs (upper row) are linked by propositions and a mechanism; boundary conditions moderate the mechanism; each construct is operationalized by a measured variable (lower row), and variables are linked by testable hypotheses. Example drawn from signaling theory (Spence, 1973; Connelly et al., 2011)."}
+mechanism_diagram(sprintf('
+  X  [label = "Construct A\\nWarranty generosity", %s]
+  M  [label = "Mechanism (why)\\nCostly commitment that\\nlow-quality sellers avoid", %s]
+  Y  [label = "Construct B\\nPerceived product quality", %s]
+  B  [label = "Boundary condition\\nInformation asymmetry\\n(new vs. established brand)", %s]
+  VX [label = "Variable\\nWarranty length (years)", fillcolor = "#ffffff", color = "#8a8984", style = "rounded,filled,dashed"]
+  VY [label = "Variable\\nQuality rating (1-7 scale)", fillcolor = "#ffffff", color = "#8a8984", style = "rounded,filled,dashed"]
+  {rank = same; X; VX}
+  {rank = same; Y; VY}
+  X -> M [label = " proposition"]
+  M -> Y
+  B -> M [style = dashed, label = " moderates"]
+  X -> VX [style = dotted, arrowhead = none, label = " operationalized as"]
+  Y -> VY [style = dotted, arrowhead = none]
+  VX -> VY [label = " hypothesis (tested)", color = "#8a8984"]
+', node_construct, node_mechanism, node_outcome, node_moderator))
+```
+
+### Mechanisms: opening the black box
+
+A theory that says *X leads to Y* without saying how is a **black-box** theory. A
+**mechanism** is the set of entities and activities, organized in a particular
+way, that brings about the effect [@hedstrom1998]. Mechanism-based explanation
+became a programme in analytical sociology because correlations between macro
+variables — religion and economic development, inequality and crime, firm size
+and innovation — say little about the processes that generate them. Specifying
+the mechanism makes a theory more credible (because the process is plausible),
+more testable (because intermediate steps can be measured), and more useful
+(because managers can intervene on the process itself).
+
+::: {.theory-card}
+**Core claim.** Macro-level associations should be explained by showing how macro
+conditions shape individual situations, how individuals act in those situations,
+and how individual actions aggregate into macro outcomes.
+
+**Origins.** Sociology; @coleman1990, reconstructing Max Weber's argument linking
+Protestant religious doctrine to the rise of capitalism; elaborated as a typology
+of social mechanisms by @hedstrom1998.
+
+**Level of analysis.** Explicitly multi-level: macro (society, market,
+organization) and micro (individual).
+
+**Key constructs.** Situational mechanism (macro to micro); action-formation
+mechanism (micro to micro); transformational mechanism (micro to macro).
+
+**Boundary conditions.** Most useful when the outcome of interest is a collective
+property produced by many individual actions; less informative for purely
+individual-level phenomena.
+
+**Related theories.** [Social exchange theory](#social-exchange-theory),
+[Institutional theory](#institutional-theory),
+[Wisdom of the crowd](#wisdom-of-the-crowd).
+:::
+
+Coleman's diagram — often called **Coleman's boat** or the "bathtub" — is
+redrawn in Figure \@ref(fig:fig-wit-boat). The dashed line across the top is the
+observed macro association. Coleman argued that this line is not itself an
+explanation; the explanation runs down, across, and back up. Hedström and Swedberg
+label the three arrows the **situational**, **action-formation**, and
+**transformational** mechanisms [@hedstrom1998].
+
+```{r fig-wit-boat, fig.cap = "Coleman's boat: a macro association (dashed) is explained by a situational mechanism (macro to micro), an action-formation mechanism (micro to micro), and a transformational mechanism (micro to macro). Labels follow Weber's Protestant-ethic example as reconstructed by Coleman (1990) and the typology of Hedstrom and Swedberg (1998).", fig.height = 4.6}
+mechanism_diagram(sprintf('
+  MA [label = "Macro condition\\n(e.g., Protestant religious\\ndoctrine)", %s]
+  MB [label = "Macro outcome\\n(e.g., capitalist economic\\norganization)", %s]
+  IA [label = "Individual situation\\n(values, beliefs,\\nopportunities)", %s]
+  IB [label = "Individual action\\n(e.g., disciplined work,\\nsaving, reinvestment)", %s]
+  {rank = same; MA; MB}
+  {rank = same; IA; IB}
+  MA -> MB [style = dashed, label = " observed macro association", constraint = false]
+  MA -> IA [label = " 1. situational\\n mechanism"]
+  IA -> IB [label = " 2. action-formation\\n mechanism"]
+  MB -> IB [dir = back, label = " 3. transformational\\n mechanism"]
+', node_construct, node_outcome, node_mechanism, node_mechanism), rankdir = "TB")
+```
+
+::: {.business-case}
+**Illustrative scenario: forced ranking and collaboration.** A firm adopts a
+forced-distribution appraisal system (a macro, organization-level policy). The
+macro association the board observes a year later is lower cross-unit
+collaboration. Coleman's boat structures the explanation. *Situational
+mechanism:* the policy turns colleagues into competitors for a fixed number of
+top ratings, changing how each employee perceives the payoff to helping others.
+*Action-formation mechanism:* employees who believe that helping a peer may cost
+them a rating rationally help less and share knowledge more selectively.
+*Transformational mechanism:* many such individual choices aggregate into thin
+cross-unit networks and slower knowledge flows. Each arrow suggests a different
+intervention — redesign the policy, change the individual payoff (e.g., reward
+helping explicitly), or build structures that make collaboration less dependent on
+discretionary effort.
+:::
+
+### Boundary conditions
+
+No theory holds everywhere. **Boundary conditions** specify the actors, settings,
+and times for which a theory's relationships are expected to hold — Whetten's
+*who, where,* and *when* [@whetten1989]. In empirical work, boundary conditions are
+often represented as **moderators**: variables that change the strength or
+direction of a relationship. Stating boundary conditions is not an admission of
+weakness. A theory that claims to hold everywhere is either trivially true or
+unfalsifiable; a theory that states where it stops is both more credible and more
+useful, because it tells a manager when *not* to rely on it.
+
+Figure \@ref(fig:fig-wit-boundary) shows the logic for the signaling example.
+Warranty generosity should matter a great deal when buyers know little about a
+seller (a new entrant) and much less when buyers already have abundant
+information (an established brand), because the warranty's signal value depends
+on the information gap it closes.
+
+```{r fig-wit-boundary, fig.cap = "Illustrative boundary condition. The effect of warranty length on perceived quality is steep when information asymmetry is high (new entrant) and nearly flat when it is low (established brand). Stylised simulated data; lines are least-squares fits.", fig.height = 4}
+set.seed(1989)
+n <- 80
+bnd <- bind_rows(
+  data.frame(warranty = runif(n, 0, 5), group = "New entrant (high asymmetry)") |>
+    mutate(quality = 35 + 7.5 * warranty + rnorm(n, 0, 5)),
+  data.frame(warranty = runif(n, 0, 5), group = "Established brand (low asymmetry)") |>
+    mutate(quality = 58 + 1.2 * warranty + rnorm(n, 0, 5))
+)
+lab <- bnd |>
+  group_by(group) |>
+  summarise(fit = predict(lm(quality ~ warranty), newdata = data.frame(warranty = 5)))
+ggplot(bnd, aes(warranty, quality, colour = group)) +
+  geom_point(alpha = 0.45, size = 1.8) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1.1) +
+  geom_text(data = lab, aes(x = 5.05, y = fit, label = group), hjust = 0, size = 3.3,
+            colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c("New entrant (high asymmetry)" = pal[["blue"]],
+                                 "Established brand (low asymmetry)" = pal[["orange"]])) +
+  scale_x_continuous(limits = c(0, 8.2), breaks = 0:5) +
+  labs(x = "Warranty length (years)", y = "Perceived quality (index)",
+       title = "A boundary condition changes the slope, not just the level",
+       subtitle = "Signal value depends on how much the buyer already knows",
+       caption = "Stylised data (set.seed(1989)); not empirical estimates.") +
+  theme(legend.position = "none")
+```
+
+### Variance and process theories
+
+Most of the theories discussed so far take the form of **variance theories**:
+they explain variation in an outcome by variation in its antecedents ("the more
+X, the more Y, under condition Z"). @mohr1982 contrasted variance theories with
+**process theories**, which explain an outcome as the result of a sequence of
+events unfolding over time, where the order and timing of events matter and the
+necessary conditions need not be sufficient. A variance theory of mergers might
+relate acquirer experience to post-merger performance; a process theory would
+describe how integration teams, early decisions about systems and leadership, and
+emerging conflicts sequence into success or failure.
+
+The two forms answer different questions and call for different evidence.
+Variance theories are naturally tested with cross-sectional or panel regressions
+and experiments; process theories are built and tested with longitudinal case
+studies, event-sequence data, and narrative analysis. @langley1999 reviews
+strategies for theorizing from process data, from narrative and visual mapping to
+temporal bracketing and quantification of events. For managers, the distinction is
+practical: a variance theory says *which* levers matter; a process theory says
+*when* and *in what order* to pull them. Many business failures — a sound
+strategy launched before the organization could absorb it, a pricing change
+introduced before customers understood the value proposition — are failures of
+sequencing that a variance theory cannot see.
+
+::: {.pitfall}
+**Boxes and arrows without a why.** The most common weakness in theory sections
+is a model diagram whose arrows are justified only by citations ("prior research
+has found that X affects Y"). A citation shows that a relationship has been
+observed; it does not explain it. For every arrow, write one or two sentences
+stating the mechanism and one sentence stating when the mechanism should weaken.
+If you cannot, the arrow is an empirical conjecture, not theory.
+:::
+
+::: {.try-it}
+Pick a management idea you have encountered recently — "remote work lowers
+innovation", "subscriptions increase customer lifetime value", "diverse boards
+improve decisions". Write it out using Whetten's four elements: list the
+constructs (*what*), state the relationship (*how*), specify the mechanism
+(*why*), and name at least two boundary conditions (*who, where, when*). Then
+sketch it as a Coleman boat: which arrows are situational, action-formation, and
+transformational?
+:::
+
+## Types of Theory {#types-of-theory}
+
+Theories differ not only in content but in ambition and purpose. Two distinctions
+are especially useful: *scope* (grand versus middle-range) and *goal* (explanation
+versus prediction, among others).
+
+### Grand theory and theories of the middle range
+
+@merton1968 argued that sociology had been caught between two unproductive poles:
+the minor working hypotheses of everyday research, which accumulate without
+integration, and all-inclusive systematic theories that attempt to explain all
+social behaviour and are too abstract to be tested. Between them he advocated
+**theories of the middle range**: theories limited to a delimited class of
+phenomena, abstract enough to generalize across settings but concrete enough to
+yield testable propositions. His own examples included reference group theory and
+the theory of role-sets.
+
+Most of the theories in this book are middle-range in Merton's sense. Signaling
+theory does not try to explain all of economic life, only how informed parties
+reveal hidden quality; [optimal distinctiveness theory](#optimal-distinctiveness-theory)
+does not explain all of identity, only the tension between assimilation and
+differentiation [@Brewer_1991]. The middle range is where theory is most easily
+tested, accumulated, and applied — and where most business research operates.
+
+### Gregor's taxonomy of theory types
+
+Writing for information systems, @gregor2006 proposed a taxonomy that applies
+well beyond that field. It distinguishes theories by their *primary goal*.
+
+```{r tab-wit-gregor}
+tibble::tribble(
+  ~Type, ~`Primary goal`, ~`What it offers`, ~`Business illustration`,
+  "I. Analysis", "Describe and classify", "Taxonomies, typologies, frameworks", "Porter's generic strategies; Hofstede's cultural dimensions",
+  "II. Explanation", "Explain how and why, without precise prediction", "Causal accounts and mechanisms", "Case-based accounts of why incumbents miss disruptive technologies",
+  "III. Prediction", "Forecast outcomes without necessarily explaining them", "Accurate forecasts; black-box models", "Machine-learning churn or demand forecasts",
+  "IV. Explanation and prediction", "Explain and predict", "Testable causal propositions", "Signaling theory; prospect theory; goal-setting theory",
+  "V. Design and action", "Prescribe how to do something", "Methods, design principles, interventions", "A/B testing protocols; incentive-design principles"
+) |>
+  book_table(caption = "Five types of theory distinguished by their primary goal, following Gregor (2006).")
+```
+
+The distinction between types II and III deserves emphasis. A model can predict
+well without explaining anything: a demand-forecasting algorithm may exploit
+weather, search trends, and calendar effects with no account of why consumers
+behave as they do. Conversely, a theory can explain well and predict poorly, as in
+evolutionary accounts of industries. @shmueli2010 shows that explanatory and
+predictive modelling call for different choices about variables, model
+complexity, and evaluation. Business analytics increasingly mixes the two, which
+makes it important to be explicit about which one a given analysis is attempting.
+
+Figure \@ref(fig:fig-wit-typology) crosses scope with goal to place some familiar
+theories. Placement is a matter of judgement, not measurement; the point is that
+"theory" spans a wide range of ambitions.
+
+```{r fig-wit-typology, fig.cap = "A stylised map of theories by scope (grand vs. middle-range; Merton, 1968) and primary goal (explanatory vs. predictive emphasis; Gregor, 2006). Placements are the author's illustrative judgements, not measurements.", fig.height = 5}
+quad <- data.frame(
+  xmin = c(0, 1, 0, 1), xmax = c(1, 2, 1, 2), ymin = c(1, 1, 0, 0), ymax = c(2, 2, 1, 1),
+  title = c("Grand / explanatory", "Grand / predictive", "Middle-range / explanatory", "Middle-range / predictive"),
+  fill = c("a", "b", "b", "a")
+)
+items <- data.frame(
+  x = c(0.5, 0.5, 1.5, 1.5, 0.5, 0.5, 0.5, 1.5, 1.5, 1.5),
+  y = c(1.55, 1.3, 1.55, 1.3, 0.62, 0.42, 0.22, 0.62, 0.42, 0.22),
+  label = c("Parsonian structural functionalism", "Coleman's rational-choice social theory",
+            "Expected-utility theory", "General equilibrium theory",
+            "Signaling theory", "Optimal distinctiveness theory", "Upper echelons theory",
+            "Bass diffusion model", "Technology acceptance model", "Goal-gradient hypothesis")
+)
+ggplot() +
+  geom_rect(data = quad, aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, fill = fill),
+            colour = "white", linewidth = 1.2) +
+  geom_text(data = quad, aes(x = (xmin + xmax) / 2, y = ymax - 0.12, label = title),
+            fontface = "bold", size = 3.7, colour = ink[["primary"]]) +
+  geom_text(data = items, aes(x, y, label = label), size = 3.3, colour = ink[["secondary"]]) +
+  scale_fill_manual(values = c(a = "#eef4fb", b = "#f6f4ff"), guide = "none") +
+  scale_x_continuous(breaks = c(0.5, 1.5), labels = c("Explanatory emphasis", "Predictive emphasis"),
+                     expand = c(0, 0)) +
+  scale_y_continuous(breaks = c(0.5, 1.5), labels = c("Middle-range", "Grand"), expand = c(0, 0)) +
+  labs(x = NULL, y = NULL, title = "Theories differ in scope and purpose",
+       caption = "Illustrative classification; boundaries between cells are fuzzy.") +
+  theme(panel.grid = element_blank(), axis.text = element_text(face = "bold"))
+```
+
+::: {.business-case}
+**Prediction without explanation in customer analytics.** A subscription business
+can build a churn model that identifies at-risk customers with impressive
+accuracy using hundreds of behavioural features. The model is a type III theory:
+it predicts but does not explain. Problems arise when managers treat its
+predictors as levers. If "number of support tickets" predicts churn, it does not
+follow that suppressing tickets reduces churn — tickets may simply reveal
+dissatisfaction that has other causes. An explanatory theory (for example, that
+churn results from unmet expectations formed at sign-up) suggests different
+interventions and different tests. Mature analytics teams therefore pair
+predictive models, which target *whom* to act on, with explanatory theory and
+experiments, which determine *what* action works.
+:::
+
+## What Makes a Theory Good? {#theory-criteria}
+
+If theories differ in type and scope, by what standards should they be judged?
+Philosophers of science and management scholars have converged on a set of
+criteria that pull in somewhat different directions.
+
+### Falsifiability
+
+@popper1959 proposed that the line between science and non-science is
+**falsifiability**: a scientific theory must prohibit some observable states of
+affairs, so that observing them would count against it. A theory compatible with
+every possible outcome explains nothing. @bacharach1989 applies the criterion to
+organizational theory: constructs must be defined clearly enough, and
+relationships stated precisely enough, that empirical refutation is possible.
+Vague constructs, tautological propositions ("successful firms have the
+capabilities needed for success"), and post hoc boundary conditions all
+undermine falsifiability.
+
+### Utility: explanation and prediction
+
+Bacharach's second criterion is **utility**, which he splits into *explanatory
+potential* (does the theory explain the relationships it addresses, through
+clearly specified constructs and mechanisms?) and *predictive adequacy* (does it
+anticipate outcomes beyond the observations from which it was built?)
+[@bacharach1989]. A theory that merely redescribes its own data has low utility
+even if it is technically falsifiable.
+
+### Parsimony, generality, and accuracy
+
+A good theory explains much with little. **Parsimony** favours theories with fewer
+constructs and assumptions, other things equal. **Generality** (or scope) favours
+theories that apply across many settings. **Accuracy** favours theories whose
+predictions match observations closely. @weick1979 popularized Thorngate's
+argument that a theory of social behaviour cannot simultaneously maximize
+generality, accuracy, and simplicity: gaining on any two typically costs the third.
+The trade-off explains why the theory landscape contains both broad, abstract
+frameworks and narrow, precise models, and why neither is simply "better".
+
+### Novelty and interestingness
+
+Theories must also be *worth* attention. In a classic essay, @davis1971 argued
+that theories are judged interesting when they deny some assumption their
+audience holds — when what seems to be the case turns out not to be — and boring
+when they affirm what the audience already believes. Prospect theory was
+interesting because it contradicted the assumption that decision-makers evaluate
+final wealth states consistently [@kahneman1979]; the finding that open offices
+reduce face-to-face interaction is interesting because it contradicts the design
+intuition behind them [@bernstein2018]. Interestingness is audience-relative: a
+result that surprises economists may be obvious to psychologists.
+
+### Usefulness
+
+@corley2011 review how management scholars define a theoretical contribution and
+identify two dimensions: **originality**, ranging from incremental to revelatory,
+and **utility**, ranging from scientific usefulness (advancing scholarly
+conversation) to practical usefulness (informing what practitioners do). They
+argue that the field has overweighted scientific utility and call for more
+**prescience** — theorizing that anticipates problems managers and societies will
+face, rather than only explaining the past.
+
+::: {.business-case}
+**Illustrative scenario: an unfalsifiable strategy claim.** A consultancy
+publishes a study concluding that "customer-obsessed" companies outperform their
+peers. On inspection, firms were classified as customer-obsessed partly on the
+basis of strong growth and high customer ratings — the very outcomes the theory
+claims to explain. The claim cannot fail: any high performer will be coded as
+customer-obsessed after the fact. A falsifiable version would define the
+construct independently of the outcome (for instance, by the share of executive
+time spent with customers, or by whether product decisions require customer
+evidence), measure it *before* performance is observed, and specify what pattern
+— such as customer-obsessed firms underperforming in markets where customer
+preferences shift rapidly — would count against it. The scenario illustrates
+Bacharach's point that falsifiability depends as much on construct definition as
+on the hypothesis itself [@bacharach1989].
+:::
+
+::: {.try-it}
+Choose a theory from later in this book and evaluate it against Table
+\@ref(tab:tab-wit-criteria). On which criterion does it score highest? Which
+criterion does it sacrifice, and is that sacrifice consistent with Thorngate's
+trade-off between generality, accuracy, and simplicity?
+:::
+
+```{r tab-wit-criteria}
+tibble::tribble(
+  ~Criterion, ~`Diagnostic question`, ~`Typical failure`, ~`Key source`,
+  "Falsifiability", "What observation would show the theory wrong?", "Tautology; constructs too vague to measure", "Popper (1959); Bacharach (1989)",
+  "Explanatory potential", "Does it say why, through a clear mechanism?", "Black-box correlations", "Bacharach (1989); Hedstrom & Swedberg (1998)",
+  "Predictive adequacy", "Does it anticipate outcomes beyond its founding data?", "Post hoc fitting; overfitting", "Bacharach (1989); Shmueli (2010)",
+  "Parsimony", "Could fewer constructs explain as much?", "Kitchen-sink models", "Weick (1979)",
+  "Generality / scope", "How many settings does it cover?", "Context-bound results presented as general", "Merton (1968); Whetten (1989)",
+  "Internal consistency", "Do the assumptions and propositions cohere?", "Mutually inconsistent assumptions", "Bacharach (1989)",
+  "Interestingness", "Does it challenge an assumption the audience holds?", "Confirming the obvious", "Davis (1971)",
+  "Usefulness", "Does it inform scholars, practitioners, or both?", "Theory that changes no one's action", "Corley & Gioia (2011); Christensen & Raynor (2003)"
+) |>
+  book_table(caption = "Criteria for evaluating a theory.")
+```
+
+::: {.debate}
+**Can a field be too devoted to theory?** @hambrick2007 argued that management's
+insistence that every published paper make a novel theoretical contribution has
+costs. It discourages the publication of important facts that lack a ready
+theoretical explanation, encourages authors to dress up findings in elaborate but
+weakly connected theory, and slows the accumulation of replicated empirical
+regularities from which better theory could later be built. Others respond that
+without theory, facts do not cumulate and cannot be transported to new contexts.
+The debate is a useful reminder that the criteria in Table
+\@ref(tab:tab-wit-criteria) are ideals in tension, not a checklist to be maximized
+simultaneously — a theme that returns in the discussion of replication in
+Chapter \@ref(using-theory).
+:::
+
+## Levels of Analysis {#levels-of-analysis}
+
+Every theory is a theory *of something*: individuals, dyads, teams, organizations,
+networks, industries, or societies. The **level of analysis** is the unit to which
+a theory's constructs and generalizations apply. Business phenomena are almost
+always nested — employees within teams, teams within firms, firms within
+industries and countries — which makes level mistakes both common and costly.
+
+### Three levels that must align
+
+@klein1994 distinguish the **level of theory** (the unit the theory seeks to
+explain), the **level of measurement** (the unit to which data are directly
+attached), and the **level of statistical analysis** (the unit treated as the
+observation in the analysis). Problems arise when these are misaligned — for
+example, when a theory about *team* climate is tested with individual survey
+responses analysed as independent observations. Klein and colleagues also show
+that a level-specific theory carries an implicit assumption about how members of a
+higher-level unit relate to it: members may be **homogeneous** (alike within the
+unit, so the unit is the relevant level), **independent** of the unit (so the
+individual is the relevant level), or **heterogeneous** within the unit (so
+position relative to the group matters, as in a frog-pond model).
+
+### Emergence and cross-level models
+
+@rousseau1985 distinguished **composition models**, which specify how a construct
+at one level relates to a functionally similar construct at another (e.g.,
+individual perceptions of climate and organizational climate), from
+**cross-level models**, which relate constructs at one level to outcomes at
+another, and **multilevel models**, which claim that a relationship holds at
+several levels. @kozlowski2000 add the concept of **emergence**: higher-level
+properties that arise from the interactions of lower-level elements. Emergence
+can be *compositional*, when the higher-level construct is essentially the shared
+version of the lower-level one (team efficacy as shared individual efficacy), or
+*compilational*, when the higher-level construct is a configuration different in
+kind from its parts (a team's coordination pattern, which no individual
+possesses).
+
+### Cross-level fallacies
+
+Two inferential errors recur. The **ecological fallacy** infers individual-level
+relationships from aggregate data. @robinson1950 provided the classic
+demonstration: across US states, the proportion of foreign-born residents was
+*negatively* correlated with illiteracy, while among individuals foreign birth was
+*positively* associated with illiteracy — immigrants tended to settle in states
+whose native-born residents were more literate. The opposite error, sometimes
+called the **atomistic** or **individualistic fallacy**, infers group-level
+relationships from individual data. Figure \@ref(fig:fig-wit-ecological) shows how
+the two levels can point in opposite directions.
+
+```{r fig-wit-ecological, fig.cap = "Illustrative cross-level reversal. Across business units, units with higher average workload show higher average service quality (orange), perhaps because high-performing units attract more demand. Within each unit, employees carrying more cases than their colleagues deliver lower quality (blue). Stylised simulated data.", fig.height = 4.2}
+set.seed(1950)
+units <- data.frame(unit = paste("Unit", 1:5), mu = c(12, 16, 20, 24, 28))
+emp <- units[rep(1:5, each = 30), ] |>
+  mutate(workload = mu + rnorm(n(), 0, 2.2),
+         quality = 40 + 1.4 * mu - 1.6 * (workload - mu) + rnorm(n(), 0, 2.2))
+unit_means <- emp |> group_by(unit) |> summarise(workload = mean(workload), quality = mean(quality))
+ggplot(emp, aes(workload, quality)) +
+  geom_point(colour = ink[["muted"]], alpha = 0.55, size = 1.6) +
+  geom_smooth(aes(group = unit, colour = "Within units (individual level)"), method = "lm", se = FALSE, linewidth = 0.9) +
+  geom_smooth(data = unit_means, aes(colour = "Between units (unit level)"), method = "lm", se = FALSE,
+              linewidth = 1.1, linetype = "dashed", fullrange = TRUE) +
+  geom_point(data = unit_means, colour = pal[["orange"]], size = 3.4) +
+  scale_colour_manual(values = c("Within units (individual level)" = pal[["blue"]],
+                                 "Between units (unit level)" = pal[["orange"]]), name = NULL) +
+  labs(x = "Workload (cases per week)", y = "Service quality (index)",
+       title = "The same variables, opposite relationships at two levels",
+       caption = "Stylised data (5 units x 30 employees; set.seed(1950)); not empirical estimates.")
+```
+
+::: {.business-case}
+**Engagement surveys and the level of inference.** @harter2002 meta-analysed the
+relationship between employee satisfaction and engagement and business outcomes
+— customer satisfaction, productivity, profit, turnover, and safety — at the level
+of **business units**, finding generalizable positive relationships. The level of
+the evidence matters for how managers use it. The findings support unit-level
+claims (units with more engaged workforces tend to perform better) and unit-level
+interventions (improving local management practices). They do not, by themselves,
+establish that any given employee would perform better if made more engaged, nor
+do they settle the direction of causality, since well-performing units may also
+make work more engaging. Reading the evidence at the right level is the
+difference between a sound engagement programme and an overreaching one.
+:::
+
+::: {.research-toolkit}
+**Checklist for levels in a research design.**
+
+- *State the focal level* of each construct in the theory section, and justify it.
+- *Specify the composition model* when aggregating (e.g., direct consensus, referent
+  shift, dispersion), and report within-group agreement before aggregating.
+- *Align* the levels of theory, measurement, and analysis, or explain and model
+  the misalignment.
+- *Model nesting* explicitly (multilevel or hierarchical models, clustered standard
+  errors, fixed effects for higher-level units).
+- *Guard against both fallacies*: do not draw individual conclusions from unit
+  data or unit conclusions from individual data without a cross-level argument.
+:::
+
+### A map of the book by level
+
+The theories in this book can be organized by the level at which they primarily
+operate. Table \@ref(tab:tab-wit-map) serves as a navigational map. Many theories
+span levels — signaling theory has been applied to individuals, firms, and
+nations — so the "dominant level" column indicates centre of gravity, not
+exclusive domain.
+
+```{r tab-wit-map}
+tibble::tribble(
+  ~Part, ~Chapter, ~`Theory families`, ~`Dominant level(s)`,
+  "Foundations", "1-3. Introduction; What is a theory?; Using theory", "Meta-theory, theory building and testing", "All levels",
+  "Organizations & Strategy", "4. Resources", "Resource-based theory, VRIO, knowledge-based view, resource-advantage theory", "Firm",
+  "Organizations & Strategy", "5. Dynamic capabilities", "Dynamic capabilities, absorptive capacity, exploration-exploitation, ambidexterity", "Firm; business unit",
+  "Organizations & Strategy", "6. Governance", "Agency, stewardship, transaction cost economics, upper echelons", "Dyad; top management team; firm",
+  "Organizations & Strategy", "7. Environment", "Resource dependence, institutional, legitimacy, stakeholder, ecology, contingency", "Organization; field; population",
+  "Organizations & Strategy", "8. Information", "Information asymmetry, signaling, screening, costly signaling", "Dyad; market",
+  "Organizations & Strategy", "9. Networks & exchange", "Social exchange, network exchange, weak ties, structural holes, social capital", "Dyad; network",
+  "Organizations & Strategy", "10. Innovation & adoption", "Diffusion of innovations, Bass model, TAM, UTAUT", "Individual adopter; market",
+  "Individuals & Groups", "11. Culture", "Hofstede, power distance, GLOBE, Schwartz values, tight-loose", "Society; individual",
+  "Individuals & Groups", "12. Motivation", "Expectancy, equity, goal setting, goal gradient, self-determination", "Individual",
+  "Individuals & Groups", "13. Self-regulation", "Regulatory focus and fit, construal level, self-control", "Individual",
+  "Individuals & Groups", "14. Social influence", "Social comparison, social identity, optimal distinctiveness, conformity, norms", "Individual within groups",
+  "Individuals & Groups", "15. Judgment & decision", "Bounded rationality, heuristics and biases, prospect theory, dual process", "Individual",
+  "Individuals & Groups", "16. Emotion & well-being", "Broaden-and-build, hedonic adaptation, appraisal theory", "Individual",
+  "Individuals & Groups", "17. Persuasion & communication", "Elaboration likelihood, persuasion knowledge, agenda setting", "Individual; audience",
+  "Effects, Phenomena & Frameworks", "18. Effects", "Mere exposure, decoy, anchoring, IKEA, snob, glass cliff", "Individual (mostly)",
+  "Effects, Phenomena & Frameworks", "19. Phenomena", "Similarity asymmetry, assortative mating, wisdom of the crowd", "Individual; dyad; collective",
+  "Effects, Phenomena & Frameworks", "20. Frameworks", "Information processing, five forces, creativity models, mechanism toolkit", "Individual to industry"
+) |>
+  book_table(caption = "A map of the book: theory families by part, chapter, and dominant level of analysis.")
+```
+
+## How Theories Change {#how-theories-change}
+
+Theories are not discovered once and then preserved; they are proposed, tested,
+amended, combined, and sometimes abandoned. Understanding how this happens helps
+readers place any single theory in its intellectual trajectory.
+
+::: {.theory-card}
+**Core claim.** Science alternates between long periods of **normal science**,
+conducted within a shared paradigm, and occasional **revolutions** in which an
+accumulation of anomalies leads a community to adopt a new paradigm.
+
+**Origins.** History and philosophy of science; @kuhn1962.
+
+**Level of analysis.** Scientific community and discipline.
+
+**Key constructs.** Paradigm; normal science; puzzle-solving; anomaly; crisis;
+revolution; incommensurability.
+
+**Boundary conditions.** Developed from the history of the natural sciences; its
+fit to the social sciences, where several paradigms often coexist, is debated.
+
+**Related theories.** Lakatos's methodology of research programmes
+[@lakatos1970]; Popper's falsificationism [@popper1959].
+:::
+
+@kuhn1962 argued that mature sciences are organized around **paradigms**: shared
+exemplars, assumptions, and methods that define which problems are legitimate and
+what counts as a solution. Within a paradigm, scientists solve puzzles rather than
+test foundations. Anomalies — observations the paradigm cannot accommodate — are
+initially set aside or explained away. When they accumulate, a crisis may follow,
+and a new paradigm can replace the old one. Kuhn controversially argued that
+competing paradigms can be partly **incommensurable**, so that the choice between
+them is not settled by data alone. Figure \@ref(fig:fig-wit-kuhn) summarizes the
+cycle.
+
+```{r fig-wit-kuhn, fig.cap = "The Kuhnian cycle of theory change (after Kuhn, 1962). Normal science proceeds within a paradigm until anomalies accumulate; a crisis can lead to a revolution and a new period of normal science. Lakatos (1970) offers a gradualist alternative in which research programmes progress or degenerate."}
+mechanism_diagram(sprintf('
+  N [label = "Normal science\\n(puzzle-solving within\\na paradigm)", %s]
+  A [label = "Anomalies\\naccumulate", %s]
+  C [label = "Crisis\\n(confidence in the\\nparadigm erodes)", %s]
+  R [label = "Revolution\\n(new paradigm\\nadopted)", %s]
+  N -> A -> C -> R
+  R -> N [label = " new normal science", constraint = false, style = dashed]
+', node_construct, node_mechanism, node_mechanism, node_outcome))
+```
+
+@lakatos1970 proposed a less dramatic account. Scientific **research programmes**
+consist of a *hard core* of assumptions protected by a *belt* of auxiliary
+hypotheses that absorb anomalies. A programme is *progressive* when its
+modifications predict novel facts and *degenerating* when they merely patch
+failures after the fact. The Lakatosian lens fits management and economics well,
+where theories are rarely overthrown outright but are amended, bounded, and
+gradually displaced.
+
+The history of strategy research illustrates the pattern. Industrial-organization
+reasoning, popularized for strategy by Porter, located the sources of
+profitability primarily in industry structure [@porter1980industry]. Persistent
+performance differences among firms *within* the same industry were an anomaly
+for that view, and the resource-based view relocated the explanation inside the
+firm [@Wernerfelt_1984; @barney1991]. When critics noted that static resource
+endowments could not explain how firms adapt to rapid change, the
+dynamic-capabilities framework extended the programme [@teece1997]. Each shift
+retained much of its predecessor; none was a clean Kuhnian revolution. In
+behavioural decision research, by contrast, the accumulation of anomalies for
+expected-utility theory produced something closer to a paradigm contest, with
+prospect theory offering a descriptive alternative built on reference dependence
+and loss aversion [@kahneman1979].
+
+::: {.debate}
+**Does management have — or need — a paradigm?** @pfeffer1993 argued that
+organizational science suffers from low **paradigm development**: weak consensus
+on theories and methods, compared with fields such as economics. In his view, this
+fragmentation makes it harder to accumulate knowledge, allocate resources, and
+defend the field's standing. Critics countered that theoretical pluralism is
+appropriate to a complex subject matter and that enforced consensus could
+suppress valuable alternatives. The debate maps onto a practical question for
+readers of this book: when theories disagree, should we seek a winner, a synthesis,
+or a clear statement of the conditions under which each applies? Chapter
+\@ref(using-theory) takes up that question under the heading of competing-theory
+tests and strong inference.
+:::
+
+::: {.pitfall}
+**Mistaking a fashion for a revolution.** Management ideas often rise and fall
+with the business press, and new labels are sometimes presented as paradigm
+shifts. Before treating a new framework as a replacement for an established
+theory, ask Lakatos's question: does it predict novel facts that the older theory
+cannot, or does it re-describe familiar facts in new vocabulary?
+:::
+
+## Chapter Summary {#what-is-theory-summary}
+
+::: {.key-takeaways}
+- A **theory** is a set of related propositions about constructs, together with an
+  explanation of *why* they are related and *where* the relationships hold
+  [@whetten1989; @bacharach1989].
+- References, data, variable lists, diagrams, and hypotheses are ingredients of
+  theory, not substitutes for it; the missing element is usually the *why*
+  [@sutton1995], although theorizing is a process whose interim products matter
+  [@weick1995].
+- **Constructs** are linked by **propositions**; **variables** by **hypotheses**.
+  Every empirical test is also a test of measurement.
+- **Mechanisms** open the black box; Coleman's boat decomposes macro associations
+  into situational, action-formation, and transformational mechanisms
+  [@coleman1990; @hedstrom1998].
+- Theories vary in **scope** (grand vs. middle-range) and **goal** (analysis,
+  explanation, prediction, design) [@merton1968; @gregor2006].
+- Good theories are falsifiable, useful, parsimonious, appropriately general, and
+  interesting, but these criteria trade off against one another [@popper1959;
+  @davis1971; @corley2011].
+- Levels of theory, measurement, and analysis must align; relationships can
+  reverse across levels [@klein1994; @robinson1950].
+- Theories change through revolutions and, more often in management, through the
+  progressive or degenerating evolution of research programmes [@kuhn1962;
+  @lakatos1970].
+- Managers always act on theories; the choice is between explicit, tested theories
+  and implicit, untested ones [@christensen2003; @rousseau2006].
+:::
+
+```{r tab-wit-summary}
+tibble::tribble(
+  ~Idea, ~`Core claim`, ~`Practical test`, ~`Key source`,
+  "What theory is not", "Ingredients are not explanations", "Can you state the why for each arrow?", "Sutton & Staw (1995)",
+  "Four building blocks", "What, how, why, who/where/when", "Are all four explicit?", "Whetten (1989)",
+  "Constructs vs. variables", "Propositions link constructs; hypotheses link variables", "Is the construct-to-measure link defensible?", "Bacharach (1989)",
+  "Mechanisms", "Explain macro patterns through micro processes", "Can the intermediate steps be observed?", "Coleman (1990); Hedstrom & Swedberg (1998)",
+  "Middle-range theory", "Bounded, testable theories accumulate best", "Is the scope stated and testable?", "Merton (1968)",
+  "Theory types", "Analysis, explanation, prediction, design", "Is the goal explicit?", "Gregor (2006)",
+  "Evaluation criteria", "Falsifiable, useful, parsimonious, interesting", "Which criterion is being traded off?", "Popper (1959); Davis (1971)",
+  "Levels of analysis", "Align theory, measurement, analysis", "Is a cross-level inference being made?", "Klein et al. (1994)",
+  "Theory change", "Paradigms and research programmes", "Does the new idea predict novel facts?", "Kuhn (1962); Lakatos (1970)"
+) |>
+  book_table(caption = "Summary of the chapter's core ideas.")
+```
+
+## Discussion Questions {#what-is-theory-questions}
+
+1. Take a recent empirical article in your field. Using Whetten's four elements,
+   identify which element is weakest. What would it take to strengthen it?
+2. Sutton and Staw argue that diagrams are not theory, while Weick argues that
+   they may be valuable steps in theorizing. Under what circumstances is a
+   diagram-heavy paper a genuine contribution?
+3. Choose a managerial "best practice" (e.g., open-plan offices, forced ranking,
+   loyalty programmes). Reconstruct the implicit theory behind it as a Coleman
+   boat. Which arrow is least supported by evidence?
+4. A consultancy reports that firms with more diverse boards have higher returns
+   on equity. What level-of-analysis and causal questions would you ask before
+   recommending board diversification to a specific client?
+5. Thorngate's postulate suggests that no theory can be simultaneously general,
+   accurate, and simple. Pick one theory from this book and argue which of the
+   three it sacrifices.
+6. Is the shift from industry-structure explanations to the resource-based view
+   better described as a Kuhnian revolution or a Lakatosian progression? Defend
+   your answer with evidence.
+
+## Further Reading {#what-is-theory-reading}
+
+- @whetten1989 — a five-page statement of what a theoretical contribution requires;
+  the most practical starting point.
+- @sutton1995 — a sharp diagnosis of what theory is not, with the replies by
+  @weick1995 and @dimaggio1995 in the same issue.
+- @bacharach1989 — rigorous criteria for evaluating organizational theories,
+  including the construct–variable distinction.
+- @hedstrom1998 — the core statement of mechanism-based explanation in the social
+  sciences.
+- @klein1994 — the standard reference on levels issues in theory, measurement, and
+  analysis.
+- @davis1971 — why some theories capture attention and others do not; still
+  provocative.
+- @christensen2003 — a practitioner-oriented argument for why managers need
+  explicit causal theory.
+- @kuhn1962 — the classic account of paradigms and scientific revolutions.

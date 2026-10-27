@@ -1,0 +1,1130 @@
+# Organizations and Their Environments {#environment}
+
+Why did hospitals, universities, and city governments across the United States
+adopt nearly identical administrative structures in the twentieth century, even
+when those structures did little to improve their work? Why do thousands of
+suppliers seek the same quality and environmental certifications, why do software
+developers grumble about app-store commissions yet keep building for the same two
+platforms, and why did the chief executives of nearly two hundred of America's
+largest companies publicly redefine the purpose of the corporation in 2019? None of
+these questions can be answered by looking inside the firm alone. Each concerns the
+relationship between an organization and the **environment** on which it
+depends — suppliers, customers, regulators, professions, competitors, and the
+wider society that grants or withholds approval.
+
+This chapter presents the major "open-systems" theories of organizations.
+**Resource dependence theory** treats the environment as a set of other
+organizations that control critical resources, and organizational action as the
+management of the resulting power relations. **Institutional theory** treats the
+environment as a set of rules, norms, and taken-for-granted beliefs, and explains
+why organizations conform to them — often at the expense of efficiency.
+**Legitimacy** is the currency of that institutional environment. **Stakeholder
+theory** asks whose interests the organization should and does serve.
+**Organizational ecology** shifts the focus from individual adaptation to the
+selection of whole populations of organizations. **Contingency theory**, finally,
+argues that there is no one best way to organize: effective structures fit their
+environments.
+
+```{r tab-env-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Resource dependence theory", "How do organizations manage dependence on others for critical resources?", "Organization; dyad; organization set", "Pfeffer & Salancik (1978)",
+  "Institutional theory", "Why do organizations in a field become similar, and why do they adopt practices that may not improve efficiency?", "Organizational field; organization", "Meyer & Rowan (1977); DiMaggio & Powell (1983)",
+  "Legitimacy", "How do organizations gain, maintain, and repair social acceptance?", "Organization; audience", "Suchman (1995); Deephouse (1999)",
+  "Stakeholder theory", "Whose interests should and do organizations serve?", "Organization; stakeholder relationships", "Freeman (1984); Donaldson & Preston (1995)",
+  "Organizational ecology", "Why do populations of organizations change through founding and failure rather than adaptation?", "Population; community", "Hannan & Freeman (1977, 1984)",
+  "Contingency theory", "Which organizational structures fit which environments?", "Organization; subunit", "Burns & Stalker (1961); Lawrence & Lorsch (1967)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of organizations and their environments.")
+```
+
+## Resource Dependence Theory {#resource-dependence-theory}
+
+::: {.theory-card}
+**Core claim.** Organizations are not self-sufficient; they depend on other actors
+for critical resources. Dependence creates power for those who control the
+resources, and organizations act — through co-optation, alliances, mergers,
+political action, and leadership choices — to reduce their own dependence and
+increase others' dependence on them.
+
+**Origins.** Organizational sociology; @pfeffer1978 [reviewed in @Stern_1979],
+building on the power-dependence theory of @emerson1962 and the analysis of
+co-optation by @selznick1949. Reviewed by @hillman2009.
+
+**Level of analysis.** The focal organization and its exchange partners (dyads and
+the organization set).
+
+**Key constructs.** Resource importance; discretion over resources; concentration of
+control (availability of alternatives); dependence; power; power imbalance;
+mutual dependence; constraint absorption; co-optation.
+
+**Boundary conditions.** Resources must be critical and not freely available; the
+focal organization must have some strategic discretion to restructure its
+dependencies.
+
+**Related theories.** [Social exchange theory](#social-exchange-theory),
+[Network exchange theory](#network-exchange-theory),
+[Agency theory](#agency-theory),
+[Transaction cost economics](#transaction-cost-economics),
+[Institutional theory](#institutional-theory).
+:::
+
+### Origins and intellectual history
+
+The basic premise of resource dependence theory (RDT) is that external resources —
+and the actors who control them — shape organizational behaviour. Organizations
+must acquire inputs such as capital, materials, labour, information, customers, and
+legitimacy from an environment populated by other organizations. Because resources
+are power and no organization can survive alone, **power and resource dependence
+are interlocked** [@pfeffer1978].
+
+The theory's micro-foundation comes from @emerson1962, who defined power in
+relational terms: the power of actor A over actor B is equal to the dependence of
+B on A. B's dependence, in turn, increases with B's motivational investment in
+goals that A mediates and decreases with the availability of those goals outside
+the A–B relationship. Two implications follow. First, **power is relational**:
+it is not an attribute of an actor but a property of a relationship, so a firm can
+be powerful in one relationship and weak in another. Second, **power is
+situational**: it changes when the importance of a resource or the availability of
+alternatives changes, so yesterday's dominant buyer can become today's dependent
+partner.
+
+@pfeffer1978 translated this into a theory of organizations. The dependence of a
+focal organization on another actor depends on three factors: the **importance**
+of the resource (how much of it the organization needs and how critical it is to
+operations), the other actor's **discretion** over the resource's allocation and
+use, and the **concentration** of control over the resource (the extent to which
+alternative sources exist). Organizations facing such dependence experience
+**external constraint**, and managers' central task is to manage it.
+
+### Core logic and propositions
+
+RDT can be summarised in four propositions:
+
+- **P1 (Dependence and power).** The more an organization depends on another for
+  important, discretionary, and concentrated resources, the more power the other
+  has over it [@emerson1962; @pfeffer1978].
+- **P2 (Compliance).** Organizations are more likely to comply with the demands of
+  actors on whom they depend.
+- **P3 (Restructuring).** Organizations attempt to reduce dependence and
+  uncertainty by restructuring their exchange relationships — absorbing,
+  co-opting, or diversifying away from powerful actors.
+- **P4 (Internal power).** Subunits and executives who manage the organization's
+  most critical external dependencies gain power inside the organization.
+
+@emerson1962 identified four generic **balancing operations** by which a weaker
+actor can rebalance a dependent relationship: reduce its motivational investment
+in what the stronger actor provides (withdrawal); cultivate alternative sources
+(extension of the power network); increase the stronger actor's dependence on it
+(for example, by offering status or unique value); and form coalitions that deny
+the stronger actor its alternatives. @pfeffer1978 and later research mapped these
+onto organizational tactics (Table \@ref(tab:tab-env-tactics)).
+
+```{r tab-env-tactics}
+tibble::tribble(
+  ~Tactic, ~`How it manages dependence`, ~`Business example`, ~`Key evidence`,
+  "Co-optation", "Brings representatives of a constraining actor into the organization's decision structure", "Appointing a banker, regulator, or major customer's executive to the board", "Selznick (1949); Pfeffer (1972)",
+  "Board interlocks", "Provide information, advice, access, and legitimacy; signal commitment", "Directors who sit on boards of suppliers or financial institutions", "Pfeffer (1972); Hillman & Dalziel (2003)",
+  "Alliances and joint ventures", "Partially absorb interdependence while preserving autonomy", "Joint development agreements; long-term supply partnerships", "Hillman et al. (2009)",
+  "Mergers and acquisitions", "Absorb the constraint completely (vertical, horizontal, or diversifying)", "Acquiring a critical supplier; diversifying away from a dominant customer", "Casciaro & Piskorski (2005)",
+  "Political action", "Shapes the rules and resources that government controls", "Lobbying, political contributions, participation in standard-setting", "Hillman et al. (2009)",
+  "Executive succession", "Aligns leadership with the organization's most critical dependencies", "Appointing a CEO with expertise in the firm's binding constraint", "Pfeffer & Salancik (1978)",
+  "Diversifying sources", "Reduces concentration of resource control", "Dual or multiple sourcing; multi-homing across platforms or channels", "Emerson (1962)"
+) |>
+  book_table(caption = "Tactics for managing resource dependence.")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-env-rdt) presents the core causal chain, from the
+characteristics of resources to dependence, power, and organizational response.
+
+```{r fig-env-rdt, fig.cap = "Mechanism of resource dependence theory: resource importance, the controller's discretion, and the concentration of control create dependence, which gives power to resource holders and constrains the focal organization; the organization responds by restructuring its dependencies, with managerial discretion moderating its options."}
+mechanism_diagram(sprintf('
+  I [label = "Resource importance\\n(magnitude, criticality)", %s]
+  D [label = "Controller discretion\\nover allocation", %s]
+  C [label = "Concentration of\\ncontrol (few alternatives)", %s]
+  P [label = "Dependence of focal firm\\n= power of resource holder", %s]
+  X [label = "External constraint\\nand uncertainty", %s]
+  R [label = "Restructuring responses\\n(co-optation, alliances, M&A,\\npolitical action, multi-sourcing)", %s]
+  M [label = "Managerial\\ndiscretion", %s]
+  I -> P
+  D -> P
+  C -> P
+  P -> X -> R
+  R -> P [style = dashed, label = " reduces", constraint = false]
+  M -> R [style = dashed]
+', node_construct, node_construct, node_construct, node_mechanism, node_mechanism,
+   node_outcome, node_moderator))
+```
+
+### Power imbalance versus mutual dependence
+
+A major theoretical refinement came from @casciaro2005. In any dyad, each party
+depends on the other to some degree. Pfeffer and Salancik's concept of
+"interdependence" combined two distinct quantities: **power imbalance**, the
+difference between the two parties' dependence on each other, and **mutual
+dependence**, the total dependence in the relationship. Casciaro and Piskorski
+argued that these have opposite effects on **constraint absorption** — the use of
+mergers and acquisitions to eliminate a dependence. Mutual dependence makes
+absorption more attractive to both parties, because both stand to gain from
+removing the constraint. Power imbalance makes it less likely, because the more
+powerful party has little reason to give up its advantage and can resist. Their
+analysis of acquisitions across U.S. industries supported both predictions.
+
+Figure \@ref(fig:fig-env-power) illustrates the logic. Moving up the diagonal
+(both parties more dependent) raises the likelihood of absorption; moving toward
+the corners (one party much more dependent than the other) lowers it.
+
+```{r fig-env-power, fig.cap = "Illustrative surface showing the distinct effects of mutual dependence and power imbalance on the likelihood of constraint absorption (e.g., merger). Probability rises with mutual dependence (along the diagonal) and falls with power imbalance (toward the off-diagonal corners), following the argument of Casciaro and Piskorski (2005). Values are stylised.", fig.height = 4.8}
+grid <- tidyr::expand_grid(d_ab = seq(0, 1, by = 0.02), d_ba = seq(0, 1, by = 0.02)) |>
+  mutate(mutual = (d_ab + d_ba) / 2,
+         imbalance = abs(d_ab - d_ba),
+         p = plogis(-3 + 6 * mutual - 4 * imbalance))
+ggplot(grid, aes(d_ab, d_ba, fill = p)) +
+  geom_raster() +
+  geom_contour(aes(z = p), breaks = c(0.1, 0.25, 0.5, 0.75), colour = "white", linewidth = 0.3) +
+  annotate("text", x = 0.86, y = 0.93, label = "High mutual\ndependence:\nabsorption likely",
+           size = 3.1, colour = "white", fontface = "bold") +
+  annotate("text", x = 0.86, y = 0.1, label = "Power imbalance:\nB resists", size = 3.1, colour = ink[["primary"]]) +
+  annotate("text", x = 0.14, y = 0.9, label = "Power imbalance:\nA resists", size = 3.1, colour = ink[["primary"]]) +
+  annotate("text", x = 0.14, y = 0.1, label = "Low\ninterdependence", size = 3.1, colour = ink[["primary"]]) +
+  scale_fill_seq(labels = scales::percent, limits = c(0, 1)) +
+  coord_equal(expand = FALSE) +
+  labs(x = "Dependence of firm A on firm B", y = "Dependence of firm B on firm A",
+       fill = "Likelihood of\nconstraint absorption",
+       title = "Mutual dependence and power imbalance pull in opposite directions",
+       caption = "Stylised: logit(p) = -3 + 6 x mutual dependence - 4 x power imbalance.") +
+  theme(legend.position = "right", panel.grid = element_blank())
+```
+
+### Evidence and extensions
+
+RDT is among the most-cited theories of organizations, and its evidence base is
+broad. @pfeffer1972 found that board size and the composition of boards varied with
+firms' need to manage their environments, including their reliance on external
+capital. @hillman2009 reviewed research in five areas — mergers and vertical
+integration, joint ventures and other interorganizational relationships, boards of
+directors, political action, and executive succession — and concluded that the
+theory's predictions are broadly supported, though often tested with loosely
+specified measures of dependence. A meta-analysis by @drees2013 found that
+resource dependence is associated with the formation of interorganizational
+arrangements, and that such arrangements are linked to both organizational
+autonomy and legitimacy. @hillman2003 integrated RDT with agency theory by
+showing that boards both monitor management and provide **board capital** — the
+human and social capital of directors that supplies resources (see
+[Stewardship theory](#stewardship-theory)).
+
+::: {.debate}
+**Is RDT a theory or a metaphor?** RDT's influence rests partly on its intuitive
+appeal: everyone recognises that dependence confers power. Critics note that the
+theory was for many years used more as a general orienting framework than as a
+source of precise, falsifiable predictions, and that "dependence" was often
+measured with crude proxies such as industry-level input–output flows. The
+refinement by @casciaro2005 shows how much sharper predictions become when
+constructs are disaggregated. A second debate concerns RDT's relationship to
+[transaction cost economics](#transaction-cost-economics): both predict that firms
+absorb problematic exchange partners, but TCE emphasises efficiency (economizing on
+hold-up) while RDT emphasises power and autonomy. Distinguishing them empirically
+requires measures that separate dependence from asset specificity.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Supplier dependence and dual sourcing.** Single sourcing reduces purchasing costs
+and deepens supplier relationships, but it concentrates control of a critical
+resource. Two widely reported supply disruptions illustrate the trade-off. In
+February 1997, a fire at an Aisin Seiki plant that was the main source of a
+brake-system valve used across Toyota's vehicles in Japan halted much of Toyota's
+domestic assembly; production resumed within days because a network of group and
+non-group suppliers rapidly improvised replacement production — a case of
+dependence buffered by dense relational ties. In March 2000, a fire at a Philips
+semiconductor plant in New Mexico affected two mobile-phone makers differently:
+Nokia, which moved quickly to secure alternative supply, was much less affected than
+Ericsson, which had relied on the plant as a single source for key components. In
+RDT terms, multiple sourcing reduces the **concentration** of resource control, and
+strong relationships increase the supplier's **dependence** on the buyer (and thus
+its willingness to prioritise the buyer in a crisis). Many firms now combine both:
+a primary partner with deep integration and a qualified second source.
+:::
+
+::: {.business-case}
+**Platform dependence of app developers.** Developers of mobile applications depend
+on two app-store operators for access to most smartphone users, for payment
+processing, and for discoverability — resources that are important, concentrated,
+and subject to the platform's discretion through review guidelines and commission
+rates. @cutolo2021 describe such firms as **platform-dependent entrepreneurs** who
+face pronounced power asymmetries. Platforms can also enter complementors' markets:
+@zhu2018 found that Amazon was more likely to enter product spaces in which
+third-party sellers had demonstrated strong demand. Developers respond with
+balancing operations predicted by Emerson: multi-homing across platforms
+(extending the power network), building direct relationships with customers through
+web sales and subscriptions (reducing the platform's discretion), and forming
+coalitions and pursuing litigation and regulation. Epic Games' 2020 lawsuits
+against Apple and Google, filed after its game *Fortnite* was removed from both
+stores for offering direct payments, and the European Union's Digital Markets Act
+are prominent examples of the coalition and political-action routes.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Mutual dependence between two firms increases the likelihood that they form
+  an equity alliance or merge; power imbalance decreases it.
+- *H2.* Firms that depend more heavily on a single customer are more likely to
+  appoint directors with ties to that customer's industry.
+- *H3.* Complementors that multi-home across platforms experience smaller
+  performance declines after adverse platform policy changes.
+
+**Designs.** Dyadic panel data on interorganizational ties (alliances,
+interlocks, supply relationships); event studies of exogenous changes in
+dependence (supplier disasters, platform policy changes); network analysis of
+organization sets.
+
+**Measures.** Dependence (share of sales or purchases with a partner, input–output
+coefficients, availability of alternatives); power imbalance and mutual dependence
+[@casciaro2005]; tactics (board appointments, alliances, acquisitions, lobbying
+expenditures).
+:::
+
+::: {.pitfall}
+**Measuring dependence without measuring alternatives.** Dependence is not the
+same as transaction volume. A firm that buys most of its inputs from one supplier
+is not dependent if it could switch cheaply. Measure importance, discretion,
+*and* the availability of alternatives, and remember that dependence is two-sided:
+always ask how dependent the partner is on the focal firm.
+:::
+
+## Institutional Theory {#institutional-theory}
+
+::: {.theory-card}
+**Core claim.** Organizations conform to the rules, norms, and taken-for-granted
+beliefs of their institutional environments because conformity brings legitimacy,
+resources, and survival — even when it does not improve technical efficiency. As
+a result, organizations in the same field become structurally similar.
+
+**Origins.** Organizational sociology; @meyer1977; @dimaggio1983; synthesised in
+@scott2014; strategic responses by @oliver1991.
+
+**Level of analysis.** Organizational field (all organizations that constitute a
+recognized area of institutional life) and the organization.
+
+**Key constructs.** Institution; organizational field; isomorphism (coercive,
+mimetic, normative); regulative, normative, and cultural-cognitive pillars;
+decoupling; legitimacy; strategic response.
+
+**Boundary conditions.** Strongest where technical performance is hard to measure,
+goals are ambiguous, and organizations depend on external audiences for resources;
+weaker in highly competitive markets with clear performance criteria.
+
+**Related theories.** [Legitimacy](#legitimacy),
+[Resource dependence](#resource-dependence-theory),
+[Social norms](#social-norms), [Conformity](#conformity),
+[Diffusion of innovations](#diffusion-of-innovations).
+:::
+
+### Origins and core logic
+
+@meyer1977 challenged the prevailing view that formal organizational structures
+exist to coordinate and control technical work. Many structures — positions,
+policies, programmes, and procedures — instead reflect **rationalized institutional
+myths**: widely shared beliefs that certain structures are the proper, rational way
+to organize. Organizations that incorporate these elements gain legitimacy and
+resources, irrespective of whether the elements improve efficiency. Because
+institutional rules may conflict with technical demands, organizations often
+**decouple** formal structure from actual practice, maintaining ceremonial
+conformity while work proceeds on a different basis, and relying on a logic of
+confidence and good faith that discourages close inspection.
+
+@dimaggio1983 asked why organizations are so similar. Their answer was
+**institutional isomorphism**: once an **organizational field** is established —
+suppliers, consumers, regulators, and competitors that constitute a recognized area
+of activity — powerful forces lead its members to become more alike. They
+identified three mechanisms (Table \@ref(tab:tab-env-isomorphism)).
+
+```{r tab-env-isomorphism}
+tibble::tribble(
+  ~Mechanism, ~Source, ~`Driving condition`, ~`Business example`,
+  "Coercive isomorphism", "Formal and informal pressure from organizations on which the focal organization depends, and from cultural expectations", "Resource dependence; legal and regulatory requirements", "Suppliers adopting a buyer's mandated codes of conduct; firms adopting compliance functions required by law",
+  "Mimetic isomorphism", "Imitation of organizations perceived as successful or legitimate", "Uncertainty; ambiguous goals; poorly understood technologies", "Copying a leading rival's organizational structure, AI strategy, or market entry",
+  "Normative isomorphism", "Professionalization: shared education, professional networks, and personnel movement", "Reliance on credentials; strong professional associations", "Similar HR, marketing, and finance practices spread by MBA programmes, consultancies, and professional bodies"
+) |>
+  book_table(caption = "Three mechanisms of institutional isomorphism (DiMaggio & Powell, 1983).")
+```
+
+DiMaggio and Powell also offered testable hypotheses. Among them: the greater an
+organization's dependence on another organization, and the more centralized its
+resource supply, the more similar it will become to that organization; the more
+uncertain the relationship between means and ends, and the more ambiguous an
+organization's goals, the more it will model itself on organizations it perceives
+as successful; and the greater the reliance on academic credentials and the
+participation of managers in professional associations, the more similar
+organizations will become.
+
+### Mechanism
+
+Figure \@ref(fig:fig-env-iso) shows how the three mechanisms produce isomorphism,
+legitimacy, and survival — and how decoupling can separate adopted structures from
+practice.
+
+```{r fig-env-iso, fig.cap = "Mechanism of institutional theory: coercive, mimetic, and normative pressures lead organizations to adopt institutionalized structures, producing isomorphism and legitimacy and, through legitimacy, access to resources and survival; when institutional and technical demands conflict, adoption may be decoupled from practice."}
+mechanism_diagram(sprintf('
+  CO [label = "Coercive pressure\\n(dependence, law)", %s]
+  MI [label = "Mimetic pressure\\n(uncertainty)", %s]
+  NO [label = "Normative pressure\\n(professions)", %s]
+  AD [label = "Adoption of\\ninstitutionalized\\nstructures and practices", %s]
+  IS [label = "Isomorphism\\nwithin the field", %s]
+  LG [label = "Legitimacy", %s]
+  SV [label = "Resources and\\nsurvival", %s]
+  DC [label = "Decoupling\\n(policy vs. practice)", %s]
+  CO -> AD
+  MI -> AD
+  NO -> AD
+  AD -> IS
+  AD -> LG -> SV
+  DC -> AD [style = dashed, arrowhead = none]
+', node_construct, node_construct, node_construct, node_mechanism, node_outcome,
+   node_outcome, node_outcome, node_moderator))
+```
+
+### Scott's three pillars
+
+@scott2014 synthesized institutional theory by distinguishing three **pillars** of
+institutions, each with a different basis of compliance and legitimacy
+(Table \@ref(tab:tab-env-pillars)). The **regulative** pillar emphasises rules,
+monitoring, and sanctions; actors comply out of expedience. The **normative**
+pillar emphasises values and obligations; actors comply because it is appropriate.
+The **cultural-cognitive** pillar emphasises shared conceptions of reality; actors
+comply because alternatives are literally unthinkable. Most real institutions
+combine all three, but the pillars help researchers specify which mechanism they
+are studying.
+
+```{r tab-env-pillars}
+tibble::tribble(
+  ~Dimension, ~Regulative, ~Normative, ~`Cultural-cognitive`,
+  "Basis of compliance", "Expedience", "Social obligation", "Taken-for-grantedness; shared understanding",
+  "Basis of order", "Regulative rules", "Binding expectations", "Constitutive schemas",
+  "Mechanism", "Coercive", "Normative", "Mimetic",
+  "Logic", "Instrumentality", "Appropriateness", "Orthodoxy",
+  "Indicators", "Rules, laws, sanctions", "Certification, accreditation", "Common beliefs; shared logics of action; isomorphism",
+  "Basis of legitimacy", "Legally sanctioned", "Morally governed", "Comprehensible, recognizable, culturally supported",
+  "Business example", "Data-protection law; financial reporting standards", "Professional codes of ethics; industry certification", "The assumption that a firm needs a website, a CFO, and a strategy"
+) |>
+  book_table(caption = "Three pillars of institutions (adapted from Scott, 2014).")
+```
+
+### Evidence and extensions
+
+The classic empirical demonstration is @tolbert1983's study of civil-service reform
+in U.S. cities. Early adoption was predicted by city characteristics that made the
+reform technically useful, whereas later adoption was not: once the reform had
+become legitimated, cities adopted it because it was the accepted way to organize.
+Where state law mandated the reform, adoption was immediate. The same two-stage
+pattern — early adoption for technical reasons, later adoption for legitimacy —
+has been documented for total quality management, where @westphal1997 found that
+early adopters customized practices to gain efficiency while later adopters
+conformed to a normative template that conferred legitimacy but fewer efficiency
+gains. @haveman1993 showed mimetic isomorphism in market entry: savings-and-loan
+associations followed large and profitable peers into new markets.
+
+Research has also moved beyond pure conformity. @oliver1991 integrated
+institutional and resource dependence perspectives by arguing that organizations
+choose among a range of **strategic responses** to institutional pressures, from
+passive acquiescence to active manipulation (Table \@ref(tab:tab-env-oliver)).
+Which response an organization chooses depends on why the pressure is exerted, who
+exerts it, what the pressure is, how it is exerted, and the context in which it
+occurs. @bromley2012 distinguished **policy–practice decoupling** (policies
+adopted but not implemented) from **means–ends decoupling** (policies implemented
+but loosely connected to the outcomes they are meant to achieve), arguing that the
+latter has become more common as audit and evaluation pressures make pure
+ceremonial adoption harder to sustain.
+
+```{r tab-env-oliver}
+tibble::tribble(
+  ~Strategy, ~Tactics, ~`Business example`,
+  "Acquiesce", "Habit (follow taken-for-granted norms); imitate (mimic institutional models); comply (obey rules)", "Adopting a mandated disclosure format without debate",
+  "Compromise", "Balance (reconcile multiple constituents); pacify (placate); bargain (negotiate with stakeholders)", "Negotiating phased compliance timelines with a regulator",
+  "Avoid", "Conceal (disguise nonconformity); buffer (loosen attachment); escape (change goals or domain)", "Relocating an activity to a less regulated jurisdiction",
+  "Defy", "Dismiss (ignore); challenge (contest); attack (assault the source)", "Publicly contesting a proposed industry standard",
+  "Manipulate", "Co-opt (import influential constituents); influence (shape values and criteria); control (dominate)", "Leading an industry consortium that writes the standard"
+) |>
+  book_table(caption = "Strategic responses to institutional processes (Oliver, 1991).")
+```
+
+### Applications in business
+
+::: {.business-case}
+**ISO and ESG certification as isomorphism.** Management-system certifications
+such as ISO 9000 (quality) and ISO 14001 (environmental management) spread across
+tens of thousands of firms worldwide within a few decades. @guler2002 showed that
+the international spread of ISO 9000 reflected coercive pressures from states and
+multinational buyers as well as normative and mimetic pressures transmitted through
+trade networks among countries. @king2005 found that firms used ISO 14001
+certification in part to communicate unobservable environmental practices to
+distant buyers — an institutional mechanism that also performs a
+[signaling](#signaling-theory) function. The same dynamics are visible in
+environmental, social, and governance (ESG) reporting frameworks, sustainability
+ratings, and certifications such as B Corp status. Institutional theory supplies
+two practical warnings. First, adoption driven by legitimacy rather than technical
+need is vulnerable to decoupling, so audiences increasingly demand evidence of
+implementation [@bromley2012]. Second, when nearly everyone in a field is certified,
+certification ceases to differentiate and becomes a cost of entry.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Late adopters of a management practice will implement it with less
+  customization than early adopters.
+- *H2.* Suppliers whose largest customers require a certification will adopt it
+  earlier (coercive isomorphism), and suppliers in uncertain markets will adopt it
+  after observing peers (mimetic isomorphism).
+- *H3.* Policy–practice decoupling will be lower when third-party audits are
+  frequent and their results public.
+
+**Designs.** Event-history models of practice adoption; diffusion models with
+network or spatial contagion; comparative case studies of fields; text analysis of
+organizational documents to measure field-level logics.
+
+**Measures.** Adoption timing; prevalence in the field; ties to adopters;
+professionalization (credentials, association membership); decoupling (gap between
+stated policy and observed practice or outcomes).
+:::
+
+::: {.pitfall}
+**Calling every diffusion process "institutional".** Practices also spread because
+they work, because of competitive imitation, or because of social learning about
+quality. To claim an institutional explanation, show that adoption is driven by
+legitimacy concerns rather than expected efficiency — for example, by showing that
+predictors of adoption shift from technical to social over time [@tolbert1983], or
+that adoption is decoupled from implementation.
+:::
+
+## Legitimacy {#legitimacy}
+
+::: {.theory-card}
+**Core claim.** Organizations need not only resources but social acceptance.
+Legitimacy is the generalized perception that an organization's actions are
+desirable, proper, or appropriate, and organizations act to gain, maintain, and
+repair it.
+
+**Origins.** Institutional and strategic perspectives; @suchman1995;
+@aldrich1994 on new industries; @deephouse1999 on strategic balance.
+
+**Level of analysis.** Organization or industry as evaluated by audiences.
+
+**Key constructs.** Pragmatic, moral, and cognitive legitimacy; legitimacy
+management (gaining, maintaining, repairing); strategic balance; optimal
+distinctiveness.
+
+**Related theories.** [Institutional theory](#institutional-theory),
+[Optimal distinctiveness](#optimal-distinctiveness-theory),
+[Stakeholder theory](#stakeholder-theory), [Signaling theory](#signaling-theory).
+:::
+
+### Core logic
+
+@suchman1995 provided the standard definition: legitimacy is "a generalized
+perception or assumption that the actions of an entity are desirable, proper, or
+appropriate within some socially constructed system of norms, values, beliefs, and
+definitions" [@suchman1995, p. 574]. He also reconciled two traditions. The
+**strategic** approach treats legitimacy as an operational resource that managers
+can extract from the environment through symbolic and substantive action. The
+**institutional** approach treats legitimacy as a set of constitutive beliefs that
+shape organizations from outside. Both views are useful, and managers face the
+tension between them: legitimacy can be managed, but overt efforts to manage it can
+themselves look illegitimate.
+
+Suchman distinguished three types of legitimacy (Table \@ref(tab:tab-env-legitimacy)).
+
+```{r tab-env-legitimacy}
+tibble::tribble(
+  ~Type, ~`Basis of evaluation`, ~Subtypes, ~`Business example`,
+  "Pragmatic", "Self-interested calculation by the organization's most immediate audiences", "Exchange; influence; dispositional", "A supplier is accepted because it reliably delivers value to customers",
+  "Moral", "Normative judgment of whether the activity is the right thing to do", "Consequential; procedural; structural; personal", "A bank is judged by whether its lending practices are fair and transparent",
+  "Cognitive", "Comprehensibility and taken-for-grantedness", "Comprehensibility; taken-for-grantedness", "A ride-hailing service becomes an unremarkable part of urban transport"
+) |>
+  book_table(caption = "Three types of organizational legitimacy (Suchman, 1995).")
+```
+
+Cognitive legitimacy is the most powerful and the hardest to manipulate: once an
+organizational form is taken for granted, alternatives become hard even to imagine.
+It is also what new industries lack. @aldrich1994 argued that founders of new
+industries face both **cognitive** legitimacy deficits (audiences do not
+understand what the venture is) and **sociopolitical** deficits (key stakeholders
+and authorities do not yet accept it), and must build trust, reliability, and
+collective action across firms to overcome them.
+
+### Strategic balance and optimal distinctiveness
+
+@deephouse1999 connected legitimacy to competitive strategy. Competitive theories
+counsel firms to differentiate in order to reduce rivalry; institutional theory
+counsels them to conform in order to be legitimate. His **strategic balance**
+theory holds that firms should be "as different as legitimately possible":
+moderately differentiated firms avoid both the intense competition faced by
+conformers and the legitimacy challenges faced by deviants. His study of commercial
+banks found a curvilinear relationship between strategic similarity and
+performance consistent with this argument.
+
+The idea parallels, at the firm level, Brewer's theory of
+[optimal distinctiveness](#optimal-distinctiveness-theory) at the individual level
+[@Brewer_1991], in which people balance needs for assimilation and
+differentiation. @zhao2017 extended the argument, proposing that the optimal point
+is not fixed but depends on the stage of a market category's development, the
+audiences evaluating the firm, and the multiple dimensions on which firms can
+conform or differ.
+
+::: {.business-case}
+**Legitimacy repair after a scandal.** When an organization's legitimacy is
+threatened, Suchman's framework suggests matching the response to the type of
+legitimacy lost. A product-safety failure damages pragmatic legitimacy (customers
+no longer trust the exchange) and calls for substantive fixes and guarantees. A
+misconduct scandal damages moral legitimacy and calls for structural responses —
+leadership changes, new oversight bodies, independent investigations — that
+demonstrate that the organization's procedures have changed. Purely symbolic
+responses are risky because audiences increasingly test whether policies are
+implemented, the same pressure that reduces policy–practice decoupling.
+:::
+
+::: {.pitfall}
+**Treating legitimacy as reputation or status.** Legitimacy concerns whether an
+organization is acceptable; reputation concerns how well it is expected to
+perform; status concerns its rank in a social hierarchy. A firm can be fully
+legitimate but have a poor reputation (a reliable but mediocre utility), or be
+high-status but of contested legitimacy. Define which construct you mean and
+measure it from the appropriate audience's perspective.
+:::
+
+## Stakeholder Theory {#stakeholder-theory}
+
+::: {.theory-card}
+**Core claim.** Firms create value through relationships with multiple groups —
+customers, employees, suppliers, communities, financiers, and others — that affect
+or are affected by the firm. Managing these relationships well is both an ethical
+obligation and a source of long-run performance.
+
+**Origins.** Strategic management and business ethics; @freeman1984;
+@donaldson1995; @mitchell1997; reviewed in @parmar2010.
+
+**Level of analysis.** The firm and its stakeholder relationships.
+
+**Key constructs.** Stakeholder; descriptive, instrumental, and normative
+stakeholder theory; stakeholder salience (power, legitimacy, urgency);
+shareholder primacy.
+
+**Boundary conditions.** Instrumental claims depend on stakeholders' ability to
+reward or punish firms; normative claims rest on ethical arguments that cannot be
+settled by data alone.
+
+**Related theories.** [Resource dependence](#resource-dependence-theory),
+[Legitimacy](#legitimacy), [Agency theory](#agency-theory),
+[Social exchange theory](#social-exchange-theory).
+:::
+
+### Core logic
+
+@freeman1984 defined a **stakeholder** broadly as any group or individual that can
+affect or is affected by the achievement of an organization's objectives, and
+argued that strategic management should systematically account for all such groups
+rather than treating them as constraints on maximizing shareholder value. The idea
+was simple to state but generated decades of debate about what kind of theory it
+was.
+
+@donaldson1995 clarified the debate by distinguishing three uses of stakeholder
+theory. **Descriptive** stakeholder theory claims that firms and managers in fact
+attend to multiple stakeholders. **Instrumental** stakeholder theory claims that
+firms that manage stakeholder relationships well perform better on conventional
+measures. **Normative** stakeholder theory claims that stakeholders' interests have
+intrinsic value and that managers ought to consider them for their own sake.
+Donaldson and Preston argued that the three are nested and that the normative core
+is fundamental. @jones1995 developed the instrumental strand most fully, arguing
+that firms that contract with stakeholders on the basis of mutual trust and
+cooperation reduce opportunism and monitoring costs and thus gain competitive
+advantage — a direct challenge to the assumptions of agency theory and TCE.
+
+### Stakeholder salience
+
+Not all stakeholders receive equal attention. @mitchell1997 proposed that the
+**salience** of a stakeholder to managers depends on three attributes: **power**
+(the ability to impose its will on the firm), **legitimacy** (the perceived
+appropriateness of its relationship and claims), and **urgency** (the extent to
+which its claims are time-sensitive and critical). Salience increases with the
+number of attributes a stakeholder possesses, yielding the typology in Figure
+\@ref(fig:fig-env-salience) and Table \@ref(tab:tab-env-salience).
+
+```{r fig-env-salience, fig.cap = "Stakeholder salience model, redrawn after Mitchell, Agle, and Wood (1997). Stakeholders possessing one attribute are latent (dormant, discretionary, demanding); two attributes, expectant (dominant, dangerous, dependent); all three, definitive.", fig.height = 5.2, fig.width = 6.2}
+circle <- function(x0, y0, r = 1, n = 200, name) {
+  t <- seq(0, 2 * pi, length.out = n)
+  data.frame(x = x0 + r * cos(t), y = y0 + r * sin(t), attribute = name)
+}
+circles <- bind_rows(circle(-0.6, 0.35, name = "Power"),
+                     circle(0.6, 0.35, name = "Legitimacy"),
+                     circle(0, -0.6, name = "Urgency")) |>
+  mutate(attribute = factor(attribute, levels = c("Power", "Legitimacy", "Urgency")))
+regions <- tibble::tribble(
+  ~x, ~y, ~label,
+  -1.15, 0.6, "Dormant",
+   1.15, 0.6, "Discretionary",
+   0.0, -1.2, "Demanding",
+   0.0, 0.85, "Dominant",
+  -0.62, -0.42, "Dangerous",
+   0.62, -0.42, "Dependent",
+   0.0, 0.03, "Definitive"
+)
+ggplot() +
+  geom_polygon(data = circles, aes(x, y, fill = attribute, colour = attribute), alpha = 0.18, linewidth = 0.9) +
+  geom_text(data = regions, aes(x, y, label = label), size = 3.5, colour = ink[["primary"]]) +
+  annotate("text", x = c(-1.45, 1.45, 0), y = c(1.45, 1.45, -1.75), label = c("POWER", "LEGITIMACY", "URGENCY"),
+           size = 3.6, fontface = "bold", colour = ink[["secondary"]]) +
+  scale_fill_manual(values = unname(pal[c("blue", "orange", "aqua")])) +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")])) +
+  coord_equal() +
+  labs(title = "Who and what really counts", fill = NULL, colour = NULL) +
+  theme_void(base_size = 12) +
+  theme(plot.title = element_text(face = "bold"), legend.position = "none")
+```
+
+```{r tab-env-salience}
+tibble::tribble(
+  ~Class, ~Type, ~Attributes, ~`Illustrative stakeholder`,
+  "Latent (low salience)", "Dormant", "Power", "A large investor that has never engaged with management",
+  "Latent (low salience)", "Discretionary", "Legitimacy", "Beneficiaries of a firm's philanthropy",
+  "Latent (low salience)", "Demanding", "Urgency", "A lone activist with a pressing but unsupported claim",
+  "Expectant (moderate)", "Dominant", "Power + legitimacy", "Major institutional shareholders; key customers",
+  "Expectant (moderate)", "Dangerous", "Power + urgency", "Groups using coercive tactics such as blockades",
+  "Expectant (moderate)", "Dependent", "Legitimacy + urgency", "Residents affected by an industrial accident who rely on others to advocate",
+  "Definitive (high salience)", "Definitive", "Power + legitimacy + urgency", "A dominant shareholder coalition demanding action after a crisis"
+) |>
+  book_table(caption = "Stakeholder typology by salience (Mitchell, Agle, & Wood, 1997).")
+```
+
+The model is dynamic: stakeholders move between classes as they gain or lose
+attributes. A dependent stakeholder becomes definitive when it acquires power —
+for instance, when community groups win the support of a regulator or a large
+investor.
+
+### Evidence and the shareholder-primacy debate
+
+The instrumental claim has been tested extensively through studies of the
+relationship between corporate social performance and financial performance.
+@margolis2003 reviewed this literature and found a generally positive but
+methodologically fragile association, and argued that researchers should ask how
+firms manage the tensions between social and economic objectives rather than only
+whether "doing good" pays. @barnett2006 found that the financial performance of
+socially responsible investment funds was curvilinear in the number of social
+screens they applied, suggesting that the link between social and financial
+performance is not monotonic.
+
+::: {.debate}
+**Shareholder primacy versus stakeholder capitalism.** In an influential 1970
+essay, @friedman1970 argued that a business has one social responsibility: to use
+its resources to increase profits while staying within the rules of the game,
+engaging in open and free competition without deception or fraud. Spending
+shareholders' money on social goals, in his view, amounted to managers imposing
+taxes without accountability. Agency theorists add that a single objective
+makes managers accountable, whereas multiple objectives let them justify almost
+any decision.
+
+On August 19, 2019, the Business Roundtable, an association of chief executives of
+major U.S. companies, released a revised **Statement on the Purpose of a
+Corporation** signed by 181 CEOs [@businessroundtable2019]. It committed signatory
+companies to delivering value to customers, investing in employees, dealing fairly
+and ethically with suppliers, supporting the communities in which they work, and
+generating long-term value for shareholders, and it replaced earlier Business
+Roundtable principles that had described serving shareholders as management's
+paramount duty. Supporters saw the statement as recognition that long-run value
+creation requires attention to all stakeholders. Skeptics questioned whether it
+would change behaviour: @bebchuk2020 examined signatory companies and argued that
+the statement was largely rhetorical, finding little evidence of corresponding
+changes in corporate governance documents or executive incentives, and warning that
+stakeholder rhetoric can insulate managers from accountability. The debate remains
+open, and it turns on both empirical questions (does stakeholder orientation
+improve long-run value?) and normative ones (whose interests *should* the
+corporation serve?) that @donaldson1995 argued cannot be resolved by evidence
+alone.
+:::
+
+::: {.business-case}
+**Stakeholder mapping for a plant closure.** Illustrative scenario: a manufacturer
+plans to consolidate production and close a plant in a small town. A salience
+analysis identifies the union and the regional government as *dominant* or
+*definitive* (power and legitimacy, with urgency rising as the announcement
+approaches), local suppliers and residents as *dependent* (legitimate, urgent
+claims but limited power), and a national advocacy group as potentially *dangerous*
+if it mobilizes coercive tactics. Instrumental stakeholder theory suggests that
+investing in transition support, early communication, and supplier assistance
+lowers the costs of conflict and protects the firm's reputation with employees at
+other sites; normative stakeholder theory asks what the firm owes the community
+regardless of those returns.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Stakeholders possessing more of power, legitimacy, and urgency receive
+  faster and more substantive managerial responses.
+- *H2.* Firms with stronger employee-relations practices experience lower turnover
+  and higher innovation, and this effect is stronger in knowledge-intensive
+  industries (instrumental stakeholder theory).
+- *H3.* Signatories of public stakeholder commitments do not differ from matched
+  non-signatories in subsequent changes in employee or community outcomes.
+
+**Designs.** Matched comparisons and difference-in-differences around stakeholder
+commitments or regulatory changes; surveys of managers' attention; text analysis
+of disclosures and earnings calls.
+
+**Measures.** Stakeholder attributes coded from documents or expert ratings;
+social-performance ratings (with attention to rater disagreement); stakeholder
+outcomes (wages, safety, emissions, supplier terms).
+:::
+
+::: {.pitfall}
+**Conflating the three versions of the theory.** Instrumental evidence (does
+stakeholder management pay?) neither confirms nor refutes normative claims (should
+firms serve stakeholders?), and descriptive evidence (do managers attend to
+stakeholders?) supports neither. State which version you are testing.
+:::
+
+## Organizational Ecology {#organizational-ecology}
+
+::: {.theory-card}
+**Core claim.** Organizational change occurs mainly through the selection of
+organizations — founding and failure — rather than through the adaptation of
+individual organizations, because organizations are subject to strong
+**structural inertia**.
+
+**Origins.** Sociology; @hannan1977; @hannan1984; @hannan1989; density
+dependence developed in @hannan1992.
+
+**Level of analysis.** Populations of organizations sharing a common form, and
+communities of interacting populations.
+
+**Key constructs.** Organizational form; population; niche (generalist vs.
+specialist); structural inertia; liability of newness; density dependence
+(legitimation and competition); resource partitioning.
+
+**Boundary conditions.** Applies to populations whose members share a form and
+draw on common resources; less informative about the strategic choices of
+individual firms.
+
+**Related theories.** [Contingency theory](#contingency-theory),
+[Institutional theory](#institutional-theory),
+[Exploration and exploitation](#exploration-exploitation),
+[Dynamic capabilities](#dynamic-capabilities-framework).
+:::
+
+### Origins and core logic
+
+@hannan1977 asked a question borrowed from biology: why are there so many kinds of
+organizations? Most organization theories explained diversity through adaptation —
+organizations change to fit their environments. Hannan and Freeman argued that
+adaptation is limited and that environmental fit is achieved largely by
+**selection**: organizational forms poorly suited to an environment fail and are
+replaced by new organizations with better-suited forms.
+
+@hannan1984 explained why adaptation is limited. Modern societies favour
+organizations that are **reliable** (able to produce collective products of
+consistent quality) and **accountable** (able to document how resources are used).
+Reliability and accountability require that structures be highly reproducible —
+that is, inert. Selection therefore favours inertia. Key propositions follow:
+
+- **P1 (Inertia).** Structural inertia increases with age and, for some features,
+  with size.
+- **P2 (Core vs. periphery).** Inertia is strongest in **core** features — stated
+  goals, forms of authority, core technology, and marketing strategy — and weaker
+  in peripheral ones.
+- **P3 (Hazard of change).** Attempts to change core features increase the risk of
+  failure in the short run, partly because change resets the organization's
+  "clock" and exposes it again to the **liability of newness** [@stinchcombe1965;
+  @freeman1983].
+
+### Density dependence
+
+The best-known empirical regularity of organizational ecology is **density
+dependence**: the relationship between the number of organizations in a population
+(its density) and the rates at which organizations are founded and fail
+[@hannan1989; @hannan1992]. Two processes operate. **Legitimation** — the
+taken-for-grantedness of the organizational form — rises with density, but at a
+decreasing rate: the first few organizations do much to establish a form, later
+ones little. **Competition** for limited resources also rises with density, but at
+an increasing rate, because each additional organization competes with all the
+others. The combination yields an inverted-U relationship between density and
+founding rates and a U-shaped relationship between density and failure rates
+(Figure \@ref(fig:fig-env-density)).
+
+```{r fig-env-density, fig.cap = "Stylised density-dependence model. Left: legitimation rises with density at a decreasing rate while competition rises at an increasing rate. Right: the resulting founding rate is an inverted U and the failure rate a U in population density. Functional forms follow the log-quadratic specification used in density-dependence research; parameter values are illustrative.", fig.height = 4.2}
+N <- seq(0, 300, by = 2)
+proc <- bind_rows(
+  tibble::tibble(N, value = 1 - exp(-N / 60), series = "Legitimation", panel = "A. Underlying processes"),
+  tibble::tibble(N, value = (N / 300)^2, series = "Competition", panel = "A. Underlying processes"),
+  tibble::tibble(N, value = exp(0.012 * N - 0.00004 * N^2), series = "Founding rate", panel = "B. Vital rates (relative to N = 0)"),
+  tibble::tibble(N, value = exp(-0.008 * N + 0.00003 * N^2), series = "Failure rate", panel = "B. Vital rates (relative to N = 0)")
+) |>
+  mutate(series = factor(series, levels = c("Legitimation", "Competition", "Founding rate", "Failure rate")))
+ends <- tibble::tribble(
+  ~N, ~value, ~series, ~panel,
+  150, 1.04, "Legitimation", "A. Underlying processes",
+  235, 0.36, "Competition", "A. Underlying processes",
+  150, 2.05, "Founding rate", "B. Vital rates (relative to N = 0)",
+  150, 0.70, "Failure rate", "B. Vital rates (relative to N = 0)"
+) |>
+  mutate(series = factor(series, levels = levels(proc$series)))
+ggplot(proc, aes(N, value, colour = series)) +
+  geom_line(linewidth = 1.1) +
+  geom_text(data = ends, aes(label = series), size = 3.3, show.legend = FALSE) +
+  facet_wrap(~panel, scales = "free_y") +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua", "magenta")])) +
+  labs(x = "Population density (number of organizations)", y = NULL, colour = NULL,
+       title = "Legitimation and competition shape the life cycle of populations",
+       caption = "Stylised: founding = exp(0.012N - 0.00004N^2); failure = exp(-0.008N + 0.00003N^2).") +
+  theme(legend.position = "none")
+```
+
+Density dependence has been documented in many populations, including labour
+unions, newspapers, banks, breweries, and automobile manufacturers [@hannan1992].
+A related theory, **resource partitioning**, explains a striking pattern in
+concentrated markets: as a few large generalists come to dominate the centre of a
+market, resources at the periphery are freed up for small specialists
+[@carroll1985]. @carroll2000 used this logic to explain the rise of microbreweries
+and brewpubs in the United States: consolidation among mass-production brewers
+coincided with — and, the theory argues, enabled — a proliferation of specialist
+producers whose identity as craft producers was valued precisely because it
+contrasted with the mass producers.
+
+::: {.debate}
+**Selection or adaptation?** Organizational ecology was a provocation to
+strategy research, which assumes that managers can adapt their firms. Critics argue
+that the theory underestimates managerial agency and that many populations show
+substantial adaptation by incumbents. Ecologists reply that the theory does not
+deny change, only that change is hazardous and that selection does much of the work
+at the population level. The debate has become more productive as researchers
+study *when* adaptation succeeds — for example, how the timing and sequence of
+change affect survival — linking ecology to research on
+[dynamic capabilities](#dynamic-capabilities-framework). A second critique concerns
+measurement: density may proxy for many unmeasured processes, and legitimation is
+rarely measured directly.
+:::
+
+::: {.business-case}
+**Inertia in incumbents facing technological change.** Public accounts of
+incumbents such as Kodak in digital photography and Blockbuster in video rental
+are often told as stories of managerial blindness. Organizational ecology offers a
+structural interpretation: both firms had core features — business models, assets,
+and organizational routines — that were reliable and accountable precisely because
+they were stable, and changing those features was hazardous. The theory implies
+two practical lessons. First, core change should be undertaken while resources are
+abundant, because the hazard of change is highest when the organization is already
+weak. Second, new forms are often better pursued in separate units, where they
+face the liability of newness without disrupting the core.
+:::
+
+## Contingency Theory {#contingency-theory}
+
+::: {.theory-card}
+**Core claim.** There is no one best way to organize. The effectiveness of an
+organizational structure depends on its **fit** with contingencies such as
+environmental uncertainty, technology, size, and strategy.
+
+**Origins.** Organization theory; @burns1961; @woodward1965;
+@lawrence1967; @thompson1967; synthesised by @donaldson2001.
+
+**Level of analysis.** Organization and subunit.
+
+**Key constructs.** Mechanistic vs. organic structure; environmental uncertainty;
+differentiation and integration; technology; fit; structural adaptation.
+
+**Boundary conditions.** Fit is defined relative to a specific contingency;
+performance consequences may appear only over time; managers have some choice in
+structure.
+
+**Related theories.** [Organizational ecology](#organizational-ecology),
+[Resource dependence](#resource-dependence-theory),
+[Ambidexterity](#ambidexterity),
+[Upper echelons theory](#upper-echelons-theory).
+:::
+
+### Origins and core logic
+
+@burns1961 studied firms, many of them Scottish companies attempting to enter the
+electronics industry, and found two contrasting management systems.
+**Mechanistic** organizations have specialized tasks, hierarchical control,
+vertical communication, and an emphasis on loyalty and obedience. **Organic**
+organizations have fluid task definitions, network-like control, lateral
+communication, and an emphasis on commitment to the task. Neither is superior in
+general: mechanistic systems suit stable conditions, while organic systems suit
+changing conditions in which problems cannot be broken down and assigned in
+advance (Table \@ref(tab:tab-env-mech-organic)).
+
+```{r tab-env-mech-organic}
+tibble::tribble(
+  ~Feature, ~Mechanistic, ~Organic,
+  "Task definition", "Specialized, precisely defined, relatively fixed", "Fluid; continually redefined through interaction",
+  "Coordination and control", "Hierarchical; rules and supervision", "Network-like; shared commitment to the task",
+  "Communication", "Vertical; instructions and decisions", "Lateral; information and advice",
+  "Location of knowledge", "Concentrated at the top", "Distributed throughout the organization",
+  "Basis of commitment", "Loyalty and obedience to superiors", "Commitment to the task and the organization's progress",
+  "Fitting environment", "Stable, predictable", "Dynamic, uncertain",
+  "Business example", "High-volume assembly; regulated back-office processing", "R&D labs; product teams in fast-moving software markets"
+) |>
+  book_table(caption = "Mechanistic and organic management systems (after Burns & Stalker, 1961).")
+```
+
+@lawrence1967 extended the argument to subunits. Departments facing different
+sub-environments — research facing scientific uncertainty, production facing
+technical stability, sales facing market change — should develop different
+structures and orientations, a condition they called **differentiation**. Yet
+differentiated units must also work together, which requires **integration**. In
+their comparative study of firms in industries with different degrees of
+uncertainty, high-performing firms in uncertain environments achieved both high
+differentiation and high integration, often through integrating roles and
+cross-functional teams. @woodward1965 showed that effective structure also varied
+with production technology, @thompson1967 linked structure to the type of
+interdependence among units, and @galbraith1973 reformulated the theory in
+information-processing terms: the greater the task uncertainty, the more
+information must be processed, and structures must either reduce the need for
+information processing or increase the capacity for it.
+
+### Fit and performance
+
+The central proposition is that performance depends on the **fit** between
+structure and contingencies. Figure \@ref(fig:fig-env-fit) illustrates the
+classic interaction: under low environmental dynamism, mechanistic structures
+outperform organic ones; under high dynamism, the ranking reverses.
+
+```{r fig-env-fit, fig.cap = "Illustrative contingency-fit interaction using simulated firms: mechanistic structures perform better in stable environments and organic structures in dynamic ones. Points are stylised simulated firms; lines are linear fits.", fig.height = 4}
+set.seed(1961)
+firms <- tibble::tibble(
+  dynamism = runif(200),
+  structure = sample(c("Mechanistic", "Organic"), 200, replace = TRUE)
+) |>
+  mutate(performance = if_else(structure == "Mechanistic", 0.80 - 0.60 * dynamism, 0.45 + 0.30 * dynamism) +
+           rnorm(200, 0, 0.08))
+ggplot(firms, aes(dynamism, performance, colour = structure)) +
+  geom_point(alpha = 0.45, size = 1.8) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1.2) +
+  annotate("text", x = 0.02, y = 1.12, label = "Stable environment: mechanistic fits", hjust = 0, size = 3.2,
+           colour = ink[["secondary"]]) +
+  annotate("text", x = 0.98, y = 1.12, label = "Dynamic environment: organic fits", hjust = 1, size = 3.2,
+           colour = ink[["secondary"]]) +
+  scale_colour_manual(values = c(Mechanistic = pal[["blue"]], Organic = pal[["orange"]])) +
+  coord_cartesian(ylim = c(0, 1.15)) +
+  labs(x = "Environmental dynamism", y = "Performance (index)", colour = NULL,
+       title = "There is no one best way to organize",
+       caption = "Stylised simulation (n = 200 firms); not empirical data.")
+```
+
+@donaldson2001 proposed that organizations move in and out of fit over time: as
+contingencies such as size or diversification change, a once-fitting structure
+becomes a misfit, performance suffers, and the organization eventually adapts its
+structure to regain fit. This **structural adaptation** model gives contingency
+theory a dynamic form.
+
+::: {.debate}
+**Determinism and strategic choice.** Early contingency theory was criticized for
+implying that environments determine structures. @child1972 argued that this
+neglects **strategic choice**: managers select which environments to operate in,
+can influence those environments, and may accept some misfit for other goals such
+as control. Later critiques noted that fit is hard to measure, that multiple
+contingencies may pull in different directions, and that equally effective
+configurations may exist for the same contingency (equifinality). Contemporary
+research on [ambidexterity](#ambidexterity) can be read as a response: firms
+facing both stable and dynamic demands build differentiated units and integrate
+them at the top — Lawrence and Lorsch's insight applied to exploration and
+exploitation.
+:::
+
+::: {.business-case}
+**Structuring a firm with two environments.** Illustrative scenario: a payments
+company runs a highly regulated transaction-processing business and a fast-moving
+consumer app. Contingency theory predicts that the processing unit should be
+relatively mechanistic — standardized procedures, clear accountability, change
+control — while the app unit should be organic, with cross-functional teams and
+rapid iteration. Following @lawrence1967, the critical design problem is
+integration: shared platforms, integrating roles such as product-operations
+liaisons, and senior forums that resolve conflicts between the units' different
+time horizons and risk tolerances.
+:::
+
+::: {.pitfall}
+**Testing fit with main effects.** Contingency theory predicts interactions, not
+main effects: the effect of structure on performance depends on the contingency.
+Specify the form of fit (moderation, matching, or configuration), test it with an
+appropriate model, and measure contingencies independently of structure to avoid
+circularity.
+:::
+
+## Chapter Summary {#environment-summary}
+
+::: {.key-takeaways}
+- **Resource dependence theory**: dependence on others for important,
+  discretionary, and concentrated resources confers power on them; power is
+  relational and situational, and organizations restructure dependencies through
+  co-optation, alliances, mergers, and political action [@pfeffer1978;
+  @emerson1962].
+- Power imbalance and mutual dependence have opposite effects on constraint
+  absorption [@casciaro2005].
+- **Institutional theory**: organizations adopt rationalized structures to gain
+  legitimacy, producing coercive, mimetic, and normative isomorphism and, often,
+  decoupling [@meyer1977; @dimaggio1983; @scott2014].
+- Organizations respond to institutional pressures strategically, from
+  acquiescence to manipulation [@oliver1991].
+- **Legitimacy** can be pragmatic, moral, or cognitive [@suchman1995]; firms
+  benefit from being as different as legitimately possible [@deephouse1999].
+- **Stakeholder theory** has descriptive, instrumental, and normative versions
+  [@donaldson1995]; salience depends on power, legitimacy, and urgency
+  [@mitchell1997]; the shareholder–stakeholder debate remains unresolved.
+- **Organizational ecology**: structural inertia makes selection a central driver
+  of change; density dependence reflects legitimation and competition
+  [@hannan1984; @hannan1992].
+- **Contingency theory**: effective structures fit their environments —
+  mechanistic for stable, organic for dynamic conditions [@burns1961;
+  @lawrence1967].
+:::
+
+```{r tab-env-summary}
+tibble::tribble(
+  ~Theory, ~`View of the environment`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Resource dependence", "Other organizations controlling critical resources", "Power from dependence; restructuring of exchange", "Firms co-opt or absorb actors on whom they depend", "Supplier strategy, board design, alliances, platform strategy",
+  "Institutional theory", "Rules, norms, and shared beliefs in a field", "Coercive, mimetic, and normative isomorphism", "Organizations in a field converge; adoption may be decoupled", "Certification, compliance, practice adoption, ESG reporting",
+  "Legitimacy", "Audiences evaluating social acceptability", "Pragmatic, moral, and cognitive evaluation", "Moderate differentiation outperforms extremes", "Positioning, crisis management, new-category creation",
+  "Stakeholder theory", "Groups that affect or are affected by the firm", "Salience; trust-based contracting", "Salient stakeholders receive attention; trust lowers costs", "Corporate purpose, stakeholder mapping, CSR strategy",
+  "Organizational ecology", "Resource niches supporting populations", "Selection under structural inertia", "Founding and failure depend on density; core change is hazardous", "Industry evolution, entry timing, incumbent renewal",
+  "Contingency theory", "Uncertainty, technology, and size as contingencies", "Fit between structure and contingency", "Organic structures outperform in dynamic settings", "Organizational design, unit structure, integration roles"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#environment-questions}
+
+1. Resource dependence theory and transaction cost economics both predict that firms
+   absorb problematic exchange partners. Design a study that could distinguish a
+   power-based from an efficiency-based explanation of a vertical acquisition.
+2. Choose a practice that has diffused widely in your industry (for example, agile
+   methods, ESG reports, or AI governance policies). Which of the three isomorphic
+   mechanisms best explains its spread? What evidence would show decoupling?
+3. Apply Suchman's three types of legitimacy to a new industry such as autonomous
+   vehicles or cultivated meat. Which type is the binding constraint today, and
+   what collective strategies could build it?
+4. Map the stakeholders of a firm facing a controversial decision using the
+   salience model. How would the map change if one dependent stakeholder gained
+   power?
+5. Does the 2019 Business Roundtable statement represent a change in corporate
+   behaviour or in corporate rhetoric? What data would you collect to find out?
+6. A large incumbent is considering a radical change to its core business model.
+   What do organizational ecology and contingency theory each advise, and where do
+   they conflict?
+
+## Further Reading {#environment-reading}
+
+- @pfeffer1978 — the founding statement of resource dependence theory; still the
+  best source for its full argument.
+- @casciaro2005 — a model of how disaggregating a core construct sharpens a theory's
+  predictions.
+- @hillman2009 — a concise review of three decades of resource dependence research.
+- @dimaggio1983 — the classic statement of institutional isomorphism and its
+  testable hypotheses.
+- @suchman1995 — the standard framework for analyzing and managing legitimacy.
+- @mitchell1997 — the stakeholder salience model and typology.
+- @hannan1984 — the theory of structural inertia and why change is hazardous.
+- @lawrence1967 — the foundational study of differentiation, integration, and fit.

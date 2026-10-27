@@ -1,21 +1,174 @@
---- 
+---
 title: "Social Science Theory"
+subtitle: "A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business"
 author: "Mike Nguyen"
-date: "`r Sys.Date()`"
+date: "Last updated: `r format(Sys.Date(), '%B %d, %Y')`"
+url: https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib, references.bib]
+bibliography: [references.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This book is about relevant social theories that are regularly used in social sciences"
+colorlinks: yes
+lot: yes
+lof: yes
+description: |
+  An open, rigorous, and practical field guide to 100+ social science theories,
+  effects, and frameworks — from signaling, agency, and the resource-based view
+  to prospect theory, social identity, and diffusion of innovations — each with
+  its core logic, mechanism diagrams, evidence, critiques, business applications,
+  and ready-to-use research hypotheses.
 github-repo: "mikenguyen13/social-theory"
+cover-image: "images/social-card.png"
+favicon: "favicon.ico"
+apple-touch-icon: "images/apple-touch-icon.png"
+apple-touch-icon-size: 180
 ---
 
-# Prerequisites
+# Welcome {-}
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+```{r include = FALSE}
+# Bibliography of R packages used to build the book
+knitr::write_bib(c("bookdown", "knitr", "rmarkdown", "ggplot2", "DiagrammeR",
+                   "kableExtra", "visNetwork", "DT"), "packages.bib")
 ```
+
+::: {.cover-hero}
+```{r cover, echo = FALSE, out.width = "100%"}
+knitr::include_graphics("images/cover.png")
+```
+:::
+
+**Social Science Theory** is an open-access field guide to the ideas that social
+scientists and evidence-minded managers use to explain behaviour — of people,
+teams, firms, markets, and societies. It covers more than one hundred theories,
+effects, and frameworks drawn from management, marketing, economics, psychology,
+sociology, communication, and information systems.
+
+Every chapter is written to be useful twice: once for **research** (what the
+theory claims, why, under which conditions, how it has been tested, and how to
+derive hypotheses from it) and once for **practice** (where the theory shows up in
+real business decisions, and what it implies for strategy, marketing, finance,
+operations, and people management).
+
+```{r tab-preface-contents}
+atlas <- readr::read_csv("data/theory-atlas.csv", show_col_types = FALSE)
+atlas |>
+  dplyr::count(part, name = "Entries") |>
+  dplyr::mutate(part = factor(part, levels = c("Foundations", "Organizations & Strategy",
+                                               "Individuals & Groups",
+                                               "Effects, Phenomena & Frameworks"))) |>
+  dplyr::arrange(part) |>
+  dplyr::mutate(Chapters = c("1–3", "4–10", "11–17", "18–20"),
+                `What you will find` = c(
+                  "What theory is, how to evaluate it, and how to turn it into hypotheses",
+                  "Resources, capabilities, governance, institutions, information, networks, diffusion",
+                  "Culture, motivation, self-regulation, social influence, decisions, emotion, persuasion",
+                  "Named effects, social phenomena, classic models, and a cross-theory mechanism toolkit")) |>
+  dplyr::select(Part = part, Chapters, Entries, `What you will find`) |>
+  book_table(caption = "What is inside the book.")
+```
+
+## Who this book is for {-}
+
+- **Doctoral students and early-career researchers** who need a systematic map of
+  the theories their field "just knows", and a fast way to find the right lens for
+  a research question.
+- **Faculty** looking for a free, citable companion text for seminars in
+  management, marketing, organizational behaviour, and consumer behaviour.
+- **Practitioners** — strategists, marketers, product managers, analysts, HR
+  leaders, and consultants — who want to understand *why* interventions work,
+  not just *that* they work.
+
+## How each chapter is built {-}
+
+Theories are presented in a consistent format so they can be compared at a
+glance:
+
+::: {.theory-card}
+**Core claim** — the theory in one or two sentences. **Origins** — who proposed
+it, when, and in which discipline. **Level of analysis** — individual, dyad,
+group, firm, market, or institution. **Key constructs** and **boundary
+conditions**. **Related theories** — links to neighbouring entries.
+:::
+
+Each card is followed by the theory's **core logic and propositions**, a
+**mechanism diagram**, a review of **evidence and extensions**, a balanced
+discussion of **critiques** (including replication status where relevant),
+one or more **business cases**, and a **research toolkit** with sample hypotheses,
+measures, designs, and data sources. Chapters close with key takeaways, a
+comparison table, discussion questions, and annotated further reading.
+
+Look for these boxes throughout:
+
+::: {.business-case}
+Applications drawn from strategy, marketing, finance, operations, HR, and policy.
+:::
+
+::: {.research-toolkit}
+Sample hypotheses, operationalizations, research designs, and data sources.
+:::
+
+::: {.debate}
+Critiques, contested findings, and replication evidence.
+:::
+
+::: {.pitfall}
+The most common ways a theory is misunderstood or misapplied.
+:::
+
+## How to read this book {-}
+
+You do not need to read it in order. If you have a specific theory in mind, use
+the search bar or jump straight to the [Theory Atlas](#theory-atlas), a
+searchable table of every entry with its level of analysis, mechanism, key
+source, and business use. If you want the big picture, start with the
+[Introduction](#intro) and the interactive [theory map](#theory-map). If you are
+writing a paper, Chapters \@ref(what-is-theory) and \@ref(using-theory) show how
+to move from a theory to testable hypotheses.
+
+## How to cite {-}
+
+If this book is useful in your work, please cite it:
+
+> Nguyen, M. (`r format(Sys.Date(), "%Y")`). *Social Science Theory: A Field Guide to the
+> Theories, Effects, and Frameworks Behind Research and Business*.
+> https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/
+
+```
+@book{nguyen_social_theory,
+  author = {Nguyen, Mike},
+  title  = {Social Science Theory: A Field Guide to the Theories, Effects,
+            and Frameworks Behind Research and Business},
+  year   = {`r format(Sys.Date(), "%Y")`},
+  url    = {https://01a17b63-f04b-c542-bc6c-ece12120ea40.share.connect.posit.cloud/}
+}
+```
+
+## Contributing {-}
+
+This is a living book. Corrections, new theories, better examples, and
+translations are welcome. Every page has an **Edit this page** link that opens
+the source on GitHub; you can also open an
+[issue](https://github.com/mikenguyen13/social-theory/issues) to suggest a theory.
+Contributors should follow the
+[style guide](https://github.com/mikenguyen13/social-theory/blob/master/STYLE_GUIDE.md).
+If the book helps you, starring the
+[GitHub repository](https://github.com/mikenguyen13/social-theory) helps others
+find it.
+
+## About the author {-}
+
+Mike Nguyen is the author of the open-source *A Guide on Data Analysis*, a
+companion text on statistical methods and causal inference for social science
+research. This book began as his own systematic notes on the theories that
+researchers in business and the social sciences are expected to know, and has
+grown into a reference for students, scholars, and practitioners.
+
+## Acknowledgments {-}
+
+The book is written in [R Markdown](https://rmarkdown.rstudio.com) and built with
+**bookdown** [@R-bookdown], **knitr** [@R-knitr], and **rmarkdown** [@R-rmarkdown].
+Figures use **ggplot2** [@R-ggplot2] and **DiagrammeR** [@R-DiagrammeR]; tables use
+**kableExtra** [@R-kableExtra]; interactive maps and tables use **visNetwork**
+[@R-visNetwork] and **DT** [@R-DT].

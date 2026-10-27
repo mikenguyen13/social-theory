@@ -1,0 +1,613 @@
+# Information, Signals, and Markets {#information}
+
+Why does a used-car dealer offer a 12-month warranty it hopes never to honour? Why
+do start-ups pay premium fees to be underwritten by prestigious investment banks,
+and why do some of the wealthiest consumers buy handbags with *no* visible logo?
+Each puzzle has the same structure. One party knows something valuable — the
+quality of a car, the prospects of a firm, the wealth of a buyer — and another
+party cannot observe it directly. The informed party therefore *does* something
+observable that the uninformed party can use to infer what is hidden.
+
+This chapter introduces the family of theories that explain how markets,
+organizations, and people cope with **information asymmetry**. We begin with the
+problem itself (Akerlof's "lemons"), then develop **signaling theory**, its mirror
+image **screening theory**, the biology-inspired idea of **costly signaling**, and
+two consumer-behaviour extensions — **identity signaling** and **countersignaling**.
+Together they form one of the most widely used theoretical toolkits in
+management, marketing, finance, and economics.
+
+```{r tab-sig-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Information asymmetry", "What happens when one side of a transaction knows more?", "Market / dyad", "Akerlof (1970)",
+  "Signaling theory", "How can the informed party credibly reveal hidden quality?", "Dyad / market", "Spence (1973)",
+  "Screening theory", "How can the uninformed party induce disclosure?", "Dyad / market", "Rothschild & Stiglitz (1976)",
+  "Costly signaling", "Why must honest signals be expensive to fake?", "Individual / population", "Zahavi (1975)",
+  "Identity signaling", "Why do consumers converge or diverge in their choices?", "Individual / group", "Berger & Heath (2007)",
+  "Countersignaling", "Why do the highest types sometimes refuse to signal?", "Individual / market", "Feltovich et al. (2002)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of information and signals.")
+```
+
+## Information Asymmetry {#information-asymmetry}
+
+::: {.theory-card}
+**Core claim.** When sellers know more about quality than buyers, buyers pay only
+for *average* quality; high-quality sellers withdraw, average quality falls, and
+the market can unravel.
+
+**Origins.** Economics; @akerlof1970, building on earlier work on uncertainty and
+insurance. Akerlof, Spence, and Stiglitz shared the 2001 Nobel Memorial Prize in
+Economic Sciences for analyses of markets with asymmetric information.
+
+**Level of analysis.** Market and dyad (buyer–seller, investor–firm,
+employer–applicant).
+
+**Key constructs.** Hidden information (adverse selection); hidden action (moral
+hazard); quality uncertainty; pooling.
+
+**Boundary conditions.** Quality is unobservable *before* purchase, is costly to
+verify, and matters to the buyer; no cheap third-party verification exists.
+
+**Related theories.** [Signaling](#signaling-theory), [Screening](#screening-theory),
+[Agency theory](#agency-theory), [Transaction cost economics](#transaction-cost-economics).
+:::
+
+### Core logic
+
+@akerlof1970 used the market for used cars to show how hidden quality can destroy
+a market. Suppose half of the cars are good ("peaches") and half are bad
+("lemons"). Buyers cannot tell them apart, so they are willing to pay only the
+expected value of a random car. Owners of good cars find that price too low and
+keep their cars; the share of lemons in the market rises; buyers anticipate this
+and lower their offers further. In the limit, only lemons trade. The general
+lesson is that **adverse selection** — the tendency of hidden-information markets
+to attract the "wrong" types — can make mutually beneficial trades disappear.
+
+Economists distinguish two forms of asymmetry
+[@stiglitz2000; @connelly2010]:
+
+```{r tab-sig-types}
+tibble::tribble(
+  ~Dimension, ~`Hidden information`, ~`Hidden action`,
+  "Also called", "Adverse selection", "Moral hazard",
+  "What is hidden", "A characteristic (quality, ability, risk type)", "Behaviour after contracting (effort, care)",
+  "Timing", "Before the transaction", "After the transaction",
+  "Classic example", "Used-car quality; applicant ability", "Insured driver's care; manager's effort",
+  "Typical remedy", "Signals, screens, certification, warranties", "Monitoring, incentives, bonding",
+  "Home theory", "Signaling / screening theory", "Agency theory"
+) |>
+  book_table(caption = "Two forms of information asymmetry.")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-sig-lemons) simulates the unravelling process. Quality is
+uniformly distributed, buyers value a car at 1.2 times its quality, and sellers
+only sell if the price is at least their car's quality. Each round, buyers offer
+the expected value of the cars that remain on the market. The market shrinks
+round after round.
+
+```{r fig-sig-lemons, fig.cap = "Illustrative simulation of Akerlof's lemons problem: when buyers can only pay for average quality, the best sellers exit and the market shrinks.", fig.height = 3.8}
+set.seed(2001)
+q <- runif(5000, 0, 100)                     # seller quality (private information)
+price <- 1.2 * mean(q)                       # round 1: buyers pay for average quality
+rounds <- vector("list", 8)
+for (r in 1:8) {
+  on_market <- q[q <= price]                 # sellers with quality above price withdraw
+  rounds[[r]] <- data.frame(round = r, share = length(on_market) / length(q),
+                            avg_quality = mean(on_market), price = price)
+  price <- 1.2 * mean(on_market)             # buyers update to the new average
+}
+lemons <- bind_rows(rounds)
+ggplot(lemons, aes(round, share)) +
+  geom_col(fill = pal[["blue"]], width = 0.65) +
+  geom_text(aes(label = scales::percent(share, 1)), vjust = -0.4, size = 3.4, colour = ink[["secondary"]]) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1.08), expand = c(0, 0)) +
+  scale_x_continuous(breaks = 1:8) +
+  labs(x = "Round of price adjustment", y = "Share of cars still offered",
+       title = "Adverse selection unravels the market",
+       subtitle = "Buyers value cars at 1.2x quality but can observe only the market average",
+       caption = "Stylised simulation (n = 5,000 sellers, quality ~ Uniform[0, 100]).")
+```
+
+### Applications in business
+
+::: {.business-case}
+**Certified pre-owned programs.** The used-car market is the textbook lemons
+market, and the industry's best-known response is the manufacturer-backed
+*certified pre-owned* (CPO) program: a multi-point inspection plus an extended
+warranty. Both elements attack the asymmetry directly — inspection converts hidden
+information into verifiable information, and the warranty makes a low-quality car
+expensive for the *seller* to certify. Similar logic underlies home-inspection
+contingencies in real estate, escrow services in online marketplaces, and
+"satisfaction guaranteed" return policies in retailing.
+:::
+
+::: {.business-case}
+**Mandatory disclosure.** Information can also be disclosed by regulation. When Los
+Angeles County required restaurants to post hygiene grade cards in their windows,
+health inspection scores rose and foodborne-illness hospitalizations fell
+[@jin2003]. A hidden attribute (kitchen hygiene) became a visible one, and
+consumers and restaurants both responded. See @dranove2010 for a review of
+disclosure and certification.
+:::
+
+## Signaling Theory {#signaling-theory}
+
+::: {.theory-card}
+**Core claim.** An informed party (the *signaler*) can credibly convey unobservable
+quality by taking a costly, observable action that low-quality types would find
+too expensive to imitate.
+
+**Origins.** Labour economics; @spence1973 on education as a job-market signal;
+reviewed in @spence2002 and, for management, @connelly2010.
+
+**Level of analysis.** Dyad and market: job applicant–employer, firm–investor,
+brand–consumer, start-up–venture capitalist.
+
+**Key constructs.** Signaler; receiver; signal; signal cost; signal fit;
+signal observability; signal consistency; separating vs. pooling equilibrium;
+feedback (countersignals).
+
+**Boundary conditions.** Quality is unobservable *ex ante*; the cost of the signal
+is *negatively correlated with quality*; receivers can observe the signal and
+know (or learn) how to interpret it.
+
+**Related theories.** [Information asymmetry](#information-asymmetry),
+[Screening](#screening-theory), [Costly signaling](#costly-signaling),
+[Agency theory](#agency-theory), [Institutional theory](#institutional-theory).
+:::
+
+### Origins and intellectual history
+
+@spence1973 asked why employers pay more to workers with more education even if
+education teaches nothing productive. His answer: education is a **signal**.
+If acquiring a degree is less costly — in effort, time, or psychic cost — for
+high-ability people, then only high-ability people will find it worthwhile to
+acquire it, and employers can rationally use the degree to sort applicants. The
+signal need not *create* the quality it reveals; it only needs to be harder to
+obtain for those who lack it.
+
+The idea spread quickly. In finance, debt levels and dividends were modelled as
+signals of managers' private information [@ross1977; @bhattacharya1979;
+@myers1984]. In marketing, advertising spending, price, warranties, and brand
+names were analysed as signals of unobservable product quality [@nelson1974;
+@milgrom1986; @kirmani1989; @boulding1993; @erdem1998; @kirmani2000]. In
+management, signaling theory became a standard lens for IPOs, board composition,
+corporate social responsibility, and the hiring process [@certo2003;
+@connelly2010; @bergh2014].
+
+### Core logic and propositions
+
+@connelly2010 organize signaling theory around a timeline with four elements.
+Figure \@ref(fig:fig-sig-timeline) redraws that logic.
+
+```{r fig-sig-timeline, fig.cap = "The signaling timeline: a signaler with private information sends a signal; the receiver observes and interprets it, chooses an action, and may send feedback. Adapted from the framework in Connelly et al. (2011)."}
+mechanism_diagram(sprintf('
+  S  [label = "Signaler\\n(insider with private\\ninformation about quality)", %s]
+  G  [label = "Signal\\n(costly, observable\\naction)", %s]
+  R  [label = "Receiver\\n(outsider who lacks\\ninformation)", %s]
+  A  [label = "Receiver action\\n(hire, invest, buy)", %s]
+  E  [label = "Signaling\\nenvironment\\n(noise, distortion)", %s]
+  S -> G [label = " sends"]
+  G -> R [label = " observes &\\n interprets"]
+  R -> A [label = " chooses"]
+  A -> S [label = " feedback", style = dashed, constraint = false]
+  E -> G [style = dotted, arrowhead = none]
+', node_construct, node_mechanism, node_construct, node_outcome, node_moderator))
+```
+
+Formally, a signal is informative when it supports a **separating equilibrium** —
+different types choose different signals, so the receiver can infer type from the
+signal. When all types send the same signal, the equilibrium is **pooling** and
+the signal carries no information. The theory's central propositions can be
+stated as follows:
+
+- **P1 (Differential cost).** A signal separates types only if its cost is lower
+  for high-quality than for low-quality signalers (the *single-crossing*
+  condition).
+- **P2 (Observability).** The more observable a signal is to receivers, the
+  stronger its effect on receiver beliefs [@connelly2010].
+- **P3 (Fit).** Signals are more effective when they are logically connected to the
+  unobservable quality being signalled (e.g., a warranty fits durability; a
+  celebrity endorsement fits less well).
+- **P4 (Consistency).** Consistent signals across time and channels are more
+  credible than one-off or conflicting signals.
+- **P5 (Receiver attention and interpretation).** Signal effects depend on whether
+  receivers attend to the signal and on how they calibrate it; signals are
+  socially interpreted, not mechanically decoded.
+
+Figure \@ref(fig:fig-sig-separating) shows the single-crossing logic for Spence's
+education model. Because the high-ability type's cost line is flatter, there is a
+range of education levels (shaded) that high types are willing to acquire but low
+types are not. Any education requirement in that range separates the two types.
+
+```{r fig-sig-separating, fig.cap = "Stylised Spence model. Education costs more for low-ability workers. A credential level in the shaded range is worth acquiring for high-ability workers (wage premium exceeds cost) but not for low-ability workers, producing a separating equilibrium.", fig.height = 4}
+premium <- 40                                  # wage premium paid to signalers
+edu <- seq(0, 10, by = 0.05)
+cost <- bind_rows(
+  data.frame(edu, cost = 8 * edu, type = "Low-ability worker"),
+  data.frame(edu, cost = 4 * edu, type = "High-ability worker")
+)
+lo <- premium / 8; hi <- premium / 4            # separating range: [5, 10]
+ggplot(cost, aes(edu, cost, colour = type)) +
+  annotate("rect", xmin = lo, xmax = hi, ymin = -Inf, ymax = Inf, fill = pal[["aqua"]], alpha = 0.12) +
+  geom_hline(yintercept = premium, linetype = "dashed", colour = ink[["secondary"]]) +
+  geom_line(linewidth = 1.1) +
+  annotate("text", x = 0.2, y = premium + 3, label = "Wage premium for credential", hjust = 0,
+           size = 3.4, colour = ink[["secondary"]]) +
+  annotate("text", x = (lo + hi) / 2, y = 75, label = "Separating\nrange", size = 3.6,
+           colour = ink[["primary"]], fontface = "bold") +
+  scale_colour_manual(values = c("High-ability worker" = pal[["blue"]], "Low-ability worker" = pal[["orange"]])) +
+  coord_cartesian(ylim = c(0, 85)) +
+  labs(x = "Years of education required for the credential", y = "Cost of acquiring the credential",
+       colour = NULL, title = "Why education can signal ability",
+       caption = "Stylised: cost = 4 x education (high ability), 8 x education (low ability); premium = 40.")
+```
+
+### Characteristics of effective signals
+
+Table \@ref(tab:tab-sig-constructs) summarises the constructs that empirical
+studies most often operationalize.
+
+```{r tab-sig-constructs}
+tibble::tribble(
+  ~Element, ~Construct, ~Definition, ~`Example operationalization`,
+  "Signaler", "Signaler quality", "The unobservable ability of the signaler to meet receivers' needs", "Post-IPO survival; product failure rate",
+  "Signaler", "Honesty / credibility", "Whether the signaler actually has the signalled quality", "Restatements; litigation; returns",
+  "Signal", "Signal cost", "Expense of producing the signal, ideally higher for low types", "Advertising spend; warranty length",
+  "Signal", "Observability", "Extent to which receivers can notice the signal", "Media coverage; logo size",
+  "Signal", "Fit", "Correspondence between signal and the underlying quality", "Warranty to durability; patents to innovativeness",
+  "Signal", "Consistency", "Agreement among signals over time and sources", "Variance in ratings; repeated certification",
+  "Receiver", "Attention", "Receiver vigilance in scanning for signals", "Analyst coverage; search behaviour",
+  "Receiver", "Interpretation", "How receivers translate signals into beliefs", "Price paid; valuation; choice",
+  "Environment", "Noise / distortion", "Factors that reduce signal clarity", "Number of competing signals; market volatility"
+) |>
+  book_table(caption = "Key constructs in signaling research (organized following Connelly et al., 2011).")
+```
+
+### Evidence and extensions
+
+The empirical record is large and spans disciplines:
+
+- **Product quality.** Consumers infer quality from warranties [@boulding1993],
+  perceived advertising expense [@kirmani1989], and price–advertising combinations
+  [@milgrom1986]. @kirmani2000 synthesise this literature and argue that
+  "no pain, no gain": signals work when a low-quality firm would lose money by
+  sending them.
+- **Brands.** @erdem1998 conceptualise **brand equity itself as a signal**: a
+  brand is a credible promise because the firm has invested in it and stands to
+  lose that investment if it cheats.
+- **Capital markets.** Prestigious boards and underwriters are associated with
+  better IPO outcomes [@certo2003]. In corporate finance, issuing equity can
+  signal that managers believe shares are *over*valued, which helps explain
+  negative stock-price reactions to equity issues [@myers1984].
+- **Management research.** @bergh2014 note that many studies assume rather than
+  test the differential-cost condition, and call for research on equilibrium:
+  whether signals actually separate types in the population studied.
+
+::: {.debate}
+**Is it really a signal?** Many papers label any observable firm attribute a
+"signal". Critics argue that a variable is a signal in the theoretical sense only
+if (a) it is chosen by the signaler, (b) its cost differs by type, and (c) it
+changes receiver beliefs. Without evidence on (b), a "signal" may simply be a
+correlate of quality, and the theory is doing little explanatory work
+[@bergh2014]. A second debate concerns the *human capital* alternative: education
+may raise productivity and also signal it; separating these explanations requires
+careful designs (e.g., sheepskin effects, natural experiments).
+:::
+
+### Applications in business
+
+Signals appear in every business function. Table \@ref(tab:tab-sig-business)
+maps common signals to the hidden attributes they communicate.
+
+```{r tab-sig-business}
+tibble::tribble(
+  ~Function, ~Signaler, ~`Hidden attribute`, ~Signal, ~`Why it is costly to fake`,
+  "Marketing", "Manufacturer", "Product durability", "Long warranty", "Low-quality products generate expensive claims",
+  "Marketing", "New brand", "Quality and staying power", "Heavy launch advertising", "Spend is recouped only through repeat purchase",
+  "Finance", "IPO firm", "Firm prospects", "Prestigious underwriter / board", "Reputational intermediaries screen and risk their name",
+  "Finance", "Mature firm", "Stable cash flows", "Regular dividends", "Cutting dividends later is penalised",
+  "HR", "Job applicant", "Ability and diligence", "Degree; certifications", "Harder to complete for lower-ability candidates",
+  "HR", "Employer", "Good workplace", "Employer awards; transparent pay", "Audits and employee reviews expose false claims",
+  "Strategy", "Incumbent", "Resolve to fight entry", "Capacity investment", "Sunk costs are lost if the firm retreats",
+  "Platforms", "Seller", "Reliability", "Verified badges; long review history", "Reputation takes time to build and is lost by cheating"
+) |>
+  book_table(caption = "Signals across business functions.")
+```
+
+::: {.business-case}
+**Venture funding and the start-up signaling stack.** An early-stage start-up has
+little revenue history, so investors rely heavily on signals: the founders'
+track records, affiliation with selective accelerators, patents, and the identity
+of earlier investors. Each signal is costly to obtain for a weak venture — an
+accelerator screens out most applicants; a top-tier lead investor stakes its
+reputation. A practical implication for founders is **signal fit**: patents are a
+strong signal of technical novelty but a weak signal of go-to-market ability,
+whereas paying pilot customers signal demand. Investors, in turn, should ask
+whether a signal is *differentially* costly — a polished pitch deck is not.
+:::
+
+::: {.business-case}
+**Illustrative scenario: warranty design.** A mid-market appliance maker has a
+lower failure rate than its rivals but cannot convince retailers. Moving from a
+one-year to a five-year warranty is a credible signal precisely because it would
+bankrupt a firm with a high failure rate. A back-of-the-envelope test: expected
+warranty cost per unit = failure probability × repair cost × years covered. If
+that cost is small for the focal firm but large for imitators, the warranty
+separates; if every competitor can match it cheaply, the warranty will be copied
+and the market will pool.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Firms that offer longer warranties will receive higher consumer quality
+  ratings, and this effect will be stronger for experience goods than for search goods.
+- *H2.* The positive effect of underwriter prestige on IPO valuation will be weaker
+  when analyst coverage of the industry is high (lower information asymmetry).
+- *H3.* Signal consistency (low variance across third-party ratings) will
+  strengthen the effect of average rating on sales.
+
+**Designs.** Field data with plausibly exogenous variation in signal cost (policy
+changes, certification thresholds); regression discontinuity around rating
+cut-offs; lab or online experiments manipulating signal presence and cost;
+structural models that estimate types and equilibria.
+
+**Measures.** Signal cost (spend, warranty length, credential difficulty);
+observability (media mentions, prominence); receiver response (price, choice,
+valuation, hiring); information asymmetry (analyst dispersion, firm age,
+intangibles ratio).
+
+**Contexts.** IPOs and crowdfunding; online marketplaces and reviews; hiring and
+credentials; ESG disclosure; product launches.
+:::
+
+::: {.pitfall}
+**Treating every attribute as a signal.** Theory requires that the signal be
+*chosen* and *differentially costly*. If you cannot argue — and ideally show —
+that low-quality signalers would find the signal more expensive, you are probably
+studying a correlate of quality, not a signal. State the cost structure
+explicitly and test for heterogeneity in signal effects across levels of
+information asymmetry.
+:::
+
+## Screening Theory {#screening-theory}
+
+::: {.theory-card}
+**Core claim.** When the uninformed party moves first, it can design a menu of
+contracts that induces informed parties to *self-select*, revealing their type
+through the option they choose.
+
+**Origins.** Insurance economics; @rothschild1976; @stiglitz2000.
+
+**Level of analysis.** Dyad and market (insurer–insured, lender–borrower,
+employer–applicant, firm–customer).
+
+**Key constructs.** Self-selection; incentive compatibility; menu of contracts;
+information rents.
+
+**Boundary conditions.** The uninformed party can commit to a menu; types differ
+in preferences or costs in a way the menu can exploit.
+
+**Related theories.** [Signaling](#signaling-theory), [Agency theory](#agency-theory).
+:::
+
+Signaling and screening are mirror images. In **signaling**, the informed party
+moves first; in **screening**, the uninformed party moves first by offering
+choices. An insurer that offers both a low-premium/high-deductible plan and a
+high-premium/low-deductible plan lets customers sort themselves: low-risk drivers
+prefer the high deductible because they expect few claims [@rothschild1976].
+
+```{r tab-sig-vs-screen}
+tibble::tribble(
+  ~Feature, ~Signaling, ~Screening,
+  "Who moves first", "Informed party (signaler)", "Uninformed party (screener)",
+  "Instrument", "Costly action or credential", "Menu of contracts or options",
+  "Revelation through", "Choice of signal", "Self-selection among options",
+  "Classic model", "Spence (1973) job market", "Rothschild & Stiglitz (1976) insurance",
+  "Business examples", "Warranties, degrees, certifications", "Deductibles, versioning, probation periods, freemium tiers"
+) |>
+  book_table(caption = "Signaling versus screening.")
+```
+
+::: {.business-case}
+**Versioning and freemium.** Software firms routinely screen customers by offering
+tiers — a free plan with limits, a professional plan, and an enterprise plan with
+security and compliance features. Customers with high willingness to pay
+self-select into higher tiers because the features they need are only available
+there. The design problem is **incentive compatibility**: each tier must be the
+best choice for the segment it targets, or high-value customers will "trade down".
+:::
+
+## Costly Signaling {#costly-signaling}
+
+::: {.theory-card}
+**Core claim.** Signals are honest when they are costly in a way only high-quality
+senders can afford — the **handicap principle**.
+
+**Origins.** Evolutionary biology [@zahavi1975]; anticipated in economics by
+Veblen's analysis of conspicuous consumption [@veblen1899].
+
+**Level of analysis.** Individual (organism or consumer) within a population.
+
+**Key constructs.** Handicap; honest signal; conspicuous consumption; status.
+
+**Related theories.** [Signaling](#signaling-theory), [Snob effect](#snob-effect),
+[Identity signaling](#identity-signaling).
+:::
+
+@zahavi1975 proposed that the peacock's tail is an honest signal of fitness *because*
+it is a handicap: only a healthy bird can survive while carrying it. Veblen had made
+a parallel argument about the "leisure class", whose conspicuous waste of time and
+money demonstrated wealth [@veblen1899]. In consumer research, costly signaling
+explains luxury consumption, charitable giving with public recognition, and
+expensive rituals that demonstrate commitment.
+
+As @Berger_2016 puts it, the more costly something is, the more likely it is to
+retain its value as a clear signal. Costs need not be monetary: they can be
+**time** (mastering an esoteric hobby), **opportunity** (forgoing alternatives), or
+**knowledge** (insider tastes that take years to acquire).
+
+## Identity Signaling {#identity-signaling}
+
+::: {.theory-card}
+**Core claim.** Consumers diverge from others in product domains that signal
+identity; when outgroups adopt a taste, ingroup members abandon it to avoid
+signalling an undesired identity.
+
+**Origins.** Consumer psychology; @Berger_2007; popularised in @Berger_2016.
+
+**Level of analysis.** Individual consumer within social groups.
+
+**Key constructs.** Identity-relevance of the domain; observability; outgroup
+adoption; misidentification cost.
+
+**Related theories.** [Optimal distinctiveness](#optimal-distinctiveness-theory),
+[Social identity theory](#social-identity-theory), [Snob effect](#snob-effect).
+:::
+
+People do not diverge everywhere. @Berger_2007 show that divergence is concentrated
+in domains seen as **identity-relevant** — music, clothing, hairstyles, cars —
+rather than in functional domains such as dish soap. Two features make a domain
+a good identity signal: it is **observable** to others, and it is chosen for its
+**symbolic** rather than functional value. When a dissimilar outgroup adopts a
+taste, ingroup members abandon it because continued use risks
+**misidentification** [@Berger_2007; @Berger_2016].
+
+This produces a cycle that marketers know well: identity signaling causes tastes
+to *catch on* within groups and also to *die out* once they diffuse too broadly.
+Counterfeits accelerate the cycle by diluting a signal's exclusivity, pushing
+early adopters toward the next thing [@Berger_2016].
+
+```{r fig-sig-identity, fig.cap = "Mechanism of identity signaling: outgroup adoption lowers a product's value as an identity signal in observable, identity-relevant domains, prompting ingroup abandonment."}
+mechanism_diagram(sprintf('
+  O [label = "Outgroup adopts\\nthe product", %s]
+  M [label = "Signal value falls;\\nmisidentification risk rises", %s]
+  D [label = "Ingroup abandons\\nthe product (divergence)", %s]
+  X [label = "Identity relevance\\nof the domain", %s]
+  V [label = "Observability\\nof use", %s]
+  O -> M -> D
+  X -> M [style = dashed]
+  V -> M [style = dashed]
+', node_construct, node_mechanism, node_outcome, node_moderator, node_moderator))
+```
+
+::: {.business-case}
+**Managing the fashion cycle.** Brands with strong identity value face a paradox:
+growth dilutes the signal that made them attractive. Common responses include
+limited editions and "drops" that ration supply, sub-brands for different
+segments, and pricing architecture that keeps a flagship line exclusive. Each is a
+way of preserving signal value while expanding reach.
+:::
+
+## Countersignaling {#countersignaling}
+
+::: {.theory-card}
+**Core claim.** High types sometimes *avoid* the signal that medium types use,
+because they are confident that other information already separates them from
+low types.
+
+**Origins.** Economics, @feltovich2002; consumer research on brand prominence,
+@han2010.
+
+**Level of analysis.** Individual and market.
+
+**Key constructs.** Low / medium / high types; extraneous information; brand
+prominence; "quiet" signals.
+:::
+
+@feltovich2002 explain why the most talented students sometimes do not bother to
+show off, why the wealthiest dress down, and why the most secure firms forgo
+flashy marketing. If receivers have other, noisy information that already sets
+high types apart from low types, medium types still need to signal to separate
+themselves from low types — but high types can separate from *medium* types by
+**not** signaling.
+
+@han2010 found a consumer analogue in luxury goods. They classified consumers by
+wealth and need for status. Status-seeking consumers without old wealth
+("parvenus") prefer loud, prominently branded goods; wealthy consumers with a low
+need for status ("patricians") prefer quiet goods whose subtle cues are recognisable
+only to fellow insiders. The result is a non-monotonic relationship between price
+and logo prominence, sketched in Figure \@ref(fig:fig-sig-prominence).
+
+```{r fig-sig-prominence, fig.cap = "Stylised relationship between price tier and brand prominence implied by countersignaling: prominence rises with price for status-seeking buyers but falls at the very top, where quiet signals speak only to insiders.", fig.height = 3.8}
+tiers <- data.frame(
+  tier = factor(c("Mass", "Premium", "Luxury", "Top luxury", "Bespoke"),
+                levels = c("Mass", "Premium", "Luxury", "Top luxury", "Bespoke")),
+  prominence = c(30, 55, 78, 52, 18)
+)
+ggplot(tiers, aes(tier, prominence, group = 1)) +
+  geom_line(colour = pal[["blue"]], linewidth = 1.1) +
+  geom_point(colour = pal[["blue"]], size = 3.2) +
+  annotate("text", x = 3, y = 86, label = "Loud signals\n(medium types separate from low)", size = 3.2,
+           colour = ink[["secondary"]]) +
+  annotate("text", x = 4.8, y = 36, label = "Quiet signals\n(countersignaling)", size = 3.2,
+           colour = ink[["secondary"]], hjust = 1) +
+  scale_y_continuous(limits = c(0, 100)) +
+  labs(x = "Price tier", y = "Logo / brand prominence (index)",
+       title = "Brand prominence is not monotonic in price",
+       caption = "Stylised pattern consistent with Han, Nunes, & Dreze (2010) and Feltovich et al. (2002); not empirical data.")
+```
+
+## Chapter Summary {#information-summary}
+
+::: {.key-takeaways}
+- Information asymmetry can unravel markets through **adverse selection**
+  [@akerlof1970]; remedies include signals, screens, certification, and disclosure.
+- A **signal** is a chosen, observable action whose cost is lower for high-quality
+  types; without differential cost, it cannot separate types [@spence1973].
+- Effective signals are **observable, costly to fake, consistent, and fit** the
+  hidden attribute [@connelly2010].
+- **Screening** inverts the logic: the uninformed party designs a menu so that
+  types self-select [@rothschild1976].
+- **Costly signaling** and **identity signaling** extend the theory to status and
+  social identity; tastes catch on and die out as signals diffuse [@Berger_2007].
+- **Countersignaling** explains why the highest types sometimes refuse to signal
+  [@feltovich2002; @han2010].
+:::
+
+```{r tab-sig-summary}
+tibble::tribble(
+  ~Theory, ~`Who acts`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Information asymmetry", "Market", "Adverse selection", "High-quality sellers exit", "Diagnosing market failure",
+  "Signaling", "Informed party", "Differential cost", "Signals separate types", "Warranties, credentials, IPO design",
+  "Screening", "Uninformed party", "Self-selection", "Menus reveal types", "Pricing tiers, insurance, hiring",
+  "Costly signaling", "Signaler", "Handicap", "Wasteful displays are honest", "Luxury, philanthropy, commitment",
+  "Identity signaling", "Consumer", "Misidentification cost", "Divergence after outgroup adoption", "Brand and fashion cycles",
+  "Countersignaling", "High types", "Other info already separates", "Top types under-signal", "Quiet luxury, understated positioning"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#information-questions}
+
+1. Spence's model implies that education can be valuable even if it teaches
+   nothing. What evidence would distinguish a signaling account from a
+   human-capital account of the college wage premium?
+2. Choose a product category you know well. List three signals sellers use and
+   evaluate each on cost, observability, fit, and consistency.
+3. Online reviews are often described as solving the lemons problem. Under what
+   conditions might reviews themselves become a pooling signal?
+4. Design a screening menu for a B2B software firm with three customer segments.
+   How would you test whether the menu is incentive-compatible?
+5. When would you predict *countersignaling* in a labour market? Formulate a
+   testable hypothesis.
+6. A firm announces an ESG certification. What would you need to show to argue
+   that the certification is a signal rather than a correlate of firm quality?
+
+## Further Reading {#information-reading}
+
+- @akerlof1970 — the foundational statement of adverse selection; short and readable.
+- @spence1973 — the original signaling model; the logic behind every later application.
+- @connelly2010 — the standard review of signaling theory in management, with a
+  useful construct glossary.
+- @kirmani2000 — a marketing-focused review of quality signals and when they work.
+- @bergh2014 — a critical assessment of how management research uses (and misuses)
+  signaling theory.
+- @han2010 — an elegant demonstration of countersignaling in luxury consumption.
+- @Berger_2016 — an accessible book on social influence and identity signaling.

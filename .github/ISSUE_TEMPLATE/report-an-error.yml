@@ -1,0 +1,23 @@
+name: Report an error
+description: Report a factual, citation, typo, or rendering error
+title: "[Error]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where is the error?
+      description: Page URL or chapter and section
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested correction and supporting source
+      description: For factual or citation errors, please include a source.

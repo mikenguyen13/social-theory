@@ -1,0 +1,1021 @@
+# Innovation Diffusion and Technology Adoption {#innovation-adoption}
+
+Why did hybrid seed corn, which offered American farmers markedly higher yields,
+take more than a decade to spread through communities in which its benefits were
+plain to see? Why do some technology products sell briskly to enthusiasts and
+then stall, while others glide into the mainstream? Why does a firm that spends
+heavily on a new enterprise system often find, a year later, that employees still
+keep their real work in spreadsheets? And how can a company forecast the sales of
+a product that has never existed before?
+
+These questions concern the **adoption** of new ideas, products, and
+technologies by individuals and organizations, and the **diffusion** of those
+innovations through a population over time. This chapter brings together two
+traditions that address them at different levels. The *macro* tradition —
+**diffusion of innovations** theory and the **Bass model** — explains the
+aggregate shape of adoption over time: why cumulative adoption follows an S-curve
+and how communication among adopters drives it. The *micro* tradition — the
+**theory of reasoned action**, the **theory of planned behavior**, the
+**technology acceptance model**, and the **unified theory of acceptance and use
+of technology** — explains why a given individual decides to adopt and use a
+technology. Each tradition supplies what the other lacks: diffusion models
+describe the curve but say little about individual decisions, while acceptance
+models explain individual decisions but say little about social dynamics.
+
+```{r tab-inn-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Diffusion of innovations", "How and why do innovations spread through social systems?", "Population / social system", "Rogers (2003)",
+  "Bass diffusion model", "How can the time path of first purchases of a new product be forecast?", "Market", "Bass (1969)",
+  "Theory of reasoned action / planned behavior", "What determines intentions and behaviour?", "Individual", "Fishbein & Ajzen (1975); Ajzen (1991)",
+  "Technology acceptance model (TAM)", "Why do people accept or reject information technology?", "Individual", "Davis (1989)",
+  "UTAUT / UTAUT2", "What unified set of factors predicts technology intention and use?", "Individual (in organizations / consumer markets)", "Venkatesh et al. (2003, 2012)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of innovation diffusion and technology adoption.")
+```
+
+## Diffusion of Innovations {#diffusion-of-innovations}
+
+::: {.theory-card}
+**Core claim.** Innovations spread through a social system over time via
+communication channels. The rate of adoption depends on how potential adopters
+*perceive* the innovation's attributes, and adoption over time typically follows
+an S-shaped cumulative curve as early adopters influence later ones.
+
+**Origins.** Rural sociology [@ryan1943], agricultural economics
+[@griliches1957], and medical sociology [@coleman1966]; synthesized by
+@rogers2003, first published in 1962.
+
+**Level of analysis.** The social system (community, market, industry, or
+organization), with individual adoption decisions as the micro-foundation.
+
+**Key constructs.** Innovation; communication channels; time; social system;
+perceived attributes (relative advantage, compatibility, complexity,
+trialability, observability); adopter categories; opinion leaders; change agents;
+innovation–decision process; re-invention; critical mass.
+
+**Boundary conditions.** Adoption is voluntary (or partly so), information
+about the innovation spreads through observable channels, and potential adopters
+are connected. Mandated adoption, network-externality goods, and fads follow
+different dynamics.
+
+**Related theories.** [Bass model](#bass-model),
+[Strength of weak ties](#weak-ties),
+[Technology acceptance model](#technology-acceptance-model),
+[Institutional theory](#institutional-theory),
+[Social influence](#social-influence).
+:::
+
+### Origins and intellectual history
+
+Diffusion research has unusually concrete origins. @ryan1943 interviewed farmers
+in two Iowa communities about their adoption of hybrid seed corn, an innovation
+that offered clear yield advantages. Adoption nonetheless unfolded over many
+years: a few farmers planted hybrid seed early, most followed only after seeing
+it work on neighbours' farms, and a minority held out much longer. Salespeople
+were an important source of first knowledge about the seed, but neighbours were
+more influential in the decision to adopt — an early demonstration that
+*awareness* and *persuasion* run through different channels. Farmers also
+typically tried hybrid seed on part of their acreage before converting fully,
+illustrating the importance of trialability.
+
+@griliches1957 analysed the same innovation from an economic perspective. Fitting
+logistic curves to adoption across American states and crop-reporting districts,
+he showed that differences in when adoption began, how fast it proceeded, and
+where it levelled off could be explained largely by economic factors — the
+profitability of hybrid corn in each area and the availability of hybrids
+adapted to local conditions. The Ryan–Gross and Griliches studies are often read
+as rival sociological and economic accounts, but together they establish that
+both *perceived profitability* and *social communication* shape diffusion.
+
+@coleman1966 extended the paradigm to medicine with their *Medical Innovation*
+study of physicians' adoption of a new antibiotic in four Illinois cities.
+Doctors who were more integrated into professional networks adopted earlier, and
+the authors interpreted the pattern as evidence of social contagion. The study
+became the classic demonstration of network effects in diffusion — and, decades
+later, a cautionary tale (see the debate box below).
+
+@rogers2003 synthesized these and thousands of later studies into a general
+theory. In his account, **diffusion** is the process through which an innovation
+is communicated, via particular channels and over time, among the members of a
+social system — a definition that identifies four main elements: the innovation,
+communication channels, time, and the social system.
+
+### Core logic: perceived attributes and the decision process
+
+Rogers argued that the rate of adoption is shaped above all by how potential
+adopters perceive an innovation. Five perceived attributes recur across studies
+(Table \@ref(tab:tab-inn-attributes)). A meta-analysis by @tornatzky1982 found
+that relative advantage, compatibility, and complexity were the attributes most
+consistently related to adoption, and @moore1991b developed a widely used
+instrument for measuring perceived innovation characteristics in information
+systems research.
+
+```{r tab-inn-attributes}
+tibble::tribble(
+  ~Attribute, ~Definition, ~`Effect on rate of adoption`, ~`Business lever`,
+  "Relative advantage", "Degree to which the innovation is perceived as better than the idea it supersedes", "Positive", "Quantify savings; price below value; demonstrate ROI",
+  "Compatibility", "Consistency with existing values, past experience, and needs", "Positive", "Integrations; familiar interfaces; position as an upgrade",
+  "Complexity", "Degree to which the innovation is perceived as difficult to understand and use", "Negative", "Simplify onboarding; default settings; training",
+  "Trialability", "Degree to which it can be experimented with on a limited basis", "Positive", "Free trials; pilots; freemium tiers; test drives",
+  "Observability", "Degree to which results are visible to others", "Positive", "Case studies; visible design; referral programmes; usage dashboards"
+) |>
+  book_table(caption = "Rogers's five perceived attributes of innovations (definitions after Rogers, 2003).")
+```
+
+At the individual level, Rogers described an **innovation–decision process**
+with five stages: *knowledge* (exposure and understanding), *persuasion*
+(forming a favourable or unfavourable attitude), *decision* (adoption or
+rejection), *implementation* (putting the innovation to use, often with
+**re-invention**, or modification by the user), and *confirmation* (seeking
+reinforcement and possibly reversing the decision). Mass-media channels matter
+most at the knowledge stage; interpersonal channels — especially with
+**near-peers** — matter most at the persuasion stage.
+
+The core propositions can be summarized as follows:
+
+- **P1 (Perceived attributes).** Innovations perceived as having greater relative
+  advantage, compatibility, trialability, and observability, and less
+  complexity, are adopted more rapidly.
+- **P2 (Interpersonal influence).** Interpersonal communication with prior
+  adopters, especially similar others, is the main driver of the persuasion
+  stage; diffusion therefore accelerates as the number of adopters grows.
+- **P3 (S-curve).** Cumulative adoption follows an S-shaped curve: slow at
+  first, rapid once interpersonal networks are activated, and slowing as the
+  pool of non-adopters is exhausted.
+- **P4 (Opinion leadership).** Adoption by opinion leaders — members whose
+  views others seek — accelerates adoption by their followers.
+- **P5 (Adopter heterogeneity).** Earlier adopters differ systematically from
+  later adopters in socio-economic status, personality, and communication
+  behaviour.
+
+### Mechanism: adopter categories and the S-curve
+
+Rogers partitioned adopters by the timing of their adoption relative to the
+average, using standard deviations of a normal distribution of adoption times.
+The resulting categories (Figure \@ref(fig:fig-inn-adopters)) are
+**innovators** (the first 2.5 per cent), **early adopters** (the next 13.5 per
+cent), the **early majority** (34 per cent), the **late majority** (34 per cent),
+and **laggards** (the final 16 per cent). The percentages follow by construction
+from the normal curve; they are an ideal type, not an empirical regularity.
+
+```{r fig-inn-adopters, fig.cap = "Rogers's adopter categories, defined by standard deviations from the mean adoption time of a normal distribution. The dashed line marks where Moore (1991) locates the 'chasm' between early adopters and the early majority. The percentages follow from the normal curve by construction.", fig.height = 4}
+cats <- c("Innovators", "Early adopters", "Early majority", "Late majority", "Laggards")
+curve_df <- data.frame(z = seq(-3.5, 3.5, by = 0.01)) |>
+  mutate(density = dnorm(z),
+         category = cut(z, breaks = c(-Inf, -2, -1, 0, 1, Inf), labels = cats),
+         category = factor(category, levels = cats))
+labels_df <- data.frame(
+  z = c(-2.65, -1.5, -0.5, 0.5, 1.9), y = c(0.07, 0.17, 0.25, 0.25, 0.17),
+  lab = c("Innovators\n2.5%", "Early\nadopters\n13.5%", "Early\nmajority\n34%", "Late\nmajority\n34%", "Laggards\n16%")
+)
+ggplot(curve_df, aes(z, density)) +
+  geom_area(aes(fill = category), colour = NA, alpha = 0.95) +
+  geom_line(colour = ink[["secondary"]], linewidth = 0.5) +
+  geom_vline(xintercept = -1, linetype = "dashed", colour = pal[["orange"]], linewidth = 0.8) +
+  annotate("text", x = -1.05, y = 0.405, label = "The chasm", hjust = 1, size = 3.3, colour = ink[["primary"]],
+           fontface = "bold") +
+  geom_text(data = labels_df, aes(z, y, label = lab), size = 3, colour = ink[["primary"]], lineheight = 0.9) +
+  scale_fill_manual(values = colorRampPalette(c("#1f4e79", "#dceaf8"))(5), guide = "none") +
+  scale_x_continuous(breaks = -2:2,
+                     labels = c("mean - 2 sd", "mean - 1 sd", "mean", "mean + 1 sd", "mean + 2 sd")) +
+  scale_y_continuous(breaks = NULL, expand = expansion(mult = c(0, 0.05))) +
+  labs(x = "Time of adoption", y = NULL, title = "Adopter categories")
+```
+
+The same distribution, accumulated over time, produces the S-curve in Figure
+\@ref(fig:fig-inn-scurve). Adoption is slow while only innovators and early
+adopters are involved, accelerates as the early majority joins, and decelerates
+as the remaining non-adopters are increasingly late majority and laggards.
+
+```{r fig-inn-scurve, fig.cap = "Stylised S-shaped cumulative adoption curve implied by normally distributed adoption times, with the period in which each adopter category adopts shaded.", fig.height = 3.8}
+s_df <- data.frame(z = seq(-3.2, 3.2, by = 0.01)) |>
+  mutate(cumulative = pnorm(z))
+bands <- data.frame(xmin = c(-3.2, -2, -1, 0, 1), xmax = c(-2, -1, 0, 1, 3.2), category = factor(cats, levels = cats))
+ggplot() +
+  geom_rect(data = bands, aes(xmin = xmin, xmax = xmax, ymin = 0, ymax = 1, fill = category), alpha = 0.35) +
+  geom_line(data = s_df, aes(z, cumulative), colour = pal[["blue"]], linewidth = 1.2) +
+  scale_fill_manual(values = colorRampPalette(c("#1f4e79", "#dceaf8"))(5), name = NULL) +
+  scale_y_continuous(labels = scales::percent, expand = c(0, 0)) +
+  scale_x_continuous(breaks = NULL) +
+  labs(x = "Time", y = "Cumulative share of eventual adopters",
+       title = "Diffusion produces an S-curve",
+       caption = "Stylised: cumulative normal distribution of adoption times.") +
+  theme(legend.position = "top")
+```
+
+Table \@ref(tab:tab-inn-adopters) summarizes the characteristics Rogers
+associated with each category. Opinion leadership is concentrated among early
+adopters, which is why they are often the most strategically important segment
+for marketers: they are close enough to the mainstream to be emulated, yet
+venturesome enough to adopt before the evidence is in.
+
+```{r tab-inn-adopters}
+tibble::tribble(
+  ~Category, ~`Share (ideal type)`, ~`Typical orientation`, ~`What they need from the seller`,
+  "Innovators", "2.5%", "Venturesome; tolerate uncertainty; cosmopolitan networks", "Access to the technology itself",
+  "Early adopters", "13.5%", "Respected locally; high opinion leadership", "A vision of strategic advantage",
+  "Early majority", "34%", "Deliberate; adopt once others have", "Proven, complete solutions and references from peers",
+  "Late majority", "34%", "Sceptical; adopt from necessity or peer pressure", "Low cost, low risk, standardization",
+  "Laggards", "16%", "Traditional; oriented to the past", "Compatibility with existing practices, or no choice"
+) |>
+  book_table(caption = "Adopter categories and their characteristics (after Rogers, 2003; seller needs follow Moore, 1991).")
+```
+
+### Evidence and extensions
+
+The diffusion paradigm has been applied to agricultural practices, medical
+technologies, consumer durables, management practices, policies, and social
+movements [@strang1998]. Four extensions are particularly important for business
+research.
+
+- **Organizational adoption.** Organizations face knowledge barriers that
+  individuals do not. @attewell1992 argued that the diffusion of business
+  computing was paced less by awareness than by the burden of organizational
+  learning, and that intermediaries such as service bureaus lowered that burden.
+  @fichman1999 documented **assimilation gaps**: many firms that *acquired*
+  software process innovations had not *deployed* them, so acquisition-based
+  diffusion curves overstated real adoption.
+- **Management fashions.** @abrahamson1991 showed that administrative
+  innovations can diffuse — and be rejected — for reasons unrelated to their
+  efficiency, through fad and fashion processes driven by imitation and by
+  fashion-setting organizations such as consultancies.
+- **Network structure.** Thresholds matter: people adopt once enough of their
+  contacts have [@granovetter1978]. In an online experiment, @centola2010 found
+  that a health behaviour spread farther and faster in clustered networks with
+  redundant ties than in random networks, suggesting that behaviours requiring
+  social reinforcement are **complex contagions** that travel through dense
+  clusters rather than the long, weak bridges that carry information
+  (compare the [weak-ties argument](#weak-ties)).
+- **Contagion versus homophily.** Correlated adoption among connected people
+  need not mean that one influenced the other. @aral2009 showed that a large share
+  of apparent contagion in the adoption of a mobile service could be attributed to
+  homophily — similar people adopting for similar reasons.
+
+::: {.debate}
+**Was *Medical Innovation* really about contagion?** @vandenbulte2001
+reanalysed the Coleman, Katz, and Menzel data together with the volume of
+pharmaceutical advertising during the diffusion period. Once marketing effort
+was controlled, the evidence for social contagion largely disappeared: doctors
+in the same networks adopted together because they were exposed to the same
+marketing, not because they influenced one another. Later work using richer data
+on a different drug found evidence of contagion over network ties even after
+controlling for marketing, with influence depending on who was influencing whom
+[@iyengar2011]. The lesson is methodological: distinguishing contagion from
+common exposure and homophily requires designs that measure all three.
+
+**Pro-innovation bias.** Rogers himself noted that diffusion research tends to
+assume that innovations *should* be adopted, that non-adopters are deficient, and
+that faster diffusion is better. This bias leads researchers to neglect
+rejection, discontinuance, and re-invention, and to study successful innovations
+whose diffusion was traceable after the fact.
+:::
+
+### Moore's chasm: a practitioner extension
+
+@moore1991a argued, from experience marketing high-technology products, that the
+adoption curve is not continuous. Early adopters — "visionaries" seeking
+breakthrough advantage — buy for different reasons than the early majority —
+"pragmatists" seeking proven, incremental improvement and references from peers
+like themselves. Because pragmatists do not regard visionaries as credible
+references, products can win the early market and then stall. Moore's
+prescription is to cross this **chasm** by concentrating on a narrow beachhead
+segment of pragmatic customers and delivering a **whole product** — the core
+technology plus the complementary services, integrations, and support that
+make it usable for that segment — before expanding to adjacent segments.
+
+Academic research has partly vindicated the idea. @goldenberg2002 documented a
+**saddle** in the sales of many consumer electronics products: an initial peak,
+a trough, and a later recovery that eventually exceeds the initial peak. They
+explained it with a model in which the early market and the main market
+communicate weakly with one another, so that the early market's adoption does
+not fully transfer to the mainstream — essentially a formalization of Moore's
+chasm in network terms. @golder1997 showed that the **takeoff** of really new
+consumer durables is closely associated with price declines, underscoring the
+role of relative advantage.
+
+::: {.business-case}
+**Electric-vehicle diffusion (conceptual analysis).** Rogers's attributes offer a
+structured diagnosis of electric-vehicle adoption. *Relative advantage* is mixed:
+lower running costs and strong acceleration against higher purchase prices in
+many markets. *Compatibility* depends on whether a household has home charging
+and how its driving patterns match vehicle range. *Complexity* includes
+learning about charging networks and battery health. *Trialability* is limited by
+the cost of the product but can be increased through test drives, rentals, and
+car-sharing. *Observability* is high: electric vehicles are visible on the road,
+and neighbourhood clustering of adoption is consistent with interpersonal
+influence (though homophily is an alternative explanation). Policy levers map
+onto the attributes: purchase incentives raise relative advantage, public charging
+raises compatibility, and fleet programmes increase observability. Norway, where
+sustained tax incentives preceded electric vehicles becoming the majority of new
+passenger-car sales in the early 2020s, is the most frequently cited example of
+policy accelerating diffusion.
+:::
+
+::: {.pitfall}
+**Treating adopter percentages as data.** The 2.5/13.5/34/34/16 split is a
+definition based on the normal curve, not an empirical finding. Real adoption
+distributions are often skewed, and many innovations never reach the "late
+majority" at all. Use the categories as a segmentation heuristic and estimate
+the actual distribution of adoption times from data.
+:::
+
+## The Bass Diffusion Model {#bass-model}
+
+::: {.theory-card}
+**Core claim.** The probability that a not-yet-adopter adopts at time $t$ is the
+sum of an **innovation** effect (external influence, independent of prior
+adopters) and an **imitation** effect proportional to the share of the market
+that has already adopted. This simple hazard produces the S-shaped diffusion
+curve and the bell-shaped curve of new adoptions.
+
+**Origins.** Marketing science; @bass1969, building on epidemic models and on
+Rogers's adopter categories. Reviewed by @mahajan1990 and @peres2010.
+
+**Level of analysis.** The market for a new product or technology (first
+purchases).
+
+**Key constructs.** Market potential ($m$); coefficient of innovation ($p$);
+coefficient of imitation ($q$); hazard rate; time to peak; takeoff.
+
+**Boundary conditions.** Applies to first-time adoption of a new product
+category with a fixed market potential and no repeat purchase; extensions
+are needed for repeat purchases, multiple product generations, and strong
+supply constraints or marketing-mix changes.
+
+**Related theories.** [Diffusion of innovations](#diffusion-of-innovations),
+[Wisdom of the crowd](#wisdom-of-the-crowd).
+:::
+
+### Core logic
+
+@bass1969 formalized Rogers's insight that early adopters and later adopters
+respond to different influences. Let $F(t)$ be the cumulative fraction of the
+eventual adopter population that has adopted by time $t$, and $f(t)$ its
+derivative. The Bass model specifies the hazard of adoption — the probability of
+adopting at $t$ given no adoption before $t$ — as
+
+$$
+\frac{f(t)}{1 - F(t)} = p + q\,F(t),
+$$
+
+where $p$ is the **coefficient of innovation** (external influence, such as
+advertising and media) and $q$ is the **coefficient of imitation** (internal
+influence, such as word of mouth from previous adopters). With market
+potential $m$, the number of new adopters at $t$ is $n(t) = m\,f(t)$. Solving the
+differential equation with $F(0) = 0$ gives the closed form
+
+$$
+F(t) = \frac{1 - e^{-(p+q)t}}{1 + \frac{q}{p}\, e^{-(p+q)t}} .
+$$
+
+Three implications are especially useful for managers. When $q > p$, new
+adoptions rise to a peak and then decline; the peak occurs at
+$t^{*} = \ln(q/p) / (p+q)$, when cumulative penetration equals
+$\tfrac{1}{2} - \tfrac{p}{2q}$; and the peak rate of adoption is
+$m\,(p+q)^2 / (4q)$. A larger $q$ relative to $p$ produces a later, sharper
+peak; a larger $p$ produces faster early sales and an earlier, flatter peak.
+
+::: {.definition}
+**Coefficient of innovation ($p$).** The baseline probability of adoption that does
+not depend on how many others have adopted — the influence of external
+communication.
+
+**Coefficient of imitation ($q$).** The increase in the probability of adoption
+per unit increase in the cumulative adopted share — the influence of prior
+adopters [@bass1969; @mahajan1990].
+:::
+
+### Mechanism
+
+Figure \@ref(fig:fig-inn-bass) simulates three stylised products. The
+*benchmark* uses parameters of the order reported as averages across many
+published applications in the meta-analysis of @sultan1990 ($p \approx 0.03$,
+$q \approx 0.38$). The *word-of-mouth-driven* product has a very small $p$ and a
+large $q$; the *advertising-driven* product has a large $p$ and a small $q$.
+
+```{r fig-inn-bass, fig.cap = "Illustrative Bass-model simulations for three stylised products with market potential m = 100. The left panel shows new adopters per period; the right panel shows cumulative adoption. Imitation-driven diffusion produces a late, sharp peak; innovation-driven diffusion produces an early, flat one.", fig.height = 4}
+bass_F <- function(t, p, q) (1 - exp(-(p + q) * t)) / (1 + (q / p) * exp(-(p + q) * t))
+scenarios <- tibble::tribble(
+  ~scenario, ~p, ~q,
+  "Benchmark (p = 0.03, q = 0.38)", 0.03, 0.38,
+  "Word-of-mouth-driven (p = 0.005, q = 0.6)", 0.005, 0.60,
+  "Advertising-driven (p = 0.15, q = 0.05)", 0.15, 0.05
+)
+bass_df <- tidyr::crossing(scenarios, t = seq(0, 25, by = 0.1)) |>
+  mutate(cumulative = 100 * bass_F(t, p, q),
+         new = 100 * ((p + q)^2 / p) * exp(-(p + q) * t) / (1 + (q / p) * exp(-(p + q) * t))^2,
+         scenario = factor(scenario, levels = scenarios$scenario)) |>
+  pivot_longer(c(new, cumulative), names_to = "measure", values_to = "adopters") |>
+  mutate(measure = factor(measure, levels = c("new", "cumulative"),
+                          labels = c("New adopters per period", "Cumulative adopters")))
+ggplot(bass_df, aes(t, adopters, colour = scenario)) +
+  geom_line(linewidth = 1) +
+  facet_wrap(~measure, scales = "free_y") +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")]), name = NULL) +
+  guides(colour = guide_legend(ncol = 1)) +
+  labs(x = "Time since launch (periods)", y = "Adopters (m = 100)",
+       title = "Innovation and imitation shape the diffusion curve",
+       caption = "Illustrative simulation of the Bass (1969) model; benchmark values are of the order reported by Sultan et al. (1990).")
+```
+
+Table \@ref(tab:tab-inn-bass-metrics) computes the managerial quantities implied
+by each scenario directly from the formulas above.
+
+```{r tab-inn-bass-metrics}
+scenarios |>
+  mutate(`q / p` = round(q / p, 1),
+         `Time to peak` = ifelse(q > p, round(log(q / p) / (p + q), 1), 0),
+         `Peak adopters per period (m = 100)` = ifelse(q > p, round(100 * (p + q)^2 / (4 * q), 1), round(100 * p, 1)),
+         `Penetration at peak` = ifelse(q > p, scales::percent(0.5 - p / (2 * q), 1), "0%")) |>
+  select(Scenario = scenario, `q / p`, `Time to peak`, `Peak adopters per period (m = 100)`, `Penetration at peak`) |>
+  book_table(align = c("l", "c", "c", "c", "c"),
+             caption = "Managerial metrics implied by the Bass model for the three illustrative scenarios (computed). When q is not greater than p, new adoptions are highest at launch.")
+```
+
+### Estimating the model in R
+
+The Bass model can be estimated from early sales data by nonlinear least squares
+on per-period adoptions [@srinivasan1986]. The code below is self-contained and
+can be adapted by replacing the simulated sales vector with real data. It
+simulates nine periods of noisy sales for a product with known parameters, then
+recovers them.
+
+```{r inn-bass-code, echo = TRUE}
+# Bass model: cumulative fraction adopted and per-period adoptions
+bass_F <- function(t, p, q) (1 - exp(-(p + q) * t)) / (1 + (q / p) * exp(-(p + q) * t))
+bass_sales <- function(t, m, p, q) m * (bass_F(t, p, q) - bass_F(t - 1, p, q))
+
+# Illustrative data: true m = 1,000,000, p = 0.02, q = 0.45, plus noise
+set.seed(1969)
+period <- 1:9
+sales <- round(bass_sales(period, m = 1e6, p = 0.02, q = 0.45) *
+                 exp(rnorm(length(period), 0, 0.06)))
+
+# Nonlinear least squares with bounds that keep m, p, q positive
+fit <- nls(sales ~ bass_sales(period, m, p, q),
+           start = list(m = 8e5, p = 0.03, q = 0.3),
+           algorithm = "port", lower = c(1, 1e-4, 1e-4))
+round(coef(fit), 3)
+```
+
+Figure \@ref(fig:fig-inn-bass-fit) uses the fitted model to forecast the
+remainder of the life cycle.
+
+```{r fig-inn-bass-fit, fig.cap = "Illustrative Bass-model forecast. Points are simulated sales for the first nine periods; the line is the fitted model, extended as a forecast. Simulated data, not an actual product.", fig.height = 3.6}
+est <- coef(fit)
+fc <- data.frame(period = 1:20) |>
+  mutate(fitted = bass_sales(period, est[["m"]], est[["p"]], est[["q"]]),
+         phase = ifelse(period <= 9, "Fitted", "Forecast"))
+ggplot() +
+  geom_line(data = filter(fc, period <= 9), aes(period, fitted / 1e3), colour = pal[["blue"]], linewidth = 1) +
+  geom_line(data = filter(fc, period >= 9), aes(period, fitted / 1e3), colour = pal[["blue"]],
+            linewidth = 1, linetype = "dashed") +
+  geom_point(data = data.frame(period, sales), aes(period, sales / 1e3), colour = pal[["orange"]], size = 2.6) +
+  annotate("text", x = 15, y = max(fc$fitted) / 1e3 * 0.75, label = "Forecast", colour = ink[["secondary"]], size = 3.4) +
+  annotate("text", x = 3, y = max(sales) / 1e3 * 0.95, label = "Observed (simulated)", colour = ink[["secondary"]], size = 3.4) +
+  labs(x = "Period since launch", y = "New adopters (thousands)",
+       title = "Forecasting the life cycle from early sales",
+       caption = sprintf("Illustrative fit: m = %s, p = %.3f, q = %.3f.",
+                         format(round(est[["m"]]), big.mark = ","), est[["p"]], est[["q"]]))
+```
+
+### Evidence and extensions
+
+The Bass model has become one of the most widely applied models in marketing
+science [@mahajan1990; @peres2010]. Several findings and extensions are
+particularly relevant:
+
+- **Parameter regularities.** Across published applications, $q$ is typically
+  much larger than $p$ — word of mouth dominates external influence in shaping
+  the curve's form [@sultan1990]. In the absence of sales data, analysts often
+  forecast **by analogy**, borrowing parameters from similar past products.
+- **Marketing-mix variables.** The original model contains no price or
+  advertising terms. @bass1994 developed a **Generalized Bass Model** that
+  includes current marketing effort and showed why the original model fits well
+  anyway: when marketing variables change at roughly constant rates, their effect
+  is absorbed into the estimated parameters.
+- **Alternative explanations of the S-curve.** An S-curve can arise from
+  heterogeneity in adopters' thresholds or incomes rather than from contagion.
+  @vandenbulte2004 found that the ratio $q/p$ was higher in countries with
+  greater income inequality, consistent with an income-heterogeneity
+  interpretation of what the Bass model labels "imitation".
+- **Beyond first purchase.** Extensions cover repeat purchases, successive
+  technology generations, cross-country diffusion, competition among brands, and
+  network externalities [@peres2010].
+
+::: {.debate}
+**Is $q$ really "imitation"?** The Bass model is a reduced form: it reproduces
+the *shape* of diffusion without identifying the *mechanism*. A large estimated
+$q$ is consistent with word of mouth, but also with falling prices, expanding
+distribution, learning by the firm, or heterogeneous adoption thresholds
+[@bass1994; @vandenbulte2004]. Estimates from early data are also notoriously
+unstable — parameters can change substantially as data points beyond the
+inflection point are added — so forecasts made before the peak should be
+presented with wide uncertainty bands and cross-checked against analogies.
+:::
+
+::: {.business-case}
+**Illustrative scenario: forecasting a new product launch.** A consumer
+electronics firm is launching a home device in a new category. Before launch, it
+has no sales history, so it forecasts by analogy: it collects estimated $p$ and
+$q$ values for comparable past categories, adjusts market potential $m$ using
+purchase-intention surveys and household penetration of complementary
+products, and simulates the life cycle. The analysis yields three uses. First,
+**capacity planning**: the forecast peak sales rate determines manufacturing and
+inventory commitments. Second, **marketing allocation**: if diffusion is
+imitation-driven (high $q/p$), early spending on seeding, referral incentives, and
+reviews may yield more than heavy launch advertising. Third, **re-estimation**:
+once several periods of sales are observed, the model is refit (as in the code
+above), and the forecast is updated — with explicit uncertainty, because pre-peak
+estimates are unstable.
+:::
+
+::: {.try-it}
+Modify the code above to fit the model using only the first five periods of
+simulated sales. How much do the estimates of $m$, $p$, and $q$ change? What does
+this imply for forecasting a product's peak from its launch year alone?
+:::
+
+## Theories of Reasoned Action and Planned Behavior {#theory-of-planned-behavior}
+
+::: {.theory-card}
+**Core claim.** Behaviour is determined by the intention to perform it.
+Intentions are in turn determined by attitudes toward the behaviour, subjective
+norms, and — in the theory of planned behavior — perceived behavioral control,
+each of which rests on underlying beliefs.
+
+**Origins.** Social psychology: the theory of reasoned action (TRA) of
+@fishbein1975 and @ajzen1980; the theory of planned behavior (TPB) of
+@ajzen1991.
+
+**Level of analysis.** Individual.
+
+**Key constructs.** Behavioural, normative, and control beliefs; attitude toward
+the behaviour; subjective norm; perceived behavioral control; intention;
+behaviour.
+
+**Boundary conditions.** Best suited to deliberate behaviours under volitional
+control, measured at a matching level of specificity (the principle of
+compatibility: same action, target, context, and time). Weaker for habitual,
+impulsive, or highly constrained behaviours.
+
+**Related theories.** [Technology acceptance model](#technology-acceptance-model),
+[UTAUT](#utaut), [Social norms](#social-norms),
+[Self-regulation](#self-regulation).
+:::
+
+The theory of reasoned action provides the micro-foundation on which most
+technology-acceptance models are built. @fishbein1975 proposed that the proximal
+determinant of a volitional behaviour is the person's **intention** to perform it.
+Intention depends on two factors: the person's **attitude toward the
+behaviour** (a summary evaluation based on beliefs about its consequences,
+weighted by the evaluation of those consequences) and the **subjective norm**
+(the perceived expectations of important others, weighted by the motivation to
+comply with them). In a meta-analysis, @sheppard1988 found that the theory
+predicted intentions and behaviour well, even in some situations that fell
+outside its original boundary conditions.
+
+@ajzen1991 extended the TRA to behaviours that are not fully under volitional
+control by adding **perceived behavioral control (PBC)**: the perceived ease or
+difficulty of performing the behaviour, based on control beliefs about the
+presence of resources and obstacles. PBC influences intention and, to the extent
+that it reflects actual control, also predicts behaviour directly (Figure
+\@ref(fig:fig-inn-tpb)). A meta-analysis by @armitage2001 found that the TPB
+accounted for substantial variance in intentions and somewhat less in
+behaviour, and that PBC added explanatory power beyond attitudes and subjective
+norms, while subjective norm was the weakest predictor of intention.
+
+```{r fig-inn-tpb, fig.cap = "The theory of planned behavior (Ajzen, 1991). The theory of reasoned action (Fishbein & Ajzen, 1975) is the same model without perceived behavioral control. The dashed path from control to behaviour reflects the extent to which perceived control approximates actual control."}
+mechanism_diagram(sprintf('
+  BB [label = "Behavioural\\nbeliefs", %s]
+  NB [label = "Normative\\nbeliefs", %s]
+  CB [label = "Control\\nbeliefs", %s]
+  AT [label = "Attitude toward\\nthe behaviour", %s]
+  SN [label = "Subjective\\nnorm", %s]
+  PBC [label = "Perceived\\nbehavioral control", %s]
+  I [label = "Intention", %s]
+  B [label = "Behaviour", %s]
+  BB -> AT
+  NB -> SN
+  CB -> PBC
+  AT -> I
+  SN -> I
+  PBC -> I
+  I -> B
+  PBC -> B [style = dashed]
+', node_construct, node_construct, node_construct, node_construct, node_construct, node_construct,
+   node_mechanism, node_outcome))
+```
+
+::: {.debate}
+**The intention–behaviour gap.** Correlational support for the TPB is strong, but
+experimental evidence is more sobering. @webb2006 meta-analysed experiments that
+changed intentions and found that the resulting change in behaviour was
+considerably smaller than the change in intention. @sniehotta2014 went further,
+arguing that the TPB's limited predictive validity and its weak record as a guide
+to behaviour-change interventions warrant retiring it. Defenders reply that the
+theory was never designed as an intervention manual, and that the gap reflects
+habits, implementation problems, and measurement mismatches that the theory's
+boundary conditions already acknowledge.
+:::
+
+## Technology Acceptance Model {#technology-acceptance-model}
+
+::: {.theory-card}
+**Core claim.** People's intention to use an information technology is
+determined mainly by two beliefs: **perceived usefulness** (the degree to which
+they believe the system would improve their job performance) and **perceived
+ease of use** (the degree to which they believe using it would be free of effort).
+Ease of use also increases perceived usefulness.
+
+**Origins.** Information systems: @davis1989a and @davis1989b, adapting the
+theory of reasoned action; extended in TAM2 [@venkatesh2000] and TAM3
+[@venkatesh2008].
+
+**Level of analysis.** Individual users, typically within organizations.
+
+**Key constructs.** Perceived usefulness (PU); perceived ease of use (PEOU);
+attitude toward using; behavioural intention; system use; external variables
+(in TAM2: subjective norm, image, job relevance, output quality, result
+demonstrability, experience, voluntariness).
+
+**Boundary conditions.** Developed for workplace productivity technologies;
+assumes individual choice over use. Explanatory power falls when use is mandated,
+when adoption is collective, or when hedonic or social motives dominate.
+
+**Related theories.** [Theory of planned behavior](#theory-of-planned-behavior),
+[UTAUT](#utaut), [Diffusion of innovations](#diffusion-of-innovations).
+:::
+
+### Origins and core logic
+
+@davis1989a developed and validated scales for two beliefs that he argued were
+fundamental determinants of user acceptance. **Perceived usefulness** captured the
+instrumental benefits of a system; **perceived ease of use** captured its
+effort cost. In his studies, usefulness was more strongly linked to usage than
+ease of use, and ease of use appeared to operate partly *through* usefulness: a
+system that is easier to use leaves more effort available for productive work.
+@davis1989b compared TAM with the theory of reasoned action in a longitudinal
+study of MBA students' use of a word-processing system. Perceived usefulness
+strongly influenced intentions at both measurement points; ease of use had a
+smaller effect that faded as users gained experience; and TAM, despite its
+parsimony, predicted intentions at least as well as the TRA.
+
+TAM simplified the TRA in two ways that proved decisive for its popularity. It
+replaced the elicitation of salient beliefs for each new behaviour with two
+general beliefs that apply to almost any technology, and it dropped the
+subjective norm, which Davis and colleagues found to have little effect on
+intentions in their setting. The result was a short, reliable survey that could be
+deployed in virtually any IT implementation.
+
+```{r fig-inn-tam, fig.cap = "The technology acceptance model (Davis, 1989; Davis et al., 1989) with the TAM2 extensions of Venkatesh and Davis (2000). Social-influence and cognitive-instrumental processes shape perceived usefulness; experience and voluntariness moderate the effect of subjective norm."}
+mechanism_diagram(sprintf('
+  SN [label = "Subjective norm", %s]
+  IM [label = "Image", %s]
+  JR [label = "Job relevance", %s]
+  OQ [label = "Output quality", %s]
+  RD [label = "Result\\ndemonstrability", %s]
+  PU [label = "Perceived\\nusefulness", %s]
+  PE [label = "Perceived\\nease of use", %s]
+  BI [label = "Intention\\nto use", %s]
+  U  [label = "Usage\\nbehaviour", %s]
+  EX [label = "Experience;\\nvoluntariness", %s]
+  SN -> IM
+  SN -> PU
+  IM -> PU
+  JR -> PU
+  OQ -> PU
+  RD -> PU
+  SN -> BI
+  PE -> PU
+  PU -> BI
+  PE -> BI
+  BI -> U
+  EX -> SN [style = dashed, arrowhead = none]
+', node_construct, node_construct, node_construct, node_construct, node_construct,
+   node_mechanism, node_mechanism, node_outcome, node_outcome, node_moderator))
+```
+
+### Evidence and extensions
+
+TAM became one of the most cited models in information systems. @venkatesh2000
+proposed **TAM2**, which explained perceived usefulness and intention in terms of
+**social influence processes** (subjective norm, image, voluntariness) and
+**cognitive instrumental processes** (job relevance, output quality, result
+demonstrability, and perceived ease of use). In four longitudinal field studies,
+subjective norm affected intention directly in mandatory settings, and its
+effects weakened as users gained experience. @venkatesh2008 then proposed **TAM3**,
+adding determinants of perceived ease of use — such as computer self-efficacy,
+perceptions of external control, computer anxiety, and perceived enjoyment — and
+an agenda for designing interventions before and after implementation.
+
+Meta-analytic evidence supports the model's core relationships. @king2006 found
+the TAM measures to be highly reliable and the path from perceived usefulness to
+intention to be strong across many studies, with ease of use operating largely
+through usefulness. @taylor1995 compared TAM with the TPB and a "decomposed" TPB:
+TAM predicted usage nearly as well as the richer models, though the decomposed TPB
+offered a more complete understanding of the determinants of intention.
+@legris2003, reviewing the literature, noted the model's predictive usefulness but
+also its reliance on self-reported use and student samples, and argued that it
+should be integrated into broader models that include organizational and social
+factors.
+
+Post-adoption research addresses what happens after initial acceptance.
+@bhattacherjee2001 proposed an **expectation–confirmation model** of continuance,
+in which satisfaction — driven by the confirmation of pre-adoption expectations —
+and post-adoption perceived usefulness determine whether users keep using a
+system. Continuance, not initial adoption, is often what determines the return on
+a technology investment.
+
+::: {.business-case}
+**Enterprise software rollout and user acceptance.** Consider a firm replacing
+its legacy customer-relationship management system with a cloud platform.
+Licences and integration are costly, but the investment pays off only if sales
+staff actually use the system. TAM and TAM2 translate into a practical rollout
+plan. *Perceived usefulness* is raised by configuring the system around
+salespeople's own goals (pipeline visibility, faster quoting) rather than
+management's reporting needs alone, and by demonstrating results (TAM2's *result
+demonstrability*) through pilot teams. *Perceived ease of use* is raised through
+training, sensible defaults, and integration with email and calendar. Because use
+is often mandatory, *subjective norm* matters early — managers modelling use
+and reviewing pipelines in the system — but its influence fades with
+experience, so long-run use must rest on usefulness. Finally, the assimilation-gap
+warning of @fichman1999 applies inside the firm: licences deployed are not the
+same as the system used.
+:::
+
+## Unified Theory of Acceptance and Use of Technology {#utaut}
+
+::: {.theory-card}
+**Core claim.** Four constructs — **performance expectancy**, **effort
+expectancy**, **social influence**, and **facilitating conditions** — are the main
+determinants of technology intention and use, with their effects moderated by
+gender, age, experience, and voluntariness of use. UTAUT2 adapts the model to
+consumers by adding **hedonic motivation**, **price value**, and **habit**.
+
+**Origins.** Information systems: @venkatesh2003 integrated eight prior models;
+@venkatesh2012 extended the theory to consumer contexts (UTAUT2).
+
+**Level of analysis.** Individual users in organizations (UTAUT) and consumers
+(UTAUT2).
+
+**Key constructs.** Performance expectancy; effort expectancy; social influence;
+facilitating conditions; behavioural intention; use behaviour; hedonic
+motivation; price value; habit; moderators.
+
+**Boundary conditions.** Strongest for individual adoption of discrete
+technologies. The many moderators make the full model hard to test in small
+samples, and the constructs are general rather than specific to particular
+system features.
+
+**Related theories.** [Technology acceptance model](#technology-acceptance-model),
+[Theory of planned behavior](#theory-of-planned-behavior),
+[Diffusion of innovations](#diffusion-of-innovations).
+:::
+
+### Core logic
+
+By the early 2000s, researchers could choose among many overlapping models of
+technology acceptance. @venkatesh2003 reviewed eight of them — the theory of
+reasoned action, TAM, the motivational model, the theory of planned behavior,
+a model combining TAM and the TPB, the model of PC utilization, innovation
+diffusion theory, and social cognitive theory — and compared them empirically in
+longitudinal studies in organizations. They then formulated a unified model in
+which:
+
+- **Performance expectancy** (the belief that using the system will help attain
+  gains in job performance; it subsumes perceived usefulness and relative
+  advantage) affects intention, more strongly for men and younger workers.
+- **Effort expectancy** (the ease associated with use; it subsumes perceived ease
+  of use and complexity) affects intention, more strongly for women, older
+  workers, and in early stages of experience.
+- **Social influence** (the perception that important others believe one should
+  use the system; it subsumes subjective norm and image) affects intention,
+  mainly in mandatory settings and with complex moderation by gender, age, and
+  experience.
+- **Facilitating conditions** (the belief that organizational and technical
+  infrastructure exists to support use; it subsumes perceived behavioral control
+  and compatibility) affect *use* directly rather than intention, more strongly
+  for older workers with more experience.
+
+In their validation data, the unified model explained more variance in usage
+intention than any of the eight original models, which helped make UTAUT a
+standard framework. Figure \@ref(fig:fig-inn-utaut) shows its structure.
+
+```{r fig-inn-utaut, fig.cap = "The unified theory of acceptance and use of technology (UTAUT; Venkatesh et al., 2003), with the constructs added in UTAUT2 for consumer contexts (Venkatesh et al., 2012) shown in orange. Moderators: gender, age, experience, and (in UTAUT) voluntariness of use."}
+mechanism_diagram(sprintf('
+  PE [label = "Performance\\nexpectancy", %s]
+  EE [label = "Effort\\nexpectancy", %s]
+  SI [label = "Social\\ninfluence", %s]
+  FC [label = "Facilitating\\nconditions", %s]
+  HM [label = "Hedonic motivation\\n(UTAUT2)", %s]
+  PV [label = "Price value\\n(UTAUT2)", %s]
+  HB [label = "Habit\\n(UTAUT2)", %s]
+  BI [label = "Behavioural\\nintention", %s]
+  UB [label = "Use\\nbehaviour", %s]
+  MO [label = "Gender, age,\\nexperience,\\nvoluntariness", %s]
+  PE -> BI
+  EE -> BI
+  SI -> BI
+  FC -> BI [style = dashed, label = " UTAUT2"]
+  FC -> UB
+  HM -> BI
+  PV -> BI
+  HB -> BI
+  HB -> UB
+  BI -> UB
+  MO -> BI [style = dashed, arrowhead = none]
+', node_construct, node_construct, node_construct, node_construct,
+   node_mechanism, node_mechanism, node_mechanism,
+   node_outcome, node_outcome, node_moderator))
+```
+
+### UTAUT2: from employees to consumers
+
+@venkatesh2012 adapted UTAUT for consumer technology use, studying mobile
+Internet use. Three constructs were added. **Hedonic motivation** (the fun or
+pleasure derived from using a technology) reflects the fact that consumers often
+use technology for enjoyment, not job performance. **Price value** (the
+consumer's trade-off between perceived benefits and monetary cost) matters
+because consumers, unlike employees, usually pay for the technology themselves.
+**Habit** (the extent to which people perform behaviours automatically because of
+learning) affects both intention and use directly, capturing the fact that much
+technology use becomes routine. Voluntariness was dropped as a moderator because
+consumer use is voluntary, and facilitating conditions were allowed to affect
+intention as well as use. Table \@ref(tab:tab-inn-constructs) traces how the
+constructs evolved across the model family.
+
+```{r tab-inn-constructs}
+tibble::tribble(
+  ~Construct, ~TAM, ~TAM2, ~UTAUT, ~UTAUT2, ~`Root constructs in earlier models`,
+  "Usefulness / performance expectancy", "Perceived usefulness", "Perceived usefulness", "Performance expectancy", "Performance expectancy", "Relative advantage (IDT); outcome expectations (SCT)",
+  "Ease / effort expectancy", "Perceived ease of use", "Perceived ease of use", "Effort expectancy", "Effort expectancy", "Complexity (IDT)",
+  "Social influence", "-", "Subjective norm; image", "Social influence", "Social influence", "Subjective norm (TRA, TPB)",
+  "Facilitating conditions", "-", "-", "Facilitating conditions", "Facilitating conditions", "Perceived behavioral control (TPB); compatibility (IDT)",
+  "Hedonic motivation", "-", "-", "-", "Hedonic motivation", "Intrinsic motivation (motivational model)",
+  "Price value", "-", "-", "-", "Price value", "Consumer value trade-offs",
+  "Habit", "-", "-", "-", "Habit", "Habit and automaticity research",
+  "Key moderators", "-", "Experience; voluntariness", "Gender; age; experience; voluntariness", "Gender; age; experience", "-"
+) |>
+  book_table(caption = "Evolution of constructs in the technology acceptance model family (IDT = innovation diffusion theory; SCT = social cognitive theory).",
+             font_size = 13)
+```
+
+### Critiques and the future of acceptance research
+
+::: {.debate}
+**A paradigm in need of a shift?** In a special issue of the *Journal of the
+Association for Information Systems* devoted to TAM, @bagozzi2007 argued that the
+model's parsimony had become its weakness. He identified several shortcomings: the
+neglect of the gap between intention and actual behaviour; the treatment of
+adoption as a terminal goal rather than a means to users' broader goals; the
+absence of group, social, and cultural aspects of decision making; and the
+proliferation of ad hoc extensions that fragmented the field. He proposed
+grounding acceptance research in a richer theory of goal-directed decision making
+and self-regulation. In the same issue, @benbasat2007 argued that TAM's
+popularity had diverted research away from the **IT artifact** itself: because
+perceived usefulness and ease of use are treated as black boxes, the research
+offers little guidance on *which design features* make a system useful or easy,
+and the stream of incremental extensions had produced diminishing returns.
+They called for research on the antecedents of usefulness in system design and on
+a wider range of post-adoption behaviours such as adaptation and learning.
+
+UTAUT has drawn related criticisms: its many moderators make the full model
+difficult to replicate, and its general constructs can be applied to any
+technology without engaging with what is distinctive about it. Taken together,
+the critiques do not deny that usefulness and ease of use matter; they question
+whether further variations on the same constructs advance understanding.
+:::
+
+::: {.business-case}
+**Generative-AI tool adoption in firms (conceptual analysis).** When a firm makes
+a generative-AI writing or coding assistant available to employees, the
+acceptance models suggest where adoption will succeed or stall. *Performance
+expectancy* depends on task fit: employees whose work involves drafting,
+summarizing, or routine code see clearer gains than those whose work is mostly
+relational. Field evidence from customer-support work found that access to a
+generative-AI assistant raised productivity on average, with the largest gains
+for less experienced workers [@brynjolfsson2025] — suggesting that perceived
+usefulness may be highest, and acceptance fastest, among newer employees.
+*Effort expectancy* includes learning to write effective prompts and to verify
+outputs. *Social influence* operates through managers and peers who model use —
+or who signal, implicitly, that using the tool is a form of shortcut.
+*Facilitating conditions* include data-governance rules, integration with existing
+software, and clarity about what information may be shared with the tool. The
+critiques of TAM apply with force: concerns about accuracy, accountability, and
+job security fall outside the core constructs, and the most important question
+is often not *whether* employees use the tool but *how* — the post-adoption
+behaviours that @benbasat2007 urged researchers to study. Diffusion theory adds
+that observability matters: firms that make successful uses visible (shared prompt
+libraries, internal case studies) are applying Rogers's attribute directly.
+:::
+
+### Using the acceptance models in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Performance expectancy will have a stronger effect on intention to use a
+  generative-AI assistant for employees in roles with a high share of
+  writing tasks than for employees in roles with a low share.
+- *H2.* The effect of social influence on intention will be stronger when use is
+  mandated, and will weaken with experience.
+- *H3.* Habit will predict continued use of a consumer app over and above
+  intention after six months of use.
+
+**Designs.** Longitudinal surveys at pre-implementation, early use, and
+established use; linkage of survey constructs to *logged* system use rather than
+self-reports; field experiments that vary training, defaults, or social
+information; multilevel models for employees nested in teams.
+
+**Measures.** Validated scales for TAM, UTAUT, and UTAUT2 constructs
+[@davis1989a; @venkatesh2003; @venkatesh2012]; perceived innovation
+characteristics [@moore1991b]; objective usage logs; continuance
+[@bhattacherjee2001].
+:::
+
+::: {.pitfall}
+**Predicting intention and calling it adoption.** Many studies measure the
+predictors and the intention in the same survey and stop there. Common-method
+variance inflates the relationships, and intentions translate imperfectly into
+use [@webb2006]. Measure actual use, preferably from system logs and at a later
+time, and test whether the model explains *behaviour*, not just stated plans.
+:::
+
+## Chapter Summary {#innovation-adoption-summary}
+
+::: {.key-takeaways}
+- Diffusion is the communication of an innovation through channels over time
+  among members of a social system; cumulative adoption typically follows an
+  **S-curve** [@rogers2003].
+- **Perceived attributes** — relative advantage, compatibility, complexity,
+  trialability, and observability — shape the rate of adoption
+  [@rogers2003; @tornatzky1982].
+- Classic studies of hybrid corn and medical innovation established both the
+  **economic** and the **social** drivers of diffusion, but apparent contagion
+  can reflect common exposure or homophily [@griliches1957; @vandenbulte2001;
+  @aral2009].
+- **Moore's chasm** and the empirical **saddle** describe discontinuities between
+  early and mainstream markets [@moore1991a; @goldenberg2002].
+- The **Bass model** decomposes adoption into innovation ($p$) and imitation
+  ($q$) and is a practical tool for forecasting from early sales or by analogy
+  [@bass1969; @mahajan1990].
+- The **TRA and TPB** explain behaviour through intentions formed from
+  attitudes, norms, and perceived control, but intentions translate imperfectly
+  into behaviour [@ajzen1991; @webb2006].
+- **TAM**, **TAM2**, **UTAUT**, and **UTAUT2** identify usefulness, ease of use,
+  social influence, facilitating conditions, hedonic motivation, price value, and
+  habit as determinants of technology acceptance [@davis1989a; @venkatesh2003;
+  @venkatesh2012].
+- Critics argue that acceptance research should open the black box of the IT
+  artifact and study post-adoption behaviour [@bagozzi2007; @benbasat2007].
+:::
+
+```{r tab-inn-summary}
+tibble::tribble(
+  ~Theory, ~Level, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Diffusion of innovations", "Social system", "Perceived attributes; interpersonal communication", "S-shaped cumulative adoption; early adopters influence the majority", "Launch strategy; segmentation; policy design",
+  "Bass model", "Market", "Innovation (p) and imitation (q)", "Bell-shaped new adoptions; peak at ln(q/p)/(p+q)", "Sales and capacity forecasting",
+  "TRA / TPB", "Individual", "Attitudes, norms, perceived control -> intention", "Intention predicts volitional behaviour", "Behaviour-change campaigns; consumer research",
+  "TAM / TAM2", "Individual", "Perceived usefulness and ease of use", "Usefulness dominates intention; ease works partly through usefulness", "Enterprise system rollout; user-centred design",
+  "UTAUT / UTAUT2", "Individual", "Four core determinants plus hedonic, price, habit", "Moderated effects by age, gender, experience", "Workplace and consumer technology adoption"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#innovation-adoption-questions}
+
+1. Ryan and Gross emphasized social communication; Griliches emphasized
+   profitability. Design a study that could estimate the relative contribution
+   of each to the diffusion of a modern agricultural or business technology.
+2. For a product you know well, rate each of Rogers's five attributes. Which
+   attribute would you change first to accelerate adoption, and how?
+3. Using the code in this chapter, explain why Bass-model forecasts made before
+   the sales peak are unstable. What practical safeguards would you recommend to
+   a product manager?
+4. @vandenbulte2001 showed that marketing effort could explain apparent
+   contagion. What data would you need to separate contagion, homophily, and
+   common exposure in the adoption of a new software tool within a firm?
+5. Bagozzi and Benbasat & Barki criticize TAM's focus on two general beliefs.
+   Propose a research design that examines how a *specific design feature* of a
+   generative-AI tool affects perceived usefulness and actual use.
+6. Is Moore's chasm a distinct phenomenon or a consequence of heterogeneity
+   that the Bass model already captures? Defend your answer with reference to
+   @goldenberg2002.
+
+## Further Reading {#innovation-adoption-reading}
+
+- @rogers2003 — the definitive synthesis of diffusion research; the starting
+  point for any study of adoption.
+- @griliches1957 — a classic economic analysis of hybrid corn that shows how
+  profitability shapes the diffusion curve.
+- @vandenbulte2001 — a model reanalysis that every student of social contagion
+  should read.
+- @bass1969 — the original Bass model; brief and still widely used.
+- @peres2010 — a modern review of diffusion models, including network effects and
+  cross-country diffusion.
+- @ajzen1991 — the theory of planned behavior in the author's own words.
+- @venkatesh2003 — the unified theory, with a careful comparison of the eight
+  models it integrates.
+- @benbasat2007 — a short, influential critique of the TAM research programme.

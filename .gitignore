@@ -1,4 +1,12 @@
-.Rproj.user
-.Rhistory
+*.log
+*.rds
+*_cache/
 .RData
+.Renviron
+.Rhistory
+.Rproj.user
 .Ruserdata
+_bookdown_files/
+_cache/
+_scratch/
+docs/

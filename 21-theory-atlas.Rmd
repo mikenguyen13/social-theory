@@ -1,0 +1,138 @@
+# (PART) Reference {-}
+
+# Theory Atlas {#theory-atlas}
+
+The Theory Atlas collects every entry in the book in one place. Use it to look up
+a theory's core claim, find theories that operate through the same mechanism, or
+locate candidates for a research question. In the online edition the table is
+searchable, sortable, and filterable; each theory name links to its full entry.
+
+```{r atlas-data}
+atlas <- readr::read_csv("data/theory-atlas.csv", show_col_types = FALSE)
+# bs4_book writes one page per chapter, named after the chapter id.
+chapter_page <- c("intro", "what-is-theory", "using-theory", "resources", "dynamic-capabilities",
+                  "governance", "environment", "information", "networks-exchange",
+                  "innovation-adoption", "culture", "motivation", "self-regulation",
+                  "social-influence", "judgment-decision", "emotion-wellbeing",
+                  "persuasion-communication", "effects", "phenomena", "frameworks")
+atlas$href <- paste0(chapter_page[atlas$chapter], ".html#", atlas$anchor)
+```
+
+## Searchable atlas {#atlas-table}
+
+```{r tab-atlas-full}
+if (is_html()) {
+  atlas |>
+    dplyr::arrange(chapter, theory) |>
+    dplyr::transmute(
+      Theory = sprintf('<a href="%s">%s</a>', href, htmltools::htmlEscape(theory)),
+      Ch. = chapter, Part = part, Mechanism = mechanism, Level = level,
+      `Key source` = key_source, `Core claim` = core_claim, `Business use` = business_use,
+      Discipline = discipline
+    ) |>
+    DT::datatable(
+      escape = FALSE, rownames = FALSE, filter = "top",
+      extensions = c("Buttons", "Responsive"),
+      caption = "The Theory Atlas: every entry in the book.",
+      options = list(pageLength = 15, autoWidth = FALSE, dom = "Bfrtip",
+                     buttons = c("copy", "csv"),
+                     columnDefs = list(list(visible = FALSE, targets = 8)),
+                     order = list(list(1, "asc")))
+    )
+} else {
+  atlas |>
+    dplyr::arrange(chapter, theory) |>
+    dplyr::select(Theory = theory, Ch. = chapter, Mechanism = mechanism, `Key source` = key_source) |>
+    book_table(caption = "The Theory Atlas: every entry in the book.", font_size = 9)
+}
+```
+
+The atlas is also available as a plain CSV file,
+[`data/theory-atlas.csv`](https://github.com/mikenguyen13/social-theory/blob/master/data/theory-atlas.csv),
+for use in teaching materials, literature reviews, or your own analyses.
+
+## Theories by mechanism {#atlas-mechanisms}
+
+Theories that share a mechanism are natural competitors or complements. Figure
+\@ref(fig:fig-atlas-mech) counts the entries by dominant mechanism and part of the
+book.
+
+```{r fig-atlas-mech, fig.cap = "Entries in the book by dominant mechanism, stacked by part of the book.", fig.height = 5.4}
+part_levels <- c("Foundations", "Organizations & Strategy", "Individuals & Groups",
+                 "Effects, Phenomena & Frameworks")
+mech <- atlas |>
+  dplyr::count(mechanism, part) |>
+  dplyr::mutate(part = factor(part, levels = part_levels))
+ord <- mech |> dplyr::group_by(mechanism) |> dplyr::summarise(t = sum(n)) |> dplyr::arrange(t)
+mech$mechanism <- factor(mech$mechanism, levels = ord$mechanism)
+ggplot(mech, aes(n, mechanism, fill = part)) +
+  geom_col(width = 0.7, colour = "white", linewidth = 0.4) +
+  scale_fill_manual(values = setNames(unname(pal[c("violet", "blue", "orange", "aqua")]), part_levels),
+                    name = NULL) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.05))) +
+  labs(x = "Number of entries", y = NULL, title = "Which mechanisms do the theories rely on?") +
+  theme(panel.grid.major.y = element_blank(), legend.position = "top") +
+  guides(fill = guide_legend(nrow = 2))
+```
+
+```{r tab-atlas-mechanisms}
+mech_desc <- tibble::tribble(
+  ~mechanism, ~`What drives behaviour`,
+  "Information", "What actors know, can observe, or can infer from others' actions",
+  "Incentives", "Payoffs, contracts, and the costs of transacting",
+  "Resources & capabilities", "Heterogeneous, hard-to-imitate assets and routines",
+  "Learning & adaptation", "Search, experimentation, selection, and reconfiguration",
+  "Power & dependence", "Control over resources that others need",
+  "Legitimacy & institutions", "Taken-for-granted rules, norms, and social approval",
+  "Networks & exchange", "Relationships, reciprocity, and positions in social structure",
+  "Diffusion & adoption", "Spread of practices and technologies through social systems",
+  "Culture & values", "Shared values and norms that differ across societies",
+  "Motivation & goals", "Goals, expectations, rewards, and self-regulation",
+  "Identity & social comparison", "Who people think they are and how they compare with others",
+  "Cognition & heuristics", "Limited attention, mental shortcuts, and representation",
+  "Emotion & affect", "Feelings, arousal, and their influence on judgment",
+  "Explanation", "Meta-theoretical tools for building and testing theory"
+)
+atlas |>
+  dplyr::group_by(mechanism) |>
+  dplyr::summarise(Entries = dplyr::n(),
+                   Examples = paste(head(theory, 4), collapse = "; ")) |>
+  dplyr::left_join(mech_desc, by = "mechanism") |>
+  dplyr::arrange(dplyr::desc(Entries)) |>
+  dplyr::select(Mechanism = mechanism, `What drives behaviour`, Entries, Examples) |>
+  book_table(caption = "Mechanism families used in the atlas.")
+```
+
+## Glossary {#glossary}
+
+```{r tab-glossary}
+tibble::tribble(
+  ~Term, ~Definition,
+  "Adverse selection", "A hidden-information problem in which the parties most eager to transact are those the other side would least want to transact with.",
+  "Boundary condition", "A limit on the who, where, and when to which a theory's predictions apply.",
+  "Construct", "An abstract concept (e.g., trust, legitimacy) that a theory relates to other concepts; measured imperfectly by variables.",
+  "Countersignaling", "Deliberately not sending a signal because other information already separates the sender from low types.",
+  "Descriptive norm", "Perception of what most people actually do.",
+  "Dynamic capability", "A firm's ability to integrate, build, and reconfigure competences to address changing environments.",
+  "Equilibrium (pooling)", "An outcome in which different types take the same action, so the action reveals nothing.",
+  "Equilibrium (separating)", "An outcome in which different types take different actions, so the action reveals type.",
+  "HARKing", "Hypothesizing after the results are known: presenting post hoc hypotheses as if they were a priori.",
+  "Injunctive norm", "Perception of what most people approve or disapprove of.",
+  "Isomorphism", "The tendency of organizations in a field to become similar in structure and practice.",
+  "Level of analysis", "The unit (individual, dyad, group, firm, market) at which a construct or theory is defined.",
+  "Loss aversion", "The tendency for losses to loom larger than gains of the same size.",
+  "Mechanism", "The process through which a cause produces an effect; the 'why' of a theory.",
+  "Mediator", "A variable that transmits the effect of an independent variable to a dependent variable.",
+  "Moderator", "A variable that changes the strength or direction of a relationship.",
+  "Moral hazard", "A hidden-action problem in which one party changes behaviour after a contract because the other cannot observe it.",
+  "Nomological network", "The web of theoretical relationships in which a construct is embedded, used to establish construct validity.",
+  "Proposition", "A statement of relationship between constructs; a hypothesis is its testable counterpart in terms of variables.",
+  "Reference point", "The benchmark against which outcomes are coded as gains or losses.",
+  "Regulatory fit", "The increased value people experience when the manner of goal pursuit matches their regulatory orientation.",
+  "Signal", "An observable action chosen by an informed party that conveys information about an unobservable characteristic.",
+  "Social capital", "Resources embedded in, and accessible through, social relationships.",
+  "Structural hole", "A gap between two contacts who are not connected to each other, which a broker can span.",
+  "VRIO", "Valuable, rare, inimitable, organized: the conditions for a resource to yield sustained competitive advantage."
+) |>
+  book_table(caption = "Glossary of recurring terms.")
+```

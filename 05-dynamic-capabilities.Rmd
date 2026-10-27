@@ -1,0 +1,1050 @@
+# Dynamic Capabilities, Learning, and Renewal {#dynamic-capabilities}
+
+In 1975 an engineer at Eastman Kodak, Steven Sasson, built one of the first
+digital cameras. Kodak had world-class chemistry, an iconic brand, global
+distribution, and deep research budgets — by any resource-based standard, a
+formidable collection of valuable, rare, and hard-to-imitate assets. In January
+2012 the company filed for Chapter 11 bankruptcy protection. Its Japanese rival
+Fujifilm faced the same collapse in demand for photographic film, yet emerged as
+a diversified company with businesses in medical systems, pharmaceuticals,
+cosmetics, and advanced materials. Netflix, meanwhile, cannibalized its own
+DVD-by-mail business to build a streaming service, then reinvented itself again
+as a producer of original content.
+
+These cases expose a limitation of the theories in Chapter \@ref(resources).
+Resource-based logic explains why a firm with superior resources outperforms its
+rivals *at a point in time*. It says much less about how firms **renew** their
+resources when technologies, customers, and competitors change — and why the very
+resources that made a firm successful can become the reason it fails. This
+chapter develops the theories that address renewal. We begin with the
+**dynamic capabilities framework** and its main variants, then examine
+**absorptive capacity** (how firms learn from outside), the tension between
+**exploration and exploitation** (how firms allocate attention between the new and
+the known), and **organizational ambidexterity** (how firms try to do both). We
+close each section with business cases drawn from the public record: Netflix,
+Kodak and Fujifilm, Microsoft, and IBM.
+
+```{r tab-dc-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Dynamic capabilities", "How do firms integrate, build, and reconfigure competences as environments change?", "Firm", "Teece, Pisano, & Shuen (1997); Teece (2007)",
+  "Dynamic capabilities as best practices", "Are dynamic capabilities idiosyncratic or common across firms?", "Firm / process", "Eisenhardt & Martin (2000)",
+  "Capability hierarchy and learning", "Where do dynamic capabilities come from?", "Firm / routine", "Winter (2003); Zollo & Winter (2002)",
+  "Core rigidities", "Why do strengths become weaknesses?", "Firm / project", "Leonard-Barton (1992)",
+  "Absorptive capacity", "How do firms recognize, assimilate, and apply external knowledge?", "Firm / unit", "Cohen & Levinthal (1990); Zahra & George (2002)",
+  "Exploration and exploitation", "How should organizations allocate effort between new possibilities and known certainties?", "Organization / system", "March (1991); Levinthal & March (1993)",
+  "Ambidexterity", "How can a firm explore and exploit at the same time?", "Firm / business unit", "Tushman & O'Reilly (1996); Gibson & Birkinshaw (2004)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of capability renewal and organizational learning.")
+```
+
+## Dynamic Capabilities Framework {#dynamic-capabilities-framework}
+
+::: {.theory-card}
+**Core claim.** In environments of rapid technological and market change,
+sustained advantage depends less on the resources a firm owns than on its
+**dynamic capabilities** — its ability to integrate, build, and reconfigure
+internal and external competences to address changing environments.
+
+**Origins.** Strategic management, building on evolutionary economics
+[@nelson1982] and the resource-based view; @teece1997; elaborated in @teece2007
+and @helfat2007; contrasting interpretation in @eisenhardt2000.
+
+**Level of analysis.** Firm; also specific organizational processes (product
+development, acquisition integration, alliance management) and top management.
+
+**Key constructs.** Ordinary (operational) capabilities; dynamic capabilities;
+processes, positions, and paths; sensing, seizing, and transforming;
+replication; imitation; path dependence; core rigidities.
+
+**Boundary conditions.** Most consequential when environments change rapidly or
+discontinuously; in stable environments, investment in dynamic capabilities may
+cost more than it returns [@winter2003]. The form of effective dynamic
+capabilities differs between moderately dynamic and high-velocity markets
+[@eisenhardt2000].
+
+**Related theories.** [Resource-based view](#resource-based-theory),
+[Knowledge-based view](#knowledge-based-view),
+[Absorptive capacity](#absorptive-capacity),
+[Exploration and exploitation](#exploration-exploitation),
+[Ambidexterity](#ambidexterity),
+[Diffusion of innovations](#diffusion-of-innovations).
+:::
+
+### Origins and intellectual history
+
+The framework's deepest root is the evolutionary theory of @nelson1982, which
+replaced the neoclassical firm — a production function that maximizes profit —
+with a firm that operates through **routines**: regular, predictable patterns of
+activity that function as organizational memory and are the organizational
+analogue of genes. Routines are efficient but sticky; firms change mainly by
+searching locally around what they already do, and markets select among firms
+with different routines. From this perspective, a firm's capabilities are not
+chosen at will. They are inherited from its history and modified incrementally.
+
+@teece1997 combined this evolutionary view with resource-based logic. They
+observed that the "winners" in global markets were firms that could demonstrate
+"timely responsiveness and rapid and flexible product innovation, coupled with
+the management capability to effectively coordinate and redeploy internal and
+external competences" [@teece1997, p. 515]. Accumulating valuable assets is not
+enough; firms must also be able to change them. The term **dynamic** refers to
+the capacity to renew competences so as to achieve congruence with a changing
+business environment; **capabilities** emphasises the role of strategic
+management in adapting, integrating, and reconfiguring skills, resources, and
+functional competences. Their formal definition has become the standard one:
+
+::: {.definition}
+**Dynamic capabilities** are "the firm's ability to integrate, build, and
+reconfigure internal and external competences to address rapidly changing
+environments" [@teece1997, p. 516].
+:::
+
+Teece and colleagues distinguished several layers of firm-specific assets, from
+undifferentiated factors of production to the dynamic capabilities that change
+them (Table \@ref(tab:tab-dc-terms)). The hierarchy foreshadows later work on
+the distinction between ordinary and dynamic capabilities [@winter2003;
+@teece2014].
+
+```{r tab-dc-terms}
+tibble::tribble(
+  ~Term, ~`Meaning in Teece, Pisano, & Shuen (1997)`, ~`Business example`,
+  "Factors of production", "Undifferentiated inputs available in disaggregated form in factor markets", "Commodity land, generic labour, standard machinery",
+  "Resources", "Firm-specific assets that are difficult if not impossible to imitate", "Trade secrets, specialized production facilities, engineering experience",
+  "Organizational routines / competences", "Firm-specific assets assembled in integrated clusters spanning individuals and groups so that they enable distinctive activities to be performed", "Quality management, miniaturization, systems integration",
+  "Core competences", "The competences that define a firm's fundamental business", "Optics and imaging for a camera and copier maker",
+  "Dynamic capabilities", "The ability to integrate, build, and reconfigure internal and external competences in rapidly changing environments", "Repeatedly moving into new product generations or business models",
+  "Products", "Final goods and services produced by deploying the firm's competences", "Cameras, copiers, printers"
+) |>
+  book_table(caption = "Layers of firm-specific assets in the dynamic capabilities framework (definitions paraphrased from Teece, Pisano, & Shuen, 1997, p. 516).")
+```
+
+### Paradigms of competitive advantage
+
+@teece1997 located their framework among four paradigms of strategy. Two
+emphasise the exploitation of **market power**. The **competitive forces**
+approach [@porter1980industry] holds that profitability is determined by
+industry structure, and that firms should position themselves to defend against
+the five forces. The **strategic conflict** approach [@shapiro1989theory] uses game
+theory to analyse how firms influence rivals' behaviour through investment,
+pricing, signalling, and commitment. Two emphasise **efficiency**. The
+**resource-based perspective** holds that firm-specific assets matter more than
+industry position, because resources are heterogeneous and "sticky". The
+**dynamic capabilities** approach adds that, when environments change, the
+advantage lies in the capacity to renew those assets. Table
+\@ref(tab:tab-dc-paradigms) summarises the comparison.
+
+```{r tab-dc-paradigms}
+tibble::tribble(
+  ~Dimension, ~`Competitive forces`, ~`Strategic conflict`, ~`Resource-based view`, ~`Dynamic capabilities`,
+  "Key source", "Porter (1980)", "Shapiro (1989)", "Wernerfelt (1984); Barney (1991)", "Teece, Pisano, & Shuen (1997)",
+  "Source of rents", "Market power from favourable industry structure", "Market power from strategic moves against rivals", "Ricardian rents from scarce, firm-specific resources", "Schumpeterian rents from renewing resources and competences",
+  "Unit of analysis", "Industry and firm position", "Firm and rivals (game)", "Resources and capabilities", "Processes, positions, and paths",
+  "View of the firm", "Largely homogeneous within an industry", "Strategic actor with commitments", "Bundle of heterogeneous resources", "Evolving bundle of routines and competences",
+  "Role of management", "Choose industry and position", "Out-manoeuvre rivals", "Acquire and protect valuable resources", "Sense, seize, and transform",
+  "Time horizon", "Static (structure)", "Short-run interaction", "Comparative static", "Dynamic, path-dependent",
+  "Typical prescription", "Enter attractive industries; build barriers", "Use commitment and signalling to deter rivals", "Exploit VRIO resources", "Invest in learning and reconfiguration"
+) |>
+  book_table(caption = "Four paradigms of competitive advantage (organized following Teece, Pisano, & Shuen, 1997).")
+```
+
+The paradigms are not mutually exclusive. Industry structure constrains what any
+firm can earn; game-theoretic interactions shape short-run outcomes; resources
+determine which firms can occupy attractive positions; and dynamic capabilities
+determine whether those firms can move when the structure itself shifts. The
+dynamic capabilities view is most distinctive when the main threat to profits is
+not rivalry within a stable industry but **Schumpeterian** change — new
+technologies and business models that make existing resources obsolete.
+
+### Processes, positions, and paths
+
+@teece1997 argued that a firm's distinctive competence and dynamic capabilities
+are determined by three classes of factors (Table \@ref(tab:tab-dc-ppp)).
+
+**Processes** are the way things are done in the firm — its routines and patterns
+of current practice and learning. They serve three roles. **Coordination and
+integration** is a static concept: how efficiently the firm coordinates activities
+inside and outside its boundaries. **Learning** is a dynamic concept: how
+repetition and experimentation allow tasks to be performed better and faster,
+including through collaborations and partnerships. **Reconfiguration and
+transformation** is the capacity to sense the need to change the asset structure
+and to accomplish the internal and external transformation; because change is
+costly, firms need processes that reduce the cost of low-return change.
+
+**Positions** are the firm's current endowments: technological assets,
+complementary assets, financial assets, reputational assets, structural assets
+(formal and informal organization and external linkages), institutional assets
+(the regulatory and intellectual-property environment), market-structure assets,
+and organizational boundaries (the degree of vertical, lateral, and horizontal
+integration). Positions shape what the firm can do next; complementary assets in
+particular determine whether an innovator can profit from its innovation
+[@teece1986].
+
+**Paths** are the strategic alternatives available to the firm, which are shaped
+by **path dependence** — a firm's previous investments and its repertoire of
+routines constrain its future behaviour — and by **technological opportunities**,
+which depend on the pace and direction of scientific discovery inside and outside
+the industry. Path dependence also complicates learning: when many parameters
+change at once, firms find it hard to identify causal relationships, so learning
+tends to be local.
+
+```{r tab-dc-ppp}
+tibble::tribble(
+  ~Factor, ~Elements, ~`Strategic question`, ~`Business illustration`,
+  "Processes", "Coordination and integration; learning; reconfiguration and transformation", "How well do we coordinate, learn, and change?", "Repeatable product-launch and post-merger integration routines",
+  "Positions", "Technological, complementary, financial, reputational, structural, institutional, and market assets; organizational boundaries", "What do we hold now, and what does it enable?", "An installed customer base and global distribution that a new product can ride on",
+  "Paths", "Path dependence; technological opportunities", "Which futures are open to us given our history?", "A film maker's chemistry know-how opening paths into cosmetics and pharmaceuticals"
+) |>
+  book_table(caption = "Processes, positions, and paths (after Teece, Pisano, & Shuen, 1997).")
+```
+
+### Replicability and imitability
+
+If competences are valuable, why do firms struggle to copy them — including from
+their own units? @teece1997 distinguish **replication**, transferring or
+redeploying competences from one economic setting to another within the firm,
+from **imitation**, replication by competitors. Replication is more than
+information transfer because much of what a firm knows is tacit; the
+organizational context in which a routine works is part of the routine. Imitation
+is harder still, because imitators lack access to that context. The ease of
+imitation is governed by the **appropriability regime** — the strength of
+intellectual-property protection and the inherent replicability of the
+technology. Process technologies hidden inside the factory are usually easier to
+protect than product technologies that can be reverse-engineered once sold. These
+arguments mirror the replication–imitation trade-off in the
+[knowledge-based view](#knowledge-based-view) [@kogut1992].
+
+### Microfoundations: sensing, seizing, and transforming
+
+A decade later, @teece2007 disaggregated dynamic capabilities into three clusters
+of activities, each with identifiable **microfoundations** — skills, processes,
+procedures, organizational structures, decision rules, and disciplines:
+
+- **Sensing** opportunities and threats: scanning, searching, and exploring
+  technologies and markets; directing internal R&D; tapping developments in
+  science, suppliers, and complementors; identifying changing customer needs and
+  latent demand.
+- **Seizing** opportunities: designing the business model and customer solution;
+  selecting enterprise boundaries and managing complements; making timely,
+  sometimes irreversible, investment decisions while avoiding decision biases;
+  and building loyalty and commitment among employees.
+- **Transforming** (managing threats and reconfiguring): continually realigning
+  and recombining tangible and intangible assets; decentralizing and maintaining
+  near-decomposable structures; managing cospecialized assets; governance and
+  knowledge management.
+
+@teece2014 sharpened the distinction between **ordinary capabilities**, which
+allow a firm to perform current activities efficiently ("doing things right"), and
+**dynamic capabilities**, which allow it to do the right things at the right time
+by combining good strategy with the capacity to orchestrate resources. Ordinary
+capabilities can often be bought or benchmarked; dynamic capabilities rest on
+signature processes and entrepreneurial management that are hard to imitate.
+Figure \@ref(fig:fig-dc-ssr) summarises the logic.
+
+```{r fig-dc-ssr, fig.cap = "Microfoundations of dynamic capabilities. Sensing identifies opportunities and threats, seizing commits resources to address them, and transforming reconfigures the asset base; managerial cognition and the firm's existing positions shape each step. Based on Teece (2007)."}
+mechanism_diagram(sprintf('
+  E  [label = "Environmental change\\n(technology, demand,\\nregulation)", %s]
+  S  [label = "Sensing\\n(scan, interpret,\\nlearn)", %s]
+  Z  [label = "Seizing\\n(business model,\\ninvestment, boundaries)", %s]
+  T  [label = "Transforming\\n(realign, recombine,\\nreconfigure assets)", %s]
+  F  [label = "Evolutionary fitness\\nand sustained\\nperformance", %s]
+  M  [label = "Managerial cognition\\nand leadership", %s]
+  P  [label = "Existing positions\\nand paths", %s]
+  E -> S -> Z -> T -> F
+  M -> S [style = dashed]
+  M -> Z [style = dashed]
+  P -> Z [style = dashed]
+  P -> T [style = dashed]
+  T -> S [label = " renewed\\n asset base", style = dashed, constraint = false]
+', node_construct, node_mechanism, node_mechanism, node_mechanism, node_outcome,
+   node_moderator, node_moderator))
+```
+
+### Dynamic capabilities as best practices
+
+@eisenhardt2000 offered an influential reinterpretation. They argued that dynamic
+capabilities are not vague, idiosyncratic abilities but **specific, identifiable
+processes** — product development, strategic decision making, alliancing,
+acquisition integration, resource allocation, and knowledge brokering. Because
+effective versions of these processes share common features across firms, dynamic
+capabilities exhibit **equifinality** (firms can reach them from different
+starting points) and substantial **commonality** — they resemble "best practices".
+It follows that dynamic capabilities are *necessary but not sufficient* for
+competitive advantage: advantage comes from the **resource configurations** that
+firms create with them, sooner, more astutely, or more fortuitously than rivals.
+
+The form of effective dynamic capabilities, they argued, depends on **market
+dynamism**. In **moderately dynamic** markets, where change is frequent but
+predictable, dynamic capabilities resemble traditional routines: detailed,
+analytic, stable processes with predictable outcomes that rely on existing
+knowledge. In **high-velocity** markets, where change is nonlinear and
+unpredictable, effective dynamic capabilities are **simple rules** and
+experiential processes that rely on rapidly created new knowledge, prototyping,
+and iterative execution; their outcomes are unpredictable, and they are
+inherently fragile. Learning mechanisms such as repeated practice, codification,
+learning from small failures, and pacing guide their evolution.
+
+```{r tab-dc-views}
+tibble::tribble(
+  ~Dimension, ~`Teece, Pisano, & Shuen (1997); Teece (2007)`, ~`Eisenhardt & Martin (2000)`,
+  "Nature of dynamic capabilities", "Firm-specific, partly tacit, embedded in processes and managerial skill", "Specific, identifiable processes with common features across firms",
+  "Heterogeneity", "Idiosyncratic; hard to imitate", "Commonalities across firms (best practices); equifinality",
+  "Link to advantage", "Can be a direct source of sustained advantage", "Necessary but not sufficient; advantage lies in resulting resource configurations",
+  "Role of market dynamism", "Most valuable in rapidly changing environments", "Form differs: detailed routines (moderate) vs. simple rules (high velocity)",
+  "Role of managers", "Entrepreneurial sensing, seizing, and transforming", "Designing and executing effective processes",
+  "Sustainability", "Durable if microfoundations are hard to replicate", "Advantage often temporary in high-velocity markets"
+) |>
+  book_table(caption = "Two conversations about dynamic capabilities (see Peteraf, Di Stefano, & Verona, 2013).")
+```
+
+::: {.debate}
+**Two conversations or one?** @peteraf2013 showed through a co-citation analysis
+that the dynamic capabilities literature had split into two largely separate
+conversations, anchored by @teece1997 and @eisenhardt2000, which disagree about
+whether dynamic capabilities can underpin *sustained* advantage and under what
+market conditions. They proposed a contingent reconciliation: the two views can
+be integrated once boundary conditions such as market dynamism and the level of
+the capability are made explicit. Critics have also raised a **tautology**
+concern similar to the one levelled at the RBV: if a dynamic capability is defined
+by successful change, its link to performance is true by definition. A related
+**infinite-regress** problem asks whether there are capabilities to change
+dynamic capabilities, and capabilities to change *those*; @collis1994 noted that
+any higher-order capability can be trumped by one at a still higher order.
+@schilke2018, reviewing the empirical literature, found growing evidence that
+dynamic capabilities are associated with performance, often indirectly through
+changes in operational capabilities, while urging clearer measurement and
+stronger causal designs.
+:::
+
+### The capability hierarchy and learning mechanisms
+
+@winter2003 clarified the concept by distinguishing **zero-order** (ordinary)
+capabilities — those that permit a firm to make a living in the short term by
+producing and selling the same product to the same customers at the same scale —
+from **first-order** dynamic capabilities that change the product, the production
+process, the scale, or the customers served, and from **higher-order**
+capabilities that change the dynamic capabilities themselves. He made two further
+points that are easy to miss. First, not all change requires a dynamic capability:
+firms can change through **ad hoc problem solving**, which is non-routine and
+creative but not patterned. Second, dynamic capabilities are **costly** — they
+require long-term commitments to specialized resources and people — so whether
+they pay off depends on how often and how predictably the environment changes.
+A firm in a stable market may rationally rely on ad hoc change.
+
+Where do dynamic capabilities come from? @zollo2002 defined a dynamic capability
+as a learned and stable pattern of collective activity through which an
+organization systematically generates and modifies its operating routines in
+pursuit of improved effectiveness. They traced its origins to three **learning
+mechanisms** of increasing deliberateness and cost:
+
+1. **Experience accumulation** — tacit learning by doing, as routines are
+   repeated.
+2. **Knowledge articulation** — making knowledge explicit through collective
+   discussion, debriefings, and performance reviews.
+3. **Knowledge codification** — writing knowledge down in manuals, decision
+   tools, checklists, and software.
+
+The more deliberate mechanisms are especially valuable when the relevant tasks
+are **infrequent**, **heterogeneous**, and **causally ambiguous** — conditions under
+which experience alone teaches poorly. Post-acquisition integration is their
+example: few firms do enough acquisitions for experience alone to be a reliable
+teacher, and each deal differs from the last. Figure \@ref(fig:fig-dc-hierarchy)
+combines Winter's hierarchy with Zollo and Winter's learning mechanisms.
+
+```{r fig-dc-hierarchy, fig.cap = "The capability hierarchy. Learning mechanisms generate and modify dynamic capabilities, which in turn modify the operating routines (ordinary capabilities) that produce current performance. Based on Winter (2003) and Zollo and Winter (2002).", fig.height = 5}
+mechanism_diagram(sprintf('
+  L1 [label = "Experience\\naccumulation", %s]
+  L2 [label = "Knowledge\\narticulation", %s]
+  L3 [label = "Knowledge\\ncodification", %s]
+  D  [label = "Dynamic capabilities\\n(first-order: change product,\\nprocess, scale, customers)", %s]
+  O  [label = "Operating routines\\n(zero-order / ordinary\\ncapabilities)", %s]
+  P  [label = "Current performance\\nand adaptation", %s]
+  X  [label = "Frequency, heterogeneity,\\nand causal ambiguity\\nof the task", %s]
+  L1 -> D
+  L2 -> D
+  L3 -> D
+  D -> O [label = " generate\\n and modify"]
+  O -> P
+  X -> L2 [style = dashed]
+  X -> L3 [style = dashed]
+  P -> L1 [label = " experience", style = dashed, constraint = false]
+', node_construct, node_construct, node_construct, node_mechanism, node_mechanism,
+   node_outcome, node_moderator), rankdir = "TB")
+```
+
+@helfat2003 added a life-cycle perspective. Capabilities are founded, developed,
+and reach maturity; when environments change, they may branch into
+**retirement**, **retrenchment**, **renewal**, **replication** (in another market),
+**redeployment** (to a related market), or **recombination** (with other
+capabilities). The capability life cycle explains why a firm's capability
+portfolio has a history and why the same capability can be an asset in one era and
+a burden in the next.
+
+### Core rigidities
+
+@leonardbarton1992 identified the paradox at the heart of capability renewal. In
+a field study of new product development projects, she found that the **core
+capabilities** that distinguish a firm — rooted in employee knowledge and skills,
+technical systems, managerial systems, and values and norms — simultaneously
+enhance projects that fit them and hinder projects that do not. The same
+capabilities become **core rigidities** when the firm needs to move in a new
+direction: skills that were celebrated become narrow, systems that were efficient
+become constraints, and values that motivated people become filters that screen
+out unfamiliar ideas.
+
+Research on technological change reinforces the point. Discontinuities that are
+**competence-destroying** — rendering existing skills obsolete — tend to be
+introduced by new entrants and to hurt incumbents, whereas **competence-enhancing**
+discontinuities tend to favour incumbents [@tushman1986]. Even seemingly modest
+**architectural innovations**, which change how known components are linked,
+can defeat incumbents whose communication channels and information filters are
+organized around the old architecture [@henderson1990]. And capability is not
+the only constraint: in their study of Polaroid's move into digital imaging,
+@tripsas2000 showed that the firm developed substantial technical capability but
+that managerial beliefs about the business model — rooted in its instant-film
+heritage — shaped how it deployed that capability. **Cognition** as well as
+capability determines whether a firm can change.
+
+::: {.business-case}
+**Kodak and Fujifilm.** Both firms faced the same competence-destroying
+discontinuity as digital imaging displaced chemical film. Kodak was not ignorant
+of the technology — its own engineer had built an early digital camera in 1975 —
+and it introduced digital cameras and services. But its economics, organization,
+and identity were built around film, processing, and paper, and digital products
+offered nothing comparable to that business. The company filed for Chapter 11
+protection in 2012 and emerged as a much smaller firm. Fujifilm, under
+long-serving chief executive Shigetaka Komori, restructured its film operations
+and asked which of its underlying competences — chemistry, thin films, coatings,
+precision manufacturing, and image processing — could be redeployed. It moved
+into medical imaging and pharmaceuticals (including the acquisition of Toyama
+Chemical in 2008), launched a cosmetics line built on its expertise in collagen
+and antioxidants, and supplied optical films for flat-panel displays. In Helfat
+and Peteraf's terms, Fujifilm **redeployed** and **recombined** capabilities;
+in Teece's terms, it sensed the threat and transformed its asset base, rather
+than defending a core that had become a rigidity.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Netflix: renewing the business model twice.** Netflix was founded in 1997 as a
+DVD-by-mail rental service and built ordinary capabilities in logistics,
+subscription billing, and recommendation algorithms. In 2007 it launched
+streaming, a technology that would eventually cannibalize its own core. In 2011
+it announced a plan to split the DVD business into a separate service called
+Qwikster, provoking a customer backlash; the plan was reversed within weeks — a
+reminder that seizing is risky and that reconfiguration has costs. Netflix then
+moved into original programming, beginning with *House of Cards* in 2013, which
+required capabilities in content development, talent relations, and global
+production that a distributor had not needed. It expanded into most countries in
+2016 and closed its DVD business in 2023. Read through Teece's framework, Netflix
+sensed shifts in broadband and consumer behaviour, seized them by committing to
+streaming and original content before they were profitable, and transformed its
+asset base from warehouses and discs to software, data, and intellectual
+property. Its rival Blockbuster, which filed for bankruptcy in 2010, illustrates
+the alternative path.
+:::
+
+::: {.business-case}
+**Microsoft's turn to the cloud.** When Satya Nadella became chief executive in
+2014, Microsoft's profits were anchored in Windows and Office licences, and it had
+struggled in mobile devices and search. Under the banner "mobile-first,
+cloud-first", the company shifted investment toward its Azure cloud platform and
+subscription software (Office 365), wrote down its phone business, made its
+software available on rival platforms, and embraced open-source technologies it
+had once opposed, later acquiring LinkedIn (2016) and GitHub (2018). Nadella
+emphasised that the strategic shift depended on a cultural one, built around a
+"growth mindset" [@nadella2017]. In dynamic capabilities terms, Microsoft did not
+abandon its positions — enterprise relationships, developer ecosystems, and
+software engineering — but **recombined** them with new cloud infrastructure; the
+transformation of managerial systems and values, Leonard-Barton's deepest layers
+of capability, was as important as the technology.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Firms with more deliberate learning mechanisms (articulation and
+  codification) for acquisition integration will achieve better post-acquisition
+  performance, especially when acquisitions are infrequent and heterogeneous
+  [@zollo2002].
+- *H2.* The effect of dynamic capabilities on firm performance will be mediated by
+  changes in operational capabilities [@schilke2018].
+- *H3.* Detailed, codified product development routines will improve performance
+  in moderately dynamic markets but not in high-velocity markets, where simple
+  rules will be more effective [@eisenhardt2000].
+
+**Designs.** Longitudinal case studies of renewal; panel studies of firms facing
+exogenous shocks (deregulation, technological discontinuities); event studies of
+reconfiguration announcements; simulation models of routine evolution; survey
+scales of sensing, seizing, and transforming validated against behavioural
+indicators.
+
+**Measures.** Frequency and speed of product-line renewal; acquisition and
+alliance experience and the presence of integration manuals or teams; R&D
+reallocation across technology classes; top-management attention to emerging
+issues (text analysis of letters to shareholders or earnings calls).
+
+**Data sources.** Patent and product-launch databases; SDC for acquisitions and
+alliances; annual reports and earnings-call transcripts; industry case archives.
+:::
+
+::: {.pitfall}
+**Defining capability by outcome.** It is tempting to infer that a firm that
+adapted successfully "had" dynamic capabilities and one that failed did not. This
+is circular. Measure the capability *before* the change — the presence of
+sensing processes, investment rules, learning mechanisms — and test whether it
+predicts adaptation, ideally among firms facing the same shock. Remember also
+Winter's point that change can happen without a dynamic capability, through ad
+hoc problem solving or luck.
+:::
+
+## Absorptive Capacity {#absorptive-capacity}
+
+::: {.theory-card}
+**Core claim.** A firm's ability to recognize the value of new external
+knowledge, assimilate it, and apply it to commercial ends — its **absorptive
+capacity** — is largely a function of its prior related knowledge, and therefore
+develops cumulatively and path-dependently.
+
+**Origins.** Economics of innovation and organization theory; @cohen1990;
+reconceptualized by @zahra2002.
+
+**Level of analysis.** Firm and business unit; also individuals and teams who
+act as gatekeepers and boundary spanners.
+
+**Key constructs.** Prior related knowledge; acquisition; assimilation;
+transformation; exploitation; potential vs. realized absorptive capacity;
+activation triggers; social integration mechanisms; regimes of appropriability.
+
+**Boundary conditions.** Most important where valuable knowledge is generated
+outside the firm (by universities, suppliers, customers, or rivals) and is
+partly tacit or complex.
+
+**Related theories.** [Knowledge-based view](#knowledge-based-view),
+[Dynamic capabilities](#dynamic-capabilities-framework),
+[Exploration and exploitation](#exploration-exploitation),
+[Diffusion of innovations](#diffusion-of-innovations).
+:::
+
+### Core logic
+
+@cohen1990 began from an observation about learning in individuals: the ability to
+learn new things depends on what one already knows, because new knowledge is
+understood by relating it to existing knowledge structures. Organizations are no
+different. A firm's **absorptive capacity** is its ability to recognize the value
+of new, external information, assimilate it, and apply it to commercial ends.
+Because it depends on prior related knowledge, absorptive capacity is
+**cumulative** — investing in it today makes tomorrow's learning easier — and
+**path-dependent**. A firm that stops investing in a field may find itself
+**locked out**: it can no longer recognize the significance of developments it
+once could have exploited.
+
+Two implications have been especially influential. First, a firm's own R&D does
+more than produce inventions; it also builds the capacity to understand and use
+other organizations' inventions. Internal research and external sourcing are
+therefore complements rather than substitutes. Second, organizational absorptive
+capacity is not simply the sum of individuals' knowledge. It depends on
+**gatekeepers** and **boundary spanners** who translate external knowledge for
+internal use, and on internal communication structures that move knowledge to
+where it can be applied. Some overlap of knowledge across units helps
+communication, while diversity of backgrounds increases the range of external
+developments the firm can recognize.
+
+### Potential and realized absorptive capacity
+
+@zahra2002 reconceptualized absorptive capacity as a dynamic capability with four
+dimensions grouped into two components. **Potential absorptive capacity
+(PACAP)** comprises **acquisition** (identifying and acquiring external knowledge)
+and **assimilation** (analysing, interpreting, and understanding it). **Realized
+absorptive capacity (RACAP)** comprises **transformation** (combining new and
+existing knowledge) and **exploitation** (applying the result to create new or
+improved products, processes, and competences). The distinction explains why
+firms that are good at scanning the environment do not necessarily profit from
+what they find: PACAP without RACAP generates costs without returns, while RACAP
+without PACAP can produce short-term gains but leaves the firm exposed to
+competence traps. The ratio of realized to potential capacity is an **efficiency
+factor** that varies across firms.
+
+The model also specifies contingencies (Figure \@ref(fig:fig-dc-acap)).
+**Activation triggers** — crises, technological shifts, regulatory changes —
+intensify the search for external knowledge. **Social integration mechanisms**,
+formal and informal, reduce the gap between potential and realized capacity by
+spreading knowledge within the firm. **Regimes of appropriability** — the
+strength of intellectual-property protection and the inimitability of the
+resulting knowledge — determine whether realized capacity translates into
+sustained advantage.
+
+```{r fig-dc-acap, fig.cap = "Potential and realized absorptive capacity. External knowledge sources and prior experience feed potential capacity (acquisition and assimilation); social integration mechanisms convert it into realized capacity (transformation and exploitation), which yields advantage when appropriability regimes protect the results. Adapted from Zahra and George (2002)."}
+mechanism_diagram(sprintf('
+  K  [label = "External knowledge\\nsources and\\nprior experience", %s]
+  P  [label = "Potential ACAP\\n(acquisition,\\nassimilation)", %s]
+  R  [label = "Realized ACAP\\n(transformation,\\nexploitation)", %s]
+  C  [label = "Competitive advantage\\n(flexibility, innovation,\\nperformance)", %s]
+  AT [label = "Activation\\ntriggers", %s]
+  SI [label = "Social integration\\nmechanisms", %s]
+  AR [label = "Regimes of\\nappropriability", %s]
+  K -> P -> R -> C
+  AT -> P [style = dashed]
+  SI -> R [style = dashed]
+  AR -> C [style = dashed]
+', node_construct, node_mechanism, node_mechanism, node_outcome,
+   node_moderator, node_moderator, node_moderator))
+```
+
+::: {.business-case}
+**Illustrative scenario: open innovation in a consumer-goods firm.** A packaged-food
+company launches an open-innovation portal and a corporate venture unit to scout
+start-ups and university labs (potential absorptive capacity). Two years later,
+the scouting team has catalogued hundreds of technologies, yet few have reached
+products. Diagnosis using Zahra and George's model points to weak realized
+capacity: the scouts report to a corporate strategy office with no product
+responsibility, business-unit R&D teams lack the food-science expertise to
+evaluate fermentation-based proteins, and there is no forum in which scouts and
+product managers jointly prioritize opportunities. Remedies follow the model:
+rotate R&D staff through the scouting unit, create joint stage-gate reviews (a
+social integration mechanism), and invest selectively in internal research in
+the most promising fields to build the prior knowledge needed to evaluate them.
+:::
+
+::: {.pitfall}
+**Measuring absorptive capacity with R&D intensity alone.** R&D spending is the
+most common proxy, but it captures, at best, investment in potential capacity in
+technical domains. It misses non-technical knowledge (market, regulatory), the
+transformation and exploitation components, and the internal integration
+mechanisms that Cohen and Levinthal themselves emphasised. Combine input measures
+with process indicators (boundary-spanning roles, cross-unit forums) and outcome
+measures (citations to external knowledge in the firm's patents, speed of
+adopting external innovations).
+:::
+
+## Exploration and Exploitation {#exploration-exploitation}
+
+::: {.theory-card}
+**Core claim.** Adaptive systems must divide resources between **exploration** of
+new possibilities and **exploitation** of old certainties. Because the returns to
+exploitation are surer, faster, and closer, learning processes tend to favour it,
+which improves short-run performance but can be self-destructive in the long run.
+
+**Origins.** Organizational learning and behavioural theory of the firm;
+@march1991; @levinthal1993; @levitt1988.
+
+**Level of analysis.** Individual, organization, and population of
+organizations.
+
+**Key constructs.** Exploration; exploitation; competency trap; success trap;
+failure trap; temporal, spatial, and failure myopia; mutual learning.
+
+**Boundary conditions.** The tension is sharpest when resources are scarce,
+when exploration and exploitation require different structures and cultures,
+and when environments change.
+
+**Related theories.** [Ambidexterity](#ambidexterity),
+[Dynamic capabilities](#dynamic-capabilities-framework),
+[Absorptive capacity](#absorptive-capacity),
+[Bounded rationality](#bounded-rationality).
+:::
+
+### Core logic
+
+@march1991 framed organizational adaptation as a choice between two kinds of
+activity. **Exploration** includes search, variation, risk taking,
+experimentation, play, flexibility, discovery, and innovation. **Exploitation**
+includes refinement, choice, production, efficiency, selection, implementation,
+and execution. Both are essential, but they compete for scarce resources and
+they have different return profiles: the returns to exploitation are positive,
+proximate, and predictable, whereas the returns to exploration are uncertain,
+distant, and often negative. Because organizations learn from feedback, and
+feedback from exploitation arrives sooner and more reliably, adaptive processes
+tend to refine exploitation faster than exploration. The result is effective in
+the short run and potentially self-destructive in the long run.
+
+March illustrated the argument with a model of **mutual learning** between an
+organizational code (beliefs embodied in procedures and norms) and its members.
+The code learns from individuals whose beliefs are closer to reality, and
+individuals are socialized to the code. Fast socialization speeds convergence but
+eliminates the diversity from which the code learns; slower learners, and a
+moderate turnover of personnel, preserve useful variety and improve long-run
+knowledge. Diversity, in other words, is an exploration resource.
+
+@levitt1988 had already identified the **competency trap**: favourable
+performance with an inferior procedure leads an organization to accumulate more
+experience with it, which keeps experience with a superior procedure too low to
+make it rewarding to use. @levinthal1993 generalized the problem as the **myopia
+of learning**. Learning tends to overlook the long run (**temporal myopia**),
+distant parts of the organization or environment (**spatial myopia**), and failures
+(**failure myopia**). Two dynamic traps follow. In a **success trap**, exploitation
+yields success, which encourages more exploitation, which drives out exploration.
+In a **failure trap**, exploration produces failure, which prompts further search
+for something new, which produces further failure, so the organization never
+stays long enough to become competent at anything.
+
+### Mechanism: an illustrative simulation
+
+The exploration–exploitation problem has a precise analogue in the
+**multi-armed bandit** problem of decision theory and reinforcement learning
+[@sutton2018]. A decision maker repeatedly chooses among options with unknown,
+possibly changing payoffs. Choosing the option with the highest estimated payoff
+exploits current knowledge; choosing another option explores. A simple policy,
+**$\varepsilon$-greedy**, exploits with probability $1 - \varepsilon$ and explores
+at random with probability $\varepsilon$.
+
+Figure \@ref(fig:fig-dc-bandit) applies the policy to a stylised firm. The firm
+knows its core business well. An emerging opportunity starts with low payoffs
+but improves over time, while the core business slowly declines. Unfamiliar
+options are initially valued pessimistically, as they often are inside
+established firms. A pure exploiter ($\varepsilon = 0$) earns the most early on and then falls
+into a competency trap: it never learns enough about the emerging option to
+switch. A heavy explorer ($\varepsilon = 0.3$) pays a large exploration tax while the
+environment is stable, but detects and moves to the emerging opportunity fastest
+once it improves. A moderate explorer ($\varepsilon = 0.1$) gives up a little early
+payoff and adapts more slowly, but it does adapt.
+
+```{r fig-dc-bandit, fig.cap = "Illustrative bandit simulation of exploration and exploitation. A firm chooses each period among a known core business that slowly declines, an emerging opportunity that improves, and four other options. The pure exploiter wins early but falls into a competency trap; exploration pays off once the environment shifts.", fig.height = 4.2}
+set.seed(1991)
+sim_bandit <- function(eps, runs = 400, n_periods = 400, K = 6, alpha = 0.1) {
+  set.seed(1991)                                      # common random environments across policies
+  t_seq <- seq_len(n_periods)
+  core  <- ifelse(t_seq <= 150, 1, pmax(0.3, 1 - 0.7 * (t_seq - 150) / 200))   # declining core
+  emerg <- ifelse(t_seq <= 100, 0.2, pmin(2, 0.2 + 1.8 * (t_seq - 100) / 200)) # rising opportunity
+  other <- matrix(rnorm(runs * (K - 2), 0, 0.5), runs, K - 2)                   # other options
+  Q <- cbind(1, matrix(-0.5, runs, K - 1))            # core known; unfamiliar options undervalued
+  reward <- matrix(NA_real_, runs, n_periods)
+  for (t in t_seq) {
+    mu <- cbind(core[t], emerg[t], other)
+    greedy <- max.col(Q, ties.method = "random")
+    choice <- ifelse(runif(runs) < eps, sample.int(K, runs, replace = TRUE), greedy)
+    idx <- cbind(seq_len(runs), choice)
+    r <- rnorm(runs, mu[idx], 1)
+    Q[idx] <- Q[idx] + alpha * (r - Q[idx])           # recency-weighted learning
+    reward[, t] <- r
+  }
+  data.frame(period = t_seq, reward = colMeans(reward), eps = eps)
+}
+bandit <- bind_rows(lapply(c(0, 0.1, 0.3), sim_bandit)) |>
+  group_by(eps) |>
+  mutate(smooth = as.numeric(stats::filter(reward, rep(1 / 15, 15), sides = 1))) |>
+  ungroup() |>
+  mutate(policy = factor(eps, levels = c(0, 0.1, 0.3),
+                         labels = c("Pure exploitation (rate 0)", "Moderate exploration (rate 0.1)",
+                                    "Heavy exploration (rate 0.3)")))
+ggplot(filter(bandit, !is.na(smooth)), aes(period, smooth, colour = policy)) +
+  annotate("rect", xmin = 100, xmax = 300, ymin = -Inf, ymax = Inf, fill = ink[["grid"]], alpha = 0.45) +
+  annotate("text", x = 200, y = 1.95, label = "Environment shifts:\ncore declines, new option improves",
+           size = 3.1, colour = ink[["secondary"]]) +
+  geom_line(linewidth = 0.95) +
+  scale_colour_manual(values = c(pal[["blue"]], pal[["orange"]], pal[["aqua"]])) +
+  scale_y_continuous(limits = c(0, 2.1)) +
+  labs(x = "Period", y = "Average payoff (15-period moving avg.)", colour = NULL,
+       title = "Exploitation wins early; exploration wins when the world changes",
+       caption = "Stylised simulation: 400 simulated firms per policy, 6 options, learning rate 0.1, payoff noise sd = 1.") +
+  guides(colour = guide_legend(nrow = 2))
+```
+
+Figure \@ref(fig:fig-dc-tradeoff) varies the exploration rate systematically and
+reports average payoffs in the stable early phase, after the environmental shift,
+and over the whole horizon. Early payoffs fall monotonically with exploration —
+exploration is a tax on current performance. Late payoffs rise sharply as soon as
+the firm explores at all and fall again when exploration becomes excessive. The
+whole-horizon payoff is an inverted U: too little exploration produces a
+competency trap; too much produces the failure-trap pattern of never
+capitalizing on what has been learned. The optimal balance depends on how
+quickly and how much the environment changes — the core contingency in March's
+argument.
+
+```{r fig-dc-tradeoff, fig.cap = "Illustrative trade-off between exploration and performance in the same stylised bandit environment. Exploration lowers early payoffs but raises payoffs after the environment shifts; total payoff peaks at an intermediate exploration rate.", fig.height = 3.9}
+eps_grid <- c(0, 0.02, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5)
+tradeoff <- bind_rows(lapply(eps_grid, sim_bandit)) |>
+  group_by(eps) |>
+  summarise(`Early, stable phase (periods 1-100)` = mean(reward[period <= 100]),
+            `After the shift (periods 301-400)` = mean(reward[period > 300]),
+            `Whole horizon (periods 1-400)` = mean(reward)) |>
+  pivot_longer(-eps, names_to = "window", values_to = "payoff") |>
+  mutate(window = factor(window, levels = c("Early, stable phase (periods 1-100)",
+                                            "After the shift (periods 301-400)",
+                                            "Whole horizon (periods 1-400)")))
+ggplot(tradeoff, aes(eps, payoff, colour = window)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2.2) +
+  scale_colour_manual(values = c(pal[["blue"]], pal[["orange"]], pal[["aqua"]])) +
+  scale_x_continuous(breaks = seq(0, 0.5, by = 0.1)) +
+  labs(x = "Exploration rate (share of choices made at random)", y = "Average payoff per period",
+       colour = NULL, title = "The exploration tax and the exploration dividend",
+       caption = "Stylised simulation (same environment as the previous figure); 400 simulated firms per exploration rate.") +
+  guides(colour = guide_legend(nrow = 2))
+```
+
+The simulation is deliberately simple, but it reproduces three of the theory's
+core claims: exploitation is rewarded sooner and more reliably; a firm that learns
+only from its own experience with familiar options can be trapped by its own
+competence; and the right balance is contingent on environmental change. It also
+illustrates why the balance is hard to manage in practice: the cost of exploration
+is visible in every quarterly report, whereas the cost of under-exploration is
+visible only after the environment shifts.
+
+### Evidence and extensions
+
+Empirical and conceptual work has refined March's framing in several ways.
+@benner2003 showed that **process management** practices — such as quality
+programmes and process certification — increase exploitation and, if applied
+throughout the organization, crowd out exploration; they argued for insulating
+exploratory units from such practices. @gupta2006 asked whether exploration and
+exploitation are two ends of one continuum (competing for the same resources) or
+**orthogonal** activities that can both be high, and concluded that the answer
+depends on the level of analysis and on whether the activities draw on the same
+scarce resources. @lavie2010 reviewed the literature and distinguished several
+ways firms balance the two: **organizational separation** (different units),
+**temporal separation** (alternating over time), and **domain separation**
+(exploring in some domains, such as alliances, while exploiting in others).
+
+### Disruptive innovation
+
+@christensen1997 provided a vivid, partly complementary account of why successful
+firms under-explore. In studies of the disk-drive industry and other sectors, he
+distinguished **sustaining** technologies, which improve products along dimensions
+mainstream customers already value, from **disruptive** technologies, which
+initially underperform on those dimensions but offer other benefits (simplicity,
+convenience, lower cost) valued by fringe or new customers. Incumbents typically
+lead in sustaining innovation. They lose to disruptive innovations not because
+they are badly managed but because good management — listening to the best
+customers, investing in the highest-margin opportunities — directs resources away
+from small, low-margin markets that later grow. In the language of this chapter,
+the firm's resource-allocation processes are an exploitation machine; Christensen's
+remedy, an autonomous organization with a cost structure suited to the new market,
+is a form of structural ambidexterity.
+
+::: {.debate}
+**How general is disruption?** The theory of disruptive innovation has been widely
+applied — some argue over-applied — to any successful entrant. Scholars have
+questioned whether disruption can be identified *ex ante* rather than only in
+hindsight, and have noted incumbents that responded successfully to apparently
+disruptive threats. For research purposes, the theory is most useful when its
+specific conditions are stated and measured: an entrant whose initial product
+underperforms on mainstream attributes, a performance trajectory that eventually
+meets mainstream needs, and incumbent resource-allocation processes that
+systematically favour existing customers.
+:::
+
+## Organizational Ambidexterity {#ambidexterity}
+
+::: {.theory-card}
+**Core claim.** Organizations can achieve long-run success by simultaneously
+exploiting existing competences and exploring new ones — through structurally
+separate units integrated by senior leadership, through a context that enables
+individuals to divide their own time, or through sequential shifts over time.
+
+**Origins.** Organization theory and strategy; @tushman1996; @oreilly2004;
+@gibson2004; reviewed in @raisch2008 and @oreilly2013.
+
+**Level of analysis.** Firm, business unit, senior team, and individual.
+
+**Key constructs.** Structural ambidexterity; contextual ambidexterity
+(alignment and adaptability); sequential (temporal) ambidexterity; senior team
+integration; organizational context (discipline, stretch, support, trust).
+
+**Boundary conditions.** Benefits are greatest for firms with the resources to
+sustain both activities and in environments that are dynamic; small firms and
+stable environments may benefit more from focus.
+
+**Related theories.** [Exploration and exploitation](#exploration-exploitation),
+[Dynamic capabilities](#dynamic-capabilities-framework),
+[Contingency theory](#contingency-theory),
+[Upper echelons theory](#upper-echelons-theory).
+:::
+
+### Three forms of ambidexterity
+
+@tushman1996 argued that long-term success requires firms to compete in mature
+markets, where cost, efficiency, and incremental innovation matter, while also
+developing new products and services for emerging markets, where experimentation,
+speed, and flexibility matter. Because these require different structures,
+processes, and cultures, they proposed the **ambidextrous organization**: separate
+units for exploration and exploitation, each with its own alignment of people,
+structure, and culture, held together by a senior team and a common strategic
+intent. @oreilly2004 reported that firms using such structures were more
+successful at launching breakthrough innovations without sacrificing the
+existing business than firms that relied on functional designs, cross-functional
+teams embedded in the existing organization, or unsupported independent units.
+The key was integration at the top: separate units, but a senior team that
+shared resources and resolved conflicts between them.
+
+@gibson2004 proposed a different route. **Contextual ambidexterity** is the
+behavioural capacity to demonstrate both **alignment** (coherence among
+activities in pursuit of current goals) and **adaptability** (the capacity to
+reconfigure activities quickly to meet changing demands) across an entire
+business unit. It arises not from structural separation but from an
+organizational context that combines **performance management** (discipline and
+stretch) with **social support** (support and trust), allowing individuals to
+decide for themselves how to divide time between conflicting demands. In their
+study of business units in multinational firms, contextual ambidexterity
+mediated the relationship between organizational context and performance.
+
+A third form, **sequential ambidexterity**, has firms shift their structures over
+time — exploring in one period, exploiting in the next — which may suit slower
+environments or smaller firms [@oreilly2013]. Table \@ref(tab:tab-dc-ambi)
+compares the three.
+
+```{r tab-dc-ambi}
+tibble::tribble(
+  ~Dimension, ~`Structural ambidexterity`, ~`Contextual ambidexterity`, ~`Sequential ambidexterity`,
+  "Key sources", "Tushman & O'Reilly (1996); O'Reilly & Tushman (2004)", "Gibson & Birkinshaw (2004)", "O'Reilly & Tushman (2013)",
+  "How the tension is resolved", "Separate units for exploration and exploitation", "Individuals divide time between alignment and adaptability", "The organization alternates between modes over time",
+  "Where integration happens", "Senior team; shared vision; targeted linkages", "Organizational context and individual judgement", "Leadership-driven transitions",
+  "Key enablers", "Distinct structures, metrics, and cultures; senior-team integration", "Discipline, stretch, support, trust", "Capacity to restructure; change management",
+  "Best suited to", "Large firms facing discontinuous change", "Business units with incremental, adjacent innovation", "Slower-moving environments; smaller firms",
+  "Main risk", "Isolation or starvation of exploratory units", "Overload; exploitation crowds out exploration", "Disruption and lost momentum at each shift"
+) |>
+  book_table(caption = "Three forms of organizational ambidexterity.")
+```
+
+### Evidence and extensions
+
+The evidence broadly supports a positive association between ambidexterity and
+performance, with important qualifications. @he2004, in a study of manufacturing
+firms, found that the *interaction* of exploration and exploitation was positively
+related to sales growth, while a *relative imbalance* between them was negatively
+related — an early direct test of the ambidexterity hypothesis. Reviews by
+@raisch2008 and @oreilly2013 conclude that the benefits of ambidexterity depend on
+environmental dynamism, competitive intensity, and firm size and resources, and
+that ambidexterity is better understood as a **dynamic capability** of senior
+leadership than as a structural formula. They also note persistent measurement
+debates: whether to combine exploration and exploitation additively (combined
+dimension) or as a difference (balance dimension), and at which level to measure
+them.
+
+::: {.business-case}
+**IBM's Emerging Business Opportunities process.** IBM's history illustrates both
+the danger of core rigidities and the use of ambidextrous structures. In the early
+1990s the company suffered heavy losses as the computer industry shifted away from
+mainframes. Louis Gerstner, who became chief executive in 1993, reversed plans to
+break the company into independent units and instead repositioned it around
+integrated solutions and services [@gerstner2002]. Later, IBM created an
+**Emerging Business Opportunities (EBO)** process, begun in 2000, to protect
+promising new businesses from the short-term metrics of the established
+divisions: EBOs received dedicated leaders, separate funding, milestones suited to
+exploration, and regular senior-executive review [@harreld2007]. Subsequent
+portfolio moves — selling the personal computer business to Lenovo in 2005,
+acquiring Red Hat in 2019, and spinning off its managed-infrastructure services
+business as Kyndryl in 2021 — show sequential reconfiguration of the asset base.
+@harreld2007 interpret IBM's approach as an attempt to build dynamic capabilities
+in the senior leadership system rather than relying on any single
+reorganization.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The positive effect of exploratory innovation on firm performance will be
+  stronger in more dynamic environments, and the positive effect of exploitative
+  innovation stronger in more competitive environments.
+- *H2.* Structural separation of exploratory units will improve their innovation
+  outcomes only when the senior team shares integrative goals and a common reward
+  system.
+- *H3.* Business units whose context combines high discipline and stretch with high
+  support and trust will exhibit higher contextual ambidexterity, which will
+  mediate the effect of context on unit performance [@gibson2004].
+
+**Designs.** Panel studies coding exploration and exploitation from patents
+(new versus familiar technology classes), product launches, or alliance types;
+multilevel surveys of business units; field experiments on time allocation;
+agent-based simulations in the tradition of @march1991.
+
+**Measures.** Exploration and exploitation scales (e.g., following @he2004);
+patent-based measures of search distance; share of R&D budget devoted to new
+domains; balance and combined ambidexterity indices.
+:::
+
+::: {.pitfall}
+**Treating ambidexterity as "more of everything".** Ambidexterity does not mean
+maximizing both exploration and exploitation everywhere. The theory's core insight
+is that the two compete for scarce resources and require different structures and
+cultures, so they must be deliberately separated, sequenced, or contextually
+balanced — and integrated by leaders who manage the tension. Studies that simply
+add exploration and exploitation scores without modelling that tension, or that
+ignore resource constraints and environmental conditions, test a weaker claim
+than the theory makes.
+:::
+
+## Chapter Summary {#dynamic-capabilities-summary}
+
+::: {.key-takeaways}
+- **Dynamic capabilities** are the firm's ability to integrate, build, and
+  reconfigure competences to address changing environments; they rest on
+  **processes**, are shaped by **positions**, and are constrained by **paths**
+  [@teece1997].
+- @teece2007 decomposes them into **sensing**, **seizing**, and **transforming**,
+  each with microfoundations in managerial skill, processes, and structure.
+- @eisenhardt2000 view dynamic capabilities as identifiable **best practices** whose
+  form depends on market dynamism; advantage comes from the resource configurations
+  they create.
+- A **capability hierarchy** separates ordinary from dynamic capabilities
+  [@winter2003]; dynamic capabilities are built through **deliberate learning**
+  [@zollo2002] and evolve over a **life cycle** [@helfat2003].
+- Core capabilities can become **core rigidities** [@leonardbarton1992]; cognition as
+  well as capability shapes adaptation [@tripsas2000].
+- **Absorptive capacity** depends on prior related knowledge; **potential** capacity
+  must be converted into **realized** capacity through integration mechanisms
+  [@cohen1990; @zahra2002].
+- Learning favours **exploitation** over **exploration**, creating success and
+  competency traps [@march1991; @levinthal1993]; disruptive innovation is a vivid
+  case [@christensen1997].
+- **Ambidexterity** — structural, contextual, or sequential — is the main
+  organizational answer, and is best seen as a leadership capability
+  [@oreilly2013; @gibson2004].
+:::
+
+```{r tab-dc-summary}
+tibble::tribble(
+  ~Theory, ~`Unit of analysis`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Dynamic capabilities (Teece)", "Firm", "Sensing, seizing, transforming", "Firms with strong dynamic capabilities sustain performance through change", "Strategic renewal; business-model change",
+  "Best-practice view (Eisenhardt & Martin)", "Process", "Effective processes create new resource configurations", "Simple rules outperform detailed routines in high-velocity markets", "Designing product-development and M&A processes",
+  "Capability hierarchy and learning", "Routine", "Learning mechanisms modify operating routines", "Codification pays for infrequent, heterogeneous tasks", "Building integration playbooks",
+  "Core rigidities", "Firm / project", "Strengths screen out misfit projects", "Incumbents struggle with competence-destroying change", "Diagnosing barriers to innovation",
+  "Absorptive capacity", "Firm / unit", "Prior knowledge enables learning from outside", "Internal R&D raises returns to external knowledge", "Open innovation; alliance and M&A strategy",
+  "Exploration and exploitation", "Organization", "Feedback favours sure, near returns", "Success and competency traps", "Portfolio and R&D allocation",
+  "Ambidexterity", "Firm / business unit", "Separation plus integration, or supportive context", "Balanced, integrated firms outperform over time", "Organizing for innovation"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#dynamic-capabilities-questions}
+
+1. Compare the Teece and the Eisenhardt-and-Martin views of dynamic capabilities.
+   Which is more convincing for a software company in a high-velocity market, and
+   which for a utility in a regulated market? Why?
+2. Kodak had valuable resources and early knowledge of digital technology. Using
+   the concepts of core rigidities, managerial cognition, and exploration versus
+   exploitation, explain why this was not enough. What could have been done
+   differently, and at what cost?
+3. Design a study that measures dynamic capabilities *before* an environmental
+   shock and tests whether they predict adaptation afterwards. What shock would you
+   use, and how would you avoid defining the capability by its outcome?
+4. A firm's open-innovation unit identifies many promising technologies but
+   commercializes few. Using the potential/realized absorptive capacity
+   distinction, diagnose the problem and propose remedies.
+5. In the bandit simulation, the best exploration rate depends on how the
+   environment changes. Translate this into a managerial rule of thumb for R&D
+   portfolio allocation, and identify the indicators that should trigger a shift.
+6. When would contextual ambidexterity be preferable to structural separation?
+   Use an example from a function such as sales, operations, or HR.
+
+## Further Reading {#dynamic-capabilities-reading}
+
+- @teece1997 — the founding statement of the dynamic capabilities framework,
+  including processes, positions, and paths.
+- @teece2007 — the sensing–seizing–transforming framework and its microfoundations.
+- @eisenhardt2000 — the influential alternative view of dynamic capabilities as
+  identifiable processes whose form depends on market dynamism.
+- @winter2003 and @zollo2002 — short, precise papers on what dynamic capabilities
+  are and where they come from.
+- @leonardbarton1992 — the classic account of how core capabilities become core
+  rigidities.
+- @cohen1990 and @zahra2002 — the foundational and the reconceptualized statements
+  of absorptive capacity.
+- @march1991 — one of the most cited papers in organization science; essential
+  for understanding exploration and exploitation.
+- @oreilly2013 — an accessible review of ambidexterity research and its open
+  questions.

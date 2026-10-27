@@ -1,0 +1,40 @@
+name: Suggest a theory
+description: Propose a theory, effect, or framework to add to the book
+title: "[Theory]: "
+labels: ["new theory"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Theory name
+      placeholder: e.g., Construal level theory
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Foundational source(s)
+      description: Author(s), year, venue, and DOI if available
+      placeholder: Trope, Y., & Liberman, N. (2010). Psychological Review, 117(2), 440-463.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Core claim
+      description: One or two sentences on what the theory says
+    validations:
+      required: true
+  - type: textarea
+    id: application
+    attributes:
+      label: Business or research application
+      description: Where is the theory used? Any well-documented examples?
+  - type: dropdown
+    id: help
+    attributes:
+      label: Would you like to write the entry?
+      options:
+        - "Yes, I'd like to draft it"
+        - "I can review a draft"
+        - "No, just suggesting"

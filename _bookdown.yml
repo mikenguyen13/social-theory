@@ -1,6 +1,39 @@
-book_filename: "Social Theory"
+book_filename: "social-science-theory"
+output_dir: "docs"
 delete_merged_file: true
+new_session: true
+before_chapter_script: "_common.R"
+repo: https://github.com/mikenguyen13/social-theory
+edit: https://github.com/mikenguyen13/social-theory/edit/master/%s
+view: https://github.com/mikenguyen13/social-theory/blob/master/%s
 language:
   ui:
     chapter_name: "Chapter "
-edit: https://github.com/mikenguyen13/social-theory/edit/master/%s
+rmd_files:
+  - index.Rmd
+  - 01-intro.Rmd
+  - part-1-foundations.Rmd
+  - 02-what-is-theory.Rmd
+  - 03-using-theory.Rmd
+  - part-2-organizations.Rmd
+  - 04-resources.Rmd
+  - 05-dynamic-capabilities.Rmd
+  - 06-governance.Rmd
+  - 07-environment.Rmd
+  - 08-information.Rmd
+  - 09-networks-exchange.Rmd
+  - 10-innovation-adoption.Rmd
+  - part-3-individuals.Rmd
+  - 11-culture.Rmd
+  - 12-motivation.Rmd
+  - 13-self-regulation.Rmd
+  - 14-social-influence.Rmd
+  - 15-judgment-decision.Rmd
+  - 16-emotion-wellbeing.Rmd
+  - 17-persuasion-communication.Rmd
+  - part-4-effects.Rmd
+  - 18-effects.Rmd
+  - 19-phenomena.Rmd
+  - 20-frameworks.Rmd
+  - 21-theory-atlas.Rmd
+  - 22-references.Rmd

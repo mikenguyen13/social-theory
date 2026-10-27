@@ -1,9 +1,0 @@
-# Miscellaneous
-
-| | high arousal | low arousal | 
-|---|---|---|
-|Positive| Awe / Excitement / Amusement (Humor) | Contentment|
-Negative | Anger / Anxiety | Sadness | 
-
-table from [@Berger_2013] page 109
-

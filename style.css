@@ -1,14 +1,97 @@
-p.caption {
-  color: #777;
-  margin-top: 10px;
+/* ==========================================================================
+   Social Science Theory -- custom styles layered on top of bookdown::bs4_book
+   ========================================================================== */
+
+:root {
+  --st-brand: #1f4e79;
+  --st-ink: #1b1b1b;
+  --st-ink-2: #52514e;
+  --st-rule: #e6e5e1;
 }
-p code {
-  white-space: inherit;
+
+body { line-height: 1.68; overflow-x: hidden; }
+.book-table { font-size: 0.9rem; }
+.book-table th { font-weight: 600; background: #f3f6fa; }
+.html-widget, .grViz { max-width: 100%; }
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
+h1 { color: var(--st-brand); }
+.book-body main > p:first-of-type { font-size: 1.05rem; }
+
+p.caption, .caption { color: var(--st-ink-2); font-size: 0.9rem; margin-top: 8px; }
+p code { white-space: inherit; }
+pre { word-break: normal; word-wrap: normal; }
+pre code { white-space: inherit; }
+
+blockquote {
+  border-left: 4px solid var(--st-brand);
+  background: #f6f8fb;
+  padding: 0.6rem 1rem;
+  color: var(--st-ink);
+  font-style: italic;
 }
-pre {
-  word-break: normal;
-  word-wrap: normal;
+
+table { font-size: 0.92rem; }
+table caption { caption-side: top; color: var(--st-ink-2); font-weight: 600; }
+
+/* ---------- Callout boxes ---------------------------------------------------
+   Usage in Rmd:   ::: {.theory-card}  ...  :::
+   ------------------------------------------------------------------------- */
+.theory-card, .business-case, .research-toolkit, .pitfall, .key-takeaways,
+.try-it, .definition, .debate {
+  position: relative;
+  margin: 1.4rem 0;
+  padding: 1rem 1.15rem 0.6rem 1.15rem;
+  border-radius: 10px;
+  border: 1px solid var(--st-rule);
+  border-left-width: 6px;
+  background: #fbfbfa;
 }
-pre code {
-  white-space: inherit;
+.theory-card::before, .business-case::before, .research-toolkit::before,
+.pitfall::before, .key-takeaways::before, .try-it::before, .definition::before,
+.debate::before {
+  display: block;
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.45rem;
+}
+.theory-card     { border-left-color: #1f4e79; background: #f3f7fc; }
+.theory-card::before     { content: "Theory card"; color: #1f4e79; }
+.business-case   { border-left-color: #1baf7a; background: #f1faf6; }
+.business-case::before   { content: "Business case"; color: #0d7a52; }
+.research-toolkit{ border-left-color: #6250d6; background: #f6f4ff; }
+.research-toolkit::before{ content: "Research toolkit"; color: #4a3bb3; }
+.pitfall         { border-left-color: #e34948; background: #fdf3f3; }
+.pitfall::before         { content: "Common pitfall"; color: #b42f2e; }
+.key-takeaways   { border-left-color: #eda100; background: #fff9ec; }
+.key-takeaways::before   { content: "Key takeaways"; color: #8f6100; }
+.try-it          { border-left-color: #eb6834; background: #fff5f0; }
+.try-it::before          { content: "Try it yourself"; color: #b4471c; }
+.definition      { border-left-color: #52514e; background: #f7f7f5; }
+.definition::before      { content: "Definition"; color: #52514e; }
+.debate          { border-left-color: #e87ba4; background: #fdf4f8; }
+.debate::before          { content: "Debate & evidence"; color: #a8336a; }
+
+.theory-card table, .business-case table { background: transparent; }
+.theory-card dl { margin-bottom: 0.4rem; }
+
+/* Compact key/value grid inside theory cards */
+.card-grid { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; }
+.card-grid > div:nth-child(odd) { font-weight: 600; color: var(--st-brand); }
+
+/* Hero cover on the preface */
+.cover-hero { text-align: center; margin: 0.5rem 0 1.5rem 0; }
+.cover-hero img { max-width: 340px; width: 70%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+
+.badge-row { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 0.5rem 0 1rem; }
+
+@media (prefers-color-scheme: dark) {
+  /* bs4_book is light-only; keep callouts readable if a reader forces dark UI */
+}
+
+@media print {
+  .theory-card, .business-case, .research-toolkit, .pitfall, .key-takeaways,
+  .try-it, .definition, .debate { break-inside: avoid; }
 }

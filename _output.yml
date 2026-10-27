@@ -1,25 +1,30 @@
-bookdown::gitbook:
+bookdown::bs4_book:
+  repo:
+    base: https://github.com/mikenguyen13/social-theory
+    branch: master
   css: style.css
-  split_by: section
-  config:
-    toc:
-      scroll_highlight: yes
-      sharing:
-        facebook: yes
-        github: yes
-        twitter: yes
-        linkedin: yes
-      info: yes
-      edit: yes
-      before: |
-        <li><a href="./">A Minimal Book Example</a></li>
-      after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    download: ["pdf", "epub"]
+  includes:
+    in_header: [google_analytics.html]
+  theme:
+    version: 4
+    primary: "#1f4e79"
+    fg: "#1b1b1b"
+    bg: "#ffffff"
+    base_font:
+      google: "Source Serif 4"
+    heading_font:
+      google:
+        family: "Inter"
+        wght: [500, 600, 700]
+    code_font:
+      google: "JetBrains Mono"
+  footnotes_inline: true
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default
+  keep_tex: no
+  toc_depth: 2
+bookdown::epub_book:
+  stylesheet: style.css

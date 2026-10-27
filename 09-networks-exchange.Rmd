@@ -1,0 +1,1231 @@
+# Social Exchange and Networks {#networks-exchange}
+
+Why do employees who feel valued by their employer work harder than their contracts
+require? Why does a supplier that could earn more by switching customers stay with
+a long-standing buyer, and why do job seekers so often hear about the position
+they eventually take from an acquaintance rather than a close friend? Why are
+some managers, with no formal authority, consistently the source of the ideas
+that senior executives adopt? Each question concerns resources that do not move
+through prices or hierarchies alone. They move through **relationships** — through
+chains of favours, obligations, trust, and information that link people and
+organizations to one another.
+
+This chapter develops the family of theories that treat social life as
+**exchange embedded in networks**. We begin with **social exchange theory**, the
+foundational account of how reciprocity, dependence, and trust sustain
+relationships between two parties. We then move from the dyad to the structure
+in which dyads sit: **network exchange theory** explains how a position in a
+network of exchange opportunities creates power; the **strength of weak ties**
+and **embeddedness** arguments explain how tie strength shapes the flow of
+information and trust; **structural holes** theory explains the advantages of
+brokerage; and **social capital** theory integrates these ideas into a view of
+relationships as a productive asset. We close with the **commitment–trust theory**
+of relationship marketing, which brought the exchange tradition into the study of
+buyer–seller relationships.
+
+```{r tab-net-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Social exchange theory", "Why do people and organizations sustain reciprocal relationships without contracts?", "Dyad", "Homans (1958); Blau (1964)",
+  "Network exchange theory", "How does position in a network of exchange opportunities create power?", "Network / position", "Cook & Emerson (1978); Markovsky et al. (1988)",
+  "Strength of weak ties", "Why do acquaintances provide novel information?", "Dyad / network", "Granovetter (1973)",
+  "Embeddedness", "How do social relations shape economic action?", "Dyad / interfirm network", "Granovetter (1985); Uzzi (1997)",
+  "Structural holes", "Why do brokers between groups gain information and control advantages?", "Ego network", "Burt (1992)",
+  "Social capital", "How do relationships function as a resource for individuals and organizations?", "Individual / group / firm", "Coleman (1988); Nahapiet & Ghoshal (1998)",
+  "Commitment-trust theory", "What makes buyer-seller relationships durable and cooperative?", "Dyad (relationship)", "Morgan & Hunt (1994)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of social exchange and networks.")
+```
+
+## Social Exchange Theory {#social-exchange-theory}
+
+::: {.theory-card}
+**Core claim.** Social behaviour is an exchange of valued resources, material and
+non-material. Relationships persist when they are rewarding relative to the
+alternatives, and they deepen when unreciprocated benefits create obligations
+that are later repaid, building trust and commitment over time.
+
+**Origins.** Sociology and social psychology: @homans1958, @blau1964,
+@thibaut1959, and @emerson1962 [-@emerson1976]; the moral foundation is the
+norm of reciprocity [@gouldner1960]. Reviewed for management by
+@cropanzano2005.
+
+**Level of analysis.** Primarily the dyad (employee–organization, supervisor–
+subordinate, buyer–seller, firm–firm), extended to groups and networks.
+
+**Key constructs.** Rewards and costs; comparison level for alternatives;
+reciprocity; dependence and power; trust; social versus economic exchange;
+perceived organizational support.
+
+**Boundary conditions.** Actors value the resources exchanged, interact
+repeatedly, and can observe (at least roughly) what each party contributes.
+Exchange logic weakens where behaviour is governed by strong role obligations,
+pure altruism, or one-shot interactions with no prospect of repayment.
+
+**Related theories.** [Network exchange theory](#network-exchange-theory),
+[Commitment–trust theory](#commitment-trust-theory),
+[Resource dependence theory](#resource-dependence-theory),
+[Equity theory](#equity-theory), [Agency theory](#agency-theory).
+:::
+
+### Origins and intellectual history
+
+Social exchange theory emerged in the late 1950s and early 1960s from several
+directions at once. @homans1958 proposed that social behaviour could be analysed
+as an exchange of goods, both material and non-material — approval and prestige
+as well as money and services — and that the behavioural regularities of small groups
+could be derived from elementary principles of reinforcement and cost. At almost
+the same moment, @thibaut1959 developed an interdependence framework in which each
+party evaluates a relationship against a **comparison level** (what one feels one
+deserves) and a **comparison level for alternatives** (what one could get
+elsewhere). A relationship can be unsatisfying yet stable if the alternatives are
+worse, and satisfying yet fragile if better alternatives appear.
+
+@blau1964 gave the theory its macro-sociological reach. He distinguished
+**social exchange** from **economic exchange**. Economic exchange specifies in
+advance what will be exchanged and is enforced by contract; social exchange
+entails *unspecified* future obligations whose timing and form are left to the
+discretion of the party who owes them. Because repayment cannot be enforced, social
+exchange requires trust, and because it requires trust it also generates trust as
+obligations are honoured. Blau also showed how exchange produces **power**: when
+one party provides benefits that the other needs and cannot obtain elsewhere and
+cannot repay in kind, the recipient can discharge the obligation only by
+compliance.
+
+@emerson1962 formalized that last point in the **power–dependence** principle:
+the power of A over B equals the dependence of B on A, and B's dependence increases
+with the value B places on what A provides and decreases with the availability of
+those resources outside the relationship. Power, in this view, is a property of
+the *relation*, not of an actor. Emerson also described **balancing operations**
+through which weaker parties reduce their dependence: withdrawing motivational
+investment, cultivating alternatives, forming coalitions, or conferring status on
+the stronger party. In a later review, @emerson1976 described social exchange less
+as a single theory than as a frame of reference within which many theories about
+social interaction can be stated — a characterization that remains apt.
+
+The moral foundation of the framework is the **norm of reciprocity**, which
+@gouldner1960 argued is a near-universal component of moral codes. In its generic
+form it makes two demands: people should help those who have helped them, and
+people should not injure those who have helped them. The norm stabilizes social
+systems because it gives actors a reason to initiate exchange with strangers —
+the recipient of a favour is expected to repay — and because it carries the
+relationship across periods in which obligations are outstanding.
+
+::: {.definition}
+**Social exchange.** Voluntary actions of individuals that are motivated by the
+returns they are expected to bring and typically do bring from others [@blau1964].
+Unlike economic exchange, the nature of the return is not specified in advance and
+cannot be bargained over or enforced.
+
+**Norm of reciprocity.** A generalized moral norm prescribing that benefits be
+returned and that benefactors not be harmed [@gouldner1960].
+
+**Dependence.** The extent to which an actor's valued outcomes are contingent on
+another actor's behaviour, increasing in the value of the outcomes and decreasing
+in the availability of alternative sources [@emerson1962].
+:::
+
+### Core logic and propositions
+
+@cropanzano2005 synthesize the management literature around three ideas: rules of
+exchange, the resources exchanged, and the relationships that emerge. The
+canonical sequence begins when one party (an *actor*) treats another favourably
+or unfavourably. The *target* reciprocates in kind, and if the exchange is
+successful the relationship moves from a sequence of transactions toward a
+high-quality relationship characterized by trust, loyalty, and mutual commitment.
+They also note an important conceptual ambiguity: "social exchange" has been used to
+refer both to a *type of transaction* (social rather than economic) and to a *type
+of relationship*, and research is clearer when the two meanings are kept apart.
+
+The core propositions can be stated as follows:
+
+- **P1 (Reciprocity).** Favourable treatment creates a felt obligation to
+  reciprocate; unfavourable treatment creates an inclination toward negative
+  reciprocity [@gouldner1960; @cropanzano2005].
+- **P2 (Trust formation).** Because social exchange entails unspecified and
+  unenforceable obligations, trust is both a precondition for and an outcome of
+  successful exchange [@blau1964].
+- **P3 (Dependence and power).** The power of one party over another increases
+  with the other's dependence — the value of the resources received and the
+  scarcity of alternatives [@emerson1962].
+- **P4 (Alternatives and stability).** A relationship is stable when its outcomes
+  exceed the comparison level for alternatives, regardless of whether they meet
+  the comparison level for satisfaction [@thibaut1959].
+- **P5 (Form of exchange).** Reciprocal exchanges, in which benefits are given
+  without negotiated terms, generate more trust and affective commitment than
+  negotiated exchanges, precisely because they expose the giver to risk
+  [@molm2000; @lawler2001].
+
+Table \@ref(tab:tab-net-econ-social) contrasts the two ideal types of exchange
+that Blau distinguished.
+
+```{r tab-net-econ-social}
+tibble::tribble(
+  ~Dimension, ~`Economic exchange`, ~`Social exchange`,
+  "Obligations", "Specified in advance", "Unspecified; left to the discretion of the obligated party",
+  "Enforcement", "Contract, law, third parties", "Norm of reciprocity, reputation, trust",
+  "Time horizon", "Discrete, often simultaneous", "Open-ended; repayment deferred",
+  "Resources", "Money, goods, defined services", "Approval, support, information, loyalty, advice",
+  "What it builds", "Little beyond the transaction", "Trust, personal obligation, commitment",
+  "Organizational example", "Spot purchase; transactional employment contract", "Mentoring; discretionary effort; strategic supplier partnership"
+) |>
+  book_table(caption = "Economic versus social exchange (after Blau, 1964).")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-net-exchange) summarizes the mechanism. An initiating
+benefit — employer support, a supplier's extra effort, a colleague's favour —
+creates a felt obligation. Repayment shows that the partner can be trusted, which
+lowers the perceived risk of further giving and expands the relationship. The
+cycle can also run in reverse: mistreatment produces negative reciprocity,
+withdrawal, and eventually exit.
+
+```{r fig-net-exchange, fig.cap = "The social exchange cycle. Initiating benefits create felt obligation under the norm of reciprocity; reciprocation builds trust, which encourages further exchange. Moderators shape the strength of each link."}
+mechanism_diagram(sprintf('
+  I [label = "Initiating benefit\\n(support, favour,\\nextra effort)", %s]
+  O [label = "Felt obligation", %s]
+  R [label = "Reciprocation\\n(effort, loyalty,\\ncooperation)", %s]
+  T [label = "Trust and\\ncommitment", %s]
+  N [label = "Strength of\\nreciprocity norm", %s]
+  A [label = "Attractive\\nalternatives", %s]
+  I -> O -> R -> T
+  T -> I [label = " expanded\\n exchange", style = dashed, constraint = false]
+  N -> O [style = dashed]
+  A -> T [style = dashed, label = " weakens"]
+', node_construct, node_mechanism, node_outcome, node_outcome, node_moderator, node_moderator))
+```
+
+### Evidence and extensions
+
+The most influential organizational application is organizational support
+theory. @eisenberger1986 proposed that employees form global beliefs about the
+extent to which the organization values their contributions and cares about their
+well-being — **perceived organizational support (POS)** — and that they reciprocate
+high support with greater effort and attendance. Employees personify the
+organization, attributing the actions of its agents to the organization itself.
+In a review of the subsequent literature, @rhoades2002 found that fairness,
+supervisor support, and favourable rewards and job conditions were associated with
+POS, which was in turn associated with affective commitment, performance, and
+reduced withdrawal. @settoon1996 showed that the exchange with the organization
+(POS) and the exchange with the immediate supervisor (leader–member exchange) are
+distinct: the former was more closely tied to organizational commitment, the
+latter to in-role performance and citizenship behaviour.
+
+Experimental sociology has refined the theory's account of trust. @molm2000
+compared **negotiated** exchange, in which partners bargain jointly over binding
+terms, with **reciprocal** exchange, in which each gives unilaterally without
+knowing whether the other will return the favour. Trust was higher under
+reciprocal exchange — consistent with Blau's argument that the risk of
+non-reciprocation is what allows partners to demonstrate trustworthiness.
+@lawler2001 added an affective layer: successful exchange produces positive
+emotions, and when actors attribute those emotions to the relationship or group,
+they develop affective commitment to it.
+
+::: {.debate}
+**Is social exchange theory too elastic?** Almost any behaviour can be described
+after the fact as an "exchange" of some reward, which risks making the theory
+unfalsifiable. @cropanzano2005 recommend precision: specify the *rule* of exchange
+(reciprocity, negotiation, or another rule), the *resource* exchanged, and whether
+the claim concerns a transaction or a relationship. A second debate pits
+**self-interest against norms**: Homans's version rests on individual
+reinforcement, Gouldner's on a moral norm, and the two diverge when repayment is
+unobserved or the giver cannot retaliate.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Employee reciprocity and perceived support.** Organizational support theory
+gives HR leaders a concrete diagnostic. Actions that are *discretionary* — not
+required by law, contract, or union agreement — are especially informative to
+employees about the organization's regard for them, and thus especially likely to
+trigger reciprocation [@rhoades2002]. Flexible arrangements offered during a
+family emergency, investment in an employee's development, or fair treatment in a
+restructuring signal that the organization values the individual. By contrast,
+benefits that employees attribute to external pressure generate less obligation.
+A practical implication is that the *framing and discretion* of support matter as
+much as its monetary value.
+:::
+
+::: {.business-case}
+**Illustrative scenario: dependence in a supplier relationship.** A component
+maker that sells most of its output to one automotive assembler is highly
+dependent, so the assembler holds power [@emerson1962]. Emerson's balancing
+operations suggest remedies: cultivating customers in adjacent industries,
+joining an industry consortium, or developing process know-how the assembler
+cannot easily replace. The same logic underlies
+[resource dependence theory](#resource-dependence-theory) at the level of the firm.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Perceived organizational support is positively related to discretionary
+  effort, and the relationship is stronger for employees high in exchange
+  ideology.
+- *H2.* Unilateral (non-negotiated) concessions by a supplier increase buyer
+  trust more than equivalent concessions obtained through negotiation.
+- *H3.* A partner's dependence on a focal firm increases the focal firm's ability
+  to extract favourable terms, but this effect is weaker when the relationship
+  has a long history of balanced reciprocity.
+
+**Designs.** Multi-wave employee surveys with lagged outcomes; supervisor-rated
+performance to reduce common-method bias; laboratory exchange experiments that
+manipulate negotiated versus reciprocal exchange; dyadic buyer–supplier data with
+both sides reporting.
+
+**Measures.** Survey of Perceived Organizational Support [@eisenberger1986];
+leader–member exchange scales; dependence measured as sales share and
+switching costs; trust and commitment scales from relationship-marketing
+research [@morgan1994].
+
+**Contexts.** Employment relationships, gig and platform work, supplier
+partnerships, franchise systems, professional services.
+:::
+
+::: {.pitfall}
+**Labelling every positive association "social exchange".** A correlation between
+POS and performance does not by itself show reciprocation; the same pattern could
+arise because high performers receive more support. Establish temporal order,
+model the reciprocal path, and — where possible — measure felt obligation as the
+mediating mechanism rather than assuming it.
+:::
+
+## Network Exchange Theory {#network-exchange-theory}
+
+::: {.theory-card}
+**Core claim.** Power in exchange relations depends not only on dyadic dependence
+but on the *structure* of the network of exchange opportunities: positions with
+many alternatives connected to partners with few alternatives can exclude others
+and extract favourable terms.
+
+**Origins.** Experimental sociology: @cook1978 and @cook1983, building on
+@emerson1962 [-@emerson1976]; the graph-theoretic approach of
+@markovsky1988 and colleagues [@willer1999]. @cook1992 compare exchange-theoretic
+and network-analytic approaches to social structure.
+
+**Level of analysis.** Positions within exchange networks (individuals, firms,
+or organizational units).
+
+**Key constructs.** Negatively versus positively connected exchange relations;
+exclusion; alternatives; graph-theoretic power index (GPI); strong- and
+weak-power structures; equity and commitment.
+
+**Boundary conditions.** Actors seek favourable terms; exchange relations are
+*negatively connected* (exchange with one partner reduces exchange with another);
+the number of exchanges per round is limited.
+
+**Related theories.** [Social exchange theory](#social-exchange-theory),
+[Structural holes](#structural-holes),
+[Resource dependence theory](#resource-dependence-theory).
+:::
+
+### Core logic
+
+Network exchange theory asks what happens when Emerson's alternatives are
+themselves actors embedded in a larger structure. @cook1978 created
+laboratory networks in which participants negotiated divisions of a fixed
+resource pool with the partners to whom they were connected. They found that
+positions with more and better alternatives obtained more favourable divisions,
+but also that concerns about **equity** and the development of **commitment**
+between particular partners dampened the use of power — participants who formed
+committed relationships often forwent better offers from others.
+
+A key distinction is between **negatively connected** and **positively
+connected** relations. Two exchange relations are negatively connected if
+exchange in one reduces exchange in the other (a buyer who can purchase from only
+one of two suppliers in a period); they are positively connected if exchange in
+one increases exchange in the other (a supply chain in which a distributor's
+purchases enable its sales). Most power predictions concern negatively connected
+networks, where actors with alternatives can play partners off against one
+another.
+
+@cook1983 showed that in negatively connected networks, standard
+**centrality** measures do not reliably predict power. The most central
+position in a network may be weak if its partners themselves have attractive
+alternatives. @markovsky1988 proposed a different approach: power derives from the
+capacity to **exclude** others from exchange. Their **graph-theoretic power index
+(GPI)** counts, for each position, the number of non-intersecting paths of each
+length that radiate from it, adding odd-length paths (which provide
+alternatives) and subtracting even-length paths (which indicate that one's
+alternatives have alternatives of their own). Positions with higher GPI than
+their partners are predicted to exercise power.
+
+::: {.definition}
+**Graph-theoretic power index.** For position $i$, let $m_k$ be the maximum
+number of non-intersecting paths of length $k$ that begin at $i$. Then
+$$\text{GPI}_i = m_1 - m_2 + m_3 - m_4 + \cdots = \sum_{k \ge 1} (-1)^{k+1} m_k .$$
+The index formalizes the intuition that a direct partner is an advantage, while a
+partner who has other partners is a source of competition [@markovsky1988].
+:::
+
+### Mechanism
+
+Figure \@ref(fig:fig-net-power) computes the GPI for four simple networks in
+which each position can complete at most one exchange per round. In the
+**3-line**, B can always exclude either A or C, so B is strong. In the
+**5-line**, B and D are strong because each has a peripheral partner (A or E)
+with no alternative, whereas the *central* position C is weak: its partners B
+and D have better options. In the **4-line**, all positions have equal GPI, so
+the theory predicts roughly equal divisions. In the **star**, the hub can exclude
+any spoke and is predicted to extract most of the surplus.
+
+```{r fig-net-power, fig.cap = "Power in four exchange networks, computed with the graph-theoretic power index (GPI) of Markovsky et al. (1988). Orange positions have higher GPI than their partners and are predicted to exercise power. Note that the central position C in the 5-line is weak.", fig.height = 4.8}
+library(igraph)
+library(ggraph)
+
+# Maximum number of mutually non-intersecting paths (vertex sets exclude the origin)
+max_disjoint <- function(sets) {
+  if (!length(sets)) return(0)
+  first <- sets[[1]]; rest <- sets[-1]
+  compatible <- Filter(function(s) !length(intersect(s, first)), rest)
+  max(1 + max_disjoint(compatible), max_disjoint(rest))
+}
+# GPI = m1 - m2 + m3 - ... (Markovsky, Willer & Patton, 1988)
+gpi <- function(g, v) {
+  paths <- lapply(all_simple_paths(g, from = v), function(p) as.integer(p)[-1])
+  len <- lengths(paths)
+  m <- vapply(seq_len(max(len)), function(k) max_disjoint(paths[len == k]), numeric(1))
+  sum((-1)^(seq_along(m) + 1) * m)
+}
+make_net <- function(from, to, label, coords) {
+  g <- graph_from_data_frame(data.frame(from, to), directed = FALSE)
+  V(g)$label <- V(g)$name
+  V(g)$network <- label
+  V(g)$x <- coords[V(g)$name, 1]
+  V(g)$y <- coords[V(g)$name, 2]
+  V(g)$gpi <- vapply(seq_len(vcount(g)), function(v) gpi(g, v), numeric(1))
+  V(g)$betweenness <- betweenness(g, normalized = TRUE)
+  V(g)$degree <- degree(g)
+  V(g)$name <- paste(label, V(g)$name)          # unique names for the disjoint union
+  g
+}
+line_xy <- function(n) { m <- cbind(seq_len(n) - 1, 0); rownames(m) <- LETTERS[seq_len(n)]; m }
+star_xy <- rbind(H = c(2, 0), P1 = c(0.5, 0.9), P2 = c(3.5, 0.9), P3 = c(0.5, -0.9), P4 = c(3.5, -0.9))
+nets <- list(
+  make_net(c("A", "B"), c("B", "C"), "3-line", line_xy(3)),
+  make_net(c("A", "B", "C"), c("B", "C", "D"), "4-line", line_xy(4)),
+  make_net(c("A", "B", "C", "D"), c("B", "C", "D", "E"), "5-line", line_xy(5)),
+  make_net(rep("H", 4), c("P1", "P2", "P3", "P4"), "Star", star_xy)
+)
+g_all <- do.call(disjoint_union, nets)
+net_id <- V(g_all)$network
+is_top <- V(g_all)$gpi == ave(V(g_all)$gpi, net_id, FUN = max)
+varies <- ave(V(g_all)$gpi, net_id, FUN = function(z) length(unique(z))) > 1
+V(g_all)$power <- ifelse(is_top & varies, "Predicted high power", "Low or equal power")
+V(g_all)$network <- factor(net_id, levels = c("3-line", "4-line", "5-line", "Star"))
+
+ggraph(g_all, layout = "manual", x = V(g_all)$x, y = V(g_all)$y) +
+  geom_edge_link(colour = ink[["muted"]], edge_width = 0.8) +
+  geom_node_point(aes(fill = power), shape = 21, size = 11, colour = "white", stroke = 1) +
+  geom_node_text(aes(label = label), colour = "white", fontface = "bold", size = 3.5) +
+  geom_node_text(aes(label = paste0("GPI = ", gpi)), nudge_y = -0.45, size = 3, colour = ink[["secondary"]]) +
+  facet_nodes(~network, ncol = 2) +
+  scale_fill_manual(values = c("Predicted high power" = pal[["orange"]], "Low or equal power" = pal[["blue"]]),
+                    name = NULL) +
+  guides(fill = guide_legend(override.aes = list(size = 5))) +
+  scale_y_continuous(expand = expansion(add = c(0.6, 0.45))) +
+  scale_x_continuous(expand = expansion(add = 0.45)) +
+  labs(title = "Exclusion, not centrality, creates power in exchange networks",
+       caption = "GPI computed from each network's graph structure (one exchange per position per round).") +
+  theme(axis.text = element_blank(), axis.title = element_blank(), panel.grid.major = element_blank())
+```
+
+Table \@ref(tab:tab-net-power) compares the GPI with two familiar centrality
+measures. Degree and betweenness centrality both rank the 5-line's middle
+position C as at least as important as B and D, yet the GPI — and the
+experimental evidence that motivated it — predicts that C is weak. The contrast
+illustrates the central lesson of the network exchange tradition: **power in
+negatively connected networks is about alternatives and exclusion, not
+connectedness per se** [@cook1983; @markovsky1988].
+
+```{r tab-net-power}
+power_tab <- bind_rows(lapply(nets, function(g) data.frame(
+  network = V(g)$network, position = V(g)$label, degree = V(g)$degree,
+  betweenness = round(V(g)$betweenness, 2), gpi = V(g)$gpi)))
+book_table(power_tab,
+           col.names = c("Network", "Position", "Degree", "Betweenness (normalized)", "GPI"),
+           align = c("l", "c", "c", "c", "c"),
+           caption = "Centrality versus the graph-theoretic power index in four exchange networks (computed).")
+```
+
+### Evidence and extensions
+
+Subsequent work distinguished **strong-power** structures (such as
+the 3-line and the star), where some positions can be excluded without cost to
+the powerful, from **weak-power** structures, in which no position can be
+excluded for certain and power differences are smaller and more sensitive to
+actors' strategies [@willer1999]. @cook1992 argue that exchange theory and
+network analysis are complementary: exchange theory supplies a behavioural model
+of why actors use ties, and network analysis supplies the structural description
+of which ties are available. @bonacich1987 made a related point for
+centrality measures more generally: being connected to well-connected others can
+*reduce* power in bargaining situations, so a centrality index should allow the
+contribution of a neighbour's connections to be negative.
+
+::: {.business-case}
+**Sales networks and channel power.** A distributor that is the only route
+between a group of small manufacturers and a group of small retailers occupies a
+strong-power position analogous to the hub of a star: it can play each
+manufacturer off against the others. If the manufacturers gain direct access to
+retailers through an online marketplace, the network shifts toward a weak-power
+structure, and the distributor's margins compress even though its *number* of
+connections has not changed. Network exchange theory directs managers to ask not
+"how many partners do we have?" but "how many alternatives do our partners have?"
+:::
+
+## Strength of Weak Ties and Embeddedness {#weak-ties}
+
+::: {.theory-card}
+**Core claim.** Weak ties (acquaintances) are more likely than strong ties (close
+friends) to bridge otherwise disconnected social circles, so they are
+disproportionately important sources of novel information. Strong, embedded ties,
+by contrast, are better at conveying trust, fine-grained information, and
+cooperation.
+
+**Origins.** Economic sociology: @granovetter1973 [-@granovetter1974] on weak ties;
+@granovetter1985 on embeddedness; @uzzi1997 on the paradox of embeddedness.
+
+**Level of analysis.** Dyadic ties and the network structures they form;
+individuals and interfirm networks.
+
+**Key constructs.** Tie strength; bridge and local bridge; triadic closure;
+novel versus redundant information; embeddedness; arm's-length ties.
+
+**Boundary conditions.** Weak ties help when the valuable resource is
+*information* that is unevenly distributed across groups and can be transmitted
+cheaply. When the resource requires trust, influence, or tacit knowledge, strong
+ties may matter more.
+
+**Related theories.** [Structural holes](#structural-holes),
+[Social capital](#social-capital),
+[Diffusion of innovations](#diffusion-of-innovations).
+:::
+
+### Origins and core logic
+
+@granovetter1973 defined tie strength as a combination of the time spent
+together, emotional intensity, mutual confiding, and reciprocal services. His
+argument begins from a structural regularity. If A has strong ties to both B and
+C, then B and C are likely to know each other too, because they spend time with A,
+tend to be similar to A, and would experience strain if they disliked one
+another. Granovetter called the configuration in which A is strongly tied to both
+B and C but B and C have no tie at all the **forbidden triad**, because it should
+rarely occur.
+
+The consequence is striking. A **bridge** is a tie that provides the only path
+between two parts of a network. If strong ties tend to close triads, then a
+strong tie can rarely be a bridge — the two people will typically share other
+contacts. Bridges are therefore almost always weak ties. Because weak ties connect
+us to people who move in different circles, they deliver information we would
+not otherwise receive. Our close friends, by contrast, tend to know what we
+already know.
+
+- **P1 (Triadic closure).** The stronger the ties between A–B and A–C, the more
+  likely a tie between B and C.
+- **P2 (Bridging).** Local bridges are disproportionately weak ties.
+- **P3 (Novel information).** Information obtained through weak ties is more
+  likely to be non-redundant than information obtained through strong ties.
+- **P4 (Opportunity).** Individuals with more weak ties have access to a wider
+  set of opportunities (jobs, ideas, deals).
+
+@granovetter1974 provided the canonical evidence in *Getting a Job*: among
+professional, technical, and managerial workers who found jobs through personal
+contacts, those contacts were more often people they saw occasionally or rarely
+than people they saw often. The nuance matters: weak ties are valuable not because
+weakness is good in itself, but because weak ties are more likely to be *bridges*.
+
+Table \@ref(tab:tab-net-ties) summarizes the complementary strengths of strong
+and weak ties.
+
+```{r tab-net-ties}
+tibble::tribble(
+  ~Dimension, ~`Strong ties`, ~`Weak ties`,
+  "Typical relationship", "Close friends, family, long-standing partners", "Acquaintances, former colleagues, occasional contacts",
+  "Network position", "Embedded in dense clusters (closed triads)", "More often bridges between clusters",
+  "Information", "Redundant but rich, trusted, tacit", "Novel but thin, codified",
+  "Best for", "Trust, influence, transfer of complex knowledge, support", "Search, discovery, job leads, new ideas",
+  "Business example", "Key-account relationship; trusted supplier", "Referral to a new market; alumni network lead",
+  "Key evidence", "Uzzi (1997); Hansen (1999); Bian (1997)", "Granovetter (1973, 1974); Rajkumar et al. (2022)"
+) |>
+  book_table(caption = "Strong and weak ties: complementary strengths.")
+```
+
+### Evidence and extensions
+
+The most rigorous test to date exploited randomized variation in LinkedIn's
+"People You May Know" recommendation algorithm. @rajkumar2022 analysed
+large-scale experiments in which the algorithm's variants changed the mix of
+strong and weak ties that users formed, and linked those ties to subsequent job
+mobility. Because the variation in network formation was experimentally induced,
+the study could make causal claims that earlier observational studies could not.
+The headline result refines Granovetter's thesis: the relationship between tie
+strength and job transmission was **non-linear (an inverted U)**. Moderately weak
+ties — for example, contacts with a modest number of mutual connections — were
+the most helpful for job mobility, while the very weakest ties (with few or no
+mutual connections) and strong ties were less helpful. The value of weak ties
+was also greater in more digital industries. Figure
+\@ref(fig:fig-net-weakties) sketches the qualitative shape.
+
+```{r fig-net-weakties, fig.cap = "Stylised representation of the inverted-U relationship between tie strength and job transmission reported by Rajkumar et al. (2022). The curve is illustrative and does not reproduce the study's estimates.", fig.height = 3.6}
+ties <- data.frame(strength = seq(0, 10, by = 0.05))
+ties$value <- with(ties, strength * exp(-strength / 2.5))
+ties$value <- ties$value / max(ties$value)
+peak <- ties$strength[which.max(ties$value)]
+ggplot(ties, aes(strength, value)) +
+  annotate("rect", xmin = peak - 1.4, xmax = peak + 1.4, ymin = -Inf, ymax = Inf,
+           fill = pal[["aqua"]], alpha = 0.12) +
+  geom_line(colour = pal[["blue"]], linewidth = 1.1) +
+  annotate("text", x = peak, y = 1.07, label = "Moderately weak ties:\nmost job transmission",
+           size = 3.3, colour = ink[["primary"]], fontface = "bold") +
+  annotate("text", x = 0.3, y = 0.15, label = "Very weak ties:\nlittle trust or\nrelevance", hjust = 0,
+           size = 3.1, colour = ink[["secondary"]]) +
+  annotate("text", x = 9.8, y = 0.42, label = "Strong ties:\nredundant\ninformation", hjust = 1,
+           size = 3.1, colour = ink[["secondary"]]) +
+  scale_x_continuous(breaks = c(0.5, 5, 9.5), labels = c("Weakest", "Moderate", "Strongest")) +
+  scale_y_continuous(limits = c(0, 1.18), breaks = NULL) +
+  labs(x = "Tie strength (e.g., number of mutual connections)", y = "Relative job transmission",
+       title = "The strength of moderately weak ties",
+       caption = "Stylised shape only; see Rajkumar et al. (2022) for estimates and measurement details.")
+```
+
+Several other lines of evidence qualify the weak-ties thesis. @bian1997 found that
+in a Chinese labour market where jobs were allocated through personal influence,
+strong ties — including indirect ties reached *through* strong ties — were more
+useful, because what job seekers needed was influence rather than information.
+@hansen1999 identified a **search–transfer problem** inside a multinational
+firm: weak inter-unit ties helped project teams *search* for useful knowledge but
+impeded the *transfer* of complex, tacit knowledge, which required strong ties.
+And @mcpherson2001 documented the pervasive **homophily** of social networks:
+because people tend to connect with similar others, even weak ties may carry less
+diversity than the theory assumes, and access to valuable weak ties is unequally
+distributed.
+
+::: {.business-case}
+**Referral hiring.** Employee referral programmes institutionalize tie-based
+job matching. Studying a bank's telephone customer-service centre,
+@fernandez2000 found that referral hiring produced economic returns for the
+employer, partly because referrals enriched the applicant pool and improved the
+match between new hires and jobs. @burks2015 analysed personnel data from
+firms in call-centre, trucking, and high-tech industries and found that referred
+workers were less likely to quit and were, on balance, more profitable to the
+employer than non-referred workers. Referral programmes therefore exploit *both*
+tie properties: weak ties spread information about openings, while the referrer's
+strong tie to the employer provides a screening and mentoring channel. A
+practical caution follows from homophily: referral hiring tends to reproduce the
+demographic composition of the existing workforce, which can conflict with
+diversity objectives unless it is complemented by other channels.
+:::
+
+::: {.try-it}
+List the last three significant pieces of professional information you received —
+a job lead, a client introduction, an idea you adopted. For each, rate the tie
+strength to the person who gave it to you and note whether that person belongs
+to a different social circle from your closest colleagues. Does your experience
+fit the bridging argument, Bian's influence argument, or Hansen's search–transfer
+argument best?
+:::
+
+### Embeddedness and its paradox
+
+@granovetter1985 broadened the argument into a critique of economic theory.
+Economic action is neither the atomized behaviour of neoclassical models (an
+*under-socialized* view) nor the mechanical enactment of internalized norms (an
+*over-socialized* view); it is **embedded** in concrete, ongoing networks of
+personal relations. Those relations generate trust and discourage malfeasance,
+because actors prefer partners of known reputation and because ongoing
+relationships carry expectations beyond the contract. The argument was directed in part at
+[transaction cost economics](#transaction-cost-economics), which attributed
+order in exchange primarily to hierarchical governance.
+
+@uzzi1997 studied the networks of manufacturers and contractors in the New York
+apparel industry and identified three features of **embedded ties**: trust,
+fine-grained information transfer, and joint problem-solving arrangements.
+Embedded ties let firms respond quickly to changing fashions and coordinate
+without costly contracting. But Uzzi also identified a **paradox of
+embeddedness**: networks made up *only* of embedded ties insulated firms from new
+information and left them vulnerable if a key partner failed. Firms that
+*combined* embedded and arm's-length ties were more likely to survive than those
+at either extreme — an inverted-U relationship.
+
+::: {.business-case}
+**Alliance portfolios.** Uzzi's paradox has a direct analogue in alliance
+strategy. A firm whose partnerships are all deep, exclusive, and long-standing
+benefits from trust and joint problem-solving but may miss technological
+shifts that originate outside its circle. A firm whose partnerships are all
+transactional enjoys flexibility but cannot coordinate complex joint work. The
+relational view of strategy argues that interfirm advantage arises from
+relation-specific assets, knowledge-sharing routines, complementary resources,
+and effective governance [@dyer1998], and that these typically require
+embedded ties. Portfolio design is therefore a matter of balance: a core of
+embedded partnerships for execution, surrounded by weaker, more diverse ties for
+search [@gulati1998].
+:::
+
+::: {.pitfall}
+**Equating "weak" with "good".** The weak-ties argument concerns *bridging*. A
+weak tie inside one's own clique adds little, and a strong tie that happens to
+span two groups can be extremely valuable. Measure the structural position of
+ties (bridging, redundancy) rather than relying on tie strength as a proxy, and
+specify which resource — information, influence, trust, or tacit knowledge — the
+tie is supposed to carry.
+:::
+
+## Structural Holes and Brokerage {#structural-holes}
+
+::: {.theory-card}
+**Core claim.** People and organizations whose contacts are disconnected from one
+another — who span **structural holes** — gain information and control
+advantages, because they are positioned to see and combine non-redundant
+information and to broker between parties who cannot coordinate directly.
+
+**Origins.** Sociology of competition: @burt1992 [-@burt2004; -@burt2005],
+building on @granovetter1973 and on the sociology of brokerage.
+
+**Level of analysis.** The ego network of an individual, team, or organization.
+
+**Key constructs.** Structural hole; non-redundant contacts; network constraint;
+effective size; brokerage; betweenness; *tertius gaudens* (the third who
+benefits) and *tertius iungens* (the third who joins).
+
+**Boundary conditions.** Advantages accrue when information is unevenly
+distributed across groups, when the broker can act on it, and when the context
+rewards novelty or arbitrage. In settings that require coordination, trust, or
+norm enforcement, closure may be more valuable.
+
+**Related theories.** [Weak ties](#weak-ties), [Social capital](#social-capital),
+[Network exchange theory](#network-exchange-theory),
+[Absorptive capacity](#absorptive-capacity).
+:::
+
+### Core logic
+
+@burt1992 shifted attention from the strength of a tie to the **structure** of a
+person's network. A **structural hole** is the absence of a tie between two of a
+person's contacts — a gap between non-redundant sources of information. Contacts
+are redundant when they are connected to one another (cohesion) or when they
+connect to the same third parties (structural equivalence). A network rich in
+structural holes provides two kinds of benefit:
+
+- **Information benefits.** Access to more diverse information, earlier
+  (timing), and through contacts who refer the broker to opportunities
+  (referrals).
+- **Control benefits.** The ability to broker between parties who cannot
+  coordinate directly — the *tertius gaudens*, or "third who benefits", who
+  plays one party against another.
+
+Burt connects the argument to Granovetter's: weak ties often span structural
+holes, but it is the hole, not the weakness of the tie, that matters.
+
+::: {.definition}
+**Network constraint.** Let $p_{ij}$ be the proportion of $i$'s network time and
+energy invested in contact $j$. Burt's constraint index is
+$$c_i = \sum_{j \neq i} \Big( p_{ij} + \sum_{q \neq i, j} p_{iq}\, p_{qj} \Big)^2 ,$$
+which is high when $i$'s contacts are few and interconnected (little
+brokerage) and low when they are many and disconnected (much brokerage)
+[@burt1992]. **Betweenness centrality** measures the share of shortest paths
+between other pairs that pass through $i$ [@freeman1977].
+:::
+
+### Mechanism
+
+Figure \@ref(fig:fig-net-broker) illustrates the logic with a stylised network of
+three tightly knit groups. Robert holds one tie into each group, and those
+groups are otherwise disconnected; James is embedded in one group and connected
+only to people who are connected to each other — in the spirit of the contrast
+Burt draws between brokered and closed networks [@burt2005]. Both indices are
+computed directly from the graph with `igraph`.
+
+```{r fig-net-broker, fig.cap = "A broker spanning structural holes (stylised network). Node size shows betweenness centrality and colour shows Burt's network constraint, both computed with igraph. Robert, who bridges three otherwise disconnected groups, has high betweenness and low constraint; James, embedded in a single closed group, has the reverse.", fig.height = 5}
+clique <- function(prefix) {
+  nodes <- paste0(prefix, 1:4)
+  t(combn(nodes, 2))
+}
+broker_edges <- rbind(
+  clique("A"), clique("B"), clique("C"),
+  cbind("Robert", c("A1", "B1", "C1")),
+  cbind("James", c("A2", "A3", "A4"))
+)
+g_b <- graph_from_edgelist(broker_edges, directed = FALSE)
+V(g_b)$betweenness <- betweenness(g_b, normalized = TRUE)
+V(g_b)$constraint <- constraint(g_b)
+V(g_b)$role <- ifelse(V(g_b)$name %in% c("Robert", "James"), V(g_b)$name, "")
+
+set.seed(1992)
+ggraph(g_b, layout = "stress") +
+  geom_edge_link(colour = ink[["muted"]], edge_width = 0.6) +
+  geom_node_point(aes(size = betweenness, fill = constraint), shape = 21, colour = ink[["secondary"]], stroke = 0.4) +
+  geom_node_text(aes(label = name), size = 2.9, colour = ink[["primary"]], repel = TRUE, point.padding = unit(4, "mm")) +
+  scale_size_continuous(range = c(4, 16), name = "Betweenness") +
+  scale_fill_gradient(low = pal[["orange"]], high = "#dceaf8", name = "Constraint") +
+  labs(title = "Brokerage across structural holes",
+       caption = "Stylised network: three four-person cliques; Robert bridges them, James is embedded in clique A.") +
+  theme(axis.text = element_blank(), axis.title = element_blank(), panel.grid.major = element_blank(),
+        legend.position = "right")
+```
+
+```{r tab-net-broker}
+broker_tab <- data.frame(
+  node = V(g_b)$name, degree = degree(g_b),
+  betweenness = round(V(g_b)$betweenness, 3), constraint = round(V(g_b)$constraint, 3)
+) |>
+  arrange(constraint) |>
+  filter(node %in% c("Robert", "A1", "B1", "C1", "James", "A2", "B2"))
+book_table(broker_tab, col.names = c("Node", "Degree", "Betweenness (normalized)", "Constraint"),
+           align = c("l", "c", "c", "c"), row.names = FALSE,
+           caption = "Brokerage indices for selected nodes in the stylised network (computed with igraph).")
+```
+
+Table \@ref(tab:tab-net-broker) shows the numbers behind the figure. Robert has
+fewer contacts than James's neighbours but the highest betweenness and the lowest
+constraint: every path between the three groups runs through him. James has as
+many contacts as Robert, but because they are all tied to one another, his
+constraint is high and his betweenness is close to zero. Degree alone would not
+distinguish their positions.
+
+### Evidence and extensions
+
+@burt2004 offered one of the most cited tests. Studying supply-chain managers in
+a large American electronics company, he found that managers whose networks
+spanned structural holes were more likely to express ideas that senior managers
+judged valuable, and that brokerage was associated with more favourable
+compensation, evaluations, and promotion. The mechanism is a **vision advantage**:
+people at the boundaries between groups are exposed to alternative ways of
+thinking and can translate practices from one group to another.
+
+The brokerage argument has generated important counter-evidence and boundary
+conditions:
+
+- **Closure for innovation.** In a longitudinal study of collaboration networks
+  in the chemicals industry, @ahuja2000 found that direct and indirect ties
+  increased firms' innovation output, but structural holes *reduced* it —
+  consistent with the view that collaborative innovation requires the trust
+  and norms that closure provides.
+- **Cohesion and range.** @reagans2003 found that both network cohesion around
+  a tie and the range of a person's network eased knowledge transfer: cohesion
+  increases willingness to help, while range increases the ability to convey
+  knowledge to diverse audiences.
+- **Joining versus separating.** @obstfeld2005 proposed the *tertius iungens*
+  orientation — brokers who introduce disconnected parties to one another rather
+  than exploiting the gap — and found it associated with involvement in
+  innovation in an engineering setting.
+- **Diversity–bandwidth trade-off.** @aral2011 showed that structurally diverse
+  networks tend to have lower-bandwidth ties, so the novelty that brokerage
+  provides comes at the cost of less information flow through each tie.
+
+::: {.debate}
+**Brokerage or closure?** The structural-holes and closure arguments make
+opposing predictions about the same network feature, and both have empirical
+support. @burt2005 proposed a synthesis: closure *within* a group creates the
+trust and coordination needed to deliver value, while brokerage *across* groups
+creates the novelty that defines what value is. Performance is highest when a
+group is internally cohesive and externally well bridged. A second debate
+concerns **selection**: people with distinctive skills or personalities may
+both create brokerage positions and perform well, so causal claims require
+longitudinal or quasi-experimental designs [@borgatti2009].
+:::
+
+::: {.business-case}
+**Illustrative scenario: the cross-functional product manager.** A product manager
+sits between engineering, sales, and customer-success groups that rarely talk to
+one another. She hears customer complaints before engineering does and can frame
+engineering constraints in commercial terms. Structural-holes theory predicts
+that she will generate more valuable ideas than single-function peers — and that
+her advantage would erode if the groups began to communicate directly. The firm
+must choose between preserving the brokerage role and closing the hole with
+formal coordination.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Employees with lower network constraint will generate ideas rated as more
+  valuable by independent evaluators.
+- *H2.* The positive effect of brokerage on idea quality will be stronger in units
+  facing high environmental turbulence.
+- *H3.* Firms whose alliance portfolios combine a cohesive core of partners with
+  bridging ties to distant industries will produce more novel patents than firms
+  with portfolios that are uniformly dense or uniformly sparse.
+
+**Designs.** Sociometric surveys ("whom do you go to for advice?"); network
+reconstruction from email, collaboration platform, co-authorship, patent
+co-invention, or alliance databases; panel models with ego fixed effects to
+address selection; randomized introductions or team assignments where feasible.
+
+**Measures.** Constraint, effective size, and betweenness [@burt1992;
+@freeman1977]; brokerage roles; tie strength as frequency or duration; outcomes
+such as idea ratings, promotion, patent citations, or deal flow
+[@wasserman1994]. In R, `igraph` computes all of these indices.
+:::
+
+## Social Capital {#social-capital}
+
+::: {.theory-card}
+**Core claim.** Relationships are a resource. The structure and content of an
+actor's social relations provide access to information, influence, and solidarity
+that facilitate action and produce returns for individuals, groups, and
+organizations.
+
+**Origins.** Sociology [@coleman1988; @portes1998; @lin2001], political science
+[@putnam2000], and management [@nahapiet1998; @adler2002].
+
+**Level of analysis.** Individuals, groups, organizations, and communities.
+
+**Key constructs.** Closure; brokerage; bonding and bridging; structural,
+relational, and cognitive dimensions; obligations and expectations; norms and
+sanctions; information channels.
+
+**Boundary conditions.** Social capital is context-specific and not fully
+fungible: ties that help in one task may hinder in another. It has costs, and
+its benefits may be appropriated by some at the expense of others.
+
+**Related theories.** [Weak ties](#weak-ties),
+[Structural holes](#structural-holes),
+[Resource-based theory](#resource-based-theory),
+[Knowledge-based view](#knowledge-based-view).
+:::
+
+### Two views: closure and brokerage
+
+@coleman1988 defined social capital by its function: aspects of social structure
+that facilitate certain actions of actors within the structure. He identified
+three forms — **obligations and expectations** (which depend on the
+trustworthiness of the social environment), **information channels**, and
+**norms with effective sanctions** — and argued that **closure**, a network in
+which one's contacts are connected to one another, strengthens all three. In
+a closed network, a broken promise becomes known to everyone and can be
+collectively sanctioned. Coleman illustrated the point with the wholesale diamond
+market in New York, where merchants could hand bags of stones to one another for
+inspection without formal insurance because the community was dense, and with
+evidence that *intergenerational* closure among parents was associated with lower
+dropout rates from school.
+
+Burt's argument, by contrast, locates social capital in the *absence* of ties
+among one's contacts. Once the resource is specified, the views are compatible:
+closure produces trust and norm enforcement, brokerage produces novel information. Putnam's distinction between **bonding**
+social capital (within homogeneous groups) and **bridging** social capital
+(across groups) captures the same duality at the community level [@putnam2000].
+Table \@ref(tab:tab-net-closure) compares the two views.
+
+```{r tab-net-closure}
+tibble::tribble(
+  ~Dimension, ~`Closure (bonding)`, ~`Brokerage (bridging)`,
+  "Key proponents", "Coleman (1988); Putnam (2000), bonding", "Burt (1992, 2004); Granovetter (1973)",
+  "Network structure", "Dense; contacts connected to one another", "Sparse; contacts disconnected (structural holes)",
+  "Primary benefit", "Trust, norm enforcement, coordination, support", "Novel information, early access, control",
+  "Mechanism", "Reputation and collective sanctions", "Non-redundant information and arbitrage",
+  "Typical outcome", "Cooperation, reliable execution, reduced opportunism", "Creativity, innovation, career advancement",
+  "Risks", "Insularity, conformity, lock-in", "Distrust, role strain, value capture by the broker",
+  "Business example", "Close-knit supplier community; tight project team", "Boundary-spanning manager; diverse alliance portfolio"
+) |>
+  book_table(caption = "Two views of social capital: closure versus brokerage.")
+```
+
+### Three dimensions of organizational social capital
+
+@nahapiet1998 brought social capital into strategic management, arguing that
+organizations have an advantage over markets in creating and sharing
+**intellectual capital** because they are dense with social capital. They
+distinguished three dimensions (Table \@ref(tab:tab-net-dims)): the
+**structural** dimension (the pattern of connections), the **relational**
+dimension (the quality of relationships: trust, norms, obligations,
+identification), and the **cognitive** dimension (shared codes, language, and
+narratives). Social capital facilitates the combination and exchange of
+knowledge, which in turn creates new intellectual capital (Figure
+\@ref(fig:fig-net-capital)).
+
+```{r tab-net-dims}
+tibble::tribble(
+  ~Dimension, ~`What it captures`, ~`Facets (Nahapiet & Ghoshal, 1998)`, ~`Example measure`,
+  "Structural", "Who is connected to whom, and how", "Network ties; network configuration; appropriable organization", "Density, centrality, constraint",
+  "Relational", "The quality of the relationships", "Trust; norms; obligations and expectations; identification", "Trust scales; reciprocity norms",
+  "Cognitive", "Shared understanding that enables communication", "Shared codes and language; shared narratives", "Shared vision; common terminology"
+) |>
+  book_table(caption = "Three dimensions of social capital.")
+```
+
+```{r fig-net-capital, fig.cap = "Social capital and the creation of intellectual capital, following Nahapiet and Ghoshal (1998). The three dimensions of social capital enable the combination and exchange of knowledge, which creates new intellectual capital."}
+mechanism_diagram(sprintf('
+  S [label = "Structural dimension\\n(ties, configuration)", %s]
+  R [label = "Relational dimension\\n(trust, norms,\\nidentification)", %s]
+  C [label = "Cognitive dimension\\n(shared codes,\\nnarratives)", %s]
+  X [label = "Combination and\\nexchange of knowledge", %s]
+  N [label = "New intellectual\\ncapital", %s]
+  S -> X
+  R -> X
+  C -> X
+  X -> N
+  N -> S [style = dashed, label = " coevolution", constraint = false]
+', node_construct, node_construct, node_construct, node_mechanism, node_outcome))
+```
+
+@adler2002 define social capital as the goodwill available to individuals or
+groups, located in the structure and content of their social relations. They
+organize its sources into **opportunity** (the network ties), **motivation** (the
+willingness of contacts to help), and **ability** (the competencies and resources
+of contacts), and they emphasize that social capital involves costs and risks as
+well as benefits. @portes1998 catalogued its negative consequences: exclusion of
+outsiders, excessive claims on successful group members, restrictions on
+individual freedom, and downward-levelling norms.
+
+::: {.debate}
+**Concept or metaphor?** Because the term has been stretched to cover networks,
+trust, norms, and their outcomes, defining social capital by what it achieves
+risks tautology. @portes1998 and @adler2002 recommend separating its *sources*
+(the structure and content of ties) from its *benefits* and *risks*; @lin2001
+makes the separation explicit by defining social capital as resources embedded
+in a network and accessed or mobilized through ties.
+:::
+
+::: {.business-case}
+**B2B key-account relationships.** Key-account management converts individual
+relationships into organizational social capital. A key-account team typically
+deliberately builds all three dimensions: *structural* — multiple contact points
+across the client's functions, so that the relationship does not depend on a
+single salesperson; *relational* — trust built through joint planning and
+problem-solving; *cognitive* — a shared vocabulary about the client's business
+and metrics. Closure around the account protects the relationship against the
+departure of any one person, while bridging ties to the supplier's engineering
+groups bring the client's problems to those who can solve them.
+:::
+
+## Commitment–Trust Theory of Relationship Marketing {#commitment-trust-theory}
+
+::: {.theory-card}
+**Core claim.** Successful relational exchange requires **commitment** and
+**trust**. They are the key mediating variables between a relationship's
+antecedents (benefits, termination costs, shared values, communication,
+opportunism) and its outcomes (cooperation, acquiescence, reduced propensity to
+leave).
+
+**Origins.** Marketing: @morgan1994, building on social exchange theory and on
+models of buyer–seller relationship development [@dwyer1987].
+
+**Level of analysis.** The relationship between exchange partners: suppliers,
+customers, channel members, and internal partners.
+
+**Key constructs.** Relationship commitment; trust; relationship termination
+costs; relationship benefits; shared values; communication; opportunistic
+behaviour; cooperation; acquiescence; propensity to leave; functional conflict;
+decision-making uncertainty.
+
+**Boundary conditions.** Most applicable to relational (rather than discrete)
+exchange, where future interaction is expected and partners are vulnerable to one
+another. Its predictions are weaker for low-involvement, transactional customers.
+
+**Related theories.** [Social exchange theory](#social-exchange-theory),
+[Social capital](#social-capital),
+[Transaction cost economics](#transaction-cost-economics).
+:::
+
+### Core logic and the KMV model
+
+@morgan1994 argued that relationship marketing — establishing, developing, and
+maintaining successful relational exchanges — had become central to marketing,
+and that its success depended on two constructs. **Relationship commitment** is an
+exchange partner's belief that an ongoing relationship is so important that it
+warrants maximum effort to maintain it. **Trust** exists when one party has
+confidence in an exchange partner's reliability and integrity. They proposed that
+commitment and trust are **key mediating variables (KMV)**: rather than relying on
+power to condition others, firms build relationships in which partners choose to
+cooperate. They identified ten forms of relational exchange spanning supplier,
+lateral (competitors, non-profit organizations, government), buyer, and internal
+(business units, employees, functional departments) partnerships, and tested the
+model with independent automobile tyre retailers' relationships with their
+suppliers.
+
+Figure \@ref(fig:fig-net-kmv) reproduces the structure of the model.
+
+```{r fig-net-kmv, fig.cap = "The key mediating variable (KMV) model of relationship marketing, after Morgan and Hunt (1994). Commitment and trust mediate the effects of five antecedents on five relational outcomes. Negative paths are marked with a minus sign.", fig.height = 5.2}
+mechanism_diagram(sprintf('
+  TC [label = "Relationship\\ntermination costs", %s]
+  RB [label = "Relationship\\nbenefits", %s]
+  SV [label = "Shared values", %s]
+  CM [label = "Communication", %s]
+  OB [label = "Opportunistic\\nbehaviour", %s]
+  RC [label = "Relationship\\ncommitment", %s]
+  TR [label = "Trust", %s]
+  AQ [label = "Acquiescence", %s]
+  PL [label = "Propensity\\nto leave", %s]
+  CO [label = "Cooperation", %s]
+  FC [label = "Functional\\nconflict", %s]
+  UN [label = "Decision-making\\nuncertainty", %s]
+  TC -> RC
+  RB -> RC
+  SV -> RC
+  SV -> TR
+  CM -> TR
+  OB -> TR [label = " (-)"]
+  TR -> RC
+  RC -> AQ
+  RC -> PL [label = " (-)"]
+  RC -> CO
+  TR -> CO
+  TR -> FC
+  TR -> UN [label = " (-)"]
+', node_construct, node_construct, node_construct, node_construct, node_construct,
+   node_mechanism, node_mechanism,
+   node_outcome, node_outcome, node_outcome, node_outcome, node_outcome))
+```
+
+The propositions embedded in the model are:
+
+- **P1.** Relationship termination costs and relationship benefits increase
+  commitment.
+- **P2.** Shared values increase both commitment and trust.
+- **P3.** Communication increases trust; opportunistic behaviour decreases it.
+- **P4.** Trust increases commitment.
+- **P5.** Commitment increases acquiescence and cooperation and decreases the
+  propensity to leave; trust increases cooperation and functional conflict
+  (disagreements resolved amicably) and decreases decision-making uncertainty.
+
+### Evidence and extensions
+
+The KMV model became one of the most cited frameworks in marketing, and later work
+refined it. @doney1997 analysed the processes through which industrial buyers
+come to trust suppliers and their salespeople, and found that trust influenced
+buyers' anticipated future interaction with a supplier but did not directly
+determine the current supplier choice, which depended more on price and
+performance. @garbarino1999 found that for customers with weak relational
+orientation, overall satisfaction drove future intentions, whereas for highly
+relational customers, trust and commitment did — a segmentation insight with
+direct implications for loyalty programmes. In a meta-analysis,
+@palmatier2006 found that relationship-marketing efforts had larger effects on
+outcomes when relationships were more critical to customers — as in service
+offerings, channel exchanges, and business markets — and when relationships were
+built with an individual (such as a salesperson) rather than with the selling firm
+as a whole.
+
+::: {.debate}
+**How much does trust explain?** Commitment and trust are conceptually close to
+the outcomes they predict, so survey-based tests risk measuring one underlying
+evaluation several times. Many consumers, moreover, do not want "relationships"
+with brands at all [@garbarino1999]. The theory also sits in tension with
+[transaction cost economics](#transaction-cost-economics), which emphasizes
+safeguards against opportunism rather than trust; contemporary research often
+treats contracts and relational governance as complements.
+:::
+
+::: {.business-case}
+**Toyota's supplier network.** Toyota's relationships with its suppliers are a
+widely studied example of trust-based relational exchange in practice. The
+company organized supplier associations, provided consulting on production
+methods, and encouraged knowledge sharing among suppliers, creating a network in
+which members expected that sharing valuable know-how would be reciprocated
+rather than exploited [@dyer2000]. The case shows all elements of the KMV model:
+high relationship benefits and termination costs, shared values around the
+Toyota Production System, frequent communication, and norms against opportunism —
+yielding cooperation that arm's-length contracting would be unlikely to produce.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* Supplier communication quality increases buyer trust, which mediates the
+  effect of communication on buyer commitment.
+- *H2.* The effect of trust on renewal is stronger for customers with high
+  relational orientation than for customers with low relational orientation.
+- *H3.* Salesperson turnover reduces customer commitment more when the
+  relationship is anchored in a single individual than when it is anchored in
+  multiple contacts.
+
+**Designs.** Dyadic surveys with both buyer and supplier reports; CRM and
+contract-renewal data linked to survey measures; panel data on salesperson
+departures as quasi-experimental shocks to relationships.
+
+**Measures.** Commitment and trust scales [@morgan1994]; relationship benefits
+and termination costs; objective outcomes such as share of wallet, retention,
+and contract renewals.
+:::
+
+::: {.pitfall}
+**Measuring trust and commitment as one construct.** Because the KMV model
+specifies distinct antecedents and outcomes for trust and commitment, collapsing
+them into a single "relationship quality" index loses the theory's discriminating
+predictions. Demonstrate discriminant validity and test the mediating structure,
+including the direct effects the model does *not* predict.
+:::
+
+## Chapter Summary {#networks-exchange-summary}
+
+::: {.key-takeaways}
+- **Social exchange theory** explains relationships as the exchange of valued
+  resources sustained by the norm of reciprocity; unspecified obligations
+  require and build trust [@blau1964; @gouldner1960; @cropanzano2005].
+- **Power is relational**: it equals the other party's dependence, which rises
+  with the value of what is provided and falls with the availability of
+  alternatives [@emerson1962].
+- **Network exchange theory** shows that in negatively connected networks power
+  comes from the ability to exclude, which centrality measures can miss
+  [@cook1983; @markovsky1988].
+- **Weak ties** matter because they bridge; the best causal evidence shows that
+  *moderately* weak ties are the most valuable for job mobility
+  [@granovetter1973; @rajkumar2022].
+- **Embeddedness** brings trust and joint problem-solving, but networks composed
+  only of embedded ties become insular — the paradox of embeddedness
+  [@granovetter1985; @uzzi1997].
+- **Brokerage** across structural holes yields information and control benefits,
+  while **closure** yields trust and coordination; high performance typically
+  combines both [@burt1992; @coleman1988; @burt2005].
+- **Social capital** has structural, relational, and cognitive dimensions and
+  carries costs as well as benefits [@nahapiet1998; @adler2002; @portes1998].
+- **Commitment and trust** are the key mediating variables of successful
+  relational exchange in marketing [@morgan1994; @palmatier2006].
+:::
+
+```{r tab-net-summary}
+tibble::tribble(
+  ~Theory, ~`Unit of analysis`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Social exchange", "Dyad", "Reciprocity; dependence", "Support is repaid with effort and loyalty", "Employee engagement; supplier relations",
+  "Network exchange", "Position in network", "Exclusion via alternatives", "Positions whose partners lack alternatives gain power", "Channel power; platform intermediation",
+  "Weak ties", "Tie / network", "Bridging to novel information", "Moderately weak ties carry job and idea leads", "Referral hiring; networking strategy",
+  "Embeddedness", "Dyad / interfirm network", "Trust; joint problem-solving", "Mixed embedded and arm's-length ties perform best", "Supplier and alliance portfolios",
+  "Structural holes", "Ego network", "Non-redundant information; control", "Brokers generate better ideas and advance faster", "Boundary-spanning roles; innovation",
+  "Social capital", "Individual to community", "Closure and brokerage", "Relationships yield returns and costs", "Knowledge sharing; key accounts",
+  "Commitment-trust", "Relationship", "Commitment and trust as mediators", "Trust and commitment drive cooperation and retention", "Relationship marketing; B2B loyalty"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#networks-exchange-questions}
+
+1. Blau distinguished social from economic exchange. Is the employment
+   relationship in a gig-economy platform an economic exchange, a social exchange,
+   or both? What evidence would help you decide?
+2. Using Figure \@ref(fig:fig-net-power), explain why the most central position in
+   the 5-line is predicted to be weak. Identify a real market in which a
+   "central" intermediary has little bargaining power.
+3. @rajkumar2022 found that moderately weak ties were most useful for job
+   mobility. Propose two mechanisms that could explain why the very weakest ties
+   were less useful, and design a study to distinguish them.
+4. Uzzi's paradox of embeddedness and Burt's structural holes both imply that
+   networks can be "too closed". How do the two arguments differ in mechanism?
+5. A company wants to increase innovation by creating more boundary-spanning
+   roles. Drawing on @burt2004, @ahuja2000, and @obstfeld2005, what risks should
+   it anticipate, and how should it measure success?
+6. For a B2B firm of your choice, map the antecedents of the KMV model
+   [@morgan1994]. Which antecedent would you invest in first, and why?
+
+## Further Reading {#networks-exchange-reading}
+
+- @blau1964 — the classic statement of social exchange, power, and the
+  difference between social and economic exchange.
+- @cropanzano2005 — the most widely used management review of social exchange
+  theory, with a clear account of its conceptual ambiguities.
+- @cook1992 — a concise comparison of exchange-theoretic and network-analytic
+  approaches to social structure.
+- @granovetter1973 — the original weak-ties argument; short, elegant, and still
+  generative.
+- @rajkumar2022 — a large-scale causal test of the weak-ties thesis that refines
+  rather than overturns it.
+- @uzzi1997 — a rich field study of embeddedness and its paradox in an
+  interfirm network.
+- @burt2005 — an accessible synthesis of brokerage and closure as forms of social
+  capital.
+- @morgan1994 — the foundational commitment–trust model of relationship
+  marketing.

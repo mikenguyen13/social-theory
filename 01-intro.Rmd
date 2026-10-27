@@ -1,12 +1,241 @@
 # Introduction {#intro}
 
-Doing social science research requires researchers to know a lot of social theories and also apply them to the right context. This was an overwhelming task for me as a Ph.D. student since there was an enormous amount of theories out there and people seem to just know and talk about them like their second language. Professors told me that through time I will read up and acquire more and more theories (or at least the relevant ones). However, my systematic mind cannot tolerate a disorganized way of learning or acquiring knowledge piece-meal like this.  
+Doing social science research requires knowing a great many theories — and
+knowing which one fits which problem. For a new doctoral student this can be
+overwhelming. Senior colleagues seem to speak theory as a second language:
+"that's an agency problem", "it's a signaling story", "sounds like optimal
+distinctiveness". The standard advice is that theories are absorbed gradually,
+one paper at a time. That advice is sound, but slow and unsystematic, and it
+leaves gaps that only become visible when a reviewer points them out.
 
-Hence, I read up on some handbooks and cheat-sheet regarding social theories. And, I compile these theories for my future research. If you read my first book on data analysis [https://bookdown.org/mike/data_analysis/], you will know how forgetful I can be. So again, I have to write down another book in a systematic way that I can quickly skim back in the future for relevant theories for my research. And please keep in mind that, by no means, this guide is a comprehensive one. Hence, if you think I should change anything, feel free to click on edit to modify that section.
+This book takes the opposite approach. It organizes the theories most often
+used in business and the social sciences into a single, consistent reference,
+so that a reader can (1) find the right theory quickly, (2) understand its logic
+well enough to use it correctly, and (3) see how it connects to its neighbours.
+It began as the author's personal notes and grew into a field guide meant for
+anyone who needs theory to do serious work — in a dissertation, a journal
+article, a classroom, or a boardroom.
 
-Recommendations on how to consume this book:  
+## Why theory matters — in research and in business
 
- * If you know what you are looking for and just want to quickly brush up on a theory. You can just go to that theory section title.  
- * If you want an overview of all relevant theories, you can follow this book from the beginning till the end (my goal is write the most succinct version of every theory as possible). 
- 
- 
+A **theory** is a set of statements about how and why a set of constructs are
+related, and under what conditions (Chapter \@ref(what-is-theory)). Theory does
+three jobs that data alone cannot do:
+
+1. **It tells you where to look.** Every dataset contains more correlations than
+   anyone could test. Theory narrows the search to relationships that should
+   exist *if* a particular mechanism operates.
+2. **It explains why.** An observed effect without a mechanism cannot be
+   generalized. Knowing that a warranty raises sales is useful; knowing that it
+   does so because it is a [costly signal](#signaling-theory) tells you when it
+   will stop working (when competitors can match it cheaply).
+3. **It travels.** Mechanisms transfer across settings. The logic of
+   [adverse selection](#information-asymmetry) explains used cars, insurance,
+   hiring, and venture capital alike.
+
+Managers use theory constantly, usually without naming it. A pricing manager who
+offers a "good–better–best" menu is applying [screening](#screening-theory); an
+HR director worried that a bonus will undermine intrinsic interest is invoking
+[self-determination theory](#self-determination-theory); a utility that tells
+households how their energy use compares with their neighbours' is using
+[social norms](#social-norms). Making these theories explicit lets decision
+makers anticipate side effects and boundary conditions *before* they become
+expensive surprises.
+
+::: {.business-case}
+**Theory as a decision tool.** Consider a subscription business deciding whether
+to offer a free trial. Four theories in this book make different predictions:
+the [endowment effect](#endowment-effect) suggests trial users will value the
+product more once they "own" it; [hedonic adaptation](#hedonic-adaptation)
+warns that novelty fades; [signaling theory](#signaling-theory) suggests that a
+long free trial signals confidence in quality; and
+[choice architecture](#choice-architecture) highlights that whether the trial
+converts *by default* will dominate the outcome. A manager who knows all four can
+design an experiment that tells them apart — and a researcher can turn the same
+contrast into a paper.
+:::
+
+## A map of the theories {#theory-map}
+
+The theories in this book are not isolated islands. Many share mechanisms (for
+example, *information*, *incentives*, *identity*, or *power*), and many were
+developed in dialogue with one another. Figure \@ref(fig:fig-intro-map) shows
+every entry in the book as a node, coloured by part of the book; edges connect
+theories that cross-reference each other in the text. In the online edition the
+map is interactive: hover to see a theory's core claim, click to highlight its
+neighbours, and use the menu to select a theory.
+
+```{r intro-atlas-data}
+atlas <- readr::read_csv("data/theory-atlas.csv", show_col_types = FALSE)
+`%|%` <- function(x, y) ifelse(is.na(x), y, x)
+
+# Build edges from the book itself: a link inside one theory's section to another
+# theory's anchor counts as a connection.
+chapter_files <- yaml::read_yaml("_bookdown.yml")$rmd_files
+chapter_files <- chapter_files[file.exists(chapter_files)]
+edge_list <- lapply(chapter_files, function(f) {
+  lines <- readLines(f, warn = FALSE, encoding = "UTF-8")
+  current <- NA_character_
+  out <- list()
+  for (ln in lines) {
+    hdr <- regmatches(ln, regexec("^#{2,3} .*\\{#([A-Za-z0-9-]+)", ln))[[1]]
+    if (length(hdr) == 2 && hdr[2] %in% atlas$anchor) current <- hdr[2]
+    if (!is.na(current)) {
+      links <- regmatches(ln, gregexpr("\\]\\(#([A-Za-z0-9-]+)\\)", ln))[[1]]
+      links <- gsub("^\\]\\(#|\\)$", "", links)
+      links <- links[links %in% atlas$anchor & links != current]
+      if (length(links)) out[[length(out) + 1]] <- data.frame(from = current, to = links)
+    }
+  }
+  dplyr::bind_rows(out)
+})
+edges <- dplyr::bind_rows(edge_list)
+if (nrow(edges)) {
+  edges <- edges |>
+    dplyr::mutate(a = pmin(from, to), b = pmax(from, to)) |>
+    dplyr::distinct(a, b) |>
+    dplyr::rename(from = a, to = b)
+} else {
+  edges <- data.frame(from = character(), to = character())
+}
+part_levels <- c("Foundations", "Organizations & Strategy", "Individuals & Groups",
+                 "Effects, Phenomena & Frameworks")
+part_cols <- setNames(unname(pal[c("violet", "blue", "orange", "aqua")]), part_levels)
+```
+
+```{r fig-intro-map, fig.cap = "The theory map: each node is an entry in the book, coloured by part; edges connect entries that cross-reference each other. Interactive in the online edition.", fig.height = 7, out.width = "100%"}
+if (is_html()) {
+  nodes <- atlas |>
+    dplyr::transmute(
+      id = anchor, label = theory, group = part,
+      title = sprintf("<b>%s</b><br><i>%s</i><br>%s<br><span style='color:#52514e'>Chapter %s · %s</span>",
+                      theory, key_source, core_claim, chapter, mechanism),
+      color.background = part_cols[part], color.border = "#ffffff",
+      color.highlight.background = part_cols[part], color.highlight.border = "#0b0b0b",
+      font.color = "#0b0b0b", shape = "dot", size = 14
+    )
+  deg <- table(c(edges$from, edges$to))
+  nodes$size <- 10 + 3 * sqrt(as.numeric(deg[nodes$id]) %|% 0)
+  vn <- visNetwork::visNetwork(nodes, edges, width = "100%", height = "640px") |>
+    visNetwork::visEdges(color = list(color = "#c9c8c3", highlight = "#1f4e79"), smooth = FALSE) |>
+    visNetwork::visNodes(font = list(size = 15, face = "Inter")) |>
+    visNetwork::visOptions(highlightNearest = list(enabled = TRUE, degree = 1, hover = FALSE),
+                           nodesIdSelection = list(enabled = TRUE, main = "Select a theory"),
+                           selectedBy = list(variable = "group", main = "Filter by part")) |>
+    visNetwork::visPhysics(solver = "forceAtlas2Based",
+                           forceAtlas2Based = list(gravitationalConstant = -45, springLength = 90),
+                           stabilization = list(iterations = 300)) |>
+    visNetwork::visInteraction(navigationButtons = TRUE, tooltipDelay = 80) |>
+    visNetwork::visLegend(useGroups = FALSE, addNodes = data.frame(
+      label = part_levels, shape = "dot", color = unname(part_cols)), position = "right", width = 0.18)
+  for (p in part_levels) vn <- visNetwork::visGroups(vn, groupname = p, color = part_cols[[p]])
+  vn
+} else {
+  g <- igraph::graph_from_data_frame(edges, vertices = atlas[, c("anchor", "theory", "part")], directed = FALSE)
+  set.seed(42)
+  ggraph::ggraph(g, layout = "fr") +
+    ggraph::geom_edge_link(colour = "#d4d3ce", width = 0.3) +
+    ggraph::geom_node_point(aes(colour = factor(part, levels = part_levels)), size = 2.6) +
+    ggraph::geom_node_text(aes(label = theory), size = 2, repel = TRUE, colour = ink[["secondary"]]) +
+    scale_colour_manual(values = part_cols, name = NULL) +
+    theme_void() + theme(legend.position = "bottom")
+}
+```
+
+Figure \@ref(fig:fig-intro-heat) cross-tabulates the entries by **level of
+analysis** and **dominant mechanism**. Two patterns stand out. First, most
+organization-level theories explain outcomes through *resources*, *incentives*,
+*power*, or *legitimacy*, while individual-level theories rely on *cognition*,
+*emotion*, *motivation*, and *identity*. Second, a handful of mechanisms —
+especially information and social comparison — work at every level, which is
+why theories built on them (signaling, social comparison, social norms) travel so
+widely across disciplines.
+
+```{r fig-intro-heat, fig.cap = "Entries in the book by level of analysis and dominant mechanism. Darker cells contain more theories.", fig.height = 5.6}
+level_group <- function(x) dplyr::case_when(
+  grepl("^Individual$|^Individual /", x) ~ "Individual",
+  grepl("Dyad|Transaction", x) ~ "Dyad / transaction",
+  grepl("Group|team|Top management", x, ignore.case = TRUE) ~ "Group / team",
+  grepl("Firm|Organization", x) ~ "Firm / organization",
+  grepl("Network", x) ~ "Network",
+  grepl("Market|Industry|Population|Field|Community|Society|Nation|culture", x, ignore.case = TRUE) ~ "Market / field / society",
+  TRUE ~ "Multiple levels"
+)
+heat <- atlas |>
+  dplyr::mutate(level = level_group(level)) |>
+  dplyr::count(mechanism, level) |>
+  tidyr::complete(mechanism, level, fill = list(n = 0))
+lvl_order <- c("Individual", "Dyad / transaction", "Group / team", "Network",
+               "Firm / organization", "Market / field / society", "Multiple levels")
+heat$level <- factor(heat$level, levels = intersect(lvl_order, unique(heat$level)))
+mech_order <- heat |> dplyr::group_by(mechanism) |> dplyr::summarise(t = sum(n)) |>
+  dplyr::arrange(t) |> dplyr::pull(mechanism)
+heat$mechanism <- factor(heat$mechanism, levels = mech_order)
+ggplot(heat, aes(level, mechanism, fill = n)) +
+  geom_tile(colour = "white", linewidth = 1.2) +
+  geom_text(aes(label = ifelse(n > 0, n, "")), size = 3.4,
+            colour = ifelse(heat$n >= 4, "white", ink[["primary"]])) +
+  scale_fill_seq(name = "Entries") +
+  labs(x = NULL, y = NULL, title = "Where the theories live",
+       subtitle = "Dominant mechanism (rows) by level of analysis (columns)") +
+  theme(panel.grid = element_blank(), axis.text.x = element_text(angle = 30, hjust = 1),
+        legend.position = "right")
+```
+
+## Finding the right theory for your question
+
+Researchers usually start from a phenomenon, not a theory. Table
+\@ref(tab:tab-intro-questions) works backwards from common research and
+managerial questions to the families of theory that address them.
+
+```{r tab-intro-questions}
+tibble::tribble(
+  ~`If your question is about...`, ~`Start with`, ~Chapter,
+  "Why some firms persistently outperform others", "Resource-based view; dynamic capabilities", "4–5",
+  "Whether to make, buy, or partner", "Transaction cost economics; resource dependence", "6–7",
+  "Aligning managers or employees with owners", "Agency theory; stewardship theory", "6",
+  "Why firms in a field look alike", "Institutional theory; legitimacy", "7",
+  "Communicating quality that buyers cannot see", "Signaling; screening; information asymmetry", "8",
+  "Who gets information, power, and opportunities", "Social exchange; weak ties; structural holes", "9",
+  "How new products and technologies spread", "Diffusion of innovations; Bass model; TAM/UTAUT", "10",
+  "Adapting strategy or messages across countries", "Hofstede; GLOBE; self-construal", "11",
+  "Designing incentives, goals, and rewards", "Expectancy; equity; goal setting; self-determination", "12",
+  "Framing messages for different audiences", "Regulatory focus and fit; construal level", "13",
+  "Using peers, norms, and identity to change behaviour", "Social comparison; social norms; optimal distinctiveness", "14",
+  "Pricing, defaults, and seemingly irrational choices", "Prospect theory; mental accounting; choice architecture", "15",
+  "Customer experience, satisfaction, and virality", "Peak-end rule; hedonic adaptation; emotion and virality", "16",
+  "Persuasion, word of mouth, and media effects", "ELM; persuasion knowledge; social transmission", "17"
+) |>
+  book_table(caption = "From research question to theory: a quick-start guide.")
+```
+
+## How to read this book {#how-to-read}
+
+- **Looking up one theory?** Search the book or use the
+  [Theory Atlas](#theory-atlas). Each entry opens with a *theory card* that
+  summarises the essentials in under a minute.
+- **Learning a field?** Read a whole chapter. Chapters group theories that are
+  usually compared with each other and end with a comparison table and
+  discussion questions suitable for seminars.
+- **Writing a paper?** Read Chapters \@ref(what-is-theory) and
+  \@ref(using-theory) first, then use the *research toolkit* box in each entry
+  for sample hypotheses, measures, and designs.
+- **Making a decision?** Go straight to the *business case* boxes, then read the
+  *pitfall* and *debate* boxes to understand where the theory breaks down.
+
+::: {.pitfall}
+**Theory shopping.** It is tempting to pick a theory *after* the results are in
+and choose whichever one "explains" them. This is a form of HARKing —
+hypothesizing after the results are known — and it produces fragile findings
+(Chapter \@ref(using-theory)). Choose theories for their mechanisms before
+collecting data, and, where possible, pit two theories with different
+predictions against each other.
+:::
+
+## Conventions
+
+Citations follow author–year style and link to the full reference list. Figures
+labelled *Illustrative* or *Stylised* are built from simulated or schematic data
+to show a theory's logic; they are not empirical results. All code used to make
+the figures is in the book's [GitHub repository](https://github.com/mikenguyen13/social-theory),
+so every figure can be reproduced and adapted.

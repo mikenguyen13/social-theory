@@ -1,0 +1,1132 @@
+# Governance, Contracts, and Leadership {#governance}
+
+In 2016, regulators announced that employees at Wells Fargo, then one of the most
+admired retail banks in the United States, had opened large numbers of deposit and
+credit-card accounts that customers had never requested. No senior executive had
+ordered anyone to commit fraud. The bank had instead built an aggressive system of
+cross-selling targets, branch rankings, and incentive pay, and thousands of
+employees had responded to that system exactly as it rewarded them to. A few years
+earlier, scholars had begun asking a related question about the executives at the
+top of large firms: why do some chief executives pay enormous premiums for
+acquisitions that destroy their own shareholders' wealth, and why do boards let
+them?
+
+Both puzzles are questions about **governance** — the arrangements by which one
+party gets another to act on its behalf when their interests, information, and
+attitudes toward risk differ. This chapter develops four theories that together
+form the core of organizational economics and strategic leadership research.
+**Agency theory** analyses how principals design contracts and monitoring to
+control self-interested agents. **Stewardship theory** argues that the agency
+model of human nature is too narrow and that many managers are better motivated by
+trust and identification than by incentives. **Transaction cost economics**
+asks a more fundamental question — why some transactions are organized inside
+firms rather than in markets — and answers it with the hazards of specific
+investment. **Upper echelons theory**, finally, opens the black box of the
+executive suite and argues that organizations become reflections of the people
+who lead them.
+
+```{r tab-gov-glance}
+tibble::tribble(
+  ~Theory, ~`Core question`, ~`Level of analysis`, ~`Key source`,
+  "Agency theory", "How can a principal align a self-interested agent's actions with its own goals?", "Dyad (principal-agent); firm", "Jensen & Meckling (1976); Eisenhardt (1989)",
+  "Stewardship theory", "When do managers act as pro-organizational stewards rather than opportunistic agents?", "Dyad; firm", "Davis, Schoorman & Donaldson (1997)",
+  "Transaction cost economics", "Which transactions should be organized by markets, hybrids, or hierarchies?", "Transaction; firm boundary", "Coase (1937); Williamson (1975, 1985)",
+  "Upper echelons theory", "How do executives' experiences, values, and personalities shape strategy and performance?", "Executive; top management team; firm", "Hambrick & Mason (1984); Hambrick (2007)"
+) |>
+  book_table(caption = "Chapter at a glance: theories of governance, contracts, and leadership.")
+```
+
+## Agency Theory {#agency-theory}
+
+::: {.theory-card}
+**Core claim.** When a principal delegates work to an agent whose goals differ and
+whose actions or information the principal cannot fully observe, the agent will
+not always act in the principal's interest. Contracts, monitoring, and incentives
+can reduce, but not eliminate, the resulting **agency costs**.
+
+**Origins.** Economics and finance; the formal principal's problem
+[@ross1973; @holmstrom1979], the theory of the firm as a nexus of contracts
+[@jensen1976], and the separation of ownership and control [@berle1932;
+@fama1983]. Imported into management by @eisenhardt1989a.
+
+**Level of analysis.** Dyad (shareholder–manager, employer–employee,
+franchisor–franchisee, client–supplier) and the firm as a set of such contracts.
+
+**Key constructs.** Principal; agent; goal conflict; information asymmetry;
+moral hazard; adverse selection; risk preferences; outcome- vs. behaviour-based
+contracts; monitoring; bonding; residual loss.
+
+**Boundary conditions.** Goal conflict must be present; the agent's effort or
+information must be costly for the principal to observe; agents are assumed
+self-interested, boundedly rational, and typically more risk-averse than
+principals.
+
+**Related theories.** [Information asymmetry](#information-asymmetry),
+[Screening](#screening-theory), [Stewardship theory](#stewardship-theory),
+[Transaction cost economics](#transaction-cost-economics),
+[Resource dependence](#resource-dependence-theory).
+:::
+
+### Origins and intellectual history
+
+The worry that hired managers might not serve owners is older than modern
+economics, but it acquired its canonical form when @berle1932 documented that
+ownership of large American corporations had become dispersed among thousands of
+small shareholders, none with enough at stake to supervise management. Control had
+passed, in practice, to salaried executives. Four decades later, economists
+supplied the analytical machinery to study the problem.
+
+@ross1973 posed the **principal's problem** in general terms: a principal must
+choose a compensation schedule for an agent whose action affects an uncertain
+payoff, anticipating how the agent will respond. @holmstrom1979 showed that when
+effort is unobservable, a contract that insures a risk-averse agent fully destroys
+the incentive to work, while a contract that ties pay entirely to output imposes
+inefficient risk on the agent. He also derived the **informativeness principle**:
+any additional measure that carries information about the agent's action, however
+noisy, should enter the contract, because conditioning pay on it reduces the risk
+the agent must bear for a given level of incentive.
+
+@jensen1976 moved the analysis from abstract contracts to the corporation.
+They defined an **agency relationship** as a contract under which one or more
+principals engage an agent to perform a service on their behalf, delegating some
+decision-making authority. Because the parties are utility maximizers, the agent
+will not always act in the principal's best interest, and the divergence generates
+costs that shape ownership structure, capital structure, and the very boundaries
+of the firm. @fama1980 added that the managerial labour market disciplines
+executives over time, and @fama1983 explained how complex organizations survive
+despite the separation of ownership and control: they separate **decision
+management** (initiating and implementing decisions) from **decision control**
+(ratifying and monitoring them), with the board of directors at the apex of the
+control system.
+
+@eisenhardt1989a introduced agency theory to a broad management audience. Her
+review distinguished two streams that remain useful today. The **positivist**
+stream, rooted in finance, identifies situations in which principals and agents are
+likely to have conflicting goals and describes the governance mechanisms —
+boards, markets for corporate control, equity ownership — that limit self-serving
+behaviour, usually in large public corporations. The **principal–agent** stream is
+more formal and more general: it asks which contract is most efficient given
+assumptions about people (self-interest, bounded rationality, risk aversion),
+organizations (goal conflict), and information (a purchasable commodity).
+
+### Core logic and propositions
+
+Agency theory rests on two conditions. First, there is **goal conflict**: the agent
+values leisure, perquisites, empire, or job security in ways the principal does
+not. Second, there is **information asymmetry**: the principal cannot costlessly
+verify what the agent knows or does. Remove either condition and the problem
+disappears — an agent with identical goals needs no monitoring, and a perfectly
+observed agent can be paid for the behaviour the principal wants.
+
+@eisenhardt1989a separates two problems that arise from these conditions. The
+**agency problem** proper arises when goals conflict and the principal cannot
+verify the agent's behaviour; it comes in two forms, moral hazard and adverse
+selection. The **problem of risk sharing** arises when principal and agent have
+different attitudes toward risk, so they prefer different actions and different
+allocations of uncertain outcomes. Table \@ref(tab:tab-gov-problems) summarises
+these problems with business examples.
+
+```{r tab-gov-problems}
+tibble::tribble(
+  ~Problem, ~`What goes wrong`, ~`Timing`, ~`Business example`, ~`Typical remedy`,
+  "Moral hazard (hidden action)", "Agent shirks or diverts effort once the principal cannot observe it", "After contracting", "Sales staff push easy products rather than serving customers; managers consume perquisites", "Monitoring; outcome-based pay; performance audits",
+  "Adverse selection (hidden information)", "Agent misrepresents ability or private information when contracting", "Before contracting", "Candidate overstates skills; supplier understates its costs; manager hides a project's risks", "Screening; probation; credentials; self-selecting contract menus",
+  "Risk sharing", "Principal and agent prefer different risk exposures and different actions", "Throughout", "Diversified shareholders want risky growth; an undiversified CEO prefers safe diversification", "Equity and option grants; deferred pay; risk-adjusted targets"
+) |>
+  book_table(caption = "The problems that agency theory addresses (following Eisenhardt, 1989).")
+```
+
+Because these problems cannot be eliminated without cost, the theory's central
+quantity is **agency cost**. @jensen1976 defined it as the sum of three components,
+shown in Table \@ref(tab:tab-gov-costs).
+
+```{r tab-gov-costs}
+tibble::tribble(
+  ~Component, ~Definition, ~`Who bears it initially`, ~Examples,
+  "Monitoring expenditures", "Resources the principal spends to observe and constrain the agent", "Principal", "External audits; board committees; budget controls; performance reviews; surveillance software",
+  "Bonding expenditures", "Resources the agent spends to guarantee that it will not harm the principal (or will compensate if it does)", "Agent", "Financial reporting commitments; personal guarantees; deferred compensation subject to clawback; covenants",
+  "Residual loss", "The value lost because the agent's decisions still differ from those that would maximize the principal's welfare", "Principal", "Value-destroying acquisitions; under-investment in risky innovation; excessive perquisites"
+) |>
+  book_table(caption = "The three components of agency costs (Jensen & Meckling, 1976).")
+```
+
+A key insight is that agency costs are ultimately borne by whoever can be made to
+bear them in a competitive market. If investors anticipate that an owner-manager
+who sells equity will consume more perquisites, they price the shares accordingly;
+the owner therefore has an incentive to commit, *ex ante*, to monitoring and bonding
+arrangements that raise the share price [@jensen1976]. Governance is not only
+imposed on managers; managers often choose it.
+
+The principal–agent stream generates sharper propositions about contract choice.
+@eisenhardt1989a frames the decision as a choice between **outcome-based contracts**
+(commissions, bonuses, stock options, profit sharing) and **behaviour-based
+contracts** (salaries combined with supervision and evaluation of behaviour). The
+following propositions summarise her argument:
+
+- **P1 (Alignment).** When contracts are outcome-based, agents are more likely to
+  act in the principal's interest.
+- **P2 (Information).** When the principal has information systems that reveal
+  agent behaviour, agents are more likely to act in the principal's interest, and
+  behaviour-based contracts become more attractive.
+- **P3 (Uncertainty and risk).** Outcome uncertainty, combined with agent risk
+  aversion, favours behaviour-based contracts, because outcome-based pay would
+  load costly risk on the agent.
+- **P4 (Task characteristics).** Programmable tasks (whose appropriate behaviour
+  can be specified in advance) favour behaviour-based contracts; easily measured
+  outcomes favour outcome-based contracts.
+- **P5 (Relationship length).** In long relationships the principal learns about
+  the agent, so behaviour-based contracts become more feasible.
+
+```{r tab-gov-contracts}
+tibble::tribble(
+  ~Condition, ~`Favours outcome-based contract`, ~`Favours behaviour-based contract`,
+  "Information systems (ability to observe behaviour)", "Weak", "Strong",
+  "Outcome uncertainty", "Low", "High",
+  "Agent risk aversion", "Low", "High",
+  "Principal risk aversion", "High", "Low",
+  "Goal conflict", "High", "Low",
+  "Task programmability", "Low (creative, non-routine work)", "High (routine, specifiable work)",
+  "Outcome measurability", "High", "Low",
+  "Length of relationship", "Short", "Long"
+) |>
+  book_table(caption = "Contingencies in contract choice: when outcome- versus behaviour-based contracts are more efficient (adapted from the propositions in Eisenhardt, 1989).")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-gov-agency) summarises the causal structure. Goal conflict and
+information asymmetry jointly create room for opportunism; governance mechanisms
+are the levers principals use to narrow that room, at a cost.
+
+```{r fig-gov-agency, fig.cap = "Mechanism of agency theory: goal conflict and information asymmetry enable agent opportunism (moral hazard, adverse selection), which produces residual loss; monitoring, incentive alignment, and bonding reduce opportunism but are themselves costly."}
+mechanism_diagram(sprintf('
+  G  [label = "Goal conflict\\n(principal vs. agent)", %s]
+  I  [label = "Information asymmetry\\n(hidden action or\\nhidden information)", %s]
+  R  [label = "Differences in\\nrisk preference", %s]
+  O  [label = "Agent opportunism\\n(moral hazard,\\nadverse selection)", %s]
+  L  [label = "Residual loss and\\ntotal agency costs", %s]
+  M  [label = "Monitoring", %s]
+  P  [label = "Incentive alignment\\n(outcome-based pay)", %s]
+  B  [label = "Bonding", %s]
+  G -> O
+  I -> O
+  R -> O [style = dashed, label = " risk-sharing\\n problem"]
+  O -> L
+  M -> O [style = dashed, arrowhead = tee]
+  P -> O [style = dashed, arrowhead = tee]
+  B -> O [style = dashed, arrowhead = tee]
+', node_construct, node_construct, node_construct, node_mechanism, node_outcome,
+   node_moderator, node_moderator, node_moderator))
+```
+
+The trade-off at the heart of incentive design can be made precise. In the linear
+model associated with @holmstrom1979 and @holmstrom1991, an agent's output equals
+effort plus noise, pay equals a fixed salary plus a share $\beta$ of output, and the
+agent dislikes both effort and risk. A higher **pay-for-performance slope** $\beta$
+elicits more effort, but it also exposes the agent to more of the noise, for which a
+risk-averse agent must be compensated through a **risk premium**. The efficient
+slope balances the two, and it falls as performance measures become noisier and as
+agents become more risk-averse. Figure \@ref(fig:fig-gov-incentive) plots the
+components of joint surplus for one parameterisation.
+
+```{r fig-gov-incentive, fig.cap = "Illustrative incentive-intensity trade-off in a stylised linear principal-agent model. Raising the pay-for-performance slope increases the value created by effort but also the risk premium the agent must be paid; joint surplus peaks at an interior slope (dashed line).", fig.height = 4}
+k  <- 1      # cost-of-effort parameter
+r  <- 2      # agent's coefficient of absolute risk aversion
+s2 <- 0.5    # variance of measurement noise
+inc <- tibble::tibble(beta = seq(0, 1, by = 0.01)) |>
+  mutate(`Value of induced effort (net of effort cost)` = beta / k - beta^2 / (2 * k),
+         `Risk premium paid to agent` = r * beta^2 * s2 / 2,
+         `Joint surplus` = `Value of induced effort (net of effort cost)` - `Risk premium paid to agent`) |>
+  pivot_longer(-beta, names_to = "component", values_to = "value") |>
+  mutate(component = factor(component, levels = c("Value of induced effort (net of effort cost)",
+                                                  "Risk premium paid to agent", "Joint surplus")))
+beta_star <- 1 / (1 + r * k * s2)
+ggplot(inc, aes(beta, value, colour = component)) +
+  geom_vline(xintercept = beta_star, linetype = "dashed", colour = ink[["muted"]]) +
+  geom_line(linewidth = 1.1) +
+  annotate("text", x = beta_star + 0.02, y = 0.02, hjust = 0, size = 3.3, colour = ink[["secondary"]],
+           label = sprintf("Efficient slope = %.2f", beta_star)) +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")])) +
+  guides(colour = guide_legend(nrow = 2)) +
+  labs(x = expression("Pay-for-performance slope " * beta), y = "Value (arbitrary units)", colour = NULL,
+       title = "Stronger incentives are not always better",
+       caption = "Stylised: output = effort + noise; effort cost = e^2/2; risk aversion r = 2; noise variance = 0.5.")
+```
+
+Figure \@ref(fig:fig-gov-slope) generalises the point: the efficient slope
+$\beta^* = 1/(1 + r k \sigma^2)$ declines as measurement noise rises, and it
+declines faster for more risk-averse agents. This is the formal reason why pure
+commission pay is common in transactional sales, where individual output is easy to
+measure, and rare for research scientists, whose output is noisy and delayed.
+
+```{r fig-gov-slope, fig.cap = "Illustrative comparative statics: the efficient pay-for-performance slope falls as performance measures become noisier, and falls faster for more risk-averse agents (stylised linear principal-agent model).", fig.height = 3.8}
+slope <- tidyr::expand_grid(s2 = seq(0, 2, by = 0.02), r = c(0.5, 1, 2)) |>
+  mutate(beta_star = 1 / (1 + r * 1 * s2),
+         agent = factor(paste("Risk aversion r =", r), levels = paste("Risk aversion r =", c(0.5, 1, 2))))
+ggplot(slope, aes(s2, beta_star, colour = agent)) +
+  geom_line(linewidth = 1.1) +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")])) +
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(x = expression("Noise in the performance measure (" * sigma^2 * ")"),
+       y = expression("Efficient slope " * beta^"*"), colour = NULL,
+       title = "Noisier measures call for flatter incentives",
+       caption = "Stylised: beta* = 1 / (1 + r k sigma^2), with k = 1.")
+```
+
+### Evidence and extensions
+
+Agency theory has generated one of the largest empirical literatures in management
+and finance. Several findings recur.
+
+- **Pay–performance sensitivity.** @jensen1990 estimated that the wealth of
+  chief executives of large U.S. firms changed by only a few dollars for every
+  thousand-dollar change in shareholder wealth, and argued that pay was far less
+  sensitive to performance than agency theory would recommend. The finding helped
+  legitimise the shift toward equity-based compensation in the 1990s.
+- **Unintended consequences of strong incentives.** Incentives tied to stock prices
+  are associated with more aggressive earnings management [@bergstresser2006], and
+  in a large survey many financial executives reported that they would sacrifice
+  long-term economic value — for example, by delaying a positive net-present-value
+  project — to meet short-term earnings targets [@graham2005]. @lie2005 showed that
+  share prices tended to fall before and rise after executive option grants, a
+  pattern consistent with grant dates being timed or backdated.
+- **Multitasking.** @holmstrom1991 showed that when an agent performs several tasks
+  that differ in measurability, strong incentives on the measurable task draw
+  effort away from the unmeasured ones, so low-powered incentives can be optimal.
+  This formalises the older warning of @kerr1975 against "rewarding A while hoping
+  for B".
+- **Boards and monitoring.** Meta-analyses find little systematic relationship
+  between board independence or the separation of CEO and chair roles and firm
+  financial performance [@dalton1998]. Reviews of corporate governance conclude
+  that agency theory's prescriptions are better supported for specific outcomes
+  (e.g., takeover resistance, compensation design) than for overall performance
+  [@daily2003].
+- **Symbolic adoption.** Firms sometimes adopt incentive plans without using them:
+  @westphal1994 found that many companies announced long-term incentive plans for
+  their CEOs but did not actually grant awards under them, while still enjoying a
+  favourable market reaction — an early demonstration that governance can be
+  ceremonial (see [Institutional theory](#institutional-theory)).
+
+The theory has also been extended in behavioural directions. The **behavioural
+agency model** of @wiseman1998 combines agency logic with
+[prospect theory](#prospect-theory): because executives evaluate outcomes relative
+to reference points, the same option grant can make an executive more risk-seeking
+when the firm is below target and more risk-averse when accumulated option wealth
+is at stake.
+
+::: {.debate}
+**Is agency theory a self-fulfilling prophecy?** @ghoshal2005 argued that
+management education, by teaching that managers are opportunists who must be
+controlled, has helped create the behaviour it assumes: high-powered incentives and
+intensive monitoring can crowd out intrinsic motivation and signal distrust, and
+executives trained in the theory may come to see self-interest as legitimate.
+Defenders reply that the theory is a model of *contracting under risk*, not a
+description of human nature, and that its key predictions — that people respond to
+incentives, including badly designed ones — are among the best-supported in social
+science. A second line of critique, @bebchuk2004's **managerial power** view,
+accepts agency assumptions but argues that executive pay is itself an agency
+problem: powerful CEOs influence the boards that set their compensation, so pay
+packages reflect rent extraction rather than optimal contracting.
+:::
+
+### Applications in business
+
+::: {.business-case}
+**Executive stock options and short-termism.** During the 1990s, U.S. boards
+shifted executive pay heavily toward stock options, in part on the agency argument
+that equity-based pay aligns executives with shareholders [@jensen1990]. The
+results were mixed in ways the theory itself anticipates. Options reward share-price
+movements over a defined horizon, so they are an outcome-based contract with a
+noisy, manipulable measure. The 2005–2006 option-backdating revelations, in which
+grant dates were found to have been selected after the fact at numerous firms,
+followed academic evidence on suspicious timing [@lie2005]. Evidence linking
+equity incentives to earnings management [@bergstresser2006] and survey evidence
+of earnings-driven myopia [@graham2005] show the multitasking problem in practice:
+the measurable outcome (near-term stock price) can crowd out unmeasured long-term
+investment. Many boards responded by lengthening vesting periods, adding
+performance conditions and holding requirements, and adopting clawback provisions
+— in agency terms, combining outcome-based pay with bonding.
+:::
+
+::: {.business-case}
+**Wells Fargo's sales-practices scandal.** In September 2016 the Consumer Financial
+Protection Bureau, the Office of the Comptroller of the Currency, and the Los
+Angeles City Attorney announced combined penalties of $185 million against Wells
+Fargo for sales practices in which employees had opened deposit and credit-card
+accounts without customers' authorization. The bank had fired roughly 5,300
+employees over several years for related misconduct. Branch employees faced
+demanding cross-selling targets, and their pay and job security depended on
+meeting them. In agency terms, the bank used high-powered outcome-based incentives
+on a metric (accounts opened) that was easy to measure and easy to game, while the
+outcome it actually valued (profitable, durable customer relationships) was hard
+to measure — a textbook multitasking failure [@holmstrom1991; @kerr1975]. The
+consequences extended well beyond the initial fine: the CEO resigned in 2016, the
+board clawed back compensation from senior executives, the Federal Reserve imposed
+a growth restriction on the bank in 2018, and in 2020 the bank agreed to pay
+$3 billion to resolve criminal and civil investigations by the U.S. Department of
+Justice and the Securities and Exchange Commission.
+:::
+
+::: {.business-case}
+**Franchising versus company-owned stores.** A chain retailer or restaurant group
+must decide whether each outlet is run by a salaried manager (a behaviour-based
+contract with monitoring) or by a franchisee who owns the residual profit (an
+outcome-based contract). Agency theory predicts that franchising will be favoured
+where monitoring a salaried manager is costly — for example, at outlets far from
+headquarters — because residual ownership makes the local operator self-monitoring.
+@brickley1987 found exactly this pattern, and @lafontaine1992 showed that
+franchising choices are better explained by incentive considerations than by the
+older idea that franchisors simply need franchisees' capital [see also
+@rubin1978]. Franchising creates a second agency problem in the other direction:
+franchisees may free-ride on the shared brand by cutting quality, which is why
+franchise contracts include detailed operating standards and inspection rights.
+McDonald's, which operates predominantly through franchisees, and Starbucks, which
+in its home market has relied mainly on company-operated and licensed stores,
+illustrate two different resolutions of the same trade-off.
+:::
+
+### Using the theory in research
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The share of franchised outlets in a chain will increase with the
+  geographic dispersion of outlets from headquarters.
+- *H2.* The positive association between CEO equity incentives and R&D intensity
+  will be weaker when the CEO's accumulated option wealth is large relative to
+  salary (behavioural agency model).
+- *H3.* Sales commission intensity will be lower for products whose sales cycles are
+  long and whose outcomes are noisy.
+
+**Designs.** Panel data on compensation and governance (with firm fixed effects);
+quasi-experiments from regulatory changes in disclosure, board composition, or
+takeover law; field experiments on incentive schemes within firms; structural
+models of contracts.
+
+**Measures.** Pay–performance sensitivity (change in executive wealth per change
+in firm value); vesting horizon; ownership concentration; board independence and
+CEO duality; monitoring intensity (audit fees, analyst coverage); outcome
+measurability (noise in performance metrics).
+
+**Data sources.** Proxy statements and compensation databases; franchise
+disclosure documents; personnel records and incentive-plan documents.
+:::
+
+::: {.pitfall}
+**Treating every governance variable as a measure of "alignment".** Board
+independence, CEO ownership, and option grants are often used as proxies for
+alignment without showing that they change the agent's behaviour. Such variables
+are themselves chosen — often by the agents they are supposed to discipline — so
+they are endogenous. State which agency problem (moral hazard, adverse selection,
+or risk sharing) a mechanism addresses, show the behavioural channel, and use
+designs that address selection.
+:::
+
+## Stewardship Theory {#stewardship-theory}
+
+::: {.theory-card}
+**Core claim.** Many managers are not opportunistic agents but **stewards** whose
+motives are aligned with the organization's objectives. For such managers,
+structures that empower and trust them produce better outcomes than structures
+that monitor and control them.
+
+**Origins.** Organization theory and organizational psychology;
+@donaldson1991; developed as a theory by @davis1997.
+
+**Level of analysis.** Dyad (principal–manager) and firm (board and leadership
+structure).
+
+**Key constructs.** Steward vs. agent "model of man"; intrinsic motivation;
+organizational identification; personal vs. institutional power;
+involvement- vs. control-oriented management philosophy; mutual choice.
+
+**Boundary conditions.** Both parties must choose a stewardship relationship;
+predictions depend on the manager's motivation and on situational factors such as
+culture and management philosophy.
+
+**Related theories.** [Agency theory](#agency-theory),
+[Self-determination theory](#self-determination-theory),
+[Social exchange theory](#social-exchange-theory),
+[Power distance](#power-distance-theory).
+:::
+
+### Core logic
+
+@donaldson1991 began with a governance puzzle. Agency theory implies that the roles
+of chief executive and board chair should be separated, so that the person who
+manages the firm is not the person who monitors management. Stewardship theory
+implies the opposite: if the executive is a steward, combining the roles gives a
+trustworthy leader clear authority and unity of command. Their empirical analysis
+of CEO duality reported results more consistent with the stewardship prediction
+than with the agency one.
+
+@davis1997 generalized the argument. The **steward** derives utility from
+pro-organizational, collectivist behaviour; achieving the organization's goals
+satisfies the steward's own higher-order needs for achievement, growth, and
+recognition. Where agency theory treats the manager as an economic actor who must
+be controlled, stewardship theory draws on a model of the person as
+self-actualizing. Table \@ref(tab:tab-gov-stew-vs-agency) contrasts the two.
+
+```{r tab-gov-stew-vs-agency}
+tibble::tribble(
+  ~Dimension, ~`Agency theory`, ~`Stewardship theory`,
+  "Model of the person", "Economic actor; self-serving", "Self-actualizing; collective-serving",
+  "Motivation", "Extrinsic (pay, perquisites, security)", "Intrinsic (growth, achievement, affiliation)",
+  "Identification with organization", "Low", "High",
+  "Basis of power", "Institutional (position, legitimate, coercive, reward)", "Personal (expertise, referent)",
+  "Management philosophy", "Control-oriented", "Involvement-oriented",
+  "Cultural fit", "Individualism; high power distance", "Collectivism; low power distance",
+  "Governance prescription", "Separate CEO and chair; independent monitoring; outcome-based pay", "Empower executives; unify leadership; trust-based relationships",
+  "Main risk", "Agent opportunism", "Principal or steward betrayal"
+) |>
+  book_table(caption = "Agency theory and stewardship theory compared (organized following Davis, Schoorman, & Donaldson, 1997).")
+```
+
+### Mechanism: a game of mutual choice
+
+The most influential element of @davis1997 is the idea that the relationship is a
+**mutual choice**. The principal chooses whether to treat the manager as an agent
+(with controls) or as a steward (with trust), and the manager chooses whether to
+behave as an agent or a steward. Figure \@ref(fig:fig-gov-choice) shows the four
+outcomes. When both choose stewardship, potential performance is maximized. When
+both choose agency, costs are minimized but potential is unrealized. The off-diagonal
+cells are the dangerous ones: a steward-type principal who trusts an opportunistic
+manager is betrayed, and a steward-type manager who is treated as an agent feels
+frustrated and may come to behave like one. Because each party is vulnerable to
+the other's choice, the structure resembles a prisoner's dilemma, and the safe
+mutual-agency outcome is common even when mutual stewardship would be better.
+
+```{r fig-gov-choice, fig.cap = "The principal-manager choice model, redrawn from the logic of Davis, Schoorman, and Donaldson (1997). Mutual stewardship maximizes potential performance; mutual agency minimizes potential costs; mismatched choices produce betrayal and frustration.", fig.height = 4.2}
+choice <- tibble::tribble(
+  ~principal, ~manager, ~label, ~type,
+  "Principal chooses\nagency relationship", "Manager chooses\nto act as agent", "Mutual agency\nMinimizes potential costs", "Stable but limited",
+  "Principal chooses\nstewardship relationship", "Manager chooses\nto act as agent", "Manager acts opportunistically;\nprincipal is betrayed", "Mismatch",
+  "Principal chooses\nagency relationship", "Manager chooses\nto act as steward", "Principal controls a steward;\nmanager is frustrated", "Mismatch",
+  "Principal chooses\nstewardship relationship", "Manager chooses\nto act as steward", "Mutual stewardship\nMaximizes potential performance", "High-performance"
+)
+ggplot(choice, aes(principal, manager, fill = type)) +
+  geom_tile(colour = "white", linewidth = 2, alpha = 0.85) +
+  geom_text(aes(label = label), size = 3.6, colour = ink[["primary"]], lineheight = 0.95) +
+  scale_fill_manual(values = c("Stable but limited" = "#dceaf8", "Mismatch" = "#fbe0d4",
+                               "High-performance" = "#d5f0e4")) +
+  labs(x = NULL, y = NULL, fill = NULL, title = "Agency or stewardship is a mutual choice") +
+  theme(panel.grid = element_blank(), axis.text = element_text(size = 10, colour = ink[["primary"]]))
+```
+
+@davis1997 specify the factors that make each choice more likely. On the
+manager's side, **psychological factors** matter: stewards are more intrinsically
+motivated, identify more strongly with the organization, and rely on personal
+rather than institutional power. On the principal's side, **situational factors**
+matter: involvement-oriented management philosophies, collectivist cultures, and
+low power distance make stewardship relationships more likely.
+
+### Evidence and applications
+
+Stewardship theory has been especially influential in research on family firms,
+nonprofit organizations, and boards, where identification with the organization
+is often high. Its prescriptions are contingent rather than universal: it does not
+claim that all managers are stewards, only that governance should fit the type of
+manager and the situation. That contingency is both its strength and its main
+empirical challenge, because motivation and identification are difficult to
+observe at the top of large firms.
+
+::: {.business-case}
+**Board independence and the CEO-chair question.** After the accounting scandals
+of 2001–2002, the Sarbanes-Oxley Act and new stock-exchange listing standards in the
+United States required majority-independent boards and fully independent audit
+committees, an explicitly agency-theoretic reform. Many U.K. and European firms
+had already separated the CEO and chair roles. Yet large U.S. companies have
+continued to differ in whether they combine the roles, and meta-analytic evidence
+finds no consistent performance advantage for either structure [@dalton1998]. The
+stewardship perspective suggests why: the best structure depends on whether the
+executive is a steward and whether the board can tell. A practical compromise —
+a combined CEO-chair together with a strong lead independent director — tries to
+capture the unity-of-command benefits of stewardship while retaining an agency
+safeguard. @hillman2003 add that independent directors provide not only monitoring
+but also **board capital** — advice, legitimacy, and links to external resources —
+which connects governance to [resource dependence theory](#resource-dependence-theory).
+:::
+
+::: {.pitfall}
+**Using stewardship theory as a post hoc label.** Studies sometimes interpret any
+positive effect of executive autonomy as "support for stewardship theory". The
+theory makes a conditional claim: empowerment improves outcomes *when* managers are
+stewards. A credible test measures (or plausibly proxies) motivation and
+identification — for instance, founder or family status, tenure, or survey
+measures — and shows that the effect of governance structure depends on them.
+:::
+
+## Transaction Cost Economics {#transaction-cost-economics}
+
+::: {.theory-card}
+**Core claim.** Transactions differ in their attributes — above all in the
+specificity of the assets they require — and are assigned to governance structures
+(markets, hybrids, hierarchies) that economize on the costs of contracting,
+especially the hazards of opportunistic **hold-up**.
+
+**Origins.** Economics; @coase1937 asked why firms exist; @williamson1975,
+@williamson1979, @williamson1985, and @williamson1991 built the operational theory;
+@williamson1981 introduced it to sociology and organization theory.
+Williamson shared the 2009 Nobel Memorial Prize in Economic Sciences, and Coase
+received the prize in 1991.
+
+**Level of analysis.** The transaction is the unit of analysis; outcomes are
+governance choices at the boundary of the firm.
+
+**Key constructs.** Bounded rationality; opportunism; asset specificity;
+uncertainty; frequency; hold-up; appropriable quasi-rents; fundamental
+transformation; discriminating alignment; market, hybrid, and hierarchy.
+
+**Boundary conditions.** Contracts are incomplete; some parties are opportunistic
+some of the time; courts cannot cheaply enforce all contingencies; transacting
+parties can choose among governance alternatives.
+
+**Related theories.** [Agency theory](#agency-theory),
+[Resource-based theory](#resource-based-theory),
+[Resource dependence](#resource-dependence-theory),
+[Bounded rationality](#bounded-rationality).
+:::
+
+### Origins and intellectual history
+
+@coase1937 noticed a puzzle at the heart of economics. If markets allocate
+resources efficiently through prices, why do so many transactions take place inside
+firms, where they are directed by managerial authority instead? His answer was that
+using the price mechanism has costs: discovering the relevant prices, negotiating
+and concluding separate contracts for each exchange, and writing contracts for
+long periods under uncertainty. Firms exist because, for some transactions,
+authority is cheaper than repeated contracting. A firm grows until the cost of
+organizing one more transaction internally equals the cost of buying it in the
+market.
+
+For decades the argument was admired but rarely used, because it did not say
+*which* transactions would be cheaper to organize internally. @williamson1975
+supplied the missing operational content. Drawing on Herbert Simon's concept of
+[bounded rationality](#bounded-rationality) and on legal scholarship about
+contracts, Williamson argued that transaction costs arise from the combination of
+two behavioural assumptions and three attributes of transactions.
+
+### Core logic and propositions
+
+The **behavioural assumptions** are bounded rationality and opportunism.
+**Bounded rationality** means that people intend to be rational but cannot foresee
+every contingency, so all complex contracts are incomplete. **Opportunism** means
+that at least some parties will pursue self-interest strategically — through
+selective disclosure, misrepresentation, or exploiting gaps in contracts — and
+that it is costly to know in advance who will [@williamson1985]. Neither assumption
+alone creates serious problems: with unbounded rationality, contracts could
+anticipate everything; without opportunism, incomplete contracts could be filled
+in by good faith.
+
+The **attributes of transactions** determine how much these behavioural limits
+matter [@williamson1979; @williamson1985]:
+
+- **Asset specificity** — the degree to which an investment made to support a
+  transaction loses value in its next-best use. Williamson distinguished site
+  specificity (a plant located next to a customer), physical asset specificity
+  (custom dies and tooling), human asset specificity (relationship-specific
+  know-how), and dedicated assets (capacity built for one buyer).
+- **Uncertainty** — about the environment or about the other party's behaviour,
+  which increases the number of contingencies a contract would need to cover.
+- **Frequency** — how often the transaction recurs, which determines whether the
+  fixed costs of specialised governance can be recovered.
+
+The theory's key dynamic is the **fundamental transformation**. Before a specific
+investment is made, many suppliers may compete for a contract. Once one supplier
+has invested in assets that are valuable only in the relationship, the parties are
+locked into a bilateral relationship, and the large-numbers competition of the
+bidding stage becomes a small-numbers bargaining problem. Each side can then
+threaten to withhold cooperation to capture the **appropriable quasi-rents** —
+the difference between an asset's value in the relationship and in its next-best
+use [@klein1978]. This threat is the **hold-up problem**. Anticipating it, parties
+may under-invest in valuable specific assets, or they may choose a governance
+structure that protects those investments.
+
+TCE's central principle is **discriminating alignment**: transactions, which differ
+in their attributes, are aligned with governance structures, which differ in their
+costs and competencies, in a way that economizes on transaction costs
+[@williamson1991]. The core propositions follow:
+
+- **P1 (Asset specificity).** As asset specificity rises, governance shifts from
+  markets toward hybrids (long-term contracts, alliances, franchising) and then to
+  hierarchy (vertical integration).
+- **P2 (Uncertainty).** Uncertainty amplifies the effect of asset specificity,
+  because adapting an incomplete contract to unforeseen events invites haggling.
+- **P3 (Frequency).** Recurrent transactions with high specificity justify the
+  set-up costs of specialised governance; occasional ones are more often governed
+  by trilateral arrangements such as arbitration.
+- **P4 (Remediableness).** A governance structure should be judged against
+  feasible alternatives, not against an ideal that no organization can implement.
+
+@williamson1991 characterised the three generic governance structures by a small
+set of attributes (Table \@ref(tab:tab-gov-forms)). Markets provide strong
+incentives and are good at **autonomous adaptation**, in which parties respond
+independently to price signals. Hierarchies provide weaker incentives but strong
+administrative controls and are good at **coordinated adaptation**, in which
+interdependent parties must adjust together. Hybrids sit in between.
+
+```{r tab-gov-forms}
+tibble::tribble(
+  ~Attribute, ~Market, ~Hybrid, ~Hierarchy,
+  "Incentive intensity", "Strong", "Semi-strong", "Weak",
+  "Administrative controls", "Minimal", "Moderate", "Extensive",
+  "Autonomous adaptation (responding to prices)", "Strong", "Moderate", "Weak",
+  "Coordinated (cooperative) adaptation", "Weak", "Moderate", "Strong",
+  "Reliance on contract law and courts", "Strong", "Moderate", "Weak (internal dispute resolution)",
+  "Typical business form", "Spot purchase; competitive bidding", "Long-term supply contract; alliance; franchise; joint venture", "In-house production; wholly owned subsidiary"
+) |>
+  book_table(caption = "Attributes of generic governance structures (adapted from Williamson, 1991).")
+```
+
+### Mechanism
+
+Figure \@ref(fig:fig-gov-tce) presents the make-or-buy logic. Transaction
+attributes create hazards; behavioural assumptions explain why those hazards cannot
+simply be contracted away; and governance choice follows.
+
+```{r fig-gov-tce, fig.cap = "The make-or-buy mechanism in transaction cost economics: asset specificity, uncertainty, and frequency create hold-up and adaptation hazards, which bounded rationality and opportunism make costly to contract away; governance is chosen to economize on those hazards."}
+mechanism_diagram(sprintf('
+  AS [label = "Asset specificity\\n(site, physical,\\nhuman, dedicated)", %s]
+  U  [label = "Uncertainty", %s]
+  F  [label = "Frequency", %s]
+  H  [label = "Hold-up and\\nadaptation hazards\\n(appropriable quasi-rents)", %s]
+  BR [label = "Bounded rationality\\n(incomplete contracts)", %s]
+  OP [label = "Opportunism", %s]
+  G  [label = "Governance choice\\nmarket / hybrid /\\nhierarchy (make vs. buy)", %s]
+  AS -> H
+  U  -> H
+  F  -> G [style = dashed, label = " recovers set-up\\n cost of governance"]
+  BR -> H [style = dashed]
+  OP -> H [style = dashed]
+  H  -> G [label = " discriminating\\n alignment"]
+', node_construct, node_construct, node_construct, node_mechanism, node_moderator,
+   node_moderator, node_outcome))
+```
+
+Williamson's well-known heuristic representation expresses governance costs as a
+function of asset specificity. Markets have the lowest costs when assets are
+generic, but their costs rise steeply with specificity; hierarchies carry high
+bureaucratic overhead but are least sensitive to specificity; hybrids lie between.
+The efficient boundary of the firm follows the lower envelope of the three curves
+(Figure \@ref(fig:fig-gov-williamson)).
+
+```{r fig-gov-williamson, fig.cap = "Stylised governance-cost curves after Williamson (1991). Each governance form is cheapest over a range of asset specificity; the efficient choice follows the lower envelope, switching from market to hybrid at k1 and from hybrid to hierarchy at k2. Functional forms are illustrative.", fig.height = 4}
+gc <- tibble::tibble(k = seq(0, 2, by = 0.01)) |>
+  mutate(Market = 1 + 2.0 * k, Hybrid = 1.6 + 1.0 * k, Hierarchy = 2.4 + 0.3 * k) |>
+  pivot_longer(-k, names_to = "form", values_to = "cost") |>
+  mutate(form = factor(form, levels = c("Market", "Hybrid", "Hierarchy")))
+k1 <- 0.6; k2 <- 0.8 / 0.7
+env <- gc |> group_by(k) |> slice_min(cost, n = 1, with_ties = FALSE) |> ungroup()
+ggplot(gc, aes(k, cost, colour = form)) +
+  geom_line(data = env, aes(k, cost), inherit.aes = FALSE, colour = ink[["grid"]], linewidth = 4.5) +
+  geom_line(linewidth = 1.1) +
+  geom_vline(xintercept = c(k1, k2), linetype = "dashed", colour = ink[["muted"]]) +
+  annotate("text", x = c(k1, k2), y = 5.2, label = c("k1", "k2"), size = 3.6, colour = ink[["secondary"]], hjust = -0.3) +
+  annotate("text", x = c(0.3, (k1 + k2) / 2, 1.6), y = 0.65, size = 3.3, colour = ink[["secondary"]],
+           label = c("Buy\n(market)", "Ally / contract\n(hybrid)", "Make\n(hierarchy)")) +
+  scale_colour_manual(values = unname(pal[c("blue", "orange", "aqua")])) +
+  coord_cartesian(ylim = c(0.3, 5.4)) +
+  labs(x = "Asset specificity (k)", y = "Governance costs", colour = NULL,
+       title = "Discriminating alignment: governance follows asset specificity",
+       caption = "Stylised linear cost functions; the grey band marks the efficient (lowest-cost) envelope.")
+```
+
+### Evidence and extensions
+
+TCE is one of the most extensively tested theories in the social sciences.
+Early studies of the automobile industry found that components requiring more
+specialised engineering know-how were more likely to be produced in-house
+[@monteverde1982], and that make-or-buy decisions in a component division
+responded to supplier-market competition and volume uncertainty [@walker1984].
+Reviews conclude that the evidence is broadly consistent with the theory,
+especially for asset specificity [@shelanski1995], although a systematic
+assessment found the support uneven across constructs and noted disagreement over
+how key variables should be measured [@david2004].
+
+::: {.debate}
+**Did Fisher Body hold up General Motors?** The most famous illustration of
+hold-up is the relationship between General Motors and Fisher Body, the supplier
+of closed car bodies. In 1919 GM acquired a majority stake in Fisher and signed a
+long-term exclusive supply contract with cost-plus pricing; in 1926 it acquired the
+rest of the company. @klein1978 argued that the contract left GM vulnerable once
+demand for closed bodies grew: Fisher allegedly exploited the cost-plus formula and
+resisted locating plants next to GM's assembly plants, and GM integrated fully to
+end the hold-up. The case became the canonical textbook example of TCE.
+
+Seven decades after his 1937 article, @coase2000 examined the historical record and
+rejected this account. He argued that relations between the two firms were close,
+that Fisher plants were in fact built near GM plants, and that the 1926 acquisition
+was motivated chiefly by GM's wish to secure the Fisher brothers' managerial talent
+and to coordinate production more closely. Two further studies in the same journal
+issue reached related conclusions: @casadesus2000 called the hold-up story a
+"fable", and @freeland2000 argued that, if anything, integration *created* hold-up
+potential by making GM dependent on the Fisher brothers' continued cooperation.
+@klein2000 responded by defending a refined version of the hold-up interpretation.
+
+What is at stake? Not the logic of hold-up, which no participant disputes, but the
+evidential standard for using historical cases to support theory. The debate is a
+reminder that canonical examples deserve the same scrutiny as statistical
+evidence, and that the same integration decision can be consistent with
+transaction-cost, capability, and coordination explanations.
+:::
+
+TCE has also been criticised on conceptual grounds. @ghoshal1996 argued that the
+assumption of opportunism can become self-fulfilling: governance designed for
+opportunists erodes trust and invites the behaviour it seeks to prevent — a
+critique parallel to the one levelled at agency theory. Capability-based theories
+offer a different answer to the make-or-buy question: firms integrate activities in
+which they have superior, hard-to-imitate capabilities and buy those in which
+others are more capable [@barney1991; @teece1997]. Contemporary research often
+treats transaction-cost and capability logics as complements: specificity explains
+*why* an activity is hazardous to outsource, and capabilities explain *who* can
+perform it best.
+
+### Applications in business
+
+TCE is a practical decision framework. Table \@ref(tab:tab-gov-tce-business)
+applies it to common boundary decisions.
+
+```{r tab-gov-tce-business}
+tibble::tribble(
+  ~Function, ~Decision, ~`Key transaction attribute`, ~`TCE prediction`,
+  "Operations", "Outsource standard components or build them in-house?", "Low physical asset specificity; many suppliers", "Buy through competitive markets",
+  "Operations", "Source a custom module requiring dedicated tooling", "High physical and dedicated-asset specificity", "Long-term contract with safeguards, or integrate",
+  "Marketing", "Use independent distributors or a direct sales force?", "Human asset specificity of product knowledge and customer relationships", "Direct sales force when selling requires specialised, non-transferable knowledge",
+  "IT", "Move commodity workloads to a public cloud; keep core data platforms?", "Low specificity for commodity computing; high for proprietary data and processes", "Buy commodity capacity; govern core systems internally or through hybrid contracts",
+  "HR", "Hire contractors or permanent employees?", "Firm-specific know-how and tacit routines", "Employment (hierarchy) for firm-specific roles",
+  "Strategy", "Acquire a key supplier or form an alliance?", "Specificity combined with high uncertainty", "Hybrid when coordination needs are moderate; acquisition when hold-up hazards are severe"
+) |>
+  book_table(caption = "Transaction cost economics applied to boundary decisions across business functions.")
+```
+
+::: {.business-case}
+**Outsourcing and re-integration in commercial aircraft.** For the 787 Dreamliner,
+Boeing outsourced the design and manufacture of large structural sections to a
+global network of partners to a greater extent than in earlier programmes. The
+programme suffered extensive delays, and in 2009 Boeing acquired the South
+Carolina fuselage operations of one of its partners, Vought Aircraft Industries.
+In 2024 Boeing announced an agreement to reacquire Spirit AeroSystems, the
+fuselage maker it had spun off in 2005. Interpreted through TCE, large aircraft
+structures involve high physical and human asset specificity, substantial
+technological uncertainty, and intense need for coordinated adaptation —
+precisely the conditions under which market and hybrid governance are most exposed
+to hold-up and adaptation failures. Capability arguments point in the same
+direction: integration preserves architectural knowledge that may be lost when
+design work is dispersed.
+:::
+
+::: {.business-case}
+**Selective integration at Apple.** Apple outsources most final assembly to
+contract manufacturers but has progressively brought chip *design* in-house,
+culminating in the transition of its Mac computers to Apple-designed processors
+beginning in 2020, while fabrication remains with external foundries. TCE explains
+the split: assembly is a large-scale but relatively codifiable activity that can be
+governed through long-term contracts, with the buyer at times investing in
+specialised equipment at suppliers' facilities to secure capacity; chip architecture, by contrast, is deeply
+interdependent with Apple's software and product roadmap, making coordinated
+adaptation valuable and outsourcing hazardous.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The likelihood of in-house production of a component increases with the
+  engineering effort specific to that component.
+- *H2.* The effect of asset specificity on vertical integration is stronger under
+  high technological uncertainty.
+- *H3.* Alliances involving high relationship-specific investment are more likely to
+  be structured as equity joint ventures than as contractual alliances.
+
+**Designs.** Cross-sectional or panel analysis of make-or-buy choices at the
+transaction or component level; contract-level studies of duration, pricing
+terms, and safeguards; event studies of supplier disruptions.
+
+**Measures.** Asset specificity (engineer ratings, specialised tooling,
+co-location, relationship-specific training); uncertainty (demand volatility,
+technological change); frequency (order volume and repetition); governance
+(make/buy, contract length, equity sharing).
+:::
+
+::: {.pitfall}
+**Measuring governance outcomes instead of transaction attributes.** A frequent
+error is to infer asset specificity from the fact that a firm integrated, which
+makes the theory circular. Measure transaction attributes independently of the
+governance choice, compare against feasible alternatives (remediableness), and
+remember that the unit of analysis is the transaction, not the firm.
+:::
+
+## Upper Echelons Theory {#upper-echelons-theory}
+
+::: {.theory-card}
+**Core claim.** Organizational outcomes — strategic choices and performance — are
+partly predicted by the experiences, values, and personalities of top executives,
+because executives act on their *construed* reality rather than on objective
+situations.
+
+**Origins.** Strategic management; @hambrick1984, building on the
+Carnegie School's view of bounded rationality; updated in @hambrick2007a; synthesised
+in @finkelstein2009.
+
+**Level of analysis.** Individual executive (especially the CEO), the top
+management team (TMT), and the firm.
+
+**Key constructs.** Executive orientation (values, cognitive base, personality);
+observable characteristics (age, tenure, functional background, education);
+filtering (field of vision, selective perception, interpretation); managerial
+discretion; executive job demands; hubris and narcissism.
+
+**Boundary conditions.** Executive characteristics matter more when managerial
+discretion is high and when job demands force executives to rely on mental
+shortcuts.
+
+**Related theories.** [Agency theory](#agency-theory),
+[Bounded rationality](#bounded-rationality),
+[Heuristics and biases](#heuristics-biases),
+[Glass cliff](#glass-cliff-effect).
+:::
+
+### Origins and core logic
+
+For much of the twentieth century, organization theorists debated whether leaders
+matter. Population ecologists and institutional theorists emphasised environmental
+constraints, and a widely cited study found that leadership changes explained
+relatively little variance in company performance compared with industry and
+company factors [@lieberson1972]. @hambrick1984 proposed a different starting
+point: since complex strategic decisions cannot be made through pure calculation,
+executives inevitably bring their own **cognitive base** (knowledge and
+assumptions) and **values** to bear. The organization therefore becomes, in
+Hambrick and Mason's phrase, a reflection of its top managers.
+
+Two further moves made the idea researchable. First, because executives' cognitions
+are difficult to measure directly, Hambrick and Mason proposed **observable
+demographic characteristics** — age, tenure, functional track, education,
+socioeconomic background — as imperfect proxies. Second, they argued that the
+**top management team**, not the CEO alone, is the appropriate unit, because
+strategy emerges from the shared and divergent views of a dominant coalition.
+
+The theory's mechanism is a **filtering** process [@finkelstein2009;
+@hambrick2007a]. An executive's orientation limits the field of vision (which parts
+of the environment are scanned), shapes selective perception (which stimuli within
+that field are noticed), and guides interpretation (what meaning is attached to
+them). The resulting construed reality drives strategic choices such as
+innovation, diversification, acquisitions, and leverage, which in turn affect
+performance (Figure \@ref(fig:fig-gov-ue)).
+
+```{r fig-gov-ue, fig.cap = "Upper echelons mechanism: executives' psychological orientation (proxied by observable experiences) filters the strategic situation into a construed reality that shapes strategic choices and performance; managerial discretion and executive job demands moderate the strength of the link."}
+mechanism_diagram(sprintf('
+  S  [label = "Objective\\nstrategic situation", %s]
+  E  [label = "Executive orientation\\n(values, cognitive base,\\npersonality; proxied by\\nexperience and demographics)", %s]
+  F  [label = "Filtering\\nfield of vision ->\\nselective perception ->\\ninterpretation", %s]
+  C  [label = "Strategic choices\\n(innovation, acquisitions,\\ndiversification, leverage)", %s]
+  P  [label = "Performance\\n(level and variance)", %s]
+  D  [label = "Managerial\\ndiscretion", %s]
+  J  [label = "Executive\\njob demands", %s]
+  S -> F
+  E -> F
+  F -> C -> P
+  D -> C [style = dashed]
+  J -> F [style = dashed]
+', node_construct, node_construct, node_mechanism, node_outcome, node_outcome,
+   node_moderator, node_moderator))
+```
+
+### Moderators: discretion and job demands
+
+@hambrick1987 introduced **managerial discretion** — latitude of action — to
+reconcile the view that leaders matter with the view that environments constrain
+them. Discretion is high in industries with product differentiability, rapid
+growth, and few regulatory constraints; in organizations with slack resources and
+weak internal resistance; and for executives with high tolerance for ambiguity and
+substantial power. Executive characteristics should predict outcomes much more
+strongly where discretion is high. @finkelstein1990 provided early support: TMT
+tenure was associated with persistent strategies and strategies that conformed to
+industry averages, and these associations were stronger in high-discretion
+industries. @hambrick2007a added **executive job demands**: executives facing
+heavier demands rely more on experience and intuition, so their backgrounds should
+matter more.
+
+Table \@ref(tab:tab-gov-ue-measures) summarises common constructs and measures.
+
+```{r tab-gov-ue-measures}
+tibble::tribble(
+  ~Construct, ~`Typical proxy or measure`, ~`Representative prediction`,
+  "Tenure (organizational, CEO, team)", "Years in firm or position", "Longer tenure -> strategic persistence and conformity to industry norms",
+  "Functional background", "Career track (output functions such as marketing vs. throughput functions such as operations)", "Background shapes which problems and opportunities are noticed",
+  "Education", "Level and type of degree", "More formal education -> greater openness to innovation",
+  "Age", "Executive or team mean age", "Younger teams -> riskier strategies and more strategic change",
+  "TMT heterogeneity", "Dispersion of backgrounds within the team", "More diverse information but potentially less cohesion",
+  "Overconfidence / hubris", "Option-exercise behaviour; media praise; relative pay", "Larger acquisition premiums; investment sensitive to internal cash",
+  "Narcissism", "Unobtrusive indicators (prominence in annual reports, first-person pronouns, relative pay)", "Bolder, more dynamic strategies and more extreme performance"
+) |>
+  book_table(caption = "Common upper echelons constructs, measures, and predictions (see Carpenter et al., 2004; Finkelstein et al., 2009).")
+```
+
+### Evidence and extensions
+
+Research on upper echelons has expanded from demographics to personality and
+psychology. In finance, @bertrand2003 tracked individual managers across firms and
+found that manager fixed effects explain a meaningful share of the variation in
+investment, financing, and organizational practices — strong evidence that
+"style" travels with the person. @quigley2015 estimated that the share of
+performance variance attributable to CEOs has increased over recent decades, a
+partial answer to the early skepticism of @lieberson1972.
+
+The most vivid stream concerns **CEO hubris**. @roll1986 proposed that bidding
+managers overestimate their ability to create value, so takeover premiums partly
+reflect errors of judgment. @hayward1997 found that premiums paid for large
+acquisitions were higher when the acquiring firm had recently performed well, when
+the CEO had received favourable media praise, and when the CEO's pay was high
+relative to other executives — indicators of hubris — and that these effects were
+stronger when board vigilance was weak; shareholder losses followed.
+@malmendier2005 measured overconfidence by CEOs' reluctance to exercise in-the-money
+options and found that overconfident CEOs' investment was more sensitive to
+internal cash flow. @chatterjee2007 showed that narcissistic CEOs pursue more
+dynamic and grandiose strategies and generate more extreme and fluctuating
+performance, without being systematically better or worse.
+
+::: {.debate}
+**Do demographics measure cognition?** The theory's early reliance on demographic
+proxies is both its engine and its Achilles' heel. Critics note that the same
+demographic variable (say, tenure) can be linked to several psychological states,
+so demographic studies cannot identify which mechanism is at work; @hambrick2007a
+himself called for direct study of executive psychology and of the processes that
+link characteristics to choices. A second debate concerns **endogeneity**: boards
+select executives whose backgrounds fit the strategy they want, so an association
+between, for example, a CEO's finance background and a diversification strategy may
+reflect selection rather than influence. Executive successions caused by deaths or
+illnesses, and designs that follow managers across firms [@bertrand2003], are
+among the tools used to address this problem.
+:::
+
+::: {.business-case}
+**Acquisition premiums and board vigilance.** When a celebrated CEO proposes a
+large acquisition at a substantial premium, upper echelons research suggests that
+the board should ask whether the premium reflects analysis or confidence born of
+recent success and favourable press. The governance implications link this theory
+to agency theory: hubris is not opportunism — the CEO may sincerely believe the
+deal will create value — but the remedies overlap. Independent valuation advice,
+a board that includes directors with acquisition experience, staged commitments,
+and compensation tied to post-deal performance rather than deal size are all ways of
+filtering executive overconfidence before it becomes residual loss.
+:::
+
+::: {.business-case}
+**Top-team composition in a strategic pivot.** Illustrative scenario: a
+hardware-centred firm wants to move toward software subscriptions. Upper echelons
+theory predicts that a TMT drawn mainly from engineering and manufacturing will
+notice threats and opportunities in product reliability and cost, and may
+under-weight signals about recurring revenue and customer success. Firms facing
+such pivots often deliberately change TMT composition — appointing executives from
+the target business model — not only for their skills but because they change what
+the team notices and how it interprets ambiguous evidence.
+:::
+
+::: {.research-toolkit}
+**Sample hypotheses.**
+
+- *H1.* The positive relationship between CEO overconfidence and acquisition
+  premiums is weaker when the board includes more directors with prior acquisition
+  experience.
+- *H2.* TMT functional heterogeneity is positively related to strategic change, and
+  this effect is stronger in high-discretion industries.
+- *H3.* CEO narcissism increases the variance, but not the mean, of firm
+  performance.
+
+**Designs.** Panel data with executive and firm fixed effects; manager-mobility
+designs; exogenous CEO turnover; text analysis of letters to shareholders and
+earnings calls; surveys of executives (with low response rates as a known
+constraint).
+
+**Measures.** Demographics from proxy statements and biographies; psychological
+traits from validated unobtrusive indicators or linguistic analysis;
+discretion indices at the industry level.
+:::
+
+::: {.pitfall}
+**Ignoring discretion and selection.** Upper echelons effects are contingent.
+Testing them in heavily regulated, low-discretion contexts and finding null effects
+says little about the theory, and finding an association without addressing how
+executives were selected says little about influence. Model discretion explicitly
+and use designs that separate the effect of the executive from the choice of the
+executive.
+:::
+
+## Chapter Summary {#governance-summary}
+
+::: {.key-takeaways}
+- **Agency theory** explains governance as a response to goal conflict and
+  information asymmetry; agency costs comprise monitoring, bonding, and residual
+  loss [@jensen1976; @eisenhardt1989a].
+- Efficient incentives balance effort against risk: noisier measures and more
+  risk-averse agents call for flatter pay-for-performance slopes, and strong
+  incentives on measurable tasks can crowd out unmeasured ones
+  [@holmstrom1979; @holmstrom1991].
+- Outcome-based and behaviour-based contracts are substitutes whose relative
+  efficiency depends on information systems, uncertainty, task programmability,
+  and outcome measurability [@eisenhardt1989a].
+- **Stewardship theory** argues that governance should fit the manager: empowering
+  structures outperform controls when both principal and manager choose a
+  stewardship relationship [@davis1997].
+- **Transaction cost economics** explains the boundaries of the firm: asset
+  specificity, uncertainty, and frequency, combined with bounded rationality and
+  opportunism, determine whether markets, hybrids, or hierarchies economize on
+  hold-up and adaptation costs [@coase1937; @williamson1985; @williamson1991].
+- Canonical cases such as GM–Fisher Body remain contested [@klein1978; @coase2000],
+  a reminder to scrutinise illustrative evidence.
+- **Upper echelons theory** shows that executives' experiences, values, and
+  personalities shape strategy, especially when managerial discretion is high;
+  hubris and narcissism are its most consequential applications
+  [@hambrick1984; @hambrick2007a; @hayward1997].
+:::
+
+```{r tab-gov-summary}
+tibble::tribble(
+  ~Theory, ~`Unit of analysis`, ~`View of the manager`, ~`Key mechanism`, ~`Signature prediction`, ~`Typical business use`,
+  "Agency theory", "Principal-agent contract", "Self-interested, risk-averse agent", "Incentive alignment and monitoring under information asymmetry", "Outcome-based pay where outcomes are measurable; residual loss where they are not", "Executive pay, sales compensation, franchising, board design",
+  "Stewardship theory", "Principal-manager relationship", "Pro-organizational steward (when chosen)", "Identification, intrinsic motivation, trust", "Empowerment outperforms control under mutual stewardship", "Leadership structure, family firms, nonprofit governance",
+  "Transaction cost economics", "Transaction", "Boundedly rational and potentially opportunistic", "Hold-up hazards from asset specificity", "Integration rises with asset specificity and uncertainty", "Make-or-buy, outsourcing, alliances, contract design",
+  "Upper echelons theory", "Executive and top management team", "Boundedly rational person with a distinctive orientation", "Filtering of information through values and experience", "Executive traits predict strategy, especially under high discretion", "Executive selection, TMT composition, M&A oversight"
+) |>
+  book_table(caption = "Comparison of the chapter's theories.")
+```
+
+## Discussion Questions {#governance-questions}
+
+1. Agency theory and stewardship theory make opposite predictions about combining
+   the CEO and board-chair roles. Design a study that could distinguish between
+   them. What moderator would you measure, and how?
+2. Using the linear incentive model in this chapter, explain why a hospital might
+   pay surgeons largely by salary while a car dealership pays salespeople largely by
+   commission. What other considerations (multitasking, ethics, teamwork) does the
+   model omit?
+3. The Wells Fargo case is often described as a failure of culture rather than of
+   incentives. Is that distinction meaningful from an agency perspective? What
+   evidence would help adjudicate between the two accounts?
+4. Choose a firm that recently insourced an activity it had previously outsourced
+   (or vice versa). Analyse the decision using asset specificity, uncertainty, and
+   frequency. Would a capability-based explanation reach the same conclusion?
+5. The GM–Fisher Body debate concerns the use of historical evidence. What
+   standards should a historical case meet before it is used as support for a
+   theory?
+6. A board is evaluating a CEO's proposal for a large acquisition. Drawing on upper
+   echelons research and agency theory, list the questions directors should ask and
+   the governance safeguards they should consider.
+
+## Further Reading {#governance-reading}
+
+- @jensen1976 — the foundational statement of agency costs and the firm as a
+  nexus of contracts.
+- @eisenhardt1989a — the clearest introduction to agency theory for management
+  researchers, with testable propositions on contract choice.
+- @holmstrom1991 — the multitask model; essential for understanding why strong
+  incentives can backfire.
+- @davis1997 — the theoretical development of stewardship theory and the
+  principal–manager choice model.
+- @williamson1991 — a compact statement of discriminating alignment and the
+  market–hybrid–hierarchy comparison.
+- @coase2000 and @klein2000 — read together, an instructive exchange on the
+  historical evidence for hold-up.
+- @hambrick2007a — a short, candid update of upper echelons theory with an agenda
+  for future research.
+- @hayward1997 — a model empirical study linking executive psychology, governance,
+  and acquisition outcomes.

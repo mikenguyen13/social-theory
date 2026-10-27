@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this book, please cite it as below."
+title: "Social Science Theory: A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business"
+type: software
+authors:
+  - family-names: Nguyen
+    given-names: Mike
+repository-code: "https://github.com/mikenguyen13/social-theory"
+keywords:
+  - social science theory
+  - management theory
+  - marketing theory
+  - organizational behavior
+  - consumer behavior
+  - behavioral economics
+  - psychology
+  - sociology
+  - research methods
+  - bookdown
+preferred-citation:
+  type: book
+  title: "Social Science Theory: A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business"
+  authors:
+    - family-names: Nguyen
+      given-names: Mike
+  year: 2026
+  url: "https://github.com/mikenguyen13/social-theory"
