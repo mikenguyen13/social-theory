@@ -3,10 +3,20 @@ message: "If you use this book, please cite it as below."
 title: "Social Science Theory: A Field Guide to the Theories, Effects, and Frameworks Behind Research and Business"
 type: software
 license: CC-BY-4.0
+doi: 10.5281/zenodo.23708720
 authors:
   - family-names: Nguyen
     given-names: Mike
+    orcid: "https://orcid.org/0000-0002-3432-8595"
 repository-code: "https://github.com/mikenguyen13/social-theory"
+url: "https://mikenguyen13.github.io/social-theory/"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23708720
+    description: "Concept DOI: always resolves to the latest edition"
+  - type: doi
+    value: 10.5281/zenodo.23708721
+    description: "Version DOI for release v1.0.0"
 keywords:
   - social science theory
   - management theory
@@ -24,5 +34,9 @@ preferred-citation:
   authors:
     - family-names: Nguyen
       given-names: Mike
+      orcid: "https://orcid.org/0000-0002-3432-8595"
   year: 2026
-  url: "https://github.com/mikenguyen13/social-theory"
+  publisher:
+    name: Zenodo
+  doi: 10.5281/zenodo.23708720
+  url: "https://mikenguyen13.github.io/social-theory/"

@@ -147,19 +147,25 @@ if (is_html()) cat("**Prefer print?** [Download the full book as a PDF](social-s
 
 If this book is useful in your work, please cite it:
 
-> Nguyen, M. (`r format(Sys.Date(), "%Y")`). *Social Science Theory: A Field Guide to the
-> Theories, Effects, and Frameworks Behind Research and Business*.
-> https://mikenguyen13.github.io/social-theory/
+> Nguyen, M. (2026). *Social Science Theory: A Field Guide to the
+> Theories, Effects, and Frameworks Behind Research and Business*. Zenodo.
+> https://doi.org/10.5281/zenodo.23708720
 
 ```
 @book{nguyen_social_theory,
-  author = {Nguyen, Mike},
-  title  = {Social Science Theory: A Field Guide to the Theories, Effects,
-            and Frameworks Behind Research and Business},
-  year   = {`r format(Sys.Date(), "%Y")`},
-  url    = {https://mikenguyen13.github.io/social-theory/}
+  author    = {Nguyen, Mike},
+  title     = {Social Science Theory: A Field Guide to the Theories, Effects,
+               and Frameworks Behind Research and Business},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23708720},
+  url       = {https://mikenguyen13.github.io/social-theory/}
 }
 ```
+
+The DOI always resolves to the latest edition. Each archived release on
+[Zenodo](https://doi.org/10.5281/zenodo.23708720) also has its own DOI if you
+need to cite a specific version.
 
 ## Contributing {-}
 

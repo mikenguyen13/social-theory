@@ -13,6 +13,7 @@
   <a href="https://mikenguyen13.github.io/social-theory"><img alt="Read the book" src="https://img.shields.io/badge/read-the%20book-1f4e79?style=for-the-badge"></a>
   <a href="https://github.com/mikenguyen13/social-theory/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/mikenguyen13/social-theory?style=for-the-badge&color=eda100"></a>
   <a href="https://github.com/mikenguyen13/social-theory/actions/workflows/book.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/mikenguyen13/social-theory/book.yml?branch=master&style=for-the-badge&label=build"></a>
+  <a href="https://doi.org/10.5281/zenodo.23708720"><img alt="DOI 10.5281/zenodo.23708720" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23708720-0a7bbc?style=for-the-badge"></a>
   <a href="LICENSE"><img alt="License: CC BY 4.0" src="https://img.shields.io/badge/license-CC%20BY%204.0-6250d6?style=for-the-badge"></a>
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-1baf7a?style=for-the-badge"></a>
 </p>
@@ -94,17 +95,25 @@ The site is written to `docs/`. Check a single chapter quickly with
 ## Cite this book
 
 ```bibtex
+Nguyen, M. (2026). *Social Science Theory: A Field Guide to the Theories,
+Effects, and Frameworks Behind Research and Business*. Zenodo.
+https://doi.org/10.5281/zenodo.23708720
+
+```bibtex
 @book{nguyen_social_theory,
-  author = {Nguyen, Mike},
-  title  = {Social Science Theory: A Field Guide to the Theories, Effects,
-            and Frameworks Behind Research and Business},
-  year   = {2026},
-  url    = {https://github.com/mikenguyen13/social-theory}
+  author    = {Nguyen, Mike},
+  title     = {Social Science Theory: A Field Guide to the Theories, Effects,
+               and Frameworks Behind Research and Business},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23708720},
+  url       = {https://mikenguyen13.github.io/social-theory/}
 }
 ```
 
-GitHub's **"Cite this repository"** button (from [`CITATION.cff`](CITATION.cff))
-gives APA and BibTeX formats.
+The DOI always resolves to the latest edition. Each release archived on
+Zenodo also has its own version DOI. GitHub's **"Cite this repository"**
+button (from [`CITATION.cff`](CITATION.cff)) gives APA and BibTeX formats.
 
 ## Contribute
 

@@ -37,7 +37,7 @@ table caption { caption-side: top; color: var(--st-ink-2); font-weight: 600; }
    Usage in Rmd:   ::: {.theory-card}  ...  :::
    ------------------------------------------------------------------------- */
 .theory-card, .business-case, .research-toolkit, .pitfall, .key-takeaways,
-.try-it, .definition, .debate {
+.try-it, div.definition, .debate {
   position: relative;
   margin: 1.4rem 0;
   padding: 1rem 1.15rem 0.6rem 1.15rem;
@@ -47,7 +47,7 @@ table caption { caption-side: top; color: var(--st-ink-2); font-weight: 600; }
   background: #fbfbfa;
 }
 .theory-card::before, .business-case::before, .research-toolkit::before,
-.pitfall::before, .key-takeaways::before, .try-it::before, .definition::before,
+.pitfall::before, .key-takeaways::before, .try-it::before, div.definition::before,
 .debate::before {
   display: block;
   font-family: Inter, system-ui, sans-serif;
@@ -69,8 +69,8 @@ table caption { caption-side: top; color: var(--st-ink-2); font-weight: 600; }
 .key-takeaways::before   { content: "Key takeaways"; color: #8f6100; }
 .try-it          { border-left-color: #eb6834; background: #fff5f0; }
 .try-it::before          { content: "Try it yourself"; color: #b4471c; }
-.definition      { border-left-color: #52514e; background: #f7f7f5; }
-.definition::before      { content: "Definition"; color: #52514e; }
+div.definition   { border-left-color: #52514e; background: #f7f7f5; }
+div.definition::before   { content: "Definition"; color: #52514e; }
 .debate          { border-left-color: #e87ba4; background: #fdf4f8; }
 .debate::before          { content: "Debate & evidence"; color: #a8336a; }
 
@@ -93,5 +93,5 @@ table caption { caption-side: top; color: var(--st-ink-2); font-weight: 600; }
 
 @media print {
   .theory-card, .business-case, .research-toolkit, .pitfall, .key-takeaways,
-  .try-it, .definition, .debate { break-inside: avoid; }
+  .try-it, div.definition, .debate { break-inside: avoid; }
 }
