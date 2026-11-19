@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # tools/build.R -- full build: merge bibliography, render the site, add share
-# images, sitemap and robots.txt. Optional flags:
+# images, canonical links, sitemap and robots.txt. Optional flags:
 #   --pdf     also build the PDF (saved to pdf/ and linked from the website)
 #   --deploy  publish docs/ to Posit Connect Cloud afterwards (tools/deploy.R)
 # Usage: Rscript tools/build.R [--pdf] [--deploy]
