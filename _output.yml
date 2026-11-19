@@ -5,6 +5,7 @@ bookdown::bs4_book:
   css: style.css
   includes:
     in_header: [google_analytics.html]
+    after_body: _ai_assistant_box.html
   theme:
     version: 4
     primary: "#1f4e79"
